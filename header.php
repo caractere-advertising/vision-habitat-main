@@ -11,22 +11,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
+    <?php   get_template_part('template-parts/navigation');?>
 
-<?php
-wp_nav_menu([
-    'theme_location' => 'primary',
-    'container'      => false,
-    'menu_class'     => 'navbar',
-]);
-
-get_menu-principal();
-
-?> 
-
-<header> 
-    <div>
-        
-    </div>
-    <nav></nav>
-</header>
+   

@@ -4,27 +4,7 @@
  * Functions & Theme Setup
  */
 
-function vh_theme_setup() {
-    add_theme_support('title-tag');
-    add_theme_support('post-thumbnails');
-    add_theme_support('menus');
-    add_theme_support('html5', [
-        'search-form',
-        'comment-form',
-        'comment-list',
-        'gallery',
-        'caption',
-        'style',
-        'script',
-    ]);
-
-    register_nav_menus([
-        'primary' => __('Menu principal', 'vision-habitat'),
-        'footer'  => __('Menu footer', 'vision-habitat'),
-    ]);
-}
-add_action('after_setup_theme', 'vh_theme_setup');
-
+include_once get_template_directory() . '/includes/setup.php';
 
 function vh_enqueue_assets() {
 
@@ -70,6 +50,7 @@ function vh_enqueue_assets() {
         true
     );
 }
+
 add_action('wp_enqueue_scripts', 'vh_enqueue_assets');
 
 //SVG Files
@@ -110,3 +91,10 @@ function fix_svg() {
     ]);
 }
 add_action('after_setup_theme', 'register_menus');
+
+function return_post(){
+    global $wpdb;   
+    $post = $wpdb->get_results("SELECT * FROM wp_posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY post_date DESC LIMIT 1");
+
+    return $post;
+}

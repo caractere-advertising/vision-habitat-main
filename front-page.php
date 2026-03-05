@@ -1,7 +1,7 @@
-<?php get_header();?>
+<?php 
 
-<?php $slider = get_field('slider');?>
+get_header();
 
+get_template_part('templates-parts/builder');
 
-
-<?php get_footer();?>
+get_footer();
