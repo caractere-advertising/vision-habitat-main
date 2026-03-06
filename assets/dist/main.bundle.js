@@ -1221,6 +1221,7 @@ const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swi
     spaceBetween: 100,
 });
 
+
 /***/ },
 
 /***/ "./node_modules/swiper/modules/a11y.mjs"

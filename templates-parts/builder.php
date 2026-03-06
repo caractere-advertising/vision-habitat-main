@@ -14,6 +14,8 @@ if(have_rows('builder')):
             get_template_part( $repo . '/actualites');
         elseif(get_row_layout() == 'slider-fullwidth'):
             get_template_part( $repo . '/slider-fullwidth');
+              elseif(get_row_layout() == 'text_evidence'):
+            get_template_part( $repo . '/text_evidence');
         endif;
     endwhile;
 endif;
