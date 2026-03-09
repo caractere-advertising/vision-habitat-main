@@ -2,7 +2,7 @@
 
 $zone_logo = get_field('image', 'site_name','slogan');
 $navigation_header = get_field('navigation_header');
-$text_evidence = get_field('text_evidence','options');
+$text_evidence = get_field('text_evidence');
 
 if ($image) :
 
@@ -24,12 +24,12 @@ else :
 endif;
 
 $slide = get_sub_field('slide');
-$navigation = get_sub_field('title1','title2','title3',);
 $logo = get_sub_field('image','site_name','slogan'); 
-$text=get_sub_field('categories','details'); 
+//$text_cat=get_sub_field('categories'); 
+//$text_det=get_sub_field('details'); 
 
 
-echo $slide, $navigation,$logo,$text;
+echo, $navigation,$logo,$text;
 
 
 ?>
@@ -41,13 +41,13 @@ echo $slide, $navigation,$logo,$text;
         <p id="site_name"></p>
         <p id="slogan"></p>
     </div>
-    <nav>
+   <!--  <nav>
     <ul>
         <li><a href="" id="title1"></a></li>
         <li><a href=""id="title2">></a></li>
         <li><a href="" id="title3">></a></li>
     </ul>
-    </nav>
+    </nav> -->
     <h1 id="details"></h1>
 
     <div>
