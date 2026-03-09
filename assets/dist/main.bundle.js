@@ -375,7 +375,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   \*******************************************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
+<<<<<<< HEAD
 "use strict";
+=======
+>>>>>>> 4acce8b (maj 093)
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -965,7 +968,10 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
   \***************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+<<<<<<< HEAD
 "use strict";
+=======
+>>>>>>> 4acce8b (maj 093)
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1388,7 +1394,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.css");
 /* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/css/navigation */ "./node_modules/swiper/modules/navigation.css");
 /* harmony import */ var swiper_css_pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/css/pagination */ "./node_modules/swiper/modules/pagination.css");
+<<<<<<< HEAD
 // Slider gallery — non importé dans index.js pour l'instant
+=======
+/* harmony import */ var swiper_css_scrollbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/css/scrollbar */ "./node_modules/swiper/modules/scrollbar.css");
+
+>>>>>>> 4acce8b (maj 093)
 
 
 
@@ -1396,6 +1407,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
 
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-gallery', {
     modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
@@ -1496,6 +1508,10 @@ const numberCurrent = document.querySelector('.number-current');
 const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-fullwidth', {
     modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
 
+=======
+const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-fullwidth',{
+    modules : [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+>>>>>>> 4acce8b (maj 093)
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -1507,6 +1523,7 @@ const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swi
     },
 
     loop: true,
+<<<<<<< HEAD
     speed: 700,
     spaceBetween: 0,
 
@@ -1518,6 +1535,13 @@ const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swi
             }
         },
     },
+=======
+    speed: 400,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    spaceBetween: 100,
+>>>>>>> 4acce8b (maj 093)
 });
 
 
