@@ -4,6 +4,7 @@
             <?php
 
                 $slide = get_sub_field('slide'); // Récupère les données du slide depuis le builder
+                $length = $slide ? count($slide) : 0; // Vérifie si le slide existe et compte le nombre d'éléments
 
                 foreach($slide as $s) {
                     $img = $s['image'];?>
@@ -23,9 +24,13 @@
                 }
             ?>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next btn-next-full"></div>
-        <div class="swiper-button-prev btn-prev-full"></div>
+        <div class="block-pagination">
+            <div class="block-scrollbar">
+                <p  class="number-slide">01</p>
+                <div class="swiper-scrollbar"></div>
+                <p class="number-slide"><?php echo $length < 10 ? '0' . $length : $length; ?></p><!-- Affiche le nombre d'éléments dans le slide -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 </section>
-

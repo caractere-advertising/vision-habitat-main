@@ -85,9 +85,10 @@ function fix_svg() {
   add_filter( 'upload_mimes', 'cc_mime_types' );
   add_action( 'admin_head', 'fix_svg' );
 
-  function register_menus() {
+function register_menus() {
     register_nav_menus([
         'primary' => 'Menu principal',
+        'burger'  => 'Menu burger',
     ]);
 }
 add_action('after_setup_theme', 'register_menus');

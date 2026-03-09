@@ -950,7 +950,58 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.swiper-fullwidth {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-fullwidth .block-pagination {
+  position: absolute;
+  border: 1px solid red;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-fullwidth .block-pagination .block-scrollbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.swiper-fullwidth .block-pagination .swiper-pagination {
+  position: relative;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .block-img {
+  width: 250px;
+  height: auto;
+}
+header .block-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .navbar {
+  display: flex;
+}
+header .block-nav {
+  display: flex;
+}
+header .block-nav svg {
+  width: 40px;
+  height: 40px;
+}`, "",{"version":3,"sources":["webpack://./src/scss/builder/swiper.scss","webpack://./src/scss/main.scss","webpack://./src/scss/header.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,YAAA;EACA,aAAA;ACCJ;ADCI;EACA,kBAAA;EACA,qBAAA;EACA,SAAA;EACA,QAAA;EACA,UAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;ACCJ;ADCI;EACI,aAAA;EACA,mBAAA;EACA,SAAA;ACCR;ADOI;EACI,kBAAA;ACLR;;ACvBA;EAEI,MAAA;EACA,OAAA;EACA,WAAA;EACA,aAAA;EACA,8BAAA;ADyBJ;ACvBI;EACI,YAAA;EACA,YAAA;ADyBR;ACvBQ;EACI,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;ADyBZ;ACrBI;EACI,aAAA;ADuBR;ACpBI;EACI,aAAA;ADsBR;ACpBQ;EACI,WAAA;EACA,YAAA;ADsBZ","sourcesContent":[".swiper-fullwidth{\n    position: relative;\n    width: 100vw;\n    height: 100vh;\n    \n    .block-pagination{\n    position: absolute;\n    border: 1px solid red;\n    bottom: 0;\n    right: 0;\n    width: 25%;\n    height: 100px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n\n    .block-scrollbar{\n        display: flex;\n        align-items: center;\n        gap: 10px;\n\n        .number-slide{\n        }\n\n        .swiper-scrollbar{}\n    }\n\n    .swiper-pagination{\n        position: relative;\n    }\n}}\n            \n               ",".swiper-fullwidth {\n  position: relative;\n  width: 100vw;\n  height: 100vh;\n}\n.swiper-fullwidth .block-pagination {\n  position: absolute;\n  border: 1px solid red;\n  bottom: 0;\n  right: 0;\n  width: 25%;\n  height: 100px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.swiper-fullwidth .block-pagination .block-scrollbar {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n.swiper-fullwidth .block-pagination .swiper-pagination {\n  position: relative;\n}\n\nheader {\n  top: 0;\n  left: 0;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n}\nheader .block-img {\n  width: 250px;\n  height: auto;\n}\nheader .block-img img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\nheader .navbar {\n  display: flex;\n}\nheader .block-nav {\n  display: flex;\n}\nheader .block-nav svg {\n  width: 40px;\n  height: 40px;\n}","header{\n   // position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n\n    .block-img{\n        width: 250px;\n        height: auto;\n\n        img{\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n        }\n    }\n\n    .navbar{\n        display: flex;\n    }\n\n    .block-nav{\n        display: flex;\n\n        svg{\n            width: 40px;\n            height: 40px;\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

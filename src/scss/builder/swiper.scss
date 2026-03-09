@@ -1,0 +1,33 @@
+.swiper-fullwidth{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+    .block-pagination{
+    position: absolute;
+    border: 1px solid red;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .block-scrollbar{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .number-slide{
+        }
+
+        .swiper-scrollbar{}
+    }
+
+    .swiper-pagination{
+        position: relative;
+    }
+}}
+            
+               

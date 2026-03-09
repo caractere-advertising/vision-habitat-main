@@ -1,3 +1,12 @@
+<?php 
+
+
+$text_evidence = get_sub_field('text_evidence');
+
+echo $categories, $details;
+
+?>
+
 <div>
     <p>Nos solutions</p>
     <div></div>
