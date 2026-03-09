@@ -99,14 +99,3 @@ function return_post(){
 
     return $post;
 }
-if( function_exists('acf_add_options_page') ) {
-
-    acf_add_options_page(array(
-        'page_title' => 'Paramètres du site',
-        'menu_title' => 'Paramètres du site',
-        'menu_slug'  => 'parametres-site',
-        'capability' => 'edit_posts',
-        'redirect'   => false
-    ));
-
-}

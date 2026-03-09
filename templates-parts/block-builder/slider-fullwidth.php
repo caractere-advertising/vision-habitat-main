@@ -3,7 +3,8 @@
         <div class="swiper-wrapper">
             <?php
 
-                $slide = get_sub_field('slide'); // Récupère les données du slide depuis le builder
+                $slide  = get_sub_field('slide'); // Récupère les données du slide depuis le builder
+                $start  = 01; 
                 $length = $slide ? count($slide) : 0; // Vérifie si le slide existe et compte le nombre d'éléments
 
                 foreach($slide as $s) {
@@ -26,9 +27,9 @@
         </div>
         <div class="block-pagination">
             <div class="block-scrollbar">
-                <p  class="number-slide">01</p>
-                <div class="swiper-scrollbar"></div>
-                <p class="number-slide"><?php echo $length < 10 ? '0' . $length : $length; ?></p><!-- Affiche le nombre d'éléments dans le slide -->
+                <p  class="number-slide"><?php echo $start;?></p>
+                <div class="swiper-scrollbar"></div>    
+                <p class="number-slide"><?php echo $length < 10 ? '0' . $length : $length; ?></p>
             </div>
             <div class="swiper-pagination"></div>
         </div>
