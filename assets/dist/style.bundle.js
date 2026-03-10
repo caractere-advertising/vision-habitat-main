@@ -950,7 +950,96 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.swiper-fullwidth {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-fullwidth .swiper-wrapper .swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-fullwidth .swiper-wrapper .swiper-slide .background {
+  position: absolute;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.swiper-fullwidth .swiper-wrapper .swiper-slide .background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper-fullwidth .swiper-wrapper .swiper-slide .content {
+  width: 80vw;
+  position: relative;
+  z-index: 1;
+}
+.swiper-fullwidth .swiper-wrapper .swiper-slide .content h2 {
+  font-size: 4rem;
+}
+.swiper-fullwidth .block-pagination {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: calc(25% - 40px);
+  padding: 5px 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-fullwidth .block-pagination .block-scrollbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+}
+.swiper-fullwidth .block-pagination .block-scrollbar .swiper-scrollbar {
+  position: relative;
+}
+.swiper-fullwidth .block-pagination .swiper-pagination {
+  position: relative;
+  width: 30%;
+}
+
+header {
+  position: absolute;
+  padding: 20px;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .block-img {
+  width: 250px;
+  height: auto;
+}
+header .block-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .navbar {
+  display: flex;
+}
+header .block-nav {
+  display: flex;
+}
+header .block-nav svg {
+  width: 40px;
+  height: 40px;
+}`, "",{"version":3,"sources":["webpack://./src/scss/builder/swiper.scss","webpack://./src/scss/main.scss","webpack://./src/scss/variables/colors.scss","webpack://./src/scss/header.scss"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,YAAA;EACA,aAAA;ACDF;ADII;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;ACFN;ADIM;EACE,kBAAA;EACA,UAAA;EACA,aAAA;EACA,YAAA;ACFR;ADIQ;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;ACFV;ADMM;EACE,WAAA;EACA,kBAAA;EACA,UAAA;ACJR;ADMQ;EACE,eAAA;ACJV;ADaE;EACE,kBAAA;EACA,sBEzCI;EF0CJ,SAAA;EACA,QAAA;EACA,UAAA;EACA,uBAAA;EACA,iBAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;ACXJ;ADaI;EACE,aAAA;EACA,mBAAA;EACA,SAAA;EACA,UAAA;ACXN;ADgBM;EACE,kBAAA;ACdR;ADkBI;EACE,kBAAA;EACA,UAAA;AChBN;;AEvDA;EACE,kBAAA;EACA,aAAA;EACA,UAAA;EACA,MAAA;EACA,OAAA;EACA,WAAA;EACA,aAAA;EACA,8BAAA;AF0DF;AExDE;EACE,YAAA;EACA,YAAA;AF0DJ;AExDI;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;AF0DN;AEtDE;EACE,aAAA;AFwDJ;AErDE;EACE,aAAA;AFuDJ;AErDI;EACE,WAAA;EACA,YAAA;AFuDN","sourcesContent":["@use \"./../variables/colors.scss\" as *;\n\n.swiper-fullwidth {\n  position: relative;\n  width: 100vw;\n  height: 100vh;\n\n  .swiper-wrapper {\n    .swiper-slide {\n      position: relative;\n      width: 100%;\n      height: 100%;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n\n      .background {\n        position: absolute;\n        z-index: 0;\n        height: 100vh;\n        width: 100vw;\n\n        img {\n          width: 100%;\n          height: 100%;\n          object-fit: cover;\n        }\n      }\n\n      .content {\n        width: 80vw;\n        position: relative;\n        z-index: 1;\n\n        h2 {\n          font-size: 4rem;\n        }\n\n        .btn .btn-primary {\n        }\n      }\n    }\n  }\n\n  .block-pagination {\n    position: absolute;\n    background-color: $white;\n    bottom: 0;\n    right: 0;\n    z-index: 1;\n    width: calc(25% - 40px);\n    padding: 5px 20px;\n    height: 100px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n\n    .block-scrollbar {\n      display: flex;\n      align-items: center;\n      gap: 10px;\n      width: 70%;\n\n      .number-slide {\n      }\n\n      .swiper-scrollbar {\n        position: relative;\n      }\n    }\n\n    .swiper-pagination {\n      position: relative;\n      width: 30%;\n    }\n  }\n}\n",".swiper-fullwidth {\n  position: relative;\n  width: 100vw;\n  height: 100vh;\n}\n.swiper-fullwidth .swiper-wrapper .swiper-slide {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.swiper-fullwidth .swiper-wrapper .swiper-slide .background {\n  position: absolute;\n  z-index: 0;\n  height: 100vh;\n  width: 100vw;\n}\n.swiper-fullwidth .swiper-wrapper .swiper-slide .background img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.swiper-fullwidth .swiper-wrapper .swiper-slide .content {\n  width: 80vw;\n  position: relative;\n  z-index: 1;\n}\n.swiper-fullwidth .swiper-wrapper .swiper-slide .content h2 {\n  font-size: 4rem;\n}\n.swiper-fullwidth .block-pagination {\n  position: absolute;\n  background-color: #fff;\n  bottom: 0;\n  right: 0;\n  z-index: 1;\n  width: calc(25% - 40px);\n  padding: 5px 20px;\n  height: 100px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.swiper-fullwidth .block-pagination .block-scrollbar {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  width: 70%;\n}\n.swiper-fullwidth .block-pagination .block-scrollbar .swiper-scrollbar {\n  position: relative;\n}\n.swiper-fullwidth .block-pagination .swiper-pagination {\n  position: relative;\n  width: 30%;\n}\n\nheader {\n  position: absolute;\n  padding: 20px;\n  z-index: 5;\n  top: 0;\n  left: 0;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n}\nheader .block-img {\n  width: 250px;\n  height: auto;\n}\nheader .block-img img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\nheader .navbar {\n  display: flex;\n}\nheader .block-nav {\n  display: flex;\n}\nheader .block-nav svg {\n  width: 40px;\n  height: 40px;\n}","$primaryColor: #05233c;\n$secondaryColor: #d3bea1;\n\n$txtColor: #222;\n$lightGray: #e2e2e2;\n$white: #fff;\n$black: #000;\n","@use \"./variables/colors.scss\" as *;\n\nheader {\n  position: absolute;\n  padding: 20px;\n  z-index: 5;\n  top: 0;\n  left: 0;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n\n  .block-img {\n    width: 250px;\n    height: auto;\n\n    img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n    }\n  }\n\n  .navbar {\n    display: flex;\n  }\n\n  .block-nav {\n    display: flex;\n\n    svg {\n      width: 40px;\n      height: 40px;\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

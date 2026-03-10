@@ -85,9 +85,10 @@ function fix_svg() {
   add_filter( 'upload_mimes', 'cc_mime_types' );
   add_action( 'admin_head', 'fix_svg' );
 
-  function register_menus() {
+function register_menus() {
     register_nav_menus([
         'primary' => 'Menu principal',
+        'burger'  => 'Menu burger',
     ]);
 }
 add_action('after_setup_theme', 'register_menus');
@@ -97,15 +98,4 @@ function return_post(){
     $post = $wpdb->get_results("SELECT * FROM wp_posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY post_date DESC LIMIT 1");
 
     return $post;
-}
-if( function_exists('acf_add_options_page') ) {
-
-    acf_add_options_page(array(
-        'page_title' => 'Paramètres du site',
-        'menu_title' => 'Paramètres du site',
-        'menu_slug'  => 'parametres-site',
-        'capability' => 'edit_posts',
-        'redirect'   => false
-    ));
-
 }
