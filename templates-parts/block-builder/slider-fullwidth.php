@@ -11,11 +11,11 @@
                     $img = $s['image'];?>
 
                         <div class="swiper-slide">
-                            <div class="background">
+                            <div class="background block-img">
                                 <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>"> 
                             </div>
                             <div class="content">
-                                <h2><?php echo $s['titre']; ?></h2>
+                                <?php echo $s['titre']; ?>
                                 <a href="<?php echo $s['cta']['url']; ?>" class="btn btn-primary" target="<?php echo $s['cta']['target']; ?>">
                                     <?php echo $s['cta']['title']; ?>
                                 </a>
