@@ -1,22 +1,20 @@
 <?php 
+$categorie = get_sub_field('categorie');
+$details   = get_sub_field('details');
+$link      = get_sub_field('link');
+$paragraph = get_sub_field('paragraph');
 
-$text_evidence  = get_sub_field('text_evidence');
-
-
-
-$cat            = get_sub_field('categorie');
-$details        = get_sub_field('details');
 
 ?>
-
-<?php if($details):?>
-
+<?php if( $details ) : ?>
+<section>
 <div>
-    <p id ="category_evidence"></p>
-
-    <p id="details"></p>
-    <a href="">Rendez-vous</a>
+<p><?php echo $categorie; ?></p>
+<p><?php echo $details; ?></p>
+<p><?php echo $paragraph; ?></p>
+<?php if( is_array($link) && !empty($link['url']) ) : ?>
+    <a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a>
+<?php endif; ?>
 </div>
-
-<?php endif;?>
-
+</section>
+<?php endif; ?>

@@ -1,25 +1,27 @@
+<?php var_dump(get_sub_field('card')); ?>
 <?php
 $card           = get_sub_field('card');
+$card_category           = get_sub_field('card_category');
+$card_image           = get_sub_field('card_image');
+$card_link           = get_sub_field('card_link');
 ?>
 
 
-<?php if($card):?>
-
+<?php if( $cards ) : ?>
 <section class="card-solutions">
-    <div class="container">
-        <?php 
-        foreach($card as $c) {
-            $category = $c['card_category'];
-            $card_image     = $c['card_image'];
-            $link = $c['card_link'];
-            ?>
-            <div class="card">
-                <p id="card_category"><?php echo $category; ?></p>
-                <a href="<?php echo $link['url']; ?>" class="btn" target="<?php echo $link['target']; ?>">
-                    <?php echo $link['title']; ?>
-                </a>
-            </div>
-        <?php } ?>
-    </div>
+  <div class="container">
+    <?php foreach( $cards as $c ) : ?>
+      <div class="card">
+        <p><?php echo $c['card_category']; ?></p>
+        <?php if( $c['card_link'] ) : ?>
+          <a href="<?php echo $c['card_link']['url']; ?>" 
+             class="btn" 
+             target="<?php echo $c['card_link']['target']; ?>">
+            <?php echo $c['card_link']['title']; ?>
+          </a>
+        <?php endif; ?>
+      </div>
+    <?php endforeach; ?>
+  </div>
 </section>
-<?php endif;?>
+<?php endif; ?>
