@@ -1,4 +1,3 @@
-
 <?php
 // Layout ACF : block_citation
 // Champs : name (texte), citation (wysiwyg), title (wysiwyg), link (lien)

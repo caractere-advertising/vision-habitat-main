@@ -1,9 +1,7 @@
-
 <?php 
-
-
 // Layout ACF : text_evidence
 // Champs : categorie (texte), details (wysiwyg), paragraph (wysiwyg), link (lien)
+
 $categorie = get_sub_field('categorie');
 $details   = get_sub_field('details');
 $link      = get_sub_field('link');
@@ -39,4 +37,3 @@ $paragraph = get_sub_field('paragraph');
 
     </div>
 </section>
-

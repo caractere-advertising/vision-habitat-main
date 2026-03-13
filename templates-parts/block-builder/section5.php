@@ -1,4 +1,3 @@
-
 <?php
 // Layout ACF : à définir dans builder.php
 // Champs : slides (répéteur)

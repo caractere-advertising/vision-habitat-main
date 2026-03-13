@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 // Layout ACF : section_img_ev
@@ -66,4 +67,3 @@ $price     = get_sub_field('price');
     </div>
 
 </section>
-
