@@ -1,0 +1,117 @@
+@use "./../variables/colors.scss" as *;
+
+.section-two-col {
+  background-color: $white;
+  padding: 90px 0;
+
+  .two-col-inner {
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+}
+
+.two-col-left {
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+
+    span {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $primaryColor;
+      white-space: nowrap;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 60px;
+      background-color: $primaryColor;
+      opacity: 0.4;
+    }
+  }
+
+  .two-col-title {
+  }
+}
+
+.two-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 60px;
+
+  .two-col-details,
+  .two-col-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: $txtColor;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    color: $primaryColor;
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba($primaryColor, 0.4);
+    margin-top: 16px;
+    transition:
+      gap 0.25s ease,
+      border-color 0.25s ease;
+
+    &::after {
+      content: "↗";
+      font-size: 0.85rem;
+      line-height: 1;
+    }
+
+    &:hover {
+      gap: 22px;
+      border-color: $primaryColor;
+    }
+  }
+}
+
+// ── Responsive
+
+@media (max-width: 1024px) {
+  .section-two-col .two-col-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-two-col {
+    padding: 60px 0;
+
+    .two-col-inner {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin: 0 5%;
+    }
+
+    .two-col-right {
+      padding-top: 0;
+    }
+  }
+}

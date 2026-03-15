@@ -1,69 +1,280 @@
 @use "./variables/colors.scss" as *;
 
-header {
-  //position: absolute;
-  padding: 20px;
-  z-index: 5;
+// ============================================================
+// Header
+// ============================================================
+
+.site-header {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
+  padding: 30px 40px;
+}
+
+.header-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
 
-  .block-img {
-    width: 250px;
+// Logo
+.header-logo {
+  flex-shrink: 0;
+  width: 180px;
+  display: block;
+
+  img {
+    width: 100%;
     height: auto;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    display: block;
   }
+}
+
+// Navigation principale
+.header-nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 
   .navbar {
+    list-style: none;
     display: flex;
-  }
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
 
-  .block-nav {
-    display: flex;
+    > li {
+      position: relative;
 
-    svg {
-      width: 40px;
-      height: 40px;
+      > a {
+        color: $white;
+        text-decoration: none;
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      // Dropdown
+      &.menu-item-has-children {
+        > a::after {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-top: 5px solid $white;
+          margin-top: 2px;
+          transition: transform 0.2s ease;
+        }
+
+        .sub-menu {
+          position: absolute;
+          top: calc(100% + 20px);
+          left: 0;
+          background-color: rgba(255, 255, 255, 0.95);
+          min-width: 220px;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-6px);
+          transition:
+            opacity 0.25s ease,
+            transform 0.25s ease,
+            visibility 0.25s;
+
+          li {
+            a {
+              display: block;
+              padding: 12px 20px;
+              font-size: 0.75rem;
+              letter-spacing: 0.08em;
+              color: $primaryColor;
+              text-decoration: none;
+              border-bottom: 1px solid $lightGray;
+              transition: color 0.2s ease;
+
+              &:hover {
+                color: $secondaryColor;
+              }
+            }
+
+            &:last-child a {
+              border-bottom: none;
+            }
+          }
+        }
+
+        &:hover {
+          > a::after {
+            transform: rotate(180deg);
+          }
+
+          .sub-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+        }
+      }
     }
   }
 }
 
-
-.hero {
-  position: relative;
-  height: 100vh;
-  width: 100%;
+// Séparateur + burger
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
 }
 
-.hero-bg {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.header-separator {
+  display: block;
+  width: 1px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-.hero-content {
-  
- 
+.burger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 
-  h1 {
-    color:$white;
+  span {
+    display: block;
+    width: 28px;
+    height: 1.5px;
+    background-color: $white;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+
+    &:last-child {
+      width: 18px;
+    }
   }
 
-  .btn {
-    display: inline-block;
-    color: black;
-    text-decoration: none;
+  &.is-active {
+    span:nth-child(1) {
+      transform: translateY(7.5px) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: translateY(-7.5px) rotate(-45deg);
+      width: 28px;
+    }
+  }
+}
 
-    
+// ============================================================
+// Menu mobile (panneau plein écran)
+// ============================================================
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background-color: $primaryColor;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition:
+    transform 0.4s ease,
+    opacity 0.3s ease,
+    visibility 0.4s;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .mobile-navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    > li {
+      padding: 16px 0;
+
+      > a {
+        color: $white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $secondaryColor;
+        }
+      }
+
+      .sub-menu {
+        list-style: none;
+        padding: 10px 0 0;
+        margin: 0;
+
+        li {
+          padding: 6px 0;
+
+          a {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            letter-spacing: 0.06em;
+            transition: color 0.2s ease;
+
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ============================================================
+// Responsive
+// ============================================================
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 20px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-separator {
+    display: none;
   }
 }

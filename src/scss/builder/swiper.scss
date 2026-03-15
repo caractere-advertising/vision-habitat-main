@@ -1,77 +1,217 @@
 @use "./../variables/colors.scss" as *;
 
-.swiper-fullwidth {
+// ============================================================
+// Slider fullwidth
+// ============================================================
+
+.slider-fullwidth {
   position: relative;
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-fullwidth {
+  width: 100%;
   height: 100vh;
 
-  .swiper-wrapper {
-    .swiper-slide {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  // ── Slide ──────────────────────────────────────────────
+  .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 
-      .background {
+    // Image de fond
+    .background {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      // Dégradé gauche pour lisibilité du texte
+      &::after {
+        content: '';
         position: absolute;
-        z-index: 0;
-        height: 100vh;
-        width: 100vw;
+        inset: 0;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.45) 0%,
+          rgba(0, 0, 0, 0.15) 50%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+    }
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+    // Contenu — bas gauche
+    .content {
+      position: absolute;
+      bottom: 110px;
+      left: 10%;
+      z-index: 1;
+      max-width: 60%;
+
+      .content-titre {
+        margin-bottom: 28px;
+
+        // Reset commun à tout le contenu WYSIWYG
+        p, h1, h2, h3, h4, h5, h6, strong, em {
+          color: $white;
+          line-height: 1.1;
+          margin: 0;
+          padding: 0;
+        }
+
+        // Paragraphes → ligne légère
+        p {
+          font-size: clamp(2.2rem, 4.5vw, 5rem);
+          font-weight: 300;
+        }
+
+        // Titres → ligne forte
+        h1, h2, h3 {
+          font-size: clamp(3.5rem, 7vw, 8rem);
+          font-weight: 700;
+          line-height: 1;
+        }
+
+        // Strong seul dans un paragraphe
+        p strong {
+          font-size: inherit;
+          font-weight: 700;
         }
       }
 
-      .content {
-        width: 80vw;
-        position: relative;
-        z-index: 1;
+      // CTA
+      .btn-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        color: $white;
+        text-decoration: none;
+        font-size: 0.68rem;
+        font-weight: 500;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+        transition: gap 0.25s ease, border-color 0.25s ease;
 
-        h2 {
-          font-size: 4rem;
+        &::after {
+          content: '↗';
+          font-size: 0.85rem;
+          line-height: 1;
         }
 
-        .btn .btn-primary {
+        &:hover {
+          gap: 22px;
+          border-color: $white;
         }
       }
     }
   }
 
+  // ── Bloc pagination — bas droite ───────────────────────
   .block-pagination {
     position: absolute;
-    background-color: $white;
     bottom: 0;
     right: 0;
-    z-index: 1;
-    width: calc(25% - 40px);
-    padding: 5px 20px;
-    height: 100px;
+    z-index: 2;
+    background-color: $white;
+    width: clamp(220px, 26vw, 400px);
+    height: 90px;
+    padding: 0 28px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
 
+    // Numéros + scrollbar
     .block-scrollbar {
       display: flex;
       align-items: center;
       gap: 10px;
-      width: 70%;
+      flex: 1;
 
       .number-slide {
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: $primaryColor;
+        min-width: 18px;
       }
 
       .swiper-scrollbar {
+        flex: 1;
+        height: 1px;
+        background-color: $lightGray;
+        border-radius: 0;
         position: relative;
+        top: auto;
+        left: auto;
+
+        .swiper-scrollbar-drag {
+          height: 100%;
+          background-color: $primaryColor;
+          border-radius: 0;
+          cursor: pointer;
+        }
       }
     }
 
+    // Dots
     .swiper-pagination {
       position: relative;
-      width: 30%;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+      width: auto;
+
+      .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+        background-color: $lightGray;
+        opacity: 1;
+        margin: 0;
+        transition: background-color 0.25s ease;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $primaryColor;
+      }
+    }
+  }
+}
+
+// ── Responsive ─────────────────────────────────────────────
+
+@media (max-width: 1024px) {
+  .swiper-fullwidth {
+    .swiper-slide .content {
+      left: 7%;
+      max-width: 75%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-fullwidth {
+    .swiper-slide .content {
+      left: 5%;
+      bottom: 90px;
+      max-width: 90%;
+    }
+
+    .block-pagination {
+      width: 100%;
+      height: 72px;
+      padding: 0 20px;
     }
   }
 }

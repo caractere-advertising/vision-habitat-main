@@ -1,0 +1,146 @@
+@use "./../variables/colors.scss" as *;
+
+.section-citation {
+  background-color: $white;
+}
+
+// ── Bloc citation blanc ────────────────────────────────────
+
+.citation-block {
+  padding: 70px 0;
+
+  .citation-inner {
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .citation-name {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $lightGray;
+    padding-top: 8px;
+  }
+
+  .citation-text {
+    // WYSIWYG — laissé à l'utilisateur
+  }
+}
+
+// ── Bandeau bleu ───────────────────────────────────────────
+
+.citation-blue {
+  background-color: $primaryColor;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+
+  .citation-blue-inner {
+    padding: 70px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+  }
+
+  .citation-blue-title {
+    // WYSIWYG — laissé à l'utilisateur
+
+    // Styles par défaut
+    h2,
+    h3,
+    p {
+      color: $white;
+      margin: 0;
+    }
+  }
+
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    color: $white;
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    align-self: flex-start;
+    transition:
+      gap 0.25s ease,
+      border-color 0.25s ease;
+
+    &::after {
+      content: "↗";
+      font-size: 0.85rem;
+      line-height: 1;
+    }
+
+    &:hover {
+      gap: 22px;
+      border-color: $white;
+    }
+  }
+
+  .citation-deco {
+    flex-shrink: 0;
+    width: 180px;
+    position: relative;
+    align-self: stretch;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $white;
+    }
+
+    µ &::before {
+      width: 110px;
+      height: 130%;
+      top: -15%;
+      right: 20px;
+      transform: skewX(-8deg);
+    }
+
+    &::after {
+      width: 60px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      transform: skewX(-8deg);
+    }
+  }
+}
+
+// ── Responsive
+
+@media (max-width: 768px) {
+  .citation-block {
+    padding: 50px 0;
+
+    .citation-inner {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 0 5%;
+    }
+  }
+
+  .citation-blue {
+    .citation-blue-inner {
+      padding: 50px 5%;
+    }
+
+    .citation-deco {
+      display: none;
+    }
+  }
+}

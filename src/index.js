@@ -1,1 +1,4 @@
 import "./js/swiper.js";
+import "./js/swiper-projects.js";
+import "./js/swiper-gallery.js";
+import "./js/header.js";

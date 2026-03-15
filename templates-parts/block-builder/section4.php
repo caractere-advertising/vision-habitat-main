@@ -1,25 +1,50 @@
-<?php 
+<?php
+// Layout ACF : à définir dans builder.php
+// Champs : categorie (texte), text_evidence (wysiwyg), details (wysiwyg), paragraph (wysiwyg), link (lien)
 
-$text_evidence  = get_sub_field('text_evidence');
-$paragraph = get_sub_field('paragraph');
-$cat            = get_sub_field('categorie');
-$details        = get_sub_field('details');
-$link        = get_sub_field('link');
-
+$cat           = get_sub_field('categorie');
+$text_evidence = get_sub_field('text_evidence');
+$details       = get_sub_field('details');
+$paragraph     = get_sub_field('paragraph');
+$link          = get_sub_field('link');
 ?>
 
-<section class="section-4">
-    <div class="container">
-<p><?php echo $cat; ?></p>
-<div>
-    <div></div>
-    <div>
-        <p><?php echo $details; ?></p>
-        <p><?php echo $paragraph; ?></p>
-        <a href="#"><?php echo ; ?></a>
-         <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-            class="lucide lucide-arrow-down-right-icon lucide-arrow-down-right"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
+<section class="section-two-col">
+    <div class="two-col-inner">
+
+        <div class="two-col-left">
+            <?php if ($cat) : ?>
+            <div class="section-label">
+                <span><?php echo $cat; ?></span>
+            </div>
+            <?php endif; ?>
+
+            <?php if ($text_evidence) : ?>
+            <div class="two-col-title">
+                <?php echo $text_evidence; ?>
+            </div>
+            <?php endif; ?>
         </div>
+
+        <div class="two-col-right">
+            <?php if ($details) : ?>
+            <div class="two-col-details">
+                <?php echo $details; ?>
+            </div>
+            <?php endif; ?>
+
+            <?php if ($paragraph) : ?>
+            <div class="two-col-paragraph">
+                <?php echo $paragraph; ?>
+            </div>
+            <?php endif; ?>
+
+            <?php if ($link) : ?>
+            <a href="<?php echo $link['url']; ?>" class="btn-cta">
+                <?php echo $link['title']; ?>
+            </a>
+            <?php endif; ?>
+        </div>
+
     </div>
-</div>
+</section>

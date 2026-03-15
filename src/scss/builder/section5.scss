@@ -1,0 +1,121 @@
+@use "./../variables/colors.scss" as *;
+
+.section-gallery {
+  position: relative;
+  padding: 80px 0;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-gallery {
+  width: 100%;
+  overflow: hidden;
+
+  .swiper-slide {
+    width: 60%;
+
+    .gallery-slide-inner {
+      position: relative;
+    }
+
+    .gallery-image {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background-color: $lightGray;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .gallery-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $white;
+      padding: 20px 28px;
+      min-width: 55%;
+
+      .gallery-titre {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: $primaryColor;
+        margin: 0 0 4px;
+      }
+
+      .gallery-description {
+        font-size: 0.78rem;
+        color: $txtColor;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Dots pagination
+.gallery-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  .swiper-pagination-gallery {
+    position: relative;
+
+    .swiper-pagination-bullet {
+      background-color: $lightGray;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $primaryColor;
+    }
+  }
+}
+
+.gallery-nav {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+
+  button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $lightGray;
+    background: $white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: $primaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+
+    &:hover {
+      background-color: $primaryColor;
+      color: $white;
+      border-color: $primaryColor;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-gallery .swiper-slide {
+    width: 85%;
+  }
+
+  .gallery-nav {
+    right: 2%;
+  }
+}

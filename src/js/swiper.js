@@ -1,21 +1,35 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Pagination, Scrollbar } from 'swiper/modules';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const swiperFullwidth = new Swiper('.swiper-fullwidth',{
-    modules : [Navigation, Pagination, Scrollbar],
+const numberCurrent = document.querySelector('.number-current');
+
+const swiperFullwidth = new Swiper('.swiper-fullwidth', {
+    modules: [Pagination, Scrollbar],
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    loop: true,
-    speed: 400,
+
     scrollbar: {
         el: '.swiper-scrollbar',
+        draggable: true,
     },
-    spaceBetween: 100,
+
+    loop: true,
+    speed: 700,
+    spaceBetween: 0,
+
+    on: {
+        slideChange(swiper) {
+            if (numberCurrent) {
+                const i = swiper.realIndex + 1;
+                numberCurrent.textContent = i < 10 ? '0' + i : String(i);
+            }
+        },
+    },
 });

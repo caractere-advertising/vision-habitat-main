@@ -1,25 +1,41 @@
 <?php
-$card           = get_sub_field('card');
+// Layout ACF : card_solutions
+// Champs : card (répéteur)
+//   └── card_image (image), card_category (texte), card_link (lien)
+
+$cards = get_sub_field('card');
 ?>
 
-
-<?php if($card):?>
-
-<section class="card-solutions">
-    <div class="container">
-        <?php 
-        foreach($card as $c) {
+<?php if ($cards) : ?>
+<section class="section-card-solutions">
+    <div class="cards-grid">
+        <?php foreach ($cards as $c) :
+            $image    = $c['card_image'];
             $category = $c['card_category'];
-            $card_image     = $c['card_image'];
-            $link = $c['card_link'];
-            ?>
-            <div class="card">
-                <p id="card_category"><?php echo $category; ?></p>
-                <a href="<?php echo $link['url']; ?>" class="btn" target="<?php echo $link['target']; ?>">
-                    <?php echo $link['title']; ?>
-                </a>
+            $link     = $c['card_link'];
+        ?>
+        <div class="card">
+
+            <div class="card-image">
+                <?php if ($image) : ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                <?php endif; ?>
+                <?php if ($link) : ?>
+                    <a href="<?php echo $link['url']; ?>" class="card-plus">+</a>
+                <?php endif; ?>
             </div>
-        <?php } ?>
+
+            <div class="card-body">
+                <?php if ($category) : ?>
+                    <span class="card-category"><?php echo $category; ?></span>
+                <?php endif; ?>
+                <?php if ($link) : ?>
+                    <p class="card-title"><?php echo $link['title']; ?></p>
+                <?php endif; ?>
+            </div>
+
+        </div>
+        <?php endforeach; ?>
     </div>
 </section>
-<?php endif;?>
+<?php endif; ?>
