@@ -1,4 +1,6 @@
+<?php var_dump(get_sub_field('card')); ?>
 <?php
+<<<<<<< HEAD
 // Layout ACF : card_solutions
 // Champs : card (répéteur)
 //   └── card_image (image), card_category (texte), card_link (lien)
@@ -39,3 +41,30 @@ $cards = get_sub_field('card');
     </div>
 </section>
 <?php endif; ?>
+=======
+$card           = get_sub_field('card');
+$card_category           = get_sub_field('card_category');
+$card_image           = get_sub_field('card_image');
+$card_link           = get_sub_field('card_link');
+?>
+
+
+<?php if( $cards ) : ?>
+<section class="card-solutions">
+  <div class="container">
+    <?php foreach( $cards as $c ) : ?>
+      <div class="card">
+        <p><?php echo $c['card_category']; ?></p>
+        <?php if( $c['card_link'] ) : ?>
+          <a href="<?php echo $c['card_link']['url']; ?>" 
+             class="btn" 
+             target="<?php echo $c['card_link']['target']; ?>">
+            <?php echo $c['card_link']['title']; ?>
+          </a>
+        <?php endif; ?>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</section>
+<?php endif; ?>
+>>>>>>> b7f71c0a3d19fa39b86f8a027121a014c2283ad6

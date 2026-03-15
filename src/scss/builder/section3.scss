@@ -11,13 +11,11 @@
     gap: 28px;
   }
 
-  // ── Card ───────────────────────────────────────────────
   .card {
     display: flex;
     flex-direction: column;
   }
 
-  // Image + bouton +
   .card-image {
     position: relative;
     width: 100%;
@@ -47,7 +45,9 @@
       justify-content: center;
       text-decoration: none;
       line-height: 1;
-      transition: background-color 0.25s ease, color 0.25s ease;
+      transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
 
       &:hover {
         background-color: $primaryColor;
@@ -56,7 +56,6 @@
     }
   }
 
-  // Texte sous l'image
   .card-body {
     padding-top: 18px;
     display: flex;
