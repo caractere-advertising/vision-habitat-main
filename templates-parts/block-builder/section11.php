@@ -1,6 +1,14 @@
 <?php
 // Layout ACF : block_video
+<<<<<<< HEAD
 // Champs : text_ev (wysiwyg), paragraph (texte), video (url)
+=======
+// Champs : text_ev (wysiwyg), paragraph (text), , video (video)
+
+$text_ev = get_sub_field("text_ev");
+$paragraph = get_sub_field("paragraph");
+$video = get_seb_field("video");
+>>>>>>> 640e6ee (fixes style 16-03)
 
 $text_ev   = get_sub_field("text_ev");
 $paragraph = get_sub_field("paragraph");

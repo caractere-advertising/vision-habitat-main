@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 640e6ee (fixes style 16-03)
 <?php
 // Layout ACF : à définir dans builder.php
 // Champs : slides (répéteur)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 // Layout ACF : section_img_ev
@@ -66,4 +65,26 @@ $price     = get_sub_field('price');
         <span class="projects-number">01</span>
     </div>
 
+<<<<<<< HEAD
 </section>
+=======
+</section>
+
+<section>
+    <div class="container">
+        <div class="section_blue">
+            <h3><?php echo $title?></h3>
+            <p><?php echo $paragraph ?></p>
+            <a href="#"><?php echo $link ?></a>
+        </div>
+        <div class="section_photo">
+            <div>
+                <img src="" alt="" <?php echo $img ?>>
+            </div>
+            <p><?php echo $location ?></p>
+            <p><?php echo $price ?></p>
+        </div>
+    </div>
+
+</section>
+>>>>>>> 640e6ee (fixes style 16-03)

@@ -12,12 +12,25 @@ if (have_rows('builder')):
             get_template_part($repo . '/section2');
         elseif (get_row_layout() == 'card_solutions'):
           get_template_part($repo . '/section3');
+<<<<<<< HEAD
         elseif (get_row_layout() == 'header_hero'):
             get_template_part($repo . '/section1');
         elseif (get_row_layout() == 'block_real_proj'):
             get_template_part($repo . '/section4');
         elseif (get_row_layout() == 'gallery_slider'):
             get_template_part($repo . '/section5');
+=======
+
+        elseif (get_row_layout() == 'header_hero'):
+            get_template_part($repo . '/section1');
+
+        elseif (get_row_layout() == 'block_real_proj'):
+            get_template_part($repo . '/section4');
+
+        elseif (get_row_layout() == 'gallery_slider'):
+            get_template_part($repo . '/section5');
+
+>>>>>>> 640e6ee (fixes style 16-03)
         elseif (get_row_layout() == 'images_overlay'):
             get_template_part($repo . '/section6');
         elseif (get_row_layout() == 'section_img_ev'):

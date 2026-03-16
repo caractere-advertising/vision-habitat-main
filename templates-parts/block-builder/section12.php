@@ -1,10 +1,19 @@
 <?php
 // Layout ACF : block_actu
+<<<<<<< HEAD
 // Champs : title (wysiwyg), link (lien)
 // Répéteur : articles > image (image), category (texte), paragraph (texte), lien (lien)
 
 $title = get_sub_field("title");
 $link  = get_sub_field("link");
+=======
+// Champs : title (wysiwyg),image (image),category(wysiwyg) , paragraph (paragraph),link (lien)
+$title =get_sub_field("title");
+$image=get_sub_field("image");
+$cat=get__sub_field("category");
+$paragraph = get_sub_field("paragraph");
+$link=get_sub_field("link");
+>>>>>>> 640e6ee (fixes style 16-03)
 ?>
 
 <section class="section-actu">

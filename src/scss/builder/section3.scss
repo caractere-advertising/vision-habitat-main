@@ -2,7 +2,11 @@
 
 .section-card-solutions {
   background-color: $white;
+<<<<<<< HEAD
   padding: 80px ;
+=======
+  padding: 80px;
+>>>>>>> 640e6ee (fixes style 16-03)
   border-bottom: 1px solid $lightGray;
 
   .cards-grid {
@@ -81,7 +85,11 @@
 // Responsive
 @media (max-width: 1024px) {
   .section-card-solutions {
+<<<<<<< HEAD
     padding: 60px ;
+=======
+    padding: 60px;
+>>>>>>> 640e6ee (fixes style 16-03)
 
     .cards-grid {
       gap: 20px;
