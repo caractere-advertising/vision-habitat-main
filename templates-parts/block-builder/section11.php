@@ -1,4 +1,7 @@
 <?php
+// Layout ACF : block_video
+// Champs : text_ev (wysiwyg), paragraph (text), , video (video)
+
 $text_ev = get_sub_field("text_ev");
 $paragraph = get_sub_field("paragraph");
 $video = get_seb_field("video");

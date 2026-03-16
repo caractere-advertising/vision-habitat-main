@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 // Layout ACF : à définir dans builder.php
 // Champs : slides (répéteur)
@@ -7,7 +7,6 @@
 $slides = get_sub_field('slides');
 ?>
 
-<?php if ($slides) : ?>
     <section class="section-gallery">
 
         <div class="swiper swiper-gallery">
@@ -51,20 +50,3 @@ $slides = get_sub_field('slides');
         </div>
 
     </section>
-<?php endif; ?>
-=======
-// section slider avec plein de carrés gris
-
-<section>
-    <div class="container">
-        <div class="img_container"></div>
-        <div class="content_container"></div>
-    
-        <div class="cta_btn">
-            <div class="right_btn"></div>
-            <div class="right_btn"></div>
-
-        </div>
-    </div>
-</section>
->>>>>>> b7f71c0a3d19fa39b86f8a027121a014c2283ad6

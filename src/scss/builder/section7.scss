@@ -6,14 +6,14 @@
 
 .projects-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 480px;
+  grid-template-columns: 50% 50%;
+  min-height: 500px;
 }
 
 // Panneau bleu
 .projects-left {
   background-color: $primaryColor;
-  padding: 70px 8%;
+  padding: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,7 +90,6 @@
           font-size: 0.9rem;
           color: $white;
           font-weight: 400;
-          letter-spacing: 0.04em;
         }
 
         .slide-price {
@@ -98,7 +97,6 @@
           color: $primaryColor;
           font-size: 0.75rem;
           font-weight: 500;
-          letter-spacing: 0.06em;
           padding: 8px 18px;
           border-radius: 40px;
         }
@@ -111,7 +109,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 28px 10%;
+  padding: 28px;
   border-top: 1px solid $lightGray;
 }
 
@@ -132,7 +130,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1;
     transition:
       background-color 0.2s ease,
       color 0.2s ease,
@@ -163,7 +160,6 @@
   font-size: 2.4rem;
   font-weight: 700;
   color: $secondaryColor;
-  letter-spacing: 0.04em;
   flex-shrink: 0;
   min-width: 48px;
   text-align: right;
@@ -173,7 +169,7 @@
 
 @media (max-width: 768px) {
   .projects-inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .projects-right {
@@ -181,10 +177,10 @@
   }
 
   .projects-left {
-    padding: 50px 5%;
+    padding: 50px ;
   }
 
   .projects-controls {
-    padding: 20px 5%;
+    padding: 20px;
   }
 }

@@ -18,7 +18,6 @@
     span {
       font-size: 0.65rem;
       font-weight: 500;
-      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: $primaryColor;
       white-space: nowrap;
@@ -42,18 +41,16 @@
     margin-top: 20px;
     font-size: 0.95rem;
     color: $txtColor;
-    line-height: 1.7;
   }
 
   .btn-cta {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 14px;
     color: $primaryColor;
     text-decoration: none;
     font-size: 0.68rem;
     font-weight: 500;
-    letter-spacing: 0.22em;
     text-transform: uppercase;
     padding-bottom: 6px;
     border-bottom: 1px solid rgba($primaryColor, 0.4);
@@ -64,7 +61,6 @@
     &::after {
       content: "↗";
       font-size: 0.85rem;
-      line-height: 1;
     }
 
     &:hover {
@@ -86,7 +82,7 @@
     padding: 60px 0;
 
     .section-inner {
-      margin: 0 5%;
+      margin: 0;
       max-width: 90%;
     }
   }

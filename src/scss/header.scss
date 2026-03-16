@@ -1,8 +1,5 @@
 @use "./variables/colors.scss" as *;
 
-// ============================================================
-// Header
-// ============================================================
 
 .site-header {
   position: absolute;
@@ -20,7 +17,6 @@
   gap: 40px;
 }
 
-// Logo
 .header-logo {
   flex-shrink: 0;
   width: 180px;
@@ -33,7 +29,6 @@
   }
 }
 
-// Navigation principale
 .header-nav {
   flex: 1;
   display: flex;
@@ -67,7 +62,6 @@
         }
       }
 
-      // Dropdown
       &.menu-item-has-children {
         > a::after {
           content: "";
@@ -136,7 +130,6 @@
   }
 }
 
-// Séparateur + burger
 .header-actions {
   display: flex;
   align-items: center;
@@ -188,9 +181,7 @@
   }
 }
 
-// ============================================================
-// Menu mobile (panneau plein écran)
-// ============================================================
+
 
 .mobile-menu {
   position: fixed;
@@ -261,9 +252,9 @@
   }
 }
 
-// ============================================================
+
 // Responsive
-// ============================================================
+
 
 @media (max-width: 768px) {
   .site-header {

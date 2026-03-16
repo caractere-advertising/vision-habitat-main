@@ -2,7 +2,7 @@
 
 .section-card-solutions {
   background-color: $white;
-  padding: 80px 10%;
+  padding: 80px ;
   border-bottom: 1px solid $lightGray;
 
   .cards-grid {
@@ -21,7 +21,6 @@
     width: 100%;
     aspect-ratio: 4 / 5;
     background-color: $lightGray;
-    overflow: visible;
 
     img {
       width: 100%;
@@ -44,7 +43,6 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      line-height: 1;
       transition:
         background-color 0.25s ease,
         color 0.25s ease;
@@ -74,7 +72,6 @@
   .card-title {
     font-size: 0.78rem;
     font-weight: 500;
-    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: $primaryColor;
     margin: 0;
@@ -84,7 +81,7 @@
 // Responsive
 @media (max-width: 1024px) {
   .section-card-solutions {
-    padding: 60px 5%;
+    padding: 60px ;
 
     .cards-grid {
       gap: 20px;
@@ -94,10 +91,10 @@
 
 @media (max-width: 768px) {
   .section-card-solutions {
-    padding: 50px 5%;
+    padding: 50px;
 
     .cards-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 100%;
       gap: 32px;
     }
   }

@@ -1,13 +1,16 @@
-<?php
-// Layout ACF : à définir dans builder.php
-// Champs : categorie (texte), text_evidence (wysiwyg), details (wysiwyg), paragraph (wysiwyg), link (lien)
 
-$cat           = get_sub_field('categorie');
+<?php
+// Champs : categorie (texte), text_evidence (wysiwyg), details (wysiwyg), paragraph (wysiwyg), link (lien)
+// j'ai enlevé détails
+
+
+$cat           = get_sub_field('category');
 $text_evidence = get_sub_field('text_evidence');
 $details       = get_sub_field('details');
 $paragraph     = get_sub_field('paragraph');
 $link          = get_sub_field('link');
 ?>
+
 
 <section class="section-two-col">
     <div class="two-col-inner">

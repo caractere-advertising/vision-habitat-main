@@ -1397,9 +1397,9 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swipe
         clickable: true,
     },
 
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    spaceBetween: 20,
+    slidesPerView: 1.2,
+    //centeredSlides: true,
+    spaceBetween: 100,
     loop: true,
     speed: 600,
 });

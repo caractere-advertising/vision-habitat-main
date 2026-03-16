@@ -3,6 +3,7 @@ $lien1 = get_sub_field("lien1");
 $lien2 = get_sub_field("lien2");
 $lien3 = get_sub_field("lien3");
 $lien4 = get_sub_field("lien4");
+// partir sur un répeteur
 
 ?>
 
@@ -27,6 +28,6 @@ $lien4 = get_sub_field("lien4");
         <span class="link_numero">04</span>
         <span class="link_list"><?php echo $lien4 ?></span>
         </a>
-
+    
     </div>
 </section>

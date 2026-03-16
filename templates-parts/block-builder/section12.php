@@ -1,4 +1,6 @@
 <?php
+// Layout ACF : block_actu
+// Champs : title (wysiwyg),image (image),category(wysiwyg) , paragraph (paragraph),link (lien)
 $title =get_sub_field("title");
 $image=get_sub_field("image");
 $cat=get__sub_field("category");

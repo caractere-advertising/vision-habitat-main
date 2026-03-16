@@ -1,4 +1,7 @@
 <?php
+
+// Layout ACF : block_discover
+// Champs : image (image), title (wysiwyg), , paragraph (paragraph),link (lien)
 $image = get_sub_field("image");
 $title = get_sub_field("title");
 $paragraph = get_sub_field("paragraph");
