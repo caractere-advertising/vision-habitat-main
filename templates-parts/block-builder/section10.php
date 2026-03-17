@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 =======
 <?php
+<<<<<<< HEAD
 $lien1 = get_sub_field("lien1");
 $lien2 = get_sub_field("lien2");
 $lien3 = get_sub_field("lien3");
@@ -10,6 +11,8 @@ $lien4 = get_sub_field("lien4");
 
 
 <?php
+=======
+>>>>>>> 164b765 (structure et style2)
 // Layout ACF : link_container
 // Répéteur : liens > lien (lien)
 ?>
@@ -34,6 +37,7 @@ $lien4 = get_sub_field("lien4");
     ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
          <a href="#" class="">
         <span class="link_numero">03</span>
@@ -47,4 +51,6 @@ $lien4 = get_sub_field("lien4");
     
     </div>
 >>>>>>> 640e6ee (fixes style 16-03)
+=======
+>>>>>>> 164b765 (structure et style2)
 </section>

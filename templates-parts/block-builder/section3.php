@@ -38,6 +38,7 @@ $cards = get_sub_field('card');
             <?php endforeach; ?>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     </section>
 =======
         <?php endforeach; ?>
@@ -45,4 +46,7 @@ $cards = get_sub_field('card');
 </section>
 
 >>>>>>> 640e6ee (fixes style 16-03)
+=======
+    </section>
+>>>>>>> 164b765 (structure et style2)
 <?php endif; ?>

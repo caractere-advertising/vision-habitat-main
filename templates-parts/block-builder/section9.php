@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Layout ACF : block_discover
 // Champs : image (image), title (wysiwyg), paragraph (paragraph), link (lien)
 $image     = get_sub_field("image");
@@ -11,6 +12,12 @@ $title     = get_sub_field("title");
 $image = get_sub_field("image");
 $title = get_sub_field("title");
 >>>>>>> 640e6ee (fixes style 16-03)
+=======
+// Layout ACF : block_discover
+// Champs : image (image), title (wysiwyg), paragraph (paragraph), link (lien)
+$image     = get_sub_field("image");
+$title     = get_sub_field("title");
+>>>>>>> 164b765 (structure et style2)
 $paragraph = get_sub_field("paragraph");
 $link      = get_sub_field("link");
 ?>
