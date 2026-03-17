@@ -1,24 +1,33 @@
 <?php
-
 // Layout ACF : block_discover
-// Champs : image (image), title (wysiwyg), , paragraph (paragraph),link (lien)
-$image = get_sub_field("image");
-$title = get_sub_field("title");
+// Champs : image (image), title (wysiwyg), paragraph (paragraph), link (lien)
+$image     = get_sub_field("image");
+$title     = get_sub_field("title");
 $paragraph = get_sub_field("paragraph");
-$link = get_sub_field("link");
+$link      = get_sub_field("link");
 ?>
 
-<section>
-    <div class="container">
-        <div>
-            <img src="" alt="" <?php echo $image ?>>
-        </div>
-        <div>
-            <h4><?php echo $title ?></h4>
-            <p> <?php echo $paragraph ?> </p>
-            <div class="link_container">
-                <a href="#"><?php echo $link ?></a>
-            </div>
-        </div>
+<section class="section-discover">
+
+    <div class="discover-left" <?php if ($image) { echo 'style="background-image: url(' . $image['url'] . ')"'; } ?>>
     </div>
+
+    <div class="discover-right">
+
+        <?php if ($title) { ?>
+        <div class="discover-title"><?php echo $title; ?></div>
+        <?php } ?>
+
+        <?php if ($paragraph) { ?>
+        <p class="discover-paragraph"><?php echo $paragraph; ?></p>
+        <?php } ?>
+
+        <?php if ($link) { ?>
+        <a href="<?php echo $link['url']; ?>" class="discover-btn">
+            <?php echo $link['title']; ?> <span>›</span>
+        </a>
+        <?php } ?>
+
+    </div>
+
 </section>

@@ -1,0 +1,81 @@
+@use "./../variables/colors.scss" as *;
+
+.section-video {
+    background-color: #f4f4f4;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .video-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 50px;
+
+        .video-top-left {
+            width: 45%;
+
+            .video-text {
+                color: $primaryColor;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 1.4;
+                margin-bottom: 30px;
+            }
+
+            .video-line {
+                border: none;
+                border-top: 1px solid $lightGray;
+                margin: 0;
+            }
+        }
+
+        .video-top-right {
+            width: 40%;
+            padding-top: 20px;
+
+            .video-paragraph {
+                color: $txtColor;
+                font-size: 0.85rem;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .video-wrapper {
+        background-color: $primaryColor;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-video {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .video-top {
+            flex-direction: column;
+            gap: 30px;
+
+            .video-top-left {
+                width: 100%;
+            }
+
+            .video-top-right {
+                width: 100%;
+                padding-top: 0;
+            }
+        }
+    }
+}

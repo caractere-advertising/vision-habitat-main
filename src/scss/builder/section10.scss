@@ -1,0 +1,55 @@
+@use "./../variables/colors.scss" as *;
+
+.section-links {
+    background-color: $white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .links-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top: 1px solid $lightGray;
+        text-decoration: none;
+
+        &:last-child {
+            border-bottom: 1px solid $lightGray;
+        }
+
+        .links-numero {
+            font-size: 0.65rem;
+            color: $secondaryColor;
+            letter-spacing: 0.1em;
+            min-width: 20px;
+        }
+
+        .links-label {
+            font-size: 3rem;
+            font-weight: 300;
+            color: $primaryColor;
+            line-height: 1;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-links {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .links-item {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .links-label {
+                font-size: 2rem;
+            }
+        }
+    }
+}

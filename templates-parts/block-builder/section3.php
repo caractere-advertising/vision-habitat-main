@@ -7,35 +7,35 @@ $cards = get_sub_field('card');
 ?>
 
 <?php if ($cards) : ?>
-<section class="section-card-solutions">
-    <div class="cards-grid">
-        <?php foreach ($cards as $c) :
-            $image    = $c['card_image'];
-            $category = $c['card_category'];
-            $link     = $c['card_link'];
-        ?>
-        <div class="card">
+    <section class="section-card-solutions">
+        <div class="cards-grid">
+            <?php foreach ($cards as $c) :
+                $image    = $c['card_image'];
+                $category = $c['card_category'];
+                $link     = $c['card_link'];
+            ?>
+                <div class="card">
 
-            <div class="card-image">
-                <?php if ($image) : ?>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                <?php endif; ?>
-                <?php if ($link) : ?>
-                    <a href="<?php echo $link['url']; ?>" class="card-plus">+</a>
-                <?php endif; ?>
-            </div>
+                    <div class="card-image">
+                        <?php if ($image) : ?>
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                        <?php endif; ?>
+                        <?php if ($link) : ?>
+                            <a href="<?php echo $link['url']; ?>" class="card-plus">+</a>
+                        <?php endif; ?>
+                    </div>
 
-            <div class="card-body">
-                <?php if ($category) : ?>
-                    <span class="card-category"><?php echo $category; ?></span>
-                <?php endif; ?>
-                <?php if ($link) : ?>
-                    <p class="card-title"><?php echo $link['title']; ?></p>
-                <?php endif; ?>
-            </div>
+                    <div class="card-body">
+                        <?php if ($category) : ?>
+                            <span class="card-category"><?php echo $category; ?></span>
+                        <?php endif; ?>
+                        <?php if ($link) : ?>
+                            <p class="card-title"><?php echo $link['title']; ?></p>
+                        <?php endif; ?>
+                    </div>
 
+                </div>
+            <?php endforeach; ?>
         </div>
-        <?php endforeach; ?>
-    </div>
-</section>
+    </section>
 <?php endif; ?>
