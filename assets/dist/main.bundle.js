@@ -1362,6 +1362,19 @@ if (burgerBtn && mobileMenu) {
 
 /***/ },
 
+/***/ "./src/js/scroll-top.js"
+/*!******************************!*\
+  !*** ./src/js/scroll-top.js ***!
+  \******************************/
+() {
+
+window.addEventListener('scroll', () => {
+    const btn = document.querySelector('.scroll-top');
+    btn.classList.toggle('visible', window.scrollY > 300);
+});
+
+/***/ },
+
 /***/ "./src/js/swiper-gallery.js"
 /*!**********************************!*\
   !*** ./src/js/swiper-gallery.js ***!
@@ -12182,6 +12195,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_swiper_gallery_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/swiper-gallery.js */ "./src/js/swiper-gallery.js");
 /* harmony import */ var _js_header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/header.js */ "./src/js/header.js");
 /* harmony import */ var _js_header_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_header_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/scroll-top.js */ "./src/js/scroll-top.js");
+/* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
