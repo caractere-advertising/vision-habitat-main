@@ -1,5 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+
+>>>>>>> b50f9b9 (avancement18-03)
 <?php
 <<<<<<< HEAD
 $lien1 = get_sub_field("lien1");

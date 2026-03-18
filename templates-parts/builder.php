@@ -45,7 +45,12 @@ if (have_rows('builder')):
             get_template_part($repo . '/section11');
         elseif (get_row_layout() == 'block_actu'):
             get_template_part($repo . '/section12');
+<<<<<<< HEAD
         elseif (get_row_layout() == 'footer'):
+=======
+            
+             elseif (get_row_layout() == 'footer'):
+>>>>>>> b50f9b9 (avancement18-03)
             get_template_part($repo . '/footer');
         endif;
 
