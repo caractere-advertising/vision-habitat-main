@@ -1,56 +1,68 @@
 @use "./../variables/colors.scss" as *;
 
 .section-citation {
-  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
 }
 
-
-
 .citation-block {
-  padding: 70px 0;
+  width: 90%;
+  background-color: $white;
+  padding: 70px;
+  display: flex;
+  align-items: center;
 
   .citation-inner {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 120px ;
-    gap: 40px;
-    align-items: start;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 
   .citation-name {
-    font-size: 0.62rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: $lightGray;
-    padding-top: 8px;
+    font-size: 1.2rem;
+    color: $primaryColor;
   }
 
-  .citation-name{
-
-  font-size: x-large;
+  .citation-text {
+    font-size: 2rem;
+    line-height: 1;
+    color: $txtColor;
   }
 }
 
-
-
 .citation-blue {
+  width: 100%;
   background-color: $primaryColor;
+  display: flex;
+  align-items: center;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: stretch;
+
+  .citation-deco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 260px;
+    background-color: $white;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
 
   .citation-blue-inner {
     padding: 70px;
     display: flex;
     flex-direction: column;
     gap: 28px;
-    flex: 1;
-    position: relative;
-    z-index: 1;
+    width: 100%;
   }
 
-  
+  .citation-blue-title {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+  }
 
   .btn-cta {
     display: inline-flex;
@@ -65,12 +77,9 @@
     padding-bottom: 6px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     align-self: flex-start;
-    transition:
-      gap 0.25s ease,
-      border-color 0.25s ease;
 
     &::after {
-      content: "↗";
+      content: '↘';
       font-size: 1rem;
     }
 
@@ -79,30 +88,37 @@
       border-color: $white;
     }
   }
-
-  
 }
 
-// ── Responsive
+@media (max-width: 1024px) {
+  .citation-block {
+    padding: 50px;
+  }
+
+  .citation-blue .citation-blue-inner {
+    padding: 50px;
+  }
+}
 
 @media (max-width: 768px) {
-  .citation-block {
-    padding: 50px 0;
+  .section-citation {
+    flex-direction: column;
+  }
 
-    .citation-inner {
-      grid-template-columns: 100%;
-      gap: 16px;
-      margin: 0;
-    }
+  .citation-block {
+    width: 100%;
+    padding: 50px;
   }
 
   .citation-blue {
-    .citation-blue-inner {
-      padding: 50px 5%;
-    }
+    width: 100%;
 
     .citation-deco {
       display: none;
+    }
+
+    .citation-blue-inner {
+      padding: 50px;
     }
   }
 }

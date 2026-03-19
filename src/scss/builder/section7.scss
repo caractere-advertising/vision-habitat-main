@@ -13,12 +13,16 @@
 // Panneau bleu
 .projects-left {
   background-color: $primaryColor;
-  padding: 70px;
+  padding: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 24px;
 
+  .projects-title{
+     color: rgba(255, 255, 255, 0.7);
+     font-size: 2rem;
+  }
   .projects-paragraph {
     font-size: 0.85rem;
     line-height: 1.8;
@@ -34,12 +38,11 @@
     text-decoration: none;
     font-size: 0.68rem;
     font-weight: 500;
-    letter-spacing: 0.22em;
     text-transform: uppercase;
     padding-bottom: 6px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     align-self: flex-start;
-    margin-top: 16px;
+    margin-top: 150px;
     transition:
       gap 0.25s ease,
       border-color 0.25s ease;
@@ -87,7 +90,7 @@
         padding: 18px 24px;
 
         .slide-location {
-          font-size: 0.9rem;
+          font-size: 1.5rem;
           color: $white;
           font-weight: 400;
         }
@@ -145,7 +148,7 @@
 
 .swiper-scrollbar-projects {
   flex: 1;
-  height: 1px;
+  height: 4px;
   background-color: $lightGray;
   position: relative;
 

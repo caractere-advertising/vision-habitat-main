@@ -38,8 +38,11 @@
     }
   }
 
-  //.two-col-title {
-// }
+  .two-col-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    max-width: 350px;
+ }
 }
 
 .two-col-right {
@@ -47,6 +50,7 @@
   flex-direction: column;
   gap: 20px;
   padding-top: 60px;
+  max-width: 500px;
 
   .two-col-details,
   .two-col-paragraph {
@@ -76,7 +80,7 @@
       border-color 0.25s ease;
 
     &::after {
-      content: "↗";
+      content: '↘';
       font-size: 0.85rem;
       line-height: 1;
     }

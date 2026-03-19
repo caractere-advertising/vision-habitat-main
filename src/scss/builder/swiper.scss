@@ -21,6 +21,10 @@
     
     .background {
       position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       z-index: 0;
 
       img {
@@ -29,9 +33,6 @@
         object-fit: cover;
         display: block;
       }
-
-      
-     
     }
 
     
@@ -42,7 +43,14 @@
       z-index: 1;
       max-width: 60%;
 
-      
+      .content-titre {
+        color: $white;
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 1.2;
+        margin-bottom: 30px;
+      }
+
       .btn-cta {
         display: inline-flex;
         align-items: center;
@@ -57,7 +65,7 @@
         transition: gap 0.25s ease, border-color 0.25s ease;
 
         &::after {
-          content: '↗';
+          content: '↘';
           font-size: 0.85rem;
           line-height: 1;
         }

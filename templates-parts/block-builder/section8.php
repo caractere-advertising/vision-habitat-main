@@ -24,6 +24,7 @@ $link     = get_sub_field('link');
             <?php endif; ?>
         </div>
     </div>
+    
 
     <div class="citation-blue">
         <div class="citation-blue-inner">
