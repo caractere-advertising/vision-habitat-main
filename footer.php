@@ -1,44 +1,44 @@
+<?php var_dump(get_row_layout()); ?>
+<?php var_dump(get_row()); ?>
+
+
 <?php
-// Champs ACF : footer_titre (wysiwyg), footer_texte (texte), footer_lien (lien)
-$titre = get_sub_field('footer_titre');
-$texte = get_sub_field('footer_texte');
-$lien  = get_sub_field('footer_lien');
+
+$text_ev   = get_field('text_ev');
+$paragraph = get_field('paragraph');
+$contact   = get_field('contact');
+$made_by   = get_field('made_by');
 ?>
-
 <footer class="site-footer">
-
     <div class="footer-top">
-
         <div class="footer-left">
-            <?php if ($titre) { ?>
-            <div class="footer-titre"><?php echo $titre; ?></div>
+            <?php if ($text_ev) { ?>
+                <div class="footer-titre"><?php echo $text_ev; ?></div>
             <?php } ?>
-            <?php if ($lien) { ?>
-            <a href="<?php echo $lien['url']; ?>" class="footer-lien">
-                <?php echo $lien['title']; ?> <span>↗</span>
-            </a>
+            <?php if ($contact) { ?>
+                <a href="mailto:<?php echo $contact; ?>" class="footer-lien">
+                    <?php echo $contact; ?>
+                </a>
             <?php } ?>
         </div>
-
         <div class="footer-right">
-            <?php if ($texte) { ?>
-            <p class="footer-texte"><?php echo $texte; ?></p>
+            <?php if ($paragraph) { ?>
+                <p class="footer-texte"><?php echo $paragraph; ?></p>
             <?php } ?>
         </div>
-
     </div>
-
     <div class="footer-bottom">
-        <span class="footer-url">vision-habitat.be</span>
+        <?php if ($made_by) { ?>
+            <p class="footer-made-by"><?php echo $made_by; ?></p>
+        <?php } ?>
         <?php wp_nav_menu([
             'theme_location' => 'footer',
             'container'      => false,
             'menu_class'     => 'footer-nav',
         ]); ?>
     </div>
-
 </footer>
-
 <a href="#" class="scroll-top">↖</a>
-
 <?php wp_footer(); ?>
+</body>
+</html>
