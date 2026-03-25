@@ -6,11 +6,13 @@
   background-color: $white;
   display: flex;
   align-items: center;
+  height: 100vh;
 }
 
 .swiper-gallery {
   width: 100%;
   overflow: hidden;
+  height: 100vh;
 
   .swiper-slide {
     width: 60%;
@@ -21,6 +23,7 @@
 
     .gallery-image {
       width: 100%;
+      max-height: 100vh;
       aspect-ratio: 4 / 3;
       background-color: $lightGray;
 
@@ -58,12 +61,15 @@
 
 // Dots pagination
 .gallery-pagination {
-  margin-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 80%;
+  position: relative;
+  bottom: 50px;
 
   .swiper-pagination-gallery {
     position: relative;
+    padding-right: 80px;
 
     .swiper-pagination-bullet {
       background-color: $lightGray;

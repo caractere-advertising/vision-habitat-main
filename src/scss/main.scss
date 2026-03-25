@@ -12,6 +12,7 @@ Tu gagneras du temps dans ton css et le reste du développement.
 
 @use "base/header.scss" as *;
 @use "base/footer.scss" as *;
+@use "base/single-reference.scss" as *;
 
 @use "builder/swiper.scss" as *;
 @use "builder/section2.scss" as *;

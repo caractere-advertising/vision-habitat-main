@@ -6,6 +6,8 @@
 
 include_once get_template_directory() . '/includes/setup.php';
 
+require_once get_template_directory() . '/includes/class-cpt-references.php';
+
 function vh_enqueue_assets() {
 
     $dist_path = get_template_directory() . '/assets/dist/';

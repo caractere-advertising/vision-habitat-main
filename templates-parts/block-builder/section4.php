@@ -14,7 +14,7 @@ $link          = get_sub_field('link');
 
 <section class="section-two-col">
     <div class="container columns two-col-inner">
-        <div class="two-col-left">
+        <div class="two-col-left col-50">
             <?php if ($cat) : ?>
             <div class="section-label">
                 <span><?= $cat; ?></span>
@@ -28,7 +28,7 @@ $link          = get_sub_field('link');
             <?php endif; ?>
         </div>
 
-        <div class="two-col-right">
+        <div class="two-col-right col-50">
             <?php if ($details) : ?>
             <div class="two-col-details"><?= $details; ?></div>
             <?php endif; ?>
@@ -45,6 +45,5 @@ $link          = get_sub_field('link');
             </a>
             <?php endif; ?>
         </div>
-
     </div>
 </section>

@@ -1,11 +1,9 @@
 <?php 
-var_dump(get_row_layout());
-var_dump(get_row());
 
-$text_ev   = get_field('text_ev');
-$paragraph = get_field('paragraph');
-$contact   = get_field('contact');
-$made_by   = get_field('made_by');
+$text_ev   = get_field('text_ev','options');
+$paragraph = get_field('paragraph','options');
+$contact   = get_field('contact', 'options');
+$made_by   = get_field('made_by', 'options');
 ?>
 
 <footer class="site-footer">

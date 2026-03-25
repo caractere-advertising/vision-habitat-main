@@ -3,15 +3,26 @@
   max-width: 1200px;
   margin: auto;
 
-  &.columns {
-    /* J'utilise cette class la pour ajouter un "display flex" | Affichage en plusieurs colonnes sur le site */
+  &.columns,
+  &.flex {
     display: flex;
     gap: 50px;
+
+    @for $i from 1 through 100 {
+      .col-#{$i} {
+        width: $i * 1%;
+      }
+    }
   }
 
   &.grid {
     display: grid;
     gap: 50px;
+  }
+
+  &.-full {
+    width: 90vw;
+    max-width: 1500px;
   }
 }
 
