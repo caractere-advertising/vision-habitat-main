@@ -1,97 +1,97 @@
 @use "./../variables/colors.scss" as *;
 
 .section-discover {
-    display: flex;
+  display: flex;
+  min-height: 70vh;
+  align-items: stretch;
+  width: 60%;
+  margin: 0 auto;
+
+  .discover-left {
+    width: 50%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     min-height: 70vh;
-    align-items: stretch;
-     width: 60%;
-    margin: 0 auto;
+    background-color: $primaryColor;
+    background-size: cover;
+    background-position: center;
+  }
 
-    .discover-left {
-        width: 50%;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-left: 60px;
-        padding-right: 60px;
-        min-height: 70vh;
-        background-color: $primaryColor;
-        background-size: cover;
-        background-position: center;
+  .discover-right {
+    width: 50%;
+    background-color: rgb(229, 229, 229);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    .discover-title {
+      color: $primaryColor;
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
     }
 
-    .discover-right {
-        width: 50%;
-        background-color:rgb(229, 229, 229) ;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-left: 60px;
-        padding-right: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-
-        .discover-title {
-            color: $primaryColor;
-            font-size: 2.2rem;
-            line-height: 1.2;
-            margin-bottom: 30px;
-        }
-
-        .discover-paragraph {
-            color: $txtColor;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 50px;
-        }
-
-        .discover-btn {
-            margin-top: auto;
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background-color: $secondaryColor;
-            color: $white;
-            text-decoration: none;
-            font-size: 0.7rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            padding: 16px 30px;
-            align-self: flex-end;
-        }
+    .discover-paragraph {
+      color: $txtColor;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 50px;
     }
+
+    .discover-btn {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background-color: $secondaryColor;
+      color: $white;
+      text-decoration: none;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 16px 30px;
+      align-self: flex-end;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
-    .section-discover {
-        .discover-right {
-            padding-top: 50px;
-            padding-bottom: 50px;
-            padding-left: 40px;
-            padding-right: 40px;
-        }
+  .section-discover {
+    .discover-right {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
+  }
 }
 
 @media (max-width: 768px) {
-    .section-discover {
-        flex-direction: column;
+  .section-discover {
+    flex-direction: column;
 
-        .discover-left {
-            width: 100%;
-            min-height: 300px;
-        }
-
-        .discover-right {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            padding-left: 5%;
-            padding-right: 5%;
-
-            .discover-btn {
-                align-self: flex-start;
-            }
-        }
+    .discover-left {
+      width: 100%;
+      min-height: 300px;
     }
+
+    .discover-right {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 5%;
+      padding-right: 5%;
+
+      .discover-btn {
+        align-self: flex-start;
+      }
+    }
+  }
 }

@@ -1,55 +1,52 @@
 @use "./../variables/colors.scss" as *;
 
 .section-links {
-    background-color: $white;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 10%;
-    padding-right: 10%;
+  background-color: $white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+  // Tu peux condenser tes 4 lignes padding en écrivant :
+  //// padding: 60px 10%; (le premier nombre fait haut / bas le second gauche / droite);
 
-    .links-item {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        border-top: 1px solid $lightGray;
-        text-decoration: none;
+  .links-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    border-top: 1px solid $lightGray;
+    text-decoration: none;
 
-        &:last-child {
-            border-bottom: 1px solid $lightGray;
-        }
-
-        .links-numero {
-            font-size: 0.65rem;
-            color: $secondaryColor;
-            letter-spacing: 0.1em;
-            min-width: 20px;
-        }
-
-        .links-label {
-            font-size: 3rem;
-            font-weight: 300;
-            color: $primaryColor;
-            line-height: 1;
-        }
+    &:last-child {
+      border-bottom: 1px solid $lightGray;
     }
+
+    .links-numero {
+      font-size: 0.65rem;
+      color: $secondaryColor;
+      letter-spacing: 0.1em;
+      min-width: 20px;
+    }
+
+    .links-label {
+      font-size: 3rem;
+      font-weight: 300;
+      color: $primaryColor;
+      line-height: 1;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    .section-links {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-left: 5%;
-        padding-right: 5%;
+  .section-links {
+    padding: 40px 5%;
 
-        .links-item {
-            padding-top: 20px;
-            padding-bottom: 20px;
+    .links-item {
+      padding: 20px 0;
 
-            .links-label {
-                font-size: 2rem;
-            }
-        }
+      .links-label {
+        font-size: 2rem;
+      }
     }
+  }
 }

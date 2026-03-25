@@ -94,11 +94,3 @@ function register_menus() {
     ]);
 }
 add_action('after_setup_theme', 'register_menus');
-
-function return_post(){
-    global $wpdb;   
-    $post = $wpdb->get_results("SELECT * FROM wp_posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY post_date DESC LIMIT 1");
-
-    return $post;
-}
-
