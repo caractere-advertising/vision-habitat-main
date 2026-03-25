@@ -13,24 +13,21 @@ $price     = get_sub_field('price');
 ?>
 
 <section class="section-projects">
-
     <div class="projects-inner">
 
         <div class="projects-left">
-            <?php if ($title) : ?>
-            <div class="projects-title">
-                <?php echo $title; ?>
-            </div>
+            <?php if ($title): ?>
+                <div class="projects-title"><?= $title; ?></div>
             <?php endif; ?>
 
-            <?php if ($paragraph) : ?>
-            <p class="projects-paragraph"><?php echo $paragraph; ?></p>
+            <?php if ($paragraph): ?>
+                <p class="projects-paragraph"><?= $paragraph; ?></p>
             <?php endif; ?>
 
             <?php if ($link) : ?>
-            <a href="<?php echo $link['url']; ?>" class="btn-cta">
-                <?php echo $link['title']; ?>
-            </a>
+                <a href="<?= $link['url']; ?>" class="btn-cta">
+                    <?= $link['title']; ?>
+                </a>
             <?php endif; ?>
         </div>
 
@@ -39,13 +36,13 @@ $price     = get_sub_field('price');
                 <div class="swiper-wrapper">
                     <?php if ($img) : ?>
                     <div class="swiper-slide">
-                        <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+                        <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
                         <div class="slide-info">
                             <?php if ($location) : ?>
-                            <span class="slide-location"><?php echo $location; ?></span>
+                            <span class="slide-location"><?= $location; ?></span>
                             <?php endif; ?>
                             <?php if ($price) : ?>
-                            <span class="slide-price"><?php echo $price; ?></span>
+                            <span class="slide-price"><?= $price; ?></span>
                             <?php endif; ?>
                         </div>
                     </div>

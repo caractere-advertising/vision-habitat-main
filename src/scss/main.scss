@@ -1,3 +1,18 @@
+/* 
+
+Si des class peuvent être centralisées et réutilisées sur plusieurs fichiers, n'hésite pas à créer un fichier séparé qu'on peut réutiliser partout 
+ex : couleurs, cta , fonts , animations , container ... 
+
+Tu gagneras du temps dans ton css et le reste du développement. 
+
+*/
+
+@use "variables/base.scss" as *;
+@use "variables/cta.scss" as *;
+
+@use "base/header.scss" as *;
+@use "base/footer.scss" as *;
+
 @use "builder/swiper.scss" as *;
 @use "builder/section2.scss" as *;
 @use "builder/section3.scss" as *;
@@ -10,6 +25,3 @@
 @use "builder/section10.scss" as *;
 @use "builder/section11.scss" as *;
 @use "builder/section12.scss" as *;
-@use "header.scss" as *;
-@use "builder/footer.scss" as *;
-

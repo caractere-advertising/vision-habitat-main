@@ -8,7 +8,7 @@ $cards = get_sub_field('card');
 
 <?php if ($cards) : ?>
     <section class="section-card-solutions">
-        <div class="cards-grid">
+        <div class="container cards-grid">
             <?php foreach ($cards as $c) :
                 $image    = $c['card_image'];
                 $category = $c['card_category'];
@@ -33,7 +33,6 @@ $cards = get_sub_field('card');
                             <p class="card-title"><?php echo $link['title']; ?></p>
                         <?php endif; ?>
                     </div>
-
                 </div>
             <?php endforeach; ?>
         </div>

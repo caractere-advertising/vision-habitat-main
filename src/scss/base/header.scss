@@ -1,5 +1,4 @@
-@use "./variables/colors.scss" as *;
-
+@use "./../variables/colors.scss" as *;
 
 .site-header {
   position: absolute;
@@ -181,8 +180,6 @@
   }
 }
 
-
-
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -252,9 +249,7 @@
   }
 }
 
-
 // Responsive
-
 
 @media (max-width: 768px) {
   .site-header {

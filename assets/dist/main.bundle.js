@@ -1397,25 +1397,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
 
-const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-gallery', {
-    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+  navigation: {
+    nextEl: ".gallery-next",
+    prevEl: ".gallery-prev",
+  },
 
-    navigation: {
-        nextEl: '.gallery-next',
-        prevEl: '.gallery-prev',
-    },
+  pagination: {
+    el: ".swiper-pagination-gallery",
+    clickable: true,
+  },
 
-    pagination: {
-        el: '.swiper-pagination-gallery',
-        clickable: true,
-    },
-
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    loop: true,
-    speed: 600,
+  slidesPerView: 1.2,
+  spaceBetween: 400,
+  loop: true,
+  speed: 600,
 });
+
 
 /***/ },
 
@@ -12196,6 +12196,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_header_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_header_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/scroll-top.js */ "./src/js/scroll-top.js");
 /* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__);
+
+
 
 
 

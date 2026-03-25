@@ -18,22 +18,20 @@ $slides = get_sub_field('slides');
                 ?>
                     <div class="swiper-slide">
                         <div class="gallery-slide-inner">
-
                             <div class="gallery-image">
                                 <?php if ($image) : ?>
-                                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                                    <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>">
                                 <?php endif; ?>
                             </div>
 
                             <div class="gallery-info">
                                 <?php if ($titre) : ?>
-                                    <p class="gallery-titre"><?php echo $titre; ?></p>
+                                    <p class="gallery-titre"><?= $titre; ?></p>
                                 <?php endif; ?>
                                 <?php if ($description) : ?>
-                                    <p class="gallery-description"><?php echo $description; ?></p>
+                                    <p class="gallery-description"><?= $description; ?></p>
                                 <?php endif; ?>
                             </div>
-
                         </div>
                     </div>
                 <?php endforeach; ?>

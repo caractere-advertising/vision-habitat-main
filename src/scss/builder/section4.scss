@@ -6,88 +6,67 @@
 
   .two-col-inner {
     margin: 0 10%;
-    display: grid;
-    grid-template-columns: 45% 100%;
-    gap: 80px;
-    align-items: start;
-  }
-}
+    gap: 0;
+    // display: grid;
+    // grid-template-columns: 45% 100%;
+    // gap: 80px;
+    // align-items: start;
 
-.two-col-left {
-  .section-label {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 28px;
-
-    span {
-      font-size: 0.65rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      color: $primaryColor;
-      white-space: nowrap;
+    .two-col-left,
+    .two-col-right {
+      width: 50%;
     }
 
-    &::after {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 60px;
-      background-color: $primaryColor;
-      opacity: 0.4;
-    }
-  }
+    .two-col-left {
+      .section-label {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 28px;
 
-  .two-col-title {
-    font-size: 2rem;
-    line-height: 1.2;
-    max-width: 350px;
- }
-}
+        span {
+          font-size: 0.9rem;
+          letter-spacing: 1px;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: $primaryColor;
+          white-space: nowrap;
+        }
 
-.two-col-right {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 60px;
-  max-width: 500px;
+        &::after {
+          content: "";
+          display: block;
+          height: 1px;
+          width: 60px;
+          background-color: $primaryColor;
+          opacity: 0.4;
+        }
+      }
 
-  .two-col-details,
-  .two-col-paragraph {
-    font-size: 0.9rem;
-    line-height: 1.8;
-    color: $txtColor;
-
-    p {
-      margin: 0;
-    }
-  }
-
-  .btn-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    color: $primaryColor;
-    text-decoration: none;
-    font-size: 0.68rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-bottom: 6px;
-    border-bottom: 1px solid rgba($primaryColor, 0.4);
-    margin-top: 16px;
-    transition:
-      gap 0.25s ease,
-      border-color 0.25s ease;
-
-    &::after {
-      content: '↘';
-      font-size: 0.85rem;
-      line-height: 1;
+      .two-col-title {
+        font-size: 4rem;
+        line-height: 3.5rem;
+        font-weight: 100;
+      }
     }
 
-    &:hover {
-      gap: 22px;
-      border-color: $primaryColor;
+    .two-col-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 60px;
+
+      .two-col-details,
+      .two-col-paragraph {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: $txtColor;
+
+        p {
+          margin: 0;
+          font-weight: 200;
+        }
+      }
     }
   }
 }
@@ -96,7 +75,7 @@
 
 @media (max-width: 1024px) {
   .section-two-col .two-col-inner {
-    grid-template-columns: 100% ;
+    grid-template-columns: 100%;
     gap: 48px;
     margin: 0;
   }
