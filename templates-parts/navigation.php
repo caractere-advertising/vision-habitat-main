@@ -1,10 +1,15 @@
 <?php
-$logo = get_field('logo', 'options');
+$logo = is_front_page() ? get_field('logo', 'options') : get_field('logo-negatif', 'options');
+
+//Permet de verifier si on est sur la page d'accueil
+// -> pour mettre le header en position absolute ≠ autres pages;
+
+$class = is_front_page() ? 'site-header -frontpage' : 'site-header';
+
 ?>
 
-<header class="site-header">
+<header class="<?= $class;?>">
     <div class="header-inner">
-
         <a href="<?php echo home_url('/'); ?>" class="header-logo">
             <?php if ($logo): ?>
                 <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
@@ -29,7 +34,6 @@ $logo = get_field('logo', 'options');
                 <span></span>
             </button>
         </div>
-
     </div>
 </header>
 

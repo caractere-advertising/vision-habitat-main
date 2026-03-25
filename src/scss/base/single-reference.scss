@@ -1,4 +1,20 @@
+.galerie-reference {
+  .swiper-reference {
+    height: 90vh;
+
+    .swiper-slide {
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
 .bloc-reference {
+  padding-top: 150px;
+
   .container {
     .cold {
       .section-informations {

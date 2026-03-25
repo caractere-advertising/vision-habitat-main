@@ -1490,33 +1490,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const numberCurrent = document.querySelector('.number-current');
+const numberCurrent = document.querySelector(".number-current");
 
-const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-fullwidth', {
-    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-fullwidth", {
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+
+  loop: true,
+  speed: 700,
+  spaceBetween: 0,
+
+  on: {
+    slideChange(swiper) {
+      if (numberCurrent) {
+        const i = swiper.realIndex + 1;
+        numberCurrent.textContent = i < 10 ? "0" + i : String(i);
+      }
     },
+  },
+});
 
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-    },
-
-    loop: true,
-    speed: 700,
-    spaceBetween: 0,
-
-    on: {
-        slideChange(swiper) {
-            if (numberCurrent) {
-                const i = swiper.realIndex + 1;
-                numberCurrent.textContent = i < 10 ? '0' + i : String(i);
-            }
-        },
-    },
+const swiperReference = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-reference", {
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
+  autoplay: true,
+  speed: 600,
 });
 
 

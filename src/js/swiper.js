@@ -1,35 +1,41 @@
-import Swiper from 'swiper';
-import { Pagination, Scrollbar } from 'swiper/modules';
+import Swiper from "swiper";
+import { Pagination, Scrollbar, Navigation, Autoplay } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-const numberCurrent = document.querySelector('.number-current');
+const numberCurrent = document.querySelector(".number-current");
 
-const swiperFullwidth = new Swiper('.swiper-fullwidth', {
-    modules: [Pagination, Scrollbar],
+const swiperFullwidth = new Swiper(".swiper-fullwidth", {
+  modules: [Pagination, Scrollbar],
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+
+  loop: true,
+  speed: 700,
+  spaceBetween: 0,
+
+  on: {
+    slideChange(swiper) {
+      if (numberCurrent) {
+        const i = swiper.realIndex + 1;
+        numberCurrent.textContent = i < 10 ? "0" + i : String(i);
+      }
     },
+  },
+});
 
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-    },
-
-    loop: true,
-    speed: 700,
-    spaceBetween: 0,
-
-    on: {
-        slideChange(swiper) {
-            if (numberCurrent) {
-                const i = swiper.realIndex + 1;
-                numberCurrent.textContent = i < 10 ? '0' + i : String(i);
-            }
-        },
-    },
+const swiperReference = new Swiper(".swiper-reference", {
+  modules: [Navigation, Autoplay],
+  autoplay: true,
+  speed: 600,
 });

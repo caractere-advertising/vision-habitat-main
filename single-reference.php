@@ -18,6 +18,18 @@ endfor;
 
 <!-- Bloc référence -->
 
+<section class="galerie-reference">
+    <div class="swiper swiper-reference">
+        <div class="swiper-wrapper">
+            <?php foreach($galerie as $g):?>
+                <div class="swiper-slide">
+                    <img src="<?= $g['url'];?>" alt="<?= $g['title'];?>"/>
+                </div>
+            <?php endforeach;?>
+        </div>
+    </div>
+</section>
+
 <section class="bloc-reference">
     <div class="container flex -full">
         <div class="col-40 col-g">
