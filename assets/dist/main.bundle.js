@@ -1439,32 +1439,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const numberEl = document.querySelector('.projects-number');
+const numberEl = document.querySelector(".projects-number");
 
-const swiperProjects = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-projects', {
-    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+const swiperProjects = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-projects", {
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
 
-    navigation: {
-        prevEl: '.projects-prev',
-        nextEl: '.projects-next',
+  navigation: {
+    prevEl: ".projects-prev",
+    nextEl: ".projects-next",
+  },
+
+  loop: false,
+  speed: 600,
+
+  on: {
+    slideChange(swiper) {
+      if (numberEl) {
+        const i = swiper.realIndex + 1;
+        numberEl.textContent = i < 10 ? "0" + i : String(i);
+      }
     },
-
-    scrollbar: {
-        el: '.swiper-scrollbar-projects',
-        draggable: true,
-    },
-
-    loop: false,
-    speed: 600,
-
-    on: {
-        slideChange(swiper) {
-            if (numberEl) {
-                const i = swiper.realIndex + 1;
-                numberEl.textContent = i < 10 ? '0' + i : String(i);
-            }
-        },
-    },
+  },
 });
 
 
