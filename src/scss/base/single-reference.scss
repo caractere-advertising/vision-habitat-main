@@ -1,0 +1,36 @@
+.galerie-reference {
+  .swiper-reference {
+    height: 90vh;
+
+    .swiper-slide {
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.bloc-reference {
+  padding-top: 150px;
+
+  .container {
+    .cold {
+      .section-informations {
+        padding: 0 100px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+          font-weight: 200;
+
+          strong {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

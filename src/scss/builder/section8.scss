@@ -1,0 +1,110 @@
+@use "./../variables/colors.scss" as *;
+
+.section-citation {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.citation-block {
+  width: 90%;
+  background-color: $white;
+  padding: 70px;
+  display: flex;
+  align-items: center;
+
+  .citation-inner {
+    position: relative;
+  }
+
+  .citation-name {
+    font-size: 1rem;
+    color: $secondaryColor;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .citation-text {
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 1;
+    color: $txtColor;
+    text-indent: 150px;
+  }
+}
+
+.citation-blue {
+  width: 100%;
+  min-height: 500px;
+  background-color: $primaryColor;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .citation-deco {
+    position: absolute;
+    top: -1px;
+    right: 15px;
+    width: 260px;
+    height: 260px;
+    background-color: $white;
+    clip-path: polygon(100% 0, 0 0, 0% 100%);
+  }
+
+  .citation-blue-inner {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+  }
+
+  .citation-blue-title {
+    color: $white;
+    font-size: 4rem;
+    font-weight: 200;
+    line-height: 3.5rem;
+  }
+
+  .btn-cta {
+    color: $white;
+    border-color: $white;
+  }
+}
+
+@media (max-width: 1024px) {
+  .citation-block {
+    padding: 50px;
+  }
+
+  .citation-blue .citation-blue-inner {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-citation {
+    flex-direction: column;
+  }
+
+  .citation-block {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .citation-blue {
+    width: 100%;
+
+    .citation-deco {
+      display: none;
+    }
+
+    .citation-blue-inner {
+      padding: 50px;
+    }
+  }
+}

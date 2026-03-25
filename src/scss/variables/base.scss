@@ -1,0 +1,35 @@
+.container {
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+
+  &.columns,
+  &.flex {
+    display: flex;
+    gap: 50px;
+
+    @for $i from 1 through 100 {
+      .col-#{$i} {
+        width: $i * 1%;
+      }
+    }
+  }
+
+  &.grid {
+    display: grid;
+    gap: 50px;
+  }
+
+  &.-full {
+    width: 90vw;
+    max-width: 1500px;
+  }
+}
+
+.block-img {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

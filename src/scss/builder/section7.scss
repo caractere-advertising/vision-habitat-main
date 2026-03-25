@@ -1,0 +1,189 @@
+@use "./../variables/colors.scss" as *;
+
+.section-projects {
+  background-color: $white;
+}
+
+.projects-inner {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 500px;
+}
+
+// Panneau bleu
+.projects-left {
+  background-color: $primaryColor;
+  padding: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+
+  .projects-title{
+     color: rgba(255, 255, 255, 0.7);
+     font-size: 2rem;
+  }
+  .projects-paragraph {
+    font-size: 0.85rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+  }
+
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    color: $white;
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    align-self: flex-start;
+    margin-top: 150px;
+    transition:
+      gap 0.25s ease,
+      border-color 0.25s ease;
+
+    &::after {
+      content: "↗";
+      font-size: 0.85rem;
+      line-height: 1;
+    }
+
+    &:hover {
+      gap: 22px;
+      border-color: $white;
+    }
+  }
+}
+
+.projects-right {
+  position: relative;
+  overflow: hidden;
+
+  .swiper-projects {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+      position: relative;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .slide-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 24px;
+
+        .slide-location {
+          font-size: 1.5rem;
+          color: $white;
+          font-weight: 400;
+        }
+
+        .slide-price {
+          background-color: $white;
+          color: $primaryColor;
+          font-size: 0.75rem;
+          font-weight: 500;
+          padding: 8px 18px;
+          border-radius: 40px;
+        }
+      }
+    }
+  }
+}
+
+.projects-controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
+  border-top: 1px solid $lightGray;
+}
+
+.projects-nav {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+
+  button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $lightGray;
+    background: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: $primaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      background-color: $primaryColor;
+      color: $white;
+      border-color: $primaryColor;
+    }
+  }
+}
+
+.swiper-scrollbar-projects {
+  flex: 1;
+  height: 4px;
+  background-color: $lightGray;
+  position: relative;
+
+  .swiper-scrollbar-drag {
+    height: 100%;
+    background-color: $primaryColor;
+    border-radius: 0;
+  }
+}
+
+.projects-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: $secondaryColor;
+  flex-shrink: 0;
+  min-width: 48px;
+  text-align: right;
+}
+
+// ── Responsive
+
+@media (max-width: 768px) {
+  .projects-inner {
+    grid-template-columns: 100%;
+  }
+
+  .projects-right {
+    min-height: 300px;
+  }
+
+  .projects-left {
+    padding: 50px ;
+  }
+
+  .projects-controls {
+    padding: 20px;
+  }
+}
