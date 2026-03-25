@@ -19,15 +19,17 @@
   justify-content: center;
   gap: 24px;
 
-  .projects-title{
-     color: rgba(255, 255, 255, 0.7);
-     font-size: 2rem;
+  .projects-title {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2rem;
   }
   .projects-paragraph {
-    font-size: 0.85rem;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0;
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+    }
   }
 
   .btn-cta {
@@ -180,7 +182,7 @@
   }
 
   .projects-left {
-    padding: 50px ;
+    padding: 50px;
   }
 
   .projects-controls {

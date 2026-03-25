@@ -21,7 +21,7 @@ $price     = get_sub_field('price');
             <?php endif; ?>
 
             <?php if ($paragraph): ?>
-                <p class="projects-paragraph"><?= $paragraph; ?></p>
+                <div class="projects-paragraph"><?= $paragraph; ?></div>
             <?php endif; ?>
 
             <?php if ($link) : ?>
