@@ -13,7 +13,8 @@ $link          = get_sub_field('link');
 
 
 <section class="section-two-col">
-    <div class="container columns two-col-inner">
+    <div class="two-col-inner container flex">
+
         <div class="two-col-left col-50">
             <?php if ($cat) : ?>
             <div class="section-label">
@@ -22,8 +23,8 @@ $link          = get_sub_field('link');
             <?php endif; ?>
 
             <?php if ($text_evidence) : ?>
-            <div class="two-col-title">
-                <?= $text_evidence; ?>
+            <div class="two-col-title big_title">
+                <?php echo $text_evidence; ?>
             </div>
             <?php endif; ?>
         </div>

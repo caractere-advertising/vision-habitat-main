@@ -7,20 +7,20 @@ $paragraph = get_sub_field("paragraph");
 $link      = get_sub_field("link");
 ?>
 
-<section class="section-discover">
+<section class="section-discover container">
     <div class="discover-left" <?php if ($image){ echo 'style="background-image:url('. $image['url'].')"'; } ?>>
     </div>
 
-    <div class="discover-right">
+    <div class="discover-right big_title">
         <?php if ($title) { ?>
-            <div class="discover-title"><?= $title; ?></div>
-        <?php }
-        if ($paragraph) { ?>
-            <p class="discover-paragraph"><?= $paragraph; ?></p>
-        <?php }
-        if ($link) { ?>
-            <a href="<?= $link['url']; ?>" class="discover-btn">
-                <?= $link['title']; ?> <span>›</span>
+            <div class="discover-title"><?php echo $title; ?></div>
+        <?php } ?>
+        <?php if ($paragraph) { ?>
+            <div class="discover-paragraph"><?php echo $paragraph; ?></div>
+        <?php } ?>
+        <?php if ($link) { ?>
+            <a href="<?php echo $link['url']; ?>" class="discover-btn">
+                <?php echo $link['title']; ?> <span>›</span>
             </a>
         <?php } ?>
     </div>

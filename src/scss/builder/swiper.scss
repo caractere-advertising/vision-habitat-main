@@ -34,40 +34,28 @@
 
     .content {
       position: absolute;
-      bottom: 110px;
+      top: 20px;
       left: 10%;
       z-index: 1;
-      max-width: 60%;
+      max-width: 70%;
 
       .content-titre {
         color: $white;
-        font-size: 6rem;
-        font-weight: 300;
+        font-size: 8rem;
+        font-weight: 400;
         line-height: 1.2;
         margin-bottom: 30px;
+        padding-top: 500px;
+        padding-left: 100px;
       }
 
       .btn-cta {
-        display: inline-flex;
-        align-items: center;
-        gap: 14px;
+        display: inline-block;
         color: $white;
-        text-decoration: none;
-        font-size: 0.68rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        padding-bottom: 6px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.55);
-        transition:
-          gap 0.25s ease,
-          border-color 0.25s ease;
+        border-bottom: 1px solid $lightGray;
+        margin-left: 220px;
+      } 
 
-        &::after {
-          content: "↘";
-          font-size: 0.85rem;
-          line-height: 1;
-        }
-      }
     }
   }
 

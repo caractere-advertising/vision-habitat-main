@@ -1,4 +1,4 @@
-// Slider gallery — non importé dans index.js pour l'instant
+
 
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
@@ -20,8 +20,15 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     clickable: true,
   },
 
-  slidesPerView: 1.2,
-  spaceBetween: 250,
-  loop: true,
-  speed: 600,
+    pagination: {
+        el: '.swiper-pagination-gallery',
+        clickable: true,
+        type:'bullets'
+    },
+
+    slidesPerView: 1.2,
+    //centeredSlides: 'auto',
+    spaceBetween: 200,
+    loop: true,
+    speed: 600,
 });

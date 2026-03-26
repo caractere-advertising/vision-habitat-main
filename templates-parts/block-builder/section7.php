@@ -1,15 +1,15 @@
 <?php
-
-// Layout ACF : section_img_ev
-// Champs : title (wysiwyg), paragraph (texte), link (lien),
-//          image (image), location (texte), price (texte)
-
 $title     = get_sub_field('title');
 $paragraph = get_sub_field('paragraph');
 $link      = get_sub_field('link');
-$img       = get_sub_field('image');
-$location  = get_sub_field('location');
-$price     = get_sub_field('price');
+// $img       = get_sub_field('image');
+// $location  = get_sub_field('location');
+// $price     = get_sub_field('price');
+
+/* Boucle projets */
+
+$projets   = get_sub_field('projets'); 
+
 ?>
 
 <section class="section-projects">
@@ -21,7 +21,7 @@ $price     = get_sub_field('price');
             <?php endif; ?>
 
             <?php if ($paragraph): ?>
-                <p class="projects-paragraph"><?= $paragraph; ?></p>
+                <div class="projects-paragraph"><?= $paragraph; ?></div>
             <?php endif; ?>
 
             <?php if ($link) : ?>
@@ -34,31 +34,33 @@ $price     = get_sub_field('price');
         <div class="projects-right">
             <div class="swiper swiper-projects">
                 <div class="swiper-wrapper">
-                    <?php if ($img) : ?>
-                    <div class="swiper-slide">
-                        <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
-                        <div class="slide-info">
-                            <?php if ($location) : ?>
-                            <span class="slide-location"><?= $location; ?></span>
-                            <?php endif; ?>
-                            <?php if ($price) : ?>
-                            <span class="slide-price"><?= $price; ?></span>
-                            <?php endif; ?>
+                    <?php foreach($projets as $pr):
+                        $img       = $pr['image'];
+                        $location  = $pr['location'] ?? '';
+                        $price     = $pr['price'] ?? '';
+                        
+                        ?>
+                        <div class="swiper-slide">
+                            <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
+                            <div class="slide-info">
+                                <span class="slide-location"><?= $location; ?></span>
+                                <span class="slide-price"><?= $price; ?></span>
+                            </div>
                         </div>
-                    </div>
-                    <?php endif; ?>
+                    <?php endforeach;?>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <div class="projects-controls">
+    <div class="projects-controls container">
         <div class="projects-nav">
             <button class="projects-prev">&#8249;</button>
             <button class="projects-next">&#8250;</button>
         </div>
-        <div class="swiper-scrollbar-projects"></div>
+        <div class="swiper-scrollbar-projects">
+        </div>
         <span class="projects-number">01</span>
     </div>
 

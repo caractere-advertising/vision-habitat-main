@@ -2,18 +2,16 @@
 
 .section-discover {
     display: flex;
-    min-height: 70vh;
+    min-height: 650px;
     align-items: stretch;
-     width: 60%;
-    margin: 0 auto;
+    margin: 1OOpx auto;
 
     .discover-left {
         width: 50%;
-        padding-top: 80px;
+        padding-top: 50px;
         padding-bottom: 80px;
         padding-left: 60px;
         padding-right: 60px;
-        min-height: 70vh;
         background-color: $primaryColor;
         background-size: cover;
         background-position: center;
@@ -22,13 +20,14 @@
     .discover-right {
         width: 50%;
         background-color:rgb(229, 229, 229) ;
-        padding-top: 80px;
+        padding-top: 50px;
         padding-bottom: 80px;
         padding-left: 60px;
         padding-right: 60px;
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         position: relative;
 
         .discover-title {
@@ -40,24 +39,27 @@
 
         .discover-paragraph {
             color: $txtColor;
-            font-size: 0.95rem;
+            font-size: 1rem;
             line-height: 1.7;
             margin-bottom: 50px;
         }
 
         .discover-btn {
-            margin-top: auto;
+           margin-top: auto;
             display: inline-flex;
             align-items: center;
-            gap: 12px;
-            background-color: $secondaryColor;
-            color: $white;
+            background-color: #d3bea1;
+            color: #fff;
             text-decoration: none;
-            font-size: 0.7rem;
+            font-size: .9rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            padding: 16px 30px;
+            padding: 5px 50px;
             align-self: flex-end;
+            position: absolute;
+            bottom: 0;
+            gap: 80px;
+            right: 0;
         }
     }
 }

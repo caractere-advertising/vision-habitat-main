@@ -2,20 +2,24 @@
 
 .section-card-solutions {
   background-color: $white;
-  padding: 80px;
+  padding: 80px ;
+  margin-top: 100px;
+
 
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
+    gap: 30px;
     padding-bottom: 100px;
     border-bottom: 1px solid $lightGray;
+ 
   }
 
   .card {
     display: flex;
     flex-direction: column;
-    max-height: 600px;
+     cursor: pointer;
+     max-height: 600px;
   }
 
   .card-image {
@@ -41,7 +45,7 @@
       background-color: $white;
       color: $primaryColor;
       font-size: 2rem;
-      font-weight: 100;
+      font-weight: 300;
       display: flex;
       align-items: center;
       justify-content: center;
