@@ -11,8 +11,8 @@ $link     = get_sub_field('link');
 
 <section class="section-citation">
 
-    <div class="citation-block">
-        <div class="citation-inner">
+    <div class="citation-block container">
+        <div class="citation-inner container">
             <?php if ($name) : ?>
             <span class="citation-name"><?php echo $name; ?></span>
             <?php endif; ?>
@@ -27,7 +27,7 @@ $link     = get_sub_field('link');
     
 
     <div class="citation-blue">
-        <div class="citation-blue-inner">
+        <div class="citation-blue-inner container">
             <?php if ($title) : ?>
             <div class="citation-blue-title">
                 <?php echo $title; ?>

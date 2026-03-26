@@ -1,3 +1,6 @@
+@use "variables/base.scss" as *;
+@use "variables/cta.scss" as *;
+
 @use "builder/swiper.scss" as *;
 @use "builder/section2.scss" as *;
 @use "builder/section3.scss" as *;
@@ -13,3 +16,6 @@
 @use "header.scss" as *;
 @use "builder/footer.scss" as *;
 
+body {
+    font-family: 'Manrope', sans-serif;
+}

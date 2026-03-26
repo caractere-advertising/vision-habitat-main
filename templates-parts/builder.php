@@ -47,9 +47,6 @@ if (have_rows('builder')):
 
             elseif (get_row_layout() == 'block_actu'):
             get_template_part($repo . '/section12');
-            
-             elseif (get_row_layout() == 'footer'):
-            get_template_part($repo . '/footer');
         endif;
 
     endwhile;

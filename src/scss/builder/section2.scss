@@ -3,11 +3,8 @@
 .section-text-evidence {
     background-color: $white;
     padding: 90px 0;
+    margin-top: 100px;
 
-    .section-inner {
-        margin: 0 10%;
-        max-width: 65%;
-    }
 
     .section-label {
         display: flex;
@@ -16,11 +13,10 @@
         margin-bottom: 36px;
 
         span {
-            font-size: 0.65rem;
+            font-size: 0.9rem;
             font-weight: 500;
             text-transform: uppercase;
             color: $primaryColor;
-            white-space: nowrap;
         }
 
         &::after {
@@ -35,6 +31,10 @@
 
     .section-content {
         margin-bottom: 40px;
+        p{
+          font-size: 4rem;
+          line-height: 4rem;
+        }
     }
 
     .section-paragraph {
@@ -42,46 +42,13 @@
         color: $txtColor;
 
         p{
-          font-size: 6rem;
+          font-size: 4rem;
+            line-height: 4rem;
+          // je ne parviens pas à aggrandir. Wysiwyg qui prend le pas?
         }
     }
 
-    .btn-cta {
-        display: inline-flex;
-        align-items: center;
-        gap: 14px;
-        color: $primaryColor;
-        text-decoration: none;
-        font-size: 0.68rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        padding-bottom: 6px;
-        position: relative;
-        border-bottom: none;
-
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 70%;
-            height: 1px;
-            background-color: rgba($primaryColor, 0.4);
-        }
-
-        &::after {
-            content: '↘';
-            font-size: 0.85rem;
-        }
-
-        &:hover {
-            gap: 22px;
-
-            &::before {
-                background-color: $primaryColor;
-            }
-        }
-    }
+    
 }
 
 @media (max-width: 1024px) {

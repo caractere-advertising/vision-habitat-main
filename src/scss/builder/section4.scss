@@ -3,11 +3,13 @@
 .section-two-col {
   background-color: $white;
   padding: 90px 0;
+  margin-top: 100px;
+
 
   .two-col-inner {
-    margin: 0 10%;
-    display: grid;
-    grid-template-columns: 45% 100%;
+    //margin: 0 10%;
+    // display: grid;
+    // grid-template-columns: 45% 100%;
     gap: 80px;
     align-items: start;
   }
@@ -21,11 +23,10 @@
     margin-bottom: 28px;
 
     span {
-      font-size: 0.65rem;
+      font-size: 1rem;
       font-weight: 500;
       text-transform: uppercase;
       color: $primaryColor;
-      white-space: nowrap;
     }
 
     &::after {
@@ -39,9 +40,9 @@
   }
 
   .two-col-title {
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 1.2;
-    max-width: 350px;
+    max-width: 550px;
  }
 }
 
@@ -54,7 +55,7 @@
 
   .two-col-details,
   .two-col-paragraph {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: $txtColor;
 
@@ -63,33 +64,33 @@
     }
   }
 
-  .btn-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    color: $primaryColor;
-    text-decoration: none;
-    font-size: 0.68rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-bottom: 6px;
-    border-bottom: 1px solid rgba($primaryColor, 0.4);
-    margin-top: 16px;
-    transition:
-      gap 0.25s ease,
-      border-color 0.25s ease;
+  // .btn-cta {
+  //   display: inline-flex;
+  //   align-items: center;
+  //   gap: 14px;
+  //   color: $primaryColor;
+  //   text-decoration: none;
+  //   font-size: 0.68rem;
+  //   font-weight: 500;
+  //   text-transform: uppercase;
+  //   padding-bottom: 6px;
+  //   border-bottom: 1px solid rgba($primaryColor, 0.4);
+  //   margin-top: 16px;
+  //   transition:
+  //     gap 0.25s ease,
+  //     border-color 0.25s ease;
 
-    &::after {
-      content: '↘';
-      font-size: 0.85rem;
-      line-height: 1;
-    }
+  //   &::after {
+  //     content: '↘';
+  //     font-size: 0.85rem;
+  //     line-height: 1;
+  //   }
 
-    &:hover {
-      gap: 22px;
-      border-color: $primaryColor;
-    }
-  }
+  //   &:hover {
+  //     gap: 22px;
+  //     border-color: $primaryColor;
+  //   }
+  // }
 }
 
 // ── Responsive

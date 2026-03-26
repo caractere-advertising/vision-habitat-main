@@ -6,14 +6,16 @@
   background-color: $white;
   display: flex;
   align-items: center;
+  margin-top: 100px;
 }
 
 .swiper-gallery {
   width: 100%;
   overflow: hidden;
+  position: relative;
 
   .swiper-slide {
-    width: 60%;
+    //width: 60%;
 
     .gallery-slide-inner {
       position: relative;
@@ -39,16 +41,17 @@
       background-color: $white;
       padding: 20px 28px;
       min-width: 55%;
+      min-height: 200px;
 
       .gallery-titre {
-        font-size: 0.85rem;
+        font-size: 1.5rem;
         font-weight: 600;
         color: $primaryColor;
         margin: 0 0 4px;
       }
 
       .gallery-description {
-        font-size: 0.78rem;
+        font-size: 1.5rem;
         color: $txtColor;
         margin: 0;
       }
@@ -56,18 +59,25 @@
   }
 }
 
-// Dots pagination
 .gallery-pagination {
   margin-top: 20px;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content:end;
+  position: absolute;
+  bottom: 50px;
+  z-index: 2;
 
   .swiper-pagination-gallery {
+    display: flex;
+    justify-content: flex-end;
     position: relative;
+    padding-right: 50px;
 
     .swiper-pagination-bullet {
       background-color: $lightGray;
       opacity: 1;
+      border: 1px solid #fff;
     }
 
     .swiper-pagination-bullet-active {
@@ -78,22 +88,24 @@
 
 .gallery-nav {
   position: absolute;
-  right: 34%;
-  top: 50%;
+  right: 11%;
+  bottom:  0;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 8px;
   z-index: 2;
+  
 
   button {
-    width: 40px;
-    height: 40px;
+    margin-right:0px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 1px solid $lightGray;
     background: $white;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: $primaryColor;
     display: flex;
     align-items: center;

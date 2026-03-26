@@ -16,7 +16,7 @@ $pt_image  = get_sub_field('pt_image');
 ?>
 
 <section class="section-img-text">
-    <div class="section-img-text-inner">
+    <div class="section-img-text-inner container">
 
         <div class="img-col">
             <div class="img-wrapper">

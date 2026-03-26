@@ -2,6 +2,7 @@
 
 .section-projects {
   background-color: $white;
+  margin-top: 100px;
 }
 
 .projects-inner {
@@ -10,54 +11,33 @@
   min-height: 500px;
 }
 
-// Panneau bleu
+
 .projects-left {
   background-color: $primaryColor;
-  padding: 180px;
+  padding: 100px 0 100px 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 24px;
 
   .projects-title{
-     color: rgba(255, 255, 255, 0.7);
-     font-size: 2rem;
+     color: $white;
+     font-size: 4rem;
+     line-height: 4rem;
   }
   .projects-paragraph {
-    font-size: 0.85rem;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0;
-  }
-
-  .btn-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: $white;
-    text-decoration: none;
-    font-size: 0.68rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-bottom: 6px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    align-self: flex-start;
-    margin-top: 150px;
-    transition:
-      gap 0.25s ease,
-      border-color 0.25s ease;
-
-    &::after {
-      content: "↗";
-      font-size: 0.85rem;
-      line-height: 1;
-    }
-
-    &:hover {
-      gap: 22px;
-      border-color: $white;
-    }
+    margin: 0;
+    width: 500px;
   }
+   .btn-cta{
+    color: $white;
+    border-bottom: 0.5px solid $white;
+   }
+
+  
 }
 
 .projects-right {
@@ -122,13 +102,13 @@
   flex-shrink: 0;
 
   button {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 1px solid $lightGray;
     background: none;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: $primaryColor;
     display: flex;
     align-items: center;
@@ -144,12 +124,15 @@
       border-color: $primaryColor;
     }
   }
+
 }
 
 .swiper-scrollbar-projects {
-  flex: 1;
-  height: 4px;
-  background-color: $lightGray;
+  display: flex !important;
+  align-items: center;
+  height: 1px;
+  color: $lightGray !important;
+  width: 60%;
   position: relative;
 
   .swiper-scrollbar-drag {
@@ -160,8 +143,8 @@
 }
 
 .projects-number {
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 900;
   color: $secondaryColor;
   flex-shrink: 0;
   min-width: 48px;

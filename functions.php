@@ -100,3 +100,7 @@ function return_post(){
     return $post;
 }
 
+function vision_habitat_enqueue() {
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap', [], null);
+}
+add_action('wp_enqueue_scripts', 'vision_habitat_enqueue');

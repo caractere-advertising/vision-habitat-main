@@ -9,7 +9,7 @@ $video     = get_sub_field("video");
 
 <section class="section-video">
 
-    <div class="video-top">
+    <div class="video-top container">
 
         <div class="video-top-left">
             <?php if ($text_ev) { ?>

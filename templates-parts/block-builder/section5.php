@@ -8,45 +8,38 @@ $slides = get_sub_field('slides');
 ?>
 
     <section class="section-gallery">
-
-        <div class="swiper swiper-gallery">
-            <div class="swiper-wrapper">
-                <?php foreach ($slides as $s) :
-                    $image       = $s['image'];
-                    $titre       = $s['titre'];
-                    $description = $s['description'];
-                ?>
-                    <div class="swiper-slide">
-                        <div class="gallery-slide-inner">
-
-                            <div class="gallery-image">
-                                <?php if ($image) : ?>
-                                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                                <?php endif; ?>
-                            </div>
-
-                            <div class="gallery-info">
-                                <?php if ($titre) : ?>
-                                    <p class="gallery-titre"><?php echo $titre; ?></p>
-                                <?php endif; ?>
-                                <?php if ($description) : ?>
-                                    <p class="gallery-description"><?php echo $description; ?></p>
-                                <?php endif; ?>
-                            </div>
-
-                        </div>
+    <div class="swiper swiper-gallery">
+        <div class="swiper-wrapper">
+            <?php foreach ($slides as $s) :
+                $image       = $s['image'];
+                $titre       = $s['titre'];
+                $description = $s['description'];
+            ?>
+            <div class="swiper-slide">
+                <div class="gallery-slide-inner">
+                    <div class="gallery-image">
+                        <?php if ($image) : ?>
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                        <?php endif; ?>
                     </div>
-                <?php endforeach; ?>
+                    <div class="gallery-info">
+                        <?php if ($titre) : ?>
+                            <p class="gallery-titre"><?php echo $titre; ?></p>
+                        <?php endif; ?>
+                        <?php if ($description) : ?>
+                            <p class="gallery-description"><?php echo $description; ?></p>
+                        <?php endif; ?>
+                    </div>
+                </div>
             </div>
-
-            <div class="gallery-pagination">
-                <div class="swiper-pagination-gallery"></div>
-            </div>
+            <?php endforeach; ?>
         </div>
-
-        <div class="gallery-nav">
-            <button class="gallery-next">&#8250;</button>
-            <button class="gallery-prev">&#8249;</button>
+        <div class="gallery-pagination">
+            <div class="swiper-pagination-gallery"></div>
         </div>
-
-    </section>
+    </div>
+    <div class="gallery-nav">
+        <button class="gallery-next">&#8250;</button>
+        <button class="gallery-prev">&#8249;</button>
+    </div>
+</section>
