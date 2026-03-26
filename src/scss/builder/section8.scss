@@ -14,7 +14,6 @@
   padding: 40px;
   display: flex;
   align-items: center;
-  
 
   .citation-inner {
     position: relative;
@@ -30,7 +29,11 @@
     font-size: 4rem;
     line-height: 1;
     color: $txtColor;
+<<<<<<< HEAD
     text-indent: 150px;
+=======
+    text-indent: 10%;
+>>>>>>> cc02ab6 (calc(100-60px))
   }
 }
 
