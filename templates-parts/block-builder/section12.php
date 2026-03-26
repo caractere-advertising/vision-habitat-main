@@ -24,9 +24,7 @@ if($query->have_posts()):
     while($query->have_posts()): $query->the_post();
         // A parti d'ici, toutes les data qu'on récupère sont lié à un post (article);
         // get_field / get_sub_field ira voir dans le template des articles;
-
-        echo get_the_title();
-
+        //echo get_the_title();
         // TU peux recopier ton design de card actus :)
 
     endwhile;
