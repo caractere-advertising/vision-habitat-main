@@ -1836,8 +1836,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*! tailwindcss v4.2.1 | MIT License |
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/scss/main.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
 <<<<<<< HEAD
+<<<<<<< HEAD
 () {
 =======
+=======
+>>>>>>> 756810b (finetuning 26-03)
 (module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4602,9 +4605,17 @@ body {
 >>>>>>> d4eec9f (suite burger menu)
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+<<<<<<< HEAD
 >>>>>>> 553e536 (suite burger menu)
 
 throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n\u001b[34m   ╷\u001b[0m\n\u001b[34m10 │\u001b[0m   justify-content: space-between\u001b[31m\u001b[0m;\n\u001b[34m   │\u001b[0m \u001b[31m                                ^\u001b[0m\n\u001b[34m   ╵\u001b[0m\n  src/scss/burger-menu/burger-menu.scss 10:33  @use\n  src/scss/main.scss 34:1                      root stylesheet");
+=======
+=======
+() {
+>>>>>>> 3d2ceae (finetuning 26-03)
+
+throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n\u001b[34m   ╷\u001b[0m\n\u001b[34m25 │\u001b[0m <<<<<<< HEAD\u001b[31m\u001b[0m\n\u001b[34m   │\u001b[0m \u001b[31m            ^\u001b[0m\n\u001b[34m   ╵\u001b[0m\n  src/scss/variables/base.scss 25:13  @use\n  src/scss/main.scss 1:1              root stylesheet");
+>>>>>>> 756810b (finetuning 26-03)
 
 /***/ },
 

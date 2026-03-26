@@ -1,6 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+<<<<<<< HEAD
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/swiper/modules/navigation.css"
 /*!********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/swiper/modules/navigation.css ***!
@@ -1468,6 +1469,17 @@ const mobileMenu = document.querySelector("#megamenu");
 
 const headerNav = document.querySelector(".header-nav");
 const headerActions = document.querySelector(".header-actions");
+=======
+/***/ "./src/index.js"
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+() {
+
+<<<<<<< HEAD
+const burgerBtn = document.querySelector('.burger-btn');
+const mobileMenu = document.querySelector('#megamenu');
+>>>>>>> 756810b (finetuning 26-03)
 
 if (burgerBtn && mobileMenu) {
   burgerBtn.addEventListener("click", () => {
@@ -12577,28 +12589,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+=======
+throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| import \"./js/header.js\";\n| import \"./js/scroll-top.js\";\n> <<<<<<< HEAD\n| import \"./js/img-hover.js\";\n| =======");
+>>>>>>> 3d2ceae (finetuning 26-03)
 
 /***/ }
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
 /******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	
+<<<<<<< HEAD
 /******/ 		// Execute the module function
 /******/ 		if (!(moduleId in __webpack_modules__)) {
 /******/ 			delete __webpack_module_cache__[moduleId];
@@ -12699,6 +12705,8 @@ __webpack_require__.r(__webpack_exports__);
 
 })();
 
+=======
+>>>>>>> 3d2ceae (finetuning 26-03)
 /******/ })()
 ;
 //# sourceMappingURL=main.bundle.js.map
