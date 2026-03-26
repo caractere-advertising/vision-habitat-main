@@ -1345,7 +1345,11 @@ module.exports = styleTagTransform;
 () {
 
 const burgerBtn = document.querySelector('.burger-btn');
+<<<<<<< HEAD
 const mobileMenu = document.querySelector('#megamenu');
+=======
+const mobileMenu = document.querySelector('.mobile-menu');
+>>>>>>> abb23aa (ajout div container footer)
 
 if (burgerBtn && mobileMenu) {
     burgerBtn.addEventListener('click', () => {
@@ -1425,8 +1429,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> abb23aa (ajout div container footer)
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
 
@@ -1440,6 +1447,7 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
     clickable: true,
   },
 
+<<<<<<< HEAD
     pagination: {
         el: '.swiper-pagination-gallery',
         clickable: true,
@@ -1451,6 +1459,19 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
     spaceBetween: 200,
     loop: true,
     speed: 600,
+=======
+  pagination: {
+    el: ".swiper-pagination-gallery",
+    clickable: true,
+    type: "bullets",
+  },
+
+  slidesPerView: 1.2,
+  //centeredSlides: 'auto',
+  spaceBetween: 200,
+  loop: true,
+  speed: 600,
+>>>>>>> abb23aa (ajout div container footer)
 });
 
 
