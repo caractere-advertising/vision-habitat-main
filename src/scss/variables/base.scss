@@ -1,25 +1,25 @@
-@use '../variables/colors.scss' as *;
+@use "../variables/colors.scss" as *;
 
-.container{
-    width: 80vw;
-    max-width: 1200px;
-    margin: auto;
+.container {
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
 
-    &.flex{
-        display: flex;
+  &.flex {
+    display: flex;
 
-        .col-50{
-            width: 50%;
-        }
+    .col-50 {
+      width: 50%;
     }
+  }
 
-    &.grid{
-        display: grid;
-    }
+  &.grid {
+    display: grid;
+  }
 }
 
-.big_title{
-    color: $primaryColor;
-    font-size: 4rem;
-    line-height: 3.5rem;
+.big_title {
+  color: $primaryColor;
+  font-size: 4rem;
+  line-height: 3.5rem;
 }

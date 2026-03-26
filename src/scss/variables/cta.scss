@@ -1,44 +1,46 @@
-     @use "./../variables/colors.scss" as *;
-      .btn-cta {
-        display: flex;
-        width: fit-content;
-        align-items: center;
-        color: $primaryColor;
-        text-decoration: none;
-        gap: 120px;
-        text-decoration: none;
-        font-size: 0.9rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        padding-bottom: 6px;
-        border-bottom: 1px solid $primaryColor;
-        transition: gap 0.25s ease, border-color 0.25s ease;
+@use "./../variables/colors.scss" as *;
+.btn-cta {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  color: $primaryColor;
+  text-decoration: none;
+  gap: 120px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  border-bottom: 1px solid $primaryColor;
+  transition:
+    gap 0.25s ease,
+    border-color 0.25s ease;
 
-        &::after {
-          content: '↘';
-          font-size: 0.9rem;
-          //padding-left: 50px;
-          color: $secondaryColor;
-          transform: rotate(0deg);
-          transition: all ease-in 300ms;
-        }
+  &::after {
+    content: "↘";
+    font-size: 0.9rem;
+    //padding-left: 50px;
+    color: $secondaryColor;
+    transform: rotate(0deg);
+    transition: all ease-in 300ms;
+  }
 
-        &:hover{
-            border-bottom: 1px solid;
-            color: $secondaryColor;
+  &:hover {
+    border-bottom: 1px solid;
+    color: $secondaryColor;
 
-            &::after{
-                transform: rotate(-90deg);
-            }
-        }
-
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 0;
-        //     width: 70%;
-        //     height: 1px;
-        //     background-color: rgba($primaryColor, 0.4);
-        // }
+    &::after {
+      transform: rotate(-90deg);
     }
+  }
+
+  // &::before {
+  //     content: '';
+  //     position: absolute;
+  //     bottom: 0;
+  //     left: 0;
+  //     width: 70%;
+  //     height: 1px;
+  //     background-color: rgba($primaryColor, 0.4);
+  // }
+}
