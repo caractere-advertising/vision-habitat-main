@@ -34,7 +34,7 @@ $made_by   = get_field('made_by','option');
         <div class="footer-top">
             <div class="footer-left">
                 <?php if ($text_ev) { ?>
-                    <div class="footer-titre"><?= $text_ev; ?></div>
+                    <div class="footer-titre"><?php echo $text_ev; ?></div>
                 <?php } ?>
 >>>>>>> 4e5df74 (ajout div container footer)
 
@@ -43,13 +43,15 @@ $made_by   = get_field('made_by','option');
 
             <div class="footer-right">
                 <?php if ($paragraph) { ?>
-                    <div class="footer-texte"><?= $paragraph; ?></div>
+                    <div class="footer-texte"><?php echo $paragraph; ?></div>
                 <?php } ?>
             </div>
         </div>
 
         <?php if ($contact) { ?>
-            <a href="mailto:<?= $contact; ?>" class="footer-lien"><?= $contact; ?></a>
+            <a href="mailto:<?php echo $contact; ?>" class="footer-lien">
+                <?php echo $contact; ?>
+            </a>
         <?php } ?>
 >>>>>>> d4c7333 (finetuning 26-03)
 
@@ -60,7 +62,7 @@ $made_by   = get_field('made_by','option');
             wp_nav_menu([
 =======
             <?php if ($made_by) { ?>
-                <div class="footer-made-by"><?= $made_by; ?></div>
+                <div class="footer-made-by"><?php echo $made_by; ?></div>
             <?php } ?>
             <?php wp_nav_menu([
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)

@@ -1389,7 +1389,11 @@ module.exports = styleTagTransform;
 =======
 >>>>>>> 048dcbb (npm run build)
 const burgerBtn = document.querySelector('.burger-btn');
+<<<<<<< HEAD
 const mobileMenu = document.querySelector('#megamenu');
+=======
+const mobileMenu = document.querySelector('.mobile-menu');
+>>>>>>> abb23aa (ajout div container footer)
 
 if (burgerBtn && mobileMenu) {
     burgerBtn.addEventListener('click', () => {
@@ -1498,13 +1502,18 @@ __webpack_require__.r(__webpack_exports__);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
 =======
 =======
 >>>>>>> 048dcbb (npm run build)
+=======
+>>>>>>> 3f11fe0 (ajout div container footer)
 
 
+=======
+>>>>>>> abb23aa (ajout div container footer)
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
 <<<<<<< HEAD
@@ -1537,6 +1546,7 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
 >>>>>>> 048dcbb (npm run build)
   },
 
+<<<<<<< HEAD
     pagination: {
         el: '.swiper-pagination-gallery',
         clickable: true,
@@ -1549,9 +1559,25 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
     loop: true,
     speed: 600,
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 815fcfc (structure html)
 =======
 >>>>>>> 048dcbb (npm run build)
+=======
+=======
+  pagination: {
+    el: ".swiper-pagination-gallery",
+    clickable: true,
+    type: "bullets",
+  },
+
+  slidesPerView: 1.2,
+  //centeredSlides: 'auto',
+  spaceBetween: 200,
+  loop: true,
+  speed: 600,
+>>>>>>> abb23aa (ajout div container footer)
+>>>>>>> 3f11fe0 (ajout div container footer)
 });
 
 
