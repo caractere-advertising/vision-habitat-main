@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> abb23aa (ajout div container footer)
+
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -8462,3 +8459,5 @@ __webpack_require__.r(__webpack_exports__);
 =======
 //# sourceMappingURL=style.bundle.js.map
 >>>>>>> abb23aa (ajout div container footer)
+=======
+>>>>>>> fdaef99 (npm run build)
