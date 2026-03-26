@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -7901,3 +7902,5 @@ __webpack_require__.r(__webpack_exports__);
 /******/ })()
 ;
 //# sourceMappingURL=style.bundle.js.map
+=======
+>>>>>>> aec7400 (npm run build)
