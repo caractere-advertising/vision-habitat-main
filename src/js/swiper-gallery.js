@@ -13,12 +13,13 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     prevEl: ".gallery-prev",
   },
 
-  pagination: {
-    el: ".swiper-pagination-gallery",
-    clickable: true,
-    type: "bullets",
-  },
+    pagination: {
+        el: '.swiper-pagination-gallery',
+        clickable: true,
+        type:'bullets'
+    },
 
+<<<<<<< HEAD
   slidesPerView: 1.2,
   scrollbar: {
     el: ".swiper-scrollbar-galerie-slider",
@@ -26,4 +27,11 @@ const swiperGallery = new Swiper(".swiper-gallery", {
   spaceBetween: 200,
   loop: true,
   speed: 600,
+=======
+    slidesPerView: 1.2,
+    //centeredSlides: 'auto',
+    spaceBetween: 200,
+    loop: true,
+    speed: 600,
+>>>>>>> d4c7333 (finetuning 26-03)
 });
