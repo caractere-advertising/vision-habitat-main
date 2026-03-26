@@ -23634,6 +23634,7 @@ throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an ap
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //# sourceMappingURL=main.bundle.js.map
 >>>>>>> abb23aa (ajout div container footer)
 <<<<<<< HEAD
@@ -23674,4 +23675,10 @@ throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an ap
 =======
 //# sourceMappingURL=main.bundle.js.map
 >>>>>>> ef15be5 (Optimisation section.php + css + ajout nouvelle section page "construire")
+<<<<<<< HEAD
 >>>>>>> c136d55 (Optimisation section.php + css + ajout nouvelle section page "construire")
+=======
+=======
+//# sourceMappingURL=main.bundle.js.map
+>>>>>>> 15690dd (npm run build)
+>>>>>>> cb6fc7b (npm run build)
