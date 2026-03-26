@@ -55,11 +55,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   .swiper-navigation-disabled & {
     display: none !important;
   }
-<<<<<<< HEAD
 
   ::slotted(svg),
-=======
->>>>>>> 9d34631 (npm run build)
   svg {
     width: 100%;
     height: 100%;
@@ -82,10 +79,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
 .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset, 4px);
   right: auto;
-<<<<<<< HEAD
   ::slotted(.swiper-navigation-icon),
-=======
->>>>>>> 9d34631 (npm run build)
   .swiper-navigation-icon {
     transform: rotate(180deg);
   }
@@ -121,20 +115,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   & ~ .swiper-button-prev,
   &.swiper-rtl .swiper-button-next,
   &.swiper-rtl ~ .swiper-button-next {
-<<<<<<< HEAD
     ::slotted(.swiper-navigation-icon),
-=======
->>>>>>> 9d34631 (npm run build)
     .swiper-navigation-icon {
       transform: rotate(180deg);
     }
   }
   &.swiper-rtl .swiper-button-prev,
   &.swiper-rtl ~ .swiper-button-prev {
-<<<<<<< HEAD
     ::slotted(.swiper-navigation-icon),
-=======
->>>>>>> 9d34631 (npm run build)
     .swiper-navigation-icon {
       transform: rotate(0deg);
     }
@@ -154,10 +142,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   ~ .swiper-button-prev {
     top: var(--swiper-navigation-sides-offset, 4px);
     bottom: auto;
-<<<<<<< HEAD
     ::slotted(.swiper-navigation-icon),
-=======
->>>>>>> 9d34631 (npm run build)
     .swiper-navigation-icon {
       transform: rotate(-90deg);
     }
@@ -166,20 +151,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   ~ .swiper-button-next {
     bottom: var(--swiper-navigation-sides-offset, 4px);
     top: auto;
-<<<<<<< HEAD
     ::slotted(.swiper-navigation-icon),
-=======
->>>>>>> 9d34631 (npm run build)
     .swiper-navigation-icon {
       transform: rotate(90deg);
     }
   }
 }
-<<<<<<< HEAD
 `, "",{"version":3,"sources":["webpack://./node_modules/swiper/modules/navigation.css"],"names":[],"mappings":"AAAA;EACE,8BAA8B;EAC9B;;;;GAIC;AACH;AACA;;EAEE,kBAAkB;;EAElB,oCAAoC;EACpC,qCAAqC;;EAErC,WAAW;EACX,eAAe;EACf,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,gEAAgE;EAChE;IACE,aAAa;IACb,YAAY;IACZ,oBAAoB;EACtB;EACA;IACE,UAAU;IACV,YAAY;IACZ,oBAAoB;EACtB;EACA;IACE,wBAAwB;EAC1B;;EAEA;;IAEE,WAAW;IACX,YAAY;IACZ,mBAAmB;IACnB,wBAAwB;IACxB,kBAAkB;IAClB,oBAAoB;EACtB;AACF;;AAEA;EACE,aAAa;AACf;;AAEA;;EAEE,6CAA6C;EAC7C,2DAA2D;AAC7D;AACA;EACE,gDAAgD;EAChD,WAAW;EACX;;IAEE,yBAAyB;EAC3B;AACF;AACA;EACE,iDAAiD;EACjD,UAAU;AACZ;AACA;EACE;;;;IAIE,6CAA6C;IAC7C,2DAA2D;IAC3D,cAAc;EAChB;EACA;;;;IAIE,gDAAgD;IAChD,WAAW;EACb;EACA;;;;IAIE,iDAAiD;IACjD,UAAU;EACZ;EACA;;;;IAIE;;MAEE,yBAAyB;IAC3B;EACF;EACA;;IAEE;;MAEE,uBAAuB;IACzB;EACF;AACF;AACA;EACE;;;;IAIE,8CAA8C;IAC9C,WAAW;IACX,4DAA4D;IAC5D,aAAa;EACf;EACA;;IAEE,+CAA+C;IAC/C,YAAY;IACZ;;MAEE,yBAAyB;IAC3B;EACF;EACA;;IAEE,kDAAkD;IAClD,SAAS;IACT;;MAEE,wBAAwB;IAC1B;EACF;AACF","sourcesContent":[":root {\n  --swiper-navigation-size: 44px;\n  /*\n  --swiper-navigation-top-offset: 50%;\n  --swiper-navigation-sides-offset: 4px;\n  --swiper-navigation-color: var(--swiper-theme-color);\n  */\n}\n.swiper-button-prev,\n.swiper-button-next {\n  position: absolute;\n\n  width: var(--swiper-navigation-size);\n  height: var(--swiper-navigation-size);\n\n  z-index: 10;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--swiper-navigation-color, var(--swiper-theme-color));\n  &.swiper-button-disabled {\n    opacity: 0.35;\n    cursor: auto;\n    pointer-events: none;\n  }\n  &.swiper-button-hidden {\n    opacity: 0;\n    cursor: auto;\n    pointer-events: none;\n  }\n  .swiper-navigation-disabled & {\n    display: none !important;\n  }\n\n  ::slotted(svg),\n  svg {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    transform-origin: center;\n    fill: currentColor;\n    pointer-events: none;\n  }\n}\n\n.swiper-button-lock {\n  display: none;\n}\n\n.swiper-button-prev,\n.swiper-button-next {\n  top: var(--swiper-navigation-top-offset, 50%);\n  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));\n}\n.swiper-button-prev {\n  left: var(--swiper-navigation-sides-offset, 4px);\n  right: auto;\n  ::slotted(.swiper-navigation-icon),\n  .swiper-navigation-icon {\n    transform: rotate(180deg);\n  }\n}\n.swiper-button-next {\n  right: var(--swiper-navigation-sides-offset, 4px);\n  left: auto;\n}\n.swiper-horizontal {\n  .swiper-button-prev,\n  .swiper-button-next,\n  ~ .swiper-button-prev,\n  ~ .swiper-button-next {\n    top: var(--swiper-navigation-top-offset, 50%);\n    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));\n    margin-left: 0;\n  }\n  .swiper-button-prev,\n  & ~ .swiper-button-prev,\n  &.swiper-rtl .swiper-button-next,\n  &.swiper-rtl ~ .swiper-button-next {\n    left: var(--swiper-navigation-sides-offset, 4px);\n    right: auto;\n  }\n  .swiper-button-next,\n  & ~ .swiper-button-next,\n  &.swiper-rtl .swiper-button-prev,\n  &.swiper-rtl ~ .swiper-button-prev {\n    right: var(--swiper-navigation-sides-offset, 4px);\n    left: auto;\n  }\n  .swiper-button-prev,\n  & ~ .swiper-button-prev,\n  &.swiper-rtl .swiper-button-next,\n  &.swiper-rtl ~ .swiper-button-next {\n    ::slotted(.swiper-navigation-icon),\n    .swiper-navigation-icon {\n      transform: rotate(180deg);\n    }\n  }\n  &.swiper-rtl .swiper-button-prev,\n  &.swiper-rtl ~ .swiper-button-prev {\n    ::slotted(.swiper-navigation-icon),\n    .swiper-navigation-icon {\n      transform: rotate(0deg);\n    }\n  }\n}\n.swiper-vertical {\n  .swiper-button-prev,\n  .swiper-button-next,\n  ~ .swiper-button-prev,\n  ~ .swiper-button-next {\n    left: var(--swiper-navigation-top-offset, 50%);\n    right: auto;\n    margin-left: calc(0px - (var(--swiper-navigation-size) / 2));\n    margin-top: 0;\n  }\n  .swiper-button-prev,\n  ~ .swiper-button-prev {\n    top: var(--swiper-navigation-sides-offset, 4px);\n    bottom: auto;\n    ::slotted(.swiper-navigation-icon),\n    .swiper-navigation-icon {\n      transform: rotate(-90deg);\n    }\n  }\n  .swiper-button-next,\n  ~ .swiper-button-next {\n    bottom: var(--swiper-navigation-sides-offset, 4px);\n    top: auto;\n    ::slotted(.swiper-navigation-icon),\n    .swiper-navigation-icon {\n      transform: rotate(90deg);\n    }\n  }\n}\n"],"sourceRoot":""}]);
-=======
-`, "",{"version":3,"sources":["webpack://./node_modules/swiper/modules/navigation.css"],"names":[],"mappings":"AAAA;EACE,8BAA8B;EAC9B;;;;GAIC;AACH;AACA;;EAEE,kBAAkB;;EAElB,oCAAoC;EACpC,qCAAqC;;EAErC,WAAW;EACX,eAAe;EACf,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,gEAAgE;EAChE;IACE,aAAa;IACb,YAAY;IACZ,oBAAoB;EACtB;EACA;IACE,UAAU;IACV,YAAY;IACZ,oBAAoB;EACtB;EACA;IACE,wBAAwB;EAC1B;EACA;IACE,WAAW;IACX,YAAY;IACZ,mBAAmB;IACnB,wBAAwB;IACxB,kBAAkB;IAClB,oBAAoB;EACtB;AACF;;AAEA;EACE,aAAa;AACf;;AAEA;;EAEE,6CAA6C;EAC7C,2DAA2D;AAC7D;AACA;EACE,gDAAgD;EAChD,WAAW;EACX;IACE,yBAAyB;EAC3B;AACF;AACA;EACE,iDAAiD;EACjD,UAAU;AACZ;AACA;EACE;;;;IAIE,6CAA6C;IAC7C,2DAA2D;IAC3D,cAAc;EAChB;EACA;;;;IAIE,gDAAgD;IAChD,WAAW;EACb;EACA;;;;IAIE,iDAAiD;IACjD,UAAU;EACZ;EACA;;;;IAIE;MACE,yBAAyB;IAC3B;EACF;EACA;;IAEE;MACE,uBAAuB;IACzB;EACF;AACF;AACA;EACE;;;;IAIE,8CAA8C;IAC9C,WAAW;IACX,4DAA4D;IAC5D,aAAa;EACf;EACA;;IAEE,+CAA+C;IAC/C,YAAY;IACZ;MACE,yBAAyB;IAC3B;EACF;EACA;;IAEE,kDAAkD;IAClD,SAAS;IACT;MACE,wBAAwB;IAC1B;EACF;AACF","sourcesContent":[":root {\n  --swiper-navigation-size: 44px;\n  /*\n  --swiper-navigation-top-offset: 50%;\n  --swiper-navigation-sides-offset: 4px;\n  --swiper-navigation-color: var(--swiper-theme-color);\n  */\n}\n.swiper-button-prev,\n.swiper-button-next {\n  position: absolute;\n\n  width: var(--swiper-navigation-size);\n  height: var(--swiper-navigation-size);\n\n  z-index: 10;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--swiper-navigation-color, var(--swiper-theme-color));\n  &.swiper-button-disabled {\n    opacity: 0.35;\n    cursor: auto;\n    pointer-events: none;\n  }\n  &.swiper-button-hidden {\n    opacity: 0;\n    cursor: auto;\n    pointer-events: none;\n  }\n  .swiper-navigation-disabled & {\n    display: none !important;\n  }\n  svg {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    transform-origin: center;\n    fill: currentColor;\n    pointer-events: none;\n  }\n}\n\n.swiper-button-lock {\n  display: none;\n}\n\n.swiper-button-prev,\n.swiper-button-next {\n  top: var(--swiper-navigation-top-offset, 50%);\n  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));\n}\n.swiper-button-prev {\n  left: var(--swiper-navigation-sides-offset, 4px);\n  right: auto;\n  .swiper-navigation-icon {\n    transform: rotate(180deg);\n  }\n}\n.swiper-button-next {\n  right: var(--swiper-navigation-sides-offset, 4px);\n  left: auto;\n}\n.swiper-horizontal {\n  .swiper-button-prev,\n  .swiper-button-next,\n  ~ .swiper-button-prev,\n  ~ .swiper-button-next {\n    top: var(--swiper-navigation-top-offset, 50%);\n    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));\n    margin-left: 0;\n  }\n  .swiper-button-prev,\n  & ~ .swiper-button-prev,\n  &.swiper-rtl .swiper-button-next,\n  &.swiper-rtl ~ .swiper-button-next {\n    left: var(--swiper-navigation-sides-offset, 4px);\n    right: auto;\n  }\n  .swiper-button-next,\n  & ~ .swiper-button-next,\n  &.swiper-rtl .swiper-button-prev,\n  &.swiper-rtl ~ .swiper-button-prev {\n    right: var(--swiper-navigation-sides-offset, 4px);\n    left: auto;\n  }\n  .swiper-button-prev,\n  & ~ .swiper-button-prev,\n  &.swiper-rtl .swiper-button-next,\n  &.swiper-rtl ~ .swiper-button-next {\n    .swiper-navigation-icon {\n      transform: rotate(180deg);\n    }\n  }\n  &.swiper-rtl .swiper-button-prev,\n  &.swiper-rtl ~ .swiper-button-prev {\n    .swiper-navigation-icon {\n      transform: rotate(0deg);\n    }\n  }\n}\n.swiper-vertical {\n  .swiper-button-prev,\n  .swiper-button-next,\n  ~ .swiper-button-prev,\n  ~ .swiper-button-next {\n    left: var(--swiper-navigation-top-offset, 50%);\n    right: auto;\n    margin-left: calc(0px - (var(--swiper-navigation-size) / 2));\n    margin-top: 0;\n  }\n  .swiper-button-prev,\n  ~ .swiper-button-prev {\n    top: var(--swiper-navigation-sides-offset, 4px);\n    bottom: auto;\n    .swiper-navigation-icon {\n      transform: rotate(-90deg);\n    }\n  }\n  .swiper-button-next,\n  ~ .swiper-button-next {\n    bottom: var(--swiper-navigation-sides-offset, 4px);\n    top: auto;\n    .swiper-navigation-icon {\n      transform: rotate(90deg);\n    }\n  }\n}\n"],"sourceRoot":""}]);
->>>>>>> 9d34631 (npm run build)
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -504,11 +482,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/**
-<<<<<<< HEAD
  * Swiper 12.1.3
-=======
- * Swiper 12.1.2
->>>>>>> 9d34631 (npm run build)
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -516,11 +490,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/**
  *
  * Released under the MIT License
  *
-<<<<<<< HEAD
  * Released on: March 24, 2026
-=======
- * Released on: February 18, 2026
->>>>>>> 9d34631 (npm run build)
  */
 
 :root {
@@ -762,11 +732,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/**
   }
 }
 /* Slide styles end */
-<<<<<<< HEAD
 `, "",{"version":3,"sources":["webpack://./node_modules/swiper/swiper.css"],"names":[],"mappings":"AAAA;;;;;;;;;;EAUE;;AAEF;EACE,6BAA6B;EAC7B;;;GAGC;AACH;AACA;EACE,kBAAkB;EAClB,cAAc;EACd,iBAAiB;EACjB,kBAAkB;EAClB,UAAU;AACZ;AACA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,gBAAgB;EAChB,UAAU;EACV,6BAA6B;EAC7B,UAAU;EACV,cAAc;AAChB;AACA;EACE,sBAAsB;AACxB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,UAAU;EACV,aAAa;EACb,8BAA8B;EAC9B,qFAAqF;EACrF,uBAAuB;AACzB;AACA;;;EAGE,iCAAiC;AACnC;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,cAAc;EACd,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,8BAA8B;EAC9B,cAAc;AAChB;AACA;EACE,kBAAkB;AACpB;AACA,gBAAgB;AAChB;;EAEE,YAAY;AACd;AACA;EACE,uBAAuB;EACvB,sCAAsC;AACxC;AACA;EACE,wBAAwB;EACxB,2BAA2B;AAC7B;AACA,eAAe;AACf;EACE,mBAAmB;AACrB;AACA;EACE,4BAA4B;AAC9B;AACA;EACE,mBAAmB;EACnB;;IAEE,4BAA4B;EAC9B;AACF;;AAEA,aAAa;AACb;EACE;IACE,cAAc;IACd,qBAAqB,EAAE,gBAAgB;IACvC,wBAAwB,EAAE,mCAAmC;IAC7D;MACE,aAAa;IACf;EACF;EACA;IACE,8BAA8B;EAChC;EACA;IACE;MACE,6BAA6B;IAC/B;IACA;MACE,uDAAuD;MACvD,8DAA8D;IAChE;IACA;MACE,oDAAoD;IACtD;EACF;EACA;IACE;MACE,6BAA6B;IAC/B;IACA;MACE,sDAAsD;MACtD,6DAA6D;IAC/D;IACA;MACE,mDAAmD;IACrD;EACF;EACA;IACE;MACE,sBAAsB;IACxB;IACA;MACE,uBAAuB;IACzB;EACF;EACA;IACE;MACE,WAAW;MACX,cAAc;MACd,WAAW;IACb;IACA;MACE,gCAAgC;MAChC,wBAAwB;IAC1B;EACF;EACA;IACE;MACE,yDAAyD;IAC3D;IACA;MACE,YAAY;MACZ,eAAe;MACf,0CAA0C;IAC5C;EACF;EACA;IACE;MACE,wDAAwD;IAC1D;IACA;MACE,WAAW;MACX,cAAc;MACd,2CAA2C;IAC7C;EACF;AACF;;AAEA,uBAAuB;AACvB,eAAe;AACf;EACE;;;;;;;;;;IAUE,kBAAkB;IAClB,OAAO;IACP,MAAM;IACN,WAAW;IACX,YAAY;IACZ,oBAAoB;IACpB,WAAW;EACb;EACA;IACE,+BAA+B;EACjC;EACA;IACE,gFAAgF;EAClF;EACA;IACE,iFAAiF;EACnF;EACA;IACE,+EAA+E;EACjF;EACA;IACE,kFAAkF;EACpF;AACF;AACA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,kBAAkB;EAClB,iBAAiB;EACjB,WAAW;EACX,qBAAqB;EACrB,sBAAsB;EACtB,0EAA0E;EAC1E,kBAAkB;EAClB,6BAA6B;AAC/B;AACA;;EAEE;IACE,mDAAmD;EACrD;AACF;AACA;EACE,8BAA8B;AAChC;AACA;EACE,8BAA8B;AAChC;AACA;EACE;IACE,uBAAuB;EACzB;EACA;IACE,yBAAyB;EAC3B;AACF;AACA,qBAAqB","sourcesContent":["/**\n * Swiper 12.1.3\n * Most modern mobile touch slider and framework with hardware accelerated transitions\n * https://swiperjs.com\n *\n * Copyright 2014-2026 Vladimir Kharlampidi\n *\n * Released under the MIT License\n *\n * Released on: March 24, 2026\n */\n\n:root {\n  --swiper-theme-color: #007aff;\n  /*\n  --swiper-preloader-color: var(--swiper-theme-color);\n  --swiper-wrapper-transition-timing-function: initial;\n  */\n}\n:host {\n  position: relative;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  z-index: 1;\n}\n.swiper {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  /* Fix of Webkit flickering */\n  z-index: 1;\n  display: block;\n}\n.swiper-vertical > .swiper-wrapper {\n  flex-direction: column;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: flex;\n  transition-property: transform;\n  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);\n  box-sizing: content-box;\n}\n.swiper-android .swiper-slide,\n.swiper-ios .swiper-slide,\n.swiper-wrapper {\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-horizontal {\n  touch-action: pan-y;\n}\n.swiper-vertical {\n  touch-action: pan-x;\n}\n.swiper-slide {\n  flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transition-property: transform;\n  display: block;\n}\n.swiper-slide-invisible-blank {\n  visibility: hidden;\n}\n/* Auto Height */\n.swiper-autoheight,\n.swiper-autoheight .swiper-slide {\n  height: auto;\n}\n.swiper-autoheight .swiper-wrapper {\n  align-items: flex-start;\n  transition-property: transform, height;\n}\n.swiper-backface-hidden .swiper-slide {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n}\n/* 3D Effects */\n.swiper-3d.swiper-css-mode .swiper-wrapper {\n  perspective: 1200px;\n}\n.swiper-3d .swiper-wrapper {\n  transform-style: preserve-3d;\n}\n.swiper-3d {\n  perspective: 1200px;\n  .swiper-slide,\n  .swiper-cube-shadow {\n    transform-style: preserve-3d;\n  }\n}\n\n/* CSS Mode */\n.swiper-css-mode {\n  > .swiper-wrapper {\n    overflow: auto;\n    scrollbar-width: none; /* For Firefox */\n    -ms-overflow-style: none; /* For Internet Explorer and Edge */\n    &::-webkit-scrollbar {\n      display: none;\n    }\n  }\n  > .swiper-wrapper > .swiper-slide {\n    scroll-snap-align: start start;\n  }\n  &.swiper-horizontal {\n    > .swiper-wrapper {\n      scroll-snap-type: x mandatory;\n    }\n    > .swiper-wrapper > .swiper-slide:first-child {\n      margin-inline-start: var(--swiper-slides-offset-before);\n      scroll-margin-inline-start: var(--swiper-slides-offset-before);\n    }\n    > .swiper-wrapper > .swiper-slide:last-child {\n      margin-inline-end: var(--swiper-slides-offset-after);\n    }\n  }\n  &.swiper-vertical {\n    > .swiper-wrapper {\n      scroll-snap-type: y mandatory;\n    }\n    > .swiper-wrapper > .swiper-slide:first-child {\n      margin-block-start: var(--swiper-slides-offset-before);\n      scroll-margin-block-start: var(--swiper-slides-offset-before);\n    }\n    > .swiper-wrapper > .swiper-slide:last-child {\n      margin-block-end: var(--swiper-slides-offset-after);\n    }\n  }\n  &.swiper-free-mode {\n    > .swiper-wrapper {\n      scroll-snap-type: none;\n    }\n    > .swiper-wrapper > .swiper-slide {\n      scroll-snap-align: none;\n    }\n  }\n  &.swiper-centered {\n    > .swiper-wrapper::before {\n      content: '';\n      flex-shrink: 0;\n      order: 9999;\n    }\n    > .swiper-wrapper > .swiper-slide {\n      scroll-snap-align: center center;\n      scroll-snap-stop: always;\n    }\n  }\n  &.swiper-centered.swiper-horizontal {\n    > .swiper-wrapper > .swiper-slide:first-child {\n      margin-inline-start: var(--swiper-centered-offset-before);\n    }\n    > .swiper-wrapper::before {\n      height: 100%;\n      min-height: 1px;\n      width: var(--swiper-centered-offset-after);\n    }\n  }\n  &.swiper-centered.swiper-vertical {\n    > .swiper-wrapper > .swiper-slide:first-child {\n      margin-block-start: var(--swiper-centered-offset-before);\n    }\n    > .swiper-wrapper::before {\n      width: 100%;\n      min-width: 1px;\n      height: var(--swiper-centered-offset-after);\n    }\n  }\n}\n\n/* Slide styles start */\n/* 3D Shadows */\n.swiper-3d {\n  .swiper-slide-shadow,\n  .swiper-slide-shadow-left,\n  .swiper-slide-shadow-right,\n  .swiper-slide-shadow-top,\n  .swiper-slide-shadow-bottom,\n  .swiper-slide-shadow,\n  .swiper-slide-shadow-left,\n  .swiper-slide-shadow-right,\n  .swiper-slide-shadow-top,\n  .swiper-slide-shadow-bottom {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    pointer-events: none;\n    z-index: 10;\n  }\n  .swiper-slide-shadow {\n    background: rgba(0, 0, 0, 0.15);\n  }\n  .swiper-slide-shadow-left {\n    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n  }\n  .swiper-slide-shadow-right {\n    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n  }\n  .swiper-slide-shadow-top {\n    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n  }\n  .swiper-slide-shadow-bottom {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n  }\n}\n.swiper-lazy-preloader {\n  width: 42px;\n  height: 42px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-left: -21px;\n  margin-top: -21px;\n  z-index: 10;\n  transform-origin: 50%;\n  box-sizing: border-box;\n  border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));\n  border-radius: 50%;\n  border-top-color: transparent;\n}\n.swiper:not(.swiper-watch-progress),\n.swiper-watch-progress .swiper-slide-visible {\n  .swiper-lazy-preloader {\n    animation: swiper-preloader-spin 1s infinite linear;\n  }\n}\n.swiper-lazy-preloader-white {\n  --swiper-preloader-color: #fff;\n}\n.swiper-lazy-preloader-black {\n  --swiper-preloader-color: #000;\n}\n@keyframes swiper-preloader-spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/* Slide styles end */\n"],"sourceRoot":""}]);
-=======
-`, "",{"version":3,"sources":["webpack://./node_modules/swiper/swiper.css"],"names":[],"mappings":"AAAA;;;;;;;;;;EAUE;;AAEF;EACE,6BAA6B;EAC7B;;;GAGC;AACH;AACA;EACE,kBAAkB;EAClB,cAAc;EACd,iBAAiB;EACjB,kBAAkB;EAClB,UAAU;AACZ;AACA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;EAChB,gBAAgB;EAChB,UAAU;EACV,6BAA6B;EAC7B,UAAU;EACV,cAAc;AAChB;AACA;EACE,sBAAsB;AACxB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,UAAU;EACV,aAAa;EACb,8BAA8B;EAC9B,qFAAqF;EACrF,uBAAuB;AACzB;AACA;;;EAGE,iCAAiC;AACnC;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,cAAc;EACd,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,8BAA8B;EAC9B,cAAc;AAChB;AACA;EACE,kBAAkB;AACpB;AACA,gBAAgB;AAChB;;EAEE,YAAY;AACd;AACA;EACE,uBAAuB;EACvB,sCAAsC;AACxC;AACA;EACE,wBAAwB;EACxB,2BAA2B;AAC7B;AACA,eAAe;AACf;EACE,mBAAmB;AACrB;AACA;EACE,4BAA4B;AAC9B;AACA;EACE,mBAAmB;EACnB;;IAEE,4BAA4B;EAC9B;AACF;;AAEA,aAAa;AACb;EACE;IACE,cAAc;IACd,qBAAqB,EAAE,gBAAgB;IACvC,wBAAwB,EAAE,mCAAmC;IAC7D;MACE,aAAa;IACf;EACF;EACA;IACE,8BAA8B;EAChC;EACA;IACE;MACE,6BAA6B;IAC/B;IACA;MACE,uDAAuD;MACvD,8DAA8D;IAChE;IACA;MACE,oDAAoD;IACtD;EACF;EACA;IACE;MACE,6BAA6B;IAC/B;IACA;MACE,sDAAsD;MACtD,6DAA6D;IAC/D;IACA;MACE,mDAAmD;IACrD;EACF;EACA;IACE;MACE,sBAAsB;IACxB;IACA;MACE,uBAAuB;IACzB;EACF;EACA;IACE;MACE,WAAW;MACX,cAAc;MACd,WAAW;IACb;IACA;MACE,gCAAgC;MAChC,wBAAwB;IAC1B;EACF;EACA;IACE;MACE,yDAAyD;IAC3D;IACA;MACE,YAAY;MACZ,eAAe;MACf,0CAA0C;IAC5C;EACF;EACA;IACE;MACE,wDAAwD;IAC1D;IACA;MACE,WAAW;MACX,cAAc;MACd,2CAA2C;IAC7C;EACF;AACF;;AAEA,uBAAuB;AACvB,eAAe;AACf;EACE;;;;;;;;;;IAUE,kBAAkB;IAClB,OAAO;IACP,MAAM;IACN,WAAW;IACX,YAAY;IACZ,oBAAoB;IACpB,WAAW;EACb;EACA;IACE,+BAA+B;EACjC;EACA;IACE,gFAAgF;EAClF;EACA;IACE,iFAAiF;EACnF;EACA;IACE,+EAA+E;EACjF;EACA;IACE,kFAAkF;EACpF;AACF;AACA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,kBAAkB;EAClB,iBAAiB;EACjB,WAAW;EACX,qBAAqB;EACrB,sBAAsB;EACtB,0EAA0E;EAC1E,kBAAkB;EAClB,6BAA6B;AAC/B;AACA;;EAEE;IACE,mDAAmD;EACrD;AACF;AACA;EACE,8BAA8B;AAChC;AACA;EACE,8BAA8B;AAChC;AACA;EACE;IACE,uBAAuB;EACzB;EACA;IACE,yBAAyB;EAC3B;AACF;AACA,qBAAqB","sourcesContent":["/**\n * Swiper 12.1.2\n * Most modern mobile touch slider and framework with hardware accelerated transitions\n * https://swiperjs.com\n *\n * Copyright 2014-2026 Vladimir Kharlampidi\n *\n * Released under the MIT License\n *\n * Released on: February 18, 2026\n */\n\n:root {\n  --swiper-theme-color: #007aff;\n  /*\n  --swiper-preloader-color: var(--swiper-theme-color);\n  --swiper-wrapper-transition-timing-function: initial;\n  */\n}\n:host {\n  position: relative;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  z-index: 1;\n}\n.swiper {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  /* Fix of Webkit flickering */\n  z-index: 1;\n  display: block;\n}\n.swiper-vertical > .swiper-wrapper {\n  flex-direction: column;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: flex;\n  transition-property: transform;\n  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);\n  box-sizing: content-box;\n}\n.swiper-android .swiper-slide,\n.swiper-ios .swiper-slide,\n.swiper-wrapper {\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-horizontal {\n  touch-action: pan-y;\n}\n.swiper-vertical {\n  touch-action: pan-x;\n}\n.swiper-slide {\n  flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transition-property: transform;\n  display: block;\n}\n.swiper-slide-invisible-blank {\n  visibility: hidden;\n}\n/* Auto Height */\n.swiper-autoheight,\n.swiper-autoheight .swiper-slide {\n  height: auto;\n}\n.swiper-autoheight .swiper-wrapper {\n  align-items: flex-start;\n  transition-property: transform, height;\n}\n.swiper-backface-hidden .swiper-slide {\n  transform: translateZ(0);\n  backface-visibility: hidden;\n}\n/* 3D Effects */\n.swiper-3d.swiper-css-mode .swiper-wrapper {\n  perspective: 1200px;\n}\n.swiper-3d .swiper-wrapper {\n  transform-style: preserve-3d;\n}\n.swiper-3d {\n  perspective: 1200px;\n  .swiper-slide,\n  .swiper-cube-shadow {\n    transform-style: preserve-3d;\n  }\n}\n\n/* CSS Mode */\n.swiper-css-mode {\n  > .swiper-wrapper {\n    overflow: auto;\n    scrollbar-width: none; /* For Firefox */\n    -ms-overflow-style: none; /* For Internet Explorer and Edge */\n    &::-webkit-scrollbar {\n      display: none;\n    }\n  }\n  > .swiper-wrapper > .swiper-slide {\n    scroll-snap-align: start start;\n  }\n  &.swiper-horizontal {\n    > .swiper-wrapper {\n      scroll-snap-type: x mandatory;\n    }\n    > .swiper-wrapper > .swiper-slide:first-child {\n      margin-inline-start: var(--swiper-slides-offset-before);\n      scroll-margin-inline-start: var(--swiper-slides-offset-before);\n    }\n    > .swiper-wrapper > .swiper-slide:last-child {\n      margin-inline-end: var(--swiper-slides-offset-after);\n    }\n  }\n  &.swiper-vertical {\n    > .swiper-wrapper {\n      scroll-snap-type: y mandatory;\n    }\n    > .swiper-wrapper > .swiper-slide:first-child {\n      margin-block-start: var(--swiper-slides-offset-before);\n      scroll-margin-block-start: var(--swiper-slides-offset-before);\n    }\n    > .swiper-wrapper > .swiper-slide:last-child {\n      margin-block-end: var(--swiper-slides-offset-after);\n    }\n  }\n  &.swiper-free-mode {\n    > .swiper-wrapper {\n      scroll-snap-type: none;\n    }\n    > .swiper-wrapper > .swiper-slide {\n      scroll-snap-align: none;\n    }\n  }\n  &.swiper-centered {\n    > .swiper-wrapper::before {\n      content: '';\n      flex-shrink: 0;\n      order: 9999;\n    }\n    > .swiper-wrapper > .swiper-slide {\n      scroll-snap-align: center center;\n      scroll-snap-stop: always;\n    }\n  }\n  &.swiper-centered.swiper-horizontal {\n    > .swiper-wrapper > .swiper-slide:first-child {\n      margin-inline-start: var(--swiper-centered-offset-before);\n    }\n    > .swiper-wrapper::before {\n      height: 100%;\n      min-height: 1px;\n      width: var(--swiper-centered-offset-after);\n    }\n  }\n  &.swiper-centered.swiper-vertical {\n    > .swiper-wrapper > .swiper-slide:first-child {\n      margin-block-start: var(--swiper-centered-offset-before);\n    }\n    > .swiper-wrapper::before {\n      width: 100%;\n      min-width: 1px;\n      height: var(--swiper-centered-offset-after);\n    }\n  }\n}\n\n/* Slide styles start */\n/* 3D Shadows */\n.swiper-3d {\n  .swiper-slide-shadow,\n  .swiper-slide-shadow-left,\n  .swiper-slide-shadow-right,\n  .swiper-slide-shadow-top,\n  .swiper-slide-shadow-bottom,\n  .swiper-slide-shadow,\n  .swiper-slide-shadow-left,\n  .swiper-slide-shadow-right,\n  .swiper-slide-shadow-top,\n  .swiper-slide-shadow-bottom {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    pointer-events: none;\n    z-index: 10;\n  }\n  .swiper-slide-shadow {\n    background: rgba(0, 0, 0, 0.15);\n  }\n  .swiper-slide-shadow-left {\n    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n  }\n  .swiper-slide-shadow-right {\n    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n  }\n  .swiper-slide-shadow-top {\n    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n  }\n  .swiper-slide-shadow-bottom {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n  }\n}\n.swiper-lazy-preloader {\n  width: 42px;\n  height: 42px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-left: -21px;\n  margin-top: -21px;\n  z-index: 10;\n  transform-origin: 50%;\n  box-sizing: border-box;\n  border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));\n  border-radius: 50%;\n  border-top-color: transparent;\n}\n.swiper:not(.swiper-watch-progress),\n.swiper-watch-progress .swiper-slide-visible {\n  .swiper-lazy-preloader {\n    animation: swiper-preloader-spin 1s infinite linear;\n  }\n}\n.swiper-lazy-preloader-white {\n  --swiper-preloader-color: #fff;\n}\n.swiper-lazy-preloader-black {\n  --swiper-preloader-color: #000;\n}\n@keyframes swiper-preloader-spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/* Slide styles end */\n"],"sourceRoot":""}]);
->>>>>>> 9d34631 (npm run build)
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1385,13 +1351,6 @@ module.exports = styleTagTransform;
   \**************************/
 () {
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 048dcbb (npm run build)
->>>>>>> 9d34631 (npm run build)
 const burgerBtn = document.querySelector('.burger-btn');
 const mobileMenu = document.querySelector('#megamenu');
 
@@ -1447,11 +1406,6 @@ links.forEach(link => {
 
 /***/ },
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9d34631 (npm run build)
 /***/ "./src/js/parallax.js"
 /*!****************************!*\
   !*** ./src/js/parallax.js ***!
@@ -1473,45 +1427,18 @@ new simple_parallax_js_vanilla__WEBPACK_IMPORTED_MODULE_0__["default"](image, {
 
 /***/ },
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 815fcfc (structure html)
-=======
->>>>>>> 048dcbb (npm run build)
->>>>>>> 9d34631 (npm run build)
 /***/ "./src/js/scroll-top.js"
 /*!******************************!*\
   !*** ./src/js/scroll-top.js ***!
   \******************************/
 () {
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9d34631 (npm run build)
 window.addEventListener("scroll", () => {
   const btn = document.querySelector(".scroll-top");
   btn.classList.toggle("visible", window.scrollY > 300);
 });
 
 
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 048dcbb (npm run build)
-window.addEventListener('scroll', () => {
-    const btn = document.querySelector('.scroll-top');
-    btn.classList.toggle('visible', window.scrollY > 300);
-});
-
-<<<<<<< HEAD
->>>>>>> 815fcfc (structure html)
-=======
->>>>>>> 048dcbb (npm run build)
->>>>>>> 9d34631 (npm run build)
 /***/ },
 
 /***/ "./src/js/swiper-gallery.js"
@@ -1534,92 +1461,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-<<<<<<< HEAD
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
-=======
-=======
->>>>>>> 048dcbb (npm run build)
-=======
->>>>>>> 3f11fe0 (ajout div container footer)
-=======
->>>>>>> 657534c (npm run dev)
-=======
->>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
-
-
-const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
-<<<<<<< HEAD
->>>>>>> 815fcfc (structure html)
-=======
->>>>>>> 048dcbb (npm run build)
-<<<<<<< HEAD
->>>>>>> 9d34631 (npm run build)
-=======
-=======
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
->>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
-<<<<<<< HEAD
->>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
-=======
-=======
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
->>>>>>> 11a19a1 (structure html)
->>>>>>> d775d9a (structure html)
 
   navigation: {
     nextEl: ".gallery-next",
     prevEl: ".gallery-prev",
   },
 
-  pagination: {
-    el: ".swiper-pagination-gallery",
-    clickable: true,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9d34631 (npm run build)
-=======
->>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
-=======
->>>>>>> d775d9a (structure html)
-    type: "bullets",
-  },
-
-  slidesPerView: 1.2,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-  spaceBetween: 200,
-  loop: true,
-  speed: 600,
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 048dcbb (npm run build)
-  },
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  },
-
->>>>>>> 11a19a1 (structure html)
     pagination: {
         el: '.swiper-pagination-gallery',
         clickable: true,
@@ -1631,57 +1480,6 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
     spaceBetween: 200,
     loop: true,
     speed: 600,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 815fcfc (structure html)
-=======
->>>>>>> 048dcbb (npm run build)
-<<<<<<< HEAD
->>>>>>> 9d34631 (npm run build)
-=======
-=======
-=======
-=======
->>>>>>> 5547920 (npm run dev)
-  pagination: {
-    el: ".swiper-pagination-gallery",
-    clickable: true,
-=======
->>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
-    type: "bullets",
-  },
-
-  slidesPerView: 1.2,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-  spaceBetween: 200,
-  loop: true,
-  speed: 600,
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> abb23aa (ajout div container footer)
-<<<<<<< HEAD
->>>>>>> 3f11fe0 (ajout div container footer)
-<<<<<<< HEAD
->>>>>>> d41a9bc (ajout div container footer)
-=======
-=======
-=======
->>>>>>> 5547920 (npm run dev)
->>>>>>> 657534c (npm run dev)
-<<<<<<< HEAD
->>>>>>> fc9a2a7 (npm run dev)
-=======
-=======
->>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
-<<<<<<< HEAD
->>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
-=======
-=======
->>>>>>> 11a19a1 (structure html)
->>>>>>> d775d9a (structure html)
 });
 
 
@@ -1793,11 +1591,6 @@ const swiperReference = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swi
   speed: 600,
 });
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9d34631 (npm run build)
 const swiperVertical = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-vertical", {
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
   autoplay: true,
@@ -2072,13 +1865,6 @@ class g {
 }
 
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 815fcfc (structure html)
-=======
->>>>>>> 048dcbb (npm run build)
->>>>>>> 9d34631 (npm run build)
 
 /***/ },
 
@@ -12660,15 +12446,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| import \"./js/header.js\";\n| import \"./js/scroll-top.js\";\n> <<<<<<< HEAD\n| import \"./js/img-hover.js\";\n| =======");
->>>>>>> 3d2ceae (finetuning 26-03)
-=======
->>>>>>> 048dcbb (npm run build)
->>>>>>> 9d34631 (npm run build)
 
 /***/ }
 
@@ -12691,13 +12468,6 @@ throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an ap
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 048dcbb (npm run build)
->>>>>>> 9d34631 (npm run build)
 /******/ 		// Execute the module function
 /******/ 		if (!(moduleId in __webpack_modules__)) {
 /******/ 			delete __webpack_module_cache__[moduleId];
@@ -12773,24 +12543,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_header_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_header_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/scroll-top.js */ "./src/js/scroll-top.js");
 /* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
-/* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9d34631 (npm run build)
-/* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
+/* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
+/* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
+/* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_6__);
 
 
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 815fcfc (structure html)
-=======
->>>>>>> 048dcbb (npm run build)
->>>>>>> 9d34631 (npm run build)
 
 
 
@@ -12801,14 +12558,6 @@ __webpack_require__.r(__webpack_exports__);
 
 })();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3d2ceae (finetuning 26-03)
-=======
->>>>>>> 048dcbb (npm run build)
->>>>>>> 9d34631 (npm run build)
 /******/ })()
 ;
 //# sourceMappingURL=main.bundle.js.map
