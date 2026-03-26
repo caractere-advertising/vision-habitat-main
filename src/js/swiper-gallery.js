@@ -15,17 +15,15 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     prevEl: ".gallery-prev",
   },
 
-  pagination: {
-    el: ".swiper-pagination-gallery",
-    clickable: true,
-    type: "bullets",
-  },
+    pagination: {
+        el: '.swiper-pagination-gallery',
+        clickable: true,
+        type:'bullets'
+    },
 
-  slidesPerView: 1.2,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-  spaceBetween: 200,
-  loop: true,
-  speed: 600,
+    slidesPerView: 1.2,
+    //centeredSlides: 'auto',
+    spaceBetween: 200,
+    loop: true,
+    speed: 600,
 });
