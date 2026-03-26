@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/tailwind.css"
@@ -8,6 +7,7 @@
   \******************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1790,6 +1790,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*! tailwindcss v4.2.1 | MIT License |
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/scss/main.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5051,7 +5052,11 @@ body {
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 >>>>>>> 6da51f7 (npm run build)
+=======
+() {
+>>>>>>> d0009f5 (ajout div container footer)
 
+throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"{\".\n\u001b[34m   ╷\u001b[0m\n\u001b[34m75 │\u001b[0m >>>>>>> abb23aa (ajout div container footer)\u001b[31m\u001b[0m\n\u001b[34m   │\u001b[0m \u001b[31m                                            ^\u001b[0m\n\u001b[34m   ╵\u001b[0m\n  src/scss/builder/section6.scss 75:45  @use\n  src/scss/main.scss 9:1                root stylesheet");
 
 /***/ },
 
@@ -5061,6 +5066,7 @@ body {
   \*****************************************************/
 (module) {
 
+"use strict";
 
 
 /*
@@ -5155,6 +5161,7 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 (module) {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -5180,6 +5187,7 @@ module.exports = function (item) {
   \**************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -5232,6 +5240,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -5284,6 +5293,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 (module) {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -5377,6 +5387,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 (module) {
 
+"use strict";
 
 
 var memo = {};
@@ -5420,6 +5431,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 (module) {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -5439,6 +5451,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -5458,6 +5471,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 (module) {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -5528,6 +5542,7 @@ module.exports = domAPI;
   \*********************************************************************/
 (module) {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -5625,8 +5640,9 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/style.js ***!
   \**********************/
