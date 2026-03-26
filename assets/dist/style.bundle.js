@@ -9567,6 +9567,7 @@ __webpack_require__.r(__webpack_exports__);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //# sourceMappingURL=style.bundle.js.map
 =======
 >>>>>>> aec7400 (npm run build)
@@ -9594,3 +9595,6 @@ __webpack_require__.r(__webpack_exports__);
 =======
 //# sourceMappingURL=style.bundle.js.map
 >>>>>>> 44d9f3c (calc(100-60px))
+=======
+//# sourceMappingURL=style.bundle.js.map
+>>>>>>> 15690dd (npm run build)
