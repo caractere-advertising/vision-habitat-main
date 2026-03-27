@@ -1,5 +1,15 @@
 
 <?php
+<<<<<<< HEAD
+=======
+//champs page d'option acf
+//logo-social-media (répéteur -> image, lien)
+//menu-burger-footer(répéteur ->lien)
+//cond_générales (groupe ->cond(texte),copyright(texte))
+//bg-menu-image (image)
+//infos-contact(site-name(texte),street-name(texte),locality(texte), tel-num(texte),mail(texte),tva(texte))
+//logo_bg_menu(image)
+>>>>>>> bb29b64 (structure html)
 
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
@@ -80,6 +90,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
          <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
 =======
 =======
@@ -88,33 +99,26 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
 <<<<<<< header
 >>>>>>> e0c9354 (avancement bg-menu)
+=======
+>>>>>>> bb29b64 (structure html)
 
         <button class="burger-btn burger-btn-close">&#x2715;</button>
 >>>>>>> 0629f4f (avancement bg-menu)
 
         <?php wp_nav_menu([
-=======
-        <button class="burger-btn
-         burger-btn-close">&#x2715;</button>
-
-        <?php
-        wp_nav_menu([
->>>>>>> 401cb8c (avancement bg-menu)
-=======
-
-        <button class="burger-btn burger-btn-close">&#x2715;</button>
-
-        <?php wp_nav_menu([
->>>>>>> d4eec9f (suite burger menu)
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
             'container_class' => 'burger-nav from-right',
             'menu_class'     => 'burger-menu_list',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         ]);?>
 =======
 <<<<<<< HEAD
+=======
+
+>>>>>>> bb29b64 (structure html)
         ]); ?>
 >>>>>>> 0629f4f (avancement bg-menu)
 
@@ -138,6 +142,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 <<<<<<< HEAD
 
 </section>
+<<<<<<< HEAD
 =======
 >>>>>>> 553e536 (suite burger menu)
 <<<<<<< HEAD
@@ -223,3 +228,5 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 </section>
 >>>>>>> aa53866 (avancement bg-menu)
 >>>>>>> e0c9354 (avancement bg-menu)
+=======
+>>>>>>> bb29b64 (structure html)
