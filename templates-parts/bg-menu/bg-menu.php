@@ -1,4 +1,12 @@
 <?php
+//champs page d'option acf
+//logo-social-media (répéteur -> image, lien)
+//menu-burger-footer(répéteur ->lien)
+//cond_générales (groupe ->cond(texte),copyright(texte))
+//bg-menu-image (image)
+//infos-contact(site-name(texte),street-name(texte),locality(texte), tel-num(texte),mail(texte),tva(texte))
+//logo_bg_menu(image)
+
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
@@ -51,44 +59,16 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     </div>
 
     <div class="menu-burger-right">
-<<<<<<< HEAD
-<<<<<<< HEAD
         <button class="burger-btn burger-btn-close">&#x2715;</button>
-
         <?php wp_nav_menu([
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< header
->>>>>>> e0c9354 (avancement bg-menu)
-
-        <button class="burger-btn burger-btn-close">&#x2715;</button>
-
-        <?php wp_nav_menu([
-=======
         <button class="burger-btn
          burger-btn-close">&#x2715;</button>
 
-        <?php
-        wp_nav_menu([
->>>>>>> 401cb8c (avancement bg-menu)
-=======
-
-        <button class="burger-btn burger-btn-close">&#x2715;</button>
-
         <?php wp_nav_menu([
->>>>>>> d4eec9f (suite burger menu)
->>>>>>> 553e536 (suite burger menu)
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
             'container_class' => 'burger-nav',
             'menu_class'     => 'burger-menu_list',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 553e536 (suite burger menu)
         ]); ?>
         <div class="menu-bottom">
  <hr class="burger-hr">
@@ -112,11 +92,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     </div>
 
 </section>
-        ]);
-        ?>
-=======
         ]); ?>
->>>>>>> d4eec9f (suite burger menu)
 
         <?php if ($footer_nav) : ?>
             <ul class="bg-menu">
@@ -139,23 +115,5 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
-
     </div>
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    </section>
-=======
-<<<<<<< HEAD
-    </section>
->>>>>>> 401cb8c (avancement bg-menu)
-=======
 </section>
->>>>>>> d4eec9f (suite burger menu)
-<<<<<<< HEAD
->>>>>>> 553e536 (suite burger menu)
-=======
-=======
-</section>
->>>>>>> aa53866 (avancement bg-menu)
->>>>>>> e0c9354 (avancement bg-menu)
