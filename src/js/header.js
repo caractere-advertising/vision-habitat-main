@@ -1,5 +1,5 @@
 const burgerBtn = document.querySelector('.burger-btn');
-const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenu = document.querySelector('#megamenu');
 
 if (burgerBtn && mobileMenu) {
     burgerBtn.addEventListener('click', () => {
