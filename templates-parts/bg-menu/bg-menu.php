@@ -1,4 +1,12 @@
 <?php
+//champs page d'option acf
+//logo-social-media (répéteur -> image, lien)
+//menu-burger-footer(répéteur ->lien)
+//cond_générales (groupe ->cond(texte),copyright(texte))
+//bg-menu-image (image)
+//infos-contact(site-name(texte),street-name(texte),locality(texte), tel-num(texte),mail(texte),tva(texte))
+//logo_bg_menu(image)
+
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
