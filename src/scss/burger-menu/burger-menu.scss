@@ -1,0 +1,6 @@
+@use "./../variables/colors.scss" as *;
+
+.menu-burger{
+    display: flex;
+    flex-direction: column;
+}
