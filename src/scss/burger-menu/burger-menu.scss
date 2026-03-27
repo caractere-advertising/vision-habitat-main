@@ -1,5 +1,6 @@
 @use "./../variables/colors.scss" as *;
 
+<<<<<<< HEAD
 
 .menu-burger {
   display: flex;
@@ -200,3 +201,9 @@
     opacity: 0.6;
     margin: 0;
 }
+=======
+.menu-burger{
+    display: flex;
+    flex-direction: column;
+}
+>>>>>>> e88ed7f (structure html)
