@@ -13926,7 +13926,7 @@ module.exports = styleTagTransform;
 () {
 
 const burgerBtn = document.querySelector('.burger-btn');
-const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenu = document.querySelector('#megamenu');
 
 if (burgerBtn && mobileMenu) {
     burgerBtn.addEventListener('click', () => {
@@ -14006,8 +14006,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
 
   navigation: {
     nextEl: ".gallery-next",
@@ -14017,16 +14019,19 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
   pagination: {
     el: ".swiper-pagination-gallery",
     clickable: true,
-    type: "bullets",
   },
 
-  slidesPerView: 1.2,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-  spaceBetween: 200,
-  loop: true,
-  speed: 600,
+    pagination: {
+        el: '.swiper-pagination-gallery',
+        clickable: true,
+        type:'bullets'
+    },
+
+    slidesPerView: 1.2,
+    //centeredSlides: 'auto',
+    spaceBetween: 200,
+    loop: true,
+    speed: 600,
 });
 
 
