@@ -1558,6 +1558,7 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
 
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
 <<<<<<< HEAD
+<<<<<<< HEAD
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
 <<<<<<< HEAD
 >>>>>>> 815fcfc (structure html)
@@ -1569,7 +1570,13 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
 =======
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
 >>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
+<<<<<<< HEAD
 >>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
+=======
+=======
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+>>>>>>> 11a19a1 (structure html)
+>>>>>>> d775d9a (structure html)
 
   navigation: {
     nextEl: ".gallery-next",
@@ -1584,9 +1591,12 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9d34631 (npm run build)
 =======
 >>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
+=======
+>>>>>>> d775d9a (structure html)
     type: "bullets",
   },
 
@@ -1606,6 +1616,10 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+  },
+
+>>>>>>> 11a19a1 (structure html)
     pagination: {
         el: '.swiper-pagination-gallery',
         clickable: true,
@@ -1617,6 +1631,7 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
     spaceBetween: 200,
     loop: true,
     speed: 600,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 815fcfc (structure html)
@@ -1661,7 +1676,12 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
 =======
 =======
 >>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
+<<<<<<< HEAD
 >>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
+=======
+=======
+>>>>>>> 11a19a1 (structure html)
+>>>>>>> d775d9a (structure html)
 });
 
 
