@@ -24927,6 +24927,7 @@ links.forEach(link => {
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ "./src/js/parallax.js"
 /*!****************************!*\
   !*** ./src/js/parallax.js ***!
@@ -24948,6 +24949,8 @@ new simple_parallax_js_vanilla__WEBPACK_IMPORTED_MODULE_0__["default"](image, {
 
 /***/ },
 
+=======
+>>>>>>> 815fcfc (structure html)
 /***/ "./src/js/scroll-top.js"
 /*!******************************!*\
   !*** ./src/js/scroll-top.js ***!
@@ -24981,8 +24984,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+=======
+
+
+const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+>>>>>>> 815fcfc (structure html)
 
   navigation: {
     nextEl: ".gallery-next",
@@ -24992,6 +25002,7 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
   pagination: {
     el: ".swiper-pagination-gallery",
     clickable: true,
+<<<<<<< HEAD
     type: "bullets",
   },
 
@@ -25002,6 +25013,21 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
   spaceBetween: 200,
   loop: true,
   speed: 600,
+=======
+  },
+
+    pagination: {
+        el: '.swiper-pagination-gallery',
+        clickable: true,
+        type:'bullets'
+    },
+
+    slidesPerView: 1.2,
+    //centeredSlides: 'auto',
+    spaceBetween: 200,
+    loop: true,
+    speed: 600,
+>>>>>>> 815fcfc (structure html)
 });
 
 
@@ -25113,6 +25139,7 @@ const swiperReference = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swi
   speed: 600,
 });
 
+<<<<<<< HEAD
 const swiperVertical = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-vertical", {
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
   autoplay: true,
@@ -25387,6 +25414,8 @@ class g {
 }
 
 
+=======
+>>>>>>> 815fcfc (structure html)
 
 /***/ },
 
@@ -36066,9 +36095,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__);
+<<<<<<< HEAD
 /* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
 
 
+=======
+>>>>>>> 815fcfc (structure html)
 
 
 
