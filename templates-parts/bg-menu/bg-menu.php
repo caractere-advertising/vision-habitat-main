@@ -97,6 +97,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 </section>
         ]); ?>
 
@@ -129,3 +130,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
 </section>
 >>>>>>> 052211e (avancement bg-menu)
+=======
+</section>
+>>>>>>> 1fb1278 (structure html)
