@@ -1,6 +1,5 @@
 @use "./../variables/colors.scss" as *;
 
-<<<<<<< HEAD
 
 .menu-burger {
   display: flex;
@@ -86,9 +85,7 @@
   width: 100%;
 }
 
-
-
-.big-menu  {
+.big-menu li a {
   color: $white;
   font-size: 3rem;
   font-weight: 600;
@@ -113,11 +110,10 @@
   line-height: 1.5;
   display: block;
 
+.burger-menu_list li.is-secondary a {
+  font-size: 3rem;
+  letter-spacing: 1px;
 }
-
-//.burger-menu_list ul{
-  //gap: 100px;
-//}
 
 
 .burger-menu_list li.big-menu + li.bg-menu-small {
@@ -134,7 +130,15 @@
   color: $secondaryColor;
 }
 
-.bg-menu-gold {
+.bg-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.burger-cta-list li a {
   color: $secondaryColor;
   text-decoration: none;
   font-size: 1.5rem;
@@ -201,9 +205,3 @@
     opacity: 0.6;
     margin: 0;
 }
-=======
-.menu-burger{
-    display: flex;
-    flex-direction: column;
-}
->>>>>>> e88ed7f (structure html)
