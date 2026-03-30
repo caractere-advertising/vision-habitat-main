@@ -317,11 +317,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   align-items:end;
   padding-top: 300px;
   padding-right: 50px;
   gap: 50px;
   height: fit-content;
+=======
+  align-items: flex-end;
+  padding: 60px 80px;
+>>>>>>> 0629f4f (avancement bg-menu)
 }
 =======
   .menu-burger-right {
@@ -731,6 +736,7 @@
         border-top: 1px solid $lightGrayTransparent;
 >>>>>>> 08604e2 (Fix : Correction du burger-menu.scss + footer + functions + template-builder.php)
 
+<<<<<<< HEAD
         .burger-legal-footer {
           padding: 0;
           margin-top: 40px;
@@ -791,3 +797,13 @@
   }
 }
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
+=======
+.burger-legal-copyright {
+    color: $white;
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin: 0;
+}
+>>>>>>> 0629f4f (avancement bg-menu)
