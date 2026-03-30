@@ -1,12 +1,4 @@
 <?php
-//champs page d'option acf
-//logo-social-media (répéteur -> image, lien)
-//menu-burger-footer(répéteur ->lien)
-//cond_générales (groupe ->cond(texte),copyright(texte))
-//bg-menu-image (image)
-//infos-contact(site-name(texte),street-name(texte),locality(texte), tel-num(texte),mail(texte),tva(texte))
-//logo_bg_menu(image)
-
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
@@ -29,8 +21,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php endif; ?>
 
         <div class="menu-burger-left-bottom">
-<?php var_dump($burger_info_contact); ?>
-<?php if ($burger_info_contact) : ?>
             <?php if ($burger_info_contact) : ?>
                 <?php $info = $burger_info_contact[0]; ?>
                 <div class="menu-burger-contact">
@@ -54,7 +44,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
             <?php endif; ?>
 
         </div>
-
     </div>
     <div class="menu-burger-right">
 
@@ -87,12 +76,12 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
             <hr class="burger-hr">
 
-            
+            <?php var_dump($cond_generales); ?>
+            <?php if ($cond_generales) : ?>
                 <div class="burger-legal-copy">
                     <p class="burger-legal-links"><?= esc_html($cond_generales['cond']) ?></p>
                     <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
                 </div>
-                
             <?php endif; ?>
 
         </div>
