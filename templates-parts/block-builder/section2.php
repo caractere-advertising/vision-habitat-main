@@ -9,7 +9,6 @@ $paragraph = get_sub_field('paragraph');
 
 ?>
 
-
 <section class="section-text-evidence" id="ancre-1">
     <div class="section-inner container">
 

@@ -17,14 +17,14 @@
             ?>
                 <div class="swiper-slide">
                     <div class="background">
-                        <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+                        <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
                     </div>
                     <div class="content">
                         <div class="content-titre">
-                            <?php echo $s['titre']; ?>
+                            <?= $s['titre']; ?>
                         </div>
-                        <a href="<?php echo $s['cta']['url']; ?>" class="btn-cta">
-                            <?php echo $s['cta']['title']; ?>
+                        <a href="<?= $s['cta']['url']; ?>" class="btn-cta">
+                            <?= $s['cta']['title']; ?>
                         </a>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                 <span class="number-slide number-current">01</span>
                 <div class="swiper-scrollbar"></div>
                 <span class="number-slide number-total">
-                    <?php echo $length < 10 ? '0' . $length : $length; ?>
+                    <?= $length < 10 ? '0' . $length : $length; ?>
                 </span>
             </div>
             <div class="swiper-pagination"></div>

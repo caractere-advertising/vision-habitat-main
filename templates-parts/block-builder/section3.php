@@ -19,8 +19,8 @@ $cards = get_sub_field('card');
                     <div class="card-image">
                         <?php if ($image) : ?>
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                        <?php endif; ?>
-                        <?php if ($link) : ?>
+                        <?php endif;
+                        if ($link) : ?>
                             <a href="<?php echo $link['url']; ?>" class="card-plus">+</a>
                         <?php endif; ?>
                     </div>
@@ -28,8 +28,8 @@ $cards = get_sub_field('card');
                     <div class="card-body">
                         <?php if ($category) : ?>
                             <span class="card-category"><?php echo $category; ?></span>
-                        <?php endif; ?>
-                        <?php if ($link) : ?>
+                        <?php endif;
+                        if ($link) : ?>
                             <p class="card-title"><?php echo $link['title']; ?></p>
                         <?php endif; ?>
                     </div>
