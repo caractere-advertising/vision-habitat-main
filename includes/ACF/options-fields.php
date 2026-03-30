@@ -64,7 +64,6 @@ acf_add_local_field_group( array(
 				),
 				'return_format' => 'array',
 				'library' => 'all',
-				
 				'mime_types' => '',
 				'allow_in_bindings' => 0,
 				'preview_size' => 'medium',
