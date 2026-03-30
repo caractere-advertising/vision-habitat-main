@@ -79,11 +79,15 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     <div class="menu-burger-right">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
          <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
 =======
 =======
 >>>>>>> 553e536 (suite burger menu)
 <<<<<<< HEAD
+=======
+<<<<<<< header
+>>>>>>> e0c9354 (avancement bg-menu)
 
         <button class="burger-btn burger-btn-close">&#x2715;</button>
 >>>>>>> 0629f4f (avancement bg-menu)
@@ -203,6 +207,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     </section>
 >>>>>>> 401cb8c (avancement bg-menu)
 <<<<<<< HEAD
@@ -211,4 +216,10 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
 </section>
 >>>>>>> d4eec9f (suite burger menu)
+<<<<<<< HEAD
 >>>>>>> 553e536 (suite burger menu)
+=======
+=======
+</section>
+>>>>>>> aa53866 (avancement bg-menu)
+>>>>>>> e0c9354 (avancement bg-menu)
