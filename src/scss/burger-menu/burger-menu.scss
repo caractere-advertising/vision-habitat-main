@@ -3,12 +3,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 3316a78 (avancement bg-menu)
 =======
 >>>>>>> 1fb1278 (structure html)
+=======
+>>>>>>> 4104b2f (avancement bg-menu)
 
 >>>>>>> bb29b64 (structure html)
 .menu-burger {
@@ -113,7 +116,11 @@
   width: 100%;
 }
 
+<<<<<<< HEAD
 .big-menu {
+=======
+.big-menu li a {
+>>>>>>> 4104b2f (avancement bg-menu)
   color: $white;
   font-size: 2.5rem;
   font-weight: 600;
@@ -146,9 +153,12 @@
 >>>>>>> 3316a78 (avancement bg-menu)
 }
 
+<<<<<<< HEAD
 //.burger-menu_list ul{
 //gap: 100px;
 //}
+=======
+>>>>>>> 4104b2f (avancement bg-menu)
 
 .burger-menu_list li.big-menu + li.bg-menu-small {
   margin-top: 40px;
@@ -254,9 +264,3 @@
     opacity: 0.6;
     margin: 0;
 }
-=======
-.menu-burger{
-    display: flex;
-    flex-direction: column;
-}
->>>>>>> e88ed7f (structure html)
