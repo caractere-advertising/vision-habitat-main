@@ -75,6 +75,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 </div>
             <?php endif; ?>
         </div>
+
     </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,15 +109,15 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 >>>>>>> 0629f4f (avancement bg-menu)
 
     <div class="menu-burger-right">
-        <button class="burger-btn
-         burger-btn-close">&#x2715;</button>
 
-        <?php
-        wp_nav_menu([
+        <button class="burger-btn burger-btn-close">&#x2715;</button>
+
+        <?php wp_nav_menu([
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
             'container_class' => 'burger-nav from-right',
             'menu_class'     => 'burger-menu_list',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,6 +127,8 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
 
 >>>>>>> bb29b64 (structure html)
+=======
+>>>>>>> 644e1b3 (suite burger menu)
         ]); ?>
 >>>>>>> 0629f4f (avancement bg-menu)
 
