@@ -117,10 +117,16 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .big-menu {
 =======
 .big-menu li a {
 >>>>>>> 4104b2f (avancement bg-menu)
+=======
+
+
+.big-menu  {
+>>>>>>> 50d5368 (fin 30-3)
   color: $white;
   font-size: 2.5rem;
   font-weight: 600;
@@ -154,11 +160,27 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //.burger-menu_list ul{
 //gap: 100px;
 //}
 =======
 >>>>>>> 4104b2f (avancement bg-menu)
+=======
+//.burger-menu_list ul{
+  //gap: 100px;
+//}
+
+
+.burger-menu_list li.big-menu + li.bg-menu-small {
+    margin-top: 40px;
+}
+
+
+.burger-menu_list li.bg-menu-small + li.bg-menu-gold {
+    margin-top: 40px;
+}
+>>>>>>> 50d5368 (fin 30-3)
 
 .burger-menu_list li.big-menu + li.bg-menu-small {
   margin-top: 40px;
@@ -181,15 +203,8 @@
   color: $secondaryColor;
 }
 
-.bg-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: right;
-}
 
-.burger-cta-list li a {
+.bg-menu-gold {
   color: $secondaryColor;
   text-decoration: none;
   font-size: 1.5rem;
