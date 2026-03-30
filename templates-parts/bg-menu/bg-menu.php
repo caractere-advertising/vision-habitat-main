@@ -52,12 +52,16 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
     <div class="menu-burger-right">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <button class="burger-btn burger-btn-close">&#x2715;</button>
 
         <?php wp_nav_menu([
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< header
+>>>>>>> e0c9354 (avancement bg-menu)
 
         <button class="burger-btn burger-btn-close">&#x2715;</button>
 
@@ -139,6 +143,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     </section>
 =======
 <<<<<<< HEAD
@@ -147,4 +152,10 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
 </section>
 >>>>>>> d4eec9f (suite burger menu)
+<<<<<<< HEAD
 >>>>>>> 553e536 (suite burger menu)
+=======
+=======
+</section>
+>>>>>>> aa53866 (avancement bg-menu)
+>>>>>>> e0c9354 (avancement bg-menu)
