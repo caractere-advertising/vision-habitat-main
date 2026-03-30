@@ -56,7 +56,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 
             <?php endif; ?>
         </div>
-
     </div>
 
     <div class="menu-burger-right">
