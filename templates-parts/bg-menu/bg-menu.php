@@ -141,6 +141,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     </div>
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 </section>
 <<<<<<< HEAD
 =======
@@ -230,3 +231,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 >>>>>>> e0c9354 (avancement bg-menu)
 =======
 >>>>>>> bb29b64 (structure html)
+=======
+</section>
+>>>>>>> 3316a78 (avancement bg-menu)

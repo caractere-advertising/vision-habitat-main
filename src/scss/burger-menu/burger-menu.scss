@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -18,6 +19,8 @@
 >>>>>>> 4104b2f (avancement bg-menu)
 =======
 >>>>>>> bb29b64 (structure html)
+=======
+>>>>>>> 3316a78 (avancement bg-menu)
 
 >>>>>>> bb29b64 (structure html)
 .menu-burger {
@@ -440,6 +443,9 @@
 .burger-menu_list li.is-secondary a {
   font-size: 1rem;
   letter-spacing: 1px;
+<<<<<<< HEAD
+>>>>>>> 3316a78 (avancement bg-menu)
+=======
 >>>>>>> 3316a78 (avancement bg-menu)
 }
 
@@ -479,6 +485,7 @@
       }
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       li.has-arrow a::before {
         content: "";
@@ -528,6 +535,17 @@
 =======
 >>>>>>> 553e536 (suite burger menu)
 .bg-menu-gold {
+=======
+.bg-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.burger-cta-list li a {
+>>>>>>> 3316a78 (avancement bg-menu)
   color: $secondaryColor;
   text-decoration: none;
   font-size: 1.5rem;
@@ -813,6 +831,7 @@
     margin: 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0629f4f (avancement bg-menu)
 =======
 =======
@@ -822,3 +841,5 @@
 }
 >>>>>>> e88ed7f (structure html)
 >>>>>>> bb29b64 (structure html)
+=======
+>>>>>>> 3316a78 (avancement bg-menu)
