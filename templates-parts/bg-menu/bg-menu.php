@@ -78,4 +78,33 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         </div>
         </div>
     </div>
+
 </section>
+        ]);
+        ?>
+
+        <?php if ($footer_nav) : ?>
+            <ul class="burger-cta-list">
+                <?php foreach ($footer_nav as $item) : ?>
+                    <li>
+                        <a href="<?php echo $item['link']['url'];
+                                    ?>"><?php echo $item['link']['title']; ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+
+        <?php if ($cond_generales) : ?>
+            <div class="burger-legal">
+                <hr>
+                <?php foreach ($cond_generales as $row) : ?>
+                    <p class="burger-legal_links"><?php echo
+                                                    $row['cond']; ?></p>
+                    <p class="burger-legal_copyright"><?php echo
+                                                        $row['copyright']; ?></p>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+
+    </section>
