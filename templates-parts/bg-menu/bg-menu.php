@@ -50,8 +50,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     </div>
 
     <div class="menu-burger-right">
-<<<<<<< HEAD
-<<<<<<< HEAD
+<<<<<<< header
 
         <button class="burger-btn burger-btn-close">&#x2715;</button>
 
@@ -137,8 +136,12 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     </section>
 >>>>>>> 401cb8c (avancement bg-menu)
 =======
 </section>
 >>>>>>> d4eec9f (suite burger menu)
+=======
+</section>
+>>>>>>> aa53866 (avancement bg-menu)
