@@ -63,7 +63,12 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <button class="burger-btn
          burger-btn-close">&#x2715;</button>
 
-        <?php wp_nav_menu([
+    <div class="menu-burger-right">
+        <button class="burger-btn
+         burger-btn-close">&#x2715;</button>
+
+        <?php
+        wp_nav_menu([
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
             'container_class' => 'burger-nav',
