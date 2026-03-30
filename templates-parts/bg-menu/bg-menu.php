@@ -1,6 +1,5 @@
 
 <?php
-
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
@@ -61,7 +60,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 
             <?php endif; ?>
         </div>
-
     </div>
     <div class="menu-burger-right">
          <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
