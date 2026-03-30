@@ -63,14 +63,32 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     </div>
 
     <div class="menu-burger-right">
+<<<<<<< HEAD
          <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
+=======
+<<<<<<< HEAD
+
+        <button class="burger-btn burger-btn-close">&#x2715;</button>
+>>>>>>> 0629f4f (avancement bg-menu)
 
         <?php wp_nav_menu([
+=======
+        <button class="burger-btn
+         burger-btn-close">&#x2715;</button>
+
+        <?php
+        wp_nav_menu([
+>>>>>>> 401cb8c (avancement bg-menu)
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
             'container_class' => 'burger-nav from-right',
             'menu_class'     => 'burger-menu_list',
+<<<<<<< HEAD
         ]);?>
+=======
+<<<<<<< HEAD
+        ]); ?>
+>>>>>>> 0629f4f (avancement bg-menu)
 
         <div class="menu-bottom">
             <div class="burger-bottom">
@@ -89,4 +107,39 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </section>
+=======
+
+</section>
+=======
+        ]);
+        ?>
+
+        <?php if ($footer_nav) : ?>
+            <ul class="burger-cta-list">
+                <?php foreach ($footer_nav as $item) : ?>
+                    <li>
+                        <a href="<?php echo $item['link']['url'];
+                                    ?>"><?php echo $item['link']['title']; ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+
+        <?php if ($cond_generales) : ?>
+            <div class="burger-legal">
+                <hr>
+                <?php foreach ($cond_generales as $row) : ?>
+                    <p class="burger-legal_links"><?php echo
+                                                    $row['cond']; ?></p>
+                    <p class="burger-legal_copyright"><?php echo
+                                                        $row['copyright']; ?></p>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+
+    </section>
+>>>>>>> 401cb8c (avancement bg-menu)
+>>>>>>> 0629f4f (avancement bg-menu)

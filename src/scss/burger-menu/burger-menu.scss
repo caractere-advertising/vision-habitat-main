@@ -6,9 +6,14 @@
   height: 100vh;
   gap: 10px;
   align-items: flex-end;
+<<<<<<< HEAD
   justify-content: space-between;
 
   /* Colonne gauche */
+=======
+  padding: 60px 80px;
+}
+>>>>>>> 0629f4f (avancement bg-menu)
 
   .menu-burger-left {
     width: 50%;
@@ -188,6 +193,7 @@
         align-items: flex-end;
         border-top: 1px solid $lightGrayTransparent;
 
+<<<<<<< HEAD
         .burger-legal-footer {
           padding: 0;
           margin-top: 40px;
@@ -232,4 +238,13 @@
       }
     }
   }
+=======
+.burger-legal-copyright {
+    color: $white;
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin: 0;
+>>>>>>> 0629f4f (avancement bg-menu)
 }
