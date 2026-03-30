@@ -85,7 +85,9 @@
   width: 100%;
 }
 
-.big-menu li a {
+
+
+.big-menu  {
   color: $white;
   font-size: 3rem;
   font-weight: 600;
@@ -116,6 +118,19 @@
   letter-spacing: 1px;
 }
 
+//.burger-menu_list ul{
+  //gap: 100px;
+//}
+
+
+.burger-menu_list li.big-menu + li.bg-menu-small {
+    margin-top: 40px;
+}
+
+
+.burger-menu_list li.bg-menu-small + li.bg-menu-gold {
+    margin-top: 40px;
+}
 
 .burger-menu_list li.big-menu + li.bg-menu-small {
     margin-top: 40px;
@@ -131,15 +146,8 @@
   color: $secondaryColor;
 }
 
-.bg-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: right;
-}
 
-.burger-cta-list li a {
+.bg-menu-gold {
   color: $secondaryColor;
   text-decoration: none;
   font-size: 1.5rem;
