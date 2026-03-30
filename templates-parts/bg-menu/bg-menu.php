@@ -65,6 +65,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 </div>
             <?php endif; ?>
         </div>
+
     </div>
 <<<<<<< HEAD
     <div class="menu-burger-right">
@@ -77,8 +78,11 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
     <div class="menu-burger-right">
 <<<<<<< HEAD
+<<<<<<< HEAD
          <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
 =======
+=======
+>>>>>>> 553e536 (suite burger menu)
 <<<<<<< HEAD
 
         <button class="burger-btn burger-btn-close">&#x2715;</button>
@@ -92,10 +96,17 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php
         wp_nav_menu([
 >>>>>>> 401cb8c (avancement bg-menu)
+=======
+
+        <button class="burger-btn burger-btn-close">&#x2715;</button>
+
+        <?php wp_nav_menu([
+>>>>>>> d4eec9f (suite burger menu)
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
             'container_class' => 'burger-nav from-right',
             'menu_class'     => 'burger-menu_list',
+<<<<<<< HEAD
 <<<<<<< HEAD
         ]);?>
 =======
@@ -123,6 +134,8 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 <<<<<<< HEAD
 
 </section>
+=======
+>>>>>>> 553e536 (suite burger menu)
 <<<<<<< HEAD
         ]); ?>
 
@@ -137,14 +150,23 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
         ]);
         ?>
+=======
+        ]); ?>
+>>>>>>> d4eec9f (suite burger menu)
 
         <?php if ($footer_nav) : ?>
-            <ul class="burger-cta-list">
+            <ul class="bg-menu">
                 <?php foreach ($footer_nav as $item) : ?>
                     <li>
+<<<<<<< HEAD
                         <a href="<?php echo $item['link']['url'];
                                     ?>"><?php echo $item['link']['title']; ?></a>
 >>>>>>> 0629f4f (avancement bg-menu)
+=======
+                        <a href="<?= esc_url($item['link']['url']) ?>">
+                            <?= esc_html($item['link']['title']) ?>
+                        </a>
+>>>>>>> 553e536 (suite burger menu)
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -155,6 +177,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 <hr>
                 <?php foreach ($cond_generales as $row) : ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <p class="burger-legal_links"><?= esc_html($row['cond']) ?></p>
                     <p class="burger-legal_copyright"><?= esc_html($row['copyright']) ?></p>
 =======
@@ -163,9 +186,14 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                     <p class="burger-legal_copyright"><?php echo
                                                         $row['copyright']; ?></p>
 >>>>>>> 0629f4f (avancement bg-menu)
+=======
+                    <p class="burger-legal_links"><?= esc_html($row['cond']) ?></p>
+                    <p class="burger-legal_copyright"><?= esc_html($row['copyright']) ?></p>
+>>>>>>> 553e536 (suite burger menu)
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
+
     </div>
 <<<<<<< HEAD
 </section>
@@ -174,6 +202,13 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 >>>>>>> 69c6bb2 (burger-menu finetuning)
 =======
 
+<<<<<<< HEAD
     </section>
 >>>>>>> 401cb8c (avancement bg-menu)
+<<<<<<< HEAD
 >>>>>>> 0629f4f (avancement bg-menu)
+=======
+=======
+</section>
+>>>>>>> d4eec9f (suite burger menu)
+>>>>>>> 553e536 (suite burger menu)
