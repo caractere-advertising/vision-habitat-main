@@ -1,8 +1,11 @@
 @use "./../variables/colors.scss" as *;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 3316a78 (avancement bg-menu)
 
 >>>>>>> bb29b64 (structure html)
 .menu-burger {
@@ -130,6 +133,14 @@
   letter-spacing: 2px;
   line-height: 1.5;
   display: block;
+<<<<<<< HEAD
+=======
+
+/* classe "is-secondary" à ajouter dans l'admin WordPress */
+.burger-menu_list li.is-secondary a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+>>>>>>> 3316a78 (avancement bg-menu)
 }
 
 //.burger-menu_list ul{
@@ -157,7 +168,15 @@
   color: $secondaryColor;
 }
 
-.bg-menu-gold {
+.bg-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.burger-cta-list li a {
   color: $secondaryColor;
   text-decoration: none;
   font-size: 1.5rem;
@@ -232,9 +251,3 @@
     opacity: 0.6;
     margin: 0;
 }
-=======
-.menu-burger{
-    display: flex;
-    flex-direction: column;
-}
->>>>>>> e88ed7f (structure html)

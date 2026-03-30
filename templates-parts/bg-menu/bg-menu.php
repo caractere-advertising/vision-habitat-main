@@ -1,3 +1,4 @@
+
 <?php
 //champs page d'option acf
 //logo-social-media (répéteur -> image, lien)
@@ -91,6 +92,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         </div>
     </div>
 
+<<<<<<< HEAD
 </section>
         ]); ?>
 
@@ -117,3 +119,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php endif; ?>
     </div>
 </section>
+=======
+</section>
+>>>>>>> 3316a78 (avancement bg-menu)
