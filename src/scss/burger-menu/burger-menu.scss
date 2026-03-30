@@ -1,6 +1,9 @@
 @use "./../variables/colors.scss" as *;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 074f9fb (avancement bg-menu)
 
 
 .menu-burger {
@@ -9,6 +12,7 @@
   height: 100%;
 }
 
+<<<<<<< HEAD
 .menu-burger-left {
   width: 50%;
  position: relative;
@@ -21,6 +25,16 @@
   z-index: 0;
    width: 100%;
     height: 100%;
+=======
+.menu-burger-left img {
+  width: 50%;
+ object-fit: cover; 
+}
+
+
+.menu-burger-left_logo img {
+  width: 50%;
+>>>>>>> 074f9fb (avancement bg-menu)
   
 }
 
@@ -95,7 +109,11 @@
   text-align: right;
 }
 
+<<<<<<< HEAD
 .big-menu li a {
+=======
+.burger-menu_list li a {
+>>>>>>> 074f9fb (avancement bg-menu)
   color: $white;
   text-decoration: none;
   font-size: 2.2rem;
@@ -106,8 +124,14 @@
   display: block;
 }
 
+<<<<<<< HEAD
 .burger-menu_list li.is-secondary a {
   font-size: 3rem;
+=======
+/* classe "is-secondary" à ajouter dans l'admin WordPress */
+.burger-menu_list li.is-secondary a {
+  font-size: 1rem;
+>>>>>>> 074f9fb (avancement bg-menu)
   letter-spacing: 1px;
 }
 
@@ -117,14 +141,22 @@
   color: $secondaryColor;
 }
 
+<<<<<<< HEAD
 .bg-menu {
+=======
+.burger-cta-list {
+>>>>>>> 074f9fb (avancement bg-menu)
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
   text-align: right;
 }
+<<<<<<< HEAD
 .bg-menu-gold {
+=======
+.burger-cta-list li a {
+>>>>>>> 074f9fb (avancement bg-menu)
   color: $secondaryColor;
   text-decoration: none;
   font-size: 0.85rem;
@@ -166,9 +198,12 @@
   opacity: 0.6;
   margin: 0;
 }
+<<<<<<< HEAD
 =======
 .menu-burger{
     display: flex;
     flex-direction: column;
 }
 >>>>>>> e88ed7f (structure html)
+=======
+>>>>>>> 074f9fb (avancement bg-menu)
