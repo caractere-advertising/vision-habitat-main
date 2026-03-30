@@ -15,7 +15,7 @@ $blueActif = get_sub_field('blue_activated');
     <div class="citation-block container">
         <div class="citation-inner container">
             <?php if ($name) : ?>
-            <span class="citation-name"><?php echo $name; ?></span>
+            <span class="citation-name"><?= $name; ?></span>
             <?php endif; ?>
 
             <?php if($citation): ?>
@@ -28,9 +28,9 @@ $blueActif = get_sub_field('blue_activated');
     <div class="citation-blue">
         <div class="citation-blue-inner container">
             <?php if ($title) : ?>
-            <div class="citation-blue-title">
-                <?php echo $title; ?>
-            </div>
+                <div class="citation-blue-title">
+                    <?= $title; ?>
+                </div>
 
             <div class="citation-deco"></div>
         </div>

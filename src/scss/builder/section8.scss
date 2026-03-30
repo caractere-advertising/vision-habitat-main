@@ -22,14 +22,14 @@
   .citation-name {
     font-size: 1.5rem;
     color: $lightGray;
-    width: 280px;
+    position: absolute;
   }
 
   .citation-text {
     font-size: 4rem;
     line-height: 1;
     color: $txtColor;
-    text-indent: 10%;
+    text-indent: 150px;
   }
 }
 

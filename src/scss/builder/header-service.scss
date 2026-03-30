@@ -1,0 +1,40 @@
+@use "./../variables/colors.scss" as *;
+
+.section-service-header {
+  margin-top: -200px;
+  background-color: $primaryColor;
+  height: 30vh;
+  width: 100vw;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .container {
+    margin: 0;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 1400px;
+
+    .colg {
+      h1 {
+        color: $white;
+        font-size: 7rem;
+        line-height: 5rem;
+        font-weight: 700;
+      }
+    }
+
+    .cold {
+      .block-cta {
+        background-color: #fff;
+        height: 60px;
+        width: 400px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+    }
+  }
+}

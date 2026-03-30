@@ -1,0 +1,32 @@
+@use "./colors.scss" as *;
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 100;
+  font-weight: $txtColor;
+
+  & + p {
+    margin-top: 1rem;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+.section-label,
+.surtitre {
+  text-transform: uppercase;
+  color: $secondaryColor;
+  letter-spacing: 2px;
+}

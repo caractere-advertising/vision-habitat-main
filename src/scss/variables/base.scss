@@ -23,3 +23,11 @@
   font-size: 4rem;
   line-height: 3.5rem;
 }
+
+.block-img {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
