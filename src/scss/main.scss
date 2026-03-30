@@ -55,6 +55,7 @@
 @use "builder/section7.scss" as *;
 @use "builder/swiper.scss" as *;
 
+<<<<<<< HEAD
 @use "burger-menu/burger-menu.scss" as *;
 >>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 
@@ -74,6 +75,12 @@
 //@use "builder/section_header_actu.scss" as *;
 
 >>>>>>> 6503a7d (1304)
+=======
+@use "builder/header-service.scss" as *;
+@use "builder/section-app-glob.scss" as *;
+@use "builder/section-txt-g-img-d.scss" as *;
+
+>>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
 body {
   font-family: "Manrope", sans-serif;
 }
