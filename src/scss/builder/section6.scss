@@ -66,16 +66,12 @@
       background-color: $primaryColor;
       opacity: 0.4;
     }
-    //  .text_color{
-    //    color: $secondaryColor;
-    //}
-    //avec wisywig je n'arrive pas a appliquer la couleur beige sur le titre J'ai mis un id dans WP
   }
 
   .text-col-paragraph {
     font-size: 1rem;
     color: $txtColor;
-    margin-top: 100px;
+    margin-top: 50px;
 
     p {
       margin: 0;
