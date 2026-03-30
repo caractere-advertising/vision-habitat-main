@@ -14,6 +14,7 @@ const swiperGallery = new Swiper(".swiper-gallery", {
   },
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     pagination: {
         el: '.swiper-pagination-gallery',
         clickable: true,
@@ -38,6 +39,8 @@ const swiperGallery = new Swiper(".swiper-gallery", {
 >>>>>>> d4c7333 (finetuning 26-03)
 =======
 =======
+=======
+>>>>>>> 02d2601 (fin 30-3)
   pagination: {
     el: ".swiper-pagination-gallery",
     clickable: true,
@@ -51,6 +54,9 @@ const swiperGallery = new Swiper(".swiper-gallery", {
   spaceBetween: 200,
   loop: true,
   speed: 600,
+<<<<<<< HEAD
 >>>>>>> bf87089 (Optimisation section.php + css + ajout nouvelle section page "construire")
 >>>>>>> f8c007c (Optimisation section.php + css + ajout nouvelle section page "construire")
+=======
+>>>>>>> 02d2601 (fin 30-3)
 });
