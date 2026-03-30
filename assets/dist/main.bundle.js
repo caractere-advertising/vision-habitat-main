@@ -1445,43 +1445,9 @@ window.addEventListener("scroll", () => {
 /*!**********************************!*\
   !*** ./src/js/swiper-gallery.js ***!
   \**********************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+() {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
-/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
-/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.css");
-/* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/css/navigation */ "./node_modules/swiper/modules/navigation.css");
-/* harmony import */ var swiper_css_pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/css/pagination */ "./node_modules/swiper/modules/pagination.css");
-
-
-
-
-
-
-
-const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
-
-  navigation: {
-    nextEl: ".gallery-next",
-    prevEl: ".gallery-prev",
-  },
-
-    pagination: {
-        el: '.swiper-pagination-gallery',
-        clickable: true,
-        type:'bullets'
-    },
-
-    slidesPerView: 1.2,
-    //centeredSlides: 'auto',
-    spaceBetween: 200,
-    loop: true,
-    speed: 600,
-});
-
+throw new Error("Module parse failed: Unexpected token (16:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n|   },\n| \n> <<<<<<< HEAD\n|     pagination: {\n|         el: '.swiper-pagination-gallery',");
 
 /***/ },
 
