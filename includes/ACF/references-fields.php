@@ -1,0 +1,85 @@
+<?php
+
+$wrapper = array('width' => '', 'class' => '', 'id' => '');
+
+acf_add_local_field_group( array(
+	'key' => 'group_69c3baafcc6a7',
+	'title' => 'Références',
+	'fields' => array(
+		array(
+			'key' => 'field_69c3bab08c95d',
+			'label' => 'Date du projet',
+			'name' => 'date',
+			'type' => 'date_time_picker',
+			'conditional_logic' => 0,
+			'wrapper' => $wrapper,
+			'display_format' => 'Y',
+			'return_format' => 'Y',
+			'first_day' => 1,
+			'default_to_current_date' => 1,
+			'allow_in_bindings' => 0,
+		),
+		array(
+			'key' => 'field_69c3bb1a8c95e',
+			'label' => 'Localisation',
+			'name' => 'localisation',
+			'type' => 'text',
+			'conditional_logic' => 0,
+			'wrapper' => $wrapper,
+			'default_value' => '',
+			'allow_in_bindings' => 0,
+		),
+		array(
+			'key' => 'field_69c3bb2b8c95f',
+			'label' => 'Architecte',
+			'name' => 'architecte',
+			'type' => 'text',
+			'conditional_logic' => 0,
+			'wrapper' => $wrapper,
+			'default_value' => '',
+			'allow_in_bindings' => 0,
+		),
+		array(
+			'key' => 'field_69c3c1ae3c609',
+			'label' => 'galerie',
+			'name' => 'galerie',
+			'type' => 'gallery',
+			'conditional_logic' => 0,
+			'wrapper' => $wrapper,
+			'return_format' => 'array',
+			'library' => 'all',
+			'mime_types' => '',
+			'insert' => 'append',
+			'preview_size' => 'medium',
+		),
+        array(
+            'key' =>'field_12345678ddd',
+            'label' => 'test-field',
+            'name' => 'test-field',
+            'type' => 'wysiwyg',
+            'wrapper' => $wrapper,
+			'default_value' => '',
+			'allow_in_bindings' => 0,
+        ),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'reference',
+			),
+		),
+	),
+
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+	'display_title' => '',
+));

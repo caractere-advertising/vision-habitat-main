@@ -5,6 +5,7 @@
  */
 
 include_once get_template_directory() . '/includes/setup.php';
+include_once get_template_directory() . '/includes/acf-fields.php';
 
 require_once get_template_directory() . '/includes/class-cpt-references.php';
 
