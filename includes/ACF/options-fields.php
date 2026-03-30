@@ -1,5 +1,29 @@
 <?php 
 
+/***** Exemple ajout champs *****
+
+    array(
+        'key' => 'field_69a98e7a22152', | REQUIS ET DOIT ETRE UNIQUE
+        'label' => 'Header',            | REQUIS
+        'name' => '',                   | REQUIS
+        'type' => 'wysiwy',             | REQUIS
+        'aria-label' => '',             | FACULTATIF
+        'instructions' => '',           | FACULTATIF
+        'required' => 0,                | FACULTATIF
+        'conditional_logic' => 0,       | FACULTATIF
+        'wrapper' => array(             | FACULTATIF
+            'width' => '',              | FACULTATIF
+            'class' => '',              | FACULTATIF
+            'id' => '',                 | FACULTATIF
+        ),
+    ),
+
+    ⚠️ Note: It is important to remember that each field group’s key and each field’s key must be unique. 
+    The key is a reference for ACF to find, save and load data. 
+    If 2 fields or 2 groups are added using the same key, the later will override the original.
+
+******** FIN EXEMPLE *****/
+
 $wrapper = array('width' => '', 'class' => '', 'id' => '');
 
 acf_add_local_field_group( array(
@@ -40,7 +64,6 @@ acf_add_local_field_group( array(
 				),
 				'return_format' => 'array',
 				'library' => 'all',
-				
 				'mime_types' => '',
 				'allow_in_bindings' => 0,
 				'preview_size' => 'medium',
