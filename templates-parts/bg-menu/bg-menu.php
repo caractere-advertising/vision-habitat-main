@@ -15,6 +15,12 @@ $footer_nav          = get_field('menu-burger-footer', 'option');
 $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 var_dump($cond_generales);
 ?>
+   
+   <div class="menu-burger-left">
+        <?php if ($burger_image) : ?>
+            <img src="<?php echo $burger_image['url']; ?>"
+                alt="<?php echo $burger_image['alt']; ?>">
+        <?php endif; ?>
 
 
 <section class="menu-burger">
