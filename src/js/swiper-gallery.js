@@ -15,19 +15,6 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     prevEl: ".gallery-prev",
   },
 
-<<<<<<< HEAD
-    pagination: {
-        el: '.swiper-pagination-gallery',
-        clickable: true,
-        type:'bullets'
-    },
-
-    slidesPerView: 1.2,
-    //centeredSlides: 'auto',
-    spaceBetween: 200,
-    loop: true,
-    speed: 600,
-=======
   pagination: {
     el: ".swiper-pagination-gallery",
     clickable: true,
@@ -41,5 +28,4 @@ const swiperGallery = new Swiper(".swiper-gallery", {
   spaceBetween: 200,
   loop: true,
   speed: 600,
->>>>>>> bf87089 (Optimisation section.php + css + ajout nouvelle section page "construire")
 });
