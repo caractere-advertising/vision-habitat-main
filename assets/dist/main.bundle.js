@@ -25017,7 +25017,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
 
   navigation: {
     nextEl: ".gallery-next",
@@ -25027,16 +25027,13 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
   pagination: {
     el: ".swiper-pagination-gallery",
     clickable: true,
-  },
-
-  pagination: {
-    el: ".swiper-pagination-gallery",
-    clickable: true,
     type: "bullets",
   },
 
   slidesPerView: 1.2,
-  //centeredSlides: 'auto',
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
   spaceBetween: 200,
   loop: true,
   speed: 600,
