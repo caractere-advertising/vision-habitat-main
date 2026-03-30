@@ -28,6 +28,10 @@
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
 
+@use "builder/header-service.scss" as *;
+@use "builder/section-app-glob.scss" as *;
+@use "builder/section-txt-g-img-d.scss" as *;
+
 body {
   font-family: "Manrope", sans-serif;
 }
