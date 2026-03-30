@@ -60,12 +60,16 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 
             <?php endif; ?>
         </div>
+
     </div>
 
     <div class="menu-burger-right">
 <<<<<<< HEAD
+<<<<<<< HEAD
          <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
 =======
+=======
+>>>>>>> 553e536 (suite burger menu)
 <<<<<<< HEAD
 
         <button class="burger-btn burger-btn-close">&#x2715;</button>
@@ -79,13 +83,22 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php
         wp_nav_menu([
 >>>>>>> 401cb8c (avancement bg-menu)
+=======
+
+        <button class="burger-btn burger-btn-close">&#x2715;</button>
+
+        <?php wp_nav_menu([
+>>>>>>> d4eec9f (suite burger menu)
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
             'container_class' => 'burger-nav from-right',
             'menu_class'     => 'burger-menu_list',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ]);?>
 =======
+=======
+>>>>>>> 553e536 (suite burger menu)
 <<<<<<< HEAD
         ]); ?>
 >>>>>>> 0629f4f (avancement bg-menu)
@@ -115,13 +128,17 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
         ]);
         ?>
+=======
+        ]); ?>
+>>>>>>> d4eec9f (suite burger menu)
 
         <?php if ($footer_nav) : ?>
-            <ul class="burger-cta-list">
+            <ul class="bg-menu">
                 <?php foreach ($footer_nav as $item) : ?>
                     <li>
-                        <a href="<?php echo $item['link']['url'];
-                                    ?>"><?php echo $item['link']['title']; ?></a>
+                        <a href="<?= esc_url($item['link']['url']) ?>">
+                            <?= esc_html($item['link']['title']) ?>
+                        </a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -131,15 +148,21 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
             <div class="burger-legal">
                 <hr>
                 <?php foreach ($cond_generales as $row) : ?>
-                    <p class="burger-legal_links"><?php echo
-                                                    $row['cond']; ?></p>
-                    <p class="burger-legal_copyright"><?php echo
-                                                        $row['copyright']; ?></p>
+                    <p class="burger-legal_links"><?= esc_html($row['cond']) ?></p>
+                    <p class="burger-legal_copyright"><?= esc_html($row['copyright']) ?></p>
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
+
     </div>
 
+<<<<<<< HEAD
     </section>
 >>>>>>> 401cb8c (avancement bg-menu)
+<<<<<<< HEAD
 >>>>>>> 0629f4f (avancement bg-menu)
+=======
+=======
+</section>
+>>>>>>> d4eec9f (suite burger menu)
+>>>>>>> 553e536 (suite burger menu)
