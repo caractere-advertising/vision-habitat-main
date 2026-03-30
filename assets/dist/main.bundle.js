@@ -1474,6 +1474,7 @@ const headerActions = document.querySelector(".header-actions");
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 048dcbb (npm run build)
 const burgerBtn = document.querySelector('.burger-btn');
@@ -12602,6 +12603,8 @@ throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an ap
 =======
 throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| import \"./js/header.js\";\n| import \"./js/scroll-top.js\";\n> <<<<<<< HEAD\n| import \"./js/img-hover.js\";\n| =======");
 =======
+=======
+>>>>>>> db64302 (fin 30-3)
 const burgerBtn = document.querySelector('.burger-btn');
 const mobileMenu = document.querySelector('#megamenu');
 
@@ -12676,6 +12679,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.css");
 /* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/css/navigation */ "./node_modules/swiper/modules/navigation.css");
 /* harmony import */ var swiper_css_pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/css/pagination */ "./node_modules/swiper/modules/pagination.css");
+
+
 
 
 
@@ -23395,9 +23400,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
 >>>>>>> e88ed7f (structure html)
 >>>>>>> 80fc547 (structure html)
+<<<<<<< HEAD
 >>>>>>> bb29b64 (structure html)
+=======
+=======
+>>>>>>> db64302 (fin 30-3)
+>>>>>>> 02d2601 (fin 30-3)
 
 /***/ }
 
@@ -23420,6 +23431,17 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 048dcbb (npm run build)
+=======
+>>>>>>> db64302 (fin 30-3)
+>>>>>>> 02d2601 (fin 30-3)
 /******/ 		// Execute the module function
 /******/ 		if (!(moduleId in __webpack_modules__)) {
 /******/ 			delete __webpack_module_cache__[moduleId];
@@ -23497,6 +23519,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 02d2601 (fin 30-3)
 /* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
 /* harmony import */ var _js_accordeon_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/accordeon.js */ "./src/js/accordeon.js");
 /* harmony import */ var _js_accordeon_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_accordeon_js__WEBPACK_IMPORTED_MODULE_7__);
@@ -23510,6 +23538,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 815fcfc (structure html)
+=======
+>>>>>>> 048dcbb (npm run build)
+=======
+>>>>>>> db64302 (fin 30-3)
+>>>>>>> 02d2601 (fin 30-3)
 
 
 
@@ -23520,6 +23557,19 @@ __webpack_require__.r(__webpack_exports__);
 
 })();
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3d2ceae (finetuning 26-03)
+=======
+>>>>>>> 048dcbb (npm run build)
+=======
+>>>>>>> 2bf1b65 (finetuning 26-03)
+=======
+>>>>>>> db64302 (fin 30-3)
+>>>>>>> 02d2601 (fin 30-3)
 /******/ })()
 ;
 //# sourceMappingURL=main.bundle.js.map
