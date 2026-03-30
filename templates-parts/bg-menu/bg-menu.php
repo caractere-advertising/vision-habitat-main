@@ -1,6 +1,7 @@
 
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 //champs page d'option acf
 //logo-social-media (répéteur -> image, lien)
@@ -11,6 +12,8 @@
 //logo_bg_menu(image)
 >>>>>>> bb29b64 (structure html)
 
+=======
+>>>>>>> 50d5368 (fin 30-3)
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
@@ -33,6 +36,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php endif; ?>
 
         <div class="menu-burger-left-bottom">
+<<<<<<< HEAD
             <?php if ($burger_info_contact) :
                 $info = $burger_info_contact[0];
 
@@ -45,6 +49,8 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 <<<<<<< HEAD
 <?php var_dump($burger_info_contact); ?>
 <?php if ($burger_info_contact) : ?>
+=======
+>>>>>>> 50d5368 (fin 30-3)
             <?php if ($burger_info_contact) : ?>
                 <?php $info = $burger_info_contact[0]; ?>
 =======
@@ -75,7 +81,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 </div>
             <?php endif; ?>
         </div>
-
     </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -142,11 +147,36 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                     </ul>
                 <?php endif; ?>
 
+<<<<<<< HEAD
+=======
+            <?php if ($footer_nav) : ?>
+                <ul class="burger-legal-footer">
+                    <?php foreach ($footer_nav as $item) : ?>
+                        <li>
+                            <a href="<?= esc_url($item['link']['url']) ?>">
+                                <?= esc_html($item['link']['title']) ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
+
+            <hr class="burger-hr">
+
+            <?php var_dump($cond_generales); ?>
+            <?php if ($cond_generales) : ?>
+>>>>>>> 50d5368 (fin 30-3)
                 <div class="burger-legal-copy">
                     <p class="burger-legal-links"><a href="<?= $cond_generales['cond']['url'] ;?>"><?= esc_html($cond_generales['cond']['title']); ?></a></p>
                     <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
+<<<<<<< HEAD
                 </div>      
             </div>
+=======
+                </div>
+            <?php endif; ?>
+
+>>>>>>> 50d5368 (fin 30-3)
         </div>
     </div>
 <<<<<<< HEAD
