@@ -77,6 +77,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         </div>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="menu-burger-right">
         <button class="burger-btn burger-btn-close">&#x2715;</button>
         <?php wp_nav_menu([
@@ -85,6 +86,8 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
 >>>>>>> 69c6bb2 (burger-menu finetuning)
 
+=======
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
     <div class="menu-burger-right">
 <<<<<<< HEAD
 <<<<<<< HEAD

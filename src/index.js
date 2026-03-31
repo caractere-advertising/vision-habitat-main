@@ -29,4 +29,9 @@ import "./js/animate.js";
 =======
 import "./js/parallax.js";
 import "./js/img-hover.js";
+<<<<<<< HEAD
 >>>>>>> d4c7333 (finetuning 26-03)
+=======
+
+import "./js/parallax.js";
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
