@@ -38,6 +38,14 @@ if (have_rows('builder')):
             get_template_part($repo . '/section-approche-globale');
         elseif (get_row_layout() == 'section-two-col-simple'):
             get_template_part($repo . '/section-txt-g-img-d');
+        elseif (get_row_layout() == 'slider-vertical'):
+            get_template_part($repo . '/section-galerie-vertical');
+        elseif (get_row_layout() == 'section-step-const'):
+            get_template_part($repo . '/section-etapes');
+        elseif (get_row_layout() == 'section-image-paralax'):
+            get_template_part($repo . '/section-parallax');
+        elseif (get_row_layout() == 'section-formulaire-contact'):
+            get_template_part($repo . '/section-formulaire-contact');
         endif;
     endwhile;
 endif;

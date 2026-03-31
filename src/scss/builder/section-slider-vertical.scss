@@ -1,0 +1,59 @@
+@use "./../variables/base.scss" as *;
+@use "./../variables/colors.scss" as *;
+@use "./../variables/fonts.scss" as *;
+@use "./../variables/cta.scss" as *;
+
+.section-galerie-vertical {
+  padding: 50px 0;
+
+  .swiper-vertical {
+    max-height: 80vh;
+    max-width: 95vw;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+
+        .col-50 {
+          width: 50%;
+        }
+
+        .colg {
+          height: 100%;
+          .block-img {
+            height: 100%;
+          }
+        }
+
+        .cold {
+          padding-left: 50px;
+
+          .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 70%;
+
+            p {
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-pagination-vertical {
+      .swiper-pagination-bullet {
+        height: 60px;
+        width: 2px;
+        border-radius: 0;
+        background-color: $lightGray;
+
+        &.swiper-pagination-bullet-active {
+          background-color: $txtColor;
+        }
+      }
+    }
+  }
+}
