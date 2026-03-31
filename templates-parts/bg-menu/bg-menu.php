@@ -21,7 +21,8 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php endif; ?>
 
         <div class="menu-burger-left-bottom">
-
+<?php var_dump($burger_info_contact); ?>
+<?php if ($burger_info_contact) : ?>
             <?php if ($burger_info_contact) : ?>
                 <?php $info = $burger_info_contact[0]; ?>
                 <div class="menu-burger-contact">
@@ -74,12 +75,12 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
             <hr class="burger-hr">
 
-            <?php var_dump($cond_generales); ?>
-            <?php if ($cond_generales) : ?>
+            
                 <div class="burger-legal-copy">
                     <p class="burger-legal-links"><?= esc_html($cond_generales['cond']) ?></p>
                     <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
                 </div>
+                
             <?php endif; ?>
 
         </div>
