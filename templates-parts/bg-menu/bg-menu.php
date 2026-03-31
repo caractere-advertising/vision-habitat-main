@@ -24,14 +24,13 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 <?php endif; ?>
 
         <div class="menu-burger-left-bottom">
-<<<<<<< HEAD
             <?php if ($burger_info_contact) :
                 $info = $burger_info_contact[0]; ?>
 
-=======
+<?php var_dump($burger_info_contact); ?>
+<?php if ($burger_info_contact) : ?>
             <?php if ($burger_info_contact) : ?>
                 <?php $info = $burger_info_contact[0]; ?>
->>>>>>> 50d5368 (fin 30-3)
                 <div class="menu-burger-contact">
                     <p class="menu-burger-contact-name"><?php echo ($info['site-name']) ?></p>
                     <p><?php echo($info['street-name']) ?></p>
@@ -81,19 +80,15 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 </ul>
             <?php endif; ?>
 
-<<<<<<< HEAD
-           
-=======
             <hr class="burger-hr">
 
-            <?php var_dump($cond_generales); ?>
-            <?php if ($cond_generales) : ?>
+            
                 <div class="burger-legal-copy">
                     <p class="burger-legal-links"><?= esc_html($cond_generales['cond']) ?></p>
                     <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
                 </div>
+                
             <?php endif; ?>
->>>>>>> 50d5368 (fin 30-3)
 
             <div class="burger-legal-copy">
                 <p class="burger-legal-links"><?php echo esc_html($cond_generales['cond']) ?></p>
@@ -103,9 +98,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         </div>
     </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 </section>
         ]); ?>
 
@@ -132,12 +124,3 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php endif; ?>
     </div>
 </section>
-=======
-</section>
->>>>>>> 3316a78 (avancement bg-menu)
-=======
-</section>
->>>>>>> 052211e (avancement bg-menu)
-=======
-</section>
->>>>>>> 1fb1278 (structure html)
