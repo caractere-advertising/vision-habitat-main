@@ -37,6 +37,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
         <div class="menu-burger-left-bottom">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <?php if ($burger_info_contact) :
                 $info = $burger_info_contact[0];
 
@@ -51,6 +52,10 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 <?php if ($burger_info_contact) : ?>
 =======
 >>>>>>> 50d5368 (fin 30-3)
+=======
+<?php var_dump($burger_info_contact); ?>
+<?php if ($burger_info_contact) : ?>
+>>>>>>> 8054b78 (add var_dump())
             <?php if ($burger_info_contact) : ?>
                 <?php $info = $burger_info_contact[0]; ?>
 =======
@@ -163,9 +168,13 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
             <hr class="burger-hr">
 
+<<<<<<< HEAD
             <?php var_dump($cond_generales); ?>
             <?php if ($cond_generales) : ?>
 >>>>>>> 50d5368 (fin 30-3)
+=======
+            
+>>>>>>> 8054b78 (add var_dump())
                 <div class="burger-legal-copy">
                     <p class="burger-legal-links"><a href="<?= $cond_generales['cond']['url'] ;?>"><?= esc_html($cond_generales['cond']['title']); ?></a></p>
                     <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
@@ -174,6 +183,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
             </div>
 =======
                 </div>
+                
             <?php endif; ?>
 
 >>>>>>> 50d5368 (fin 30-3)
