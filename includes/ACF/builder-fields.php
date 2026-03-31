@@ -20,6 +20,7 @@ acf_add_local_field_group( array(
                 'layout_69a7f853b6c37' => array(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69a7f853b6c37',
@@ -28,13 +29,18 @@ acf_add_local_field_group( array(
                     'display'    => 'block',
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
                 'key' => 'layout_69a7f853b6c37',
                 'name' => 'slider-fullwidth',
                 'label' => 'Slider fullwidth',
                 'display' => 'block',
+<<<<<<< HEAD
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 =======
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69a9969894e02',
@@ -1223,6 +1229,7 @@ acf_add_local_field_group( array(
                 ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  
                 // ─── Layout vide ─────────────────────────────────────────────
                 'layout_69b7d2f7726e4' => array(
@@ -1252,6 +1259,16 @@ acf_add_local_field_group( array(
  
                 // ─── Section bleue ───────────────────────────────────────────
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+                'layout_69b7d2f7726e4' => array(
+                    'key' => 'layout_69b7d2f7726e4',
+                    'name' => '',
+                    'label' => '',
+                    'display' => 'block',
+                    'sub_fields' => array(
+                    ),
+                ),
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
                 'layout_69b2d98330c6f' => array(
                     'key'        => 'layout_69b2d98330c6f',
                     'name'       => 'section_blue',
@@ -1646,6 +1663,9 @@ acf_add_local_field_group( array(
                     'key' => 'layout_69a952e91a7df',
                     'name' => 'actualites',
                     'label' => 'Actualités',
+<<<<<<< HEAD
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
                     'display' => 'block',
                     'sub_fields' => array(
@@ -2647,6 +2667,7 @@ acf_add_local_field_group( array(
             ),
         ),
 <<<<<<< HEAD
+<<<<<<< HEAD
         array(
             array(
                 'param'    => 'page_type',
@@ -2681,6 +2702,8 @@ acf_add_local_field_group( array(
             ),
         ),
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
     ),
     'menu_order'            => 0,
     'position'              => 'normal',

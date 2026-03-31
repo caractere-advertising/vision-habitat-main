@@ -49,6 +49,10 @@
 @use "builder/header-service.scss" as *;
 @use "builder/section-app-glob.scss" as *;
 @use "builder/section-txt-g-img-d.scss" as *;
+@use "builder/section-slider-vertical.scss" as *;
+@use "builder/section-etapes.scss" as *;
+@use "builder/section-parallax.scss" as *;
+@use "builder/section-formulaire.scss" as *;
 
 body {
   font-family: "Manrope", sans-serif;

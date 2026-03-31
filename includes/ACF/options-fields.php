@@ -34,9 +34,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69a98e7a22152',
 				'label' => 'Header',
 				'name' => '',
-				'aria-label' => '',
 				'type' => 'tab',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -48,9 +46,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69a95e43958a7',
 				'label' => 'logo',
 				'name' => 'logo',
-				'aria-label' => '',
 				'type' => 'image',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -88,9 +84,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69a9908ba255d',
 				'label' => 'slogan',
 				'name' => 'slogan',
-				'aria-label' => '',
 				'type' => 'text',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -146,9 +140,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69a98e8e22153',
 				'label' => 'Footer',
 				'name' => '',
-				'aria-label' => '',
 				'type' => 'tab',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -160,9 +152,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69bab35afaec0',
 				'label' => 'text_ev',
 				'name' => 'text_ev',
-				'aria-label' => '',
 				'type' => 'wysiwyg',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -177,9 +167,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69bab56dfaec1',
 				'label' => 'paragraph',
 				'name' => 'paragraph',
-				'aria-label' => '',
 				'type' => 'wysiwyg',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -194,9 +182,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69bab57ffaec2',
 				'label' => 'contact',
 				'name' => 'contact',
-				'aria-label' => '',
 				'type' => 'text',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -211,9 +197,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69b277de0d8e4',
 				'label' => 'text_evidence',
 				'name' => 'text_evidence',
-				'aria-label' => '',
 				'type' => 'group',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -223,7 +207,6 @@ acf_add_local_field_group( array(
 						'key' => 'field_69b278070d8e5',
 						'label' => 'category',
 						'name' => 'category',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
@@ -233,14 +216,11 @@ acf_add_local_field_group( array(
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
 					),
 					array(
 						'key' => 'field_69b279aa0d8e6',
 						'label' => 'details',
 						'name' => 'details',
-						'aria-label' => '',
 						'type' => 'wysiwyg',
 						'instructions' => '',
 						'required' => 0,
@@ -257,7 +237,6 @@ acf_add_local_field_group( array(
 						'key' => 'field_69b279bb0d8e7',
 						'label' => 'paragraph',
 						'name' => 'paragraph',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
@@ -267,14 +246,11 @@ acf_add_local_field_group( array(
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
 					),
 					array(
 						'key' => 'field_69b279c60d8e8',
 						'label' => 'link',
 						'name' => 'link',
-						'aria-label' => '',
 						'type' => 'link',
 						'instructions' => '',
 						'required' => 0,
@@ -289,9 +265,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69bab885faec3',
 				'label' => 'made_by',
 				'name' => 'made_by',
-				'aria-label' => '',
 				'type' => 'wysiwyg',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -306,9 +280,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69aeccc7d536d',
 				'label' => 'Menu Footer',
 				'name' => 'menu_footer',
-				'aria-label' => '',
 				'type' => 'post_object',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -332,9 +304,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69a992ba255c1',
 				'label' => 'Blog',
 				'name' => '',
-				'aria-label' => '',
 				'type' => 'tab',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -346,9 +316,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69a992c7255c2',
 				'label' => 'Titre actualités',
 				'name' => 'titre_actualites',
-				'aria-label' => '',
 				'type' => 'text',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -363,9 +331,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69c67be51b9dc',
 				'label' => 'megamenu',
 				'name' => '',
-				'aria-label' => '',
 				'type' => 'tab',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -377,15 +343,12 @@ acf_add_local_field_group( array(
 				'key' => 'field_69c649ea5ea0d',
 				'label' => 'bg-menu-image',
 				'name' => 'bg-menu-image',
-				'aria-label' => '',
 				'type' => 'image',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
 				'return_format' => 'array',
 				'library' => 'all',
-				
 				'mime_types' => '',
 				'allow_in_bindings' => 0,
 				'preview_size' => 'medium',
@@ -394,9 +357,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69c6562cf13a9',
 				'label' => 'infos-contact',
 				'name' => 'infos-contact',
-				'aria-label' => '',
 				'type' => 'repeater',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -410,9 +371,8 @@ acf_add_local_field_group( array(
 				'sub_fields' => array(
 					array(
 						'key' => 'field_69c65648f13aa',
-						'label' => 'site-name',
+						'label' => 'Nom de l\'entreprise',
 						'name' => 'site-name',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
@@ -422,15 +382,12 @@ acf_add_local_field_group( array(
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
 						'parent_repeater' => 'field_69c6562cf13a9',
 					),
 					array(
 						'key' => 'field_69c65676f13ac',
-						'label' => 'street-name',
+						'label' => 'Adresse',
 						'name' => 'street-name',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
@@ -440,15 +397,12 @@ acf_add_local_field_group( array(
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
 						'parent_repeater' => 'field_69c6562cf13a9',
 					),
 					array(
 						'key' => 'field_69c65689f13ad',
-						'label' => 'locality',
+						'label' => 'Code postal & Ville',
 						'name' => 'locality',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
@@ -458,15 +412,12 @@ acf_add_local_field_group( array(
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
 						'parent_repeater' => 'field_69c6562cf13a9',
 					),
 					array(
 						'key' => 'field_69c65693f13ae',
 						'label' => 'tel-num',
 						'name' => 'tel-num',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
@@ -476,19 +427,17 @@ acf_add_local_field_group( array(
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
 						'parent_repeater' => 'field_69c6562cf13a9',
 					),
 					array(
 						'key' => 'field_69c6569ef13af',
 						'label' => 'mail',
 						'name' => 'mail',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 						'wrapper' => $wrapper,
@@ -509,21 +458,21 @@ acf_add_local_field_group( array(
 						'default_value' => '',
 						'maxlength' => '',
 >>>>>>> 1159616 (Update options-fields)
+=======
+						'wrapper' => $wrapper,
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 						'allow_in_bindings' => 0,
-						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
 						'parent_repeater' => 'field_69c6562cf13a9',
 					),
 					array(
 						'key' => 'field_69c656c4f13b0',
 						'label' => 'tva',
 						'name' => 'tva',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 						'wrapper' => $wrapper,
@@ -544,10 +493,10 @@ acf_add_local_field_group( array(
 						'default_value' => '',
 						'maxlength' => '',
 >>>>>>> 1159616 (Update options-fields)
+=======
+						'wrapper' => $wrapper,
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 						'allow_in_bindings' => 0,
-						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
 						'parent_repeater' => 'field_69c6562cf13a9',
 					),
 				),
@@ -556,9 +505,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69c5456d667c5',
 				'label' => 'logo-social-media',
 				'name' => 'logo-social-media',
-				'aria-label' => '',
 				'type' => 'repeater',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -579,7 +526,6 @@ acf_add_local_field_group( array(
 =======
 						'label' => 'social-media',
 						'name' => 'social-media',
-						'aria-label' => '',
 						'type' => 'image',
 						'instructions' => '',
 						'required' => 0,
@@ -587,13 +533,6 @@ acf_add_local_field_group( array(
 						'wrapper' => $wrapper,
 						'return_format' => 'array',
 						'library' => 'all',
-						'min_width' => '',
-						'min_height' => '',
-						'min_size' => '',
-						'max_width' => '',
-						'max_height' => '',
-						'max_size' => '',
-						'mime_types' => '',
 						'allow_in_bindings' => 0,
 						'preview_size' => 'medium',
 						'parent_repeater' => 'field_69c5456d667c5',
@@ -609,11 +548,11 @@ acf_add_local_field_group( array(
 						'label' => 'Logo',
 >>>>>>> 69c6bb2 (burger-menu finetuning)
 						'name' => 'logo',
-						'aria-label' => '',
 						'type' => 'image',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 						'wrapper' => $wrapper,
 <<<<<<< HEAD
@@ -708,6 +647,11 @@ acf_add_local_field_group( array(
 						'wrapper' => $wrapper,
 						'return_format' => 'array',
 						'library' => 'all',
+=======
+						'wrapper' => $wrapper,
+						'return_format' => 'array',
+						'library' => 'all',
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 						'allow_in_bindings' => 0,
 						'preview_size' => 'medium',
 						'parent_repeater' => 'field_69c5456d667c5',
@@ -718,9 +662,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69c54e8dc4220',
 				'label' => 'cond-generales',
 				'name' => 'cond-generales',
-				'aria-label' => '',
 				'type' => 'group',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -729,6 +671,7 @@ acf_add_local_field_group( array(
 					array(
 						'key' => 'field_69c646dc42379',
 						'label' => 'cond',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -749,10 +692,14 @@ acf_add_local_field_group( array(
 =======
 						'aria-label' => '',
 >>>>>>> 1159616 (Update options-fields)
+=======
+						'name' => 'con',
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -836,17 +783,22 @@ acf_add_local_field_group( array(
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 =======
 >>>>>>> 1159616 (Update options-fields)
+=======
+						'wrapper' => $wrapper,
+						'allow_in_bindings' => 0,
+						'placeholder' => '',
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 					),
 					array(
 						'key' => 'field_69c6476e4237a',
 						'label' => 'copyright',
 						'name' => 'copyright',
-						'aria-label' => '',
 						'type' => 'text',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
 						'wrapper' => $wrapper,
+<<<<<<< HEAD
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -879,10 +831,13 @@ acf_add_local_field_group( array(
 							'class' => '',
 							'id' => '',
 						),
+=======
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
+<<<<<<< HEAD
 >>>>>>> 1159616 (Update options-fields)
 						'prepend' => '',
 						'append' => '',
@@ -909,6 +864,8 @@ acf_add_local_field_group( array(
 						'prepend' => '',
 						'append' => '',
 >>>>>>> 1159616 (Update options-fields)
+=======
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 =======
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 					),
@@ -922,9 +879,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69c6630950d8c',
 				'label' => 'logo_bg_menu',
 				'name' => 'logo_bg_menu',
-				'aria-label' => '',
 				'type' => 'image',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -939,9 +894,7 @@ acf_add_local_field_group( array(
 				'key' => 'field_69c54da443370',
 				'label' => 'menu-burger-footer',
 				'name' => 'menu-burger-footer',
-				'aria-label' => '',
 				'type' => 'repeater',
-				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
 				'wrapper' => $wrapper,
@@ -957,7 +910,6 @@ acf_add_local_field_group( array(
 						'key' => 'field_69c54e4d43371',
 						'label' => 'link',
 						'name' => 'link',
-						'aria-label' => '',
 						'type' => 'link',
 						'instructions' => '',
 						'required' => 0,
@@ -968,6 +920,39 @@ acf_add_local_field_group( array(
 						'parent_repeater' => 'field_69c54da443370',
 					),
 				),
+			),
+			array(
+				'key' => 'field_f0rmul1ar3',
+				'label' => 'Formulaire contact',
+				'name' => '',
+				'type' => 'tab',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => $wrapper,
+				'placement' => 'top',
+				'endpoint' => 0,
+				'selected' => 0,
+			),
+			array(
+				'key' => 'field_titrecontact',
+				'label' => 'Titre',
+				'name' => 'titre_contact',
+				'type' => 'wysiwyg',
+				'wrapper' => $wrapper,
+			),
+			array(
+				'key' => 'field_introcontact',
+				'label' => 'Introduction',
+				'name' => 'intro_contact',
+				'type' => 'wysiwyg',
+				'wrapper' => $wrapper
+			),
+			array(
+				'key' => 'field_shortcodeform',
+				'label' => 'Formulaire',
+				'name' => 'shortcode_form',
+				'type' => 'text',
+				'wrapper' => $wrapper
 			),
 		),
 		'location' => array(
