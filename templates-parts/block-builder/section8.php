@@ -12,31 +12,30 @@ $blueActif = get_sub_field('blue_activated');
 ?>
 
 <section class="section-citation">
-    <?php if($name):?>
+    <?php if($citation):?>
         <div class="citation-block container">
             <div class="citation-inner container">
                 <?php if ($name) : ?>
-                <span class="citation-name"><?= $name; ?></span>
-                <?php endif; ?>
-
-                <?php if($citation): ?>
+                    <span class="citation-name"><?= $name; ?></span>
+                <?php endif;
+                if($citation): ?>
                     <div class="citation-text"><?= $citation; ?></div>
                 <?php endif; ?>
             </div>
         </div>
     <?php endif;?>
     <?php if($blueActif):?>
-        <div class="citation-blue">
-            <div class="citation-blue-inner container">
-                <?php if ($title) : ?>
-                    <div class="citation-blue-title"><?= $title; ?></div>
-                <?php endif;
-                if($link): ?>
-                    <a href="<?= $link['url'];?>" class="btn-cta"><?= $link['title'];?></a>
-                <?php endif;?>
 
-                <?php if($citation):?><div class="citation-deco"></div><?php endif;?>
-            </div>
+    <div class="citation-blue">
+        <div class="citation-blue-inner container">
+            <?php if ($title) : ?>
+                <div class="citation-blue-title"><?= $title; ?></div>
+            <?php endif;
+            if($link): ?>
+                <a href="<?= $link['url'];?>" class="btn-cta"><?= $link['title'];?></a>
+            <?php endif;?>
+
+            <?php if($citation):?><div class="citation-deco"></div><?php endif;?>
         </div>
     <?php endif;?>
 </section>
