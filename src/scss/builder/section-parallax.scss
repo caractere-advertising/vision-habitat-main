@@ -1,0 +1,10 @@
+.section-image-parallax {
+  width: 100vw;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

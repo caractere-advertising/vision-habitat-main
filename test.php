@@ -1,8 +1,4 @@
 <?php 
-
-/* Template Name: Test */
-
-<?php
 // Test PHP minimal
 echo "PHP fonctionne !<br>";
 
