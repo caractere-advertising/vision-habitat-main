@@ -23,6 +23,7 @@ $blueActif = get_sub_field('blue_activated');
                     <div class="citation-text"><?= $citation; ?></div>
                 <?php endif; ?>
             </div>
+        </div>
     <?php endif;?>
     <?php if($blueActif):?>
         <div class="citation-blue">
