@@ -54,6 +54,14 @@ function vh_enqueue_assets() {
     );
 }
 
+function get_builder_context_id() {
+    if (is_home()) {
+        return get_option('page_for_posts');
+    }
+
+    return get_queried_object_id();
+}
+
 add_action('wp_enqueue_scripts', 'vh_enqueue_assets');
 
 //SVG Files

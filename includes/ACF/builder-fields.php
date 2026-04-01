@@ -15,10 +15,10 @@ acf_add_local_field_group( array(
             'wrapper' => $wrapper,
             'layouts' => array(
                 'layout_69a7f853b6c37' => array(
-                'key' => 'layout_69a7f853b6c37',
-                'name' => 'slider-fullwidth',
-                'label' => 'Slider fullwidth',
-                'display' => 'block',
+                    'key' => 'layout_69a7f853b6c37',
+                    'name' => 'slider-fullwidth',
+                    'label' => 'Slider fullwidth',
+                    'display' => 'block',
                     'sub_fields' => array(
                         array(
                             'key' => 'field_69a9969894e02',
@@ -106,7 +106,7 @@ acf_add_local_field_group( array(
                 'layout_69b7c55596df3' => array(
                     'key' => 'layout_69b7c55596df3',
                     'name' => 'gallery_slider',
-                    'label' => 'gallery_slider',
+                    'label' => 'Galerie Slider fullscreen',
                     'display' => 'block',
                     'sub_fields' => array(
                         array(
@@ -161,7 +161,7 @@ acf_add_local_field_group( array(
                 'layout_69b7c04ed01c1' => array(
                     'key' => 'layout_69b7c04ed01c1',
                     'name' => 'block_real_proj',
-                    'label' => 'block_real_proj',
+                    'label' => 'Section réalisation / projet',
                     'display' => 'block',
                     'sub_fields' => array(
                         array(
@@ -347,7 +347,7 @@ acf_add_local_field_group( array(
                 'layout_69b4095b346f8' => array(
                     'key' => 'layout_69b4095b346f8',
                     'name' => 'block_video',
-                    'label' => 'block_video',
+                    'label' => 'Section vidéo',
                     'display' => 'block',
                     'sub_fields' => array(
                         array(
@@ -433,7 +433,7 @@ acf_add_local_field_group( array(
                 'layout_69b3d7c59a62f' => array(
                     'key' => 'layout_69b3d7c59a62f',
                     'name' => 'block_discover',
-                    'label' => 'block_discover',
+                    'label' => 'Section découverte',
                     'display' => 'block',
                     'sub_fields' => array(
                         array(
@@ -662,14 +662,6 @@ acf_add_local_field_group( array(
                         ),
                     ),
                 ),
-                'layout_69b7d2f7726e4' => array(
-                    'key' => 'layout_69b7d2f7726e4',
-                    'name' => '',
-                    'label' => '',
-                    'display' => 'block',
-                    'sub_fields' => array(
-                    ),
-                ),
                 'layout_69b2d98330c6f' => array(
                     'key' => 'layout_69b2d98330c6f',
                     'name' => 'section_blue',
@@ -815,7 +807,7 @@ acf_add_local_field_group( array(
                 'layout_69b13656aaa3b' => array(
                     'key' => 'layout_69b13656aaa3b',
                     'name' => 'header_hero',
-                    'label' => 'header_hero',
+                    'label' => 'Section hero - Accueil',
                     'display' => 'block',
                     'sub_fields' => array(
                         array(
@@ -1018,7 +1010,7 @@ acf_add_local_field_group( array(
                 'layout_69a952e91a7df' => array(
                     'key' => 'layout_69a952e91a7df',
                     'name' => 'actualites',
-                    'label' => 'Actualités',
+                    'label' => 'Grilles actualités',
                     'display' => 'block',
                     'sub_fields' => array(
                     ),
@@ -1351,6 +1343,13 @@ acf_add_local_field_group( array(
                 'param' => 'post_type',
                 'operator' => '==',
                 'value' => 'reference',
+            ),
+        ),
+        array(
+            array(
+                'param'    => 'page_type',
+                'operator' => '==',
+                'value'    => 'posts_page',
             ),
         ),
     ),

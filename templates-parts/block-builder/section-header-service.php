@@ -1,6 +1,11 @@
 <?php 
 
-$title = get_the_title() ?? '';
+if (is_home()) {
+    $title = get_the_title(get_option('page_for_posts'));
+} else {
+    $title = get_the_title() ?? '';
+}
+
 $cta   = get_sub_field('cta') ?? array('url'=>'#','title'=>'Lorem');
 
 ?>
