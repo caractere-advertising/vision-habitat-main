@@ -695,6 +695,7 @@ acf_add_local_field_group( array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						'label' => 'Logo',
 =======
 						'label' => 'social-media',
@@ -726,6 +727,9 @@ acf_add_local_field_group( array(
 						'key' => 'field_69c645e5414bd',
 						'label' => 'logo',
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+						'label' => 'Logo',
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 =======
 						'label' => 'Logo',
 >>>>>>> 69c6bb2 (burger-menu finetuning)
@@ -845,14 +849,28 @@ acf_add_local_field_group( array(
 =======
 						'return_format' => 'array',
 						'library' => 'all',
-						'min_width' => '',
-						'min_height' => '',
-						'min_size' => '',
-						'max_width' => '',
-						'max_height' => '',
-						'max_size' => '',
 						'mime_types' => '',
 >>>>>>> 1159616 (Update options-fields)
+						'allow_in_bindings' => 0,
+						'preview_size' => 'medium',
+						'parent_repeater' => 'field_69c5456d667c5',
+					),
+					array(
+						'key' => 'field_69c645e5414bd',
+						'label' => 'Lien',
+						'name' => 'lien',
+						'aria-label' => '',
+						'type' => 'url',
+						'instructions' => '',
+						'required' => 0,
+						'conditional_logic' => 0,
+						'wrapper' => array(
+							'width' => '',
+							'class' => '',
+							'id' => '',
+						),
+						'return_format' => 'array',
+						'library' => 'all',
 						'allow_in_bindings' => 0,
 						'preview_size' => 'medium',
 						'parent_repeater' => 'field_69c5456d667c5',
@@ -878,6 +896,7 @@ acf_add_local_field_group( array(
 					array(
 						'key' => 'field_69c646dc42379',
 						'label' => 'cond',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -980,6 +999,8 @@ acf_add_local_field_group( array(
 						'conditional_logic' => 0,
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 						'name' => 'cond',
 						'aria-label' => '',
 						'type' => 'text',
@@ -1061,6 +1082,7 @@ acf_add_local_field_group( array(
 						'prepend' => '',
 						'append' => '',
 					),
+<<<<<<< HEAD
 					array(
 						'key' => 'field_69ca4e2f81767',
 						'label' => 'copyright',
@@ -1136,6 +1158,8 @@ acf_add_local_field_group( array(
 =======
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 					),
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 =======
 >>>>>>> 69c6bb2 (burger-menu finetuning)
 =======

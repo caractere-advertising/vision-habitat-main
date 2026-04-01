@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -23606,6 +23607,8 @@ __webpack_require__.r(__webpack_exports__);
 >>>>>>> 53fbb3b (npm run dev)
 =======
 >>>>>>> ef15be5 (Optimisation section.php + css + ajout nouvelle section page "construire")
+=======
+>>>>>>> 5d4ecf8 (burger-menu finetuning)
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -24952,15 +24955,6 @@ module.exports = styleTagTransform;
   \**************************/
 () {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| import \"./js/header.js\";\n| import \"./js/scroll-top.js\";\n> <<<<<<< HEAD\n| import \"./js/img-hover.js\";\n| <<<<<<< HEAD");
-=======
-<<<<<<< HEAD
-throw new Error("Module parse failed: Unexpected token (7:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| import \"./js/header.js\";\n| import \"./js/scroll-top.js\";\n> <<<<<<< HEAD\n| import \"./js/img-hover.js\";\n| =======");
-=======
-=======
->>>>>>> db64302 (fin 30-3)
 const burgerBtn = document.querySelector('.burger-btn');
 const mobileMenu = document.querySelector('#megamenu');
 
@@ -24970,12 +24964,19 @@ if (burgerBtn && mobileMenu) {
 
         burgerBtn.classList.toggle('is-active');
         mobileMenu.classList.toggle('is-open');
-        burgerBtn.setAttribute('aria-expanded', String(!isOpen));
-        mobileMenu.setAttribute('aria-hidden', String(isOpen));
         document.body.style.overflow = isOpen ? '' : 'hidden';
     });
 }
 
+const burgerBtnClose = document.querySelector('.burger-btn-close');
+
+if (burgerBtnClose && mobileMenu) {
+    burgerBtnClose.addEventListener('click', () => {
+        burgerBtn.classList.remove('is-active');
+        mobileMenu.classList.remove('is-open');
+        document.body.style.overflow = '';
+    });
+}
 
 /***/ },
 
@@ -25009,6 +25010,27 @@ links.forEach(link => {
 
 /***/ },
 
+/***/ "./src/js/parallax.js"
+/*!****************************!*\
+  !*** ./src/js/parallax.js ***!
+  \****************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var simple_parallax_js_vanilla__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! simple-parallax-js/vanilla */ "./node_modules/simple-parallax-js/dist/vanilla/simpleParallaxVanilla.es.js");
+
+
+var image = document.getElementsByClassName("section-image-parallax");
+new simple_parallax_js_vanilla__WEBPACK_IMPORTED_MODULE_0__["default"](image, {
+  delay: 1,
+  scale: 1.6,
+  transition: "cubic-bezier(0,0,0,1)",
+});
+
+
+/***/ },
+
 /***/ "./src/js/scroll-top.js"
 /*!******************************!*\
   !*** ./src/js/scroll-top.js ***!
@@ -25035,8 +25057,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.css");
 /* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/css/navigation */ "./node_modules/swiper/modules/navigation.css");
 /* harmony import */ var swiper_css_pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/css/pagination */ "./node_modules/swiper/modules/pagination.css");
-
-
 
 
 
@@ -25175,6 +25195,280 @@ const swiperReference = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swi
   autoplay: true,
   speed: 600,
 });
+
+const swiperVertical = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-vertical", {
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+  autoplay: true,
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination-vertical",
+    clickable: true,
+  },
+});
+
+const swiperEtapesEl = document.querySelector(".swiper-etapes");
+
+if (swiperEtapesEl) {
+  const swiperEtapes = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-etapes", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 800,
+    loop: false,
+    allowTouchMove: true,
+
+    navigation: {
+      prevEl: ".swiper-step-prev",
+      nextEl: ".swiper-step-next",
+    },
+
+    scrollbar: {
+      el: ".swiper-step-scrollbar",
+      draggable: true,
+      dragSize: "auto",
+    },
+
+    on: {
+      init: function () {
+        animateStepContent(this);
+      },
+      slideChangeTransitionStart: function () {
+        resetStepContent(this);
+      },
+      slideChangeTransitionEnd: function () {
+        animateStepContent(this);
+      },
+    },
+  });
+
+  function resetStepContent(swiper) {
+    swiper.slides.forEach((slide) => {
+      const img = slide.querySelector(".block-img");
+      const text = slide.querySelector(".cold");
+
+      if (img) img.classList.remove("is-visible");
+      if (text) text.classList.remove("is-visible");
+    });
+  }
+
+  function animateStepContent(swiper) {
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    if (!activeSlide) return;
+
+    const img = activeSlide.querySelector(".block-img");
+    const text = activeSlide.querySelector(".cold");
+
+    if (img) img.classList.add("is-visible");
+    if (text) text.classList.add("is-visible");
+  }
+}
+
+
+/***/ },
+
+/***/ "./node_modules/simple-parallax-js/dist/vanilla/simpleParallaxVanilla.es.js"
+/*!**********************************************************************************!*\
+  !*** ./node_modules/simple-parallax-js/dist/vanilla/simpleParallaxVanilla.es.js ***!
+  \**********************************************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ g)
+/* harmony export */ });
+const h = (i) => NodeList.prototype.isPrototypeOf(i) || HTMLCollection.prototype.isPrototypeOf(i) ? Array.from(i) : typeof i == "string" || i instanceof String ? document.querySelectorAll(i) : [i], d = () => Element.prototype.closest && "IntersectionObserver" in window;
+class c {
+  constructor() {
+    this.positions = {
+      top: 0,
+      bottom: 0,
+      height: 0
+    };
+  }
+  setViewportTop(t) {
+    return this.positions.top = t ? t.scrollTop : window.pageYOffset, this.positions;
+  }
+  setViewportBottom() {
+    return this.positions.bottom = this.positions.top + this.positions.height, this.positions;
+  }
+  setViewportAll(t) {
+    return this.positions.top = t ? t.scrollTop : window.pageYOffset, this.positions.height = t ? t.clientHeight : document.documentElement.clientHeight, this.positions.bottom = this.positions.top + this.positions.height, this.positions;
+  }
+}
+const s = new c(), m = () => {
+  const i = "transform webkitTransform mozTransform oTransform msTransform".split(" ");
+  let t, e = 0;
+  for (; t === void 0; )
+    t = document.createElement("div").style[i[e]] !== void 0 ? i[e] : void 0, e += 1;
+  return t;
+}, r = m(), p = (i) => i.tagName.toLowerCase() !== "img" && i.tagName.toLowerCase() !== "picture" ? !0 : !(!i || !i.complete || typeof i.naturalWidth < "u" && i.naturalWidth === 0);
+class f {
+  constructor(t, e, n = !1) {
+    this.element = t, this.elementContainer = t, this.settings = e, this.isVisible = !0, this.isInit = !1, this.oldTranslateValue = -1, this.prefersReducedMotion = n, this.init = this.init.bind(this), this.customWrapper = this.settings.customWrapper && this.element.closest(this.settings.customWrapper) ? this.element.closest(this.settings.customWrapper) : null, !this.prefersReducedMotion && (p(t) ? this.init() : this.element.addEventListener("load", () => {
+      setTimeout(() => {
+        this.init(!0);
+      }, 50);
+    }));
+  }
+  init(t) {
+    this.prefersReducedMotion || this.isInit || (t && (this.rangeMax = null), !this.element.closest(".simpleParallax") && (this.settings.overflow === !1 && this.wrapElement(this.element), this.setTransformCSS(), this.getElementOffset(), this.intersectionObserver(), this.getTranslateValue(), this.animate(), this.settings.delay > 0 ? setTimeout(() => {
+      this.setTransitionCSS(), this.elementContainer.classList.add("simple-parallax-initialized");
+    }, 10) : this.elementContainer.classList.add("simple-parallax-initialized"), this.isInit = !0));
+  }
+  // if overflow option is set to false
+  // wrap the element into a .simpleParallax div and apply overflow hidden to hide the image excedant (result of the scale)
+  wrapElement() {
+    const t = this.element.closest("picture") || this.element;
+    let e = this.customWrapper || document.createElement("div");
+    e.classList.add("simpleParallax"), e.style.overflow = "hidden", this.customWrapper || (t.parentNode.insertBefore(e, t), e.appendChild(t)), this.elementContainer = e;
+  }
+  // unwrap the element from .simpleParallax wrapper container
+  unWrapElement() {
+    const t = this.elementContainer;
+    this.customWrapper ? (t.classList.remove("simpleParallax"), t.style.overflow = "") : t.replaceWith(...t.childNodes);
+  }
+  // apply default style on element
+  setTransformCSS() {
+    this.settings.overflow === !1 && (this.element.style[r] = `scale(${this.settings.scale})`), this.element.style.willChange = "transform";
+  }
+  // apply the transition effect
+  setTransitionCSS() {
+    this.element.style.transition = `transform ${this.settings.delay}s ${this.settings.transition}`;
+  }
+  // remove style of the element
+  unSetStyle() {
+    this.element.style.willChange = "", this.element.style[r] = "", this.element.style.transition = "";
+  }
+  // get the current element offset
+  getElementOffset() {
+    const t = this.elementContainer.getBoundingClientRect();
+    if (this.elementHeight = t.height, this.elementTop = t.top + s.positions.top, this.settings.customContainer) {
+      const e = this.settings.customContainer.getBoundingClientRect();
+      this.elementTop = t.top - e.top + s.positions.top;
+    }
+    this.elementBottom = this.elementHeight + this.elementTop;
+  }
+  // build the Threshold array to cater change for every pixel scrolled
+  buildThresholdList() {
+    const t = [];
+    for (let e = 1; e <= this.elementHeight; e++) {
+      const n = e / this.elementHeight;
+      t.push(n);
+    }
+    return t;
+  }
+  // create the Intersection Observer
+  intersectionObserver() {
+    const t = {
+      root: null,
+      threshold: this.buildThresholdList()
+    };
+    this.observer = new IntersectionObserver(
+      this.intersectionObserverCallback.bind(this),
+      t
+    ), this.observer.observe(this.element);
+  }
+  // Intersection Observer Callback to set the element at visible state or not
+  intersectionObserverCallback(t) {
+    t.forEach((e) => {
+      e.isIntersecting ? this.isVisible = !0 : this.isVisible = !1;
+    });
+  }
+  // check if the current element is visible in the Viewport
+  // for browser that not support Intersection Observer API
+  checkIfVisible() {
+    return this.elementBottom > s.positions.top && this.elementTop < s.positions.bottom;
+  }
+  // calculate the range between image will be translated
+  getRangeMax() {
+    const t = this.element.clientHeight;
+    this.rangeMax = t * this.settings.scale - t;
+  }
+  // get the percentage and the translate value to apply on the element
+  getTranslateValue() {
+    let t = ((s.positions.bottom - this.elementTop) / ((s.positions.height + this.elementHeight) / 100)).toFixed(1);
+    return t = Math.min(100, Math.max(0, t)), this.settings.maxTransition !== 0 && t > this.settings.maxTransition && (t = this.settings.maxTransition), this.oldPercentage === t || (this.rangeMax || this.getRangeMax(), this.translateValue = (t / 100 * this.rangeMax - this.rangeMax / 2).toFixed(0), this.oldTranslateValue === this.translateValue) ? !1 : (this.oldPercentage = t, this.oldTranslateValue = this.translateValue, !0);
+  }
+  // animate the image
+  animate() {
+    let t = 0, e = 0, n;
+    (this.settings.orientation.includes("left") || this.settings.orientation.includes("right")) && (e = `${this.settings.orientation.includes("left") ? this.translateValue * -1 : this.translateValue}px`), (this.settings.orientation.includes("up") || this.settings.orientation.includes("down")) && (t = `${this.settings.orientation.includes("up") ? this.translateValue * -1 : this.translateValue}px`), this.settings.overflow === !1 ? n = `translate3d(${e}, ${t}, 0) scale(${this.settings.scale})` : n = `translate3d(${e}, ${t}, 0)`, this.element.style[r] = n;
+  }
+}
+let a = !1, o = [], l, u;
+class g {
+  constructor(t, e) {
+    t && d() && (this.prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches, this.reducedMotionMediaQuery = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ), this.handleReducedMotionChange = this.handleReducedMotionChange.bind(this), this.reducedMotionMediaQuery.addEventListener(
+      "change",
+      this.handleReducedMotionChange
+    ), !this.prefersReducedMotion && (this.elements = h(t), this.defaults = {
+      delay: 0,
+      orientation: "up",
+      scale: 1.3,
+      overflow: !1,
+      transition: "cubic-bezier(0,0,0,1)",
+      customContainer: "",
+      customWrapper: "",
+      maxTransition: 0
+    }, this.settings = Object.assign(this.defaults, e), this.settings.customContainer && ([this.customContainer] = h(this.settings.customContainer)), this.lastPosition = -1, this.resizeIsDone = this.resizeIsDone.bind(this), this.refresh = this.refresh.bind(this), this.proceedRequestAnimationFrame = this.proceedRequestAnimationFrame.bind(this), this.init()));
+  }
+  // Handle changes to reduced motion preference
+  handleReducedMotionChange(t) {
+    this.prefersReducedMotion = t.matches, this.prefersReducedMotion ? this.destroy() : this.init();
+  }
+  init() {
+    this.prefersReducedMotion || (s.setViewportAll(this.customContainer), o = [
+      ...this.elements.map(
+        (t) => new f(
+          t,
+          this.settings,
+          this.prefersReducedMotion
+        )
+      ),
+      ...o
+    ], a || (this.proceedRequestAnimationFrame(), window.addEventListener("resize", this.resizeIsDone), a = !0));
+  }
+  // wait for resize to be completely done
+  resizeIsDone() {
+    clearTimeout(u), u = setTimeout(this.refresh, 200);
+  }
+  // animation frame
+  proceedRequestAnimationFrame() {
+    if (s.setViewportTop(this.customContainer), this.lastPosition === s.positions.top) {
+      l = window.requestAnimationFrame(this.proceedRequestAnimationFrame);
+      return;
+    }
+    s.setViewportBottom(), o.forEach((t) => {
+      this.proceedElement(t);
+    }), l = window.requestAnimationFrame(this.proceedRequestAnimationFrame), this.lastPosition = s.positions.top;
+  }
+  // proceed the element
+  proceedElement(t) {
+    let e = !1;
+    this.customContainer ? e = t.checkIfVisible() : e = t.isVisible, e && t.getTranslateValue() && t.animate();
+  }
+  refresh() {
+    s.setViewportAll(this.customContainer), o.forEach((t) => {
+      t.getElementOffset(), t.getRangeMax();
+    }), this.lastPosition = -1;
+  }
+  destroy() {
+    this.reducedMotionMediaQuery && this.reducedMotionMediaQuery.removeEventListener(
+      "change",
+      this.handleReducedMotionChange
+    );
+    const t = [];
+    o = o.filter((e) => this.elements && this.elements.includes(e.element) ? (t.push(e), !1) : e), t.forEach((e) => {
+      e.unSetStyle(), this.settings && this.settings.overflow === !1 && e.unWrapElement();
+    }), o.length || (window.cancelAnimationFrame(l), window.removeEventListener("resize", this.refresh), a = !1);
+  }
+}
+
 
 
 /***/ },
@@ -35756,11 +36050,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-<<<<<<< HEAD
->>>>>>> e88ed7f (structure html)
->>>>>>> 80fc547 (structure html)
-=======
->>>>>>> db64302 (fin 30-3)
 
 /***/ }
 
@@ -35860,6 +36149,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
+
+
+
 
 
 
@@ -35872,6 +36165,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35931,3 +36225,6 @@ __webpack_require__.r(__webpack_exports__);
 //# sourceMappingURL=main.bundle.js.map
 >>>>>>> 44ff83a (fin 30-3)
 >>>>>>> 8fbe339 (fin 30-3)
+=======
+//# sourceMappingURL=main.bundle.js.map
+>>>>>>> 5d4ecf8 (burger-menu finetuning)
