@@ -36,7 +36,7 @@ endfor;
             <div class="block-img"><img src="<?= $img_url[0];?>" alt="<?= $img_title[0];?>"></div>
         </div>
 
-        <div class="cold col-60">
+        <div class="col-d col-60">
             <div class="section-informations">
                 <span class="date"><?= $date;?></span>
                 <p><strong>Localité</strong> <br>   <?= $localite;?></p>

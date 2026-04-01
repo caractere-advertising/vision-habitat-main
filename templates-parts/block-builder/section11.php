@@ -8,9 +8,7 @@ $video     = get_sub_field("video");
 ?>
 
 <section class="section-video">
-
     <div class="video-top container">
-
         <div class="video-top-left">
             <?php if ($text_ev) { ?>
             <div class="video-text"><?php echo $text_ev; ?></div>
@@ -27,7 +25,7 @@ $video     = get_sub_field("video");
     </div>
 
     <?php if ($video) { ?>
-    <div class="video-wrapper">
+    <div class="video-wrapper container">
         <?php echo wp_oembed_get($video); ?>
     </div>
     <?php } ?>

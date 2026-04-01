@@ -8,8 +8,10 @@
   &.flex {
     display: flex;
 
-    .col-50 {
-      width: 50%;
+    @for $i from 1 through 100 {
+      .col-#{$i} {
+        width: $i * 1%;
+      }
     }
   }
 

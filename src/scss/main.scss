@@ -18,6 +18,7 @@
 
 @use "base/header.scss" as *;
 @use "base/footer.scss" as *;
+@use "base/single-reference.scss" as *;
 
 @use "builder/header-service.scss" as *;
 @use "builder/section-app-glob.scss" as *;

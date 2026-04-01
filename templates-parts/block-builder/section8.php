@@ -23,17 +23,19 @@ $blueActif = get_sub_field('blue_activated');
                 <div class="citation-text"><?= $citation; ?></div>
             <?php endif; ?>
         </div>
-    <?php endif;?>
     <?php if($blueActif):?>
 
-    <div class="citation-blue">
-        <div class="citation-blue-inner container">
-            <?php if ($title) : ?>
-                <div class="citation-blue-title">
-                    <?= $title; ?>
-                </div>
+        <div class="citation-blue">
+            <div class="citation-blue-inner container">
+                <?php if ($title) : ?>
+                    <div class="citation-blue-title"><?= $title; ?></div>
+                <?php endif;
+                if($link): ?>
+                    <a href="<?= $link['url'];?>" class="btn-cta"><?= $link['title'];?></a>
+                <?php endif;?>
 
-            <?php if($citation):?><div class="citation-deco"></div><?php endif;?>
+                <?php if($citation):?><div class="citation-deco"></div><?php endif;?>
+            </div>
         </div>
     <?php endif;?>
 </section>

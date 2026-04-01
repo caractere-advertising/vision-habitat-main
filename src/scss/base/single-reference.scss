@@ -16,7 +16,17 @@
   padding-top: 150px;
 
   .container {
-    .cold {
+    gap: 100px;
+
+    .col-g {
+      .block-img {
+        height: 600px;
+        max-height: 700px;
+        width: 100%;
+      }
+    }
+
+    .col-d {
       .section-informations {
         padding: 0 100px 100px;
         display: flex;
@@ -30,6 +40,10 @@
             font-weight: 400;
           }
         }
+      }
+
+      .block-img {
+        max-height: 900px;
       }
     }
   }
