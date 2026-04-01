@@ -1,5 +1,6 @@
 
 <?php
+
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
@@ -27,10 +28,13 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
             <?php if ($burger_info_contact) :
                 $info = $burger_info_contact[0]; ?>
 
+<<<<<<< HEAD
 <?php var_dump($burger_info_contact); ?>
 <?php if ($burger_info_contact) : ?>
             <?php if ($burger_info_contact) : ?>
                 <?php $info = $burger_info_contact[0]; ?>
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
                 <div class="menu-burger-contact">
                     <p class="menu-burger-contact-name"><?php echo ($info['site-name']) ?></p>
                     <p><?php echo($info['street-name']) ?></p>
@@ -53,14 +57,16 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
             <?php endif; ?>
         </div>
     </div>
+<<<<<<< HEAD
     <div class="menu-burger-right">
         <button class="burger-btn burger-btn-close">&#x2715;</button>
         <?php wp_nav_menu([
         <button class="burger-btn
          burger-btn-close">&#x2715;</button>
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 
     <div class="menu-burger-right">
-
         <button class="burger-btn burger-btn-close">&#x2715;</button>
 
         <?php wp_nav_menu([
@@ -80,15 +86,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 </ul>
             <?php endif; ?>
 
-            <hr class="burger-hr">
-
-            
-                <div class="burger-legal-copy">
-                    <p class="burger-legal-links"><?= esc_html($cond_generales['cond']) ?></p>
-                    <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
-                </div>
-                
-            <?php endif; ?>
+           
 
             <div class="burger-legal-copy">
                 <p class="burger-legal-links"><?php echo esc_html($cond_generales['cond']) ?></p>
@@ -97,6 +95,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         </div>
         </div>
     </div>
+<<<<<<< HEAD
 
 </section>
         ]); ?>
@@ -124,3 +123,6 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php endif; ?>
     </div>
 </section>
+=======
+</section>
+>>>>>>> 69c6bb2 (burger-menu finetuning)
