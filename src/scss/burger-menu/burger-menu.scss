@@ -33,6 +33,7 @@
   display: flex;
   width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 100vh;
   gap: 10px;
   align-items: flex-end;
@@ -63,6 +64,13 @@
 <<<<<<< HEAD
 
 <<<<<<< HEAD
+ 
+>>>>>>> 69c6bb2 (burger-menu finetuning)
+=======
+ height: 100vh;
+  gap: 10px;
+  align-items: flex-end;
+
  
 >>>>>>> 69c6bb2 (burger-menu finetuning)
 }
@@ -182,6 +190,7 @@
     align-items: flex-end;
 >>>>>>> 08604e2 (Fix : Correction du burger-menu.scss + footer + functions + template-builder.php)
     height: 100%;
+<<<<<<< HEAD
 
     img {
       position: absolute;
@@ -204,6 +213,20 @@
 <<<<<<< HEAD
 .menu-burger-left-logo{
 >>>>>>> 69c6bb2 (burger-menu finetuning)
+=======
+    filter: brightness(.5);
+  
+}
+
+//.backgr-image{
+  //width: 100%;
+   //object-fit: cover;
+//}
+
+}
+
+.menu-burger-left-logo{
+>>>>>>> 69c6bb2 (burger-menu finetuning)
   position: absolute;
   top: 40px;
   left: 40px;
@@ -218,6 +241,10 @@
   gap: 20px;
   bottom: 180px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 =======
 
 >>>>>>> 69c6bb2 (burger-menu finetuning)
@@ -230,6 +257,11 @@
   line-height: 1.9;
   font-weight: 300;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+ 
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 }
 
 //.menu-burger-contact-name {
@@ -252,6 +284,7 @@
           letter-spacing: 1px;
         }
 
+<<<<<<< HEAD
         .contact-adresse,
         .contact-tel-mail {
           p,
@@ -290,10 +323,15 @@
   /* Colonne droite */
 
 <<<<<<< HEAD
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 //.menu-burger-contact-name {
   //font-weight: 700;
   //text-transform: uppercase;
   //margin-bottom: 4px;
+<<<<<<< HEAD
+>>>>>>> 69c6bb2 (burger-menu finetuning)
+=======
 >>>>>>> 69c6bb2 (burger-menu finetuning)
 //}
 
@@ -303,7 +341,13 @@
   align-items: center;
   justify-items: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding-left: 100px;
+=======
+        padding-left: 100px;
+
+
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 =======
         padding-left: 100px;
 
@@ -315,7 +359,10 @@
   width: 24px;
   height: 24px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 
   
 >>>>>>> 69c6bb2 (burger-menu finetuning)
@@ -330,15 +377,21 @@
   flex-direction: column;
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
   align-items:end;
   padding-top: 300px;
   padding-right: 50px;
   gap: 50px;
   height: fit-content;
+<<<<<<< HEAD
 =======
   align-items: flex-end;
   padding: 60px 80px;
 >>>>>>> 0629f4f (avancement bg-menu)
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 }
 =======
   .menu-burger-right {
@@ -353,8 +406,22 @@
     gap: 150px;
     height: fit-content;
 
+<<<<<<< HEAD
     .burger-nav {
       width: 100%;
+=======
+.burger-btn-close {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  background: none;
+  border: none;
+  color: $white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0;
+}
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 
       .burger-menu_list {
         display: flex;
@@ -616,6 +683,7 @@
 <<<<<<< HEAD
 .burger-bottom {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: fit-content;
   text-align: right;
   display: flex;
@@ -630,6 +698,8 @@
 
 .menu-bottom {
 =======
+=======
+>>>>>>> 69c6bb2 (burger-menu finetuning)
     width: fit-content;
     text-align: right;
 =======
@@ -639,6 +709,7 @@
 >>>>>>> 08604e2 (Fix : Correction du burger-menu.scss + footer + functions + template-builder.php)
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 80px;
@@ -691,6 +762,22 @@
   margin: 0;
   margin-top: 20px;
 =======
+=======
+    margin-right: 0;
+    padding-left: 100px;
+    margin-left: auto;
+    align-items: flex-end;
+
+   // margin-top: 100px;
+}
+
+.menu-bottom
+{
+  //margin-top: 100px;
+  width: 100%;
+}
+.burger-legal-footer {
+>>>>>>> 69c6bb2 (burger-menu finetuning)
     padding: 0;
     margin-top: 40px;
     display: flex;
@@ -704,6 +791,7 @@
         gap: 10px;
 >>>>>>> 08604e2 (Fix : Correction du burger-menu.scss + footer + functions + template-builder.php)
 
+<<<<<<< HEAD
         li {
           color: $white;
           text-transform: uppercase;
@@ -771,10 +859,28 @@
         margin-bottom: 3px;
         transform: rotate(45deg);
       }
+=======
+    li a {
+        color: $white;
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        opacity: 0.6;
+>>>>>>> 69c6bb2 (burger-menu finetuning)
     }
 
+<<<<<<< HEAD
     .menu-bottom {
       width: 100%;
+=======
+.burger-hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    //margin-bottom: 100px ;
+}
+>>>>>>> 69c6bb2 (burger-menu finetuning)
 
 <<<<<<< HEAD
 .burger-legal-links {
@@ -785,6 +891,9 @@
     opacity: 0.6;
     margin: 0 ;
     margin-top: 20px;
+<<<<<<< HEAD
+>>>>>>> 69c6bb2 (burger-menu finetuning)
+=======
 >>>>>>> 69c6bb2 (burger-menu finetuning)
 }
 =======
@@ -864,11 +973,12 @@
 =======
 .burger-legal-copyright {
     color: $white;
-    font-size: 0.6rem;
+    font-size: 1rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     opacity: 0.6;
     margin: 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 <<<<<<< HEAD
@@ -893,3 +1003,16 @@
 =======
 }
 >>>>>>> 4104b2f (avancement bg-menu)
+=======
+    margin-top: 20px;
+   
+}
+
+.burger-legal-copy{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+>>>>>>> 69c6bb2 (burger-menu finetuning)
