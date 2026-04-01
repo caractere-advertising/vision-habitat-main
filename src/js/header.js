@@ -7,8 +7,16 @@ if (burgerBtn && mobileMenu) {
 
         burgerBtn.classList.toggle('is-active');
         mobileMenu.classList.toggle('is-open');
-        burgerBtn.setAttribute('aria-expanded', String(!isOpen));
-        mobileMenu.setAttribute('aria-hidden', String(isOpen));
         document.body.style.overflow = isOpen ? '' : 'hidden';
+    });
+}
+
+const burgerBtnClose = document.querySelector('.burger-btn-close');
+
+if (burgerBtnClose && mobileMenu) {
+    burgerBtnClose.addEventListener('click', () => {
+        burgerBtn.classList.remove('is-active');
+        mobileMenu.classList.remove('is-open');
+        document.body.style.overflow = '';
     });
 }
