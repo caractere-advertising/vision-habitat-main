@@ -44,9 +44,7 @@
  * Sinon, sur les autres pages, on garde simplement l’ID de la page courante.
  */
 
-
 $repo = 'templates-parts/block-builder';
-
 $context_id = get_builder_context_id();
 
 $builder_layouts = array(

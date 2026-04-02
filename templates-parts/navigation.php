@@ -26,7 +26,10 @@ $class = is_front_page() ? 'site-header -frontpage' : 'site-header';
 
         <div class="header-actions">
             <span class="header-separator"></span>
-            <button class="burger-btn">
+            <button class="hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
             </button>
         </div>
     </div>
