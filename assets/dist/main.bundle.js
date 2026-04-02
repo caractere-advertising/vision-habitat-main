@@ -1344,28 +1344,32 @@ module.exports = styleTagTransform;
   \**************************/
 () {
 
-const burgerBtn = document.querySelector('.burger-btn');
-const mobileMenu = document.querySelector('#megamenu');
+const burgerBtn = document.querySelector(".hamburger--emphatic");
+const mobileMenu = document.querySelector("#megamenu");
+
+const headerNav = document.querySelector(".header-nav");
+const headerActions = document.querySelector(".header-actions");
 
 if (burgerBtn && mobileMenu) {
-    burgerBtn.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.contains('is-open');
+  burgerBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.contains("is-open");
 
-        burgerBtn.classList.toggle('is-active');
-        mobileMenu.classList.toggle('is-open');
-        document.body.style.overflow = isOpen ? '' : 'hidden';
-    });
+    burgerBtn.classList.toggle("is-active");
+    mobileMenu.classList.toggle("is-open");
+    headerNav.style.opacity = isOpen ? 1 : 0;
+    headerActions.classList.toggle("is-open");
+    document.body.style.overflow = isOpen ? "" : "hidden";
+  });
 }
-
-const burgerBtnClose = document.querySelector('.burger-btn-close');
 
 if (burgerBtnClose && mobileMenu) {
-    burgerBtnClose.addEventListener('click', () => {
-        burgerBtn.classList.remove('is-active');
-        mobileMenu.classList.remove('is-open');
-        document.body.style.overflow = '';
-    });
+  burgerBtn.addEventListener("click", () => {
+    burgerBtn.classList.remove("is-active");
+    mobileMenu.classList.remove("is-open");
+    document.body.style.overflow = "";
+  });
 }
+
 
 /***/ },
 
@@ -12540,7 +12544,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
-
 
 
 

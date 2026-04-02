@@ -40,8 +40,8 @@
       margin-top: auto;
       display: inline-flex;
       align-items: center;
-      background-color: #d3bea1;
-      color: #fff;
+      background-color: $secondaryColor;
+      color: $white;
       text-decoration: none;
       font-size: 0.9rem;
       letter-spacing: 0.2em;
@@ -59,10 +59,7 @@
 @media (max-width: 1024px) {
   .section-discover {
     .discover-right {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding: 50px 40px;
     }
   }
 }
@@ -78,10 +75,7 @@
 
     .discover-right {
       width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      padding-left: 5%;
-      padding-right: 5%;
+      padding: 50px 5%;
 
       .discover-btn {
         align-self: flex-start;

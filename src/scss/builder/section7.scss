@@ -11,7 +11,6 @@
   min-height: 500px;
 }
 
-
 .projects-left {
   background-color: $primaryColor;
   padding: 100px 0 100px 10vw;
@@ -20,11 +19,12 @@
   justify-content: center;
   gap: 24px;
 
-  .projects-title{
-     color: $white;
-     font-size: 4rem;
-     line-height: 4rem;
+  .projects-title {
+    color: $white;
+    font-size: 4rem;
+    line-height: 4rem;
   }
+
   .projects-paragraph {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -32,12 +32,11 @@
     margin: 0;
     width: 500px;
   }
-   .btn-cta{
+
+  .btn-cta {
     color: $white;
     border-bottom: 0.5px solid $white;
-   }
-
-  
+  }
 }
 
 .projects-right {
@@ -124,7 +123,6 @@
       border-color: $primaryColor;
     }
   }
-
 }
 
 .swiper-scrollbar-projects {
@@ -163,7 +161,7 @@
   }
 
   .projects-left {
-    padding: 50px ;
+    padding: 50px;
   }
 
   .projects-controls {
