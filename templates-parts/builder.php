@@ -103,6 +103,7 @@ if (have_rows('builder', $context_id)) :
 
 =======
 
+<<<<<<< HEAD
 if (have_rows('builder')):
     while (have_rows('builder')): the_row();
         if (get_row_layout() == 'actualites'):
@@ -149,5 +150,44 @@ if (have_rows('builder')):
             get_template_part($repo . '/section-formulaire-contact');
         endif;
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+$context_id = get_builder_context_id();
+
+$builder_layouts = array(
+    'actualites'                 => 'actualites',
+    'slider-fullwidth'           => 'slider-fullwidth',
+    'text_evidence'              => 'section2',
+    'card_solutions'             => 'section3',
+    'header_hero'                => 'section1',
+    'block_real_proj'            => 'section4',
+    'gallery_slider'             => 'section5',
+    'images_overlay'             => 'section6',
+    'section_img_ev'             => 'section7',
+    'block_citation'             => 'section8',
+    'block_discover'             => 'section9',
+    'link_container'             => 'section10',
+    'block_video'                => 'section11',
+    'block_actu'                 => 'section12',
+    'section-header-service'     => 'section-header-service',
+    'section-approche-globale'   => 'section-approche-globale',
+    'section-two-col-simple'     => 'section-txt-g-img-d',
+    'slider-vertical'            => 'section-galerie-vertical',
+    'section-step-const'         => 'section-etapes',
+    'section-image-paralax'      => 'section-parallax',
+    'section-formulaire-contact' => 'section-formulaire-contact',
+    'big_title'=>'big_title_about',
+
+);
+
+if (have_rows('builder', $context_id)) :
+    while (have_rows('builder', $context_id)) : the_row();
+
+        $layout = get_row_layout();
+
+        if (isset($builder_layouts[$layout])) {
+            get_template_part($repo . '/' . $builder_layouts[$layout]);
+        }
+
+>>>>>>> 927826b (fin2-4)
     endwhile;
 endif;

@@ -98,7 +98,19 @@
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
 
+<<<<<<< HEAD
 >>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
+=======
+@use "builder/header-service.scss" as *;
+@use "builder/section-app-glob.scss" as *;
+@use "builder/section-txt-g-img-d.scss" as *;
+@use "builder/section-slider-vertical.scss" as *;
+@use "builder/section-etapes.scss" as *;
+@use "builder/section-parallax.scss" as *;
+@use "builder/section-formulaire.scss" as *;
+@use "builder/big_title_about.scss" as *;
+@use "builder/section-two-col-about.scss" as *;
+>>>>>>> 927826b (fin2-4)
 body {
   font-family: "Manrope", sans-serif;
 }

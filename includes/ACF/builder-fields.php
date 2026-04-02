@@ -1980,6 +1980,7 @@ acf_add_local_field_group( array(
                                 ),
                             ),
                         )
+<<<<<<< HEAD
                     )
 
                 )
@@ -1988,6 +1989,98 @@ acf_add_local_field_group( array(
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
         ),
     ), // fin fields
+=======
+                    ), 
+                ),
+
+               'layout_4cc0rd30n' => array(
+    'key' => 'layout_4cc0rd30n',
+    'name' => 'section-accordeon',
+    'label' => 'Section accordeon',
+    'display' => 'block',
+    'sub_fields' => array(
+        array(
+            'key' => 'field_acc_image',
+            'label' => 'Image',
+            'name' => 'image',
+            'type' => 'image',
+            'wrapper' => $wrapper,
+            'return_format' => 'array',
+            'preview_size' => 'medium',
+        ),
+        array(
+            'key' => 'field_acc_site_name',
+            'label' => 'Site name',
+            'name' => 'site_name',
+            'type' => 'text',
+            'wrapper' => $wrapper,
+            'default_value' => '',
+        ),
+        array(
+            'key' => 'field_acc_titre',
+            'label' => 'Titre',
+            'name' => 'titre',
+            'type' => 'wysiwyg',
+            'wrapper' => $wrapper,
+            'default_value' => '',
+            'tabs' => 'all',
+            'toolbar' => 'full',
+            'media_upload' => 1,
+            'delay' => 0,
+        ),
+        array(
+            'key' => 'field_lien_accordeon',
+            'label' => 'Lien accordeon',
+            'name' => 'lien_accordeon',
+            'type' => 'repeater',
+            'wrapper' => $wrapper,
+            'layout' => 'table',
+            'button_label' => 'Ajouter un élément',
+            'sub_fields' => array(
+                array(
+                    'key' => 'field_acc_lien',
+                    'label' => 'Lien',
+                    'name' => 'lien',
+                    'type' => 'link',
+                    'wrapper' => $wrapper,
+                    'return_format' => 'array',
+                    'parent_repeater' => 'field_lien_accordeon',
+                ),
+            ),
+        ),
+    ),
+),
+                        )
+                    ), 
+                ),
+'layout_b1g_t1tl3' => array(
+        'key' => 'layout_b1g_t1tl3',
+        'name' => 'big_title',
+        'label' => 'Big Title',
+        'display' => 'block',
+        'sub_fields' => array(
+            array(
+                'key' => 'field_big_title',
+                'label' => 'Big Title',
+                'name' => 'big_title',
+                'type' => 'wysiwyg',
+                'conditional_logic' => 0,
+                'wrapper' => $wrapper,
+                'allow_in_bindings' => 0,
+            )
+        )
+    ),
+
+                'layout_s3ct10nf0rmc0nt4ct' => array(
+                    'key' => 'layout_s3ct10nf0rmc0nt4ct',
+                    'name' => 'section-formulaire-contact',
+                    'label' => 'Section formulaire',
+                    'display' => 'block',
+                ),
+            ),
+            'button_label' => 'Ajouter un élément',
+            ),
+>>>>>>> 927826b (fin2-4)
     'location' => array(
         array(
             array(
@@ -2011,6 +2104,7 @@ acf_add_local_field_group( array(
                 'value'    => 'reference',
             ),
         ),
+<<<<<<< HEAD
 =======
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
     ),
@@ -2025,3 +2119,18 @@ acf_add_local_field_group( array(
     'show_in_rest'          => 0,
     'display_title'         => '',
 ));
+=======
+ ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+        'display_title' => '',
+    ));
+    
+>>>>>>> 927826b (fin2-4)
