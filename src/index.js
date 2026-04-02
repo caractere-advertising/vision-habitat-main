@@ -8,6 +8,7 @@ import "./js/scroll-top.js";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import "./js/img-hover.js";
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
@@ -30,13 +31,16 @@ import "./js/animate.js";
 =======
 =======
 >>>>>>> 5f5b7df (finetuning 26-03)
-import "./js/parallax.js";
 =======
->>>>>>> 438a9d9 (finetuning 26-03)
+>>>>>>> 7ef033f (0204)
+import "./js/parallax.js";
 import "./js/img-hover.js";
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d4c7333 (finetuning 26-03)
 =======
 
 import "./js/parallax.js";
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+>>>>>>> 7ef033f (0204)
