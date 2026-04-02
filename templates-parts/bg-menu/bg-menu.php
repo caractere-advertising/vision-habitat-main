@@ -30,17 +30,19 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 <section class="menu-burger">
     <div class="menu-burger-left">
         <?php if ($burger_image) : ?>
-           
             <img src="<?= esc_url($burger_image['url']) ?>" alt="<?= esc_attr($burger_image['alt']) ?>"/>
-           
         <?php endif; ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
         <?php if ($logo_bg_menu) : ?>
             <a href="<?= esc_url(home_url('/')) ?>" class="menu-burger-left-logo">
                 <img src="<?=  esc_url($logo_bg_menu['url']) ?>" alt="<?=  esc_attr($logo_bg_menu['alt']) ?>">
             </a>
         <?php endif; ?>
+<<<<<<< HEAD
 
         <div class="menu-burger-left-bottom">
 <<<<<<< HEAD
@@ -86,12 +88,21 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <img src="<?php echo esc_url($logo_bg_menu['url']) ?>" alt="<?php echo esc_attr($logo_bg_menu['alt']) ?>">
     </a>
 <?php endif; ?>
+=======
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 
         <div class="menu-burger-left-bottom">
             <?php if ($burger_info_contact) :
-                $info = $burger_info_contact[0]; ?>
+                $info = $burger_info_contact[0];
+
+                $tel  = $info['tel-num']; 
+                $linkTel = preg_replace('/[^0-9+]/', '', $tel);
+                $linkTel = preg_replace('/^\+320/', '0032', $linkTel);
+                
+                ?>
 
                 <div class="menu-burger-contact">
+<<<<<<< HEAD
                     <p class="menu-burger-contact-name"><?php echo ($info['site-name']) ?></p>
                     <p><?php echo($info['street-name']) ?></p>
                     <p><?php echo($info['locality']) ?></p>
@@ -99,6 +110,20 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                     <p><strong>Mail : </strong><?php echo esc_html($info['mail']) ?></p>
                     <p><?php echo($info['tva']) ?></p>
 >>>>>>> 69c6bb2 (burger-menu finetuning)
+=======
+                    <p class="menu-burger-contact-name"><?=  ($info['site-name']) ?></p>
+
+                    <div class="contact-adresse">
+                        <p><?= ($info['street-name']) ?></p>
+                        <p><?= ($info['locality']) ?></p>
+                    </div>
+                    
+                    <div class="contact-tel-mail">
+                        <p><strong>Tél. </strong><a href="tel:<?= $linkTel;?>"><?= $tel; ?></a></p>
+                        <p><strong>Mail : </strong><a href="mailto:<?=  esc_html($info['mail']) ?>"><?=  esc_html($info['mail']) ?></a></p>
+                        <p><strong>TVA </strong><?= ($info['tva']) ?></p>
+                    </div>
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
                 </div>
             <?php endif; ?>
             
@@ -111,13 +136,17 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 =======
                 <div class="menu-burger-socials">
                     <?php foreach ($burger_socials as $social) :?>
+<<<<<<< HEAD
                         <a href="<?php echo($social['lien']) ?>">
                             <img src="<?php echo($social['logo']['url']) ?>" alt="<?php echo($social['logo']['title']) ?>">
 >>>>>>> 69c6bb2 (burger-menu finetuning)
+=======
+                        <a href="<?= ($social['lien']) ?>">
+                            <img src="<?= ($social['logo']['url']) ?>" alt="<?= ($social['logo']['title']) ?>">
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
                         </a>
                     <?php endforeach; ?>
                 </div>
-                
             <?php endif; ?>
         </div>
     </div>
@@ -156,13 +185,14 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 >>>>>>> 69c6bb2 (burger-menu finetuning)
 
     <div class="menu-burger-right">
-        <button class="burger-btn burger-btn-close">&#x2715;</button>
+        <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
 
         <?php wp_nav_menu([
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
             'container_class' => 'burger-nav from-right',
             'menu_class'     => 'burger-menu_list',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -339,6 +369,25 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 <p class="burger-legal-copyright"><?php echo esc_html($cond_generales['copyright']) ?></p>
             </div>      
         </div>
+=======
+        ]);?>
+
+        <div class="menu-bottom">
+            <div class="burger-bottom">
+                <?php if ($footer_nav) : ?>
+                    <ul class="burger-legal-footer">
+                        <?php foreach ($footer_nav as $item) : ?>
+                            <li><a href="<?=  ($item['link']['url']) ?>"><?=  esc_html($item['link']['title']) ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+
+                <div class="burger-legal-copy">
+                    <p class="burger-legal-links"><a href="<?= $cond_generales['cond']['url'] ;?>"><?= esc_html($cond_generales['cond']['title']); ?></a></p>
+                    <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
+                </div>      
+            </div>
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
         </div>
     </div>
 </section>

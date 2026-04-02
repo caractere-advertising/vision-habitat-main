@@ -19,6 +19,7 @@
   justify-content: center;
   gap: 150px;
 
+<<<<<<< HEAD
   .block-txt {
     display: flex;
     flex-direction: column;
@@ -39,6 +40,22 @@
     }
   }
 
+=======
+  .projects-title {
+    color: $white;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .projects-paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $white;
+    margin: 0;
+    width: 500px;
+  }
+
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
   .btn-cta {
     color: $white;
     border-bottom: 0.5px solid $white;
@@ -142,6 +159,7 @@
       }
     }
   }
+<<<<<<< HEAD
 
   .swiper-scrollbar-projects {
     display: flex !important;
@@ -150,6 +168,9 @@
     background-color: $lightGray !important;
     width: 60%;
     position: relative;
+=======
+}
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 
     .swiper-scrollbar-drag {
       height: 100%;

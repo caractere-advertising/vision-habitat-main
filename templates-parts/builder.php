@@ -46,6 +46,7 @@
 
 $repo = 'templates-parts/block-builder';
 <<<<<<< HEAD
+<<<<<<< HEAD
 $context_id = get_builder_context_id();
 
 $builder_layouts = array(
@@ -151,6 +152,8 @@ if (have_rows('builder')):
         endif;
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 =======
+=======
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 $context_id = get_builder_context_id();
 
 $builder_layouts = array(

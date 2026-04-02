@@ -18,7 +18,11 @@
 
     .header-logo {
       flex-shrink: 0;
+<<<<<<< HEAD
       width: 250px;
+=======
+      width: 300px;
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
       display: block;
 
       img {
@@ -236,12 +240,16 @@
     opacity 0.3s ease,
     visibility 0.4s;
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 100vh;
 =======
     height: 100vh;
     
 
 >>>>>>> 69c6bb2 (burger-menu finetuning)
+=======
+  height: 100vh;
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 
   &.is-open {
     opacity: 1;
