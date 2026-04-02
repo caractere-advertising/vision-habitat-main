@@ -39,11 +39,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'placement' => 'top',
 				'endpoint' => 0,
 				'selected' => 0,
@@ -57,11 +53,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'return_format' => 'array',
 				'library' => 'all',
 				'mime_types' => '',
@@ -101,11 +93,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'default_value' => '',
 				'maxlength' => '',
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
@@ -163,11 +151,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'placement' => 'top',
 				'endpoint' => 0,
 				'selected' => 0,
@@ -181,11 +165,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'default_value' => '',
 				'allow_in_bindings' => 0,
 				'tabs' => 'all',
@@ -202,11 +182,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'default_value' => '',
 				'allow_in_bindings' => 0,
 				'tabs' => 'all',
@@ -223,11 +199,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'default_value' => '',
 				'maxlength' => '',
 				'allow_in_bindings' => 0,
@@ -244,11 +216,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'layout' => 'block',
 				'sub_fields' => array(
 					array(
@@ -260,11 +228,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -281,11 +245,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'allow_in_bindings' => 0,
 						'tabs' => 'all',
@@ -302,11 +262,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -323,11 +279,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'return_format' => 'array',
 						'allow_in_bindings' => 0,
 					),
@@ -342,11 +294,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'default_value' => '',
 				'allow_in_bindings' => 0,
 				'tabs' => 'all',
@@ -363,11 +311,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'post_type' => array(
 					0 => 'page',
 				),
@@ -393,11 +337,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'placement' => 'top',
 				'endpoint' => 0,
 				'selected' => 0,
@@ -411,11 +351,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'default_value' => '',
 				'maxlength' => '',
 				'allow_in_bindings' => 0,
@@ -432,11 +368,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'placement' => 'top',
 				'endpoint' => 0,
 				'selected' => 0,
@@ -450,11 +382,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'return_format' => 'array',
 				'library' => 'all',
 				
@@ -471,11 +399,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'layout' => 'block',
 				'pagination' => 0,
 				'min' => 0,
@@ -493,11 +417,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -515,11 +435,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -537,11 +453,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -559,11 +471,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -585,6 +493,7 @@ acf_add_local_field_group( array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						'wrapper' => $wrapper,
 <<<<<<< HEAD
 						'default_value' => '',
@@ -600,6 +509,9 @@ acf_add_local_field_group( array(
 							'id' => '',
 						),
 <<<<<<< HEAD
+=======
+						'wrapper' => $wrapper,
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 =======
 						'wrapper' => $wrapper,
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
@@ -632,6 +544,7 @@ acf_add_local_field_group( array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						'wrapper' => $wrapper,
 <<<<<<< HEAD
 						'default_value' => '',
@@ -647,6 +560,9 @@ acf_add_local_field_group( array(
 							'id' => '',
 						),
 <<<<<<< HEAD
+=======
+						'wrapper' => $wrapper,
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 =======
 						'wrapper' => $wrapper,
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
@@ -677,11 +593,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'layout' => 'table',
 				'pagination' => 0,
 				'min' => 0,
@@ -705,11 +617,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'return_format' => 'array',
 						'library' => 'all',
 						'min_width' => '',
@@ -864,11 +772,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'return_format' => 'array',
 						'library' => 'all',
 						'allow_in_bindings' => 0,
@@ -886,11 +790,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'layout' => 'block',
 				'sub_fields' => array(
 					array(
@@ -904,6 +804,7 @@ acf_add_local_field_group( array(
 <<<<<<< HEAD
 						'name' => 'cond',
 						'aria-label' => '',
+<<<<<<< HEAD
 =======
 						'name' => 'con',
 <<<<<<< HEAD
@@ -1089,14 +990,13 @@ acf_add_local_field_group( array(
 						'name' => 'copyright',
 						'aria-label' => '',
 						'type' => 'text',
+=======
+						'type' => 'link',
+>>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -1141,11 +1041,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
@@ -1175,11 +1071,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'return_format' => 'array',
 				'library' => 'all',
 				
@@ -1196,11 +1088,7 @@ acf_add_local_field_group( array(
 				'instructions' => '',
 				'required' => 0,
 				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
+				'wrapper' => $wrapper,
 				'layout' => 'table',
 				'pagination' => 0,
 				'min' => 0,
@@ -1218,11 +1106,7 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
+						'wrapper' => $wrapper,
 						'return_format' => 'array',
 						'allow_in_bindings' => 0,
 						'parent_repeater' => 'field_69c54da443370',
