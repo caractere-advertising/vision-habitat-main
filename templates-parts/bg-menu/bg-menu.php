@@ -5,51 +5,51 @@ $burger_socials      = get_field('logo-social-media', 'option');
 $cond_generales      = get_field('cond-generales', 'option');
 $footer_nav          = get_field('menu-burger-footer', 'option');
 $logo_bg_menu        = get_field('logo_bg_menu', 'option');
+
 ?>
+
 <section class="menu-burger">
-
     <div class="menu-burger-left">
-
         <?php if ($burger_image) : ?>
+           
             <img src="<?= esc_url($burger_image['url']) ?>" alt="<?= esc_attr($burger_image['alt']) ?>"/>
+           
         <?php endif; ?>
 
-        <?php if ($logo_bg_menu) : ?>
-            <a href="<?= esc_url(home_url('/')) ?>" class="menu-burger-left_logo">
-                <img src="<?= esc_url($logo_bg_menu['url']) ?>" alt="<?= esc_attr($logo_bg_menu['alt']) ?>"/>
-            </a>
-        <?php endif; ?>
+       <?php if ($logo_bg_menu) : ?>
+    <a href="<?= esc_url(home_url('/')) ?>" class="menu-burger-left-logo">
+        <img src="<?php echo esc_url($logo_bg_menu['url']) ?>" alt="<?php echo esc_attr($logo_bg_menu['alt']) ?>">
+    </a>
+<?php endif; ?>
 
         <div class="menu-burger-left-bottom">
-<?php var_dump($burger_info_contact); ?>
-<?php if ($burger_info_contact) : ?>
-            <?php if ($burger_info_contact) : ?>
-                <?php $info = $burger_info_contact[0]; ?>
+            <?php if ($burger_info_contact) :
+                $info = $burger_info_contact[0]; ?>
+
                 <div class="menu-burger-contact">
-                    <p class="menu-burger-contact-name"><?= esc_html($info['site-name']) ?></p>
-                    <p><?= esc_html($info['street-name']) ?></p>
-                    <p><?= esc_html($info['locality']) ?></p>
-                    <p><strong>Tél. </strong><?= esc_html($info['tel-num']) ?></p>
-                    <p><strong>Mail : </strong><?= esc_html($info['mail']) ?></p>
-                    <p><?= esc_html($info['tva']) ?></p>
+                    <p class="menu-burger-contact-name"><?php echo ($info['site-name']) ?></p>
+                    <p><?php echo($info['street-name']) ?></p>
+                    <p><?php echo($info['locality']) ?></p>
+                    <p><strong>Tél. </strong><?php echo($info['tel-num']) ?></p>
+                    <p><strong>Mail : </strong><?php echo esc_html($info['mail']) ?></p>
+                    <p><?php echo($info['tva']) ?></p>
                 </div>
             <?php endif; ?>
-
+            
             <?php if ($burger_socials) : ?>
                 <div class="menu-burger-socials">
-                    <?php foreach ($burger_socials as $social) : ?>
-                        <a href="<?= esc_url($social['lien']) ?>">
-                            <img src="<?= esc_url($social['image']['url']) ?>" alt="<?= esc_attr($social['image']['alt']) ?>">
+                    <?php foreach ($burger_socials as $social) :?>
+                        <a href="<?php echo($social['lien']) ?>">
+                            <img src="<?php echo($social['logo']['url']) ?>" alt="<?php echo($social['logo']['title']) ?>">
                         </a>
                     <?php endforeach; ?>
                 </div>
+                
             <?php endif; ?>
-
         </div>
     </div>
 
     <div class="menu-burger-right">
-
         <button class="burger-btn burger-btn-close">&#x2715;</button>
 
         <?php wp_nav_menu([
@@ -58,32 +58,24 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
             'container_class' => 'burger-nav',
             'menu_class'     => 'burger-menu_list',
         ]); ?>
-
+        <div class="menu-bottom">
+ <hr class="burger-hr">
         <div class="burger-bottom">
-
             <?php if ($footer_nav) : ?>
                 <ul class="burger-legal-footer">
                     <?php foreach ($footer_nav as $item) : ?>
-                        <li>
-                            <a href="<?= esc_url($item['link']['url']) ?>">
-                                <?= esc_html($item['link']['title']) ?>
-                            </a>
-                        </li>
+                        <li><a href="<?php echo ($item['link']['url']) ?>"><?php echo esc_html($item['link']['title']) ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             <?php endif; ?>
 
-            <hr class="burger-hr">
+           
 
-            
-                <div class="burger-legal-copy">
-                    <p class="burger-legal-links"><?= esc_html($cond_generales['cond']) ?></p>
-                    <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
-                </div>
-                
-            <?php endif; ?>
-
+            <div class="burger-legal-copy">
+                <p class="burger-legal-links"><?php echo esc_html($cond_generales['cond']) ?></p>
+                <p class="burger-legal-copyright"><?php echo esc_html($cond_generales['copyright']) ?></p>
+            </div>      
+        </div>
         </div>
     </div>
-
 </section>

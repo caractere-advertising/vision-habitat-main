@@ -223,6 +223,9 @@
     transform 0.4s ease,
     opacity 0.3s ease,
     visibility 0.4s;
+    height: 100vh;
+    
+
 
   &.is-open {
     opacity: 1;
