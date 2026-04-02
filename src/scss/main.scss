@@ -40,11 +40,16 @@
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
 =======
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 
+=======
+@use "builder/big_title_about.scss" as *;
+@use "builder/section-two-col-about.scss" as *;
+>>>>>>> 927826b (fin2-4)
 body {
   font-family: "Manrope", sans-serif;
 }

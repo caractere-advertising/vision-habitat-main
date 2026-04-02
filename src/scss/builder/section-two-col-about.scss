@@ -1,0 +1,38 @@
+@use "./../variables/colors.scss" as *;
+
+.section-two-col{
+    background-color: #fff;
+    padding: 1OOpx 0;
+}
+
+.container{
+    width: 80vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.two-col-inner .two-col-inner{
+    gap:80px
+}
+
+.col-50{
+    width: 50%;
+}
+
+.two-col-title p{
+    color: $primaryColor;
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+
+.btn-cta{
+    margin-top: 50px ;
+}
+
+.two-col-paragraph{
+    margin-top: 80px;
+}
