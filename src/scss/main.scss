@@ -35,7 +35,8 @@
 @use "builder/section-etapes.scss" as *;
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
-
+@use "builder/big_title_about.scss" as *;
+@use "builder/section-two-col-about.scss" as *;
 body {
   font-family: "Manrope", sans-serif;
 }
