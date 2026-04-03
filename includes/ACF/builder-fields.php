@@ -1550,29 +1550,14 @@ acf_add_local_field_group( array(
  
                 // ─── Header hero ─────────────────────────────────────────────
                 'layout_69b13656aaa3b' => array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69b13656aaa3b',
                     'name'       => 'header_hero',
                     'label'      => 'header_hero',
                     'display'    => 'block',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     'key' => 'layout_69b13656aaa3b',
                     'name' => 'header_hero',
                     'label' => 'header_hero',
                     'display' => 'block',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69b13672aaa3d',
@@ -1821,14 +1806,11 @@ acf_add_local_field_group( array(
                 ),
  
                 // ─── Section approche globale ────────────────────────────────
->>>>>>> 28f81d8 (fin 3-04)
-=======
                 'layout_gr1ll3sr3f3r3' => array(
                     'key' => 'layout_gr1ll3sr3f3r3',
                     'name' => 'section-grille-references',
                     'label' => 'Grilles références',
                     'display' => 'block',
-=======
                 ),
  
                 // ─── Section approche globale ────────────────────────────────
@@ -1837,11 +1819,9 @@ acf_add_local_field_group( array(
                     'name'       => 'section-approche-globale',
                     'label'      => 'Section approche globale',
                     'display'    => 'block',
->>>>>>> 28f81d8 (fin 3-04)
                     'sub_fields' => array(
                     ),
                 ),
->>>>>>> 6ead0fd (Features :)
                 'layout_69c6739eade09' => array(
                     'key'        => 'layout_69c6739eade09',
                     'name'       => 'section-approche-globale',
@@ -2795,6 +2775,9 @@ acf_add_local_field_group( array(
                     'sub_fields' => array(),
                 ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
                 'layout_s3ct10nsurm3sur3' => array(
                     'key' => 'layout_s3ct10nsurm3sur3',
                     'name' => 'section-part-sur-mesure',
@@ -2830,6 +2813,9 @@ acf_add_local_field_group( array(
                                 ),
                             ),
                         )
+<<<<<<< HEAD
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
+=======
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
                     )
 

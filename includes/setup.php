@@ -28,26 +28,13 @@ function getPosts($type){
     $args = array(
         'post_type' => $type,
         'posts_per_page' => is_front_page(  ) ? 3 : -1,
-<<<<<<< HEAD
-<<<<<<< HEAD
         'post_status' => 'publish',
         'order' => 'ASC',
-=======
-        'post_status' => 'publish'
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-=======
-        'post_status' => 'publish',
-        'order' => 'ASC',
->>>>>>> 6ead0fd (Features :)
     );
 
     $query = new WP_Query($args);
 
     return $query;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6ead0fd (Features :)
 }
 
 /* Récupérer les catégories du CPT "réference"                   */
@@ -70,9 +57,4 @@ function getCategoriesReferences($postId, $type){
     }  
    
     return $allCats;
-<<<<<<< HEAD
-=======
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-=======
->>>>>>> 6ead0fd (Features :)
 }
