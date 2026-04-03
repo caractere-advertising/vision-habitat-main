@@ -1604,13 +1604,12 @@ __webpack_require__.r(__webpack_exports__);
 const numberCurrent = document.querySelector(".number-current");
 
 const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-fullwidth", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
-
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-
+  autoplay: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,

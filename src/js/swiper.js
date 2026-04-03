@@ -8,13 +8,12 @@ import "swiper/css/scrollbar";
 const numberCurrent = document.querySelector(".number-current");
 
 const swiperFullwidth = new Swiper(".swiper-fullwidth", {
-  modules: [Pagination, Scrollbar],
-
+  modules: [Pagination, Scrollbar, Autoplay],
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-
+  autoplay: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
