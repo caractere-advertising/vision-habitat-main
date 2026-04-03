@@ -14,12 +14,19 @@ import "swiper/css/scrollbar";
 const numberCurrent = document.querySelector(".number-current");
 
 const swiperFullwidth = new Swiper(".swiper-fullwidth", {
+<<<<<<< HEAD
   modules: [Pagination, Scrollbar, Autoplay, Parallax],
+=======
+  modules: [Pagination, Scrollbar, Autoplay],
+>>>>>>> 6269e0f (Correction header + slider fullwidth (optimisatoin css)  + ajotu animation carte solutions)
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+<<<<<<< HEAD
   parallax: true,
+=======
+>>>>>>> 6269e0f (Correction header + slider fullwidth (optimisatoin css)  + ajotu animation carte solutions)
   autoplay: true,
   scrollbar: {
     el: ".swiper-scrollbar",

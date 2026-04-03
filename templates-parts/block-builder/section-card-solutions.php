@@ -14,7 +14,11 @@ $cards = get_sub_field('card');
                 $category = $c['card_category'];
                 $link     = $c['card_link'];
             ?>
+<<<<<<< HEAD
                 <div class="card from-bottom">
+=======
+                <div class="card">
+>>>>>>> 6269e0f (Correction header + slider fullwidth (optimisatoin css)  + ajotu animation carte solutions)
                     <div class="card-image">
                         <?php if ($image) : ?>
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
