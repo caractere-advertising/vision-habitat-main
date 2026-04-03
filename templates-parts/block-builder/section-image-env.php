@@ -17,15 +17,15 @@ $projets   = get_sub_field('projets');
 
         <div class="projects-left">
             <?php if ($title): ?>
-                <div class="projects-title"><?= $title; ?></div>
+                <div class="projects-title from-left"><?= $title; ?></div>
             <?php endif; ?>
 
             <?php if ($paragraph): ?>
-                <div class="projects-paragraph"><?= $paragraph; ?></div>
+                <div class="projects-paragraph from-left"><?= $paragraph; ?></div>
             <?php endif; ?>
 
             <?php if ($link) : ?>
-                <a href="<?= $link['url']; ?>" class="btn-cta">
+                <a href="<?= $link['url']; ?>" class="btn-cta from-left">
                     <?= $link['title']; ?>
                 </a>
             <?php endif; ?>
@@ -43,8 +43,8 @@ $projets   = get_sub_field('projets');
                         <div class="swiper-slide">
                             <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
                             <div class="slide-info">
-                                <span class="slide-location"><?= $location; ?></span>
-                                <span class="slide-price"><?= $price; ?></span>
+                                <span class="slide-location from-bottom"><?= $location; ?></span>
+                                <span class="slide-price from-bottom"><?= $price; ?></span>
                             </div>
                         </div>
                     <?php endforeach;?>

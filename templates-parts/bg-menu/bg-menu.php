@@ -42,21 +42,21 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 <div class="menu-burger-contact">
                     <p class="menu-burger-contact-name"><?=  ($info['site-name']) ?></p>
 
-                    <div class="contact-adresse">
-                        <p><?= ($info['street-name']) ?></p>
-                        <p><?= ($info['locality']) ?></p>
+                    <div class="contact-adresse from-left">
+                        <p class="from-left"><?= ($info['street-name']) ?></p>
+                        <p class="from-left"><?= ($info['locality']) ?></p>
                     </div>
                     
                     <div class="contact-tel-mail">
-                        <p><strong>Tél. </strong><a href="tel:<?= $linkTel;?>"><?= $tel; ?></a></p>
-                        <p><strong>Mail : </strong><a href="mailto:<?=  esc_html($info['mail']) ?>"><?=  esc_html($info['mail']) ?></a></p>
-                        <p><strong>TVA </strong><?= ($info['tva']) ?></p>
+                        <p class="from-left"><strong>Tél. </strong><a href="tel:<?= $linkTel;?>"><?= $tel; ?></a></p>
+                        <p class="from-left"><strong>Mail : </strong><a href="mailto:<?=  esc_html($info['mail']) ?>"><?=  esc_html($info['mail']) ?></a></p>
+                        <p class="from-left"><strong>TVA </strong><?= ($info['tva']) ?></p>
                     </div>
                 </div>
             <?php endif; ?>
             
             <?php if ($burger_socials) : ?>
-                <div class="menu-burger-socials">
+                <div class="menu-burger-socials from-left">
                     <?php foreach ($burger_socials as $social) :?>
                         <a href="<?= ($social['lien']) ?>">
                             <img src="<?= ($social['logo']['url']) ?>" alt="<?= ($social['logo']['title']) ?>">
@@ -81,7 +81,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php wp_nav_menu([
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
-            'container_class' => 'burger-nav',
+            'container_class' => 'burger-nav from-right',
             'menu_class'     => 'burger-menu_list',
         ]);?>
 

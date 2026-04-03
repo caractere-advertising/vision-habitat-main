@@ -30,7 +30,11 @@ $borderLeft ? $class = "card -left" : $class="card";
                 $label = $c['label'];
                 $lien  = $c['lien'];?>
 
+<<<<<<< HEAD
                 <div class="<?= $class;?>" <? echo $i == 0 ? $rowStart : '';?>>
+=======
+                <div class="card from-bottom" <? echo $i == 0 ? $rowStart : '';?>>
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
                     <div class="content-card">
                         <div class="block-img">
                             <img src="<?= $icon['url'];?>" alt="<?= $icon['title'];?>"/>

@@ -18,10 +18,17 @@
                    </div>
 
                    <div class="cold col-50">
+<<<<<<< HEAD
                         <div class="content">
                             <div class="titre h2"><?= $titre;?></div>
                             <div class="texte"><?= $texte;?>
                             <?php if($cta):?></div>
+=======
+                        <div class="content from-right">
+                            <?= $titre;?>
+                            <?= $texte;?>
+                            <?php if($cta):?>
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
                                 <a href="<?= $cta['url'];?>" class="btn-cta"><?= $cta['title'];?></a>
                             <?php endif;?>
                         </div>

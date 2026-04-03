@@ -9,20 +9,20 @@ $paragraph = get_sub_field('paragraph');
 
 ?>
 
-<section class="section-text-evidence" id="ancre-1">
+<section class="section-text-evidence">
     <div class="section-inner container">
         <?php if ($categorie) : ?>
-            <div class="section-label"><span><?= $categorie; ?></span></div>
+            <div class="section-label from-bottom"><span><?= $categorie; ?></span></div>
         <?php endif; ?>
 
-        <div class="section-content"><?= $details; ?></div>
+        <div class="section-content from-left"><?= $details; ?></div>
 
         <?php if ($paragraph) : ?>
-            <div class="section-paragraph"><?= $paragraph; ?></div>
+            <div class="section-paragraph from-left"><?= $paragraph; ?></div>
         <?php endif;
         
         if ($link) : ?>
-            <a href="<?= $link['url']; ?>" class="btn-cta">
+            <a href="<?= $link['url']; ?>" class="btn-cta from-bottom">
                 <?= $link['title']; ?>
             </a>
         <?php endif; ?>
