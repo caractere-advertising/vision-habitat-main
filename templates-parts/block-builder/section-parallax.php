@@ -5,6 +5,6 @@
     !empty($height) ? $style = 'style="height:'.$height.'vh;"' : $style = 'style="height:80vh;"';
 ?>
 
-<section class="section-image-parallax" <?= $style;?>>
+<section class="section-image-parallax from-bottom" <?= $style;?>>
     <img src="<?= $img['url'];?>" alt="<?= $img['title'];?>"/>
 </section>  

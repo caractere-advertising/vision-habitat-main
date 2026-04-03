@@ -9,3 +9,5 @@ import "./js/img-hover.js";
 import "./js/parallax.js";
 
 import "./js/filter.js";
+
+import "./js/animate.js";

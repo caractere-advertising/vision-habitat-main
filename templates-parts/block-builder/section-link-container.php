@@ -11,7 +11,7 @@ $count = 1;
             $image = get_sub_field('image');
             
             if($lien){ ?>
-                <a href="<?= $lien['url']; ?>" class="links-item"
+                <a href="<?= $lien['url']; ?>" class="links-item from-bottom"
                  data-image="<?= $image ? $image['url'] : ''; ?>">
                    
                     <span class="links-numero"><?= str_pad($count++, 2, '0', STR_PAD_LEFT); ?></span>

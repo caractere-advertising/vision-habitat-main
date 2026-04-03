@@ -11,21 +11,21 @@ $video     = get_sub_field("video");
     <div class="video-top container">
         <div class="video-top-left">
             <?php if ($text_ev) { ?>
-            <div class="video-text"><?= $text_ev; ?></div>
+            <div class="video-text from-top"><?= $text_ev; ?></div>
             <hr class="video-line">
             <?php } ?>
         </div>
 
         <div class="video-top-right">
             <?php if ($paragraph) { ?>
-            <p class="video-paragraph"><?= $paragraph; ?></p>
+            <p class="video-paragraph from-top"><?= $paragraph; ?></p>
             <?php } ?>
         </div>
 
     </div>
 
     <?php if ($video) { ?>
-    <div class="video-wrapper container">
+    <div class="video-wrapper container from-bottom">
         <?= wp_oembed_get($video); ?>
     </div>
     <?php } ?>

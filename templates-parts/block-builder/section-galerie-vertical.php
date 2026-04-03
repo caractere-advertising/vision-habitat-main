@@ -18,7 +18,7 @@
                    </div>
 
                    <div class="cold col-50">
-                        <div class="content">
+                        <div class="content from-right">
                             <?= $titre;?>
                             <?= $texte;?>
                             <?php if($cta):?>

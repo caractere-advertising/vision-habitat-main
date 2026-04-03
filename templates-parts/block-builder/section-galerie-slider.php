@@ -7,7 +7,7 @@
 $slides = get_sub_field('slides');
 ?>
 
-<section class="section-gallery">
+<section class="section-gallery from-bottom">
     <div class="swiper swiper-gallery">
         <div class="swiper-wrapper">
             <?php foreach ($slides as $s) :

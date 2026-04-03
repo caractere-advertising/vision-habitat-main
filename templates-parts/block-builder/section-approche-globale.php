@@ -27,7 +27,7 @@ $ctaSection = get_sub_field('cta-section');
                 $label = $c['label'];
                 $lien  = $c['lien'];?>
 
-                <div class="card" <? echo $i == 0 ? $rowStart : '';?>>
+                <div class="card from-bottom" <? echo $i == 0 ? $rowStart : '';?>>
                     <div class="content-card">
                         <div class="block-img">
                             <img src="<?= $icon['url'];?>" alt="<?= $icon['title'];?>"/>

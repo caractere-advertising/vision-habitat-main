@@ -14,7 +14,7 @@ $cards = get_sub_field('card');
                 $category = $c['card_category'];
                 $link     = $c['card_link'];
             ?>
-                <div class="card">
+                <div class="card from-bottom">
                     <div class="card-image">
                         <?php if ($image) : ?>
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">

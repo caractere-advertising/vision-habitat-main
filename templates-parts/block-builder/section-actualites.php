@@ -15,7 +15,7 @@ $taxonomies   = get_categories();
 <section class="section-actu container">
 
     <?php if($title): ?>
-        <div class="actu-title"><?= $title; ?></div>
+        <div class="actu-title from-bottom"><?= $title; ?></div>
     <?php endif; ?>
 
     <?php if(!is_front_page()): ?>
@@ -46,7 +46,7 @@ $taxonomies   = get_categories();
                 }
                 ?>
 
-                <article class="actu-card<?= $class; ?>">
+                <article class="actu-card<?= $class; ?> from-bottom">
                     <div class="actu-card-img">
                         <?php if ($image) : ?>
                             <img src="<?= esc_url($image); ?>" alt="<?= esc_attr($paragraph); ?>">

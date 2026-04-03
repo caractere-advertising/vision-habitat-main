@@ -1338,6 +1338,62 @@ module.exports = styleTagTransform;
 
 /***/ },
 
+/***/ "./src/js/animate.js"
+/*!***************************!*\
+  !*** ./src/js/animate.js ***!
+  \***************************/
+() {
+
+document.addEventListener("DOMContentLoaded", () => {
+  const selectors = [
+    { selector: ".from-left", class: "fade-in-left" },
+    { selector: ".from-right", class: "fade-in-right" },
+    { selector: ".from-top", class: "fade-in-top" },
+    { selector: ".from-bottom", class: "fade-in-bottom" },
+  ];
+
+  // Ajout de la classe invisible sur tous les éléments concernés
+  selectors.forEach(({ selector }) => {
+    document.querySelectorAll(selector).forEach((el) => {
+      el.classList.add("invisible");
+    });
+  });
+
+  // Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+
+        if (entry.isIntersecting) {
+          // Trouver la bonne animation
+          selectors.forEach(({ selector, class: animClass }) => {
+            if (el.matches(selector)) {
+              el.classList.remove("invisible");
+              el.classList.add(animClass);
+            }
+          });
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: "-200px", // équivalent de inView.offset(150)
+      threshold: 0,
+    },
+  );
+
+  // Observer tous les éléments
+  selectors.forEach(({ selector }) => {
+    document.querySelectorAll(selector).forEach((el) => {
+      observer.observe(el);
+    });
+  });
+});
+
+
+/***/ },
+
 /***/ "./src/js/filter.js"
 /*!**************************!*\
   !*** ./src/js/filter.js ***!
@@ -12602,6 +12658,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
 /* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/filter.js */ "./src/js/filter.js");
 /* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_filter_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _js_animate_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/animate.js */ "./src/js/animate.js");
+/* harmony import */ var _js_animate_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_animate_js__WEBPACK_IMPORTED_MODULE_8__);
+
+
 
 
 

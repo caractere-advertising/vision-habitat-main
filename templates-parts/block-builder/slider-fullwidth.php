@@ -20,10 +20,10 @@
                         <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
                     </div>
                     <div class="content">
-                        <div class="content-titre">
+                        <div class="content-titre from-right">
                             <?= $s['titre']; ?>
                         </div>
-                        <a href="<?= $s['cta']['url']; ?>" class="btn-cta">
+                        <a href="<?= $s['cta']['url']; ?>" class="btn-cta from-right">
                             <?= $s['cta']['title']; ?>
                         </a>
                     </div>

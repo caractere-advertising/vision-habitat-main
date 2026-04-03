@@ -24,8 +24,8 @@ $texte  = get_sub_field('texte');
         </div>
 
         <div class="cold col-50">
-            <span class="block-title"><?= $titre ?: '';?></span>
-            <span class="block-texte"><?= $texte ?: '';?></span>
+            <span class="block-title from-right"><?= $titre ?: '';?></span>
+            <span class="block-texte from-right"><?= $texte ?: '';?></span>
         </div>
     </div>
 </section>
