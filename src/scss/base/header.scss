@@ -3,10 +3,12 @@
 .site-header {
   width: 100%;
   z-index: 100;
-  padding: 30px 40px;
+  padding: 30px 0;
   position: relative;
 
   .header-inner {
+    width: 95vw;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +16,7 @@
 
     .header-logo {
       flex-shrink: 0;
-      width: 300px;
+      width: 250px;
       display: block;
 
       img {
@@ -39,9 +41,24 @@
 
         > li {
           position: relative;
+          color: $white;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 0px;
+            margin-top: 10px;
+            border-bottom: 2px solid;
+            transition: all ease-in 300ms;
+          }
+
+          &.current-menu-item {
+            &::after {
+              width: 50px;
+            }
+          }
 
           > a {
-            color: $primaryColor;
             text-decoration: none;
             font-size: 0.8rem;
             letter-spacing: 1px;
@@ -139,44 +156,11 @@
       background-color: rgba(255, 255, 255, 0.4);
     }
 
-    .burger-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 4px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-
-      span {
-        display: block;
-        width: 28px;
-        height: 1.5px;
-        background-color: $primaryColor;
-        transition:
-          transform 0.3s ease,
-          opacity 0.3s ease;
-
-        &:last-child {
-          width: 18px;
-        }
-      }
-
-      &.is-active {
-        span {
-          background-color: $white;
-        }
-
-        span:nth-child(1) {
-          transform: translateY(7.5px) rotate(45deg);
-        }
-        span:nth-child(2) {
-          opacity: 0;
-        }
-        span:nth-child(3) {
-          transform: translateY(-7.5px) rotate(-45deg);
-          width: 28px;
-        }
+    .hamburger {
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after {
+        background-color: $white !important;
       }
     }
   }
@@ -185,23 +169,50 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  &.-negatif-header {
+    position: relative;
 
     .header-inner {
       .header-nav {
         .navbar {
           > li {
-            > a {
-              color: $white;
-            }
+            color: $primaryColor;
           }
         }
       }
     }
 
     .header-actions {
-      .burger-btn {
-        span {
-          background-color: $white;
+      .header-separator {
+        background-color: $primaryColor;
+      }
+
+      .hamburger {
+        .hamburger-box {
+          .hamburger-inner,
+          .hamburger-inner::before,
+          .hamburger-inner::after {
+            background-color: $primaryColor !important;
+          }
+        }
+      }
+    }
+  }
+
+  .header-actions {
+    .hamburger {
+      &.is-active {
+        .hamburger-box {
+          .hamburger-inner::before,
+          .hamburger-inner::after {
+            background-color: $white !important;
+          }
+
+          .hamburger-inner {
+            background-color: transparent !important;
+          }
         }
       }
     }
