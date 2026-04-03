@@ -29,16 +29,24 @@ $pt_image  = get_sub_field('pt_image');
 =======
             <div class="img-wrapper">
                 <?php if ($gd_image) : ?>
+<<<<<<< HEAD
                     <img src="<?php echo $gd_image['url']; ?>" alt="<?php echo $gd_image['alt']; ?>" class="img-large">
                 <?php endif; ?>
                 <?php if ($pt_image) : ?>
                     <img src="<?php echo $pt_image['url']; ?>" alt="<?php echo $pt_image['alt']; ?>" class="img-small">
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
+=======
+                    <img src="<?= $gd_image['url']; ?>" alt="<?= $gd_image['alt']; ?>" class="img-large">
+                <?php endif;
+                if($pt_image): ?>
+                    <img src="<?= $pt_image['url']; ?>" alt="<?= $pt_image['alt']; ?>" class="img-small">
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
                 <?php endif; ?>
             </div>
         </div>
 
         <div class="text-col">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <?php if($categorie): ?>
                 <div class="section-label from-right"><span><?= $categorie; ?></span></div>
@@ -80,12 +88,28 @@ $pt_image  = get_sub_field('pt_image');
             <?php endif; ?>
 
             <?php if ($liste) : ?>
+=======
+            <?php if($categorie): ?>
+                <div class="section-label"><span><?= $categorie; ?></span></div>
+            <?php endif;
+            if($details): ?>
+                <div class="text-col-title"><?= $details; ?></div>
+            <?php endif;
+            if($paragraph): ?>
+                <div class="text-col-paragraph"><?= $paragraph; ?></div>
+            <?php endif;
+            if($liste): ?>
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
                 <ul class="text-col-list">
                     <?php foreach ($liste as $item) : ?>
-                        <li><?php echo $item['item']; ?></li>
+                        <li><?= $item['item']; ?></li>
                     <?php endforeach; ?>
                 </ul>
+            <?php endif;
+            if ($link) : ?>
+                <a href="<?= $link['url']; ?>" class="btn-cta"><?= $link['title']; ?></a>
             <?php endif; ?>
+<<<<<<< HEAD
 
             <?php if ($link) : ?>
                 <a href="<?php echo $link['url']; ?>" class="btn-cta">
@@ -94,6 +118,8 @@ $pt_image  = get_sub_field('pt_image');
             <?php endif; ?>
 
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
+=======
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
         </div>
     </div>
 </section>

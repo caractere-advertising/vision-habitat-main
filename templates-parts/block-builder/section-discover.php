@@ -34,14 +34,14 @@ $link      = get_sub_field("link");
 
     <div class="discover-right big_title">
         <?php if ($title) { ?>
-            <div class="discover-title"><?php echo $title; ?></div>
+            <div class="discover-title"><?= $title; ?></div>
         <?php } ?>
         <?php if ($paragraph) { ?>
-            <div class="discover-paragraph"><?php echo $paragraph; ?></div>
+            <div class="discover-paragraph"><?= $paragraph; ?></div>
         <?php } ?>
         <?php if ($link) { ?>
-            <a href="<?php echo $link['url']; ?>" class="discover-btn">
-                <?php echo $link['title']; ?> <span>›</span>
+            <a href="<?= $link['url']; ?>" class="discover-btn">
+                <?= $link['title']; ?> <span>›</span>
             </a>
         <?php } ?>
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)

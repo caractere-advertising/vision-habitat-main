@@ -1,9 +1,17 @@
 @use "./../variables/colors.scss" as *;
+<<<<<<< HEAD
 @use "./../base/animations.scss" as *;
 
 .section-card-solutions {
   background-color: $white;
   padding: 100px 0;
+=======
+
+.section-card-solutions {
+  background-color: $white;
+  padding: 80px;
+  margin-top: 100px;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 
   .cards-grid {
     display: grid;
@@ -18,6 +26,7 @@
     flex-direction: column;
     cursor: pointer;
     max-height: 600px;
+<<<<<<< HEAD
 
     .card-image {
       position: relative;
@@ -98,6 +107,71 @@
         }
       }
     }
+=======
+  }
+
+  .card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    max-height: 500px;
+    background-color: $lightGray;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-plus {
+      position: absolute;
+      bottom: -1px;
+      right: -1px;
+      width: 80px;
+      height: 80px;
+      background-color: $white;
+      color: $primaryColor;
+      font-size: 2rem;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+
+      &:hover {
+        background-color: $primaryColor;
+        color: $white;
+      }
+    }
+  }
+
+  .card-body {
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-category {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $secondaryColor;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $primaryColor;
+    margin: 0;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
   }
 }
 

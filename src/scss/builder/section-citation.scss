@@ -1,15 +1,28 @@
 @use "./../variables/colors.scss" as *;
+<<<<<<< HEAD
 @use "./../variables/cta.scss" as *;
+=======
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 
 .section-citation {
   display: flex;
   flex-direction: column;
   min-height: 400px;
+<<<<<<< HEAD
 }
 
 .citation-block {
   background-color: $white;
   padding: 100px 0;
+=======
+  margin: 50px auto;
+}
+
+.citation-block {
+  width: 90%;
+  background-color: $white;
+  padding: 40px;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
   display: flex;
   align-items: center;
 
@@ -18,6 +31,7 @@
   }
 
   .citation-name {
+<<<<<<< HEAD
     font-size: 1.2rem;
     color: $lightGray;
     letter-spacing: 3px;
@@ -35,12 +49,18 @@
       color: $primaryColor;
       font-weight: 700;
     }
+=======
+    font-size: 1.5rem;
+    color: $lightGray;
+    position: absolute;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
   }
 
   .citation-text {
     font-size: 4rem;
     line-height: 1;
     color: $txtColor;
+<<<<<<< HEAD
 <<<<<<< HEAD:src/scss/builder/section-citation.scss
 <<<<<<< HEAD:src/scss/builder/section-citation.scss
 <<<<<<< HEAD:src/scss/builder/section-citation.scss
@@ -84,16 +104,28 @@
 =======
     text-indent: 150px;
 >>>>>>> 50d5368 (fin 30-3):src/scss/builder/section8.scss
+=======
+    text-indent: 150px;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
   }
 }
 
 .citation-blue {
+<<<<<<< HEAD
   width: 100%;
   height: 500px;
   background-color: $primaryColor;
   display: flex;
   //justify-items: center;
   justify-content: center;
+=======
+  width: calc(100% - 60px);
+  height: 500px;
+  background-color: $primaryColor;
+  margin: 0 30px 0 30px;
+  display: flex;
+  justify-items: center;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -107,11 +139,18 @@
     background-color: $white;
     clip-path: polygon(0 55%, 0 0, 55% 0);
   }
+<<<<<<< HEAD
 
   .citation-blue-inner {
     display: flex;
     flex-direction: column;
     gap: 50px;
+=======
+  .citation-blue-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
   }
 
   .citation-blue-title {
@@ -119,6 +158,10 @@
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.3;
+<<<<<<< HEAD
+=======
+    width: 60%;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
   }
 
   .btn-cta {

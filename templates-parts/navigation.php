@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 $logo = get_field('logo', 'options');
 $class  = is_front_page() ? 'site-header -frontpage' : 'site-header';
 
@@ -13,6 +14,10 @@ if($pageBlue):
         endif;
     endforeach;
 endif;
+=======
+$logo = is_front_page() ? get_field('logo', 'options') : get_field('logo-negatif', 'options');
+$class = is_front_page() ? 'site-header -frontpage' : 'site-header';
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 
 ?>
 

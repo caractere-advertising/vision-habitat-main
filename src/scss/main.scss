@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 @use "variables/colors.scss" as *;
 @use "variables/fonts.scss" as *;
 =======
@@ -21,6 +24,7 @@
 @use "base/footer.scss" as *;
 @use "base/single-reference.scss" as *;
 @use "base/animations.scss" as *;
+<<<<<<< HEAD
 
 @use "builder/header-service.scss" as *;
 @use "builder/section-actualites.scss" as *;
@@ -32,18 +36,27 @@
 @use "builder/section-etapes.scss" as *;
 @use "builder/section-formulaire.scss" as *;
 <<<<<<< HEAD
+=======
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 
 @use "builder/header-service.scss" as *;
+@use "builder/section-actualites.scss" as *;
 @use "builder/section-app-glob.scss" as *;
+<<<<<<< HEAD
 @use "builder/section-txt-g-img-d.scss" as *;
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 @use "builder/section-slider-vertical.scss" as *;
+=======
+@use "builder/section-card-solutions.scss" as *;
+@use "builder/section-citation.scss" as *;
+@use "builder/section-discover.scss" as *;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 @use "builder/section-etapes.scss" as *;
-@use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -59,15 +72,29 @@
 @use "builder/section-link-container.scss" as *;
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-partenaire-sur-mesure" as *;
+=======
+@use "builder/section-galerie-slider.scss" as *;
+@use "builder/section-link-container.scss" as *;
+@use "builder/section-parallax.scss" as *;
+@use "builder/section-partenaire-sur-mesure" as *;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 @use "builder/section-slider-vertical.scss" as *;
 @use "builder/section-text-evidence.scss" as *;
 @use "builder/section-two-col.scss" as *;
 @use "builder/section-txt-g-img-d.scss" as *;
+<<<<<<< HEAD
 @use "builder/section-txt-g-img-d-full.scss" as *;
+=======
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 @use "builder/section-video.scss" as *;
 @use "builder/section6.scss" as *;
 @use "builder/section7.scss" as *;
 @use "builder/swiper.scss" as *;
+<<<<<<< HEAD
+=======
+
+@use "burger-menu/burger-menu.scss" as *;
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 
 <<<<<<< HEAD
 @use "burger-menu/burger-menu.scss" as *;

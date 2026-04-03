@@ -18,11 +18,19 @@ $paragraph = get_sub_field('paragraph');
         <div class="section-content from-left"><?= $details; ?></div>
 
         <?php if ($paragraph) : ?>
+<<<<<<< HEAD
             <div class="section-paragraph from-left"><?= $paragraph; ?></div>
         <?php endif;
         
         if ($link) : ?>
             <a href="<?= $link['url']; ?>" class="btn-cta from-bottom">
+=======
+            <div class="section-paragraph"><?= $paragraph; ?></div>
+        <?php endif;
+        
+        if ($link) : ?>
+            <a href="<?= $link['url']; ?>" class="btn-cta">
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
                 <?= $link['title']; ?>
             </a>
         <?php endif; ?>

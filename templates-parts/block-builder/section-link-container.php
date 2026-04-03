@@ -6,12 +6,16 @@ $count = 1;
 ?>
 <section class="section-links container">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
     <?php if (have_rows('link_container')) :
         while (have_rows('link_container')) : the_row();
             $lien = get_sub_field('lien');
             $image = get_sub_field('image');
             
             if($lien){ ?>
+<<<<<<< HEAD
                 <a href="<?= $lien['url']; ?>" class="links-item from-bottom"
                  data-image="<?= $image ? $image['url'] : ''; ?>">
                    
@@ -29,13 +33,23 @@ $count = 1;
             <?php if ($lien) { ?>
                 <a href="<?php echo $lien['url']; ?>" class="links-item"
                  data-image="<?php echo $image ? $image['url'] : ''; ?>">
+=======
+                <a href="<?= $lien['url']; ?>" class="links-item"
+                 data-image="<?= $image ? $image['url'] : ''; ?>">
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
                    
-                    <span class="links-numero"><?php echo str_pad($count++, 2, '0', STR_PAD_LEFT); ?></span>
-                    <span class="links-label"><?php echo $lien['title']; ?></span>
+                    <span class="links-numero"><?= str_pad($count++, 2, '0', STR_PAD_LEFT); ?></span>
+                    <span class="links-label"><?= $lien['title']; ?></span>
                 </a>
+<<<<<<< HEAD
             <?php } ?>
         <?php endwhile; ?>
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
+=======
+            <?php }
+        endwhile; ?>
+        
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
         <div class="links-hover-img">
             <img src="" alt="" id="hover-img">
         </div>
