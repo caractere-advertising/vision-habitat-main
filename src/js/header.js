@@ -16,10 +16,10 @@ if (burgerBtn && mobileMenu) {
   });
 }
 
-if (burgerBtnClose && mobileMenu) {
-  burgerBtn.addEventListener("click", () => {
-    burgerBtn.classList.remove("is-active");
-    mobileMenu.classList.remove("is-open");
-    document.body.style.overflow = "";
-  });
-}
+// if (burgerBtnClose && mobileMenu) {
+//   burgerBtn.addEventListener("click", () => {
+//     burgerBtn.classList.remove("is-active");
+//     mobileMenu.classList.remove("is-open");
+//     document.body.style.overflow = "";
+//   });
+// }

@@ -1,9 +1,9 @@
 @use "./../variables/colors.scss" as *;
+@use "./../base/animations.scss" as *;
 
 .section-actu {
   background-color: $white;
   padding: 80px 0;
-  margin-top: 100px;
 
   .actu-title {
     color: $primaryColor;
@@ -17,15 +17,48 @@
     }
   }
 
+  /* Ajout filtre */
+
+  .section-filter {
+    display: flex;
+    gap: 10px;
+
+    button {
+      text-transform: uppercase;
+      color: $lightGray;
+      transition: all ease-in 300ms;
+
+      & + button {
+        &::before {
+          content: "-";
+          margin-right: 10px;
+        }
+      }
+
+      &.active {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  /***************/
+
   .actu-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-bottom: 50px;
+    margin: 100px auto 50px;
     align-items: start;
   }
 
   .actu-card {
+    transform: scale(1);
+    opacity: 1;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    transform-origin: center;
+
     .actu-card-img {
       position: relative;
       background-color: $lightGray;
@@ -39,6 +72,9 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        transform: scale(1);
+        filter: brightness(1);
+        transition: all ease-in 200ms;
       }
 
       .actu-card-plus {
@@ -76,6 +112,36 @@
 
     &:first-child {
       grid-column: span 2;
+    }
+
+    &:hover {
+      .actu-card-img {
+        img {
+          transform: scale(1.05);
+          filter: brightness(0.6);
+        }
+      }
+
+      .actu-card-plus {
+        background-color: $primaryColor;
+        color: $white;
+
+        .btn-plus-icon {
+          @include rotate-180;
+        }
+      }
+    }
+
+    /*** Animation ***/
+
+    &.is-hidden {
+      transform: scale(0.8);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &.is-gone {
+      display: none;
     }
   }
 

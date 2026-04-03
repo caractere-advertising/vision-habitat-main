@@ -1338,56 +1338,47 @@ module.exports = styleTagTransform;
 
 /***/ },
 
-/***/ "./src/js/accordeon.js"
-/*!*****************************!*\
-  !*** ./src/js/accordeon.js ***!
-  \*****************************/
+/***/ "./src/js/filter.js"
+/*!**************************!*\
+  !*** ./src/js/filter.js ***!
+  \**************************/
 () {
 
 document.addEventListener("DOMContentLoaded", function () {
-  function initAccordions() {
-    const accordions = document.getElementsByClassName("accordion");
+  const filterButtons = document.querySelectorAll(".btn-filter");
+  const articles = document.querySelectorAll(".actu-card");
 
-    for (let i = 0; i < accordions.length; i++) {
-      accordions[i].onclick = function () {
-        const panel = this.nextElementSibling;
-        const isOpen = this.classList.contains("active");
+  if (!filterButtons.length || !articles.length) return;
 
-        // Ferme tous les autres
-        for (let j = 0; j < accordions.length; j++) {
-          const otherAccordion = accordions[j];
-          const otherPanel = otherAccordion.nextElementSibling;
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filterValue = this.dataset.filter;
 
-          otherAccordion.classList.remove("active");
-          otherPanel.style.maxHeight = null;
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      articles.forEach((article) => {
+        const shouldShow =
+          filterValue === "all" ||
+          article.classList.contains(`item-${filterValue}`);
+
+        if (shouldShow) {
+          article.classList.remove("is-gone");
+
+          // petit délai pour relancer l'animation
+          requestAnimationFrame(() => {
+            article.classList.remove("is-hidden");
+          });
+        } else {
+          article.classList.add("is-hidden");
+
+          setTimeout(() => {
+            article.classList.add("is-gone");
+          }, 200); // durée = transition CSS
         }
-
-        // Si celui-ci n'était pas déjà ouvert, ouvre-le
-        if (!isOpen) {
-          this.classList.add("active");
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-
-        panel.addEventListener(
-          "transitionend",
-          () => {
-            if (typeof ScrollTrigger !== "undefined") {
-              ScrollTrigger.refresh();
-            }
-          },
-          { once: true },
-        );
-
-        if (getComputedStyle(panel).transitionDuration === "0s") {
-          if (typeof ScrollTrigger !== "undefined") {
-            ScrollTrigger.refresh();
-          }
-        }
-      };
-    }
-  }
-
-  initAccordions();
+      });
+    });
+  });
 });
 
 
@@ -1417,13 +1408,13 @@ if (burgerBtn && mobileMenu) {
   });
 }
 
-if (burgerBtnClose && mobileMenu) {
-  burgerBtn.addEventListener("click", () => {
-    burgerBtn.classList.remove("is-active");
-    mobileMenu.classList.remove("is-open");
-    document.body.style.overflow = "";
-  });
-}
+// if (burgerBtnClose && mobileMenu) {
+//   burgerBtn.addEventListener("click", () => {
+//     burgerBtn.classList.remove("is-active");
+//     mobileMenu.classList.remove("is-open");
+//     document.body.style.overflow = "";
+//   });
+// }
 
 
 /***/ },
@@ -12610,8 +12601,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
-/* harmony import */ var _js_accordeon_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/accordeon.js */ "./src/js/accordeon.js");
-/* harmony import */ var _js_accordeon_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_accordeon_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/filter.js */ "./src/js/filter.js");
+/* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_filter_js__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
