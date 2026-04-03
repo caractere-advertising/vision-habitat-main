@@ -11,7 +11,6 @@ $paragraph = get_sub_field('paragraph');
 
 <section class="section-text-evidence" id="ancre-1">
     <div class="section-inner container">
-
         <?php if ($categorie) : ?>
             <div class="section-label"><span><?= $categorie; ?></span></div>
         <?php endif; ?>
@@ -20,9 +19,9 @@ $paragraph = get_sub_field('paragraph');
 
         <?php if ($paragraph) : ?>
             <div class="section-paragraph"><?= $paragraph; ?></div>
-        <?php endif; ?>
-
-        <?php if ($link) : ?>
+        <?php endif;
+        
+        if ($link) : ?>
             <a href="<?= $link['url']; ?>" class="btn-cta">
                 <?= $link['title']; ?>
             </a>
