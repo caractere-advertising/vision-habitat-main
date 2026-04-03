@@ -3,6 +3,7 @@
 @use "./../variables/fonts.scss" as *;
 @use "./../variables/cta.scss" as *;
 
+<<<<<<< HEAD
 .section-text-overlay {
   position: relative;
   margin: 100px auto;
@@ -53,3 +54,10 @@
     gap: 50px;
   }
 }
+=======
+
+.title{
+    font-size: 3.5rem;
+    color: $primaryColor;
+}
+>>>>>>> 28f81d8 (fin 3-04)

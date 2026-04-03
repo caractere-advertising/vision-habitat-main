@@ -176,6 +176,8 @@ $builder_layouts = array(
     'section-image-paralax'      => 'section-parallax',
     'section-formulaire-contact' => 'section-formulaire-contact',
     'big_title'=>'big_title_about',
+    'section_accordeon'=>'section_accordeon',
+    'text_overlay'=>'text_overlay'
 
 );
 

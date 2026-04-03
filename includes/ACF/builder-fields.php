@@ -19,16 +19,22 @@ acf_add_local_field_group( array(
                 // ─── Slider fullwidth ───────────────────────────────────────
                 'layout_69a7f853b6c37' => array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69a7f853b6c37',
                     'name'       => 'slider-fullwidth',
                     'label'      => 'Slider fullwidth',
                     'display'    => 'block',
+<<<<<<< HEAD
 =======
                 'key' => 'layout_69a7f853b6c37',
                 'name' => 'slider-fullwidth',
                 'label' => 'Slider fullwidth',
                 'display' => 'block',
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69a9969894e02',
@@ -92,6 +98,7 @@ acf_add_local_field_group( array(
                     'display'    => 'block',
                     'sub_fields' => array(
                         array(
+<<<<<<< HEAD
                             'key' => 'field_69d6b26f08cd7',
                             'label' => 'Couleur ou Image ?',
                             'name' => 'couleur_ou_image',
@@ -169,6 +176,20 @@ acf_add_local_field_group( array(
                             'preview_size'   => 'medium',
                         ),
                         array(
+=======
+                            'key'            => 'field_69c658cbdc62e',
+                            'label'          => 'background',
+                            'name'           => 'background',
+                            'type'           => 'image',
+                            'conditional_logic' => 0,
+                            'wrapper'        => $wrapper,
+                            'return_format'  => 'array',
+                            'library'        => 'all',
+                            'allow_in_bindings' => 0,
+                            'preview_size'   => 'medium',
+                        ),
+                        array(
+>>>>>>> 28f81d8 (fin 3-04)
                             'key'            => 'field_69c658dddc62f',
                             'label'          => 'CTA',
                             'name'           => 'cta',
@@ -176,6 +197,7 @@ acf_add_local_field_group( array(
                             'conditional_logic' => 0,
                             'wrapper'        => $wrapper,
                             'return_format'  => 'array',
+<<<<<<< HEAD
                             'allow_in_bindings' => 0,
                         ),
                         array(
@@ -187,6 +209,8 @@ acf_add_local_field_group( array(
                             'wrapper'        => $wrapper,
                             'default_value'  => '30', 
                             'return_format'  => 'array',
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                             'allow_in_bindings' => 0,
                         ),
                     ),
@@ -195,16 +219,22 @@ acf_add_local_field_group( array(
                 // ─── Gallery slider ─────────────────────────────────────────
                 'layout_69b7c55596df3' => array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69b7c55596df3',
                     'name'       => 'gallery_slider',
                     'label'      => 'gallery_slider',
                     'display'    => 'block',
+<<<<<<< HEAD
 =======
                     'key' => 'layout_69b7c55596df3',
                     'name' => 'gallery_slider',
                     'label' => 'gallery_slider',
                     'display' => 'block',
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69b7c5d596df5',
@@ -259,16 +289,22 @@ acf_add_local_field_group( array(
                 // ─── Block real proj ────────────────────────────────────────
                 'layout_69b7c04ed01c1' => array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69b7c04ed01c1',
                     'name'       => 'block_real_proj',
                     'label'      => 'block_real_proj',
                     'display'    => 'block',
+<<<<<<< HEAD
 =======
                     'key' => 'layout_69b7c04ed01c1',
                     'name' => 'block_real_proj',
                     'label' => 'block_real_proj',
                     'display' => 'block',
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69b7c07bd01c3',
@@ -378,6 +414,7 @@ acf_add_local_field_group( array(
                     'name'       => 'block_actu',
                     'label'      => 'block_actu',
                     'display'    => 'block',
+<<<<<<< HEAD
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69baa2793fc43',
@@ -466,74 +503,138 @@ acf_add_local_field_group( array(
                             'label' => 'articles',
                             'name' => 'articles',
                             'type' => 'repeater',
+=======
+                    'sub_fields' => array(
+                        array(
+                            'key'            => 'field_69baa2793fc43',
+                            'label'          => 'articles',
+                            'name'           => 'articles',
+                            'type'           => 'repeater',
+>>>>>>> 28f81d8 (fin 3-04)
                             'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'layout' => 'table',
-                            'button_label' => 'Ajouter un élément',
-                            'rows_per_page' => 20,
-                            'sub_fields' => array(
+                            'wrapper'        => $wrapper,
+                            'layout'         => 'table',
+                            'button_label'   => 'Ajouter un élément',
+                            'rows_per_page'  => 20,
+                            'sub_fields'     => array(
                                 array(
+<<<<<<< HEAD
                                     'key' => 'field_69baa2c63fc45tt',
                                     'label' => 'image',
                                     'name' => 'image',
                                     'type' => 'image',
+=======
+                                    'key'            => 'field_69baa2c63fc45',
+                                    'label'          => 'image',
+                                    'name'           => 'image',
+                                    'type'           => 'image',
+>>>>>>> 28f81d8 (fin 3-04)
                                     'conditional_logic' => 0,
-                                    'wrapper' => $wrapper,
-                                    'return_format' => 'array',
+                                    'wrapper'        => $wrapper,
+                                    'return_format'  => 'array',
                                     'allow_in_bindings' => 0,
-                                    'preview_size' => 'medium',
+                                    'preview_size'   => 'medium',
                                     'parent_repeater' => 'field_69baa2793fc43',
                                 ),
                                 array(
+<<<<<<< HEAD
                                     'key' => 'field_69baa2e53fc46eee',
                                     'label' => 'title',
                                     'name' => 'title',
                                     'type' => 'text',
+=======
+                                    'key'            => 'field_69baa2e53fc46',
+                                    'label'          => 'category',
+                                    'name'           => 'category',
+                                    'type'           => 'text',
+>>>>>>> 28f81d8 (fin 3-04)
                                     'conditional_logic' => 0,
-                                    'wrapper' => $wrapper,
-                                    'default_value' => '',
+                                    'wrapper'        => $wrapper,
+                                    'default_value'  => '',
                                     'allow_in_bindings' => 0,
                                     'parent_repeater' => 'field_69baa2793fc43',
                                 ),
                                 array(
+<<<<<<< HEAD
                                     'key' => 'field_69baa3033fc47eee',
                                     'label' => 'paragraph',
                                     'name' => 'paragraph',
                                     'type' => 'text',
+=======
+                                    'key'            => 'field_69baa3033fc47',
+                                    'label'          => 'paragraph',
+                                    'name'           => 'paragraph',
+                                    'type'           => 'text',
+>>>>>>> 28f81d8 (fin 3-04)
                                     'conditional_logic' => 0,
-                                    'wrapper' => $wrapper,
-                                    'default_value' => '',
+                                    'wrapper'        => $wrapper,
+                                    'default_value'  => '',
                                     'allow_in_bindings' => 0,
                                     'parent_repeater' => 'field_69baa2793fc43',
                                 ),
+<<<<<<< HEAD
                                  array(
                             'key' => 'field_69baa81c9b83eer',
                             'label' => 'link',
                             'name' => 'link',
                             'type' => 'link',
+=======
+                            ),
+                        ),
+                        array(
+                            'key'            => 'field_69baa81c9b83e',
+                            'label'          => 'link',
+                            'name'           => 'link',
+                            'type'           => 'link',
+>>>>>>> 28f81d8 (fin 3-04)
                             'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'return_format' => 'array',
+                            'wrapper'        => $wrapper,
+                            'return_format'  => 'array',
                             'allow_in_bindings' => 0,
                         ),
+<<<<<<< HEAD
                             ),
+=======
+                        array(
+                            'key'            => 'field_69bc094442c72',
+                            'label'          => 'title',
+                            'name'           => 'title',
+                            'type'           => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper'        => $wrapper,
+                            'default_value'  => '',
+                            'allow_in_bindings' => 0,
+                            'tabs'           => 'all',
+                            'toolbar'        => 'full',
+                            'media_upload'   => 1,
+                            'delay'          => 0,
+>>>>>>> 28f81d8 (fin 3-04)
                         ),
                        
                     ),
                 ),
+<<<<<<< HEAD
 
                 'layout_69b4095b346f8' => array(
 <<<<<<< HEAD
+=======
+ 
+                // ─── Block video ─────────────────────────────────────────────
+                'layout_69b4095b346f8' => array(
+>>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69b4095b346f8',
                     'name'       => 'block_video',
                     'label'      => 'block_video',
                     'display'    => 'block',
+<<<<<<< HEAD
 =======
                     'key' => 'layout_69b4095b346f8',
                     'name' => 'block_video',
                     'label' => 'block_video',
                     'display' => 'block',
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69b40977346fa',
@@ -621,16 +722,22 @@ acf_add_local_field_group( array(
                 // ─── Block discover ──────────────────────────────────────────
                 'layout_69b3d7c59a62f' => array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69b3d7c59a62f',
                     'name'       => 'block_discover',
                     'label'      => 'block_discover',
                     'display'    => 'block',
+<<<<<<< HEAD
 =======
                     'key' => 'layout_69b3d7c59a62f',
                     'name' => 'block_discover',
                     'label' => 'block_discover',
                     'display' => 'block',
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69b3d7e89a631',
@@ -683,28 +790,32 @@ acf_add_local_field_group( array(
  
                 // ─── Bloc citation ───────────────────────────────────────────
                 'layout_69b3cd935aa7b' => array(
-                    'key' => 'layout_69b3cd935aa7b',
-                    'name' => 'block_citation',
-                    'label' => 'Bloc Citation',
-                    'display' => 'block',
+                    'key'        => 'layout_69b3cd935aa7b',
+                    'name'       => 'block_citation',
+                    'label'      => 'Bloc Citation',
+                    'display'    => 'block',
                     'sub_fields' => array(
                         array(
-                            'key' => 'field_69b3cdd45aa7d',
-                            'label' => 'Nom',
-                            'name' => 'name',
-                            'type' => 'text',
+                            'key'            => 'field_69b3cdd45aa7d',
+                            'label'          => 'Nom',
+                            'name'           => 'name',
+                            'type'           => 'text',
                             'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'default_value' => '',
+                            'wrapper'        => $wrapper,
+                            'default_value'  => '',
                             'allow_in_bindings' => 0,
                         ),
                         array(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                             'key'            => 'field_69b3cdfa5aa7e',
                             'label'          => 'Citation',
                             'name'           => 'citation',
                             'type'           => 'wysiwyg',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a3a7261 (builder-fields)
@@ -744,16 +855,19 @@ acf_add_local_field_group( array(
                             'type'            => 'true_false',
 =======
 >>>>>>> a3a7261 (builder-fields)
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                             'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'default_value' => '',
+                            'wrapper'        => $wrapper,
+                            'default_value'  => '',
                             'allow_in_bindings' => 0,
-                            'tabs' => 'all',
-                            'toolbar' => 'full',
-                            'media_upload' => 1,
-                            'delay' => 0,
+                            'tabs'           => 'all',
+                            'toolbar'        => 'full',
+                            'media_upload'   => 1,
+                            'delay'          => 0,
                         ),
                         array(
+<<<<<<< HEAD
 <<<<<<< HEAD
                             'key'               => 'field_69c3b3b391dd6',
                             'label'             => 'Section bleue',
@@ -784,56 +898,62 @@ acf_add_local_field_group( array(
                             'name' => 'blue_activated',
                             'type' => 'true_false',
 >>>>>>> a3a7261 (builder-fields)
+=======
+                            'key'             => 'field_69c3b3c691dd7',
+                            'label'           => 'Ajouter section bleue ?',
+                            'name'            => 'blue_activated',
+                            'type'            => 'true_false',
+>>>>>>> 28f81d8 (fin 3-04)
                             'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'message' => '',
-                            'default_value' => 0,
+                            'wrapper'         => $wrapper,
+                            'message'         => '',
+                            'default_value'   => 0,
                             'allow_in_bindings' => 0,
-                            'ui' => 0,
-                            'ui_on_text' => '',
-                            'ui_off_text' => '',
+                            'ui'              => 0,
+                            'ui_on_text'      => '',
+                            'ui_off_text'     => '',
                         ),
                         array(
-                            'key' => 'field_69c3b3b391dd6',
-                            'label' => 'Section bleue',
-                            'name' => '',
-                            'type' => 'tab',
+                            'key'               => 'field_69c3b3b391dd6',
+                            'label'             => 'Section bleue',
+                            'name'              => '',
+                            'type'              => 'tab',
                             'conditional_logic' => array(
                                 array(
                                     array(
-                                        'field' => 'field_69c3b3c691dd7',
+                                        'field'    => 'field_69c3b3c691dd7',
                                         'operator' => '==',
-                                        'value' => '1',
+                                        'value'    => '1',
                                     ),
                                 ),
                             ),
-                            'wrapper' => $wrapper,
+                            'wrapper'   => $wrapper,
                             'placement' => 'top',
-                            'endpoint' => 0,
-                            'selected' => 0,
+                            'endpoint'  => 0,
+                            'selected'  => 0,
                         ),
                         array(
-                            'key' => 'field_69b3cf145aa7f',
-                            'label' => 'Titre',
-                            'name' => 'title',
-                            'type' => 'wysiwyg',
+                            'key'            => 'field_69b3cf145aa7f',
+                            'label'          => 'Titre',
+                            'name'           => 'title',
+                            'type'           => 'wysiwyg',
                             'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'default_value' => '',
+                            'wrapper'        => $wrapper,
+                            'default_value'  => '',
                             'allow_in_bindings' => 0,
-                            'tabs' => 'all',
-                            'toolbar' => 'full',
-                            'media_upload' => 1,
-                            'delay' => 0,
+                            'tabs'           => 'all',
+                            'toolbar'        => 'full',
+                            'media_upload'   => 1,
+                            'delay'          => 0,
                         ),
                         array(
-                            'key' => 'field_69b3cf2d5aa80',
-                            'label' => 'link',
-                            'name' => 'link',
-                            'type' => 'link',
+                            'key'            => 'field_69b3cf2d5aa80',
+                            'label'          => 'link',
+                            'name'           => 'link',
+                            'type'           => 'link',
                             'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'return_format' => 'array',
+                            'wrapper'        => $wrapper,
+                            'return_format'  => 'array',
                             'allow_in_bindings' => 0,
                         ),
                     ),
@@ -909,16 +1029,22 @@ acf_add_local_field_group( array(
                         ),
                         array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                             'key'            => 'field_69b7d312726e7',
                             'label'          => 'paragraph',
                             'name'           => 'paragraph',
                             'type'           => 'text',
+<<<<<<< HEAD
 =======
                             'key' => 'field_69b7d312726e7',
                             'label' => 'paragraph',
                             'name' => 'paragraph',
                             'type' => 'wysiwyg',
 >>>>>>> e007f86 (Correction css + animation + section)
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                             'conditional_logic' => 0,
                             'wrapper'        => $wrapper,
                             'default_value'  => '',
@@ -937,6 +1063,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
 <<<<<<< HEAD
+<<<<<<< HEAD
  
                 // ─── Layout vide ─────────────────────────────────────────────
                 'layout_69b7d2f7726e4' => array(
@@ -949,15 +1076,23 @@ acf_add_local_field_group( array(
  
                 // ─── Section bleue ───────────────────────────────────────────
 =======
+=======
+ 
+                // ─── Layout vide ─────────────────────────────────────────────
+>>>>>>> 28f81d8 (fin 3-04)
                 'layout_69b7d2f7726e4' => array(
-                    'key' => 'layout_69b7d2f7726e4',
-                    'name' => '',
-                    'label' => '',
-                    'display' => 'block',
-                    'sub_fields' => array(
-                    ),
+                    'key'        => 'layout_69b7d2f7726e4',
+                    'name'       => '',
+                    'label'      => '',
+                    'display'    => 'block',
+                    'sub_fields' => array(),
                 ),
+<<<<<<< HEAD
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+ 
+                // ─── Section bleue ───────────────────────────────────────────
+>>>>>>> 28f81d8 (fin 3-04)
                 'layout_69b2d98330c6f' => array(
                     'key'        => 'layout_69b2d98330c6f',
                     'name'       => 'section_blue',
@@ -1106,16 +1241,22 @@ acf_add_local_field_group( array(
                 // ─── Header hero ─────────────────────────────────────────────
                 'layout_69b13656aaa3b' => array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69b13656aaa3b',
                     'name'       => 'header_hero',
                     'label'      => 'header_hero',
                     'display'    => 'block',
+<<<<<<< HEAD
 =======
                     'key' => 'layout_69b13656aaa3b',
                     'name' => 'header_hero',
                     'label' => 'header_hero',
                     'display' => 'block',
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69b13672aaa3d',
@@ -1324,11 +1465,15 @@ acf_add_local_field_group( array(
                 // ─── Actualités ──────────────────────────────────────────────
                 'layout_69a952e91a7df' => array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28f81d8 (fin 3-04)
                     'key'        => 'layout_69a952e91a7df',
                     'name'       => 'actualites',
                     'label'      => 'Actualités',
                     'display'    => 'block',
                     'sub_fields' => array(),
+<<<<<<< HEAD
                 ),
 <<<<<<< HEAD
  
@@ -1348,6 +1493,11 @@ acf_add_local_field_group( array(
                     ),
                 ),
 >>>>>>> 6ead0fd (Features :)
+=======
+                ),
+ 
+                // ─── Section approche globale ────────────────────────────────
+>>>>>>> 28f81d8 (fin 3-04)
                 'layout_69c6739eade09' => array(
                     'key'        => 'layout_69c6739eade09',
                     'name'       => 'section-approche-globale',
@@ -1482,24 +1632,17 @@ acf_add_local_field_group( array(
                     'label'      => 'Section 2 colonnes simple',
                     'display'    => 'block',
                     'sub_fields' => array(
+<<<<<<< HEAD
                          array(
                             'key'            => 'field_69ca23d9f67ca',
                             'label'          => 'Small-titre',
                             'name'           => 'Small-titre',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
+=======
                         array(
                             'key'            => 'field_69ca23d9f67cb',
                             'label'          => 'Titre',
                             'name'           => 'titre',
+>>>>>>> 28f81d8 (fin 3-04)
                             'type'           => 'wysiwyg',
                             'conditional_logic' => 0,
                             'wrapper'        => $wrapper,
@@ -1511,6 +1654,27 @@ acf_add_local_field_group( array(
                             'delay'          => 0,
                         ),
                         array(
+<<<<<<< HEAD
+                            'key'            => 'field_69ca23d9f67cb',
+                            'label'          => 'Titre',
+                            'name'           => 'titre',
+=======
+                            'key'            => 'field_69ca23dff67cc',
+                            'label'          => 'Intro',
+                            'name'           => 'intro',
+>>>>>>> 28f81d8 (fin 3-04)
+                            'type'           => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper'        => $wrapper,
+                            'default_value'  => '',
+                            'allow_in_bindings' => 0,
+                            'tabs'           => 'all',
+                            'toolbar'        => 'full',
+                            'media_upload'   => 1,
+                            'delay'          => 0,
+                        ),
+                        array(
+<<<<<<< HEAD
                             'key'            => 'field_69ca23dff67cc',
                             'label'          => 'Intro',
                             'name'           => 'intro',
@@ -1531,6 +1695,14 @@ acf_add_local_field_group( array(
                             'type'           => 'link',
                             'conditional_logic' => 0,
                             'wrapper'        => $wrapper,
+=======
+                            'key'            => 'field_69ca23e7f67cd',
+                            'label'          => 'CTA',
+                            'name'           => 'cta',
+                            'type'           => 'link',
+                            'conditional_logic' => 0,
+                            'wrapper'        => $wrapper,
+>>>>>>> 28f81d8 (fin 3-04)
                             'return_format'  => 'array',
                             'allow_in_bindings' => 0,
                         ),
@@ -1548,6 +1720,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
                 ),
+<<<<<<< HEAD
 
                 // ─── Section 2 colonnes full ───────────────────────────────
                 'layout_69ca23cff6full' => array(
@@ -1622,6 +1795,8 @@ acf_add_local_field_group( array(
                         ),
                     ),
                 ),
+=======
+>>>>>>> 28f81d8 (fin 3-04)
  
                 // ─── Slider vertical ─────────────────────────────────────────
                 'layout_r3p34tv3rt1c4l' => array(
@@ -1673,6 +1848,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
                 ),
+<<<<<<< HEAD
 
                 // ─── Slider vertical reverse ─────────────────────────────────────────
                 'layout_r3p34tv3rt1c4lreverse' => array(
@@ -1724,6 +1900,8 @@ acf_add_local_field_group( array(
                         ),
                     ),
                 ),
+=======
+>>>>>>> 28f81d8 (fin 3-04)
  
                 // ─── Section step construction ───────────────────────────────
                 'layout_3t4p3sc0nstr' => array(
@@ -1731,6 +1909,7 @@ acf_add_local_field_group( array(
                     'name'       => 'section-step-const',
                     'label'      => 'Section step',
                     'display'    => 'block',
+<<<<<<< HEAD
                     'sub_fields' => array(
                         array(
                             'key'   => 'field_surtitre_section',
@@ -1991,107 +2170,260 @@ acf_add_local_field_group( array(
     ), // fin fields
 =======
                     ), 
+=======
+                    'sub_fields' => array(
+                        array(
+                            'key'   => 'field_surtitre_section',
+                            'label' => 'Surtitre',
+                            'name'  => 'surtitre',
+                            'type'  => 'text',
+                        ),
+                        array(
+                            'key'   => 'field_title_section',
+                            'label' => 'Titre',
+                            'name'  => 'titre',
+                            'type'  => 'wysiwyg',
+                        ),
+                        array(
+                            'key'        => 'field_repeat_step',
+                            'label'      => 'Slides',
+                            'name'       => 'slides-step',
+                            'type'       => 'repeater',
+                            'layout'     => 'line',
+                            'sub_fields' => array(
+                                array(
+                                    'key'             => 'field_step_image',
+                                    'label'           => 'Image',
+                                    'name'            => 'image',
+                                    'type'            => 'image',
+                                    'wrapper'         => $wrapper,
+                                    'parent_repeater' => 'field_repeat_step',
+                                ),
+                                array(
+                                    'key'             => 'field_step_titre',
+                                    'label'           => 'Titre',
+                                    'name'            => 'titre',
+                                    'type'            => 'text',
+                                    'wrapper'         => $wrapper,
+                                    'parent_repeater' => 'field_repeat_step',
+                                ),
+                                array(
+                                    'key'             => 'field_step_texte',
+                                    'label'           => 'Texte',
+                                    'name'            => 'texte',
+                                    'type'            => 'wysiwyg',
+                                    'wrapper'         => $wrapper,
+                                    'parent_repeater' => 'field_repeat_step',
+                                ),
+                            ),
+                        ),
+                    ),
+                ),
+ 
+                // ─── Image parallax ──────────────────────────────────────────
+                'layout_1m4g3p4r4ll4x' => array(
+                    'key'        => 'layout_1m4g3p4r4ll4x',
+                    'name'       => 'section-image-paralax',
+                    'label'      => 'Image paralax',
+                    'display'    => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key'     => 'field_parallax_image',
+                            'label'   => 'Image',
+                            'name'    => 'image',
+                            'type'    => 'image',
+                            'wrapper' => $wrapper,
+                        ),
+                        array(
+                            'key'           => 'field_parallax_height',
+                            'label'         => 'Hauteur',
+                            'name'          => 'hauteur',
+                            'type'          => 'number',
+                            'wrapper'       => $wrapper,
+                            'default_value' => '80',
+                        ),
+                    ),
+                ),
+ 
+                // ─── Section accordeon ───────────────────────────────────────
+                'layout_4cc0rd30n' => array(
+                    'key'        => 'layout_4cc0rd30n',
+                    'name'       => 'section_accordeon',
+                    'label'      => 'Section accordeon',
+                    'display'    => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key'           => 'field_acc_image',
+                            'label'         => 'Image',
+                            'name'          => 'image',
+                            'type'          => 'image',
+                            'wrapper'       => $wrapper,
+                            'return_format' => 'array',
+                            'preview_size'  => 'medium',
+                        ),
+                        array(
+                            'key'           => 'field_acc_site_name',
+                            'label'         => 'Site name',
+                            'name'          => 'site_name',
+                            'type'          => 'text',
+                            'wrapper'       => $wrapper,
+                            'default_value' => '',
+                        ),
+                        array(
+                            'key'           => 'field_acc_titre',
+                            'label'         => 'Titre',
+                            'name'          => 'titre',
+                            'type'          => 'wysiwyg',
+                            'wrapper'       => $wrapper,
+                            'default_value' => '',
+                            'tabs'          => 'all',
+                            'toolbar'       => 'full',
+                            'media_upload'  => 1,
+                            'delay'         => 0,
+                        ),
+                        array(
+                            'key'          => 'field_lien_accordeon',
+                            'label'        => 'Lien accordeon',
+                            'name'         => 'lien_accordeon',
+                            'type'         => 'repeater',
+                            'wrapper'      => $wrapper,
+                            'layout'       => 'table',
+                            'button_label' => 'Ajouter un élément',
+                            'sub_fields'   => array(
+                                array(
+                                    'key'             => 'field_acc_lien',
+                                    'label'           => 'Lien',
+                                    'name'            => 'lien',
+                                    'type'            => 'link',
+                                    'wrapper'         => $wrapper,
+                                    'return_format'   => 'array',
+                                    'parent_repeater' => 'field_lien_accordeon',
+                                ),
+                            ),
+                        ),
+                    ),
+                ),
+ 
+                // ─── Big Title ───────────────────────────────────────────────
+                'layout_b1g_t1tl3' => array(
+                    'key'        => 'layout_b1g_t1tl3',
+                    'name'       => 'big_title',
+                    'label'      => 'Big Title',
+                    'display'    => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key'               => 'field_big_title',
+                            'label'             => 'Big Title',
+                            'name'              => 'big_title',
+                            'type'              => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper'           => $wrapper,
+                            'allow_in_bindings' => 0,
+                        ),
+                    ),
+>>>>>>> 28f81d8 (fin 3-04)
                 ),
 
-               'layout_4cc0rd30n' => array(
-    'key' => 'layout_4cc0rd30n',
-    'name' => 'section-accordeon',
-    'label' => 'Section accordeon',
-    'display' => 'block',
-    'sub_fields' => array(
-        array(
-            'key' => 'field_acc_image',
-            'label' => 'Image',
-            'name' => 'image',
-            'type' => 'image',
-            'wrapper' => $wrapper,
-            'return_format' => 'array',
-            'preview_size' => 'medium',
-        ),
-        array(
-            'key' => 'field_acc_site_name',
-            'label' => 'Site name',
-            'name' => 'site_name',
-            'type' => 'text',
-            'wrapper' => $wrapper,
-            'default_value' => '',
-        ),
-        array(
-            'key' => 'field_acc_titre',
-            'label' => 'Titre',
-            'name' => 'titre',
-            'type' => 'wysiwyg',
-            'wrapper' => $wrapper,
-            'default_value' => '',
-            'tabs' => 'all',
-            'toolbar' => 'full',
-            'media_upload' => 1,
-            'delay' => 0,
-        ),
-        array(
-            'key' => 'field_lien_accordeon',
-            'label' => 'Lien accordeon',
-            'name' => 'lien_accordeon',
-            'type' => 'repeater',
-            'wrapper' => $wrapper,
-            'layout' => 'table',
-            'button_label' => 'Ajouter un élément',
-            'sub_fields' => array(
-                array(
-                    'key' => 'field_acc_lien',
-                    'label' => 'Lien',
-                    'name' => 'lien',
-                    'type' => 'link',
-                    'wrapper' => $wrapper,
-                    'return_format' => 'array',
-                    'parent_repeater' => 'field_lien_accordeon',
-                ),
-            ),
-        ),
-    ),
-),
-                        )
-                    ), 
-                ),
-'layout_b1g_t1tl3' => array(
-        'key' => 'layout_b1g_t1tl3',
-        'name' => 'big_title',
-        'label' => 'Big Title',
-        'display' => 'block',
-        'sub_fields' => array(
-            array(
-                'key' => 'field_big_title',
-                'label' => 'Big Title',
-                'name' => 'big_title',
-                'type' => 'wysiwyg',
-                'conditional_logic' => 0,
-                'wrapper' => $wrapper,
-                'allow_in_bindings' => 0,
-            )
-        )
-    ),
+                // -- section text_overlay
 
+                 'layout_text_overlay' => array(
+                    'key'        => 'layout_t3xt_0v3rl4y',
+                    'name'       => 'text_overlay',
+                    'label'      => 'Text Overlay',
+                    'display'    => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key'               => 'field_text_overlay_title',
+                            'label'             => 'Title',
+                            'name'              => 'title',
+                            'type'              => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper'           => $wrapper,
+                            'allow_in_bindings' => 0,
+                        ),
+                        array(
+                            'key'               => 'field_text_overlay_image',
+                            'label'             => 'Image',
+                            'name'              => 'image',
+                            'type'              => 'image',
+                            'conditional_logic' => 0,
+                            'wrapper'           => $wrapper,
+                            'return_format'     => 'array',
+                            'preview_size'      => 'medium',
+                            'allow_in_bindings' => 0,
+                        ),
+                        array(
+                            'key'               => 'field_text_overlay_paragraph',
+                            'label'             => 'Paragraph',
+                            'name'              => 'paragraph',
+                            'type'              => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper'           => $wrapper,
+                            'allow_in_bindings' => 0,
+                        ),
+                        array(
+                            'key'               => 'field_text_overlay_link',
+                            'label'             => 'Link',
+                            'name'              => 'link',
+                            'type'              => 'link',
+                            'conditional_logic' => 0,
+                            'wrapper'           => $wrapper,
+                            'return_format'     => 'array',
+                            'allow_in_bindings' => 0,
+                        ),
+                    ),
+                ),
+ 
+                // ─── Section formulaire contact ──────────────────────────────
                 'layout_s3ct10nf0rmc0nt4ct' => array(
-                    'key' => 'layout_s3ct10nf0rmc0nt4ct',
-                    'name' => 'section-formulaire-contact',
-                    'label' => 'Section formulaire',
-                    'display' => 'block',
+                    'key'        => 'layout_s3ct10nf0rmc0nt4ct',
+                    'name'       => 'section-formulaire-contact',
+                    'label'      => 'Section formulaire',
+                    'display'    => 'block',
+                    'sub_fields' => array(),
                 ),
+<<<<<<< HEAD
             ),
             'button_label' => 'Ajouter un élément',
             ),
 >>>>>>> 927826b (fin2-4)
+=======
+ 
+            ), // fin layouts
+        ),
+    ), // fin fields
+>>>>>>> 28f81d8 (fin 3-04)
     'location' => array(
         array(
             array(
                 'param'    => 'page_template',
                 'operator' => '==',
                 'value'    => 'template-builder.php',
+<<<<<<< HEAD
             ),
         ),
 <<<<<<< HEAD
         array(
             array(
+                'param'    => 'page_type',
+                'operator' => '==',
+                'value'    => 'front_page',
+=======
+>>>>>>> 28f81d8 (fin 3-04)
+            ),
+        ),
+        array(
+            array(
+<<<<<<< HEAD
+                'param'    => 'post_type',
+                'operator' => '==',
+                'value'    => 'reference',
+            ),
+        ),
+<<<<<<< HEAD
+=======
+>>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+=======
                 'param'    => 'page_type',
                 'operator' => '==',
                 'value'    => 'front_page',
@@ -2104,9 +2436,7 @@ acf_add_local_field_group( array(
                 'value'    => 'reference',
             ),
         ),
-<<<<<<< HEAD
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
+>>>>>>> 28f81d8 (fin 3-04)
     ),
     'menu_order'            => 0,
     'position'              => 'normal',
@@ -2118,6 +2448,7 @@ acf_add_local_field_group( array(
     'description'           => '',
     'show_in_rest'          => 0,
     'display_title'         => '',
+<<<<<<< HEAD
 ));
 =======
  ),
@@ -2134,3 +2465,6 @@ acf_add_local_field_group( array(
     ));
     
 >>>>>>> 927826b (fin2-4)
+=======
+));
+>>>>>>> 28f81d8 (fin 3-04)
