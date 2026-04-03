@@ -20,3 +20,18 @@ function vh_theme_setup() {
     ]);
 }
 add_action('after_setup_theme', 'vh_theme_setup');
+
+
+/* Récupération de tous les posts Ou réferences */
+
+function getPosts($type){
+    $args = array(
+        'post_type' => $type,
+        'posts_per_page' => is_front_page(  ) ? 3 : -1,
+        'post_status' => 'publish'
+    );
+
+    $query = new WP_Query($args);
+
+    return $query;
+}

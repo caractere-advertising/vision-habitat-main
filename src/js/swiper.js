@@ -106,3 +106,14 @@ if (swiperEtapesEl) {
     if (text) text.classList.add("is-visible");
   }
 }
+
+const swiperSurMesure = new Swiper(".swiper-partenaire", {
+  modules: [Pagination, Autoplay],
+  pagination: {
+    el: ".swiper-pagination-sur-mesure",
+    clickable: true,
+  },
+  loop: true,
+  autoplay: true,
+  speed: 600,
+});

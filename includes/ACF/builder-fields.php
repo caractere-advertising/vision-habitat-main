@@ -1319,6 +1319,44 @@ acf_add_local_field_group( array(
                     'label' => 'Section formulaire',
                     'display' => 'block',
                 ),
+                'layout_s3ct10nsurm3sur3' => array(
+                    'key' => 'layout_s3ct10nsurm3sur3',
+                    'name' => 'section-part-sur-mesure',
+                    'label' => 'Section sur mesure',
+                    'display' => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key'   => 'field_title_section',
+                            'label' => 'Titre',
+                            'name'  => 'titre',
+                            'type'  => 'wysiwyg'
+                        ),
+                        array(
+                            'key'   => 'field_texte_section',
+                            'label' => 'Texte',
+                            'name'  => 'texte',
+                            'type'  => 'wysiwyg'
+                        ),
+                        array(
+                            'key'   => 'field_repeat_step',
+                            'label' => 'Slides',
+                            'name'  => 'slides-sur-mesure',
+                            'type'  => 'repeater',
+                            'layout' => 'line',
+                            'sub_fields' => array(
+                                array(
+                                    'key'   => 'field_step_image',
+                                    'label' => 'Image',
+                                    'name'  => 'image',
+                                    'type'  => 'image',
+                                    'wrapper' => $wrapper,
+                                    'parent_repeater' => 'field_repeat_step',
+                                ),
+                            ),
+                        )
+                    )
+
+                )
             ),
             'button_label' => 'Ajouter un élément',
         ),
