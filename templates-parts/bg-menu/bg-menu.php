@@ -2,7 +2,7 @@
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
-$cond_generales      = get_field('cond-generales', 'option');
+$cond_generales      = get_field('cond-generales', 'option') ?? '';
 $footer_nav          = get_field('menu-burger-footer', 'option');
 $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 

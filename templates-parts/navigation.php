@@ -1,7 +1,6 @@
 <?php
-$logo = is_front_page() ? get_field('logo', 'options') : get_field('logo-negatif', 'options');
 
-     
+$logo = is_front_page() ? get_field('logo', 'options') : get_field('logo-negatif', 'options');
 $class = is_front_page() ? 'site-header -frontpage' : 'site-header';
 
 ?>
