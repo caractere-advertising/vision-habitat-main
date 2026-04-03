@@ -16,6 +16,7 @@ import "./js/img-hover.js";
 import "./js/parallax.js";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "./js/img-hover.js";
 =======
 import "./js/accordeon.js";
@@ -47,3 +48,6 @@ import "./js/parallax.js";
 >>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 =======
 >>>>>>> 7ef033f (0204)
+=======
+import "./js/accordeon.js";
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)

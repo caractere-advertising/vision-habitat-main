@@ -24,8 +24,13 @@ $texte  = get_sub_field('texte');
         </div>
 
         <div class="cold col-50">
+<<<<<<< HEAD
             <span class="block-title from-right"><?= $titre ?: '';?></span>
             <span class="block-texte from-right"><?= $texte ?: '';?></span>
+=======
+            <span class="block-title"><?= $titre ?: '';?></span>
+            <span class="block-texte"><?= $texte ?: '';?></span>
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
         </div>
     </div>
 </section>

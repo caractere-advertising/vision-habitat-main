@@ -7,6 +7,7 @@ $name     = get_sub_field('name');
 $citation = get_sub_field('citation');
 $title    = get_sub_field('title');
 $link     = get_sub_field('link');
+<<<<<<< HEAD
 
 $signTop  = get_sub_field('signature_top');
 $blueActif = get_sub_field('blue_activated');
@@ -36,6 +37,23 @@ echo $signTop;
                 <?php if ($citation) : ?><div class="citation-text from-right"><?= $citation; ?></div><?php endif; ?>
                 <?php if ($name && $signTop == 0) : ?><span class="citation-name bottom from-left"><?= $name; ?></span><?php endif; ?>
 
+=======
+$blueActif = get_sub_field('blue_activated');
+
+?>
+
+<section class="section-citation">
+    <?php if($name):?>
+        <div class="citation-block container">
+            <div class="citation-inner container">
+                <?php if ($name) : ?>
+                <span class="citation-name"><?= $name; ?></span>
+                <?php endif; ?>
+
+                <?php if($citation): ?>
+                    <div class="citation-text"><?= $citation; ?></div>
+                <?php endif; ?>
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
             </div>
         </div>
     <?php endif;?>
@@ -43,6 +61,7 @@ echo $signTop;
         <div class="citation-blue">
             <div class="citation-blue-inner container">
                 <?php if ($title) : ?>
+<<<<<<< HEAD
                     <div class="citation-blue-title from-left"><?= $title; ?></div>
                 <?php endif;
                 if($link): ?>
@@ -68,6 +87,16 @@ echo $signTop;
     </a>
         <?php endif;?>
             <?php if($citation):?><div class="citation-deco"></div><?php endif;?>
+=======
+                    <div class="citation-blue-title"><?= $title; ?></div>
+                <?php endif;
+                if($link): ?>
+                    <a href="<?= $link['url'];?>" class="btn-cta"><?= $link['title'];?></a>
+                <?php endif;?>
+
+                <?php if($citation):?><div class="citation-deco"></div><?php endif;?>
+            </div>
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
         </div>
     <?php endif;?>
 </section>

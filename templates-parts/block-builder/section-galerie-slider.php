@@ -7,7 +7,11 @@
 $slides = get_sub_field('slides');
 ?>
 
+<<<<<<< HEAD
 <section class="section-gallery from-bottom">
+=======
+<section class="section-gallery">
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
     <div class="swiper swiper-gallery">
         <div class="swiper-wrapper">
             <?php foreach ($slides as $s) :
@@ -35,6 +39,7 @@ $slides = get_sub_field('slides');
         </div>
     </div>
     <div class="gallery-nav">
+<<<<<<< HEAD
         <button class="gallery-next">
             <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -57,5 +62,12 @@ $slides = get_sub_field('slides');
     </div>
     <div class="container content-scrollbar">
         <div class="swiper-scrollbar-galerie-slider"></div>
+=======
+        <button class="gallery-next">&#8250;</button>
+        <button class="gallery-prev">&#8249;</button>
+    </div>
+    <div class="container content-scrollbar">
+        <div class="swiper-scrollbar"></div>
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
     </div>
 </section>

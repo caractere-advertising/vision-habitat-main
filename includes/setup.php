@@ -28,13 +28,18 @@ function getPosts($type){
     $args = array(
         'post_type' => $type,
         'posts_per_page' => is_front_page(  ) ? 3 : -1,
+<<<<<<< HEAD
         'post_status' => 'publish',
         'order' => 'ASC',
+=======
+        'post_status' => 'publish'
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
     );
 
     $query = new WP_Query($args);
 
     return $query;
+<<<<<<< HEAD
 }
 
 /* Récupérer les catégories du CPT "réference"                   */
@@ -57,4 +62,6 @@ function getCategoriesReferences($postId, $type){
     }  
    
     return $allCats;
+=======
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
 }

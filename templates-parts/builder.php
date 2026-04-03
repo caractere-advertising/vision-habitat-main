@@ -159,18 +159,18 @@ $context_id = get_builder_context_id();
 $builder_layouts = array(
     'actualites'                 => 'actualites',
     'slider-fullwidth'           => 'slider-fullwidth',
-    'text_evidence'              => 'section2',
-    'card_solutions'             => 'section3',
-    'header_hero'                => 'section1',
-    'block_real_proj'            => 'section4',
-    'gallery_slider'             => 'section5',
-    'images_overlay'             => 'section6',
-    'section_img_ev'             => 'section7',
-    'block_citation'             => 'section8',
-    'block_discover'             => 'section9',
-    'link_container'             => 'section10',
-    'block_video'                => 'section11',
-    'block_actu'                 => 'section12',
+    'text_evidence'              => 'section-text-evidence',
+    'card_solutions'             => 'section-card-solutions',
+    'header_hero'                => 'section-header-hero',
+    'block_real_proj'            => 'section-real-projet',
+    'gallery_slider'             => 'section-galerie-slider',
+    'images_overlay'             => 'section-image-overlay',
+    'section_img_ev'             => 'section-image-env',
+    'block_citation'             => 'section-citation',
+    'block_discover'             => 'section-discover',
+    'link_container'             => 'section-link-container',
+    'block_video'                => 'section-video',
+    'block_actu'                 => 'section-actualites',
     'section-header-service'     => 'section-header-service',
     'section-approche-globale'   => 'section-approche-globale',
     'section-two-col-simple'     => 'section-txt-g-img-d',
@@ -178,10 +178,14 @@ $builder_layouts = array(
     'section-step-const'         => 'section-etapes',
     'section-image-paralax'      => 'section-parallax',
     'section-formulaire-contact' => 'section-formulaire-contact',
+<<<<<<< HEAD
     'big_title'=>'big_title_about',
     'section_accordeon'=>'section_accordeon',
     'text_overlay'=>'text_overlay'
 
+=======
+    'section-part-sur-mesure' => 'section-partenaire-sur-mesure',
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
 );
 
 if (have_rows('builder', $context_id)) :

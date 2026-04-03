@@ -16,6 +16,7 @@ $projets   = get_sub_field('projets');
     <div class="projects-inner">
 
         <div class="projects-left">
+<<<<<<< HEAD
             <div class="block-txt">
                 <?php if ($title): ?>
                     <div class="projects-title from-left"><?= $title; ?></div>
@@ -28,6 +29,18 @@ $projets   = get_sub_field('projets');
 
             <?php if ($link) : ?>
                 <a href="<?= $link['url']; ?>" class="btn-cta from-left">
+=======
+            <?php if ($title): ?>
+                <div class="projects-title"><?= $title; ?></div>
+            <?php endif; ?>
+
+            <?php if ($paragraph): ?>
+                <div class="projects-paragraph"><?= $paragraph; ?></div>
+            <?php endif; ?>
+
+            <?php if ($link) : ?>
+                <a href="<?= $link['url']; ?>" class="btn-cta">
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
                     <?= $link['title']; ?>
                 </a>
             <?php endif; ?>
@@ -44,7 +57,11 @@ $projets   = get_sub_field('projets');
                         ?>
                         <div class="swiper-slide">
                             <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
+<<<<<<< HEAD
                             <div class="slide-info from-bottom">
+=======
+                            <div class="slide-info">
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
                                 <span class="slide-location"><?= $location; ?></span>
                                 <span class="slide-price"><?= $price; ?></span>
                             </div>
@@ -53,10 +70,15 @@ $projets   = get_sub_field('projets');
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
     </div>
 
     <div class="projects-controls container">
         <div class="projects-nav">
+<<<<<<< HEAD
             <button class="projects-prev">
                 <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -75,9 +97,19 @@ $projets   = get_sub_field('projets');
                     </g>
                 </svg>
             </button>
+=======
+            <button class="projects-prev">&#8249;</button>
+            <button class="projects-next">&#8250;</button>
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
         </div>
         <div class="swiper-scrollbar-projects">
         </div>
         <span class="projects-number">01</span>
     </div>
+<<<<<<< HEAD
 </section>
+=======
+
+</section>
+
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)

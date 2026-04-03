@@ -108,6 +108,7 @@
 @use "builder/section-etapes.scss" as *;
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
+<<<<<<< HEAD
 @use "builder/big_title_about.scss" as *;
 <<<<<<< HEAD
 @use "builder/section-two-col-about.scss" as *;
@@ -115,6 +116,9 @@
 =======
 @use "builder/section_accordeon.scss" as *;
 @use "builder/text_overlay.scss" as *;
+=======
+@use "builder/section-partenaire-sur-mesure" as *;
+>>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
 
 >>>>>>> 28f81d8 (fin 3-04)
 body {
