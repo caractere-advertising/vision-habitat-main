@@ -4,12 +4,19 @@
   width: 100%;
   z-index: 100;
   padding: 30px 0;
+<<<<<<< HEAD
   position: absolute;
   top: 0;
   left: 0;
 
   .header-inner {
     width: 90vw;
+=======
+  position: relative;
+
+  .header-inner {
+    width: 95vw;
+>>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
     margin: auto;
     display: flex;
     align-items: center;
@@ -19,10 +26,14 @@
     .header-logo {
       flex-shrink: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 250px;
 =======
       width: 300px;
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
+=======
+      width: 250px;
+>>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
       display: block;
 
       img {
@@ -176,6 +187,15 @@
     }
   }
 
+<<<<<<< HEAD
+=======
+  &.-frontpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+>>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
   &.-negatif-header {
     position: relative;
 

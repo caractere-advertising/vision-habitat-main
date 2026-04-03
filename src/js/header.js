@@ -37,6 +37,7 @@ if (burgerBtn && mobileMenu) {
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 }
 
+<<<<<<< HEAD
 if (burgerBtnClose && mobileMenu) {
 <<<<<<< HEAD
     burgerBtnClose.addEventListener('click', () => {
@@ -54,3 +55,12 @@ if (burgerBtnClose && mobileMenu) {
   });
 }
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
+=======
+// if (burgerBtnClose && mobileMenu) {
+//   burgerBtn.addEventListener("click", () => {
+//     burgerBtn.classList.remove("is-active");
+//     mobileMenu.classList.remove("is-open");
+//     document.body.style.overflow = "";
+//   });
+// }
+>>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)

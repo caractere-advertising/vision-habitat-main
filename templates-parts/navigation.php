@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
 $logo = get_field('logo', 'options');
 $class  = is_front_page() ? 'site-header -frontpage' : 'site-header';
 
@@ -14,10 +17,13 @@ if($pageBlue):
         endif;
     endforeach;
 endif;
+<<<<<<< HEAD
 =======
 $logo = is_front_page() ? get_field('logo', 'options') : get_field('logo-negatif', 'options');
 $class = is_front_page() ? 'site-header -frontpage' : 'site-header';
 >>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
+=======
+>>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
 
 ?>
 
