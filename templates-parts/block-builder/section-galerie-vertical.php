@@ -19,9 +19,9 @@
 
                    <div class="cold col-50">
                         <div class="content">
-                            <?= $titre;?>
-                            <?= $texte;?>
-                            <?php if($cta):?>
+                            <div class="titre h2"><?= $titre;?></div>
+                            <div class="texte"><?= $texte;?>
+                            <?php if($cta):?></div>
                                 <a href="<?= $cta['url'];?>" class="btn-cta"><?= $cta['title'];?></a>
                             <?php endif;?>
                         </div>

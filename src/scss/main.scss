@@ -48,8 +48,14 @@
 
 =======
 @use "builder/big_title_about.scss" as *;
+<<<<<<< HEAD
 @use "builder/section-two-col-about.scss" as *;
 >>>>>>> 927826b (fin2-4)
+=======
+@use "builder/section_accordeon.scss" as *;
+@use "builder/text_overlay.scss" as *;
+
+>>>>>>> 28f81d8 (fin 3-04)
 body {
   font-family: "Manrope", sans-serif;
 }
