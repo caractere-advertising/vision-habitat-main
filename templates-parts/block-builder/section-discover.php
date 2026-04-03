@@ -34,13 +34,13 @@ $link      = get_sub_field("link");
 
     <div class="discover-right big_title">
         <?php if ($title) { ?>
-            <div class="discover-title"><?= $title; ?></div>
+            <div class="discover-title from-right"><?= $title; ?></div>
         <?php } ?>
         <?php if ($paragraph) { ?>
-            <div class="discover-paragraph"><?= $paragraph; ?></div>
+            <div class="discover-paragraph from-right"><?= $paragraph; ?></div>
         <?php } ?>
         <?php if ($link) { ?>
-            <a href="<?= $link['url']; ?>" class="discover-btn">
+            <a href="<?= $link['url']; ?>" class="discover-btn from-bottom">
                 <?= $link['title']; ?> <span>›</span>
             </a>
         <?php } ?>

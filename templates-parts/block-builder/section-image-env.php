@@ -31,16 +31,20 @@ $projets   = get_sub_field('projets');
                 <a href="<?= $link['url']; ?>" class="btn-cta from-left">
 =======
             <?php if ($title): ?>
-                <div class="projects-title"><?= $title; ?></div>
+                <div class="projects-title from-left"><?= $title; ?></div>
             <?php endif; ?>
 
             <?php if ($paragraph): ?>
-                <div class="projects-paragraph"><?= $paragraph; ?></div>
+                <div class="projects-paragraph from-left"><?= $paragraph; ?></div>
             <?php endif; ?>
 
             <?php if ($link) : ?>
+<<<<<<< HEAD
                 <a href="<?= $link['url']; ?>" class="btn-cta">
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
+=======
+                <a href="<?= $link['url']; ?>" class="btn-cta from-left">
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
                     <?= $link['title']; ?>
                 </a>
             <?php endif; ?>
@@ -61,9 +65,14 @@ $projets   = get_sub_field('projets');
                             <div class="slide-info from-bottom">
 =======
                             <div class="slide-info">
+<<<<<<< HEAD
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
                                 <span class="slide-location"><?= $location; ?></span>
                                 <span class="slide-price"><?= $price; ?></span>
+=======
+                                <span class="slide-location from-bottom"><?= $location; ?></span>
+                                <span class="slide-price from-bottom"><?= $price; ?></span>
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
                             </div>
                         </div>
                     <?php endforeach;?>

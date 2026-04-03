@@ -8,10 +8,14 @@ $slides = get_sub_field('slides');
 ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <section class="section-gallery from-bottom">
 =======
 <section class="section-gallery">
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
+=======
+<section class="section-gallery from-bottom">
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
     <div class="swiper swiper-gallery">
         <div class="swiper-wrapper">
             <?php foreach ($slides as $s) :

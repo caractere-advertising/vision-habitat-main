@@ -16,6 +16,9 @@ $count = 1;
             
             if($lien){ ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
                 <a href="<?= $lien['url']; ?>" class="links-item from-bottom"
                  data-image="<?= $image ? $image['url'] : ''; ?>">
                    

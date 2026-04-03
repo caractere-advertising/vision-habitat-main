@@ -26,6 +26,7 @@ import "./js/accordeon.js";
 
 import "./js/filter.js";
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
 =======
 
@@ -56,3 +57,7 @@ import "./js/accordeon.js";
 
 import "./js/filter.js";
 >>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
+=======
+
+import "./js/animate.js";
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)

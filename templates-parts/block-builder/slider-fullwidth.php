@@ -21,10 +21,17 @@
                     </div>
                     
                     <div class="content">
+<<<<<<< HEAD
                         <div class="content-titre" data-swiper-parallax="-200">
                             <?= $s['titre']; ?>
                         </div>
                         <a href="<?= $s['cta']['url']; ?>" class="btn-cta" data-swiper-parallax="-500">
+=======
+                        <div class="content-titre from-right">
+                            <?= $s['titre']; ?>
+                        </div>
+                        <a href="<?= $s['cta']['url']; ?>" class="btn-cta from-right">
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
                             <?= $s['cta']['title']; ?>
                         </a>
                     </div>

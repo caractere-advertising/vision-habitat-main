@@ -19,12 +19,15 @@
 
                    <div class="cold col-50">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <div class="content">
                             <div class="titre h2"><?= $titre;?></div>
                             <div class="texte"><?= $texte;?>
                             <?php if($cta):?></div>
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
                         <div class="content from-right">
                             <?= $titre;?>
                             <?= $texte;?>

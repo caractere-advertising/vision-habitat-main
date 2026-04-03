@@ -23,6 +23,9 @@ $taxonomies   = get_categories();
 
     <?php if($title): ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
         <div class="actu-title from-bottom"><?= $title; ?></div>
     <?php endif; ?>
 

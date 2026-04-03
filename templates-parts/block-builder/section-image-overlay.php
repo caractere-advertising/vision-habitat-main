@@ -20,6 +20,9 @@ $pt_image  = get_sub_field('pt_image');
 
         <div class="img-col">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
             <div class="img-wrapper from-left">
                 <?php if ($gd_image) : ?>
                     <img src="<?= $gd_image['url']; ?>" alt="<?= $gd_image['alt']; ?>" class="img-large">
@@ -90,13 +93,13 @@ $pt_image  = get_sub_field('pt_image');
             <?php if ($liste) : ?>
 =======
             <?php if($categorie): ?>
-                <div class="section-label"><span><?= $categorie; ?></span></div>
+                <div class="section-label from-right"><span><?= $categorie; ?></span></div>
             <?php endif;
             if($details): ?>
-                <div class="text-col-title"><?= $details; ?></div>
+                <div class="text-col-title from-right"><?= $details; ?></div>
             <?php endif;
             if($paragraph): ?>
-                <div class="text-col-paragraph"><?= $paragraph; ?></div>
+                <div class="text-col-paragraph from-right"><?= $paragraph; ?></div>
             <?php endif;
             if($liste): ?>
 >>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
@@ -107,7 +110,7 @@ $pt_image  = get_sub_field('pt_image');
                 </ul>
             <?php endif;
             if ($link) : ?>
-                <a href="<?= $link['url']; ?>" class="btn-cta"><?= $link['title']; ?></a>
+                <a href="<?= $link['url']; ?>" class="btn-cta from-bottom"><?= $link['title']; ?></a>
             <?php endif; ?>
 <<<<<<< HEAD
 
