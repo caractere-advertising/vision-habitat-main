@@ -63,6 +63,9 @@ acf_add_local_field_group( array(
 			array(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 =======
 >>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 				'key' => 'field_69c3da63ab52f',
@@ -77,13 +80,19 @@ acf_add_local_field_group( array(
 				'return_format' => 'array',
 				'library' => 'all',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 				'allow_in_bindings' => 0,
 				'preview_size' => 'medium',
 			),
 			array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
+=======
 >>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 				'key' => 'field_69a9908ba255d',
 				'label' => 'slogan',
