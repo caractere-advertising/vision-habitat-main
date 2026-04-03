@@ -15,13 +15,14 @@ $cards = get_sub_field('card');
                 $link     = $c['card_link'];
             ?>
                 <div class="card">
-
                     <div class="card-image">
                         <?php if ($image) : ?>
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                         <?php endif;
                         if ($link) : ?>
-                            <a href="<?php echo $link['url']; ?>" class="card-plus">+</a>
+                            <a href="<?php echo $link['url']; ?>" class="card-plus">
+                                 <span class="btn-plus-icon">+</span>
+                            </a>
                         <?php endif; ?>
                     </div>
 
