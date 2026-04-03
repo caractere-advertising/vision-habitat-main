@@ -1,14 +1,5 @@
 @use "./../variables/colors.scss" as *;
 
-.hamburger,
-.hamburger.is-active {
-  .hamburger-inner,
-  .hamburger-inner::before,
-  .hamburger-inner::after {
-    background-color: $white !important;
-  }
-}
-
 .menu-burger {
   display: flex;
   width: 100%;
