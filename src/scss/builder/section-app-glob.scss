@@ -27,6 +27,11 @@
         align-items: flex-end;
         justify-content: flex-start;
 
+        &.-left{
+          border: none;
+          border-left: 1px solid $lightGray;
+        }
+
         .content-card {
           max-width: 50%;
           display: flex;

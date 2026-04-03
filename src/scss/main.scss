@@ -54,7 +54,9 @@
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
 @use "builder/big_title_about.scss" as *;
-@use "builder/section-two-col-about.scss" as *;
+@use "builder/section_accordeon.scss" as *;
+@use "builder/text_overlay.scss" as *;
+
 body {
   font-family: "Manrope", sans-serif;
 }
