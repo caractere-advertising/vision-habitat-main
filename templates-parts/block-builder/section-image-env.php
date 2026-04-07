@@ -16,13 +16,15 @@ $projets   = get_sub_field('projets');
     <div class="projects-inner">
 
         <div class="projects-left">
-            <?php if ($title): ?>
-                <div class="projects-title from-left"><?= $title; ?></div>
-            <?php endif; ?>
+            <div class="block-txt">
+                <?php if ($title): ?>
+                    <div class="projects-title from-left"><?= $title; ?></div>
+                <?php endif; ?>
 
-            <?php if ($paragraph): ?>
-                <div class="projects-paragraph from-left"><?= $paragraph; ?></div>
-            <?php endif; ?>
+                <?php if ($paragraph): ?>
+                    <div class="projects-paragraph from-left"><?= $paragraph; ?></div>
+                <?php endif; ?>
+            </div>
 
             <?php if ($link) : ?>
                 <a href="<?= $link['url']; ?>" class="btn-cta from-left">
@@ -42,27 +44,40 @@ $projets   = get_sub_field('projets');
                         ?>
                         <div class="swiper-slide">
                             <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
-                            <div class="slide-info">
-                                <span class="slide-location from-bottom"><?= $location; ?></span>
-                                <span class="slide-price from-bottom"><?= $price; ?></span>
+                            <div class="slide-info from-bottom">
+                                <span class="slide-location"><?= $location; ?></span>
+                                <span class="slide-price"><?= $price; ?></span>
                             </div>
                         </div>
                     <?php endforeach;?>
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="projects-controls container">
         <div class="projects-nav">
-            <button class="projects-prev">&#8249;</button>
-            <button class="projects-next">&#8250;</button>
+            <button class="projects-prev">
+                <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M23.505 0c0.271 0 0.549 0.107 0.757 0.316 0.417 0.417 0.417 1.098 0 1.515l-14.258 14.264 14.050 14.050c0.417 0.417 0.417 1.098 0 1.515s-1.098 0.417-1.515 0l-14.807-14.807c-0.417-0.417-0.417-1.098 0-1.515l15.015-15.022c0.208-0.208 0.486-0.316 0.757-0.316z"></path>
+                    </g>
+                </svg>
+            </button>
+            <button class="projects-next">
+                <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z"></path>
+                    </g>
+                </svg>
+            </button>
         </div>
         <div class="swiper-scrollbar-projects">
         </div>
         <span class="projects-number">01</span>
     </div>
-
 </section>
-

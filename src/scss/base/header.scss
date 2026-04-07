@@ -4,7 +4,9 @@
   width: 100%;
   z-index: 100;
   padding: 30px 0;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   .header-inner {
     width: 90vw;
@@ -60,7 +62,7 @@
 
           > a {
             text-decoration: none;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             letter-spacing: 1px;
             text-transform: uppercase;
             white-space: nowrap;
@@ -89,9 +91,8 @@
 
             .sub-menu {
               position: absolute;
-              top: calc(100% + 20px);
+              top: 100%;
               left: 0;
-              background-color: rgba(255, 255, 255, 0.6);
               min-width: 220px;
               list-style: none;
               padding: 0;
@@ -105,17 +106,23 @@
                 visibility 0.25s;
 
               li {
+                border-bottom: 1px solid $white;
+                transition: color 0.2s ease;
+
                 a {
                   display: block;
-                  padding: 12px 20px;
-                  font-size: 0.75rem;
-                  letter-spacing: 0.08em;
-                  color: $primaryColor;
+                  padding: 5px 20px 5px 0;
+                  font-size: 0.9rem;
+                  letter-spacing: 1px;
+                  color: $white;
                   text-decoration: none;
-                  border-bottom: 1px solid $lightGray;
                   transition: color 0.2s ease;
+                }
 
-                  &:hover {
+                &:hover {
+                  border-color: $secondaryColor;
+
+                  a {
                     color: $secondaryColor;
                   }
                 }
@@ -163,12 +170,6 @@
         background-color: $white !important;
       }
     }
-  }
-
-  &.-frontpage {
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   &.-negatif-header {

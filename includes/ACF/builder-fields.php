@@ -644,7 +644,7 @@ acf_add_local_field_group( array(
                             'key' => 'field_69b7d312726e7',
                             'label' => 'paragraph',
                             'name' => 'paragraph',
-                            'type' => 'text',
+                            'type' => 'wysiwyg',
                             'conditional_logic' => 0,
                             'wrapper' => $wrapper,
                             'default_value' => '',

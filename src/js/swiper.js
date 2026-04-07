@@ -1,5 +1,11 @@
 import Swiper from "swiper";
-import { Pagination, Scrollbar, Navigation, Autoplay } from "swiper/modules";
+import {
+  Pagination,
+  Scrollbar,
+  Navigation,
+  Autoplay,
+  Parallax,
+} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,19 +14,20 @@ import "swiper/css/scrollbar";
 const numberCurrent = document.querySelector(".number-current");
 
 const swiperFullwidth = new Swiper(".swiper-fullwidth", {
-  modules: [Pagination, Scrollbar, Autoplay],
+  modules: [Pagination, Scrollbar, Autoplay, Parallax],
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: true,
+  parallax: true,
+  //autoplay: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
   },
 
   loop: true,
-  speed: 700,
+  speed: 1200,
   spaceBetween: 0,
 
   on: {
