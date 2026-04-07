@@ -25190,7 +25190,7 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
 
   slidesPerView: 1.2,
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".swiper-scrollbar-galerie-slider",
   },
   spaceBetween: 200,
   loop: true,

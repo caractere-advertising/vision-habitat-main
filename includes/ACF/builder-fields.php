@@ -996,6 +996,7 @@ acf_add_local_field_group( array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 28f81d8 (fin 3-04)
 =======
@@ -1018,6 +1019,39 @@ acf_add_local_field_group( array(
                             'key' => 'field_possignature',
                             'label' => 'Signature en haut',
                             'name' => 'signature_top',
+=======
+                            'key' => 'field_possignature',
+                            'label' => 'Signature en haut',
+                            'name' => 'signature_top',
+                            'type' => 'true_false',
+                            'conditional_logic' => 0,
+                            'wrapper' => $wrapper,
+                            'message' => '',
+                            'default_value' => 1,
+                            'allow_in_bindings' => 0,
+                            'ui' => 0,
+                            'ui_on_text' => '',
+                            'ui_off_text' => '',
+                        ),
+                        array(
+                            'key' => 'field_69b3cdfa5aa7e',
+                            'label' => 'Citation',
+                            'name' => 'citation',
+                            'type' => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper' => $wrapper,
+                            'default_value' => '',
+                            'allow_in_bindings' => 0,
+                            'tabs' => 'all',
+                            'toolbar' => 'full',
+                            'media_upload' => 1,
+                            'delay' => 0,
+                        ),
+                        array(
+                            'key' => 'field_69c3b3c691dd7',
+                            'label' => 'Ajouter section bleue ?',
+                            'name' => 'blue_activated',
+>>>>>>> 6ead0fd (Features :)
                             'type' => 'true_false',
                             'conditional_logic' => 0,
                             'wrapper' => $wrapper,
@@ -1804,15 +1838,29 @@ acf_add_local_field_group( array(
                     ),
                 ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6ead0fd (Features :)
 =======
                 ),
  
                 // ─── Section approche globale ────────────────────────────────
+=======
+>>>>>>> 6ead0fd (Features :)
                 'layout_gr1ll3sr3f3r3' => array(
                     'key' => 'layout_gr1ll3sr3f3r3',
                     'name' => 'section-grille-references',
                     'label' => 'Grilles références',
+<<<<<<< HEAD
+=======
+                    'display' => 'block',
+                    'sub_fields' => array(
+                    ),
+                ),
+                'layout_69c6739eade09' => array(
+                    'key' => 'layout_69c6739eade09',
+                    'name' => 'section-approche-globale',
+                    'label' => 'Section approche globale',
+>>>>>>> 6ead0fd (Features :)
                     'display' => 'block',
                 ),
  
