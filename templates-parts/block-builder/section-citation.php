@@ -7,7 +7,11 @@ $name     = get_sub_field('name');
 $citation = get_sub_field('citation');
 $title    = get_sub_field('title');
 $link     = get_sub_field('link');
+
+$signTop  = get_sub_field('signature_top');
 $blueActif = get_sub_field('blue_activated');
+
+echo $signTop;
 
 ?>
 
@@ -28,8 +32,10 @@ $blueActif = get_sub_field('blue_activated');
     <?php if($name):?>
         <div class="citation-block container">
             <div class="citation-inner">
-                <?php if ($name) : ?><span class="citation-name from-left"><?= $name; ?></span><?php endif; ?>
-                <?php if($citation): ?><div class="citation-text from-right"><?= $citation; ?></div><?php endif; ?>
+                <?php if ($name && $signTop == 1) : ?><span class="citation-name from-left"><?= $name; ?></span><?php endif; ?>
+                <?php if ($citation) : ?><div class="citation-text from-right"><?= $citation; ?></div><?php endif; ?>
+                <?php if ($name && $signTop == 0) : ?><span class="citation-name bottom from-left"><?= $name; ?></span><?php endif; ?>
+
             </div>
         </div>
     <?php endif;?>

@@ -70,6 +70,7 @@ $builder_layouts = array(
     'section-image-paralax'      => 'section-parallax',
     'section-formulaire-contact' => 'section-formulaire-contact',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'big_title'=>'big_title_about',
     'section_accordeon'=>'section_accordeon',
     'text_overlay'=>'text_overlay'
@@ -77,6 +78,10 @@ $builder_layouts = array(
 =======
     'section-part-sur-mesure' => 'section-partenaire-sur-mesure',
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
+=======
+    'section-part-sur-mesure'    => 'section-partenaire-sur-mesure',
+    'section-grille-references'   => 'section-grille-references',
+>>>>>>> 6ead0fd (Features :)
 );
 
 if (have_rows('builder', $context_id)) :

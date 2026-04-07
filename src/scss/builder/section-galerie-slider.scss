@@ -35,19 +35,20 @@
       bottom: 0;
       left: -1px;
       background-color: $white;
-      padding: 20px 28px;
+      padding: 50px 30px 50px 10vw;
       min-width: 55%;
       min-height: 200px;
 
       .gallery-titre {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: $primaryColor;
-        margin: 0 0 4px;
+        text-transform: uppercase;
+        color: $secondaryColor;
+        letter-spacing: 5px;
+        font-size: 1rem;
       }
 
       .gallery-description {
         font-size: 1.5rem;
+        font-weight: 700;
         color: $txtColor;
         margin: 0;
       }
@@ -130,8 +131,15 @@
   position: relative;
   margin-top: 100px;
 
-  .swiper-scrollbar {
-    height: 2px !important;
+  .swiper-scrollbar-galerie-slider {
+    height: 1px;
+    background-color: $lightGray;
+
+    .swiper-scrollbar-drag {
+      height: 100%;
+      background-color: $primaryColor;
+      border-radius: 0;
+    }
   }
 }
 
