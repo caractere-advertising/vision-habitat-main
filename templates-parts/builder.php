@@ -69,7 +69,8 @@ $builder_layouts = array(
     'section-step-const'         => 'section-etapes',
     'section-image-paralax'      => 'section-parallax',
     'section-formulaire-contact' => 'section-formulaire-contact',
-    'section-part-sur-mesure' => 'section-partenaire-sur-mesure',
+    'section-part-sur-mesure'    => 'section-partenaire-sur-mesure',
+    'section-grille-references'   => 'section-grille-references',
 );
 
 if (have_rows('builder', $context_id)) :

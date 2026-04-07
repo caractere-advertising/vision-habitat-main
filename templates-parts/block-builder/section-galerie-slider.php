@@ -56,6 +56,6 @@ $slides = get_sub_field('slides');
         </button>
     </div>
     <div class="container content-scrollbar">
-        <div class="swiper-scrollbar"></div>
+        <div class="swiper-scrollbar-galerie-slider"></div>
     </div>
 </section>

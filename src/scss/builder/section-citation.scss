@@ -17,9 +17,23 @@
   }
 
   .citation-name {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: $lightGray;
+    letter-spacing: 3px;
     position: absolute;
+    top: 0;
+    left: 0;
+
+    &.bottom {
+      bottom: -50px;
+      top: auto;
+      left: auto;
+      right: 0;
+      font-size: 1rem;
+      letter-spacing: 5px;
+      color: $primaryColor;
+      font-weight: 700;
+    }
   }
 
   .citation-text {
@@ -27,6 +41,11 @@
     line-height: 1;
     color: $txtColor;
     text-indent: 200px;
+
+    em {
+      color: $lightGray;
+      font-style: normal;
+    }
   }
 }
 

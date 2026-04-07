@@ -21,7 +21,7 @@ const swiperGallery = new Swiper(".swiper-gallery", {
 
   slidesPerView: 1.2,
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".swiper-scrollbar-galerie-slider",
   },
   spaceBetween: 200,
   loop: true,
