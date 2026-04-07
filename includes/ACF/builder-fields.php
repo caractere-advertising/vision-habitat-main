@@ -1328,6 +1328,7 @@ acf_add_local_field_group( array(
                             'name' => 'paragraph',
                             'type' => 'wysiwyg',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> e007f86 (Correction css + animation + section)
 =======
 >>>>>>> 28f81d8 (fin 3-04)
@@ -1335,6 +1336,8 @@ acf_add_local_field_group( array(
 >>>>>>> e007f86 (Correction css + animation + section)
 =======
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+>>>>>>> e007f86 (Correction css + animation + section)
                             'conditional_logic' => 0,
                             'wrapper'        => $wrapper,
                             'default_value'  => '',
