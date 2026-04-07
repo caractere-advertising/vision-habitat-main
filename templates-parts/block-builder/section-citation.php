@@ -27,7 +27,7 @@ $blueActif = get_sub_field('blue_activated');
 =======
     <?php if($name):?>
         <div class="citation-block container">
-            <div class="citation-inner container">
+            <div class="citation-inner">
                 <?php if ($name) : ?><span class="citation-name from-left"><?= $name; ?></span><?php endif; ?>
                 <?php if($citation): ?><div class="citation-text from-right"><?= $citation; ?></div><?php endif; ?>
             </div>

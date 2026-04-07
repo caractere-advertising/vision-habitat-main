@@ -17,20 +17,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 150px;
 
-  .projects-title {
-    color: $white;
-    font-size: 4rem;
-    line-height: 4rem;
-  }
+  .block-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-  .projects-paragraph {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: $white;
-    margin: 0;
-    width: 500px;
+    .projects-title {
+      color: $white;
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+    .projects-paragraph {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $white;
+      margin: 0;
+      width: 500px;
+    }
   }
 
   .btn-cta {
@@ -72,14 +78,15 @@
           font-size: 1.5rem;
           color: $white;
           font-weight: 400;
+          text-shadow: 0 0 20px $black;
         }
 
         .slide-price {
           background-color: $white;
           color: $primaryColor;
-          font-size: 0.75rem;
+          font-size: 1rem;
           font-weight: 500;
-          padding: 8px 18px;
+          padding: 15px 40px;
           border-radius: 40px;
         }
       }
@@ -90,63 +97,75 @@
 .projects-controls {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding: 28px;
-  border-top: 1px solid $lightGray;
-}
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 70vw;
+  max-width: 1000px;
 
-.projects-nav {
-  display: flex;
-  gap: 8px;
-  flex-shrink: 0;
-
-  button {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 1px solid $lightGray;
-    background: none;
-    cursor: pointer;
-    font-size: 2rem;
-    color: $primaryColor;
+  .projects-nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease,
-      border-color 0.2s ease;
+    gap: 8px;
+    flex-shrink: 0;
 
-    &:hover {
-      background-color: $primaryColor;
-      color: $white;
-      border-color: $primaryColor;
+    button {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1px solid $lightGray;
+      background: none;
+      cursor: pointer;
+      font-size: 2rem;
+      color: $primaryColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+      &:hover {
+        background-color: $primaryColor;
+        color: $white;
+        border-color: $primaryColor;
+      }
+
+      svg {
+        fill: $lightGray;
+        height: 25px;
+      }
+
+      &.projects-next {
+        svg {
+          margin-left: 7px;
+        }
+      }
     }
   }
-}
 
-.swiper-scrollbar-projects {
-  display: flex !important;
-  align-items: center;
-  height: 1px;
-  color: $lightGray !important;
-  width: 60%;
-  position: relative;
+  .swiper-scrollbar-projects {
+    display: flex !important;
+    align-items: center;
+    height: 1px;
+    background-color: $lightGray !important;
+    width: 60%;
+    position: relative;
 
-  .swiper-scrollbar-drag {
-    height: 100%;
-    background-color: $primaryColor;
-    border-radius: 0;
+    .swiper-scrollbar-drag {
+      height: 100%;
+      background-color: $primaryColor;
+      border-radius: 0;
+    }
   }
-}
 
-.projects-number {
-  font-size: 4rem;
-  font-weight: 900;
-  color: $secondaryColor;
-  flex-shrink: 0;
-  min-width: 48px;
-  text-align: right;
+  .projects-number {
+    font-size: 5rem;
+    font-weight: 900;
+    color: $secondaryColor;
+    flex-shrink: 0;
+    min-width: 48px;
+    text-align: right;
+  }
 }
 
 // ── Responsive

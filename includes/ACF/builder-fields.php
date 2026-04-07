@@ -662,10 +662,17 @@ acf_add_local_field_group( array(
                             'delay'          => 0,
                         ),
                         array(
+<<<<<<< HEAD
                             'key'            => 'field_69b7d312726e7',
                             'label'          => 'paragraph',
                             'name'           => 'paragraph',
                             'type'           => 'text',
+=======
+                            'key' => 'field_69b7d312726e7',
+                            'label' => 'paragraph',
+                            'name' => 'paragraph',
+                            'type' => 'wysiwyg',
+>>>>>>> e007f86 (Correction css + animation + section)
                             'conditional_logic' => 0,
                             'wrapper'        => $wrapper,
                             'default_value'  => '',

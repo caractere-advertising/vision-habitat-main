@@ -76,9 +76,9 @@
     right: 0;
     z-index: 2;
     background-color: $white;
-    width: clamp(220px, 26vw, 400px);
-    height: 90px;
-    padding: 0 28px;
+    width: clamp(220px, 30vw, 450px);
+    height: 100px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,8 +91,8 @@
       flex: 1;
 
       .number-slide {
-        font-size: 0.72rem;
-        font-weight: 500;
+        font-size: 1rem;
+        font-weight: 300;
         letter-spacing: 0.08em;
         color: $primaryColor;
         min-width: 18px;
@@ -100,16 +100,16 @@
 
       .swiper-scrollbar {
         flex: 1;
-        height: 1px;
+        height: 2px;
         background-color: $lightGray;
         border-radius: 0;
         position: relative;
-        top: auto;
+        top: 0;
         left: auto;
 
         .swiper-scrollbar-drag {
           height: 100%;
-          background-color: $primaryColor;
+          background-color: $secondaryColor;
           border-radius: 0;
           cursor: pointer;
         }
@@ -120,21 +120,25 @@
       position: relative;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 10px;
       flex-shrink: 0;
-      width: auto;
+      width: fit-content;
+      margin: auto;
+      top: 0;
 
       .swiper-pagination-bullet {
-        width: 7px;
-        height: 7px;
+        width: 10px;
+        height: 10px;
         background-color: $lightGray;
+        border: 1px solid $lightGray;
         opacity: 1;
         margin: 0;
         transition: background-color 0.25s ease;
       }
 
       .swiper-pagination-bullet-active {
-        background-color: $primaryColor;
+        background-color: $white;
+        border-color: 1px solid $secondaryColor;
       }
     }
   }
