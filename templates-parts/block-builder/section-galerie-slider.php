@@ -44,6 +44,9 @@ $slides = get_sub_field('slides');
     </div>
     <div class="gallery-nav">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e007f86 (Correction css + animation + section)
         <button class="gallery-next">
             <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -63,12 +66,15 @@ $slides = get_sub_field('slides');
                 </g>
             </svg>
         </button>
+<<<<<<< HEAD
     </div>
     <div class="container content-scrollbar">
         <div class="swiper-scrollbar-galerie-slider"></div>
 =======
         <button class="gallery-next">&#8250;</button>
         <button class="gallery-prev">&#8249;</button>
+=======
+>>>>>>> e007f86 (Correction css + animation + section)
     </div>
     <div class="container content-scrollbar">
         <div class="swiper-scrollbar"></div>

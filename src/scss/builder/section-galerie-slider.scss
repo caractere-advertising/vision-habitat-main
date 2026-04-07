@@ -78,12 +78,17 @@
       border: 1px solid $white;
       background: transparent;
       opacity: 1;
+<<<<<<< HEAD
 <<<<<<< HEAD:src/scss/builder/section-galerie-slider.scss
       margin: 0;
       transition: background-color 0.25s ease;
 =======
       border: 1px solid $white;
 >>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger):src/scss/builder/section5.scss
+=======
+      margin: 0;
+      transition: background-color 0.25s ease;
+>>>>>>> e007f86 (Correction css + animation + section)
     }
 
     .swiper-pagination-bullet-active {

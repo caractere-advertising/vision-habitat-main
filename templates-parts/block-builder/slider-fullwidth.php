@@ -22,6 +22,7 @@
                     
                     <div class="content">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <div class="content-titre" data-swiper-parallax="-200">
                             <?= $s['titre']; ?>
                         </div>
@@ -32,6 +33,12 @@
                         </div>
                         <a href="<?= $s['cta']['url']; ?>" class="btn-cta from-right">
 >>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
+=======
+                        <div class="content-titre" data-swiper-parallax="-200">
+                            <?= $s['titre']; ?>
+                        </div>
+                        <a href="<?= $s['cta']['url']; ?>" class="btn-cta" data-swiper-parallax="-500">
+>>>>>>> e007f86 (Correction css + animation + section)
                             <?= $s['cta']['title']; ?>
                         </a>
                     </div>

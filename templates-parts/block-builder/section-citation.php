@@ -45,6 +45,7 @@ $blueActif = get_sub_field('blue_activated');
 <section class="section-citation">
     <?php if($name):?>
         <div class="citation-block container">
+<<<<<<< HEAD
             <div class="citation-inner container">
 <<<<<<< HEAD
                 <?php if ($name) : ?>
@@ -56,6 +57,9 @@ $blueActif = get_sub_field('blue_activated');
                 <?php endif; ?>
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
 =======
+=======
+            <div class="citation-inner">
+>>>>>>> e007f86 (Correction css + animation + section)
                 <?php if ($name) : ?><span class="citation-name from-left"><?= $name; ?></span><?php endif; ?>
                 <?php if($citation): ?><div class="citation-text from-right"><?= $citation; ?></div><?php endif; ?>
 >>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
