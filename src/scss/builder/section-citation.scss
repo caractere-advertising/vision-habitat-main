@@ -38,6 +38,7 @@
 
   .citation-name {
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 1.2rem;
     color: $lightGray;
     letter-spacing: 3px;
@@ -57,9 +58,29 @@
     }
 =======
     font-size: 1.5rem;
+=======
+    font-size: 1.2rem;
+>>>>>>> 6ead0fd (Features :)
     color: $lightGray;
+    letter-spacing: 3px;
     position: absolute;
+<<<<<<< HEAD
 >>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
+=======
+    top: 0;
+    left: 0;
+
+    &.bottom {
+      bottom: -50px;
+      top: auto;
+      left: auto;
+      right: 0;
+      font-size: 1rem;
+      letter-spacing: 5px;
+      color: $primaryColor;
+      font-weight: 700;
+    }
+>>>>>>> 6ead0fd (Features :)
   }
 
   .citation-text {
@@ -80,6 +101,7 @@
       color: $lightGray;
       font-style: normal;
     }
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -117,6 +139,8 @@
 =======
     text-indent: 200px;
 >>>>>>> e007f86 (Correction css + animation + section)
+=======
+>>>>>>> 6ead0fd (Features :)
   }
 }
 

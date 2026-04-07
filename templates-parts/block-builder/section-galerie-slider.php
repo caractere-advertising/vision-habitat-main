@@ -77,7 +77,11 @@ $slides = get_sub_field('slides');
 >>>>>>> e007f86 (Correction css + animation + section)
     </div>
     <div class="container content-scrollbar">
+<<<<<<< HEAD
         <div class="swiper-scrollbar"></div>
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
+=======
+        <div class="swiper-scrollbar-galerie-slider"></div>
+>>>>>>> 6ead0fd (Features :)
     </div>
 </section>
