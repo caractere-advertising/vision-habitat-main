@@ -1979,6 +1979,9 @@ acf_add_local_field_group( array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 90b60a5 (page about 8-04)
 =======
 >>>>>>> 90b60a5 (page about 8-04)
                          array(
@@ -1986,9 +1989,22 @@ acf_add_local_field_group( array(
                             'label'          => 'Small-titre',
                             'name'           => 'Small-titre',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
+=======
+                            'type'           => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper'        => $wrapper,
+                            'default_value'  => '',
+                            'allow_in_bindings' => 0,
+                            'tabs'           => 'all',
+                            'toolbar'        => 'full',
+                            'media_upload'   => 1,
+                            'delay'          => 0,
+                        ),
+>>>>>>> 90b60a5 (page about 8-04)
                         array(
                             'key'            => 'field_69ca23d9f67cb',
                             'label'          => 'Titre',
