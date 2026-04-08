@@ -13,6 +13,7 @@ $links=get_sub_field('lien_accordeon');
             <?php if ($image) : ?>
         <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>">
             <?php endif; ?>
+<<<<<<< HEAD
         </div>
 
         <div class="col-text">
@@ -47,19 +48,27 @@ $links=get_sub_field('lien_accordeon');
         <p class="small_title"><?php echo $small_title ?></p>
    
     <div class="title"><?php echo $title ?></div>
+=======
+>>>>>>> 8dc1db5 (corretion section)
         </div>
-    <ul class="accordeon">
-        <?php foreach ($links as $link): ?>
-        <li class="accordeon_el">
-            <a href="<?= esc_url($link['lien']['url']) ?>"><?= esc_html($link['lien']['title']) ?></a>
-</li>
-        
-        <?php endforeach; ?>
-        
-       
-    </ul>
- </div>
-</div>
 
+<<<<<<< HEAD
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+        <div class="col-text">
+            <div class="section-header">
+            <p class="small_title"><?= $small_title ?></p>
+    
+        <div class="title"><?= $title ?></div>
+            </div>
+        <ul class="accordeon">
+            <?php foreach ($links as $link): ?>
+                <li class="accordeon_el">
+                    <a href="<?= esc_url($link['lien']['url']) ?>"><?= esc_html($link['lien']['title']) ?></a>
+                </li>
+            <?php endforeach; ?>       
+        </ul>
+    </div>
+    </div>
+>>>>>>> 8dc1db5 (corretion section)
 </section>
