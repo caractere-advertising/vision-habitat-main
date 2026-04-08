@@ -7,3 +7,7 @@ import "./js/scroll-top.js";
 
 import "./js/parallax.js";
 import "./js/img-hover.js";
+
+import "./js/filter.js";
+
+import "./js/animate.js";

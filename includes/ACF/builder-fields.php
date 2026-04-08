@@ -524,14 +524,18 @@ acf_add_local_field_group( array(
                             'label'          => 'Citation',
                             'name'           => 'citation',
                             'type'           => 'wysiwyg',
+                            'key' => 'field_possignature',
+                            'label' => 'Signature en haut',
+                            'name' => 'signature_top',
+                            'type' => 'true_false',
                             'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
+                            'wrapper' => $wrapper,
+                            'message' => '',
+                            'default_value' => 1,
                             'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
+                            'ui' => 0,
+                            'ui_on_text' => '',
+                            'ui_off_text' => '',
                         ),
                         array(
                             'key'             => 'field_69c3b3c691dd7',
@@ -546,25 +550,6 @@ acf_add_local_field_group( array(
                             'ui'              => 0,
                             'ui_on_text'      => '',
                             'ui_off_text'     => '',
-                        ),
-                        array(
-                            'key'               => 'field_69c3b3b391dd6',
-                            'label'             => 'Section bleue',
-                            'name'              => '',
-                            'type'              => 'tab',
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field'    => 'field_69c3b3c691dd7',
-                                        'operator' => '==',
-                                        'value'    => '1',
-                                    ),
-                                ),
-                            ),
-                            'wrapper'   => $wrapper,
-                            'placement' => 'top',
-                            'endpoint'  => 0,
-                            'selected'  => 0,
                         ),
                         array(
                             'key'            => 'field_69b3cf145aa7f',
@@ -665,7 +650,7 @@ acf_add_local_field_group( array(
                             'key'            => 'field_69b7d312726e7',
                             'label'          => 'paragraph',
                             'name'           => 'paragraph',
-                            'type'           => 'text',
+                            'type'           => 'wysiwyg',
                             'conditional_logic' => 0,
                             'wrapper'        => $wrapper,
                             'default_value'  => '',
@@ -1058,8 +1043,16 @@ acf_add_local_field_group( array(
                     'display'    => 'block',
                     'sub_fields' => array(),
                 ),
- 
-                // ─── Section approche globale ────────────────────────────────
+
+                'layout_gr1ll3sr3f3r3' => array(
+                    'key' => 'layout_gr1ll3sr3f3r3',
+                    'name' => 'section-grille-references',
+                    'label' => 'Grilles références',
+                    'display' => 'block',
+                    'sub_fields' => array(
+                    ),
+                ),
+
                 'layout_69c6739eade09' => array(
                     'key'        => 'layout_69c6739eade09',
                     'name'       => 'section-approche-globale',
@@ -1194,7 +1187,7 @@ acf_add_local_field_group( array(
                     'label'      => 'Section 2 colonnes simple',
                     'display'    => 'block',
                     'sub_fields' => array(
-                         array(
+                        array(
                             'key'            => 'field_69ca23d9f67ca',
                             'label'          => 'Small-titre',
                             'name'           => 'Small-titre',
@@ -1528,8 +1521,47 @@ acf_add_local_field_group( array(
                     'display'    => 'block',
                     'sub_fields' => array(),
                 ),
- 
-            ), // fin layouts
+
+                'layout_s3ct10nsurm3sur3' => array(
+                    'key' => 'layout_s3ct10nsurm3sur3',
+                    'name' => 'section-part-sur-mesure',
+                    'label' => 'Section sur mesure',
+                    'display' => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key'   => 'field_title_section',
+                            'label' => 'Titre',
+                            'name'  => 'titre',
+                            'type'  => 'wysiwyg'
+                        ),
+                        array(
+                            'key'   => 'field_texte_section',
+                            'label' => 'Texte',
+                            'name'  => 'texte',
+                            'type'  => 'wysiwyg'
+                        ),
+                        array(
+                            'key'   => 'field_repeat_step',
+                            'label' => 'Slides',
+                            'name'  => 'slides-sur-mesure',
+                            'type'  => 'repeater',
+                            'layout' => 'line',
+                            'sub_fields' => array(
+                                array(
+                                    'key'   => 'field_step_image',
+                                    'label' => 'Image',
+                                    'name'  => 'image',
+                                    'type'  => 'image',
+                                    'wrapper' => $wrapper,
+                                    'parent_repeater' => 'field_repeat_step',
+                                ),
+                            ),
+                        )
+                    )
+
+                ),
+            ),
+            'button_label' => 'Ajouter un élément',
         ),
     ), // fin fields
     'location' => array(

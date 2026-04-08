@@ -4,8 +4,6 @@
   position: relative;
   padding: 100px 0;
   background-color: $white;
-  // display: flex;
-  // align-items: center;
 }
 
 .swiper-gallery {
@@ -14,8 +12,6 @@
   position: relative;
 
   .swiper-slide {
-    //width: 60%;
-
     .gallery-slide-inner {
       position: relative;
     }
@@ -37,21 +33,22 @@
     .gallery-info {
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: -1px;
       background-color: $white;
-      padding: 20px 28px;
+      padding: 50px 30px 50px 10vw;
       min-width: 55%;
       min-height: 200px;
 
       .gallery-titre {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: $primaryColor;
-        margin: 0 0 4px;
+        text-transform: uppercase;
+        color: $secondaryColor;
+        letter-spacing: 5px;
+        font-size: 1rem;
       }
 
       .gallery-description {
         font-size: 1.5rem;
+        font-weight: 700;
         color: $txtColor;
         margin: 0;
       }
@@ -73,15 +70,21 @@
     justify-content: flex-end;
     position: relative;
     padding-right: 50px;
+    gap: 15px;
 
     .swiper-pagination-bullet {
-      background-color: $lightGray;
+      width: 10px;
+      height: 10px;
+      border: 1px solid $white;
+      background: transparent;
       opacity: 1;
-      border: 1px solid #fff;
+      margin: 0;
+      transition: background-color 0.25s ease;
     }
 
     .swiper-pagination-bullet-active {
-      background-color: $primaryColor;
+      background-color: $white;
+      border-color: 1px solid $secondaryColor;
     }
   }
 }
@@ -89,23 +92,20 @@
 .gallery-nav {
   position: absolute;
   right: 11%;
-  bottom: 116px;
+  bottom: 128px;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   z-index: 2;
 
   button {
     margin-right: 0px;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: 1px solid $lightGray;
-    background: $white;
     cursor: pointer;
-    font-size: 2rem;
-    color: $primaryColor;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,10 +113,16 @@
       background-color 0.2s ease,
       color 0.2s ease;
 
-    &:hover {
-      background-color: $primaryColor;
-      color: $white;
-      border-color: $primaryColor;
+    svg {
+      fill: $lightGray;
+      height: 25px;
+      margin-left: 7px;
+    }
+
+    &.gallery-prev {
+      svg {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -125,8 +131,15 @@
   position: relative;
   margin-top: 100px;
 
-  .swiper-scrollbar {
-    height: 2px !important;
+  .swiper-scrollbar-galerie-slider {
+    height: 1px;
+    background-color: $lightGray;
+
+    .swiper-scrollbar-drag {
+      height: 100%;
+      background-color: $primaryColor;
+      border-radius: 0;
+    }
   }
 }
 

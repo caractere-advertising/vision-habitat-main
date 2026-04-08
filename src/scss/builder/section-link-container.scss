@@ -35,14 +35,10 @@
 
 @media (max-width: 768px) {
   .section-links {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 40px 5%;
 
     .links-item {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding: 20px 0;
 
       .links-label {
         font-size: 2rem;

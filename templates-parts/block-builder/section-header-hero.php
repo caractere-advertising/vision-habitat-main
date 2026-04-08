@@ -10,7 +10,7 @@ $cta_btn  = get_sub_field('cta_btn');
 <?php if ($image && isset($image['url'])) : ?>
   <section class="hero">
     <div class="hero-bg" style="background-image: url('<?= esc_url($image['url']); ?>')"></div>
-    <div class="hero-content">
+    <div class="hero-content from-bottom">
       <?= wp_kses_post($titre);
       
       if ($cta_btn) : ?>

@@ -1,11 +1,11 @@
 @use "./../variables/colors.scss" as *;
 
 .section-service-header {
-  margin-top: -200px;
+  margin-top: 0px;
   background-color: $primaryColor;
   height: 30vh;
   width: 100vw;
-  min-height: 500px;
+  min-height: 550px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -28,7 +28,7 @@
 
     .cold {
       .block-cta {
-        background-color: #fff;
+        background-color: $white;
         height: 60px;
         width: 400px;
         display: flex;

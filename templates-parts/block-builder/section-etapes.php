@@ -34,10 +34,10 @@ $slides   = get_sub_field('slides-step');
 
                                     <div class="cold">
                                         <?php if (!empty($s['titre'])): ?>
-                                            <div class="slide-title"><?= str_pad($i, 2, '0', STR_PAD_LEFT) . '. ' . $s['titre']; ?></div>
+                                            <div class="slide-title from-right"><?= str_pad($i, 2, '0', STR_PAD_LEFT) . '. ' . $s['titre']; ?></div>
                                         <?php endif; ?>
                                         <?php if (!empty($s['texte'])): ?>
-                                            <div class="slide-text"><?= $s['texte']; ?></div>
+                                            <div class="slide-text from-right"><?= $s['texte']; ?></div>
                                         <?php endif; ?>
                                     </div>
                                 </div>
