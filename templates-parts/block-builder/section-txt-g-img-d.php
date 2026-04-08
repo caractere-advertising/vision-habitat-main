@@ -15,9 +15,7 @@ $img   = get_sub_field('image');
             <?= $titre;?>
             <div class="intro"><?= $intro;?></div>
             <?php if($cta):?>
-                <a class="btn-cta" href="<?= $cta['url'];?>">
-                    <?= $cta['title'];?>
-                </a>
+                <a class="btn-cta" href="<?= $cta['url'];?>"><?= $cta['title'];?></a>
             <?php endif;?>
         </div>
         <div class="cold col-50">
