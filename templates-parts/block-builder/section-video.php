@@ -11,15 +11,13 @@ $video     = get_sub_field("video");
     <div class="video-top container">
         <div class="video-top-left">
             <?php if ($text_ev) { ?>
-            <div class="video-text from-top"><?= $text_ev; ?></div>
-            <hr class="video-line">
+                <div class="video-text from-top"><?= $text_ev; ?></div>
+                <hr class="video-line">
             <?php } ?>
         </div>
 
         <div class="video-top-right">
-            <?php if ($paragraph) { ?>
-            <p class="video-paragraph from-top"><?= $paragraph; ?></p>
-            <?php } ?>
+            <?php if ($paragraph): ?><p class="video-paragraph from-top"><?= $paragraph; ?></p><?php endif;?>
         </div>
 
     </div>
