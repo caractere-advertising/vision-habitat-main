@@ -93,8 +93,9 @@ function fix_svg() {
           }
           </style>';
 }
-  add_filter( 'upload_mimes', 'cc_mime_types' );
-  add_action( 'admin_head', 'fix_svg' );
+
+add_filter( 'upload_mimes', 'cc_mime_types' );
+add_action( 'admin_head', 'fix_svg' );
 
 function register_menus() {
     register_nav_menus([
@@ -102,6 +103,7 @@ function register_menus() {
         'burger-menu'  => 'Menu burger',
     ]);
 }
+
 add_action('after_setup_theme', 'register_menus');
 
 function return_post(){
@@ -114,4 +116,5 @@ function return_post(){
 function vision_habitat_enqueue() {
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap', [], null);
 }
+
 add_action('wp_enqueue_scripts', 'vision_habitat_enqueue');
