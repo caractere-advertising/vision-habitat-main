@@ -6,6 +6,7 @@ $links=get_sub_field('lien_accordeon');
 ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <section class="section-accordeon">
     <div class="container">
         <div class="col-image">
@@ -31,6 +32,9 @@ $links=get_sub_field('lien_accordeon');
     </div>
 =======
 <section>
+=======
+<section class="section-accordeon">
+>>>>>>> 90b60a5 (page about 8-04)
 <div class="container">
     <div class="col-image">
         <?php if ($image) : ?>
@@ -39,15 +43,17 @@ $links=get_sub_field('lien_accordeon');
     </div>
 
     <div class="col-text">
+        <div class="section-header">
         <p class="small_title"><?php echo $small_title ?></p>
    
     <div class="title"><?php echo $title ?></div>
+        </div>
     <ul class="accordeon">
         <?php foreach ($links as $link): ?>
         <li class="accordeon_el">
             <a href="<?= esc_url($link['lien']['url']) ?>"><?= esc_html($link['lien']['title']) ?></a>
 </li>
-        </li>
+        
         <?php endforeach; ?>
         
        

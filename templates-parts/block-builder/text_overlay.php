@@ -32,7 +32,7 @@ $link = get_sub_field('link');
 </div>
 <div class="container_overlay">
 <div><img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>"></div>
-<div>
+<div class="content_overlay">
     <div class="paragraph"> <?php echo $paragraph ?></div>
 
     <?php if($link):?>
