@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/tailwind.css"
@@ -7,7 +8,6 @@
   \******************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3392,6 +3392,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*! tailwindcss v4.2.1 | MIT License |
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 () {
 =======
 =======
@@ -3443,6 +3444,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*! tailwindcss v4.2.1 | MIT License |
 >>>>>>> 930d384 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 (module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3453,12 +3456,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+<<<<<<< HEAD
 // Imports
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
+=======
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ Object(function webpackMissingModule() { var e = new Error("Cannot find module './../../assets/images/arrow-right-gold.svg'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
+/* Transparent */
+/* Dégradés */
+>>>>>>> 407ec6a (correction color)
 .container {
   width: 80vw;
   max-width: 1200px;
@@ -3472,8 +3491,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 .container.flex .col-1 {
   width: 1%;
 }
@@ -3775,6 +3797,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
   width: 100%;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .container.flex .col-50 {
   width: 50%;
@@ -3797,6 +3820,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 .container.grid {
   display: grid;
 }
@@ -3807,6 +3832,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
   line-height: 3.5rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3842,6 +3868,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
 =======
 >>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
 =======
+=======
+>>>>>>> 407ec6a (correction color)
 .block-img img {
   width: 100%;
   height: 100%;
@@ -3870,7 +3898,24 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
      object-fit: cover;
 }
 
+<<<<<<< HEAD
 >>>>>>> 927826b (fin2-4)
+=======
+.block-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+>>>>>>> 407ec6a (correction color)
 .block-img img {
   width: 100%;
   height: 100%;
@@ -3910,6 +3955,7 @@ strong {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 815fcfc (structure html)
 =======
@@ -3922,6 +3968,8 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 .btn-cta {
   display: flex;
   width: -moz-fit-content;
@@ -3939,6 +3987,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   letter-spacing: 3px;
 =======
 >>>>>>> 815fcfc (structure html)
@@ -3956,6 +4005,9 @@ strong {
 =======
   letter-spacing: 3px;
 >>>>>>> 927826b (fin2-4)
+=======
+  letter-spacing: 3px;
+>>>>>>> 407ec6a (correction color)
   text-transform: uppercase;
   padding-bottom: 6px;
   border-bottom: 1px solid #05233c;
@@ -4265,6 +4317,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 100px 0;
 =======
   padding: 90px 0;
@@ -4286,6 +4339,9 @@ strong {
 =======
   padding: 100px 0;
 >>>>>>> 927826b (fin2-4)
+=======
+  padding: 100px 0;
+>>>>>>> 407ec6a (correction color)
 }
 .section-two-col .two-col-inner {
   gap: 80px;
@@ -4296,6 +4352,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-two-col .two-col-inner .two-col-left .section-label {
 =======
 
@@ -4316,6 +4373,9 @@ strong {
 =======
 .section-two-col .two-col-inner .two-col-left .section-label {
 >>>>>>> 927826b (fin2-4)
+=======
+.section-two-col .two-col-inner .two-col-left .section-label {
+>>>>>>> 407ec6a (correction color)
   display: flex;
   align-items: center;
   gap: 16px;
@@ -4326,6 +4386,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-two-col .two-col-inner .two-col-left .section-label span {
 =======
 .two-col-left .section-label span {
@@ -4342,6 +4403,9 @@ strong {
 =======
 .section-two-col .two-col-inner .two-col-left .section-label span {
 >>>>>>> 927826b (fin2-4)
+=======
+.section-two-col .two-col-inner .two-col-left .section-label span {
+>>>>>>> 407ec6a (correction color)
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -4352,6 +4416,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-two-col .two-col-inner .two-col-left .section-label .two-col-left .section-label {
 =======
 .two-col-left .section-label .two-col-left .section-label {
@@ -4368,6 +4433,9 @@ strong {
 =======
 .section-two-col .two-col-inner .two-col-left .section-label .two-col-left .section-label {
 >>>>>>> 927826b (fin2-4)
+=======
+.section-two-col .two-col-inner .two-col-left .section-label .two-col-left .section-label {
+>>>>>>> 407ec6a (correction color)
   display: flex;
   align-items: center;
   gap: 16px;
@@ -4378,6 +4446,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-two-col .two-col-inner .two-col-left .section-label .two-col-left .section-label .two-col-title {
 =======
 .two-col-left .section-label .two-col-left .section-label .two-col-title {
@@ -4394,6 +4463,9 @@ strong {
 =======
 .section-two-col .two-col-inner .two-col-left .section-label .two-col-left .section-label .two-col-title {
 >>>>>>> 927826b (fin2-4)
+=======
+.section-two-col .two-col-inner .two-col-left .section-label .two-col-left .section-label .two-col-title {
+>>>>>>> 407ec6a (correction color)
   font-size: 4rem;
   line-height: 1.2;
   max-width: 550px;
@@ -4403,6 +4475,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-two-col .two-col-inner .two-col-left .section-label .two-col-left::after {
 =======
 .two-col-left .section-label .two-col-left::after {
@@ -4419,6 +4492,9 @@ strong {
 =======
 .section-two-col .two-col-inner .two-col-left .section-label .two-col-left::after {
 >>>>>>> 927826b (fin2-4)
+=======
+.section-two-col .two-col-inner .two-col-left .section-label .two-col-left::after {
+>>>>>>> 407ec6a (correction color)
   content: "";
   display: block;
   height: 1px;
@@ -4431,6 +4507,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-two-col .two-col-inner .two-col-left .two-col-details,
 .section-two-col .two-col-inner .two-col-left .two-col-paragraph {
 =======
@@ -4453,6 +4530,10 @@ strong {
 .section-two-col .two-col-inner .two-col-left .two-col-details,
 .section-two-col .two-col-inner .two-col-left .two-col-paragraph {
 >>>>>>> 927826b (fin2-4)
+=======
+.section-two-col .two-col-inner .two-col-left .two-col-details,
+.section-two-col .two-col-inner .two-col-left .two-col-paragraph {
+>>>>>>> 407ec6a (correction color)
   font-size: 1rem;
   line-height: 1.8;
   color: #222;
@@ -4462,6 +4543,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-two-col .two-col-inner .two-col-left .two-col-details p,
 .section-two-col .two-col-inner .two-col-left .two-col-paragraph p {
 =======
@@ -4484,6 +4566,10 @@ strong {
 .section-two-col .two-col-inner .two-col-left .two-col-details p,
 .section-two-col .two-col-inner .two-col-left .two-col-paragraph p {
 >>>>>>> 927826b (fin2-4)
+=======
+.section-two-col .two-col-inner .two-col-left .two-col-details p,
+.section-two-col .two-col-inner .two-col-left .two-col-paragraph p {
+>>>>>>> 407ec6a (correction color)
   margin: 0;
 }
 
@@ -4509,6 +4595,7 @@ strong {
 }
 .section-gallery {
   position: relative;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4545,6 +4632,10 @@ strong {
   padding: 100px 0;
   background-color: #fff;
 >>>>>>> 927826b (fin2-4)
+=======
+  padding: 100px 0;
+  background-color: #fff;
+>>>>>>> 407ec6a (correction color)
 }
 
 .swiper-gallery {
@@ -4622,6 +4713,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   bottom: 116px;
 =======
   bottom: 0;
@@ -4641,6 +4733,9 @@ strong {
 =======
   bottom: 116px;
 >>>>>>> 927826b (fin2-4)
+=======
+  bottom: 116px;
+>>>>>>> 407ec6a (correction color)
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -4674,6 +4769,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
 =======
@@ -4682,6 +4778,8 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 .content-scrollbar {
   position: relative;
   margin-top: 100px;
@@ -4690,6 +4788,7 @@ strong {
   height: 2px !important;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4706,6 +4805,8 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 @media (max-width: 768px) {
   .swiper-gallery .swiper-slide {
     width: 85%;
@@ -4719,6 +4820,7 @@ strong {
   padding: 90px 0;
 }
 .section-img-text .section-img-text-inner {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4739,6 +4841,8 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
   display: grid;
   grid-template-columns: 45% 1fr;
   gap: 80px;
@@ -4807,6 +4911,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-top: 50px;
 =======
   margin-top: 100px;
@@ -4826,6 +4931,9 @@ strong {
 =======
   margin-top: 50px;
 >>>>>>> 927826b (fin2-4)
+=======
+  margin-top: 50px;
+>>>>>>> 407ec6a (correction color)
 }
 .text-col .text-col-paragraph p {
   margin: 0;
@@ -5038,6 +5146,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 50px auto;
 =======
   margin-bottom: 100px;
@@ -5058,6 +5167,9 @@ strong {
 =======
   margin: 50px auto;
 >>>>>>> 927826b (fin2-4)
+=======
+  margin: 50px auto;
+>>>>>>> 407ec6a (correction color)
 }
 
 .citation-block {
@@ -5079,6 +5191,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   position: absolute;
 =======
   width: 280px;
@@ -5098,11 +5211,15 @@ strong {
 =======
   position: absolute;
 >>>>>>> 927826b (fin2-4)
+=======
+  position: absolute;
+>>>>>>> 407ec6a (correction color)
 }
 .citation-block .citation-text {
   font-size: 4rem;
   line-height: 1;
   color: #222;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5117,11 +5234,14 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
   text-indent: 150px;
 }
 
 .citation-blue {
   width: calc(100% - 60px);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5147,6 +5267,8 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
   height: 500px;
   background-color: #05233c;
   margin: 0 30px 0 30px;
@@ -5222,6 +5344,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 048dcbb (npm run build)
@@ -5245,6 +5368,8 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
   background-color: #05233c;
   background-size: cover;
   background-position: center;
@@ -5257,6 +5382,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 50px 60px 80px;
 =======
 =======
@@ -5282,6 +5408,9 @@ strong {
 =======
   padding: 50px 60px 80px;
 >>>>>>> 927826b (fin2-4)
+=======
+  padding: 50px 60px 80px;
+>>>>>>> 407ec6a (correction color)
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -5351,6 +5480,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 60px 0;
 =======
   padding-top: 60px;
@@ -5371,10 +5501,14 @@ strong {
 =======
   padding: 60px 0;
 >>>>>>> 927826b (fin2-4)
+=======
+  padding: 60px 0;
+>>>>>>> 407ec6a (correction color)
   margin-top: 100px;
 }
 .section-links .links-item {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5409,6 +5543,11 @@ strong {
   gap: 20px;
   padding: 30px 0;
 >>>>>>> 927826b (fin2-4)
+=======
+  align-items: flex-end;
+  gap: 20px;
+  padding: 30px 0;
+>>>>>>> 407ec6a (correction color)
   border-top: 1px solid #e2e2e2;
   text-decoration: none;
 }
@@ -5416,6 +5555,7 @@ strong {
   border-bottom: 1px solid #e2e2e2;
 }
 .section-links .links-item .links-numero {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5437,6 +5577,9 @@ strong {
 =======
   font-size: 1rem;
 >>>>>>> 927826b (fin2-4)
+=======
+  font-size: 1rem;
+>>>>>>> 407ec6a (correction color)
   color: #d3bea1;
   letter-spacing: 0.1em;
   min-width: 20px;
@@ -5489,6 +5632,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-top: 100px;
   padding: 100px 0;
 =======
@@ -5520,6 +5664,10 @@ strong {
   margin-top: 100px;
   padding: 100px 0;
 >>>>>>> 927826b (fin2-4)
+=======
+  margin-top: 100px;
+  padding: 100px 0;
+>>>>>>> 407ec6a (correction color)
 }
 .section-video .video-top {
   display: flex;
@@ -5553,6 +5701,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 1rem;
 =======
   font-size: 0.85rem;
@@ -5569,6 +5718,9 @@ strong {
 =======
   font-size: 1rem;
 >>>>>>> 927826b (fin2-4)
+=======
+  font-size: 1rem;
+>>>>>>> 407ec6a (correction color)
   line-height: 1.7;
   margin-top: 120px;
 }
@@ -5726,6 +5878,7 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 401cb8c (avancement bg-menu)
 =======
@@ -5749,12 +5902,15 @@ strong {
   gap: 10px;
   margin-top: 300px;
 =======
+=======
+>>>>>>> 407ec6a (correction color)
 .menu-burger {
   display: flex;
   width: 100%;
   height: 100vh;
   gap: 10px;
   align-items: flex-end;
+<<<<<<< HEAD
 >>>>>>> 927826b (fin2-4)
 }
 
@@ -5857,11 +6013,28 @@ strong {
   text-transform: uppercase;
   margin-bottom: 4px;
 =======
+=======
+  justify-content: space-between;
+  /* Colonne gauche */
+}
+.menu-burger .menu-burger-left {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.menu-burger .menu-burger-left img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> 407ec6a (correction color)
   z-index: 1;
   width: 100%;
   height: 100%;
   filter: brightness(0.5);
 }
+<<<<<<< HEAD
 
 .menu-burger-left-logo {
   position: absolute;
@@ -5871,11 +6044,15 @@ strong {
 }
 
 .menu-burger-left-bottom {
+=======
+.menu-burger .menu-burger-left .menu-burger-left-bottom {
+>>>>>>> 407ec6a (correction color)
   position: absolute;
   z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
+<<<<<<< HEAD
   bottom: 180px;
 }
 
@@ -5912,11 +6089,61 @@ strong {
 }
 
 .menu-burger-right {
+=======
+  bottom: 80px;
+  padding-left: 5vw;
+}
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-contact {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-contact .menu-burger-contact-name {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-contact .contact-adresse p,
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-contact .contact-adresse p + p,
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-contact .contact-tel-mail p,
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-contact .contact-tel-mail p + p {
+  margin-top: 0;
+  line-height: 1.5rem;
+}
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-socials {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px;
+}
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-socials a {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.menu-burger .menu-burger-left .menu-burger-left-bottom .menu-burger-socials a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  filter: none;
+}
+.menu-burger {
+  /* Colonne droite */
+}
+.menu-burger .menu-burger-right {
+>>>>>>> 407ec6a (correction color)
   width: 50%;
   background-color: #05233c;
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
   align-items: flex-end;
   padding: 60px 80px;
@@ -6199,6 +6426,83 @@ strong {
   gap: 12px;
 =======
 .burger-bottom {
+=======
+  align-items: flex-end;
+  padding-bottom: 80px;
+  padding-right: 50px;
+  gap: 150px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.menu-burger .menu-burger-right .burger-nav {
+  width: 100%;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list li {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  text-align: right;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list li a {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list li.big-menu {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list li.big-menu a {
+  line-height: 2.5rem;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list li.bg-menu-small {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list li.bg-menu-small a {
+  line-height: 2rem;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list li.bg-menu-gold {
+  color: #d3bea1;
+  font-size: 1.5rem;
+}
+.menu-burger .menu-burger-right .burger-nav .burger-menu_list li.bg-menu-gold a {
+  line-height: 1.5rem;
+}
+.menu-burger .menu-burger-right .burger-nav li.big-menu + li.bg-menu-small,
+.menu-burger .menu-burger-right .burger-nav li.bg-menu-small + li.bg-menu-gold {
+  margin-top: 30px;
+}
+.menu-burger .menu-burger-right .burger-nav li.bg-menu-gold + li.bg-menu-gold {
+  margin-top: 0;
+}
+.menu-burger .menu-burger-right .burger-nav li.has-arrow a::before {
+  content: "";
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-size: cover;
+  color: #d3bea1;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+}
+.menu-burger .menu-burger-right .menu-bottom {
+  width: 100%;
+}
+.menu-burger .menu-burger-right .menu-bottom .burger-bottom {
+>>>>>>> 407ec6a (correction color)
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
@@ -6208,6 +6512,7 @@ strong {
   padding-left: 100px;
   margin-left: auto;
   align-items: flex-end;
+<<<<<<< HEAD
 }
 
 .menu-bottom {
@@ -6364,6 +6669,44 @@ strong {
 }
 
 >>>>>>> 927826b (fin2-4)
+=======
+  border-top: 1px solid rgba(226, 226, 226, 0.4392156863);
+}
+.menu-burger .menu-burger-right .menu-bottom .burger-bottom .burger-legal-footer {
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.menu-burger .menu-burger-right .menu-bottom .burger-bottom .burger-legal-footer li a {
+  color: #e2e2e2;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu-burger .menu-burger-right .menu-bottom .burger-bottom .burger-legal-footer li + li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #e2e2e2;
+}
+.menu-burger .menu-burger-right .menu-bottom .burger-bottom .burger-legal-copy {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+.menu-burger .menu-burger-right .menu-bottom .burger-bottom .burger-legal-copy .burger-legal-links,
+.menu-burger .menu-burger-right .menu-bottom .burger-bottom .burger-legal-copy .burger-legal-copyright {
+  color: #e2e2e2;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+>>>>>>> 407ec6a (correction color)
 .site-header {
   width: 100%;
   z-index: 100;
@@ -6535,9 +6878,13 @@ strong {
   transform: translateX(100%);
   transition: transform 0.4s ease, opacity 0.3s ease, visibility 0.4s;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   height: 100vh;
 >>>>>>> 927826b (fin2-4)
+=======
+  height: 100vh;
+>>>>>>> 407ec6a (correction color)
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -6706,8 +7053,11 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 .galerie-reference .swiper-reference {
   height: 90vh;
 }
@@ -6747,6 +7097,7 @@ strong {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 11459a4 (Optimisation section.php + css + ajout nouvelle section page "construire")
 =======
@@ -6755,6 +7106,8 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 .section-service-header {
   margin-top: -200px;
   background-color: #05233c;
@@ -6787,6 +7140,7 @@ strong {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6829,6 +7183,8 @@ strong {
 >>>>>>> 61d98e1 (remove assets/dist/)
 =======
 >>>>>>> 927826b (fin2-4)
+=======
+>>>>>>> 407ec6a (correction color)
 .section-approche-globale {
   padding: 100px 0;
 }
@@ -6923,15 +7279,21 @@ strong {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 927826b (fin2-4)
 =======
+=======
+>>>>>>> 407ec6a (correction color)
 .titre h2 {
   font-size: 3.5rem;
   color: #05233c;
 }
 
+<<<<<<< HEAD
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+>>>>>>> 407ec6a (correction color)
 .section-galerie-vertical {
   padding: 50px 0;
 }
@@ -7196,6 +7558,7 @@ strong {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
   font-family: "Manrope", sans-serif;
 <<<<<<< HEAD
@@ -7276,6 +7639,8 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nexpected \"}\".\n\u001b[34m    ╷\u001b[0m\n\u001b[34m273 │\u001b[0m }\u001b[31m\u001b[0m\n\u001b[34m    │\u001b[0m \u001b[31m ^\u001b[0m\n\u001b[34m    ╵\u001b[0m\n  src/scss/burger-menu/burger-menu.scss 273:2  @use\n  src/scss/main.scss 17:1                      root stylesheet");
 >>>>>>> 7ef033f (0204)
 =======
+=======
+>>>>>>> 407ec6a (correction color)
 .big_title h2 {
   color: #05233c;
   font-size: 8rem;
@@ -7290,18 +7655,31 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 .section-accordeon .container {
   display: flex;
   gap: 40px;
+<<<<<<< HEAD
   align-items: stretch;
+=======
+>>>>>>> 407ec6a (correction color)
 }
 .section-accordeon .col-image {
   width: 50%;
 }
+<<<<<<< HEAD
+=======
+.section-accordeon img {
+  height: 800px;
+  width: 600px;
+}
+>>>>>>> 407ec6a (correction color)
 .section-accordeon .col-text {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   justify-content: space-between;
   gap: 40px;
+=======
+>>>>>>> 407ec6a (correction color)
 }
 .section-accordeon .accordeon {
   background-color: #fff;
@@ -7317,9 +7695,14 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
   padding: 30px 0;
   border-top: 1px solid #e2e2e2;
   text-transform: uppercase;
+<<<<<<< HEAD
 }
 .section-accordeon .accordeon_el a {
   flex: 1;
+=======
+  width: 100% a;
+  width-flex: 1;
+>>>>>>> 407ec6a (correction color)
 }
 .section-accordeon .accordeon_el::after {
   content: "↘";
@@ -7357,12 +7740,19 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 .container_overlay {
   margin-top: 150px;
   position: relative;
+<<<<<<< HEAD
   height: 520px;
   z-index: 0;
   overflow: visible;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+=======
+  width: 88%;
+  height: 520px;
+  z-index: 0;
+  overflow: visible;
+>>>>>>> 407ec6a (correction color)
 }
 .container_overlay img {
   display: block;
@@ -7374,6 +7764,7 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
 }
 
 .content_overlay {
+<<<<<<< HEAD
   width: 60%;
   margin-left: -20%;
   background-color: #fff;
@@ -7381,11 +7772,21 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
   padding: 60px 10vw 0px 60px;
   justify-content: flex-end;
   gap: 50px;
+=======
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  width: 55%;
+  background-color: #fff;
+  z-index: 1;
+  padding: 60px;
+>>>>>>> 407ec6a (correction color)
   height: 400px;
 }
 
 body {
   font-family: "Manrope", sans-serif;
+<<<<<<< HEAD
 }`, "",{"version":3,"sources":["webpack://./src/scss/main.scss","webpack://./src/scss/variables/base.scss","webpack://./src/scss/variables/colors.scss","webpack://./src/scss/variables/fonts.scss","webpack://./src/scss/variables/cta.scss","webpack://./src/scss/builder/swiper.scss","webpack://./src/scss/builder/section2.scss","webpack://./src/scss/builder/section3.scss","webpack://./src/scss/builder/section4.scss","webpack://./src/scss/builder/section5.scss","webpack://./src/scss/builder/section6.scss","webpack://./src/scss/builder/section7.scss","webpack://./src/scss/builder/section8.scss","webpack://./src/scss/builder/section9.scss","webpack://./src/scss/builder/section10.scss","webpack://./src/scss/builder/section11.scss","webpack://./src/scss/builder/section12.scss","webpack://./src/scss/burger-menu/burger-menu.scss","webpack://./src/scss/base/header.scss","webpack://./src/scss/base/footer.scss","webpack://./src/scss/base/single-reference.scss","webpack://./src/scss/builder/header-service.scss","webpack://./src/scss/builder/section-app-glob.scss","webpack://./src/scss/builder/section-txt-g-img-d.scss","webpack://./src/scss/builder/section-slider-vertical.scss","webpack://./src/scss/builder/section-etapes.scss","webpack://./src/scss/builder/section-parallax.scss","webpack://./src/scss/builder/section-formulaire.scss","webpack://./src/scss/builder/big_title_about.scss","webpack://./src/scss/builder/section_accordeon.scss","webpack://./src/scss/builder/text_overlay.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACEhB;EACE,WAAA;EACA,iBAAA;EACA,YAAA;ADAF;ACEE;EACE,aAAA;ADAJ;ACGM;EACE,SAAA;ADDR;ACAM;EACE,SAAA;ADER;ACHM;EACE,SAAA;ADKR;ACNM;EACE,SAAA;ADQR;ACTM;EACE,SAAA;ADWR;ACZM;EACE,SAAA;ADcR;ACfM;EACE,SAAA;ADiBR;AClBM;EACE,SAAA;ADoBR;ACrBM;EACE,SAAA;ADuBR;ACxBM;EACE,UAAA;AD0BR;AC3BM;EACE,UAAA;AD6BR;AC9BM;EACE,UAAA;ADgCR;ACjCM;EACE,UAAA;ADmCR;ACpCM;EACE,UAAA;ADsCR;ACvCM;EACE,UAAA;ADyCR;AC1CM;EACE,UAAA;AD4CR;AC7CM;EACE,UAAA;AD+CR;AChDM;EACE,UAAA;ADkDR;ACnDM;EACE,UAAA;ADqDR;ACtDM;EACE,UAAA;ADwDR;ACzDM;EACE,UAAA;AD2DR;AC5DM;EACE,UAAA;AD8DR;AC/DM;EACE,UAAA;ADiER;AClEM;EACE,UAAA;ADoER;ACrEM;EACE,UAAA;ADuER;ACxEM;EACE,UAAA;AD0ER;AC3EM;EACE,UAAA;AD6ER;AC9EM;EACE,UAAA;ADgFR;ACjFM;EACE,UAAA;ADmFR;ACpFM;EACE,UAAA;ADsFR;ACvFM;EACE,UAAA;ADyFR;AC1FM;EACE,UAAA;AD4FR;AC7FM;EACE,UAAA;AD+FR;AChGM;EACE,UAAA;ADkGR;ACnGM;EACE,UAAA;ADqGR;ACtGM;EACE,UAAA;ADwGR;ACzGM;EACE,UAAA;AD2GR;AC5GM;EACE,UAAA;AD8GR;AC/GM;EACE,UAAA;ADiHR;AClHM;EACE,UAAA;ADoHR;ACrHM;EACE,UAAA;ADuHR;ACxHM;EACE,UAAA;AD0HR;AC3HM;EACE,UAAA;AD6HR;AC9HM;EACE,UAAA;ADgIR;ACjIM;EACE,UAAA;ADmIR;ACpIM;EACE,UAAA;ADsIR;ACvIM;EACE,UAAA;ADyIR;AC1IM;EACE,UAAA;AD4IR;AC7IM;EACE,UAAA;AD+IR;AChJM;EACE,UAAA;ADkJR;ACnJM;EACE,UAAA;ADqJR;ACtJM;EACE,UAAA;ADwJR;ACzJM;EACE,UAAA;AD2JR;AC5JM;EACE,UAAA;AD8JR;AC/JM;EACE,UAAA;ADiKR;AClKM;EACE,UAAA;ADoKR;ACrKM;EACE,UAAA;ADuKR;ACxKM;EACE,UAAA;AD0KR;AC3KM;EACE,UAAA;AD6KR;AC9KM;EACE,UAAA;ADgLR;ACjLM;EACE,UAAA;ADmLR;ACpLM;EACE,UAAA;ADsLR;ACvLM;EACE,UAAA;ADyLR;AC1LM;EACE,UAAA;AD4LR;AC7LM;EACE,UAAA;AD+LR;AChMM;EACE,UAAA;ADkMR;ACnMM;EACE,UAAA;ADqMR;ACtMM;EACE,UAAA;ADwMR;ACzMM;EACE,UAAA;AD2MR;AC5MM;EACE,UAAA;AD8MR;AC/MM;EACE,UAAA;ADiNR;AClNM;EACE,UAAA;ADoNR;ACrNM;EACE,UAAA;ADuNR;ACxNM;EACE,UAAA;AD0NR;AC3NM;EACE,UAAA;AD6NR;AC9NM;EACE,UAAA;ADgOR;ACjOM;EACE,UAAA;ADmOR;ACpOM;EACE,UAAA;ADsOR;ACvOM;EACE,UAAA;ADyOR;AC1OM;EACE,UAAA;AD4OR;AC7OM;EACE,UAAA;AD+OR;AChPM;EACE,UAAA;ADkPR;ACnPM;EACE,UAAA;ADqPR;ACtPM;EACE,UAAA;ADwPR;ACzPM;EACE,UAAA;AD2PR;AC5PM;EACE,UAAA;AD8PR;AC/PM;EACE,UAAA;ADiQR;AClQM;EACE,UAAA;ADoQR;ACrQM;EACE,UAAA;ADuQR;ACxQM;EACE,UAAA;AD0QR;AC3QM;EACE,UAAA;AD6QR;AC9QM;EACE,UAAA;ADgRR;ACjRM;EACE,UAAA;ADmRR;ACpRM;EACE,UAAA;ADsRR;ACvRM;EACE,UAAA;ADyRR;AC1RM;EACE,UAAA;AD4RR;AC7RM;EACE,UAAA;AD+RR;AChSM;EACE,UAAA;ADkSR;ACnSM;EACE,UAAA;ADqSR;ACtSM;EACE,WAAA;ADwSR;ACnSE;EACE,aAAA;ADqSJ;;ACjSA;EACE,cCvBa;EDwBb,eAAA;EACA,mBAAA;ADoSF;;AChSE;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;ADmSJ;;AC9RE;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;ADiSJ;;AC5RE;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;AD+RJ;;AC1RE;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;AD6RJ;;ACxRE;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;AD2RJ;;ACtRE;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;ADyRJ;;ACpRE;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;ADuRJ;;AGrWA;EACE,kCAAA;AHwWF;;AGrWA;EACE,iBAAA;EACA,mBAAA;AHwWF;;AGrWA;EACE,eAAA;EACA,mBAAA;EACA,gBAAA;EACA,iBDZS;AFoXX;AGtWE;EACE,gBAAA;AHwWJ;;AGpWA;EACE,gBAAA;AHuWF;;AGpWA;;EAEE,yBAAA;EACA,cD5Be;EC6Bf,mBAAA;AHuWF;;AIpYA;EACE,aAAA;EACA,uBAAA;EAAA,kBAAA;EACA,mBAAA;EACA,cFLa;EEMb,qBAAA;EACA,UAAA;EACA,qBAAA;EACA,iBAAA;EACA,gBAAA;EACA,mBAAA;EACA,yBAAA;EACA,mBAAA;EACA,gCAAA;EACA,mDACE;AJsYJ;AInYE;EACE,YAAA;EACA,iBAAA;EAEA,cFtBa;EEuBb,uBAAA;EACA,6BAAA;AJoYJ;AIjYE;EACE,wBAAA;EACA,cF7Ba;AFgajB;AIjYI;EACE,yBAAA;AJmYN;;AKlaA;EACE,kBAAA;EACA,WAAA;EACA,gBAAA;ALqaF;;AKlaA;EACE,WAAA;EACA,aAAA;ALqaF;AKnaE;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,gBAAA;ALqaJ;AKnaI;EACE,kBAAA;EACA,MAAA;EACA,OAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;ALqaN;AKnaM;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;EACA,cAAA;ALqaR;AKjaI;EACE,kBAAA;EACA,SAAA;EACA,SAAA;EACA,UAAA;EACA,cAAA;ALmaN;AKjaM;EACE,WHrCA;EGsCA,eAAA;EACA,gBAAA;EACA,gBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mBAAA;ALmaR;AKhaM;EACE,qBAAA;EACA,WHhDA;EGiDA,gCAAA;EACA,kBAAA;ALkaR;AK5ZE;EACE,kBAAA;EACA,SAAA;EACA,QAAA;EACA,UAAA;EACA,sBH7DI;EG8DJ,gCAAA;EACA,YAAA;EACA,eAAA;EACA,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,SAAA;AL8ZJ;AK5ZI;EACE,aAAA;EACA,mBAAA;EACA,SAAA;EACA,OAAA;AL8ZN;AK5ZM;EACE,kBAAA;EACA,gBAAA;EACA,sBAAA;EACA,cHrFO;EGsFP,eAAA;AL8ZR;AK3ZM;EACE,OAAA;EACA,WAAA;EACA,yBHxFI;EGyFJ,gBAAA;EACA,kBAAA;EACA,SAAA;EACA,UAAA;AL6ZR;AK3ZQ;EACE,YAAA;EACA,yBHpGK;EGqGL,gBAAA;EACA,eAAA;AL6ZV;AKxZI;EACE,kBAAA;EACA,aAAA;EACA,mBAAA;EACA,QAAA;EACA,cAAA;EACA,WAAA;AL0ZN;AKxZM;EACE,UAAA;EACA,WAAA;EACA,yBHlHI;EGmHJ,UAAA;EACA,SAAA;EACA,uCAAA;AL0ZR;AKvZM;EACE,yBH7HO;AFshBf;;AKjZA;EAEI;IACE,QAAA;IACA,cAAA;ELmZJ;AACF;AK/YA;EAEI;IACE,QAAA;IACA,YAAA;IACA,cAAA;ELgZJ;EK7YE;IACE,WAAA;IACA,YAAA;IACA,eAAA;EL+YJ;AACF;AMviBA;EACE,sBJEM;EIDN,eAAA;EACA,iBAAA;ANyiBF;AMviBE;EACE,aAAA;EACA,mBAAA;EACA,SAAA;EACA,mBAAA;ANyiBJ;AMviBI;EACE,iBAAA;EACA,gBAAA;EACA,yBAAA;EACA,cJjBS;AF0jBf;AMtiBI;EACE,WAAA;EACA,cAAA;EACA,WAAA;EACA,WAAA;EACA,yBJzBS;EI0BT,YAAA;ANwiBN;;AMniBA;EACE,mBAAA;ANsiBF;AMriBE;EACE,eAAA;EACA,iBAAA;ANuiBJ;;AMniBA;EACE,gBAAA;EACA,WJtCS;AF4kBX;AMpiBE;EACE,eAAA;EACA,iBAAA;ANsiBJ;;AMjiBA;EACE;IACE,cAAA;ENoiBF;AACF;AMjiBA;EACE;IACE,eAAA;ENmiBF;EMjiBE;IACE,SAAA;IACA,cAAA;ENmiBJ;AACF;AOhmBA;EACE,sBLEM;EKDN,aAAA;EACA,iBAAA;APkmBF;AO/lBE;EACE,aAAA;EACA,qCAAA;EACA,SAAA;EACA,qBAAA;EACA,gCAAA;APimBJ;AO7lBE;EACE,aAAA;EACA,sBAAA;EACC,eAAA;EACA,iBAAA;AP+lBL;AO5lBE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,iBAAA;EACA,yBLzBQ;AFunBZ;AO5lBI;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;EACA,cAAA;AP8lBN;AO3lBI;EACE,kBAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;EACA,YAAA;EACA,sBLvCE;EKwCF,cL7CS;EK8CT,eAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,qBAAA;EACA,yDACE;AP4lBR;AOzlBM;EACE,yBLzDO;EK0DP,WLrDA;AFgpBR;AOtlBE;EACE,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,QAAA;APwlBJ;AOrlBE;EACE,eAAA;EACA,gBAAA;EACA,mBAAA;EACA,yBAAA;EACA,cL1Ea;AFiqBjB;AOplBE;EACE,iBAAA;EACA,mBAAA;EACA,gBAAA;EACA,yBAAA;EACA,cLnFW;EKoFX,SAAA;APslBJ;;AOjlBA;EACE;IACE,aAAA;EPolBF;EOllBE;IACE,SAAA;EPolBJ;AACF;AOhlBA;EACE;IACE,aAAA;EPklBF;EOhlBE;IACE,2BAAA;IACA,SAAA;EPklBJ;AACF;AQ1rBA;EACE,sBNEM;EMDN,gBAAA;AR4rBF;AQ1rBE;EACE,SAAA;EACA,kBAAA;AR4rBJ;AQzrBM;EACE,aAAA;EACA,mBAAA;EACA,SAAA;EACA,mBAAA;AR2rBR;AQzrBQ;EACE,eAAA;EACA,gBAAA;EACA,yBAAA;EACA,cNrBK;AFgtBf;AQvrBU;EACE,aAAA;EACA,mBAAA;EACA,SAAA;EACA,mBAAA;ARyrBZ;AQvrBY;EACE,eAAA;EACA,gBAAA;EACA,gBAAA;ARyrBd;AQrrBU;EACE,WAAA;EACA,cAAA;EACA,WAAA;EACA,WAAA;EACA,yBN3CG;EM4CH,YAAA;ARurBZ;AQnrBM;;EAEE,eAAA;EACA,gBAAA;EACA,WNjDG;AFsuBX;AQnrBQ;;EACE,SAAA;ARsrBV;;AQ5qBA;EACE;IACE,2BAAA;IACA,SAAA;IACA,SAAA;ER+qBF;AACF;AQ5qBA;EACE;IACE,eAAA;ER8qBF;EQ5qBE;IACE,2BAAA;IACA,SAAA;IACA,YAAA;ER8qBJ;EQ3qBE;IACE,cAAA;ER6qBJ;AACF;AShwBA;EACE,kBAAA;EACA,gBAAA;EACA,sBAAA;ATkwBF;;AS7vBA;EACE,WAAA;EACA,gBAAA;EACA,kBAAA;ATgwBF;AS3vBI;EACE,kBAAA;AT6vBN;AS1vBI;EACE,WAAA;EACA,iBAAA;EACA,iBAAA;EACA,yBPtBM;AFkxBZ;AS1vBM;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;EACA,cAAA;AT4vBR;ASxvBI;EACE,kBAAA;EACA,SAAA;EACA,OAAA;EACA,sBPnCE;EOoCF,kBAAA;EACA,cAAA;EACA,iBAAA;AT0vBN;ASxvBM;EACE,iBAAA;EACA,gBAAA;EACA,cPhDO;EOiDP,eAAA;AT0vBR;ASvvBM;EACE,iBAAA;EACA,WPnDG;EOoDH,SAAA;ATyvBR;;ASnvBA;EACE,gBAAA;EACA,UAAA;EACA,aAAA;EACA,oBAAA;EACA,kBAAA;EACA,YAAA;EACA,UAAA;ATsvBF;ASpvBE;EACE,aAAA;EACA,yBAAA;EACA,kBAAA;EACA,mBAAA;ATsvBJ;ASpvBI;EACE,yBPzEM;EO0EN,UAAA;EACA,sBAAA;ATsvBN;ASnvBI;EACE,yBPnFS;AFw0Bf;;AShvBA;EACE,kBAAA;EACA,UAAA;EACA,aAAA;EACA,2BAAA;EACA,aAAA;EACA,sBAAA;EACA,QAAA;EACA,UAAA;ATmvBF;ASjvBE;EACE,iBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,yBAAA;EACA,gBPnGI;EOoGJ,eAAA;EACA,eAAA;EACA,cP3GW;EO4GX,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,uDACE;ATkvBN;AS/uBI;EACE,yBPpHS;EOqHT,WPhHE;EOiHF,qBPtHS;AFu2Bf;;AS5uBA;EACE,kBAAA;EACA,iBAAA;AT+uBF;AS7uBE;EACE,sBAAA;AT+uBJ;;AS3uBA;EACE;IACE,UAAA;ET8uBF;ES3uBA;IACE,SAAA;ET6uBF;AACF;AUt3BA;EACE,sBREM;EQDN,eAAA;AVw3BF;AUt3BE;EACE,aAAA;EACA,8BAAA;EACA,SAAA;EACA,mBAAA;AVw3BJ;;AUp3BA;EACE,oBAAA;AVu3BF;;AUp3BA;EACE,kBAAA;EACA,qBAAA;AVu3BF;AUr3BE;EACE,cAAA;EACA,UAAA;EACA,iBAAA;EACA,oBAAA;KAAA,iBAAA;EACA,kBAAA;EACA,UAAA;AVu3BJ;AUp3BE;EACE,cAAA;EACA,UAAA;EACA,iBAAA;EACA,oBAAA;KAAA,iBAAA;EACA,kBAAA;EACA,SAAA;EACA,QAAA;EACA,UAAA;AVs3BJ;;AUl3BA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AVq3BF;AUn3BE;EACE,aAAA;EACA,mBAAA;EACA,SAAA;AVq3BJ;AUn3BI;EACE,eAAA;EACA,gBAAA;EACA,yBAAA;EACA,cRzDS;AF86Bf;AUl3BI;EACE,WAAA;EACA,cAAA;EACA,WAAA;EACA,WAAA;EACA,yBRjES;EQkET,YAAA;AVo3BN;AUh3BE;EACE,eAAA;EACA,WRrEO;EQsEP,gBAAA;AVk3BJ;AUh3BI;EACE,SAAA;EACA,cR5EW;AF87BjB;AU92BE;EACE,gBAAA;EACA,UAAA;EACA,cAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;AVg3BJ;AU92BI;EACE,aAAA;EACA,mBAAA;EACA,SAAA;EACA,eAAA;EACA,WR3FK;AF28BX;AU92BM;EACE,WAAA;EACA,qBAAA;EACA,cAAA;EACA,WAAA;EACA,YAAA;EACA,yBRrGS;EQsGT,sEAAA;AVg3BR;AU/0BE;EACE,eAAA;EACA,iBAAA;AVi1BJ;;AU70BA;EACE;IACE,8BAAA;IACA,SAAA;IACA,SAAA;EVg1BF;AACF;AU70BA;EACE;IACE,eAAA;EV+0BF;EU70BE;IACE,2BAAA;IACA,SAAA;IACA,YAAA;EV+0BJ;EU30BA;IACE,oBAAA;EV60BF;AACF;AW9+BA;EACE,sBTEM;ESDN,iBAAA;AXg/BF;;AW7+BA;EACE,aAAA;EACA,8BAAA;EACA,iBAAA;AXg/BF;;AW5+BA;EACE,yBTfa;ESgBb,2BAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,SAAA;AX++BF;AW7+BE;EACG,WTlBG;ESmBH,eAAA;EACA,iBAAA;AX++BL;AW7+BE;EACE,eAAA;EACA,mBAAA;EACA,WTzBI;ES0BJ,SAAA;EACA,YAAA;AX++BJ;AW7+BG;EACC,WT9BI;ES+BJ,+BAAA;AX++BJ;;AWz+BA;EACE,kBAAA;EACA,gBAAA;AX4+BF;AW1+BE;EACE,WAAA;EACA,YAAA;AX4+BJ;AW1+BI;EACE,kBAAA;EACA,YAAA;AX4+BN;AW1+BM;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;EACA,cAAA;AX4+BR;AWz+BM;EACE,kBAAA;EACA,SAAA;EACA,OAAA;EACA,QAAA;EACA,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,kBAAA;AX2+BR;AWz+BQ;EACE,iBAAA;EACA,WTpEF;ESqEE,gBAAA;AX2+BV;AWx+BQ;EACE,sBTzEF;ES0EE,cT/EK;ESgFL,kBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AX0+BV;;AWn+BA;EACE,aAAA;EACA,mBAAA;EACA,SAAA;EACA,aAAA;EACA,6BAAA;AXs+BF;;AWn+BA;EACE,aAAA;EACA,QAAA;EACA,cAAA;AXs+BF;AWp+BE;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,yBAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;EACA,cT/GW;ESgHX,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,+EACE;AXq+BN;AWj+BI;EACE,yBTzHS;ES0HT,WTrHE;ESsHF,qBT3HS;AF8lCf;;AW79BA;EACE,wBAAA;EACA,mBAAA;EACA,WAAA;EACA,yBAAA;EACA,UAAA;EACA,kBAAA;AXg+BF;AW99BE;EACE,YAAA;EACA,yBT3IW;ES4IX,gBAAA;AXg+BJ;;AW59BA;EACE,eAAA;EACA,gBAAA;EACA,cTlJe;ESmJf,cAAA;EACA,eAAA;EACA,iBAAA;AX+9BF;;AW19BA;EACE;IACE,2BAAA;EX69BF;EW19BA;IACE,iBAAA;EX49BF;EWz9BA;IACE,aAAA;EX29BF;EWx9BA;IACE,aAAA;EX09BF;AACF;AYjoCA;EACE,aAAA;EACA,sBAAA;EACA,iBAAA;EACA,iBAAA;AZmoCF;;AYhoCA;EACE,UAAA;EACA,sBVPM;EUQN,aAAA;EACA,aAAA;EACA,mBAAA;AZmoCF;AYjoCE;EACE,kBAAA;AZmoCJ;AYhoCE;EACE,iBAAA;EACA,cVnBQ;EUoBR,kBAAA;AZkoCJ;AY/nCE;EACE,eAAA;EACA,cAAA;EACA,WV3BO;EU4BP,kBAAA;AZioCJ;;AY7nCA;EACE,wBAAA;EACA,aAAA;EACA,yBVtCa;EUuCb,qBAAA;EACA,aAAA;EAEA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;AZ+nCF;AY7nCE;EACE,kBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;EACA,sBVhDI;EUkDJ,qCAAA;AZ8nCJ;AY5nCE;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AZ8nCJ;AY3nCE;EACE,WV3DI;EU4DJ,eAAA;EACA,gBAAA;EACA,gBAAA;EACA,UAAA;AZ6nCJ;AY1nCE;EACE,WVnEI;EUoEJ,iDAAA;AZ4nCJ;;AYxnCA;EACE;IACE,aAAA;EZ2nCF;EYxnCA;IACE,aAAA;EZ0nCF;AACF;AYvnCA;EACE;IACE,sBAAA;EZynCF;EYtnCA;IACE,WAAA;IACA,aAAA;EZwnCF;EYrnCA;IACE,WAAA;EZunCF;EYrnCE;IACE,aAAA;EZunCJ;EYpnCE;IACE,aAAA;IACA,eAAA;EZsnCJ;AACF;Aa/tCA;EACE,aAAA;EACA,iBAAA;EACA,oBAAA;EACA,kBAAA;AbiuCF;Aa/tCE;EACE,UAAA;EACA,yBXVW;EWWX,sBAAA;EACA,2BAAA;AbiuCJ;Aa9tCE;EACE,UAAA;EACA,oCAAA;EACA,uBAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,kBAAA;AbguCJ;Aa9tCI;EACE,cXzBS;EW0BT,iBAAA;EACA,gBAAA;EACA,mBAAA;AbguCN;Aa7tCI;EACE,WX7BK;EW8BL,eAAA;EACA,gBAAA;EACA,mBAAA;Ab+tCN;Aa5tCI;EACE,gBAAA;EACA,oBAAA;EACA,mBAAA;EACA,yBAAA;EACA,WAAA;EACA,qBAAA;EACA,iBAAA;EACA,qBAAA;EACA,yBAAA;EACA,iBAAA;EACA,oBAAA;EACA,kBAAA;EACA,SAAA;EACA,SAAA;EACA,QAAA;Ab8tCN;;AaztCA;EAEI;IACE,iBAAA;IACA,oBAAA;IACA,kBAAA;IACA,mBAAA;Eb2tCJ;AACF;AavtCA;EACE;IACE,sBAAA;EbytCF;EavtCE;IACE,WAAA;IACA,iBAAA;EbytCJ;EattCE;IACE,WAAA;IACA,iBAAA;IACA,oBAAA;IACA,gBAAA;IACA,iBAAA;EbwtCJ;EattCI;IACE,sBAAA;EbwtCN;AACF;Ac7yCA;EACE,sBZEM;EYDN,eAAA;EACA,iBAAA;Ad+yCF;Ac7yCE;EACE,aAAA;EACA,qBAAA;EACA,SAAA;EACA,eAAA;EACA,6BAAA;EACA,qBAAA;Ad+yCJ;Ac7yCI;EACE,gCAAA;Ad+yCN;Ac5yCI;EACE,eAAA;EACA,cZpBW;EYqBX,qBAAA;EACA,eAAA;Ad8yCN;Ac3yCI;EACE,eAAA;EACA,gBAAA;EACA,cZ7BS;EY8BT,cAAA;Ad6yCN;;AcxyCA;EACE;IACE,iBAAA;IACA,oBAAA;IACA,gBAAA;IACA,iBAAA;Ed2yCF;EczyCE;IACE,iBAAA;IACA,oBAAA;Ed2yCJ;EczyCI;IACE,eAAA;Ed2yCN;AACF;ActyCA;EACE,eAAA;EACA,oBAAA;EACA,UAAA;EACA,gCAAA;EACA,YAAA;EACA,YAAA;EACA,aAAA;AdwyCF;ActyCE;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;AdwyCJ;AcryCE;EACE,UAAA;AduyCJ;;Ae12CA;EACE,yBbCU;EaAV,iBAAA;EACA,gBAAA;Af62CF;Ae32CE;EACE,aAAA;EACA,8BAAA;EACA,uBAAA;EACA,mBAAA;Af62CJ;Ae32CI;EACE,UAAA;Af62CN;Ae32CM;EACE,cbjBO;EakBP,iBAAA;EACA,gBAAA;EACA,gBAAA;EACA,mBAAA;Af62CR;Ae12CM;EACE,YAAA;EACA,6BAAA;EACA,SAAA;Af42CR;Aex2CI;EACE,UAAA;EACA,iBAAA;Af02CN;Aex2CM;EACE,WbjCG;EakCH,eAAA;EACA,gBAAA;EACA,iBAAA;Af02CR;Aer2CE;EACE,yBb7CW;Ea8CX,WAAA;EACA,kBAAA;EACA,gBAAA;Afu2CJ;Aer2CI;EACE,WAAA;EACA,YAAA;EACA,cAAA;Afu2CN;;Ael2CA;EACE;IACE,iBAAA;IACA,oBAAA;Efq2CF;Eel2CI;IACE,UAAA;Efo2CN;Eej2CI;IACE,UAAA;Efm2CN;AACF;Ae91CA;EACE;IACE,iBAAA;IACA,oBAAA;IACA,gBAAA;IACA,iBAAA;Efg2CF;Ee91CE;IACE,sBAAA;IACA,SAAA;Efg2CJ;Ee91CI;IACE,WAAA;Efg2CN;Ee71CI;IACE,WAAA;IACA,cAAA;Ef+1CN;AACF;AgB17CA;EACE,sBdEM;EcDN,eAAA;EACA,iBAAA;AhB47CF;AgB17CE;EACE,cdRW;EcSX,eAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;AhB47CJ;AgB17CI;EACE,gBAAA;AhB47CN;AgBx7CE;EACE,aAAA;EACA,qCAAA;EACA,SAAA;EACA,mBAAA;EACA,kBAAA;AhB07CJ;AgBt7CI;EACE,kBAAA;EACA,yBd1BM;Ec2BN,aAAA;EACA,gBAAA;EACA,mBAAA;EACA,eAAA;AhBw7CN;AgBt7CM;EACE,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;EACA,cAAA;AhBw7CR;AgBr7CM;EACE,kBAAA;EACA,SAAA;EACA,QAAA;EACA,WAAA;EACA,YAAA;EACA,sBd5CA;Ec6CA,cdlDO;EcmDP,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;EACA,qBAAA;AhBu7CR;AgBn7CI;EACE,cAAA;EACA,kBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cd/DW;EcgEX,mBAAA;EACA,eAAA;AhBq7CN;AgBl7CI;EACE,iBAAA;EACA,gBAAA;EACA,WdrEK;EcsEL,eAAA;AhBo7CN;AgBj7CI;EACE,mBAAA;AhBm7CN;AgB/6CE;EACE,aAAA;EACA,uBAAA;AhBi7CJ;AgB/6CI;EACE,qBAAA;EACA,yBdvFS;EcwFT,WdnFE;EcoFF,qBAAA;EACA,iBAAA;EACA,qBAAA;EACA,yBAAA;EACA,iBAAA;EACA,oBAAA;EACA,kBAAA;EACA,mBAAA;AhBi7CN;;AgB56CA;EACE;IACE,qCAAA;EhB+6CF;AACF;AgB56CA;EACE;IACE,iBAAA;IACA,oBAAA;IACA,gBAAA;IACA,iBAAA;EhB86CF;EgB56CE;IACE,0BAAA;EhB86CJ;AACF;AiB/hDA;EACE,aAAA;EACA,WAAA;EACD,aAAA;EACC,SAAA;EACA,qBAAA;AjBiiDF;;AiB5hDA;EACE,UAAA;EACD,kBAAA;EAEA,aAAA;EACA,qBAAA;EACA,YAAA;AjB8hDD;AiBzhDE;EACA,kBAAA;EACA,oBAAA;KAAA,iBAAA;EACA,UAAA;EACC,WAAA;EACC,YAAA;EACA,uBAAA;AjB2hDJ;;AiBhhDA;EACE,kBAAA;EACA,SAAA;EACA,UAAA;EACA,UAAA;AjBmhDF;;AiBhhDA;EACE,kBAAA;EACA,UAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,aAAA;AjBmhDF;;AiB/gDA;EACE,mBAAA;EACA,WfvDM;EewDN,eAAA;EACA,gBAAA;EACA,gBAAA;AjBkhDF;;AiBrgDA;EACE,aAAA;EACA,SAAA;EACA,mBAAA;EACA,qBAAA;EACM,mBAAA;AjBwgDR;;AiBngDA;EACE,WAAA;EACA,YAAA;AjBsgDF;;AiB//CA;EACE,UAAA;EACA,yBfjGa;EekGb,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;EACA,SAAA;EACA,wBAAA;EAAA,mBAAA;AjBkgDF;;AiB//CA;EACE,kBAAA;EACA,SAAA;EACA,WAAA;EACA,gBAAA;EACA,YAAA;EACA,Wf7GM;Ee8GN,iBAAA;EACA,eAAA;EACA,UAAA;AjBkgDF;;AiB//CA;EACE,WAAA;AjBkgDF;;AiB7/CA;EACE,Wf1HM;Ee2HN,iBAAA;EACA,gBAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;EACA,cAAA;EAEA,WAAA;EACA,iBAAA;AjB+/CF;;AiB3/CA;EACI,iBAAA;EAEF,Wf1IM;Ee2IN,eAAA;EACA,gBAAA;EACA,yBAAA;EACA,mBAAA;EACA,gBAAA;EACA,cAAA;AjB6/CF;;AiB1/CA,2DAAA;AACA;EACE,eAAA;EACA,mBAAA;AjB6/CF;;AiBx/CA;EACI,gBAAA;AjB2/CJ;;AiBv/CA;EACI,gBAAA;AjB0/CJ;;AiBv/CA;EACI,gBAAA;AjB0/CJ;;AiBt/CA;EACI,gBAAA;AjBy/CJ;;AiBt/CA;EACE,aAAA;EACA,cfnLe;AF4qDjB;;AiBr/CA;EACE,cfxLe;EeyLf,qBAAA;EACA,iBAAA;EACA,yBAAA;EACA,mBAAA;EACA,cAAA;EACA,cAAA;EACC,iBAAA;AjBw/CH;;AiBp/CA;EACE,aAAA;AjBu/CF;;AiBp/CA;EACI,uBAAA;EAAA,kBAAA;EACA,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,eAAA;EACA,mBAAA;EACA,iBAAA;EACA,qBAAA;AjBu/CJ;;AiBl/CA;EAGE,WAAA;AjBm/CF;;AiBj/CA;EACI,UAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,yBAAA;EACA,SAAA;AjBo/CJ;AiBl/CI;EACI,Wf9NA;Ee+NA,eAAA;EACA,qBAAA;EACA,yBAAA;EACA,qBAAA;EACA,YAAA;AjBo/CR;;AiBh/CA;EACI,YAAA;EACA,8CAAA;EACA,WAAA;AjBm/CJ;;AiB/+CA;EACI,Wf/OI;EegPJ,eAAA;EACA,qBAAA;EACA,yBAAA;EACA,YAAA;EACA,SAAA;EACA,gBAAA;AjBk/CJ;;AiB/+CA;EACI,WfzPI;Ee0PJ,eAAA;EACA,qBAAA;EACA,yBAAA;EACA,YAAA;EACA,SAAA;EACA,gBAAA;AjBk/CJ;;AiB9+CA;EACE,aAAA;EACA,yBAAA;EACA,SAAA;EACA,mBAAA;EACA,gBAAA;AjBi/CF;;AkB5vDA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,kBAAA;AlB+vDF;AkB7vDE;EACE,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,SAAA;AlB+vDJ;AkB7vDI;EACE,cAAA;EACA,YAAA;EACA,cAAA;AlB+vDN;AkB7vDM;EACE,WAAA;EACA,YAAA;EACA,cAAA;AlB+vDR;AkB3vDI;EACE,OAAA;EACA,aAAA;EACA,yBAAA;AlB6vDN;AkB3vDM;EACE,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,SAAA;EACA,SAAA;EACA,UAAA;AlB6vDR;AkB3vDQ;EACE,kBAAA;AlB6vDV;AkB3vDU;EACE,chB3CG;EgB4CH,qBAAA;EACA,iBAAA;EACA,mBAAA;EACA,yBAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,QAAA;EACA,6BAAA;AlB6vDZ;AkB3vDY;EACE,YAAA;AlB6vDd;AkBxvDY;EACE,WAAA;EACA,qBAAA;EACA,QAAA;EACA,SAAA;EACA,kCAAA;EACA,mCAAA;EACA,0BAAA;EACA,eAAA;EACA,+BAAA;AlB0vDd;AkBvvDY;EACE,kBAAA;EACA,sBAAA;EACA,OAAA;EACA,0CAAA;EACA,gBAAA;EACA,gBAAA;EACA,UAAA;EACA,SAAA;EACA,UAAA;EACA,kBAAA;EACA,2BAAA;EACA,sEACE;AlBwvDhB;AkBnvDgB;EACE,cAAA;EACA,kBAAA;EACA,kBAAA;EACA,sBAAA;EACA,chB/FH;EgBgGG,qBAAA;EACA,gCAAA;EACA,2BAAA;AlBqvDlB;AkBnvDkB;EACE,chBpGH;AFy1DjB;AkBjvDgB;EACE,mBAAA;AlBmvDlB;AkB7uDc;EACE,yBAAA;AlB+uDhB;AkB5uDc;EACE,UAAA;EACA,mBAAA;EACA,wBAAA;AlB8uDhB;AkBruDE;EACE,aAAA;EACA,mBAAA;EACA,SAAA;EACA,cAAA;AlBuuDJ;AkBruDI;EACE,cAAA;EACA,UAAA;EACA,YAAA;EACA,0CAAA;AlBuuDN;AkBpuDI;EACE,gBAAA;EACA,YAAA;EACA,eAAA;EACA,YAAA;EACA,aAAA;EACA,sBAAA;EACA,QAAA;AlBsuDN;AkBpuDM;EACE,cAAA;EACA,WAAA;EACA,aAAA;EACA,yBhB1JO;EgB2JP,kDACE;AlBquDV;AkBluDQ;EACE,WAAA;AlBouDV;AkB/tDQ;EACE,sBhBjKF;AFk4DR;AkB9tDQ;EACE,0CAAA;AlBguDV;AkB9tDQ;EACE,UAAA;AlBguDV;AkB9tDQ;EACE,4CAAA;EACA,WAAA;AlBguDV;AkB1tDE;EACE,kBAAA;EACA,MAAA;EACA,OAAA;AlB4tDJ;AkBttDY;EACE,WhB5LN;AFo5DR;AkB/sDQ;EACE,sBhBtMF;AFu5DR;;AkB1sDA;EACE,eAAA;EACA,QAAA;EACA,yBhBrNa;EgBsNb,WAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,UAAA;EACA,kBAAA;EACA,2BAAA;EACA,mEACE;EAGA,aAAA;AlB0sDJ;AkBtsDE;EACE,UAAA;EACA,mBAAA;EACA,wBAAA;AlBwsDJ;AkBrsDE;EACE,gBAAA;EACA,UAAA;EACA,SAAA;EACA,kBAAA;AlBusDJ;AkBrsDI;EACE,eAAA;AlBusDN;AkBrsDM;EACE,WhBhPA;EgBiPA,qBAAA;EACA,iBAAA;EACA,sBAAA;EACA,yBAAA;EACA,2BAAA;AlBusDR;AkBrsDQ;EACE,chB5PO;AFm8DjB;AkBnsDM;EACE,gBAAA;EACA,iBAAA;EACA,SAAA;AlBqsDR;AkBnsDQ;EACE,cAAA;AlBqsDV;AkBnsDU;EACE,kBAAA;EACA,+BAAA;EACA,qBAAA;EACA,sBAAA;EACA,2BAAA;AlBqsDZ;AkBnsDY;EACE,WhB5QN;AFi9DR;;AkB1rDA;EACE;IACE,aAAA;ElB6rDF;EkB1rDA;IACE,aAAA;ElB4rDF;EkBzrDA;IACE,aAAA;ElB2rDF;AACF;AmBh+DA;EACI,yBjBHW;EiBIX,cAAA;EACA,kBAAA;EACA,iBAAA;AnBk+DJ;AmBh+DI;EACI,aAAA;EACA,8BAAA;EACA,uBAAA;EACA,mBAAA;AnBk+DR;AmBh+DQ;EACI,UAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;AnBk+DZ;AmBh+DY;EACI,WjBhBR;EiBiBQ,eAAA;EACA,gBAAA;EACA,gBAAA;AnBk+DhB;AmB/9DY;EACI,WAAA;EACA,YAAA;EACA,cjB7BC;EiB8BD,ejB9BC;EiB+BD,kBAAA;AnBi+DhB;AmB19DQ;EACI,UAAA;EACA,iBAAA;AnB49DZ;AmBz9DgB;EACI,WjBxCZ;EiByCY,eAAA;EACA,gBAAA;AnB29DpB;AmBr9DI;EACI,uBAAA;EAAA,kBAAA;EACA,cAAA;EACQ,WjBnDR;EiBoDQ,qBAAA;EACA,iBAAA;EACA,sBAAA;EACA,iBAAA;EACA,kBAAA;AnBu9DhB;AmBr9DgB;EACI,0BAAA;AnBu9DpB;AmBn9DI;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,4BAAA;EACA,iBAAA;AnBq9DR;AmBl9DY;EACI,WjBxER;EiByEI,iBAAA;AnBo9DZ;AmB78DQ;EACI,aAAA;EACA,SAAA;EACA,gBAAA;EACA,SAAA;EACA,UAAA;AnB+8DZ;AmB78DY;EACG,WjBxFP;EiByFQ,qBAAA;EACA,iBAAA;EACA,sBAAA;EACA,yBAAA;AnB+8DhB;AmB78DgB;EACI,cjBnGH;AFkjEjB;;AmBx8DA;EACA,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBjBhHiB;EiBiHjB,WjB7GQ;EiB8GR,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,qBAAA;EACA,eAAA;EACA,YAAA;EACA,UAAA;EACA,kBAAA;EACA,wBAAA;AnB28DA;AmB18DA;EACA,UAAA;EACA,mBAAA;AnB48DA;;AoBzkEE;EACE,YAAA;ApB4kEJ;AoBzkEM;EACE,oBAAA;KAAA,iBAAA;EACA,WAAA;EACA,YAAA;ApB2kER;;AoBrkEA;EACE,kBAAA;ApBwkEF;AoBtkEE;EACE,UAAA;ApBwkEJ;AoBrkEM;EACE,aAAA;EACA,iBAAA;EACA,WAAA;ApBukER;AoBlkEM;EACE,sBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;ApBokER;AoBlkEQ;EACE,gBAAA;ApBokEV;AoBlkEU;EACE,gBAAA;ApBokEZ;AoB/jEM;EACE,aAAA;EACA,iBAAA;ApBikER;;AqB7mEA;EACE,kBAAA;EACA,yBnBJa;EmBKb,YAAA;EACA,YAAA;EACA,iBAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;ArBgnEF;AqB9mEE;EACE,SAAA;EACA,qBAAA;EACA,8BAAA;EACA,WAAA;EACA,iBAAA;ArBgnEJ;AqB7mEM;EACE,WnBhBA;EmBiBA,eAAA;EACA,iBAAA;EACA,gBAAA;ArB+mER;AqB1mEM;EACE,sBAAA;EACA,YAAA;EACA,YAAA;EACA,aAAA;EACA,qBAAA;EACA,uBAAA;ArB4mER;;AsB1oEA;EACE,gBAAA;AtB6oEF;AsB1oEI;EACE,eAAA;EACA,mBAAA;EACA,cAAA;EACA,cpBbS;AFypEf;AsBzoEI;EACE,qCAAA;EACA,SAAA;EACA,iBAAA;AtB2oEN;AsBzoEM;EACE,eAAA;EACA,aAAA;EACA,yBAAA;EACA,aAAA;EACA,qBAAA;EACA,2BAAA;AtB2oER;AsBzoEQ;EACE,YAAA;EACA,8BAAA;AtB2oEV;AsBxoEQ;EACE,cAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;AtB0oEV;AsBxoEU;EACE,WAAA;EACA,YAAA;AtB0oEZ;AsBvoEU;EACE,gBAAA;EACA,cpB/CG;AFwrEf;AsBtoEU;EACE,qBAAA;EACA,mBAAA;AtBwoEZ;AsBjoEM;EACE,yBpB3DS;EoB4DT,WpBxDA;EoByDA,kBAAA;EACA,mBAAA;EACA,YAAA;EACA,6BAAA;AtBmoER;AsBjoEQ;EACE,WpB/DF;AFksER;AsBhoEQ;EACE,yBpBxEK;AF0sEf;;AuBrsEA;EACE,6BAAA;EACA,gCAAA;EACA,kBAAA;EACA,gBAAA;AvBwsEF;AuBtsEE;EACE,6NAAA;EAUA,YAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;EACA,MAAA;AvB+rEJ;AuB5rEE;EACE,UAAA;EACA,mBAAA;AvB8rEJ;AuB5rEI;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,wBAAA;EAAA,mBAAA;AvB8rEN;AuB1rEM;EACE,aAAA;AvB4rER;;AwBluEA;EACE,iBAAA;EACA,ctBPa;AF4uEf;;AwBjuEA;EACE,eAAA;AxBouEF;AwBluEE;EACE,gBAAA;EACA,eAAA;AxBouEJ;AwBjuEM;EACE,aAAA;EACA,mBAAA;AxBmuER;AwBjuEQ;EACE,UAAA;AxBmuEV;AwBhuEQ;EACE,YAAA;AxBkuEV;AwBjuEU;EACE,YAAA;AxBmuEZ;AwB/tEQ;EACE,kBAAA;AxBiuEV;AwB/tEU;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,UAAA;AxBiuEZ;AwB/tEY;EACE,mBAAA;AxBiuEd;AwBztEM;EACE,YAAA;EACA,UAAA;EACA,gBAAA;EACA,yBtBpDI;AF+wEZ;AwBztEQ;EACE,sBtBxDC;AFmxEX;;AyBjxEA;EACE,gBAAA;EACA,gBAAA;AzBoxEF;AyBlxEE;EACE,gBAAA;AzBoxEJ;AyBlxEI;EACE,cAAA;EACA,eAAA;EACA,sBAAA;EACA,yBAAA;EACA,cvBhBW;EuBiBX,mBAAA;AzBoxEN;AyBjxEI;EACE,gBAAA;AzBmxEN;AyB/wEE;EACE,kBAAA;EACA,kBAAA;AzBixEJ;AyB9wEE;EACE,aAAA;EACA,8BAAA;EACA,qBAAA;EACA,UAAA;EACA,iBAAA;AzBgxEJ;AyB9wEI;EACE,UAAA;AzBgxEN;AyB9wEM;EACE,WAAA;EACA,aAAA;EACA,gBAAA;EACA,4BAAA;EACA,UAAA;EACA,kDACE;AzB+wEV;AyB5wEQ;EACE,wBAAA;EACA,UAAA;AzB8wEV;AyBzwEI;EACE,UAAA;EACA,2BAAA;EACA,UAAA;EACA,8DACE;AzB0wER;AyBvwEM;EACE,wBAAA;EACA,UAAA;AzBywER;AyBtwEM;EACE,mBAAA;AzBwwER;AyBtwEQ;;EAEE,SAAA;AzBwwEV;AyBnwEQ;EACE,gBAAA;AzBqwEV;AyB/vEE;EACE,kBAAA;EACA,SAAA;EACA,SAAA;EACA,UAAA;EACA,aAAA;EACA,sBAAA;EACA,QAAA;AzBiwEJ;AyB9vEE;;EAEE,WAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,sBAAA;EACA,kBAAA;EACA,eAAA;EACA,kBAAA;EACA,kDACE;AzB+vEN;AyB5vEI;;EACE,sBAAA;AzB+vEN;AyB5vEI;;EACE,YAAA;EACA,oBAAA;AzB+vEN;AyB3vEE;EACE,kBAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBvB3HQ;AFw3EZ;AyB1vEE;EACE,sBAAA;EACA,WAAA;EACA,gBvBlIO;AF83EX;AyBzvEE;EACE;;IAEE,0BAAA;IACA,SAAA;EzB2vEJ;EyBxvEE;IACE,gBAAA;IACA,eAAA;IACA,mBAAA;IACA,gBAAA;IACA,mBAAA;EzB0vEJ;EyBvvEE;IACE,eAAA;EzByvEJ;AACF;;A0Bl5EA;EACE,YAAA;EACA,kBAAA;A1Bq5EF;A0Bn5EE;EACE,YAAA;EACA,WAAA;EACA,oBAAA;KAAA,iBAAA;A1Bq5EJ;;A2Bv5EA;EACE,gBAAA;A3B05EF;A2Bx5EE;EACE,UAAA;A3B05EJ;A2Bx5EI;EACE,UAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;A3B05EN;A2Bx5EM;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,iBAAA;A3B05ER;A2Bx5EQ;EACE,yBAAA;EACA,mBAAA;EACA,gBAAA;A3B05EV;A2Bt5EU;EACE,gBAAA;EACA,kBAAA;A3Bw5EZ;A2Bl5EI;EACE,UAAA;A3Bo5EN;A2Bl5EM;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,iBAAA;A3Bo5ER;A2Bl5EQ;EACE,aAAA;EACA,WAAA;A3Bo5EV;A2Bj5EY;EACE,aAAA;EACA,SAAA;A3Bm5Ed;A2Bh5EgB;;EAEE,WAAA;A3Bk5ElB;A2B54EU;EACE,WAAA;A3B84EZ;A2B54EY;;;EAGE,gCAAA;EACA,aAAA;EACA,8BAAA;EACA,aAAA;EACA,WAAA;EACA,aAAA;A3B84Ed;A2B54Ec;;;EACE,qBzB9EC;AF89EjB;A2B54EY;EACE,aAAA;A3B84Ed;A2Bz4EQ;EACE,kBAAA;EACA,mBzB3FK;EyB4FL,WzBvFF;EyBwFE,yBAAA;EACA,gBAAA;EACA,mBAAA;EACA,6BAAA;A3B24EV;A2Bz4EU;EACE,yBzBlGK;EyBmGL,czBpGG;AF++Ef;A2Bv4EQ;EACE,iBAAA;A3By4EV;;A4Bh/EA;EACE,c1BHa;E0BIb,eAAA;EACA,gBAAA;EACA,gBAAA;EAEA,UAAA;EACA,mBAAA;EACA,kBAAA;EACA,6BAAA;A5Bk/EF;;A6Bv/EE;EACE,aAAA;EACA,SAAA;EAEA,oBAAA;A7By/EJ;A6Br/EA;EACI,UAAA;A7Bu/EJ;A6Bh/EA;EACI,UAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,8BAAA;EACA,SAAA;A7Bk/EJ;A6B9+EA;EACE,sB3B5BM;E2B6BN,eAAA;EACA,iBAAA;EACA,WAAA;A7Bg/EF;A6B7+EE;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,SAAA;EACA,eAAA;EACA,6BAAA;EACA,yBAAA;A7B++EJ;A6B5+EI;EACE,OAAA;A7B8+EN;A6B3+EI;EACM,YAAA;EAEL,c3BvDY;E2BwDb,uBAAA;EACA,6BAAA;A7B4+EJ;A6Bz+EE;EACE,wBAAA;EACA,c3B9Da;AFyiFjB;A6Bz+EI;EACE,yBAAA;A7B2+EN;A6Bn+EE;EACE,uBAAA;EACA,mBAAA;A7Bq+EJ;A6Bl+EE;EACE,iBAAA;EACA,c3BjFW;E2BkFX,cAAA;EAEA,WAAA;EAEA,uBAAA;A7Bk+EJ;;A8BjjFA;EACI,iBAAA;EACA,c5BTW;E4BUX,kBAAA;EACJ,UAAA;EACA,cAAA;A9BojFA;;A8BjjFA;EACI,iBAAA;EACA,kBAAA;EAEA,aAAA;EACA,UAAA;EAEA,iBAAA;EACA,aAAA;EACA,8BAAA;EACA,qBAAA;A9BkjFJ;A8B/iFI;EAEI,cAAA;EACA,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;EACA,cAAA;A9BgjFR;;A8B5iFA;EAII,UAAA;EACA,iBAAA;EACA,sB5BvCI;E4BwCJ,UAAA;EACA,2BAAA;EACA,yBAAA;EACA,SAAA;EACA,aAAA;A9B4iFJ;;AApjFA;EACE,kCAAA;AAujFF","sourcesContent":["@use \"variables/base.scss\" as *;\n@use \"variables/fonts.scss\" as *;\n@use \"variables/cta.scss\" as *;\n\n@use \"builder/swiper.scss\" as *;\n@use \"builder/section2.scss\" as *;\n@use \"builder/section3.scss\" as *;\n@use \"builder/section4.scss\" as *;\n@use \"builder/section5.scss\" as *;\n@use \"builder/section6.scss\" as *;\n@use \"builder/section7.scss\" as *;\n@use \"builder/section8.scss\" as *;\n@use \"builder/section9.scss\" as *;\n@use \"builder/section10.scss\" as *;\n@use \"builder/section11.scss\" as *;\n@use \"builder/section12.scss\" as *;\n@use \"burger-menu/burger-menu.scss\" as *;\n\n@use \"base/header.scss\" as *;\n@use \"base/footer.scss\" as *;\n@use \"base/single-reference.scss\" as *;\n\n@use \"builder/header-service.scss\" as *;\n@use \"builder/section-app-glob.scss\" as *;\n@use \"builder/section-txt-g-img-d.scss\" as *;\n@use \"builder/section-slider-vertical.scss\" as *;\n@use \"builder/section-etapes.scss\" as *;\n@use \"builder/section-parallax.scss\" as *;\n@use \"builder/section-formulaire.scss\" as *;\n\n@use \"builder/header-service.scss\" as *;\n@use \"builder/section-app-glob.scss\" as *;\n@use \"builder/section-txt-g-img-d.scss\" as *;\n@use \"builder/section-slider-vertical.scss\" as *;\n@use \"builder/section-etapes.scss\" as *;\n@use \"builder/section-parallax.scss\" as *;\n@use \"builder/section-formulaire.scss\" as *;\n@use \"builder/big_title_about.scss\" as *;\n@use \"builder/section_accordeon.scss\" as *;\n@use \"builder/text_overlay.scss\" as *;\n\nbody {\n  font-family: \"Manrope\", sans-serif;\n}\n","@use \"../variables/colors.scss\" as *;\n\n.container {\n  width: 80vw;\n  max-width: 1200px;\n  margin: auto;\n\n  &.flex {\n    display: flex;\n\n    @for $i from 1 through 100 {\n      .col-#{$i} {\n        width: $i * 1%;\n      }\n    }\n  }\n\n  &.grid {\n    display: grid;\n  }\n}\n\n.big_title {\n  color: $primaryColor;\n  font-size: 4rem;\n  line-height: 3.5rem;\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n","$primaryColor: #05233c;\n$secondaryColor: #d3bea1;\n\n$txtColor: #222;\n$lightGray: #e2e2e2;\n$white: #fff;\n$black: #000;\n\n$whiteTransparent: #ffffff00;\n","@use \"./colors.scss\" as *;\n\n* {\n  font-family: \"Manrope\", sans-serif;\n}\n\nh2 {\n  font-size: 3.5rem;\n  line-height: 3.5rem;\n}\n\np {\n  font-size: 1rem;\n  line-height: 1.8rem;\n  font-weight: 100;\n  font-weight: $txtColor;\n\n  & + p {\n    margin-top: 1rem;\n  }\n}\n\nstrong {\n  font-weight: 600;\n}\n\n.section-label,\n.surtitre {\n  text-transform: uppercase;\n  color: $secondaryColor;\n  letter-spacing: 2px;\n}\n","@use \"./../variables/colors.scss\" as *;\n.btn-cta {\n  display: flex;\n  width: fit-content;\n  align-items: center;\n  color: $primaryColor;\n  text-decoration: none;\n  gap: 120px;\n  text-decoration: none;\n  font-size: 0.9rem;\n  font-weight: 500;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  padding-bottom: 6px;\n  border-bottom: 1px solid $primaryColor;\n  transition:\n    gap 0.25s ease,\n    border-color 0.25s ease;\n\n  &::after {\n    content: \"↘\";\n    font-size: 0.9rem;\n    //padding-left: 50px;\n    color: $secondaryColor;\n    transform: rotate(0deg);\n    transition: all ease-in 300ms;\n  }\n\n  &:hover {\n    border-bottom: 1px solid;\n    color: $secondaryColor;\n\n    &::after {\n      transform: rotate(-90deg);\n    }\n  }\n\n  // &::before {\n  //     content: '';\n  //     position: absolute;\n  //     bottom: 0;\n  //     left: 0;\n  //     width: 70%;\n  //     height: 1px;\n  //     background-color: rgba($primaryColor, 0.4);\n  // }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.slider-fullwidth {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n}\n\n.swiper-fullwidth {\n  width: 100%;\n  height: 100vh;\n\n  .swiper-slide {\n    position: relative;\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n\n    .background {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      z-index: 0;\n\n      img {\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        display: block;\n      }\n    }\n\n    .content {\n      position: absolute;\n      top: 20px;\n      left: 10%;\n      z-index: 1;\n      max-width: 70%;\n\n      .content-titre {\n        color: $white;\n        font-size: 8rem;\n        font-weight: 400;\n        line-height: 1.2;\n        margin-bottom: 30px;\n        padding-top: 500px;\n        padding-left: 100px;\n      }\n\n      .btn-cta {\n        display: inline-block;\n        color: $white;\n        border-bottom: 1px solid $lightGray;\n        margin-left: 220px;\n      } \n\n    }\n  }\n\n  .block-pagination {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    z-index: 2;\n    background-color: $white;\n    width: clamp(220px, 26vw, 400px);\n    height: 90px;\n    padding: 0 28px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 20px;\n\n    .block-scrollbar {\n      display: flex;\n      align-items: center;\n      gap: 10px;\n      flex: 1;\n\n      .number-slide {\n        font-size: 0.72rem;\n        font-weight: 500;\n        letter-spacing: 0.08em;\n        color: $primaryColor;\n        min-width: 18px;\n      }\n\n      .swiper-scrollbar {\n        flex: 1;\n        height: 1px;\n        background-color: $lightGray;\n        border-radius: 0;\n        position: relative;\n        top: auto;\n        left: auto;\n\n        .swiper-scrollbar-drag {\n          height: 100%;\n          background-color: $primaryColor;\n          border-radius: 0;\n          cursor: pointer;\n        }\n      }\n    }\n\n    .swiper-pagination {\n      position: relative;\n      display: flex;\n      align-items: center;\n      gap: 6px;\n      flex-shrink: 0;\n      width: auto;\n\n      .swiper-pagination-bullet {\n        width: 7px;\n        height: 7px;\n        background-color: $lightGray;\n        opacity: 1;\n        margin: 0;\n        transition: background-color 0.25s ease;\n      }\n\n      .swiper-pagination-bullet-active {\n        background-color: $primaryColor;\n      }\n    }\n  }\n}\n\n// Responsive\n\n@media (max-width: 1024px) {\n  .swiper-fullwidth {\n    .swiper-slide .content {\n      left: 7%;\n      max-width: 75%;\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .swiper-fullwidth {\n    .swiper-slide .content {\n      left: 5%;\n      bottom: 90px;\n      max-width: 90%;\n    }\n\n    .block-pagination {\n      width: 100%;\n      height: 72px;\n      padding: 0 20px;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-text-evidence {\n  background-color: $white;\n  padding: 90px 0;\n  margin-top: 100px;\n\n  .section-label {\n    display: flex;\n    align-items: center;\n    gap: 16px;\n    margin-bottom: 36px;\n\n    span {\n      font-size: 0.9rem;\n      font-weight: 500;\n      text-transform: uppercase;\n      color: $primaryColor;\n    }\n\n    &::after {\n      content: \"\";\n      display: block;\n      height: 1px;\n      width: 60px;\n      background-color: $primaryColor;\n      opacity: 0.4;\n    }\n  }\n}\n\n.section-content {\n  margin-bottom: 40px;\n  p {\n    font-size: 4rem;\n    line-height: 4rem;\n  }\n}\n\n.section-paragraph {\n  margin-top: 20px;\n  color: $txtColor;\n\n  p {\n    font-size: 4rem;\n    line-height: 4rem;\n    // je ne parviens pas à aggrandir. Wysiwyg qui prend le pas?\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-text-evidence .section-inner {\n    max-width: 80%;\n  }\n}\n\n@media (max-width: 768px) {\n  .section-text-evidence {\n    padding: 60px 0;\n\n    .section-inner {\n      margin: 0;\n      max-width: 90%;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-card-solutions {\n  background-color: $white;\n  padding: 80px ;\n  margin-top: 100px;\n\n\n  .cards-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 30px;\n    padding-bottom: 100px;\n    border-bottom: 1px solid $lightGray;\n \n  }\n\n  .card {\n    display: flex;\n    flex-direction: column;\n     cursor: pointer;\n     max-height: 600px;\n  }\n\n  .card-image {\n    position: relative;\n    width: 100%;\n    aspect-ratio: 4 / 5;\n    max-height: 500px;\n    background-color: $lightGray;\n\n    img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n      display: block;\n    }\n\n    .card-plus {\n      position: absolute;\n      bottom: -1px;\n      right: -1px;\n      width: 80px;\n      height: 80px;\n      background-color: $white;\n      color: $primaryColor;\n      font-size: 2rem;\n      font-weight: 300;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-decoration: none;\n      transition:\n        background-color 0.25s ease,\n        color 0.25s ease;\n\n      &:hover {\n        background-color: $primaryColor;\n        color: $white;\n      }\n    }\n  }\n\n  .card-body {\n    padding-top: 18px;\n    display: flex;\n    flex-direction: column;\n    gap: 8px;\n  }\n\n  .card-category {\n    font-size: 1rem;\n    font-weight: 500;\n    letter-spacing: 1px;\n    text-transform: uppercase;\n    color: $secondaryColor;\n  }\n\n  .card-title {\n    font-size: 1.2rem;\n    letter-spacing: 5px;\n    font-weight: 500;\n    text-transform: uppercase;\n    color: $primaryColor;\n    margin: 0;\n  }\n}\n\n// Responsive\n@media (max-width: 1024px) {\n  .section-card-solutions {\n    padding: 60px;\n\n    .cards-grid {\n      gap: 20px;\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .section-card-solutions {\n    padding: 50px;\n\n    .cards-grid {\n      grid-template-columns: 100%;\n      gap: 32px;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-two-col {\n  background-color: $white;\n  padding: 100px 0;\n\n  .two-col-inner {\n    gap: 80px;\n    align-items: start;\n\n    .two-col-left {\n      .section-label {\n        display: flex;\n        align-items: center;\n        gap: 16px;\n        margin-bottom: 28px;\n\n        span {\n          font-size: 1rem;\n          font-weight: 500;\n          text-transform: uppercase;\n          color: $primaryColor;\n        }\n\n        .two-col-left {\n          .section-label {\n            display: flex;\n            align-items: center;\n            gap: 16px;\n            margin-bottom: 28px;\n\n            .two-col-title {\n              font-size: 4rem;\n              line-height: 1.2;\n              max-width: 550px;\n            }\n          }\n\n          &::after {\n            content: \"\";\n            display: block;\n            height: 1px;\n            width: 60px;\n            background-color: $primaryColor;\n            opacity: 0.4;\n          }\n        }\n      }\n      .two-col-details,\n      .two-col-paragraph {\n        font-size: 1rem;\n        line-height: 1.8;\n        color: $txtColor;\n\n        p {\n          margin: 0;\n        }\n      }\n    \n    }\n  }\n}\n\n// ── Responsive\n\n@media (max-width: 1024px) {\n  .section-two-col .two-col-inner {\n    grid-template-columns: 100%;\n    gap: 48px;\n    margin: 0;\n  }\n}\n\n@media (max-width: 768px) {\n  .section-two-col {\n    padding: 60px 0;\n\n    .two-col-inner {\n      grid-template-columns: 100%;\n      gap: 32px;\n      margin: 0 5%;\n    }\n\n    .two-col-right {\n      padding-top: 0;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-gallery {\n  position: relative;\n  padding: 100px 0;\n  background-color: $white;\n  // display: flex;\n  // align-items: center;\n}\n\n.swiper-gallery {\n  width: 100%;\n  overflow: hidden;\n  position: relative;\n\n  .swiper-slide {\n    //width: 60%;\n\n    .gallery-slide-inner {\n      position: relative;\n    }\n\n    .gallery-image {\n      width: 100%;\n      max-height: 100vh;\n      aspect-ratio: 4 / 3;\n      background-color: $lightGray;\n\n      img {\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        display: block;\n      }\n    }\n\n    .gallery-info {\n      position: absolute;\n      bottom: 0;\n      left: 0;\n      background-color: $white;\n      padding: 20px 28px;\n      min-width: 55%;\n      min-height: 200px;\n\n      .gallery-titre {\n        font-size: 1.5rem;\n        font-weight: 600;\n        color: $primaryColor;\n        margin: 0 0 4px;\n      }\n\n      .gallery-description {\n        font-size: 1.5rem;\n        color: $txtColor;\n        margin: 0;\n      }\n    }\n  }\n}\n\n.gallery-pagination {\n  margin-top: 20px;\n  width: 80%;\n  display: flex;\n  justify-content: end;\n  position: absolute;\n  bottom: 50px;\n  z-index: 2;\n\n  .swiper-pagination-gallery {\n    display: flex;\n    justify-content: flex-end;\n    position: relative;\n    padding-right: 50px;\n\n    .swiper-pagination-bullet {\n      background-color: $lightGray;\n      opacity: 1;\n      border: 1px solid #fff;\n    }\n\n    .swiper-pagination-bullet-active {\n      background-color: $primaryColor;\n    }\n  }\n}\n\n.gallery-nav {\n  position: absolute;\n  right: 11%;\n  bottom: 116px;\n  transform: translateY(-50%);\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  z-index: 2;\n\n  button {\n    margin-right: 0px;\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    border: 1px solid $lightGray;\n    background: $white;\n    cursor: pointer;\n    font-size: 2rem;\n    color: $primaryColor;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease;\n\n    &:hover {\n      background-color: $primaryColor;\n      color: $white;\n      border-color: $primaryColor;\n    }\n  }\n}\n\n.content-scrollbar {\n  position: relative;\n  margin-top: 100px;\n\n  .swiper-scrollbar {\n    height: 2px !important;\n  }\n}\n\n@media (max-width: 768px) {\n  .swiper-gallery .swiper-slide {\n    width: 85%;\n  }\n\n  .gallery-nav {\n    right: 2%;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-img-text {\n  background-color: $white;\n  padding: 90px 0;\n\n  .section-img-text-inner {\n    display: grid;\n    grid-template-columns: 45% 1fr;\n    gap: 80px;\n    align-items: center;\n  }\n}\n\n.img-col {\n  padding-bottom: 80px;\n}\n\n.img-wrapper {\n  position: relative;\n  padding-bottom: 120px;\n\n  .img-large {\n    display: block;\n    width: 72%;\n    aspect-ratio: 3 / 4;\n    object-fit: cover;\n    position: relative;\n    z-index: 1;\n  }\n\n  .img-small {\n    display: block;\n    width: 55%;\n    aspect-ratio: 4 / 3;\n    object-fit: cover;\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    z-index: 5;\n  }\n}\n\n.text-col {\n  display: flex;\n  flex-direction: column;\n  gap: 24px;\n\n  .section-label {\n    display: flex;\n    align-items: center;\n    gap: 16px;\n\n    span {\n      font-size: 1rem;\n      font-weight: 500;\n      text-transform: uppercase;\n      color: $primaryColor;\n    }\n\n    &::after {\n      content: \"\";\n      display: block;\n      height: 1px;\n      width: 60px;\n      background-color: $primaryColor;\n      opacity: 0.4;\n    }\n  }\n\n  .text-col-paragraph {\n    font-size: 1rem;\n    color: $txtColor;\n    margin-top: 50px;\n\n    p {\n      margin: 0;\n      color: $secondaryColor;\n    }\n  }\n\n  .text-col-list {\n    list-style: none;\n    padding: 0;\n    margin: 30px 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n\n    li {\n      display: flex;\n      align-items: center;\n      gap: 14px;\n      font-size: 1rem;\n      color: $txtColor;\n\n      &::before {\n        content: \"\";\n        display: inline-block;\n        flex-shrink: 0;\n        width: 16px;\n        height: 16px;\n        background-color: $secondaryColor;\n        clip-path: polygon(14% 44%, 0 58%, 30% 85%, 100% 14%, 86% 0%, 30% 62%);\n      }\n    }\n  }\n\n  // .btn-cta {\n  //     display: inline-flex;\n  //     align-items: center;\n  //     gap: 14px;\n  //     color: $primaryColor;\n  //     text-decoration: none;\n  //     font-size: 0.68rem;\n  //     font-weight: 500;\n  //     letter-spacing: 0.22em;\n  //     text-transform: uppercase;\n  //     padding-bottom: 6px;\n  //     border-bottom: 1px solid rgba($primaryColor, 0.4);\n  //     margin-top: 8px;\n  //     align-self: flex-start;\n  //     transition: gap 0.25s ease, border-color 0.25s ease;\n\n  //     &::after {\n  //         content: '↘';\n  //         font-size: 0.85rem;\n  //         line-height: 1;\n  //         color: $secondaryColor;\n  //     }\n\n  //     &:hover {\n  //         gap: 22px;\n  //         border-color: $primaryColor;\n  //     }\n  // }\n  .text-col-title {\n    font-size: 3rem;\n    line-height: 3rem;\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-img-text .section-img-text-inner {\n    grid-template-columns: 50% 1fr;\n    gap: 50px;\n    margin: 0;\n  }\n}\n\n@media (max-width: 768px) {\n  .section-img-text {\n    padding: 60px 0;\n\n    .section-img-text-inner {\n      grid-template-columns: 100%;\n      gap: 60px;\n      margin: 0 5%;\n    }\n  }\n\n  .img-col {\n    padding-bottom: 60px;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-projects {\n  background-color: $white;\n  margin-top: 100px;\n}\n\n.projects-inner {\n  display: grid;\n  grid-template-columns: 50% 50%;\n  min-height: 500px;\n}\n\n\n.projects-left {\n  background-color: $primaryColor;\n  padding: 100px 0 100px 10vw;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: 24px;\n\n  .projects-title{\n     color: $white;\n     font-size: 4rem;\n     line-height: 4rem;\n  }\n  .projects-paragraph {\n    font-size: 1rem;\n    line-height: 1.5rem;\n    color: $white;\n    margin: 0;\n    width: 500px;\n  }\n   .btn-cta{\n    color: $white;\n    border-bottom: 0.5px solid $white;\n   }\n\n  \n}\n\n.projects-right {\n  position: relative;\n  overflow: hidden;\n\n  .swiper-projects {\n    width: 100%;\n    height: 100%;\n\n    .swiper-slide {\n      position: relative;\n      height: 100%;\n\n      img {\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        display: block;\n      }\n\n      .slide-info {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        right: 0;\n        display: flex;\n        align-items: center;\n        justify-content: space-between;\n        padding: 18px 24px;\n\n        .slide-location {\n          font-size: 1.5rem;\n          color: $white;\n          font-weight: 400;\n        }\n\n        .slide-price {\n          background-color: $white;\n          color: $primaryColor;\n          font-size: 0.75rem;\n          font-weight: 500;\n          padding: 8px 18px;\n          border-radius: 40px;\n        }\n      }\n    }\n  }\n}\n\n.projects-controls {\n  display: flex;\n  align-items: center;\n  gap: 24px;\n  padding: 28px;\n  border-top: 1px solid $lightGray;\n}\n\n.projects-nav {\n  display: flex;\n  gap: 8px;\n  flex-shrink: 0;\n\n  button {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    border: 1px solid $lightGray;\n    background: none;\n    cursor: pointer;\n    font-size: 2rem;\n    color: $primaryColor;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease,\n      border-color 0.2s ease;\n\n    &:hover {\n      background-color: $primaryColor;\n      color: $white;\n      border-color: $primaryColor;\n    }\n  }\n\n}\n\n.swiper-scrollbar-projects {\n  display: flex !important;\n  align-items: center;\n  height: 1px;\n  color: $lightGray !important;\n  width: 60%;\n  position: relative;\n\n  .swiper-scrollbar-drag {\n    height: 100%;\n    background-color: $primaryColor;\n    border-radius: 0;\n  }\n}\n\n.projects-number {\n  font-size: 4rem;\n  font-weight: 900;\n  color: $secondaryColor;\n  flex-shrink: 0;\n  min-width: 48px;\n  text-align: right;\n}\n\n// ── Responsive\n\n@media (max-width: 768px) {\n  .projects-inner {\n    grid-template-columns: 100%;\n  }\n\n  .projects-right {\n    min-height: 300px;\n  }\n\n  .projects-left {\n    padding: 50px ;\n  }\n\n  .projects-controls {\n    padding: 20px;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-citation {\n  display: flex;\n  flex-direction: column;\n  min-height: 400px;\n  margin: 50px auto;\n}\n\n.citation-block {\n  width: 90%;\n  background-color: $white;\n  padding: 40px;\n  display: flex;\n  align-items: center;\n\n  .citation-inner {\n    position: relative;\n  }\n\n  .citation-name {\n    font-size: 1.5rem;\n    color: $lightGray;\n    position: absolute;\n  }\n\n  .citation-text {\n    font-size: 4rem;\n    line-height: 1;\n    color: $txtColor;\n    text-indent: 150px;\n  }\n}\n\n.citation-blue {\n  width: calc(100% - 60px);\n  height: 500px;\n  background-color: $primaryColor;\n  margin: 0 30px 0 30px;\n  display: flex;\n  //justify-items: center;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  overflow: hidden;\n\n  .citation-deco {\n    position: absolute;\n    top: -1px;\n    right: 15px;\n    width: 260px;\n    height: 260px;\n    background-color: $white;\n    //clip-path: polygon(0 0, 100% 0, 99% 54%, 87% 54%, 71% 29%, 68% 50%, 0 49%);\n    clip-path: polygon(0 55%, 0 0, 55% 0);\n  }\n  .citation-blue-inner {\n    display: flex;\n    flex-direction: column;\n    gap: 28px;\n  }\n\n  .citation-blue-title {\n    color: $white;\n    font-size: 3rem;\n    font-weight: 300;\n    line-height: 1.3;\n    width: 60%;\n  }\n\n  .btn-cta {\n    color: $white;\n    border-bottom: 1px solid rgba(255, 255, 255, 0.4);\n  }\n}\n\n@media (max-width: 1024px) {\n  .citation-block {\n    padding: 50px;\n  }\n\n  .citation-blue .citation-blue-inner {\n    padding: 50px;\n  }\n}\n\n@media (max-width: 768px) {\n  .section-citation {\n    flex-direction: column;\n  }\n\n  .citation-block {\n    width: 100%;\n    padding: 50px;\n  }\n\n  .citation-blue {\n    width: 100%;\n\n    .citation-deco {\n      display: none;\n    }\n\n    .citation-blue-inner {\n      padding: 50px;\n      font-size: 3rem;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-discover {\n  display: flex;\n  min-height: 650px;\n  align-items: stretch;\n  margin: 1OOpx auto;\n\n  .discover-left {\n    width: 50%;\n    background-color: $primaryColor;\n    background-size: cover;\n    background-position: center;\n  }\n\n  .discover-right {\n    width: 50%;\n    background-color: rgb(229, 229, 229);\n    padding: 50px 60px 80px;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    position: relative;\n\n    .discover-title {\n      color: $primaryColor;\n      font-size: 2.2rem;\n      line-height: 1.2;\n      margin-bottom: 30px;\n    }\n\n    .discover-paragraph {\n      color: $txtColor;\n      font-size: 1rem;\n      line-height: 1.7;\n      margin-bottom: 50px;\n    }\n\n    .discover-btn {\n      margin-top: auto;\n      display: inline-flex;\n      align-items: center;\n      background-color: #d3bea1;\n      color: #fff;\n      text-decoration: none;\n      font-size: 0.9rem;\n      letter-spacing: 0.2em;\n      text-transform: uppercase;\n      padding: 5px 50px;\n      align-self: flex-end;\n      position: absolute;\n      bottom: 0;\n      gap: 80px;\n      right: 0;\n    }\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-discover {\n    .discover-right {\n      padding-top: 50px;\n      padding-bottom: 50px;\n      padding-left: 40px;\n      padding-right: 40px;\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .section-discover {\n    flex-direction: column;\n\n    .discover-left {\n      width: 100%;\n      min-height: 300px;\n    }\n\n    .discover-right {\n      width: 100%;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      padding-left: 5%;\n      padding-right: 5%;\n\n      .discover-btn {\n        align-self: flex-start;\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-links {\n  background-color: $white;\n  padding: 60px 0;\n  margin-top: 100px;\n\n  .links-item {\n    display: flex;\n    align-items: flex-end;\n    gap: 20px;\n    padding: 30px 0;\n    border-top: 1px solid $lightGray;\n    text-decoration: none;\n\n    &:last-child {\n      border-bottom: 1px solid $lightGray;\n    }\n\n    .links-numero {\n      font-size: 1rem;\n      color: $secondaryColor;\n      letter-spacing: 0.1em;\n      min-width: 20px;\n    }\n\n    .links-label {\n      font-size: 5rem;\n      font-weight: 200;\n      color: $primaryColor;\n      line-height: 1;\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .section-links {\n    padding-top: 40px;\n    padding-bottom: 40px;\n    padding-left: 5%;\n    padding-right: 5%;\n\n    .links-item {\n      padding-top: 20px;\n      padding-bottom: 20px;\n\n      .links-label {\n        font-size: 2rem;\n      }\n    }\n  }\n}\n\n.links-hover-img {\n  position: fixed;\n  pointer-events: none;\n  opacity: 0;\n  transition: opacity 0.3s ease-in;\n  z-index: 100;\n  width: 300px;\n  height: 200px;\n\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n  &.visible {\n    opacity: 1;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-video {\n  background-color: $lightGray;\n  margin-top: 100px;\n  padding: 100px 0;\n\n  .video-top {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    margin-bottom: 50px;\n\n    .video-top-left {\n      width: 45%;\n\n      .video-text {\n        color: $primaryColor;\n        font-size: 1.5rem;\n        font-weight: 300;\n        line-height: 1.4;\n        margin-bottom: 30px;\n      }\n\n      .video-line {\n        border: none;\n        border-top: 1px solid $lightGray;\n        margin: 0;\n      }\n    }\n\n    .video-top-right {\n      width: 40%;\n      padding-top: 20px;\n\n      .video-paragraph {\n        color: $txtColor;\n        font-size: 1rem;\n        line-height: 1.7;\n        margin-top: 120px;\n      }\n    }\n  }\n\n  .video-wrapper {\n    background-color: $primaryColor;\n    width: 100%;\n    aspect-ratio: 16 / 9;\n    overflow: hidden;\n\n    iframe {\n      width: 100%;\n      height: 100%;\n      display: block;\n    }\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-video {\n    padding-top: 60px;\n    padding-bottom: 60px;\n\n    .video-top {\n      .video-top-left {\n        width: 50%;\n      }\n\n      .video-top-right {\n        width: 45%;\n      }\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .section-video {\n    padding-top: 50px;\n    padding-bottom: 50px;\n    padding-left: 5%;\n    padding-right: 5%;\n\n    .video-top {\n      flex-direction: column;\n      gap: 30px;\n\n      .video-top-left {\n        width: 100%;\n      }\n\n      .video-top-right {\n        width: 100%;\n        padding-top: 0;\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-actu {\n  background-color: $white;\n  padding: 80px 0;\n  margin-top: 100px;\n\n  .actu-title {\n    color: $primaryColor;\n    font-size: 2rem;\n    font-weight: 300;\n    text-align: center;\n    margin-bottom: 50px;\n\n    strong {\n      font-weight: 700;\n    }\n  }\n\n  .actu-grid {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 30px;\n    margin-bottom: 50px;\n    align-items: start;\n  }\n\n  .actu-card {\n    .actu-card-img {\n      position: relative;\n      background-color: $lightGray;\n      height: 250px;\n      overflow: hidden;\n      margin-bottom: 15px;\n      cursor: pointer;\n\n      img {\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        display: block;\n      }\n\n      .actu-card-plus {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 50px;\n        height: 50px;\n        background-color: $white;\n        color: $primaryColor;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 1.2rem;\n        text-decoration: none;\n      }\n    }\n\n    .actu-card-cat {\n      display: block;\n      font-size: 0.65rem;\n      letter-spacing: 0.15em;\n      text-transform: uppercase;\n      color: $secondaryColor;\n      margin-bottom: 10px;\n      cursor: pointer;\n    }\n\n    .actu-card-text {\n      font-size: 0.9rem;\n      line-height: 1.6;\n      color: $txtColor;\n      cursor: pointer;\n    }\n\n    &:first-child {\n      grid-column: span 2;\n    }\n  }\n\n  .actu-btn-wrap {\n    display: flex;\n    justify-content: center;\n\n    .actu-btn {\n      display: inline-block;\n      background-color: $primaryColor;\n      color: $white;\n      text-decoration: none;\n      font-size: 0.7rem;\n      letter-spacing: 0.2em;\n      text-transform: uppercase;\n      padding-top: 16px;\n      padding-bottom: 16px;\n      padding-left: 40px;\n      padding-right: 40px;\n    }\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-actu .actu-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n@media (max-width: 768px) {\n  .section-actu {\n    padding-top: 50px;\n    padding-bottom: 50px;\n    padding-left: 5%;\n    padding-right: 5%;\n\n    .actu-grid {\n      grid-template-columns: 1fr;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n\n.menu-burger {\n  display: flex;\n  width: 100%;\n height: 100vh;\n  gap: 10px;\n  align-items: flex-end;\n\n \n}\n\n.menu-burger-left {\n  width: 50%;\n position: relative;\n//padding-top: 150px;\n display: flex;\n align-items: flex-end;\n height: 100%;\n \n\n\n\n  img {\n  position: absolute;\n  object-fit: cover;\n  z-index: 1;\n   width: 100%;\n    height: 100%;\n    filter: brightness(.5);\n  \n}\n\n//.backgr-image{\n  //width: 100%;\n   //object-fit: cover;\n//}\n\n}\n\n.menu-burger-left-logo{\n  position: absolute;\n  top: 40px;\n  left: 40px;\n  z-index: 2;\n}\n\n.menu-burger-left-bottom {\n  position: absolute;\n  z-index: 1;\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n  bottom: 180px;\n\n}\n\n.menu-burger-contact {\n  padding-left: 100px;\n  color: $white;\n  font-size: 3rem;\n  line-height: 1.9;\n  font-weight: 300;\n\n \n}\n\n\n\n//.menu-burger-contact-name {\n  //font-weight: 700;\n  //text-transform: uppercase;\n  //margin-bottom: 4px;\n//}\n\n.menu-burger-socials {\n  display: flex;\n  gap: 40px;\n  align-items: center;\n  justify-items: center;\n        padding-left: 100px;\n\n\n}\n\n.menu-burger-socials img {\n  width: 24px;\n  height: 24px;\n\n  \n}\n//.bg-menu{\n  //gap: 20px;\n//}\n.menu-burger-right {\n  width: 50%;\n  background-color: $primaryColor;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items:end;\n  padding-top: 300px;\n  padding-right: 50px;\n  gap: 50px;\n  height: fit-content;\n}\n\n.burger-btn-close {\n  position: absolute;\n  top: 60px;\n  right: 40px;\n  background: none;\n  border: none;\n  color: $white;\n  font-size: 1.3rem;\n  cursor: pointer;\n  padding: 0;\n}\n\n.burger-nav {\n  width: 100%;\n}\n\n\n\n.big-menu  {\n  color: $white;\n  font-size: 2.5rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  line-height: 1.5;\n  display: block;\n\n  width: 100%;\n  text-align: right;\n\n}\n\n.bg-menu-small{\n    text-align: right;\n\n  color: $white;\n  font-size: 2rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  line-height: 1.5;\n  display: block;\n}\n\n/* classe \"is-secondary\" à ajouter dans l'admin WordPress */\n.burger-menu_list li.is-secondary a {\n  font-size: 1rem;\n  letter-spacing: 1px;\n}\n\n\n\n.burger-menu_list li.big-menu + li.bg-menu-small {\n    margin-top: 40px;\n}\n\n\n.burger-menu_list li.bg-menu-small + li.bg-menu-gold {\n    margin-top: 40px;\n}\n\n.burger-menu_list li.big-menu + li.bg-menu-small {\n    margin-top: 40px;\n}\n\n\n.burger-menu_list li.bg-menu-small + li.bg-menu-gold {\n    margin-top: 40px;\n}\n\n.burger-menu_list li.has-arrow a::before {\n  content: \"↘ \";\n  color: $secondaryColor;\n}\n\n\n.bg-menu-gold {\n  color: $secondaryColor;\n  text-decoration: none;\n  font-size: 1.5rem;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  line-height: 2;\n  display: block;\n   text-align: right;\n\n}\n\n.burger-cta-list li.has-arrow a::before {\n  content: \"↘ \";\n}\n\n.burger-bottom {\n    width: fit-content;\n    text-align: right;\n    display: flex;\n    flex-direction: column;\n    margin-right: 0;\n    padding-left: 100px;\n    margin-left: auto;\n    align-items: flex-end;\n\n   // margin-top: 100px;\n}\n\n.menu-bottom\n{\n  //margin-top: 100px;\n  width: 100%;\n}\n.burger-legal-footer {\n    padding: 0;\n    margin-top: 40px;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    gap: 15px;\n\n    li a {\n        color: $white;\n        font-size: 1rem;\n        letter-spacing: 1.5px;\n        text-transform: uppercase;\n        text-decoration: none;\n        opacity: 0.6;\n    }\n}\n\n.burger-hr {\n    border: none;\n    border-top: 1px solid rgba(255, 255, 255, 0.2);\n    width: 100%;\n    //margin-bottom: 100px ;\n}\n\n.burger-legal-links {\n    color: $white;\n    font-size: 1rem;\n    letter-spacing: 1.5px;\n    text-transform: uppercase;\n    opacity: 0.6;\n    margin: 0 ;\n    margin-top: 20px;\n}\n\n.burger-legal-copyright {\n    color: $white;\n    font-size: 1rem;\n    letter-spacing: 1.5px;\n    text-transform: uppercase;\n    opacity: 0.6;\n    margin: 0;\n    margin-top: 20px;\n   \n}\n\n.burger-legal-copy{\n  display: flex;\n  justify-content: flex-end;\n  gap: 20px;\n  align-items: center;\n  margin-top: 10px;\n}","@use \"./../variables/colors.scss\" as *;\n\n.site-header {\n  width: 100%;\n  z-index: 100;\n  padding: 30px 40px;\n  position: relative;\n\n  .header-inner {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 40px;\n\n    .header-logo {\n      flex-shrink: 0;\n      width: 180px;\n      display: block;\n\n      img {\n        width: 100%;\n        height: auto;\n        display: block;\n      }\n    }\n\n    .header-nav {\n      flex: 1;\n      display: flex;\n      justify-content: flex-end;\n\n      .navbar {\n        list-style: none;\n        display: flex;\n        align-items: center;\n        gap: 40px;\n        margin: 0;\n        padding: 0;\n\n        > li {\n          position: relative;\n\n          > a {\n            color: $primaryColor;\n            text-decoration: none;\n            font-size: 0.8rem;\n            letter-spacing: 1px;\n            text-transform: uppercase;\n            white-space: nowrap;\n            display: flex;\n            align-items: center;\n            gap: 6px;\n            transition: opacity 0.2s ease;\n\n            &:hover {\n              opacity: 0.7;\n            }\n          }\n\n          &.menu-item-has-children {\n            > a::after {\n              content: \"\";\n              display: inline-block;\n              width: 0;\n              height: 0;\n              border-left: 4px solid transparent;\n              border-right: 4px solid transparent;\n              border-top: 5px solid $white;\n              margin-top: 2px;\n              transition: transform 0.2s ease;\n            }\n\n            .sub-menu {\n              position: absolute;\n              top: calc(100% + 20px);\n              left: 0;\n              background-color: rgba(255, 255, 255, 0.6);\n              min-width: 220px;\n              list-style: none;\n              padding: 0;\n              margin: 0;\n              opacity: 0;\n              visibility: hidden;\n              transform: translateY(-6px);\n              transition:\n                opacity 0.25s ease,\n                transform 0.25s ease,\n                visibility 0.25s;\n\n              li {\n                a {\n                  display: block;\n                  padding: 12px 20px;\n                  font-size: 0.75rem;\n                  letter-spacing: 0.08em;\n                  color: $primaryColor;\n                  text-decoration: none;\n                  border-bottom: 1px solid $lightGray;\n                  transition: color 0.2s ease;\n\n                  &:hover {\n                    color: $secondaryColor;\n                  }\n                }\n\n                &:last-child a {\n                  border-bottom: none;\n                }\n              }\n            }\n\n            &:hover {\n              > a::after {\n                transform: rotate(180deg);\n              }\n\n              .sub-menu {\n                opacity: 1;\n                visibility: visible;\n                transform: translateY(0);\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n\n  .header-actions {\n    display: flex;\n    align-items: center;\n    gap: 30px;\n    flex-shrink: 0;\n\n    .header-separator {\n      display: block;\n      width: 1px;\n      height: 36px;\n      background-color: rgba(255, 255, 255, 0.4);\n    }\n\n    .burger-btn {\n      background: none;\n      border: none;\n      cursor: pointer;\n      padding: 4px;\n      display: flex;\n      flex-direction: column;\n      gap: 6px;\n\n      span {\n        display: block;\n        width: 28px;\n        height: 1.5px;\n        background-color: $primaryColor;\n        transition:\n          transform 0.3s ease,\n          opacity 0.3s ease;\n\n        &:last-child {\n          width: 18px;\n        }\n      }\n\n      &.is-active {\n        span {\n          background-color: $white;\n        }\n\n        span:nth-child(1) {\n          transform: translateY(7.5px) rotate(45deg);\n        }\n        span:nth-child(2) {\n          opacity: 0;\n        }\n        span:nth-child(3) {\n          transform: translateY(-7.5px) rotate(-45deg);\n          width: 28px;\n        }\n      }\n    }\n  }\n\n  &.-frontpage {\n    position: absolute;\n    top: 0;\n    left: 0;\n\n    .header-inner {\n      .header-nav {\n        .navbar {\n          > li {\n            > a {\n              color: $white;\n            }\n          }\n        }\n      }\n    }\n\n    .header-actions {\n      .burger-btn {\n        span {\n          background-color: $white;\n        }\n      }\n    }\n  }\n}\n\n.mobile-menu {\n  position: fixed;\n  inset: 0;\n  background-color: $primaryColor;\n  z-index: 99;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: 0;\n  visibility: hidden;\n  transform: translateX(100%);\n  transition:\n    transform 0.4s ease,\n    opacity 0.3s ease,\n    visibility 0.4s;\n    height: 100vh;\n    \n\n\n  &.is-open {\n    opacity: 1;\n    visibility: visible;\n    transform: translateX(0);\n  }\n\n  .mobile-navbar {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    text-align: center;\n\n    > li {\n      padding: 16px 0;\n\n      > a {\n        color: $white;\n        text-decoration: none;\n        font-size: 1.4rem;\n        letter-spacing: 0.12em;\n        text-transform: uppercase;\n        transition: color 0.2s ease;\n\n        &:hover {\n          color: $secondaryColor;\n        }\n      }\n\n      .sub-menu {\n        list-style: none;\n        padding: 10px 0 0;\n        margin: 0;\n\n        li {\n          padding: 6px 0;\n\n          a {\n            font-size: 0.95rem;\n            color: rgba(255, 255, 255, 0.6);\n            text-decoration: none;\n            letter-spacing: 0.06em;\n            transition: color 0.2s ease;\n\n            &:hover {\n              color: $white;\n            }\n          }\n        }\n      }\n    }\n  }\n}\n\n// Responsive\n\n@media (max-width: 768px) {\n  .site-header {\n    padding: 20px;\n  }\n\n  .header-nav {\n    display: none;\n  }\n\n  .header-separator {\n    display: none;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.site-footer {\n    background-color: $primaryColor;\n    padding: 150px;\n    position: relative;\n    margin-top: 100px;\n\n    .footer-top {\n        display: flex;\n        justify-content: space-between;\n        align-items: flex-start;\n        margin-bottom: 60px;\n\n        .footer-left {\n            width: 50%;\n            display: flex;\n            flex-direction: column;\n            gap: 40px;\n\n            .footer-titre {\n                color: $white;\n                font-size: 4rem;\n                font-weight: 700;\n                line-height: 1.1;\n            }\n\n            .footer-arrow {\n                width: 40px;\n                height: 40px;\n                color: $secondaryColor;\n                stroke: $secondaryColor;\n                margin-left: 300px;\n           \n            }\n\n            \n        }\n\n        .footer-right {\n            width: 40%;\n            padding-top: 80px;\n\n            .footer-texte {\n                p{\n                    color: $white;\n                    font-size: 1rem;\n                    line-height: 1.7;\n                }\n            }\n        }\n    }\n\n    .footer-lien {\n        width: fit-content;\n        display: block;\n                color: $white;\n                text-decoration: none;\n                font-size: 1.5rem;\n                letter-spacing: 0.05em;\n                margin: 20px auto;\n                text-align: center;\n\n                &:hover {\n                    text-decoration: underline;\n                }\n            }\n\n    .footer-bottom {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        border-top: 0.5px solid $white;\n        padding-top: 30px;\n\n        .footer-made-by {\n            p{   \n                color: $white;\n            font-size: 0.9rem;\n        \n        \n        }\n         \n        }\n\n        .footer-nav {\n            display: flex;\n            gap: 30px;\n            list-style: none;\n            margin: 0;\n            padding: 0;\n\n            li a {\n               color: $white;\n                text-decoration: none;\n                font-size: 0.7rem;\n                letter-spacing: 0.15em;\n                text-transform: uppercase;\n\n                &:hover {\n                    color: $secondaryColor;\n                }\n            }\n        }\n    }\n}\n\n.scroll-top {\nposition: fixed;\nbottom: 30px;\nright: 30px;\nwidth: 44px;\nheight: 44px;\nbackground-color: $secondaryColor;\ncolor: $white;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\ntext-decoration: none;\nfont-size: 2rem;\nz-index: 100;\nopacity: 0;\nvisibility: hidden;\ntransition: opacity 0.3s;\n&.visible {\nopacity: 1;\nvisibility: visible;\n    }\n}",".galerie-reference {\n  .swiper-reference {\n    height: 90vh;\n\n    .swiper-slide {\n      img {\n        object-fit: cover;\n        width: 100%;\n        height: 100%;\n      }\n    }\n  }\n}\n\n.bloc-reference {\n  padding-top: 150px;\n\n  .container {\n    gap: 100px;\n\n    .col-g {\n      .block-img {\n        height: 600px;\n        max-height: 700px;\n        width: 100%;\n      }\n    }\n\n    .col-d {\n      .section-informations {\n        padding: 0 100px 100px;\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n\n        p {\n          font-weight: 200;\n\n          strong {\n            font-weight: 400;\n          }\n        }\n      }\n\n      .block-img {\n        height: 800px;\n        max-height: 900px;\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-service-header {\n  margin-top: -200px;\n  background-color: $primaryColor;\n  height: 30vh;\n  width: 100vw;\n  min-height: 500px;\n  display: flex;\n  align-items: flex-end;\n  justify-content: flex-end;\n\n  .container {\n    margin: 0;\n    align-items: flex-end;\n    justify-content: space-between;\n    width: 90vw;\n    max-width: 1400px;\n\n    .colg {\n      h1 {\n        color: $white;\n        font-size: 7rem;\n        line-height: 5rem;\n        font-weight: 700;\n      }\n    }\n\n    .cold {\n      .block-cta {\n        background-color: #fff;\n        height: 60px;\n        width: 400px;\n        display: flex;\n        align-items: flex-end;\n        justify-content: center;\n      }\n    }\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-approche-globale {\n  padding: 100px 0;\n\n  .container {\n    h2 {\n      font-size: 5rem;\n      line-height: 4.5rem;\n      margin: 30px 0;\n      color: $primaryColor;\n    }\n\n    &.grid {\n      grid-template-columns: repeat(4, 1fr);\n      gap: 20px;\n      margin: 50px auto;\n\n      .card {\n        aspect-ratio: 1;\n        padding: 30px;\n        border: 1px solid $lightGray;\n        display: flex;\n        align-items: flex-end;\n        justify-content: flex-start;\n\n        &.-left{\n          border: none;\n          border-left: 1px solid $lightGray;\n        }\n\n        .content-card {\n          max-width: 50%;\n          display: flex;\n          flex-direction: column;\n          gap: 20px;\n\n          .block-img {\n            width: 60px;\n            height: 60px;\n          }\n\n          h3 {\n            font-weight: 500;\n            color: $primaryColor;\n          }\n\n          .btn-cta {\n            text-decoration: none;\n            border-bottom: none;\n          }\n        }\n      }\n    }\n\n    .btn-cta {\n      &.section {\n        background-color: $secondaryColor;\n        color: $white;\n        padding: 15px 50px;\n        border-bottom: none;\n        margin: auto;\n        transition: all ease-in 200ms;\n\n        &::after {\n          color: $white;\n        }\n\n        &:hover {\n          background-color: $primaryColor;\n        }\n      }\n    }\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-txt-g-img-d {\n  border-top: 1px solid $lightGray;\n  border-bottom: 1px solid $lightGray;\n  position: relative;\n  padding: 150px 0;\n\n  .container-bg {\n    background: linear-gradient(\n      90deg,\n      $lightGray 0%,\n      $whiteTransparent calc(0% + 1px),\n      $whiteTransparent calc(50%),\n      $lightGray 50%,\n      $whiteTransparent calc(50% + 1px),\n      $whiteTransparent calc(100% - 1px),\n      $lightGray 100%\n    );\n    height: 100%;\n    position: absolute;\n    z-index: -1;\n    left: 33.3vw;\n    width: 33.3vw;\n    top: 0;\n  }\n\n  .container {\n    gap: 100px;\n    align-items: center;\n\n    .colg {\n      display: flex;\n      flex-direction: column;\n      gap: 50px;\n      height: fit-content;\n    }\n\n    .cold {\n      .block-img {\n        height: 750px;\n      }\n    }\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.titre h2{\n  font-size: 3.5rem;\n  color: $primaryColor;\n}\n\n\n.section-galerie-vertical {\n  padding: 50px 0;\n\n  .swiper-vertical {\n    max-height: 80vh;\n    max-width: 95vw;\n\n    .swiper-wrapper {\n      .swiper-slide {\n        display: flex;\n        align-items: center;\n\n        .col-50 {\n          width: 50%;\n        }\n\n        .colg {\n          height: 100%;\n          .block-img {\n            height: 100%;\n          }\n        }\n\n        .cold {\n          padding-left: 50px;\n\n          .content {\n            display: flex;\n            flex-direction: column;\n            gap: 20px;\n            width: 70%;\n\n            p {\n              text-align: justify;\n            }\n          }\n        }\n      }\n    }\n\n    .swiper-pagination-vertical {\n      .swiper-pagination-bullet {\n        height: 60px;\n        width: 2px;\n        border-radius: 0;\n        background-color: $lightGray;\n\n        &.swiper-pagination-bullet-active {\n          background-color: $txtColor;\n        }\n      }\n    }\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-step {\n  padding: 100px 0;\n  overflow: hidden;\n\n  .content-title {\n    margin-left: 40%;\n\n    .surtitre {\n      display: block;\n      font-size: 12px;\n      letter-spacing: 0.25em;\n      text-transform: uppercase;\n      color: $secondaryColor;\n      margin-bottom: 20px;\n    }\n\n    .main-title {\n      max-width: 540px;\n    }\n  }\n\n  .slider-layout {\n    position: relative;\n    margin-top: -160px;\n  }\n\n  .slide-inner {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n    gap: 150px;\n    min-height: 500px;\n\n    .colg {\n      width: 35%;\n\n      .block-img {\n        width: 100%;\n        height: 600px;\n        overflow: hidden;\n        transform: translateX(-40px);\n        opacity: 0;\n        transition:\n          transform 0.5s ease,\n          opacity 0.5s ease;\n\n        &.is-visible {\n          transform: translateX(0);\n          opacity: 1;\n        }\n      }\n    }\n\n    .cold {\n      width: 33%;\n      transform: translateX(40px);\n      opacity: 0;\n      transition:\n        transform 0.8s ease 0.15s,\n        opacity 0.8s ease 0.15s;\n\n      &.is-visible {\n        transform: translateX(0);\n        opacity: 1;\n      }\n\n      .slide-title {\n        margin-bottom: 24px;\n\n        h3,\n        h4 {\n          margin: 0;\n        }\n      }\n\n      .slide-text {\n        p:last-child {\n          margin-bottom: 0;\n        }\n      }\n    }\n  }\n\n  .block-navigation {\n    position: absolute;\n    left: 40%;\n    bottom: 0;\n    z-index: 5;\n    display: flex;\n    flex-direction: column;\n    gap: 5px;\n  }\n\n  .swiper-step-prev,\n  .swiper-step-next {\n    width: 80px;\n    height: 80px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border: 1px solid $txtColor;\n    border-radius: 50%;\n    cursor: pointer;\n    position: relative;\n    transition:\n      opacity 0.3s ease,\n      transform 0.3s ease;\n\n    &:hover {\n      transform: scale(1.05);\n    }\n\n    &.swiper-button-disabled {\n      opacity: 0.4;\n      pointer-events: none;\n    }\n  }\n\n  .swiper-step-scrollbar {\n    position: relative;\n    margin-top: 100px;\n    height: 1px !important;\n    background: $lightGray;\n  }\n\n  .swiper-scrollbar-drag {\n    height: 2px !important;\n    top: -0.5px;\n    background: $txtColor;\n  }\n\n  @media (max-width: 991px) {\n    .content-title,\n    .slide-inner {\n      grid-template-columns: 1fr;\n      gap: 30px;\n    }\n\n    .block-navigation {\n      position: static;\n      transform: none;\n      flex-direction: row;\n      margin-top: 30px;\n      margin-bottom: 20px;\n    }\n\n    .colg .block-img {\n      max-width: 100%;\n    }\n  }\n}\n",".section-image-parallax {\n  width: 100vw;\n  position: relative;\n\n  img {\n    height: 100%;\n    width: 100%;\n    object-fit: cover;\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-formulaire-contact {\n  padding: 100px 0;\n\n  .container {\n    gap: 100px;\n\n    .col-35 {\n      width: 45%;\n      display: flex;\n      flex-direction: column;\n      gap: 50px;\n\n      .block-contact {\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n        margin-top: 300px;\n\n        h3 {\n          text-transform: uppercase;\n          letter-spacing: 1px;\n          font-weight: 600;\n        }\n\n        .block-tel-mail {\n          .labelBold {\n            font-weight: 600;\n            margin-right: 10px;\n          }\n        }\n      }\n    }\n\n    .col-65 {\n      width: 55%;\n\n      form {\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n        margin-top: 150px;\n\n        .content {\n          display: flex;\n          width: 100%;\n\n          &.-flex {\n            p {\n              display: flex;\n              gap: 10px;\n\n              span {\n                input,\n                label {\n                  width: 100%;\n                }\n              }\n            }\n          }\n\n          p {\n            width: 100%;\n\n            input,\n            label,\n            textarea {\n              border-bottom: 1px solid $lightGray;\n              display: flex;\n              justify-content: space-between;\n              padding: 20px;\n              width: 100%;\n              outline: none;\n\n              &:focus {\n                border-color: $secondaryColor;\n              }\n            }\n\n            select {\n              outline: none;\n            }\n          }\n        }\n\n        input[type=\"submit\"] {\n          padding: 10px 50px;\n          background: $primaryColor;\n          color: $white;\n          text-transform: uppercase;\n          font-weight: 500;\n          letter-spacing: 3px;\n          transition: all ease-in 300ms;\n\n          &:hover {\n            background-color: $secondaryColor;\n            color: $primaryColor;\n          }\n        }\n\n        .wpcf7-not-valid-tip {\n          font-size: 0.9rem;\n        }\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.big_title h2 {\n  color: $primaryColor;\n  font-size: 8rem;\n  font-weight: 600;\n  line-height: .9;\n  //padding: 100px;\n  width: 60%;\n  padding-left: 200px ;\n  padding-top: 15Opx ;\n  border-top: 1px solid #4f4d4d;\n}","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-accordeon{\n  .container{\n    display: flex;\n    gap: 40px;\n    //width: 100%;\n    align-items: stretch;\n\n}\n\n.col-image{\n    width: 50%;\n}\nimg{\n    //height: 800px;\n    //width: 600px;\n}\n\n.col-text{\n    width: 50%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-between;\n    gap:40px;\n\n}\n\n.accordeon{\n  background-color: $white;\n  padding: 60px 0;\n  margin-top: 100px;\n  width: 100%;\n}\n\n  .accordeon_el {\n    display: flex;\n    align-items: flex-end;\n    justify-content: space-between;\n    gap: 20px;\n    padding: 30px 0;\n    border-top: 1px solid $lightGray;\n    text-transform: uppercase;\n    //width: 100%\n\n    a{\n      flex:1;\n    }\n\n    &::after {\n          content: \"↘\";\n\n     color: $secondaryColor;\n    transform: rotate(0deg);\n    transition: all ease-in 300ms;\n  }\n\n  &:hover {\n    border-bottom: 1px solid;\n    color: $secondaryColor;\n\n    &::after {\n      transform: rotate(-90deg);\n    }\n  }\n\n  \n  \n}\n.section-header{\n  .small_title{\n    align-items: flex-start;\n    margin-bottom: 20px;\n\n  }\n  .title {\n    font-size: 3.5rem;\n    color: $primaryColor;\n    max-width: 50%;\n    //max-height: 150px;\n    width: 100%;\n    //margin: 0 auto;\n    align-items: flex-start;\n\n    \n  }\n\n}\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n\n\n.title{\n    font-size: 3.5rem;\n    color: $primaryColor;\n    text-align: center;\nwidth: 40%;    \nmargin: 0 auto;\n}\n\n.container_overlay{\n    margin-top: 150px;\n    position: relative;\n    //width: 88%;\n    height: 520px;\n    z-index: 0;\n    //align-items: center;\n    overflow: visible;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n\n\n    img{\n\n        display: block;\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        margin: 0 auto;\n    }\n}\n\n.content_overlay{\n    //position: absolute;\n    //bottom: 0;\n    //right: -40px;\n    width: 60%;\n    margin-left: -20%;\n    background-color: $white;\n    z-index: 1;\n    padding: 60px 10vw 0px 60px;\n    justify-content: flex-end;\n    gap: 50px;\n    height: 400px;\n    \n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -7396,6 +7797,12 @@ body {
 
 throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nUndefined variable.\n\u001b[34m    ╷\u001b[0m\n\u001b[34m189 │\u001b[0m         border-top: 1px solid \u001b[31m$lightGrayTransparent\u001b[0m;\n\u001b[34m    │\u001b[0m \u001b[31m                              ^^^^^^^^^^^^^^^^^^^^^\u001b[0m\n\u001b[34m    ╵\u001b[0m\n  src/scss/burger-menu/burger-menu.scss 189:31  @use\n  src/scss/main.scss 17:1                       root stylesheet");
 >>>>>>> 08604e2 (Fix : Correction du burger-menu.scss + footer + functions + template-builder.php)
+=======
+}`, "",{"version":3,"sources":["webpack://./src/scss/main.scss","webpack://./src/scss/variables/colors.scss","webpack://./src/scss/variables/base.scss","webpack://./src/scss/variables/fonts.scss","webpack://./src/scss/variables/cta.scss","webpack://./src/scss/builder/swiper.scss","webpack://./src/scss/builder/section2.scss","webpack://./src/scss/builder/section3.scss","webpack://./src/scss/builder/section4.scss","webpack://./src/scss/builder/section5.scss","webpack://./src/scss/builder/section6.scss","webpack://./src/scss/builder/section7.scss","webpack://./src/scss/builder/section8.scss","webpack://./src/scss/builder/section9.scss","webpack://./src/scss/builder/section10.scss","webpack://./src/scss/builder/section11.scss","webpack://./src/scss/builder/section12.scss","webpack://./src/scss/burger-menu/burger-menu.scss","webpack://./src/scss/base/header.scss","webpack://./src/scss/base/footer.scss","webpack://./src/scss/base/single-reference.scss","webpack://./src/scss/builder/header-service.scss","webpack://./src/scss/builder/section-app-glob.scss","webpack://./src/scss/builder/section-txt-g-img-d.scss","webpack://./src/scss/builder/section-slider-vertical.scss","webpack://./src/scss/builder/section-etapes.scss","webpack://./src/scss/builder/section-parallax.scss","webpack://./src/scss/builder/section-formulaire.scss","webpack://./src/scss/builder/big_title_about.scss","webpack://./src/scss/builder/section_accordeon.scss","webpack://./src/scss/builder/text_overlay.scss"],"names":[],"mappings":"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","sourcesContent":["@use \"variables/base.scss\" as *;\n@use \"variables/fonts.scss\" as *;\n@use \"variables/cta.scss\" as *;\n\n@use \"builder/swiper.scss\" as *;\n@use \"builder/section2.scss\" as *;\n@use \"builder/section3.scss\" as *;\n@use \"builder/section4.scss\" as *;\n@use \"builder/section5.scss\" as *;\n@use \"builder/section6.scss\" as *;\n@use \"builder/section7.scss\" as *;\n@use \"builder/section8.scss\" as *;\n@use \"builder/section9.scss\" as *;\n@use \"builder/section10.scss\" as *;\n@use \"builder/section11.scss\" as *;\n@use \"builder/section12.scss\" as *;\n@use \"burger-menu/burger-menu.scss\" as *;\n\n@use \"base/header.scss\" as *;\n@use \"base/footer.scss\" as *;\n@use \"base/single-reference.scss\" as *;\n\n@use \"builder/header-service.scss\" as *;\n@use \"builder/section-app-glob.scss\" as *;\n@use \"builder/section-txt-g-img-d.scss\" as *;\n@use \"builder/section-slider-vertical.scss\" as *;\n@use \"builder/section-etapes.scss\" as *;\n@use \"builder/section-parallax.scss\" as *;\n@use \"builder/section-formulaire.scss\" as *;\n\n@use \"builder/header-service.scss\" as *;\n@use \"builder/section-app-glob.scss\" as *;\n@use \"builder/section-txt-g-img-d.scss\" as *;\n@use \"builder/section-slider-vertical.scss\" as *;\n@use \"builder/section-etapes.scss\" as *;\n@use \"builder/section-parallax.scss\" as *;\n@use \"builder/section-formulaire.scss\" as *;\n@use \"builder/big_title_about.scss\" as *;\n@use \"builder/section_accordeon.scss\" as *;\n@use \"builder/text_overlay.scss\" as *;\n\nbody {\n  font-family: \"Manrope\", sans-serif;\n}\n","$primaryColor: #05233c;\n$secondaryColor: #d3bea1;\n\n$darkPrimary: #03111d;\n\n$txtColor: #222;\n$lightGray: #e2e2e2;\n$white: #fff;\n$black: #000;\n\n/* Transparent */\n$whiteTransparent: #ffffff00;\n$lightGrayTransparent: #e2e2e270;\n\n/* Dégradés */\n\n$blueGradient: linear-gradient($primaryColor 0%, $darkPrimary 100%);\n","@use \"../variables/colors.scss\" as *;\n\n.container {\n  width: 80vw;\n  max-width: 1200px;\n  margin: auto;\n\n  &.flex {\n    display: flex;\n\n    @for $i from 1 through 100 {\n      .col-#{$i} {\n        width: $i * 1%;\n      }\n    }\n  }\n\n  &.grid {\n    display: grid;\n  }\n}\n\n.big_title {\n  color: $primaryColor;\n  font-size: 4rem;\n  line-height: 3.5rem;\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n\n.block-img {\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n}\n","@use \"./colors.scss\" as *;\n\n* {\n  font-family: \"Manrope\", sans-serif;\n}\n\nh2 {\n  font-size: 3.5rem;\n  line-height: 3.5rem;\n}\n\np {\n  font-size: 1rem;\n  line-height: 1.8rem;\n  font-weight: 100;\n  font-weight: $txtColor;\n\n  & + p {\n    margin-top: 1rem;\n  }\n}\n\nstrong {\n  font-weight: 600;\n}\n\n.section-label,\n.surtitre {\n  text-transform: uppercase;\n  color: $secondaryColor;\n  letter-spacing: 2px;\n}\n","@use \"./../variables/colors.scss\" as *;\n.btn-cta {\n  display: flex;\n  width: fit-content;\n  align-items: center;\n  color: $primaryColor;\n  text-decoration: none;\n  gap: 120px;\n  text-decoration: none;\n  font-size: 0.9rem;\n  font-weight: 500;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  padding-bottom: 6px;\n  border-bottom: 1px solid $primaryColor;\n  transition:\n    gap 0.25s ease,\n    border-color 0.25s ease;\n\n  &::after {\n    content: \"↘\";\n    font-size: 0.9rem;\n    //padding-left: 50px;\n    color: $secondaryColor;\n    transform: rotate(0deg);\n    transition: all ease-in 300ms;\n  }\n\n  &:hover {\n    border-bottom: 1px solid;\n    color: $secondaryColor;\n\n    &::after {\n      transform: rotate(-90deg);\n    }\n  }\n\n  // &::before {\n  //     content: '';\n  //     position: absolute;\n  //     bottom: 0;\n  //     left: 0;\n  //     width: 70%;\n  //     height: 1px;\n  //     background-color: rgba($primaryColor, 0.4);\n  // }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.slider-fullwidth {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n}\n\n.swiper-fullwidth {\n  width: 100%;\n  height: 100vh;\n\n  .swiper-slide {\n    position: relative;\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n\n    .background {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      z-index: 0;\n\n      img {\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        display: block;\n      }\n    }\n\n    .content {\n      position: absolute;\n      top: 20px;\n      left: 10%;\n      z-index: 1;\n      max-width: 70%;\n\n      .content-titre {\n        color: $white;\n        font-size: 8rem;\n        font-weight: 400;\n        line-height: 1.2;\n        margin-bottom: 30px;\n        padding-top: 500px;\n        padding-left: 100px;\n      }\n\n      .btn-cta {\n        display: inline-block;\n        color: $white;\n        border-bottom: 1px solid $lightGray;\n        margin-left: 220px;\n      } \n\n    }\n  }\n\n  .block-pagination {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    z-index: 2;\n    background-color: $white;\n    width: clamp(220px, 26vw, 400px);\n    height: 90px;\n    padding: 0 28px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 20px;\n\n    .block-scrollbar {\n      display: flex;\n      align-items: center;\n      gap: 10px;\n      flex: 1;\n\n      .number-slide {\n        font-size: 0.72rem;\n        font-weight: 500;\n        letter-spacing: 0.08em;\n        color: $primaryColor;\n        min-width: 18px;\n      }\n\n      .swiper-scrollbar {\n        flex: 1;\n        height: 1px;\n        background-color: $lightGray;\n        border-radius: 0;\n        position: relative;\n        top: auto;\n        left: auto;\n\n        .swiper-scrollbar-drag {\n          height: 100%;\n          background-color: $primaryColor;\n          border-radius: 0;\n          cursor: pointer;\n        }\n      }\n    }\n\n    .swiper-pagination {\n      position: relative;\n      display: flex;\n      align-items: center;\n      gap: 6px;\n      flex-shrink: 0;\n      width: auto;\n\n      .swiper-pagination-bullet {\n        width: 7px;\n        height: 7px;\n        background-color: $lightGray;\n        opacity: 1;\n        margin: 0;\n        transition: background-color 0.25s ease;\n      }\n\n      .swiper-pagination-bullet-active {\n        background-color: $primaryColor;\n      }\n    }\n  }\n}\n\n// Responsive\n\n@media (max-width: 1024px) {\n  .swiper-fullwidth {\n    .swiper-slide .content {\n      left: 7%;\n      max-width: 75%;\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .swiper-fullwidth {\n    .swiper-slide .content {\n      left: 5%;\n      bottom: 90px;\n      max-width: 90%;\n    }\n\n    .block-pagination {\n      width: 100%;\n      height: 72px;\n      padding: 0 20px;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-text-evidence {\n  background-color: $white;\n  padding: 90px 0;\n  margin-top: 100px;\n\n  .section-label {\n    display: flex;\n    align-items: center;\n    gap: 16px;\n    margin-bottom: 36px;\n\n    span {\n      font-size: 0.9rem;\n      font-weight: 500;\n      text-transform: uppercase;\n      color: $primaryColor;\n    }\n\n    &::after {\n      content: \"\";\n      display: block;\n      height: 1px;\n      width: 60px;\n      background-color: $primaryColor;\n      opacity: 0.4;\n    }\n  }\n}\n\n.section-content {\n  margin-bottom: 40px;\n  p {\n    font-size: 4rem;\n    line-height: 4rem;\n  }\n}\n\n.section-paragraph {\n  margin-top: 20px;\n  color: $txtColor;\n\n  p {\n    font-size: 4rem;\n    line-height: 4rem;\n    // je ne parviens pas à aggrandir. Wysiwyg qui prend le pas?\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-text-evidence .section-inner {\n    max-width: 80%;\n  }\n}\n\n@media (max-width: 768px) {\n  .section-text-evidence {\n    padding: 60px 0;\n\n    .section-inner {\n      margin: 0;\n      max-width: 90%;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-card-solutions {\n  background-color: $white;\n  padding: 80px ;\n  margin-top: 100px;\n\n\n  .cards-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 30px;\n    padding-bottom: 100px;\n    border-bottom: 1px solid $lightGray;\n \n  }\n\n  .card {\n    display: flex;\n    flex-direction: column;\n     cursor: pointer;\n     max-height: 600px;\n  }\n\n  .card-image {\n    position: relative;\n    width: 100%;\n    aspect-ratio: 4 / 5;\n    max-height: 500px;\n    background-color: $lightGray;\n\n    img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n      display: block;\n    }\n\n    .card-plus {\n      position: absolute;\n      bottom: -1px;\n      right: -1px;\n      width: 80px;\n      height: 80px;\n      background-color: $white;\n      color: $primaryColor;\n      font-size: 2rem;\n      font-weight: 300;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-decoration: none;\n      transition:\n        background-color 0.25s ease,\n        color 0.25s ease;\n\n      &:hover {\n        background-color: $primaryColor;\n        color: $white;\n      }\n    }\n  }\n\n  .card-body {\n    padding-top: 18px;\n    display: flex;\n    flex-direction: column;\n    gap: 8px;\n  }\n\n  .card-category {\n    font-size: 1rem;\n    font-weight: 500;\n    letter-spacing: 1px;\n    text-transform: uppercase;\n    color: $secondaryColor;\n  }\n\n  .card-title {\n    font-size: 1.2rem;\n    letter-spacing: 5px;\n    font-weight: 500;\n    text-transform: uppercase;\n    color: $primaryColor;\n    margin: 0;\n  }\n}\n\n// Responsive\n@media (max-width: 1024px) {\n  .section-card-solutions {\n    padding: 60px;\n\n    .cards-grid {\n      gap: 20px;\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .section-card-solutions {\n    padding: 50px;\n\n    .cards-grid {\n      grid-template-columns: 100%;\n      gap: 32px;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-two-col {\n  background-color: $white;\n  padding: 100px 0;\n\n  .two-col-inner {\n    gap: 80px;\n    align-items: start;\n\n    .two-col-left {\n      .section-label {\n        display: flex;\n        align-items: center;\n        gap: 16px;\n        margin-bottom: 28px;\n\n        span {\n          font-size: 1rem;\n          font-weight: 500;\n          text-transform: uppercase;\n          color: $primaryColor;\n        }\n\n        .two-col-left {\n          .section-label {\n            display: flex;\n            align-items: center;\n            gap: 16px;\n            margin-bottom: 28px;\n\n            .two-col-title {\n              font-size: 4rem;\n              line-height: 1.2;\n              max-width: 550px;\n            }\n          }\n\n          &::after {\n            content: \"\";\n            display: block;\n            height: 1px;\n            width: 60px;\n            background-color: $primaryColor;\n            opacity: 0.4;\n          }\n        }\n      }\n      .two-col-details,\n      .two-col-paragraph {\n        font-size: 1rem;\n        line-height: 1.8;\n        color: $txtColor;\n\n        p {\n          margin: 0;\n        }\n      }\n    \n    }\n  }\n}\n\n// ── Responsive\n\n@media (max-width: 1024px) {\n  .section-two-col .two-col-inner {\n    grid-template-columns: 100%;\n    gap: 48px;\n    margin: 0;\n  }\n}\n\n@media (max-width: 768px) {\n  .section-two-col {\n    padding: 60px 0;\n\n    .two-col-inner {\n      grid-template-columns: 100%;\n      gap: 32px;\n      margin: 0 5%;\n    }\n\n    .two-col-right {\n      padding-top: 0;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-gallery {\n  position: relative;\n  padding: 100px 0;\n  background-color: $white;\n  // display: flex;\n  // align-items: center;\n}\n\n.swiper-gallery {\n  width: 100%;\n  overflow: hidden;\n  position: relative;\n\n  .swiper-slide {\n    //width: 60%;\n\n    .gallery-slide-inner {\n      position: relative;\n    }\n\n    .gallery-image {\n      width: 100%;\n      max-height: 100vh;\n      aspect-ratio: 4 / 3;\n      background-color: $lightGray;\n\n      img {\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        display: block;\n      }\n    }\n\n    .gallery-info {\n      position: absolute;\n      bottom: 0;\n      left: 0;\n      background-color: $white;\n      padding: 20px 28px;\n      min-width: 55%;\n      min-height: 200px;\n\n      .gallery-titre {\n        font-size: 1.5rem;\n        font-weight: 600;\n        color: $primaryColor;\n        margin: 0 0 4px;\n      }\n\n      .gallery-description {\n        font-size: 1.5rem;\n        color: $txtColor;\n        margin: 0;\n      }\n    }\n  }\n}\n\n.gallery-pagination {\n  margin-top: 20px;\n  width: 80%;\n  display: flex;\n  justify-content: end;\n  position: absolute;\n  bottom: 50px;\n  z-index: 2;\n\n  .swiper-pagination-gallery {\n    display: flex;\n    justify-content: flex-end;\n    position: relative;\n    padding-right: 50px;\n\n    .swiper-pagination-bullet {\n      background-color: $lightGray;\n      opacity: 1;\n      border: 1px solid #fff;\n    }\n\n    .swiper-pagination-bullet-active {\n      background-color: $primaryColor;\n    }\n  }\n}\n\n.gallery-nav {\n  position: absolute;\n  right: 11%;\n  bottom: 116px;\n  transform: translateY(-50%);\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  z-index: 2;\n\n  button {\n    margin-right: 0px;\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    border: 1px solid $lightGray;\n    background: $white;\n    cursor: pointer;\n    font-size: 2rem;\n    color: $primaryColor;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease;\n\n    &:hover {\n      background-color: $primaryColor;\n      color: $white;\n      border-color: $primaryColor;\n    }\n  }\n}\n\n.content-scrollbar {\n  position: relative;\n  margin-top: 100px;\n\n  .swiper-scrollbar {\n    height: 2px !important;\n  }\n}\n\n@media (max-width: 768px) {\n  .swiper-gallery .swiper-slide {\n    width: 85%;\n  }\n\n  .gallery-nav {\n    right: 2%;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-img-text {\n  background-color: $white;\n  padding: 90px 0;\n\n  .section-img-text-inner {\n    display: grid;\n    grid-template-columns: 45% 1fr;\n    gap: 80px;\n    align-items: center;\n  }\n}\n\n.img-col {\n  padding-bottom: 80px;\n}\n\n.img-wrapper {\n  position: relative;\n  padding-bottom: 120px;\n\n  .img-large {\n    display: block;\n    width: 72%;\n    aspect-ratio: 3 / 4;\n    object-fit: cover;\n    position: relative;\n    z-index: 1;\n  }\n\n  .img-small {\n    display: block;\n    width: 55%;\n    aspect-ratio: 4 / 3;\n    object-fit: cover;\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    z-index: 5;\n  }\n}\n\n.text-col {\n  display: flex;\n  flex-direction: column;\n  gap: 24px;\n\n  .section-label {\n    display: flex;\n    align-items: center;\n    gap: 16px;\n\n    span {\n      font-size: 1rem;\n      font-weight: 500;\n      text-transform: uppercase;\n      color: $primaryColor;\n    }\n\n    &::after {\n      content: \"\";\n      display: block;\n      height: 1px;\n      width: 60px;\n      background-color: $primaryColor;\n      opacity: 0.4;\n    }\n  }\n\n  .text-col-paragraph {\n    font-size: 1rem;\n    color: $txtColor;\n    margin-top: 50px;\n\n    p {\n      margin: 0;\n      color: $secondaryColor;\n    }\n  }\n\n  .text-col-list {\n    list-style: none;\n    padding: 0;\n    margin: 30px 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n\n    li {\n      display: flex;\n      align-items: center;\n      gap: 14px;\n      font-size: 1rem;\n      color: $txtColor;\n\n      &::before {\n        content: \"\";\n        display: inline-block;\n        flex-shrink: 0;\n        width: 16px;\n        height: 16px;\n        background-color: $secondaryColor;\n        clip-path: polygon(14% 44%, 0 58%, 30% 85%, 100% 14%, 86% 0%, 30% 62%);\n      }\n    }\n  }\n\n  // .btn-cta {\n  //     display: inline-flex;\n  //     align-items: center;\n  //     gap: 14px;\n  //     color: $primaryColor;\n  //     text-decoration: none;\n  //     font-size: 0.68rem;\n  //     font-weight: 500;\n  //     letter-spacing: 0.22em;\n  //     text-transform: uppercase;\n  //     padding-bottom: 6px;\n  //     border-bottom: 1px solid rgba($primaryColor, 0.4);\n  //     margin-top: 8px;\n  //     align-self: flex-start;\n  //     transition: gap 0.25s ease, border-color 0.25s ease;\n\n  //     &::after {\n  //         content: '↘';\n  //         font-size: 0.85rem;\n  //         line-height: 1;\n  //         color: $secondaryColor;\n  //     }\n\n  //     &:hover {\n  //         gap: 22px;\n  //         border-color: $primaryColor;\n  //     }\n  // }\n  .text-col-title {\n    font-size: 3rem;\n    line-height: 3rem;\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-img-text .section-img-text-inner {\n    grid-template-columns: 50% 1fr;\n    gap: 50px;\n    margin: 0;\n  }\n}\n\n@media (max-width: 768px) {\n  .section-img-text {\n    padding: 60px 0;\n\n    .section-img-text-inner {\n      grid-template-columns: 100%;\n      gap: 60px;\n      margin: 0 5%;\n    }\n  }\n\n  .img-col {\n    padding-bottom: 60px;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-projects {\n  background-color: $white;\n  margin-top: 100px;\n}\n\n.projects-inner {\n  display: grid;\n  grid-template-columns: 50% 50%;\n  min-height: 500px;\n}\n\n\n.projects-left {\n  background-color: $primaryColor;\n  padding: 100px 0 100px 10vw;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: 24px;\n\n  .projects-title{\n     color: $white;\n     font-size: 4rem;\n     line-height: 4rem;\n  }\n  .projects-paragraph {\n    font-size: 1rem;\n    line-height: 1.5rem;\n    color: $white;\n    margin: 0;\n    width: 500px;\n  }\n   .btn-cta{\n    color: $white;\n    border-bottom: 0.5px solid $white;\n   }\n\n  \n}\n\n.projects-right {\n  position: relative;\n  overflow: hidden;\n\n  .swiper-projects {\n    width: 100%;\n    height: 100%;\n\n    .swiper-slide {\n      position: relative;\n      height: 100%;\n\n      img {\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        display: block;\n      }\n\n      .slide-info {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        right: 0;\n        display: flex;\n        align-items: center;\n        justify-content: space-between;\n        padding: 18px 24px;\n\n        .slide-location {\n          font-size: 1.5rem;\n          color: $white;\n          font-weight: 400;\n        }\n\n        .slide-price {\n          background-color: $white;\n          color: $primaryColor;\n          font-size: 0.75rem;\n          font-weight: 500;\n          padding: 8px 18px;\n          border-radius: 40px;\n        }\n      }\n    }\n  }\n}\n\n.projects-controls {\n  display: flex;\n  align-items: center;\n  gap: 24px;\n  padding: 28px;\n  border-top: 1px solid $lightGray;\n}\n\n.projects-nav {\n  display: flex;\n  gap: 8px;\n  flex-shrink: 0;\n\n  button {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    border: 1px solid $lightGray;\n    background: none;\n    cursor: pointer;\n    font-size: 2rem;\n    color: $primaryColor;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease,\n      border-color 0.2s ease;\n\n    &:hover {\n      background-color: $primaryColor;\n      color: $white;\n      border-color: $primaryColor;\n    }\n  }\n\n}\n\n.swiper-scrollbar-projects {\n  display: flex !important;\n  align-items: center;\n  height: 1px;\n  color: $lightGray !important;\n  width: 60%;\n  position: relative;\n\n  .swiper-scrollbar-drag {\n    height: 100%;\n    background-color: $primaryColor;\n    border-radius: 0;\n  }\n}\n\n.projects-number {\n  font-size: 4rem;\n  font-weight: 900;\n  color: $secondaryColor;\n  flex-shrink: 0;\n  min-width: 48px;\n  text-align: right;\n}\n\n// ── Responsive\n\n@media (max-width: 768px) {\n  .projects-inner {\n    grid-template-columns: 100%;\n  }\n\n  .projects-right {\n    min-height: 300px;\n  }\n\n  .projects-left {\n    padding: 50px ;\n  }\n\n  .projects-controls {\n    padding: 20px;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-citation {\n  display: flex;\n  flex-direction: column;\n  min-height: 400px;\n  margin: 50px auto;\n}\n\n.citation-block {\n  width: 90%;\n  background-color: $white;\n  padding: 40px;\n  display: flex;\n  align-items: center;\n\n  .citation-inner {\n    position: relative;\n  }\n\n  .citation-name {\n    font-size: 1.5rem;\n    color: $lightGray;\n    position: absolute;\n  }\n\n  .citation-text {\n    font-size: 4rem;\n    line-height: 1;\n    color: $txtColor;\n    text-indent: 150px;\n  }\n}\n\n.citation-blue {\n  width: calc(100% - 60px);\n  height: 500px;\n  background-color: $primaryColor;\n  margin: 0 30px 0 30px;\n  display: flex;\n  //justify-items: center;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  overflow: hidden;\n\n  .citation-deco {\n    position: absolute;\n    top: -1px;\n    right: 15px;\n    width: 260px;\n    height: 260px;\n    background-color: $white;\n    //clip-path: polygon(0 0, 100% 0, 99% 54%, 87% 54%, 71% 29%, 68% 50%, 0 49%);\n    clip-path: polygon(0 55%, 0 0, 55% 0);\n  }\n  .citation-blue-inner {\n    display: flex;\n    flex-direction: column;\n    gap: 28px;\n  }\n\n  .citation-blue-title {\n    color: $white;\n    font-size: 3rem;\n    font-weight: 300;\n    line-height: 1.3;\n    width: 60%;\n  }\n\n  .btn-cta {\n    color: $white;\n    border-bottom: 1px solid rgba(255, 255, 255, 0.4);\n  }\n}\n\n@media (max-width: 1024px) {\n  .citation-block {\n    padding: 50px;\n  }\n\n  .citation-blue .citation-blue-inner {\n    padding: 50px;\n  }\n}\n\n@media (max-width: 768px) {\n  .section-citation {\n    flex-direction: column;\n  }\n\n  .citation-block {\n    width: 100%;\n    padding: 50px;\n  }\n\n  .citation-blue {\n    width: 100%;\n\n    .citation-deco {\n      display: none;\n    }\n\n    .citation-blue-inner {\n      padding: 50px;\n      font-size: 3rem;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-discover {\n  display: flex;\n  min-height: 650px;\n  align-items: stretch;\n  margin: 1OOpx auto;\n\n  .discover-left {\n    width: 50%;\n    background-color: $primaryColor;\n    background-size: cover;\n    background-position: center;\n  }\n\n  .discover-right {\n    width: 50%;\n    background-color: rgb(229, 229, 229);\n    padding: 50px 60px 80px;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    position: relative;\n\n    .discover-title {\n      color: $primaryColor;\n      font-size: 2.2rem;\n      line-height: 1.2;\n      margin-bottom: 30px;\n    }\n\n    .discover-paragraph {\n      color: $txtColor;\n      font-size: 1rem;\n      line-height: 1.7;\n      margin-bottom: 50px;\n    }\n\n    .discover-btn {\n      margin-top: auto;\n      display: inline-flex;\n      align-items: center;\n      background-color: #d3bea1;\n      color: #fff;\n      text-decoration: none;\n      font-size: 0.9rem;\n      letter-spacing: 0.2em;\n      text-transform: uppercase;\n      padding: 5px 50px;\n      align-self: flex-end;\n      position: absolute;\n      bottom: 0;\n      gap: 80px;\n      right: 0;\n    }\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-discover {\n    .discover-right {\n      padding-top: 50px;\n      padding-bottom: 50px;\n      padding-left: 40px;\n      padding-right: 40px;\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .section-discover {\n    flex-direction: column;\n\n    .discover-left {\n      width: 100%;\n      min-height: 300px;\n    }\n\n    .discover-right {\n      width: 100%;\n      padding-top: 50px;\n      padding-bottom: 50px;\n      padding-left: 5%;\n      padding-right: 5%;\n\n      .discover-btn {\n        align-self: flex-start;\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-links {\n  background-color: $white;\n  padding: 60px 0;\n  margin-top: 100px;\n\n  .links-item {\n    display: flex;\n    align-items: flex-end;\n    gap: 20px;\n    padding: 30px 0;\n    border-top: 1px solid $lightGray;\n    text-decoration: none;\n\n    &:last-child {\n      border-bottom: 1px solid $lightGray;\n    }\n\n    .links-numero {\n      font-size: 1rem;\n      color: $secondaryColor;\n      letter-spacing: 0.1em;\n      min-width: 20px;\n    }\n\n    .links-label {\n      font-size: 5rem;\n      font-weight: 200;\n      color: $primaryColor;\n      line-height: 1;\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .section-links {\n    padding-top: 40px;\n    padding-bottom: 40px;\n    padding-left: 5%;\n    padding-right: 5%;\n\n    .links-item {\n      padding-top: 20px;\n      padding-bottom: 20px;\n\n      .links-label {\n        font-size: 2rem;\n      }\n    }\n  }\n}\n\n.links-hover-img {\n  position: fixed;\n  pointer-events: none;\n  opacity: 0;\n  transition: opacity 0.3s ease-in;\n  z-index: 100;\n  width: 300px;\n  height: 200px;\n\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n  &.visible {\n    opacity: 1;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-video {\n  background-color: $lightGray;\n  margin-top: 100px;\n  padding: 100px 0;\n\n  .video-top {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    margin-bottom: 50px;\n\n    .video-top-left {\n      width: 45%;\n\n      .video-text {\n        color: $primaryColor;\n        font-size: 1.5rem;\n        font-weight: 300;\n        line-height: 1.4;\n        margin-bottom: 30px;\n      }\n\n      .video-line {\n        border: none;\n        border-top: 1px solid $lightGray;\n        margin: 0;\n      }\n    }\n\n    .video-top-right {\n      width: 40%;\n      padding-top: 20px;\n\n      .video-paragraph {\n        color: $txtColor;\n        font-size: 1rem;\n        line-height: 1.7;\n        margin-top: 120px;\n      }\n    }\n  }\n\n  .video-wrapper {\n    background-color: $primaryColor;\n    width: 100%;\n    aspect-ratio: 16 / 9;\n    overflow: hidden;\n\n    iframe {\n      width: 100%;\n      height: 100%;\n      display: block;\n    }\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-video {\n    padding-top: 60px;\n    padding-bottom: 60px;\n\n    .video-top {\n      .video-top-left {\n        width: 50%;\n      }\n\n      .video-top-right {\n        width: 45%;\n      }\n    }\n  }\n}\n\n@media (max-width: 768px) {\n  .section-video {\n    padding-top: 50px;\n    padding-bottom: 50px;\n    padding-left: 5%;\n    padding-right: 5%;\n\n    .video-top {\n      flex-direction: column;\n      gap: 30px;\n\n      .video-top-left {\n        width: 100%;\n      }\n\n      .video-top-right {\n        width: 100%;\n        padding-top: 0;\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-actu {\n  background-color: $white;\n  padding: 80px 0;\n  margin-top: 100px;\n\n  .actu-title {\n    color: $primaryColor;\n    font-size: 2rem;\n    font-weight: 300;\n    text-align: center;\n    margin-bottom: 50px;\n\n    strong {\n      font-weight: 700;\n    }\n  }\n\n  .actu-grid {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 30px;\n    margin-bottom: 50px;\n    align-items: start;\n  }\n\n  .actu-card {\n    .actu-card-img {\n      position: relative;\n      background-color: $lightGray;\n      height: 250px;\n      overflow: hidden;\n      margin-bottom: 15px;\n      cursor: pointer;\n\n      img {\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        display: block;\n      }\n\n      .actu-card-plus {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 50px;\n        height: 50px;\n        background-color: $white;\n        color: $primaryColor;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 1.2rem;\n        text-decoration: none;\n      }\n    }\n\n    .actu-card-cat {\n      display: block;\n      font-size: 0.65rem;\n      letter-spacing: 0.15em;\n      text-transform: uppercase;\n      color: $secondaryColor;\n      margin-bottom: 10px;\n      cursor: pointer;\n    }\n\n    .actu-card-text {\n      font-size: 0.9rem;\n      line-height: 1.6;\n      color: $txtColor;\n      cursor: pointer;\n    }\n\n    &:first-child {\n      grid-column: span 2;\n    }\n  }\n\n  .actu-btn-wrap {\n    display: flex;\n    justify-content: center;\n\n    .actu-btn {\n      display: inline-block;\n      background-color: $primaryColor;\n      color: $white;\n      text-decoration: none;\n      font-size: 0.7rem;\n      letter-spacing: 0.2em;\n      text-transform: uppercase;\n      padding-top: 16px;\n      padding-bottom: 16px;\n      padding-left: 40px;\n      padding-right: 40px;\n    }\n  }\n}\n\n@media (max-width: 1024px) {\n  .section-actu .actu-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n@media (max-width: 768px) {\n  .section-actu {\n    padding-top: 50px;\n    padding-bottom: 50px;\n    padding-left: 5%;\n    padding-right: 5%;\n\n    .actu-grid {\n      grid-template-columns: 1fr;\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.menu-burger {\n  display: flex;\n  width: 100%;\n  height: 100vh;\n  gap: 10px;\n  align-items: flex-end;\n  justify-content: space-between;\n\n  /* Colonne gauche */\n\n  .menu-burger-left {\n    width: 50%;\n    position: relative;\n    display: flex;\n    align-items: flex-end;\n    height: 100%;\n\n    img {\n      position: absolute;\n      object-fit: cover;\n      z-index: 1;\n      width: 100%;\n      height: 100%;\n      filter: brightness(0.5);\n    }\n\n    .menu-burger-left-bottom {\n      position: absolute;\n      z-index: 1;\n      display: flex;\n      flex-direction: column;\n      gap: 20px;\n      bottom: 80px;\n      padding-left: 5vw;\n\n      .menu-burger-contact {\n        color: $white;\n        font-size: 3rem;\n        font-weight: 300;\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n\n        .menu-burger-contact-name {\n          text-transform: uppercase;\n          font-weight: 600;\n          letter-spacing: 1px;\n        }\n\n        .contact-adresse,\n        .contact-tel-mail {\n          p,\n          p + p {\n            margin-top: 0;\n            line-height: 1.5rem;\n          }\n        }\n      }\n\n      .menu-burger-socials {\n        display: flex;\n        gap: 5px;\n        align-items: center;\n        justify-items: center;\n        margin-top: 50px;\n\n        a {\n          width: 20px;\n          height: 20px;\n          display: block;\n\n          img {\n            width: 100%;\n            height: 100%;\n            object-fit: contain;\n            position: relative;\n            filter: none;\n          }\n        }\n      }\n    }\n  }\n\n  /* Colonne droite */\n\n  .menu-burger-right {\n    width: 50%;\n    background-color: $primaryColor;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: flex-end;\n    padding-bottom: 80px;\n    padding-right: 50px;\n    gap: 150px;\n    height: fit-content;\n\n    .burger-nav {\n      width: 100%;\n\n      .burger-menu_list {\n        display: flex;\n        flex-direction: column;\n        gap: 10px;\n\n        li {\n          color: $white;\n          text-transform: uppercase;\n          letter-spacing: 2px;\n          display: block;\n          text-decoration: none;\n          width: 100%;\n          text-align: right;\n\n          a {\n            display: flex;\n            gap: 20px;\n            justify-content: flex-end;\n            align-items: flex-end;\n          }\n\n          &.big-menu {\n            font-size: 2.5rem;\n            font-weight: 600;\n            line-height: 3rem;\n\n            a {\n              line-height: 2.5rem;\n            }\n          }\n\n          &.bg-menu-small {\n            font-size: 2rem;\n            font-weight: 300;\n            line-height: 2.5rem;\n\n            a {\n              line-height: 2rem;\n            }\n          }\n\n          &.bg-menu-gold {\n            color: $secondaryColor;\n            font-size: 1.5rem;\n\n            a {\n              line-height: 1.5rem;\n            }\n          }\n        }\n      }\n\n      li.big-menu + li.bg-menu-small,\n      li.bg-menu-small + li.bg-menu-gold {\n        margin-top: 30px;\n      }\n\n      li.bg-menu-gold + li.bg-menu-gold {\n        margin-top: 0;\n      }\n\n      li.has-arrow a::before {\n        content: \"\";\n        background: url(\"./../../assets/images/arrow-right-gold.svg\");\n        background-size: cover;\n        color: $secondaryColor;\n        display: inline-block;\n        width: 15px;\n        height: 15px;\n        margin-bottom: 3px;\n        transform: rotate(45deg);\n      }\n    }\n\n    .menu-bottom {\n      width: 100%;\n\n      .burger-bottom {\n        width: fit-content;\n        text-align: right;\n        display: flex;\n        flex-direction: column;\n        margin-right: 0;\n        padding-left: 100px;\n        margin-left: auto;\n        align-items: flex-end;\n        border-top: 1px solid $lightGrayTransparent;\n\n        .burger-legal-footer {\n          padding: 0;\n          margin-top: 40px;\n          display: flex;\n          flex-direction: row;\n          justify-content: flex-end;\n          gap: 10px;\n\n          li {\n            a {\n              color: $lightGray;\n              font-size: 0.8rem;\n              text-transform: uppercase;\n              text-decoration: none;\n            }\n\n            & + li {\n              &::before {\n                content: \"•\";\n                margin-right: 10px;\n                color: $lightGray;\n              }\n            }\n          }\n        }\n\n        .burger-legal-copy {\n          display: flex;\n          justify-content: flex-end;\n          gap: 10px;\n          align-items: center;\n\n          .burger-legal-links,\n          .burger-legal-copyright {\n            color: $lightGray;\n            font-size: 0.8rem;\n            letter-spacing: 1px;\n            text-transform: uppercase;\n            margin: 0;\n          }\n        }\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.site-header {\n  width: 100%;\n  z-index: 100;\n  padding: 30px 40px;\n  position: relative;\n\n  .header-inner {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 40px;\n\n    .header-logo {\n      flex-shrink: 0;\n      width: 180px;\n      display: block;\n\n      img {\n        width: 100%;\n        height: auto;\n        display: block;\n      }\n    }\n\n    .header-nav {\n      flex: 1;\n      display: flex;\n      justify-content: flex-end;\n\n      .navbar {\n        list-style: none;\n        display: flex;\n        align-items: center;\n        gap: 40px;\n        margin: 0;\n        padding: 0;\n\n        > li {\n          position: relative;\n\n          > a {\n            color: $primaryColor;\n            text-decoration: none;\n            font-size: 0.8rem;\n            letter-spacing: 1px;\n            text-transform: uppercase;\n            white-space: nowrap;\n            display: flex;\n            align-items: center;\n            gap: 6px;\n            transition: opacity 0.2s ease;\n\n            &:hover {\n              opacity: 0.7;\n            }\n          }\n\n          &.menu-item-has-children {\n            > a::after {\n              content: \"\";\n              display: inline-block;\n              width: 0;\n              height: 0;\n              border-left: 4px solid transparent;\n              border-right: 4px solid transparent;\n              border-top: 5px solid $white;\n              margin-top: 2px;\n              transition: transform 0.2s ease;\n            }\n\n            .sub-menu {\n              position: absolute;\n              top: calc(100% + 20px);\n              left: 0;\n              background-color: rgba(255, 255, 255, 0.6);\n              min-width: 220px;\n              list-style: none;\n              padding: 0;\n              margin: 0;\n              opacity: 0;\n              visibility: hidden;\n              transform: translateY(-6px);\n              transition:\n                opacity 0.25s ease,\n                transform 0.25s ease,\n                visibility 0.25s;\n\n              li {\n                a {\n                  display: block;\n                  padding: 12px 20px;\n                  font-size: 0.75rem;\n                  letter-spacing: 0.08em;\n                  color: $primaryColor;\n                  text-decoration: none;\n                  border-bottom: 1px solid $lightGray;\n                  transition: color 0.2s ease;\n\n                  &:hover {\n                    color: $secondaryColor;\n                  }\n                }\n\n                &:last-child a {\n                  border-bottom: none;\n                }\n              }\n            }\n\n            &:hover {\n              > a::after {\n                transform: rotate(180deg);\n              }\n\n              .sub-menu {\n                opacity: 1;\n                visibility: visible;\n                transform: translateY(0);\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n\n  .header-actions {\n    display: flex;\n    align-items: center;\n    gap: 30px;\n    flex-shrink: 0;\n\n    .header-separator {\n      display: block;\n      width: 1px;\n      height: 36px;\n      background-color: rgba(255, 255, 255, 0.4);\n    }\n\n    .burger-btn {\n      background: none;\n      border: none;\n      cursor: pointer;\n      padding: 4px;\n      display: flex;\n      flex-direction: column;\n      gap: 6px;\n\n      span {\n        display: block;\n        width: 28px;\n        height: 1.5px;\n        background-color: $primaryColor;\n        transition:\n          transform 0.3s ease,\n          opacity 0.3s ease;\n\n        &:last-child {\n          width: 18px;\n        }\n      }\n\n      &.is-active {\n        span {\n          background-color: $white;\n        }\n\n        span:nth-child(1) {\n          transform: translateY(7.5px) rotate(45deg);\n        }\n        span:nth-child(2) {\n          opacity: 0;\n        }\n        span:nth-child(3) {\n          transform: translateY(-7.5px) rotate(-45deg);\n          width: 28px;\n        }\n      }\n    }\n  }\n\n  &.-frontpage {\n    position: absolute;\n    top: 0;\n    left: 0;\n\n    .header-inner {\n      .header-nav {\n        .navbar {\n          > li {\n            > a {\n              color: $white;\n            }\n          }\n        }\n      }\n    }\n\n    .header-actions {\n      .burger-btn {\n        span {\n          background-color: $white;\n        }\n      }\n    }\n  }\n}\n\n.mobile-menu {\n  position: fixed;\n  inset: 0;\n  background-color: $primaryColor;\n  z-index: 99;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: 0;\n  visibility: hidden;\n  transform: translateX(100%);\n  transition:\n    transform 0.4s ease,\n    opacity 0.3s ease,\n    visibility 0.4s;\n    height: 100vh;\n    \n\n\n  &.is-open {\n    opacity: 1;\n    visibility: visible;\n    transform: translateX(0);\n  }\n\n  .mobile-navbar {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    text-align: center;\n\n    > li {\n      padding: 16px 0;\n\n      > a {\n        color: $white;\n        text-decoration: none;\n        font-size: 1.4rem;\n        letter-spacing: 0.12em;\n        text-transform: uppercase;\n        transition: color 0.2s ease;\n\n        &:hover {\n          color: $secondaryColor;\n        }\n      }\n\n      .sub-menu {\n        list-style: none;\n        padding: 10px 0 0;\n        margin: 0;\n\n        li {\n          padding: 6px 0;\n\n          a {\n            font-size: 0.95rem;\n            color: rgba(255, 255, 255, 0.6);\n            text-decoration: none;\n            letter-spacing: 0.06em;\n            transition: color 0.2s ease;\n\n            &:hover {\n              color: $white;\n            }\n          }\n        }\n      }\n    }\n  }\n}\n\n// Responsive\n\n@media (max-width: 768px) {\n  .site-header {\n    padding: 20px;\n  }\n\n  .header-nav {\n    display: none;\n  }\n\n  .header-separator {\n    display: none;\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.site-footer {\n    background-color: $primaryColor;\n    padding: 150px;\n    position: relative;\n    margin-top: 100px;\n\n    .footer-top {\n        display: flex;\n        justify-content: space-between;\n        align-items: flex-start;\n        margin-bottom: 60px;\n\n        .footer-left {\n            width: 50%;\n            display: flex;\n            flex-direction: column;\n            gap: 40px;\n\n            .footer-titre {\n                color: $white;\n                font-size: 4rem;\n                font-weight: 700;\n                line-height: 1.1;\n            }\n\n            .footer-arrow {\n                width: 40px;\n                height: 40px;\n                color: $secondaryColor;\n                stroke: $secondaryColor;\n                margin-left: 300px;\n           \n            }\n\n            \n        }\n\n        .footer-right {\n            width: 40%;\n            padding-top: 80px;\n\n            .footer-texte {\n                p{\n                    color: $white;\n                    font-size: 1rem;\n                    line-height: 1.7;\n                }\n            }\n        }\n    }\n\n    .footer-lien {\n        width: fit-content;\n        display: block;\n                color: $white;\n                text-decoration: none;\n                font-size: 1.5rem;\n                letter-spacing: 0.05em;\n                margin: 20px auto;\n                text-align: center;\n\n                &:hover {\n                    text-decoration: underline;\n                }\n            }\n\n    .footer-bottom {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        border-top: 0.5px solid $white;\n        padding-top: 30px;\n\n        .footer-made-by {\n            p{   \n                color: $white;\n            font-size: 0.9rem;\n        \n        \n        }\n         \n        }\n\n        .footer-nav {\n            display: flex;\n            gap: 30px;\n            list-style: none;\n            margin: 0;\n            padding: 0;\n\n            li a {\n               color: $white;\n                text-decoration: none;\n                font-size: 0.7rem;\n                letter-spacing: 0.15em;\n                text-transform: uppercase;\n\n                &:hover {\n                    color: $secondaryColor;\n                }\n            }\n        }\n    }\n}\n\n.scroll-top {\nposition: fixed;\nbottom: 30px;\nright: 30px;\nwidth: 44px;\nheight: 44px;\nbackground-color: $secondaryColor;\ncolor: $white;\ndisplay: flex;\nalign-items: center;\njustify-content: center;\ntext-decoration: none;\nfont-size: 2rem;\nz-index: 100;\nopacity: 0;\nvisibility: hidden;\ntransition: opacity 0.3s;\n&.visible {\nopacity: 1;\nvisibility: visible;\n    }\n}",".galerie-reference {\n  .swiper-reference {\n    height: 90vh;\n\n    .swiper-slide {\n      img {\n        object-fit: cover;\n        width: 100%;\n        height: 100%;\n      }\n    }\n  }\n}\n\n.bloc-reference {\n  padding-top: 150px;\n\n  .container {\n    gap: 100px;\n\n    .col-g {\n      .block-img {\n        height: 600px;\n        max-height: 700px;\n        width: 100%;\n      }\n    }\n\n    .col-d {\n      .section-informations {\n        padding: 0 100px 100px;\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n\n        p {\n          font-weight: 200;\n\n          strong {\n            font-weight: 400;\n          }\n        }\n      }\n\n      .block-img {\n        height: 800px;\n        max-height: 900px;\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.section-service-header {\n  margin-top: -200px;\n  background-color: $primaryColor;\n  height: 30vh;\n  width: 100vw;\n  min-height: 500px;\n  display: flex;\n  align-items: flex-end;\n  justify-content: flex-end;\n\n  .container {\n    margin: 0;\n    align-items: flex-end;\n    justify-content: space-between;\n    width: 90vw;\n    max-width: 1400px;\n\n    .colg {\n      h1 {\n        color: $white;\n        font-size: 7rem;\n        line-height: 5rem;\n        font-weight: 700;\n      }\n    }\n\n    .cold {\n      .block-cta {\n        background-color: #fff;\n        height: 60px;\n        width: 400px;\n        display: flex;\n        align-items: flex-end;\n        justify-content: center;\n      }\n    }\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-approche-globale {\n  padding: 100px 0;\n\n  .container {\n    h2 {\n      font-size: 5rem;\n      line-height: 4.5rem;\n      margin: 30px 0;\n      color: $primaryColor;\n    }\n\n    &.grid {\n      grid-template-columns: repeat(4, 1fr);\n      gap: 20px;\n      margin: 50px auto;\n\n      .card {\n        aspect-ratio: 1;\n        padding: 30px;\n        border: 1px solid $lightGray;\n        display: flex;\n        align-items: flex-end;\n        justify-content: flex-start;\n\n        &.-left{\n          border: none;\n          border-left: 1px solid $lightGray;\n        }\n\n        .content-card {\n          max-width: 50%;\n          display: flex;\n          flex-direction: column;\n          gap: 20px;\n\n          .block-img {\n            width: 60px;\n            height: 60px;\n          }\n\n          h3 {\n            font-weight: 500;\n            color: $primaryColor;\n          }\n\n          .btn-cta {\n            text-decoration: none;\n            border-bottom: none;\n          }\n        }\n      }\n    }\n\n    .btn-cta {\n      &.section {\n        background-color: $secondaryColor;\n        color: $white;\n        padding: 15px 50px;\n        border-bottom: none;\n        margin: auto;\n        transition: all ease-in 200ms;\n\n        &::after {\n          color: $white;\n        }\n\n        &:hover {\n          background-color: $primaryColor;\n        }\n      }\n    }\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-txt-g-img-d {\n  border-top: 1px solid $lightGray;\n  border-bottom: 1px solid $lightGray;\n  position: relative;\n  padding: 150px 0;\n\n  .container-bg {\n    background: linear-gradient(\n      90deg,\n      $lightGray 0%,\n      $whiteTransparent calc(0% + 1px),\n      $whiteTransparent calc(50%),\n      $lightGray 50%,\n      $whiteTransparent calc(50% + 1px),\n      $whiteTransparent calc(100% - 1px),\n      $lightGray 100%\n    );\n    height: 100%;\n    position: absolute;\n    z-index: -1;\n    left: 33.3vw;\n    width: 33.3vw;\n    top: 0;\n  }\n\n  .container {\n    gap: 100px;\n    align-items: center;\n\n    .colg {\n      display: flex;\n      flex-direction: column;\n      gap: 50px;\n      height: fit-content;\n    }\n\n    .cold {\n      .block-img {\n        height: 750px;\n      }\n    }\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.titre h2{\n  font-size: 3.5rem;\n  color: $primaryColor;\n}\n\n\n.section-galerie-vertical {\n  padding: 50px 0;\n\n  .swiper-vertical {\n    max-height: 80vh;\n    max-width: 95vw;\n\n    .swiper-wrapper {\n      .swiper-slide {\n        display: flex;\n        align-items: center;\n\n        .col-50 {\n          width: 50%;\n        }\n\n        .colg {\n          height: 100%;\n          .block-img {\n            height: 100%;\n          }\n        }\n\n        .cold {\n          padding-left: 50px;\n\n          .content {\n            display: flex;\n            flex-direction: column;\n            gap: 20px;\n            width: 70%;\n\n            p {\n              text-align: justify;\n            }\n          }\n        }\n      }\n    }\n\n    .swiper-pagination-vertical {\n      .swiper-pagination-bullet {\n        height: 60px;\n        width: 2px;\n        border-radius: 0;\n        background-color: $lightGray;\n\n        &.swiper-pagination-bullet-active {\n          background-color: $txtColor;\n        }\n      }\n    }\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-step {\n  padding: 100px 0;\n  overflow: hidden;\n\n  .content-title {\n    margin-left: 40%;\n\n    .surtitre {\n      display: block;\n      font-size: 12px;\n      letter-spacing: 0.25em;\n      text-transform: uppercase;\n      color: $secondaryColor;\n      margin-bottom: 20px;\n    }\n\n    .main-title {\n      max-width: 540px;\n    }\n  }\n\n  .slider-layout {\n    position: relative;\n    margin-top: -160px;\n  }\n\n  .slide-inner {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n    gap: 150px;\n    min-height: 500px;\n\n    .colg {\n      width: 35%;\n\n      .block-img {\n        width: 100%;\n        height: 600px;\n        overflow: hidden;\n        transform: translateX(-40px);\n        opacity: 0;\n        transition:\n          transform 0.5s ease,\n          opacity 0.5s ease;\n\n        &.is-visible {\n          transform: translateX(0);\n          opacity: 1;\n        }\n      }\n    }\n\n    .cold {\n      width: 33%;\n      transform: translateX(40px);\n      opacity: 0;\n      transition:\n        transform 0.8s ease 0.15s,\n        opacity 0.8s ease 0.15s;\n\n      &.is-visible {\n        transform: translateX(0);\n        opacity: 1;\n      }\n\n      .slide-title {\n        margin-bottom: 24px;\n\n        h3,\n        h4 {\n          margin: 0;\n        }\n      }\n\n      .slide-text {\n        p:last-child {\n          margin-bottom: 0;\n        }\n      }\n    }\n  }\n\n  .block-navigation {\n    position: absolute;\n    left: 40%;\n    bottom: 0;\n    z-index: 5;\n    display: flex;\n    flex-direction: column;\n    gap: 5px;\n  }\n\n  .swiper-step-prev,\n  .swiper-step-next {\n    width: 80px;\n    height: 80px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border: 1px solid $txtColor;\n    border-radius: 50%;\n    cursor: pointer;\n    position: relative;\n    transition:\n      opacity 0.3s ease,\n      transform 0.3s ease;\n\n    &:hover {\n      transform: scale(1.05);\n    }\n\n    &.swiper-button-disabled {\n      opacity: 0.4;\n      pointer-events: none;\n    }\n  }\n\n  .swiper-step-scrollbar {\n    position: relative;\n    margin-top: 100px;\n    height: 1px !important;\n    background: $lightGray;\n  }\n\n  .swiper-scrollbar-drag {\n    height: 2px !important;\n    top: -0.5px;\n    background: $txtColor;\n  }\n\n  @media (max-width: 991px) {\n    .content-title,\n    .slide-inner {\n      grid-template-columns: 1fr;\n      gap: 30px;\n    }\n\n    .block-navigation {\n      position: static;\n      transform: none;\n      flex-direction: row;\n      margin-top: 30px;\n      margin-bottom: 20px;\n    }\n\n    .colg .block-img {\n      max-width: 100%;\n    }\n  }\n}\n",".section-image-parallax {\n  width: 100vw;\n  position: relative;\n\n  img {\n    height: 100%;\n    width: 100%;\n    object-fit: cover;\n  }\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-formulaire-contact {\n  padding: 100px 0;\n\n  .container {\n    gap: 100px;\n\n    .col-35 {\n      width: 45%;\n      display: flex;\n      flex-direction: column;\n      gap: 50px;\n\n      .block-contact {\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n        margin-top: 300px;\n\n        h3 {\n          text-transform: uppercase;\n          letter-spacing: 1px;\n          font-weight: 600;\n        }\n\n        .block-tel-mail {\n          .labelBold {\n            font-weight: 600;\n            margin-right: 10px;\n          }\n        }\n      }\n    }\n\n    .col-65 {\n      width: 55%;\n\n      form {\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n        margin-top: 150px;\n\n        .content {\n          display: flex;\n          width: 100%;\n\n          &.-flex {\n            p {\n              display: flex;\n              gap: 10px;\n\n              span {\n                input,\n                label {\n                  width: 100%;\n                }\n              }\n            }\n          }\n\n          p {\n            width: 100%;\n\n            input,\n            label,\n            textarea {\n              border-bottom: 1px solid $lightGray;\n              display: flex;\n              justify-content: space-between;\n              padding: 20px;\n              width: 100%;\n              outline: none;\n\n              &:focus {\n                border-color: $secondaryColor;\n              }\n            }\n\n            select {\n              outline: none;\n            }\n          }\n        }\n\n        input[type=\"submit\"] {\n          padding: 10px 50px;\n          background: $primaryColor;\n          color: $white;\n          text-transform: uppercase;\n          font-weight: 500;\n          letter-spacing: 3px;\n          transition: all ease-in 300ms;\n\n          &:hover {\n            background-color: $secondaryColor;\n            color: $primaryColor;\n          }\n        }\n\n        .wpcf7-not-valid-tip {\n          font-size: 0.9rem;\n        }\n      }\n    }\n  }\n}\n","@use \"./../variables/colors.scss\" as *;\n\n.big_title h2 {\n  color: $primaryColor;\n  font-size: 8rem;\n  font-weight: 600;\n  line-height: .9;\n  //padding: 100px;\n  width: 60%;\n  padding-left: 200px ;\n  padding-top: 15Opx ;\n  border-top: 1px solid #4f4d4d;\n}","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n.section-accordeon{\n  .container{\n    display: flex;\n    gap: 40px;\n    //width: 100%;\n}\n\n.col-image{\n    width: 50%;\n}\nimg{\n    height: 800px;\n    width: 600px;\n}\n\n.col-text{\n    width: 50%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n}\n\n.accordeon{\n  background-color: $white;\n  padding: 60px 0;\n  margin-top: 100px;\n  width: 100%;\n}\n\n  .accordeon_el {\n    display: flex;\n    align-items: flex-end;\n    justify-content: space-between;\n    gap: 20px;\n    padding: 30px 0;\n    border-top: 1px solid $lightGray;\n    text-transform: uppercase;\n    width: 100%\n\n    a{\n      flex:1;\n    }\n\n    &::after {\n          content: \"↘\";\n\n     color: $secondaryColor;\n    transform: rotate(0deg);\n    transition: all ease-in 300ms;\n  }\n\n  &:hover {\n    border-bottom: 1px solid;\n    color: $secondaryColor;\n\n    &::after {\n      transform: rotate(-90deg);\n    }\n  }\n\n  \n  \n}\n.section-header{\n  .small_title{\n    align-items: flex-start;\n    margin-bottom: 20px;\n\n  }\n  .title {\n    font-size: 3.5rem;\n    color: $primaryColor;\n    max-width: 50%;\n    //max-height: 150px;\n    width: 100%;\n    //margin: 0 auto;\n    align-items: flex-start;\n\n    \n  }\n\n}\n}\n","@use \"./../variables/base.scss\" as *;\n@use \"./../variables/colors.scss\" as *;\n@use \"./../variables/fonts.scss\" as *;\n@use \"./../variables/cta.scss\" as *;\n\n\n\n.title{\n    font-size: 3.5rem;\n    color: $primaryColor;\n    text-align: center;\nwidth: 40%;    \nmargin: 0 auto;\n}\n\n.container_overlay{\n    margin-top: 150px;\n    position: relative;\n    width: 88%;\n    height: 520px;\n    z-index: 0;\n    //align-items: center;\n    overflow: visible;\n\n\n    img{\n\n        display: block;\n        width: 100%;\n        height: 100%;\n        object-fit: cover;\n        margin: 0 auto;\n    }\n}\n\n.content_overlay{\n    position: absolute;\n    bottom: 0;\n    right: -40px;\n    width: 55%;\n    background-color: $white;\n    z-index: 1;\n    padding: 60px;\n    height: 400px;\n    \n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+>>>>>>> 407ec6a (correction color)
 
 /***/ },
 
@@ -7405,7 +7812,6 @@ throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.j
   \*****************************************************/
 (module) {
 
-"use strict";
 
 
 /*
@@ -7494,13 +7900,47 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ },
 
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js"
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+(module) {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
+};
+
+/***/ },
+
 /***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js"
 /*!************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
   \************************************************************/
 (module) {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -7526,7 +7966,6 @@ module.exports = function (item) {
   \**************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -7579,7 +8018,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -7632,7 +8070,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 (module) {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -7726,7 +8163,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 (module) {
 
-"use strict";
 
 
 var memo = {};
@@ -7770,7 +8206,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 (module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -7790,7 +8225,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -7810,7 +8244,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 (module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -7881,7 +8314,6 @@ module.exports = domAPI;
   \*********************************************************************/
 (module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -7931,6 +8363,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -7972,6 +8407,32 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = (typeof document !== 'undefined' && document.baseURI) || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"style": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -7979,9 +8440,8 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!**********************!*\
   !*** ./src/style.js ***!
   \**********************/
