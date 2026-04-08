@@ -790,22 +790,23 @@ acf_add_local_field_group( array(
  
                 // ─── Bloc citation ───────────────────────────────────────────
                 'layout_69b3cd935aa7b' => array(
-                    'key'        => 'layout_69b3cd935aa7b',
-                    'name'       => 'block_citation',
-                    'label'      => 'Bloc Citation',
-                    'display'    => 'block',
+                    'key' => 'layout_69b3cd935aa7b',
+                    'name' => 'block_citation',
+                    'label' => 'Bloc Citation',
+                    'display' => 'block',
                     'sub_fields' => array(
                         array(
-                            'key'            => 'field_69b3cdd45aa7d',
-                            'label'          => 'Nom',
-                            'name'           => 'name',
-                            'type'           => 'text',
+                            'key' => 'field_69b3cdd45aa7d',
+                            'label' => 'Nom',
+                            'name' => 'name',
+                            'type' => 'text',
                             'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
+                            'wrapper' => $wrapper,
+                            'default_value' => '',
                             'allow_in_bindings' => 0,
                         ),
                         array(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -824,6 +825,8 @@ acf_add_local_field_group( array(
                             'label' => 'Signature en haut',
                             'name' => 'signature_top',
 =======
+=======
+>>>>>>> a3a7261 (builder-fields)
                             'key' => 'field_possignature',
                             'label' => 'Signature en haut',
                             'name' => 'signature_top',
@@ -842,6 +845,7 @@ acf_add_local_field_group( array(
                             'label' => 'Citation',
                             'name' => 'citation',
                             'type' => 'wysiwyg',
+<<<<<<< HEAD
                             'conditional_logic' => 0,
                             'wrapper' => $wrapper,
                             'default_value' => '',
@@ -938,16 +942,19 @@ acf_add_local_field_group( array(
                             'name'            => 'blue_activated',
                             'type'            => 'true_false',
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+>>>>>>> a3a7261 (builder-fields)
                             'conditional_logic' => 0,
-                            'wrapper'         => $wrapper,
-                            'message'         => '',
-                            'default_value'   => 0,
+                            'wrapper' => $wrapper,
+                            'default_value' => '',
                             'allow_in_bindings' => 0,
-                            'ui'              => 0,
-                            'ui_on_text'      => '',
-                            'ui_off_text'     => '',
+                            'tabs' => 'all',
+                            'toolbar' => 'full',
+                            'media_upload' => 1,
+                            'delay' => 0,
                         ),
                         array(
+<<<<<<< HEAD
                             'key'               => 'field_69c3b3b391dd6',
                             'label'             => 'Section bleue',
                             'name'              => '',
@@ -971,23 +978,62 @@ acf_add_local_field_group( array(
                             'label'          => 'Titre',
                             'name'           => 'title',
                             'type'           => 'wysiwyg',
+=======
+                            'key' => 'field_69c3b3c691dd7',
+                            'label' => 'Ajouter section bleue ?',
+                            'name' => 'blue_activated',
+                            'type' => 'true_false',
+>>>>>>> a3a7261 (builder-fields)
                             'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
+                            'wrapper' => $wrapper,
+                            'message' => '',
+                            'default_value' => 0,
                             'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
+                            'ui' => 0,
+                            'ui_on_text' => '',
+                            'ui_off_text' => '',
                         ),
                         array(
-                            'key'            => 'field_69b3cf2d5aa80',
-                            'label'          => 'link',
-                            'name'           => 'link',
-                            'type'           => 'link',
+                            'key' => 'field_69c3b3b391dd6',
+                            'label' => 'Section bleue',
+                            'name' => '',
+                            'type' => 'tab',
+                            'conditional_logic' => array(
+                                array(
+                                    array(
+                                        'field' => 'field_69c3b3c691dd7',
+                                        'operator' => '==',
+                                        'value' => '1',
+                                    ),
+                                ),
+                            ),
+                            'wrapper' => $wrapper,
+                            'placement' => 'top',
+                            'endpoint' => 0,
+                            'selected' => 0,
+                        ),
+                        array(
+                            'key' => 'field_69b3cf145aa7f',
+                            'label' => 'Titre',
+                            'name' => 'title',
+                            'type' => 'wysiwyg',
                             'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
+                            'wrapper' => $wrapper,
+                            'default_value' => '',
+                            'allow_in_bindings' => 0,
+                            'tabs' => 'all',
+                            'toolbar' => 'full',
+                            'media_upload' => 1,
+                            'delay' => 0,
+                        ),
+                        array(
+                            'key' => 'field_69b3cf2d5aa80',
+                            'label' => 'link',
+                            'name' => 'link',
+                            'type' => 'link',
+                            'conditional_logic' => 0,
+                            'wrapper' => $wrapper,
+                            'return_format' => 'array',
                             'allow_in_bindings' => 0,
                         ),
                     ),
