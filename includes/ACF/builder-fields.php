@@ -1194,6 +1194,20 @@ acf_add_local_field_group( array(
                     'label'      => 'Section 2 colonnes simple',
                     'display'    => 'block',
                     'sub_fields' => array(
+                         array(
+                            'key'            => 'field_69ca23d9f67ca',
+                            'label'          => 'Small-titre',
+                            'name'           => 'Small-titre',
+                            'type'           => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper'        => $wrapper,
+                            'default_value'  => '',
+                            'allow_in_bindings' => 0,
+                            'tabs'           => 'all',
+                            'toolbar'        => 'full',
+                            'media_upload'   => 1,
+                            'delay'          => 0,
+                        ),
                         array(
                             'key'            => 'field_69ca23d9f67cb',
                             'label'          => 'Titre',

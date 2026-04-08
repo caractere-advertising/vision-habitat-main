@@ -1,4 +1,5 @@
 @use "./../variables/colors.scss" as *;
+@use "./../variables/cta.scss" as *;
 
 .section-citation {
   display: flex;
@@ -38,7 +39,8 @@
   background-color: $primaryColor;
   margin: 0 30px 0 30px;
   display: flex;
-  justify-items: center;
+  //justify-items: center;
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
