@@ -16,11 +16,14 @@ margin: 0 auto;
 .container_overlay{
     margin-top: 150px;
     position: relative;
-    width: 88%;
+    //width: 88%;
     height: 520px;
     z-index: 0;
     //align-items: center;
     overflow: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
 
     img{
@@ -34,13 +37,16 @@ margin: 0 auto;
 }
 
 .content_overlay{
-    position: absolute;
-    bottom: 0;
-    right: -40px;
-    width: 55%;
+    //position: absolute;
+    //bottom: 0;
+    //right: -40px;
+    width: 60%;
+    margin-left: -20%;
     background-color: $white;
     z-index: 1;
-    padding: 60px;
+    padding: 60px 10vw 0px 60px;
+    justify-content: flex-end;
+    gap: 50px;
     height: 400px;
     
 }

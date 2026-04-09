@@ -6,7 +6,7 @@ $link = get_sub_field('link');
 
 ?>
 
-<section class="container">
+<section class="section-text-overlay">
 <div class="title">
     <?php echo $title ?>
 </div>
