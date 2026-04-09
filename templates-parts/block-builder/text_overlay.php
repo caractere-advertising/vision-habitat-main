@@ -6,20 +6,22 @@ $link = get_sub_field('link');
 
 ?>
 
-<section class="container">
-<div class="title">
-    <?php echo $title ?>
-</div>
-<div class="container_overlay">
-<div><img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>"></div>
-<div class="content_overlay">
-    <div class="paragraph"> <?php echo $paragraph ?></div>
+<section class="section-text-overlay">
+    <div class="container flex">
+        <div class="title"><?= $title ?></div>
+    
+        <div class="container_overlay">
+            <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>">
+        </div>
+    </div>
+            
+    <div class="container content_overlay">
+        <div class="paragraph"><?= $paragraph ?></div>
 
-    <?php if($link):?>
-        <a class="btn-cta" href="<?= $link['url'];?>">
-            <?= $link['title'];?>
-        </a>     
-    <?php endif;?>
-</div>
-</div>
+        <?php if($link):?>
+            <a class="btn-cta" href="<?= $link['url'];?>">
+                <?= $link['title'];?>
+            </a>     
+        <?php endif;?>    
+    </div>
 </section>

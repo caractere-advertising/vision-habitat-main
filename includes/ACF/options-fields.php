@@ -511,7 +511,7 @@ acf_add_local_field_group( array(
 						'label' => 'Logo',
 						'name' => 'logo',
 						'aria-label' => '',
-						'type' => 'url',
+						'type' => 'image',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,

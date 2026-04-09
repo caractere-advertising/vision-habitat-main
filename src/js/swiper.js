@@ -20,7 +20,7 @@ const swiperFullwidth = new Swiper(".swiper-fullwidth", {
     clickable: true,
   },
   parallax: true,
-  //autoplay: true,
+  autoplay: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
@@ -47,9 +47,11 @@ const swiperReference = new Swiper(".swiper-reference", {
 });
 
 const swiperVertical = new Swiper(".swiper-vertical", {
-  modules: [Autoplay, Pagination],
+  modules: [Autoplay, Pagination, Parallax],
   autoplay: true,
   direction: "vertical",
+  parallax: true,
+  speed: 1200,
   pagination: {
     el: ".swiper-pagination-vertical",
     clickable: true,

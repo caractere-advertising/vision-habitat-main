@@ -1666,7 +1666,7 @@ const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swi
     clickable: true,
   },
   parallax: true,
-  //autoplay: true,
+  autoplay: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
@@ -1693,9 +1693,11 @@ const swiperReference = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swi
 });
 
 const swiperVertical = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-vertical", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Parallax],
   autoplay: true,
   direction: "vertical",
+  parallax: true,
+  speed: 1200,
   pagination: {
     el: ".swiper-pagination-vertical",
     clickable: true,
