@@ -83,6 +83,7 @@ acf_add_local_field_group( array(
 				'preview_size' => 'medium',
 			),
 			array(
+<<<<<<< HEAD
 >>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 				'key' => 'field_69a9908ba255d',
 				'label' => 'slogan',
@@ -120,6 +121,8 @@ acf_add_local_field_group( array(
 				),
 			),
 			array(
+=======
+>>>>>>> 96c2834 (Correction options-fields.php)
 				'key' => 'field_displayNegatifHeader',
 				'label' => 'Header négatif',
 				'name' => 'header-negatif',
