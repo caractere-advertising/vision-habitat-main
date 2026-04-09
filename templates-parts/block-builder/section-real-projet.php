@@ -24,16 +24,16 @@ $displayMargin = 'style="margin:' . $top . ' ' . $right . ' ' . $bottom . ' ' . 
     <div class="two-col-inner container flex">
         <div class="two-col-left col-50">
             <?php if($cat): ?>
-                <div class="section-label"><span><?= $cat; ?></span></div>
+                <div class="section-label from-left"><span><?= $cat; ?></span></div>
             <?php endif;
             if ($text_evidence): ?>
-                <div class="two-col-title big_title"><?= $text_evidence; ?></div>
+                <div class="two-col-title big_title from-left"><?= $text_evidence; ?></div>
             <?php endif; ?>
         </div>
 
         <div class="two-col-right col-50">
             <?php if($paragraph): ?>
-                <div class="two-col-paragraph" <?= $displayMargin;?>><?= $paragraph; ?></div>
+                <div class="two-col-paragraph from-right" <?= $displayMargin;?>><?= $paragraph; ?></div>
             <?php endif;
             
             if($link) : ?>

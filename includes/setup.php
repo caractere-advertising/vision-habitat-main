@@ -20,3 +20,41 @@ function vh_theme_setup() {
     ]);
 }
 add_action('after_setup_theme', 'vh_theme_setup');
+
+
+/* Récupération de tous les posts Ou réferences */
+
+function getPosts($type){
+    $args = array(
+        'post_type' => $type,
+        'posts_per_page' => is_front_page(  ) ? 3 : -1,
+        'post_status' => 'publish',
+        'order' => 'ASC',
+    );
+
+    $query = new WP_Query($args);
+
+    return $query;
+}
+
+/* Récupérer les catégories du CPT "réference"                   */
+/* + Boucle pour retourner une string contenant toutes celles-ci */
+
+function getCategoriesReferences($postId, $type){
+    $cats = get_the_terms($postId, $type);
+
+    $allCats = '';
+
+    if($cats){
+        $i = 0;
+
+        foreach($cats as $cat) {
+            $i > 0 ? $sep = ' • ' : $sep = '';
+
+            $allCats .= $sep . esc_attr($cat->slug);
+            $i++;
+        }
+    }  
+   
+    return $allCats;
+}

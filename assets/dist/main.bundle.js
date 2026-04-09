@@ -1338,34 +1338,140 @@ module.exports = styleTagTransform;
 
 /***/ },
 
+/***/ "./src/js/animate.js"
+/*!***************************!*\
+  !*** ./src/js/animate.js ***!
+  \***************************/
+() {
+
+document.addEventListener("DOMContentLoaded", () => {
+  const selectors = [
+    { selector: ".from-left", class: "fade-in-left" },
+    { selector: ".from-right", class: "fade-in-right" },
+    { selector: ".from-top", class: "fade-in-top" },
+    { selector: ".from-bottom", class: "fade-in-bottom" },
+  ];
+
+  // Ajout de la classe invisible sur tous les éléments concernés
+  selectors.forEach(({ selector }) => {
+    document.querySelectorAll(selector).forEach((el) => {
+      el.classList.add("invisible");
+    });
+  });
+
+  // Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+
+        if (entry.isIntersecting) {
+          // Trouver la bonne animation
+          selectors.forEach(({ selector, class: animClass }) => {
+            if (el.matches(selector)) {
+              el.classList.remove("invisible");
+              el.classList.add(animClass);
+            }
+          });
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: "-200px", // équivalent de inView.offset(150)
+      threshold: 0,
+    },
+  );
+
+  // Observer tous les éléments
+  selectors.forEach(({ selector }) => {
+    document.querySelectorAll(selector).forEach((el) => {
+      observer.observe(el);
+    });
+  });
+});
+
+
+/***/ },
+
+/***/ "./src/js/filter.js"
+/*!**************************!*\
+  !*** ./src/js/filter.js ***!
+  \**************************/
+() {
+
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".btn-filter");
+  const articles = document.querySelectorAll(".actu-card");
+
+  if (!filterButtons.length || !articles.length) return;
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filterValue = this.dataset.filter;
+
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      articles.forEach((article) => {
+        const shouldShow =
+          filterValue === "all" ||
+          article.classList.contains(`item-${filterValue}`);
+
+        if (shouldShow) {
+          article.classList.remove("is-gone");
+
+          // petit délai pour relancer l'animation
+          requestAnimationFrame(() => {
+            article.classList.remove("is-hidden");
+          });
+        } else {
+          article.classList.add("is-hidden");
+
+          setTimeout(() => {
+            article.classList.add("is-gone");
+          }, 200); // durée = transition CSS
+        }
+      });
+    });
+  });
+});
+
+
+/***/ },
+
 /***/ "./src/js/header.js"
 /*!**************************!*\
   !*** ./src/js/header.js ***!
   \**************************/
 () {
 
-const burgerBtn = document.querySelector('.burger-btn');
-const mobileMenu = document.querySelector('#megamenu');
+const burgerBtn = document.querySelector(".hamburger--emphatic");
+const mobileMenu = document.querySelector("#megamenu");
+
+const headerNav = document.querySelector(".header-nav");
+const headerActions = document.querySelector(".header-actions");
 
 if (burgerBtn && mobileMenu) {
-    burgerBtn.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.contains('is-open');
+  burgerBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.contains("is-open");
 
-        burgerBtn.classList.toggle('is-active');
-        mobileMenu.classList.toggle('is-open');
-        document.body.style.overflow = isOpen ? '' : 'hidden';
-    });
+    burgerBtn.classList.toggle("is-active");
+    mobileMenu.classList.toggle("is-open");
+    headerNav.style.opacity = isOpen ? 1 : 0;
+    headerActions.classList.toggle("is-open");
+    document.body.style.overflow = isOpen ? "" : "hidden";
+  });
 }
 
-const burgerBtnClose = document.querySelector('.burger-btn-close');
+// if (burgerBtnClose && mobileMenu) {
+//   burgerBtn.addEventListener("click", () => {
+//     burgerBtn.classList.remove("is-active");
+//     mobileMenu.classList.remove("is-open");
+//     document.body.style.overflow = "";
+//   });
+// }
 
-if (burgerBtnClose && mobileMenu) {
-    burgerBtnClose.addEventListener('click', () => {
-        burgerBtn.classList.remove('is-active');
-        mobileMenu.classList.remove('is-open');
-        document.body.style.overflow = '';
-    });
-}
 
 /***/ },
 
@@ -1470,7 +1576,7 @@ const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swipe
 
   slidesPerView: 1.2,
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".swiper-scrollbar-galerie-slider",
   },
   spaceBetween: 200,
   loop: true,
@@ -1554,20 +1660,20 @@ __webpack_require__.r(__webpack_exports__);
 const numberCurrent = document.querySelector(".number-current");
 
 const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-fullwidth", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
-
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Parallax],
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-
+  parallax: true,
+  autoplay: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
   },
 
   loop: true,
-  speed: 700,
+  speed: 1200,
   spaceBetween: 0,
 
   on: {
@@ -1587,9 +1693,11 @@ const swiperReference = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swi
 });
 
 const swiperVertical = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-vertical", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Parallax],
   autoplay: true,
   direction: "vertical",
+  parallax: true,
+  speed: 1200,
   pagination: {
     el: ".swiper-pagination-vertical",
     clickable: true,
@@ -1652,6 +1760,17 @@ if (swiperEtapesEl) {
     if (text) text.classList.add("is-visible");
   }
 }
+
+const swiperSurMesure = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-partenaire", {
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
+  pagination: {
+    el: ".swiper-pagination-sur-mesure",
+    clickable: true,
+  },
+  loop: true,
+  autoplay: true,
+  speed: 600,
+});
 
 
 /***/ },
@@ -12540,6 +12659,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
 /* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/filter.js */ "./src/js/filter.js");
+/* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_filter_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _js_animate_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/animate.js */ "./src/js/animate.js");
+/* harmony import */ var _js_animate_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_animate_js__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
 
 
 

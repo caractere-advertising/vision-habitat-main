@@ -18,60 +18,17 @@
   &.grid {
     display: grid;
   }
+
+  &.-large {
+    width: 100vw;
+    max-width: 100vw;
+  }
 }
 
 .big_title {
   color: $primaryColor;
   font-size: 4rem;
   line-height: 3.5rem;
-}
-
-.block-img {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.block-img {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.block-img {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.block-img {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.block-img {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.block-img {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
 .block-img {

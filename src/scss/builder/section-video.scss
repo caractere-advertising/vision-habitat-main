@@ -58,8 +58,7 @@
 
 @media (max-width: 1024px) {
   .section-video {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
 
     .video-top {
       .video-top-left {
@@ -75,10 +74,7 @@
 
 @media (max-width: 768px) {
   .section-video {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 50px 5%;
 
     .video-top {
       flex-direction: column;

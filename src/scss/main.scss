@@ -1,32 +1,37 @@
 @use "variables/base.scss" as *;
+@use "variables/colors.scss" as *;
 @use "variables/fonts.scss" as *;
 @use "variables/cta.scss" as *;
-
-@use "builder/swiper.scss" as *;
-@use "builder/section2.scss" as *;
-@use "builder/section3.scss" as *;
-@use "builder/section4.scss" as *;
-@use "builder/section5.scss" as *;
-@use "builder/section6.scss" as *;
-@use "builder/section7.scss" as *;
-@use "builder/section8.scss" as *;
-@use "builder/section9.scss" as *;
-@use "builder/section10.scss" as *;
-@use "builder/section11.scss" as *;
-@use "builder/section12.scss" as *;
-@use "burger-menu/burger-menu.scss" as *;
 
 @use "base/header.scss" as *;
 @use "base/footer.scss" as *;
 @use "base/single-reference.scss" as *;
+@use "base/animations.scss" as *;
 
 @use "builder/header-service.scss" as *;
+@use "builder/section-actualites.scss" as *;
+@use "builder/section-references.scss" as *;
 @use "builder/section-app-glob.scss" as *;
-@use "builder/section-txt-g-img-d.scss" as *;
-@use "builder/section-slider-vertical.scss" as *;
+@use "builder/section-card-solutions.scss" as *;
+@use "builder/section-citation.scss" as *;
+@use "builder/section-discover.scss" as *;
 @use "builder/section-etapes.scss" as *;
-@use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
+@use "builder/section-galerie-slider.scss" as *;
+@use "builder/section-link-container.scss" as *;
+@use "builder/section-parallax.scss" as *;
+@use "builder/section-partenaire-sur-mesure" as *;
+@use "builder/section-slider-vertical.scss" as *;
+@use "builder/section-text-evidence.scss" as *;
+@use "builder/section-two-col.scss" as *;
+@use "builder/section-txt-g-img-d.scss" as *;
+@use "builder/section-txt-g-img-d-full.scss" as *;
+@use "builder/section-video.scss" as *;
+@use "builder/section6.scss" as *;
+@use "builder/section7.scss" as *;
+@use "builder/swiper.scss" as *;
+
+@use "burger-menu/burger-menu.scss" as *;
 
 @use "builder/header-service.scss" as *;
 @use "builder/section-app-glob.scss" as *;
@@ -42,3 +47,5 @@
 body {
   font-family: "Manrope", sans-serif;
 }
+
+@import "./../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";

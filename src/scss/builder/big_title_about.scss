@@ -1,13 +1,16 @@
 @use "./../variables/colors.scss" as *;
 
-.big_title h2 {
-  color: $primaryColor;
-  font-size: 8rem;
-  font-weight: 600;
-  line-height: .9;
-  //padding: 100px;
-  width: 60%;
-  padding-left: 200px ;
-  padding-top: 15Opx ;
-  border-top: 1px solid #4f4d4d;
+.section-big-title {
+  border-top: 1px solid $primaryColor;
+
+  .container {
+    padding-top: 100px;
+
+    h1 {
+      color: $primaryColor;
+      font-size: 8rem;
+      font-weight: 600;
+      line-height: 0.9;
+    }
+  }
 }

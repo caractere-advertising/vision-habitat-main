@@ -18,10 +18,10 @@
                    </div>
 
                    <div class="cold col-50">
-                        <div class="content">
-                            <div class="titre h2"><?= $titre;?></div>
-                            <div class="texte"><?= $texte;?>
-                            <?php if($cta):?></div>
+                        <div class="content from-right">
+                            <?= $titre;?>
+                            <?= $texte;?>
+                            <?php if($cta):?>
                                 <a href="<?= $cta['url'];?>" class="btn-cta"><?= $cta['title'];?></a>
                             <?php endif;?>
                         </div>

@@ -4,7 +4,7 @@
 $burger_image        = get_field('bg-menu-image', 'option');
 $burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
-$cond_generales      = get_field('cond-generales', 'option');
+$cond_generales      = get_field('cond-generales', 'option') ?? '';
 $footer_nav          = get_field('menu-burger-footer', 'option');
 $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
@@ -18,31 +18,43 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
            
         <?php endif; ?>
 
-       <?php if ($logo_bg_menu) : ?>
-    <a href="<?= esc_url(home_url('/')) ?>" class="menu-burger-left-logo">
-        <img src="<?php echo esc_url($logo_bg_menu['url']) ?>" alt="<?php echo esc_attr($logo_bg_menu['alt']) ?>">
-    </a>
-<?php endif; ?>
+        <?php if ($logo_bg_menu) : ?>
+            <a href="<?= esc_url(home_url('/')) ?>" class="menu-burger-left-logo">
+                <img src="<?=  esc_url($logo_bg_menu['url']) ?>" alt="<?=  esc_attr($logo_bg_menu['alt']) ?>">
+            </a>
+        <?php endif; ?>
 
         <div class="menu-burger-left-bottom">
             <?php if ($burger_info_contact) :
-                $info = $burger_info_contact[0]; ?>
+                $info = $burger_info_contact[0];
+
+                $tel  = $info['tel-num']; 
+                $linkTel = preg_replace('/[^0-9+]/', '', $tel);
+                $linkTel = preg_replace('/^\+320/', '0032', $linkTel);
+                
+                ?>
 
                 <div class="menu-burger-contact">
-                    <p class="menu-burger-contact-name"><?php echo ($info['site-name']) ?></p>
-                    <p><?php echo($info['street-name']) ?></p>
-                    <p><?php echo($info['locality']) ?></p>
-                    <p><strong>Tél. </strong><?php echo($info['tel-num']) ?></p>
-                    <p><strong>Mail : </strong><?php echo esc_html($info['mail']) ?></p>
-                    <p><?php echo($info['tva']) ?></p>
+                    <p class="menu-burger-contact-name"><?=  ($info['site-name']) ?></p>
+
+                    <div class="contact-adresse from-left">
+                        <p class="from-left"><?= ($info['street-name']) ?></p>
+                        <p class="from-left"><?= ($info['locality']) ?></p>
+                    </div>
+                    
+                    <div class="contact-tel-mail">
+                        <p class="from-left"><strong>Tél. </strong><a href="tel:<?= $linkTel;?>"><?= $tel; ?></a></p>
+                        <p class="from-left"><strong>Mail : </strong><a href="mailto:<?=  esc_html($info['mail']) ?>"><?=  esc_html($info['mail']) ?></a></p>
+                        <p class="from-left"><strong>TVA </strong><?= ($info['tva']) ?></p>
+                    </div>
                 </div>
             <?php endif; ?>
             
             <?php if ($burger_socials) : ?>
-                <div class="menu-burger-socials">
+                <div class="menu-burger-socials from-left">
                     <?php foreach ($burger_socials as $social) :?>
-                        <a href="<?php echo($social['lien']) ?>">
-                            <img src="<?php echo($social['logo']['url']) ?>" alt="<?php echo($social['logo']['title']) ?>">
+                        <a href="<?= ($social['lien']) ?>">
+                            <img src="<?= ($social['logo']['url']) ?>" alt="<?= ($social['logo']['title']) ?>">
                         </a>
                     <?php endforeach; ?>
                 </div>
@@ -52,32 +64,30 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     </div>
 
     <div class="menu-burger-right">
-        <button class="burger-btn burger-btn-close">&#x2715;</button>
+         <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
 
         <?php wp_nav_menu([
             'theme_location' => 'burger-menu',
             'container'      => 'nav',
-            'container_class' => 'burger-nav',
+            'container_class' => 'burger-nav from-right',
             'menu_class'     => 'burger-menu_list',
-        ]); ?>
+        ]);?>
+
         <div class="menu-bottom">
- <hr class="burger-hr">
-        <div class="burger-bottom">
-            <?php if ($footer_nav) : ?>
-                <ul class="burger-legal-footer">
-                    <?php foreach ($footer_nav as $item) : ?>
-                        <li><a href="<?php echo ($item['link']['url']) ?>"><?php echo esc_html($item['link']['title']) ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
-            <?php endif; ?>
+            <div class="burger-bottom">
+                <?php if ($footer_nav) : ?>
+                    <ul class="burger-legal-footer">
+                        <?php foreach ($footer_nav as $item) : ?>
+                            <li><a href="<?=  ($item['link']['url']) ?>"><?=  esc_html($item['link']['title']) ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
 
-           
-
-            <div class="burger-legal-copy">
-                <p class="burger-legal-links"><?php echo esc_html($cond_generales['cond']) ?></p>
-                <p class="burger-legal-copyright"><?php echo esc_html($cond_generales['copyright']) ?></p>
-            </div>      
-        </div>
+                <div class="burger-legal-copy">
+                    <p class="burger-legal-links"><a href="<?= $cond_generales['cond']['url'] ;?>"><?= esc_html($cond_generales['cond']['title']); ?></a></p>
+                    <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
+                </div>      
+            </div>
         </div>
     </div>
 </section>

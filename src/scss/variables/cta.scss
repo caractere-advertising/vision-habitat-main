@@ -18,11 +18,16 @@
     border-color 0.25s ease;
 
   &::after {
-    content: "↘";
+    content: "";
+    background: url("./../../assets/images/arrow-right-gold.svg");
+    background-size: cover;
     font-size: 0.9rem;
-    //padding-left: 50px;
     color: $secondaryColor;
-    transform: rotate(0deg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
     transition: all ease-in 300ms;
   }
 
@@ -31,17 +36,7 @@
     color: $secondaryColor;
 
     &::after {
-      transform: rotate(-90deg);
+      transform: rotate(0deg);
     }
   }
-
-  // &::before {
-  //     content: '';
-  //     position: absolute;
-  //     bottom: 0;
-  //     left: 0;
-  //     width: 70%;
-  //     height: 1px;
-  //     background-color: rgba($primaryColor, 0.4);
-  // }
 }

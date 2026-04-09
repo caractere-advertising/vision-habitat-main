@@ -1,0 +1,185 @@
+@use "./../variables/colors.scss" as *;
+@use "./../base/animations.scss" as *;
+
+.section-actu {
+  background-color: $white;
+  padding: 80px 0;
+
+  .actu-title {
+    color: $primaryColor;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  /* Ajout filtre */
+
+  .section-filter {
+    display: flex;
+    gap: 10px;
+
+    button {
+      text-transform: uppercase;
+      color: $lightGray;
+      transition: all ease-in 300ms;
+
+      & + button {
+        &::before {
+          content: "-";
+          margin-right: 10px;
+        }
+      }
+
+      &.active {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  /***************/
+
+  .actu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 100px auto 50px;
+    align-items: start;
+  }
+
+  .actu-card {
+    transform: scale(1);
+    opacity: 1;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    transform-origin: center;
+
+    .actu-card-img {
+      position: relative;
+      background-color: $lightGray;
+      height: 250px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transform: scale(1);
+        filter: brightness(1);
+        transition: all ease-in 200ms;
+      }
+
+      .actu-card-plus {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background-color: $white;
+        color: $primaryColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
+    }
+
+    .actu-card-cat {
+      display: block;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: $secondaryColor;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .actu-card-text {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: $txtColor;
+      cursor: pointer;
+    }
+
+    &:first-child {
+      grid-column: span 2;
+    }
+
+    &:hover {
+      .actu-card-img {
+        img {
+          transform: scale(1.05);
+          filter: brightness(0.6);
+        }
+      }
+
+      .actu-card-plus {
+        background-color: $primaryColor;
+        color: $white;
+
+        .btn-plus-icon {
+          @include rotate-180;
+        }
+      }
+    }
+
+    /*** Animation ***/
+
+    &.is-hidden {
+      transform: scale(0.8);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &.is-gone {
+      display: none;
+    }
+  }
+
+  .actu-btn-wrap {
+    display: flex;
+    justify-content: center;
+
+    .actu-btn {
+      display: inline-block;
+      background-color: $primaryColor;
+      color: $white;
+      text-decoration: none;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-actu .actu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-actu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .actu-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

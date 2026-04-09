@@ -1,9 +1,17 @@
 $primaryColor: #05233c;
 $secondaryColor: #d3bea1;
 
+$darkPrimary: #03111d;
+
 $txtColor: #222;
 $lightGray: #e2e2e2;
 $white: #fff;
 $black: #000;
 
+/* Transparent */
 $whiteTransparent: #ffffff00;
+$lightGrayTransparent: #e2e2e270;
+
+/* Dégradés */
+
+$blueGradient: linear-gradient($primaryColor 0%, $darkPrimary 100%);

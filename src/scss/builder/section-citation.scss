@@ -5,13 +5,11 @@
   display: flex;
   flex-direction: column;
   min-height: 400px;
-  margin: 50px auto;
 }
 
 .citation-block {
-  width: 90%;
   background-color: $white;
-  padding: 40px;
+  padding: 100px 0;
   display: flex;
   align-items: center;
 
@@ -20,24 +18,42 @@
   }
 
   .citation-name {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: $lightGray;
+    letter-spacing: 3px;
     position: absolute;
+    top: 0;
+    left: 0;
+
+    &.bottom {
+      bottom: -50px;
+      top: auto;
+      left: auto;
+      right: 0;
+      font-size: 1rem;
+      letter-spacing: 5px;
+      color: $primaryColor;
+      font-weight: 700;
+    }
   }
 
   .citation-text {
     font-size: 4rem;
     line-height: 1;
     color: $txtColor;
-    text-indent: 150px;
+    text-indent: 200px;
+
+    em {
+      color: $lightGray;
+      font-style: normal;
+    }
   }
 }
 
 .citation-blue {
-  width: calc(100% - 60px);
+  width: 100%;
   height: 500px;
   background-color: $primaryColor;
-  margin: 0 30px 0 30px;
   display: flex;
   //justify-items: center;
   justify-content: center;
@@ -52,13 +68,13 @@
     width: 260px;
     height: 260px;
     background-color: $white;
-    //clip-path: polygon(0 0, 100% 0, 99% 54%, 87% 54%, 71% 29%, 68% 50%, 0 49%);
     clip-path: polygon(0 55%, 0 0, 55% 0);
   }
+
   .citation-blue-inner {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 50px;
   }
 
   .citation-blue-title {
@@ -66,7 +82,6 @@
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.3;
-    width: 60%;
   }
 
   .btn-cta {
