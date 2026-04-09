@@ -35,8 +35,12 @@ const swiperFullwidth = new Swiper(".swiper-fullwidth", {
   autoplay: true,
 =======
   parallax: true,
+<<<<<<< HEAD
   //autoplay: true,
 >>>>>>> e007f86 (Correction css + animation + section)
+=======
+  autoplay: true,
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,

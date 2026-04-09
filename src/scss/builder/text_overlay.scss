@@ -4,6 +4,7 @@
 @use "./../variables/cta.scss" as *;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .section-text-overlay {
   position: relative;
   margin: 100px auto;
@@ -55,8 +56,20 @@
   }
 }
 =======
+=======
+.section-text-overlay {
+  position: relative;
+  margin: 100px auto;
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 
+  .container.flex {
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 0;
+    width: 65vw;
 
+<<<<<<< HEAD
 .title{
     font-size: 3.5rem;
     color: $primaryColor;
@@ -68,36 +81,51 @@
 width: 40%;    
 margin: 0 auto;
 }
+=======
+    .title {
+      font-size: 3.5rem;
+      color: $primaryColor;
+      text-align: left;
+      width: fit-content;
+    }
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 
-.container_overlay{
-    margin-top: 150px;
-    position: relative;
-    width: 88%;
-    height: 520px;
-    z-index: 0;
-    //align-items: center;
-    overflow: visible;
+    .container_overlay {
+      margin-right: 0;
+      margin-top: 150px;
+      position: relative;
+      width: 100%;
+      height: 600px;
+      z-index: 0;
+      overflow: visible;
 
-
-    img{
-
-        display: block;
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        margin: 0 auto;
+      }
     }
-}
+  }
 
-.content_overlay{
+  .content_overlay {
     position: absolute;
     bottom: 0;
-    right: -40px;
-    width: 55%;
+    right: 10vw;
+    left: auto;
+    width: 50%;
     background-color: $white;
     z-index: 1;
     padding: 60px;
+<<<<<<< HEAD
     height: 400px;
     
 }
 >>>>>>> 90b60a5 (page about 8-04)
+=======
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)

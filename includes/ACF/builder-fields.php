@@ -99,6 +99,9 @@ acf_add_local_field_group( array(
                     'sub_fields' => array(
                         array(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
                             'key' => 'field_69d6b26f08cd7',
                             'label' => 'Couleur ou Image ?',
                             'name' => 'couleur_ou_image',
@@ -156,6 +159,7 @@ acf_add_local_field_group( array(
                             'palette_colors' => '',
                         ),
                         array(
+<<<<<<< HEAD
                             'key'            => 'field_69c658cbdc62e',
                             'label'          => 'background',
                             'name'           => 'background',
@@ -177,11 +181,21 @@ acf_add_local_field_group( array(
                         ),
                         array(
 =======
+=======
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
                             'key'            => 'field_69c658cbdc62e',
                             'label'          => 'background',
                             'name'           => 'background',
                             'type'           => 'image',
-                            'conditional_logic' => 0,
+                            'conditional_logic' => array(
+                                array(
+                                    array(
+                                        'field' => 'field_69d6b26f08cd7',
+                                        'operator' => '==',
+                                        'value' => 'image',
+                                    ),
+                                ),
+                            ),
                             'wrapper'        => $wrapper,
                             'return_format'  => 'array',
                             'library'        => 'all',
@@ -211,6 +225,17 @@ acf_add_local_field_group( array(
                             'return_format'  => 'array',
 =======
 >>>>>>> 28f81d8 (fin 3-04)
+                            'allow_in_bindings' => 0,
+                        ),
+                        array(
+                            'key'            => 'field_heightofsection',
+                            'label'          => 'Hauteur (en vh)',
+                            'name'           => 'hauteur',
+                            'type'           => 'number',
+                            'conditional_logic' => 0,
+                            'wrapper'        => $wrapper,
+                            'default_value'  => '30', 
+                            'return_format'  => 'array',
                             'allow_in_bindings' => 0,
                         ),
                     ),
@@ -1831,6 +1856,9 @@ acf_add_local_field_group( array(
                     ),
                 ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 
                 // ─── Section 2 colonnes full ───────────────────────────────
                 'layout_69ca23cff6full' => array(
@@ -1905,8 +1933,11 @@ acf_add_local_field_group( array(
                         ),
                     ),
                 ),
+<<<<<<< HEAD
 =======
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
  
                 // ─── Slider vertical ─────────────────────────────────────────
                 'layout_r3p34tv3rt1c4l' => array(
@@ -1959,6 +1990,9 @@ acf_add_local_field_group( array(
                     ),
                 ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 
                 // ─── Slider vertical reverse ─────────────────────────────────────────
                 'layout_r3p34tv3rt1c4lreverse' => array(
@@ -2010,8 +2044,11 @@ acf_add_local_field_group( array(
                         ),
                     ),
                 ),
+<<<<<<< HEAD
 =======
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
  
                 // ─── Section step construction ───────────────────────────────
                 'layout_3t4p3sc0nstr' => array(

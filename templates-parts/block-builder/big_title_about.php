@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php $big_title = get_sub_field('big_title') ?? ''; ?>
 
 <section class="section-big-title from-left">
@@ -14,4 +15,12 @@ $big_title = get_sub_field('big_title');
 <section class="big_title">
 <?php echo $big_title ?> 
 >>>>>>> 927826b (fin2-4)
+=======
+<?php $big_title = get_sub_field('big_title') ?? ''; ?>
+
+<section class="section-big-title from-left">
+    <div class="container">
+        <?= $big_title; ?> 
+    </div>
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 </section>

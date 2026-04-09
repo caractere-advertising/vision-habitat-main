@@ -7,6 +7,9 @@ $link = get_sub_field('link');
 ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 <section class="section-text-overlay">
     <div class="container flex">
         <div class="title"><?= $title ?></div>
@@ -18,6 +21,7 @@ $link = get_sub_field('link');
             
     <div class="container content_overlay">
         <div class="paragraph"><?= $paragraph ?></div>
+<<<<<<< HEAD
 
         <?php if($link):?>
             <a class="btn-cta" href="<?= $link['url'];?>">
@@ -43,4 +47,13 @@ $link = get_sub_field('link');
 </div>
 </div>
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+
+        <?php if($link):?>
+            <a class="btn-cta" href="<?= $link['url'];?>">
+                <?= $link['title'];?>
+            </a>     
+        <?php endif;?>    
+    </div>
+>>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 </section>
