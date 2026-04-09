@@ -22,7 +22,7 @@ $borderLeft ? $class = "card -left" : $class="card";
         <?= $titre;?>
     </div>
 
-    <div class="container grid">
+    <div class="container grid <?= $borderLeft ? '-gleft' : '';?>">
         <?php if($cards):
             $i = 0;
             foreach($cards as $c):

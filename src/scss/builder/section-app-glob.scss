@@ -27,11 +27,6 @@
         align-items: flex-end;
         justify-content: flex-start;
 
-        &.-left{
-          border: none;
-          border-left: 1px solid $lightGray;
-        }
-
         .content-card {
           max-width: 50%;
           display: flex;
@@ -53,6 +48,21 @@
             border-bottom: none;
           }
         }
+
+        &.-left {
+          border: none;
+          border-left: 1px solid $lightGray;
+          align-items: center;
+          aspect-ratio: inherit;
+
+          .content-card {
+            max-width: 60%;
+          }
+        }
+      }
+
+      &.-gleft {
+        margin: 0 auto;
       }
     }
 

@@ -15,17 +15,17 @@ $links=get_sub_field('lien_accordeon');
 
         <div class="col-text">
             <div class="section-header">
-            <p class="small_title"><?= $small_title ?></p>
-    
-        <div class="title"><?= $title ?></div>
+                <p class="small_title"><?= $small_title ?></p>
+                <div class="title"><?= $title ?></div>
             </div>
-        <ul class="accordeon">
-            <?php foreach ($links as $link): ?>
-                <li class="accordeon_el">
-                    <a href="<?= esc_url($link['lien']['url']) ?>"><?= esc_html($link['lien']['title']) ?></a>
-                </li>
-            <?php endforeach; ?>       
-        </ul>
-    </div>
+
+            <ul class="accordeon">
+                <?php foreach ($links as $link): ?>
+                    <li class="accordeon_el">
+                        <a href="<?= esc_url($link['lien']['url']) ?>"><?= esc_html($link['lien']['title']) ?></a>
+                    </li>
+                <?php endforeach; ?>       
+            </ul>
+        </div>
     </div>
 </section>

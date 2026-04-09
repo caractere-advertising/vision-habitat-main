@@ -1,0 +1,33 @@
+@use "./../variables/base.scss" as *;
+@use "./../variables/colors.scss" as *;
+@use "./../variables/fonts.scss" as *;
+@use "./../variables/cta.scss" as *;
+
+.section-txt-g-img-d-full {
+  position: relative;
+  padding: 100px 0;
+
+  .container {
+    width: 90vw;
+    max-width: 90vw;
+    margin-right: 0;
+    gap: 100px;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .colg {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      height: fit-content;
+    }
+
+    .cold {
+      padding-top: 240px;
+
+      .block-img {
+        height: 750px;
+      }
+    }
+  }
+}
