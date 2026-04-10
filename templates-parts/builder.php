@@ -77,6 +77,7 @@ $builder_layouts = array(
     'section-part-sur-mesure'    => 'section-partenaire-sur-mesure',
     'section-grille-references'  => 'section-grille-references',
     'section_actu_2_cards' => 'section_actu_2_cards',
+    'gallerie-partenaire'=>'gallerie-partenaire-cont',
 );
 
 if (have_rows('builder', $context_id)) :

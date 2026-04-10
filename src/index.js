@@ -10,4 +10,3 @@ import "./js/accordeon.js";
 import "./js/filter.js";
 import "./js/animate.js";
 
-

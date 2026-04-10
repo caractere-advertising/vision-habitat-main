@@ -2658,9 +2658,20 @@ acf_add_local_field_group( array(
                     'sub_fields' => array(),
                 ),
 <<<<<<< HEAD
+<<<<<<< HEAD
  
             ), // fin layouts
 =======
+=======
+                    'layout_galpartenaire' => array(
+                    'key'        => 'layout_galpartenaire',
+                    'name'       => 'gallerie-partenaire',
+                    'label'      => 'Section galpat',
+                    'display'    => 'block',
+                    'sub_fields' => array(),
+                ),
+
+>>>>>>> 548401f (ajout slider-partenaires)
                 'layout_s3ct10nsurm3sur3' => array(
                     'key' => 'layout_s3ct10nsurm3sur3',
                     'name' => 'section-part-sur-mesure',
