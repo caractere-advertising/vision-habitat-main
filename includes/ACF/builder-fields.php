@@ -1751,6 +1751,13 @@ acf_add_local_field_group( array(
                     'display'    => 'block',
                     'sub_fields' => array(),
                 ),
+                    'layout_galpartenaire' => array(
+                    'key'        => 'layout_galpartenaire',
+                    'name'       => 'gallerie-partenaire',
+                    'label'      => 'Section galpat',
+                    'display'    => 'block',
+                    'sub_fields' => array(),
+                ),
 
                 'layout_s3ct10nsurm3sur3' => array(
                     'key' => 'layout_s3ct10nsurm3sur3',

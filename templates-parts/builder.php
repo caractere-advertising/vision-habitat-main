@@ -76,6 +76,7 @@ $builder_layouts = array(
     'text_overlay'               => 'text_overlay',
     'section-part-sur-mesure'    => 'section-partenaire-sur-mesure',
     'section-grille-references'  => 'section-grille-references',
+    'gallerie-partenaire'=>'gallerie-partenaire-cont',
 );
 
 if (have_rows('builder', $context_id)) :

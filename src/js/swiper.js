@@ -115,7 +115,7 @@ if (swiperEtapesEl) {
   }
 }
 
-const swiperSurMesure = new Swiper(".swiper-partenaire", {
+const swiperSurMesure = new Swiper(".swiper-partenaire-sur-mesure", {
   modules: [Pagination, Autoplay],
   pagination: {
     el: ".swiper-pagination-sur-mesure",

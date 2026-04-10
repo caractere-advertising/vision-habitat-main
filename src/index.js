@@ -11,3 +11,5 @@ import "./js/img-hover.js";
 import "./js/filter.js";
 
 import "./js/animate.js";
+
+import "./js/swiper-partenaires.js"

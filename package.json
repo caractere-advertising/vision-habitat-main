@@ -24,7 +24,7 @@
     "sass-loader": "^16.0.6",
     "simple-parallax-js": "^6.3.3",
     "style-loader": "^4.0.0",
-    "swiper": "^12.0.3",
+    "swiper": "^12.1.3",
     "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1"
   },
