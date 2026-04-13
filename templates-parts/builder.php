@@ -82,8 +82,13 @@ $builder_layouts = array(
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
 =======
     'section-part-sur-mesure'    => 'section-partenaire-sur-mesure',
+<<<<<<< HEAD
     'section-grille-references'   => 'section-grille-references',
 >>>>>>> 6ead0fd (Features :)
+=======
+    'section-grille-references'  => 'section-grille-references',
+    'section_actu_2_cards' => 'section_actu_2_cards',
+>>>>>>> 6503a7d (1304)
 );
 
 if (have_rows('builder', $context_id)) :

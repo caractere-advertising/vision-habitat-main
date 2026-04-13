@@ -67,7 +67,13 @@
 @use "builder/section_accordeon.scss" as *;
 @use "builder/text_overlay.scss" as *;
 
+<<<<<<< HEAD
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+@use "builder/section_actu_2_cards.scss" as *;
+//@use "builder/section_header_actu.scss" as *;
+
+>>>>>>> 6503a7d (1304)
 body {
   font-family: "Manrope", sans-serif;
 }
