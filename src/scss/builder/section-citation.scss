@@ -1,34 +1,15 @@
 @use "./../variables/colors.scss" as *;
-<<<<<<< HEAD
 @use "./../variables/cta.scss" as *;
-=======
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 
 .section-citation {
   display: flex;
   flex-direction: column;
   min-height: 400px;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 .citation-block {
   background-color: $white;
   padding: 100px 0;
-=======
-  margin: 50px auto;
-=======
->>>>>>> e007f86 (Correction css + animation + section)
-}
-
-.citation-block {
-  background-color: $white;
-<<<<<<< HEAD
-  padding: 40px;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
-  padding: 100px 0;
->>>>>>> e007f86 (Correction css + animation + section)
   display: flex;
   align-items: center;
 
@@ -37,8 +18,6 @@
   }
 
   .citation-name {
-<<<<<<< HEAD
-<<<<<<< HEAD
     font-size: 1.2rem;
     color: $lightGray;
     letter-spacing: 3px;
@@ -56,113 +35,28 @@
       color: $primaryColor;
       font-weight: 700;
     }
-=======
-    font-size: 1.5rem;
-=======
-    font-size: 1.2rem;
->>>>>>> 6ead0fd (Features :)
-    color: $lightGray;
-    letter-spacing: 3px;
-    position: absolute;
-<<<<<<< HEAD
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
-    top: 0;
-    left: 0;
-
-    &.bottom {
-      bottom: -50px;
-      top: auto;
-      left: auto;
-      right: 0;
-      font-size: 1rem;
-      letter-spacing: 5px;
-      color: $primaryColor;
-      font-weight: 700;
-    }
->>>>>>> 6ead0fd (Features :)
   }
 
   .citation-text {
     font-size: 4rem;
     line-height: 1;
     color: $txtColor;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD:src/scss/builder/section-citation.scss
-<<<<<<< HEAD:src/scss/builder/section-citation.scss
-<<<<<<< HEAD:src/scss/builder/section-citation.scss
-<<<<<<< HEAD:src/scss/builder/section-citation.scss
-<<<<<<< HEAD:src/scss/builder/section-citation.scss
-<<<<<<< HEAD:src/scss/builder/section-citation.scss
     text-indent: 200px;
 
     em {
       color: $lightGray;
       font-style: normal;
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 59fb046 (calc(100-60px)):src/scss/builder/section8.scss
-<<<<<<< HEAD
-    text-indent: 150px;
-=======
-    text-indent: 10%;
->>>>>>> cc02ab6 (calc(100-60px))
-<<<<<<< HEAD:src/scss/builder/section-citation.scss
-<<<<<<< HEAD:src/scss/builder/section-citation.scss
->>>>>>> 781f678 (calc(100-60px)):src/scss/builder/section8.scss
-=======
-=======
-    text-indent: 150px;
->>>>>>> bf87089 (Optimisation section.php + css + ajout nouvelle section page "construire")
->>>>>>> f8c007c (Optimisation section.php + css + ajout nouvelle section page "construire"):src/scss/builder/section8.scss
-=======
-    text-indent: 150px;
->>>>>>> 02d2601 (fin 30-3):src/scss/builder/section8.scss
-=======
-    text-indent: 10%;
->>>>>>> 0f77299 (calc(100-60px)):src/scss/builder/section8.scss
-=======
-    text-indent: 150px;
->>>>>>> 012f37a (Optimisation section.php + css + ajout nouvelle section page "construire"):src/scss/builder/section8.scss
-=======
->>>>>>> 59fb046 (calc(100-60px)):src/scss/builder/section8.scss
-=======
-    text-indent: 150px;
->>>>>>> 50d5368 (fin 30-3):src/scss/builder/section8.scss
-=======
-    text-indent: 150px;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
-    text-indent: 200px;
->>>>>>> e007f86 (Correction css + animation + section)
-=======
->>>>>>> 6ead0fd (Features :)
   }
 }
 
 .citation-blue {
-<<<<<<< HEAD
-<<<<<<< HEAD
   width: 100%;
   height: 500px;
   background-color: $primaryColor;
   display: flex;
   //justify-items: center;
   justify-content: center;
-=======
-  width: calc(100% - 60px);
-=======
-  width: 100%;
->>>>>>> e007f86 (Correction css + animation + section)
-  height: 500px;
-  background-color: $primaryColor;
-  display: flex;
-  justify-items: center;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -176,26 +70,11 @@
     background-color: $white;
     clip-path: polygon(0 55%, 0 0, 55% 0);
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   .citation-blue-inner {
     display: flex;
     flex-direction: column;
     gap: 50px;
-=======
-  .citation-blue-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
-
-  .citation-blue-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
->>>>>>> e007f86 (Correction css + animation + section)
   }
 
   .citation-blue-title {
@@ -203,13 +82,6 @@
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.3;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    width: 60%;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
->>>>>>> e007f86 (Correction css + animation + section)
   }
 
   .btn-cta {

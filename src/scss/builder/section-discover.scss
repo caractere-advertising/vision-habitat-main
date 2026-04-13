@@ -1,15 +1,10 @@
 @use "./../variables/colors.scss" as *;
 
 .section-discover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6ead0fd (Features :)
   margin: 50px auto;
   position: relative;
   border-top: 1px solid $lightGray;
   border-bottom: 1px solid $lightGray;
-<<<<<<< HEAD
 
   .container-bg {
     background: linear-gradient(
@@ -83,106 +78,6 @@
         gap: 80px;
         right: 0;
       }
-=======
-  display: flex;
-  min-height: 650px;
-  align-items: stretch;
-  margin: 100px auto;
-=======
->>>>>>> 6ead0fd (Features :)
-
-  .container-bg {
-    background: linear-gradient(
-      90deg,
-      $lightGray 0%,
-      $whiteTransparent calc(0% + 1px),
-      $whiteTransparent calc(50%),
-      $lightGray 50%,
-      $whiteTransparent calc(50% + 1px),
-      $whiteTransparent calc(100% - 1px),
-      $lightGray 100%
-    );
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    left: 33.3vw;
-    width: 33.3vw;
-    top: 0;
-  }
-
-  .container {
-    display: flex;
-    min-height: 650px;
-    align-items: stretch;
-    padding: 150px 0;
-
-    .discover-left {
-      width: 50%;
-      background-color: $primaryColor;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .discover-right {
-      width: 50%;
-      background-color: rgb(229, 229, 229);
-      padding: 50px 60px 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      position: relative;
-
-<<<<<<< HEAD
-    .discover-btn {
-      margin-top: auto;
-      display: inline-flex;
-      align-items: center;
-      background-color: $secondaryColor;
-      color: $white;
-      text-decoration: none;
-      font-size: 0.9rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      padding: 5px 50px;
-      align-self: flex-end;
-      position: absolute;
-      bottom: 0;
-      gap: 80px;
-      right: 0;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
-      .discover-title {
-        color: $primaryColor;
-        font-size: 2.2rem;
-        line-height: 1.2;
-        margin-bottom: 30px;
-      }
-
-      .discover-paragraph {
-        color: $txtColor;
-        font-size: 1rem;
-        line-height: 1.7;
-        margin-bottom: 50px;
-      }
-
-      .discover-btn {
-        margin-top: auto;
-        display: inline-flex;
-        align-items: center;
-        background-color: $secondaryColor;
-        color: $white;
-        text-decoration: none;
-        font-size: 0.9rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        padding: 5px 50px;
-        align-self: flex-end;
-        position: absolute;
-        bottom: 0;
-        gap: 80px;
-        right: 0;
-      }
->>>>>>> 6ead0fd (Features :)
     }
   }
 }

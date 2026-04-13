@@ -1,30 +1,12 @@
 @use "variables/base.scss" as *;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 @use "variables/colors.scss" as *;
 @use "variables/fonts.scss" as *;
-=======
->>>>>>> d4c7333 (finetuning 26-03)
-=======
-@use "variables/fonts.scss" as *;
->>>>>>> f8c007c (Optimisation section.php + css + ajout nouvelle section page "construire")
-=======
->>>>>>> 5f5b7df (finetuning 26-03)
-=======
-@use "variables/fonts.scss" as *;
->>>>>>> b7891fd (Optimisation section.php + css + ajout nouvelle section page "construire")
 @use "variables/cta.scss" as *;
 
 @use "base/header.scss" as *;
 @use "base/footer.scss" as *;
 @use "base/single-reference.scss" as *;
 @use "base/animations.scss" as *;
-<<<<<<< HEAD
 
 @use "builder/header-service.scss" as *;
 @use "builder/section-actualites.scss" as *;
@@ -35,92 +17,22 @@
 @use "builder/section-discover.scss" as *;
 @use "builder/section-etapes.scss" as *;
 @use "builder/section-formulaire.scss" as *;
-<<<<<<< HEAD
-=======
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-
-@use "builder/header-service.scss" as *;
-@use "builder/section-actualites.scss" as *;
-@use "builder/section-app-glob.scss" as *;
-<<<<<<< HEAD
-@use "builder/section-txt-g-img-d.scss" as *;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-@use "builder/section-slider-vertical.scss" as *;
-=======
-@use "builder/section-card-solutions.scss" as *;
-@use "builder/section-citation.scss" as *;
-@use "builder/section-discover.scss" as *;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-@use "builder/section-etapes.scss" as *;
-@use "builder/section-formulaire.scss" as *;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-@use "builder/section-partenaire-sur-mesure" as *;
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-=======
 @use "builder/section-galerie-slider.scss" as *;
 @use "builder/section-link-container.scss" as *;
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-partenaire-sur-mesure" as *;
-=======
-@use "builder/section-galerie-slider.scss" as *;
-@use "builder/section-link-container.scss" as *;
-@use "builder/section-parallax.scss" as *;
-@use "builder/section-partenaire-sur-mesure" as *;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 @use "builder/section-slider-vertical.scss" as *;
 @use "builder/section-text-evidence.scss" as *;
 @use "builder/section-two-col.scss" as *;
 @use "builder/section-txt-g-img-d.scss" as *;
-<<<<<<< HEAD
-<<<<<<< HEAD
 @use "builder/section-txt-g-img-d-full.scss" as *;
-=======
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
-@use "builder/section-txt-g-img-d-full.scss" as *;
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 @use "builder/section-video.scss" as *;
 @use "builder/section6.scss" as *;
 @use "builder/section7.scss" as *;
 @use "builder/swiper.scss" as *;
-<<<<<<< HEAD
-=======
 
 @use "burger-menu/burger-menu.scss" as *;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 
-<<<<<<< HEAD
-@use "burger-menu/burger-menu.scss" as *;
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-
-=======
-@use "builder/big_title_about.scss" as *;
-<<<<<<< HEAD
-@use "builder/section-two-col-about.scss" as *;
->>>>>>> 927826b (fin2-4)
-=======
-@use "builder/section_accordeon.scss" as *;
-@use "builder/text_overlay.scss" as *;
-
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-=======
-@use "builder/section_actu_2_cards.scss" as *;
-//@use "builder/section_header_actu.scss" as *;
-
->>>>>>> 6503a7d (1304)
-=======
 @use "builder/header-service.scss" as *;
 @use "builder/section-app-glob.scss" as *;
 @use "builder/section-txt-g-img-d.scss" as *;
@@ -128,36 +40,13 @@
 @use "builder/section-etapes.scss" as *;
 @use "builder/section-parallax.scss" as *;
 @use "builder/section-formulaire.scss" as *;
-
-<<<<<<< HEAD
->>>>>>> edd09df (Optimisation section.php + css + ajout nouvelle section page "construire")
-=======
-@use "builder/header-service.scss" as *;
-@use "builder/section-app-glob.scss" as *;
-@use "builder/section-txt-g-img-d.scss" as *;
-@use "builder/section-slider-vertical.scss" as *;
-@use "builder/section-etapes.scss" as *;
-@use "builder/section-parallax.scss" as *;
-@use "builder/section-formulaire.scss" as *;
-<<<<<<< HEAD
 @use "builder/big_title_about.scss" as *;
-<<<<<<< HEAD
-@use "builder/section-two-col-about.scss" as *;
->>>>>>> 927826b (fin2-4)
-=======
 @use "builder/section_accordeon.scss" as *;
 @use "builder/text_overlay.scss" as *;
-=======
-@use "builder/section-partenaire-sur-mesure" as *;
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
 
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-=======
 @use "builder/section_actu_2_cards.scss" as *;
 //@use "builder/section_header_actu.scss" as *;
 
->>>>>>> 6503a7d (1304)
 body {
   font-family: "Manrope", sans-serif;
 }

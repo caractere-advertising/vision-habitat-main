@@ -1,4 +1,3 @@
-
 <?php
 // Layout ACF : à définir dans builder.php
 // Champs : slides (répéteur)
@@ -7,15 +6,7 @@
 $slides = get_sub_field('slides');
 ?>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 <section class="section-gallery from-bottom">
-=======
-<section class="section-gallery">
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-=======
-<section class="section-gallery from-bottom">
->>>>>>> c4fe539 (Ajout animation apparition sur chaque section + animate.js)
     <div class="swiper swiper-gallery">
         <div class="swiper-wrapper">
             <?php foreach ($slides as $s) :
@@ -43,10 +34,6 @@ $slides = get_sub_field('slides');
         </div>
     </div>
     <div class="gallery-nav">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e007f86 (Correction css + animation + section)
         <button class="gallery-next">
             <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -66,22 +53,8 @@ $slides = get_sub_field('slides');
                 </g>
             </svg>
         </button>
-<<<<<<< HEAD
     </div>
     <div class="container content-scrollbar">
         <div class="swiper-scrollbar-galerie-slider"></div>
-=======
-        <button class="gallery-next">&#8250;</button>
-        <button class="gallery-prev">&#8249;</button>
-=======
->>>>>>> e007f86 (Correction css + animation + section)
-    </div>
-    <div class="container content-scrollbar">
-<<<<<<< HEAD
-        <div class="swiper-scrollbar"></div>
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-=======
-        <div class="swiper-scrollbar-galerie-slider"></div>
->>>>>>> 6ead0fd (Features :)
     </div>
 </section>

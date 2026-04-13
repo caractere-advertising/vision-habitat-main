@@ -1,24 +1,9 @@
 @use "./../variables/colors.scss" as *;
 
 .section-service-header {
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-top: 0px;
-=======
-  margin-top: -220px;
->>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
-=======
-  margin-top: 0px;
->>>>>>> e007f86 (Correction css + animation + section)
   background-color: $primaryColor;
   width: 100vw;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  min-height: 550px;
->>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;

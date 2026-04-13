@@ -1,12 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-<<<<<<< HEAD
-/***/ "./src/index.js"
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-=======
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/swiper/modules/navigation.css"
 /*!********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/swiper/modules/navigation.css ***!
@@ -1351,16 +1345,22 @@ module.exports = styleTagTransform;
 
 /***/ },
 
+/***/ "./src/js/accordeon.js"
+/*!*****************************!*\
+  !*** ./src/js/accordeon.js ***!
+  \*****************************/
+() {
+
+
+
+/***/ },
+
 /***/ "./src/js/animate.js"
 /*!***************************!*\
   !*** ./src/js/animate.js ***!
   \***************************/
->>>>>>> 6503a7d (1304)
 () {
 
-<<<<<<< HEAD
-throw new Error("Module parse failed: Unexpected token (8:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n| import \"./js/scroll-top.js\";\n| \n> <<<<<<< HEAD\n| <<<<<<< HEAD\n| <<<<<<< HEAD");
-=======
 document.addEventListener("DOMContentLoaded", () => {
   const selectors = [
     { selector: ".from-left", class: "fade-in-left" },
@@ -12577,19 +12577,128 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
->>>>>>> e007f86 (Correction css + animation + section)
 
 /***/ }
 
 /******/ 	});
 /************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
 /******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.js"]();
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
 /******/ 	
+/******/ 		// Execute the module function
+/******/ 		if (!(moduleId in __webpack_modules__)) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+(() => {
+"use strict";
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _js_swiper_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/swiper.js */ "./src/js/swiper.js");
+/* harmony import */ var _js_swiper_projects_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/swiper-projects.js */ "./src/js/swiper-projects.js");
+/* harmony import */ var _js_swiper_gallery_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/swiper-gallery.js */ "./src/js/swiper-gallery.js");
+/* harmony import */ var _js_header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/header.js */ "./src/js/header.js");
+/* harmony import */ var _js_header_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_header_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/scroll-top.js */ "./src/js/scroll-top.js");
+/* harmony import */ var _js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_scroll_top_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/img-hover.js */ "./src/js/img-hover.js");
+/* harmony import */ var _js_img_hover_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_img_hover_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _js_parallax_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/parallax.js */ "./src/js/parallax.js");
+/* harmony import */ var _js_accordeon_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/accordeon.js */ "./src/js/accordeon.js");
+/* harmony import */ var _js_accordeon_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_accordeon_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/filter.js */ "./src/js/filter.js");
+/* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_filter_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _js_animate_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/animate.js */ "./src/js/animate.js");
+/* harmony import */ var _js_animate_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_js_animate_js__WEBPACK_IMPORTED_MODULE_9__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=main.bundle.js.map

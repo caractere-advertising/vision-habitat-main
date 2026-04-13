@@ -14,33 +14,13 @@ import "swiper/css/scrollbar";
 const numberCurrent = document.querySelector(".number-current");
 
 const swiperFullwidth = new Swiper(".swiper-fullwidth", {
-<<<<<<< HEAD
-<<<<<<< HEAD
   modules: [Pagination, Scrollbar, Autoplay, Parallax],
-=======
-  modules: [Pagination, Scrollbar, Autoplay],
->>>>>>> 6269e0f (Correction header + slider fullwidth (optimisatoin css)  + ajotu animation carte solutions)
-=======
-  modules: [Pagination, Scrollbar, Autoplay, Parallax],
->>>>>>> e007f86 (Correction css + animation + section)
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
   parallax: true,
-=======
->>>>>>> 6269e0f (Correction header + slider fullwidth (optimisatoin css)  + ajotu animation carte solutions)
   autoplay: true,
-=======
-  parallax: true,
-<<<<<<< HEAD
-  //autoplay: true,
->>>>>>> e007f86 (Correction css + animation + section)
-=======
-  autoplay: true,
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,

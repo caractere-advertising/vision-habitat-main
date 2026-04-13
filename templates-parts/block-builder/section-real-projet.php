@@ -1,4 +1,3 @@
-
 <?php
 // Champs : categorie (texte), text_evidence (wysiwyg), details (wysiwyg), paragraph (wysiwyg), link (lien)
 // j'ai enlevé détails

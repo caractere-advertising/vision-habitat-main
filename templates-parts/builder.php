@@ -45,8 +45,6 @@
  */
 
 $repo = 'templates-parts/block-builder';
-<<<<<<< HEAD
-<<<<<<< HEAD
 $context_id = get_builder_context_id();
 
 $builder_layouts = array(
@@ -73,27 +71,12 @@ $builder_layouts = array(
     'section-step-const'         => 'section-etapes',
     'section-image-paralax'      => 'section-parallax',
     'section-formulaire-contact' => 'section-formulaire-contact',
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'big_title'=>'big_title_about',
-    'section_accordeon'=>'section_accordeon',
-    'text_overlay'=>'text_overlay'
-
-=======
-    'section-part-sur-mesure' => 'section-partenaire-sur-mesure',
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-=======
+    'big_title'                  => 'big_title_about',
+    'section_accordeon'          => 'section_accordeon',
+    'text_overlay'               => 'text_overlay',
     'section-part-sur-mesure'    => 'section-partenaire-sur-mesure',
-<<<<<<< HEAD
-    'section-grille-references'   => 'section-grille-references',
->>>>>>> 6ead0fd (Features :)
-=======
     'section-grille-references'  => 'section-grille-references',
     'section_actu_2_cards' => 'section_actu_2_cards',
-<<<<<<< HEAD
->>>>>>> 6503a7d (1304)
-=======
->>>>>>> 6503a7d (1304)
 );
 
 if (have_rows('builder', $context_id)) :
@@ -105,108 +88,5 @@ if (have_rows('builder', $context_id)) :
             get_template_part($repo . '/' . $builder_layouts[$layout]);
         }
 
-=======
-
-<<<<<<< HEAD
-if (have_rows('builder')):
-    while (have_rows('builder')): the_row();
-        if (get_row_layout() == 'actualites'):
-            get_template_part($repo . '/actualites');
-        elseif (get_row_layout() == 'slider-fullwidth'):
-            get_template_part($repo . '/slider-fullwidth');
-        elseif (get_row_layout() == 'text_evidence'):
-            get_template_part($repo . '/section2');
-        elseif (get_row_layout() == 'card_solutions'):
-          get_template_part($repo . '/section3');
-        elseif (get_row_layout() == 'header_hero'):
-            get_template_part($repo . '/section1');
-        elseif (get_row_layout() == 'block_real_proj'):
-            get_template_part($repo . '/section4');
-        elseif (get_row_layout() == 'gallery_slider'):
-            get_template_part($repo . '/section5');
-        elseif (get_row_layout() == 'images_overlay'):
-            get_template_part($repo . '/section6');
-        elseif (get_row_layout() == 'section_img_ev'):
-            get_template_part($repo . '/section7');
-        elseif (get_row_layout() == 'block_citation'):
-            get_template_part($repo . '/section8');
-        elseif (get_row_layout() == 'block_discover'):
-            get_template_part($repo . '/section9');
-        elseif (get_row_layout() == 'link_container'):
-            get_template_part($repo . '/section10');
-        elseif (get_row_layout() == 'block_video'):
-            get_template_part($repo . '/section11');
-        elseif (get_row_layout() == 'block_actu'):
-            get_template_part($repo . '/section12');
-        elseif (get_row_layout() == 'section-header-service'):
-            get_template_part($repo . '/section-header-service');
-        elseif (get_row_layout() == 'section-approche-globale'):
-            get_template_part($repo . '/section-approche-globale');
-        elseif (get_row_layout() == 'section-two-col-simple'):
-            get_template_part($repo . '/section-txt-g-img-d');
-        elseif (get_row_layout() == 'slider-vertical'):
-            get_template_part($repo . '/section-galerie-vertical');
-        elseif (get_row_layout() == 'section-step-const'):
-            get_template_part($repo . '/section-etapes');
-        elseif (get_row_layout() == 'section-image-paralax'):
-            get_template_part($repo . '/section-parallax');
-        elseif (get_row_layout() == 'section-formulaire-contact'):
-            get_template_part($repo . '/section-formulaire-contact');
-        endif;
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-=======
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-$context_id = get_builder_context_id();
-
-$builder_layouts = array(
-    'actualites'                 => 'actualites',
-    'slider-fullwidth'           => 'slider-fullwidth',
-    'text_evidence'              => 'section-text-evidence',
-    'card_solutions'             => 'section-card-solutions',
-    'header_hero'                => 'section-header-hero',
-    'block_real_proj'            => 'section-real-projet',
-    'gallery_slider'             => 'section-galerie-slider',
-    'images_overlay'             => 'section-image-overlay',
-    'section_img_ev'             => 'section-image-env',
-    'block_citation'             => 'section-citation',
-    'block_discover'             => 'section-discover',
-    'link_container'             => 'section-link-container',
-    'block_video'                => 'section-video',
-    'block_actu'                 => 'section-actualites',
-    'section-header-service'     => 'section-header-service',
-    'section-approche-globale'   => 'section-approche-globale',
-    'section-two-col-simple'     => 'section-txt-g-img-d',
-    'section-two-col-full'       => 'section-txt-g-img-d-full',
-    'slider-vertical'            => 'section-galerie-vertical',
-    'slider-vertical-reverse'    => 'section-galerie-vertical-reverse',
-    'section-step-const'         => 'section-etapes',
-    'section-image-paralax'      => 'section-parallax',
-    'section-formulaire-contact' => 'section-formulaire-contact',
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'big_title'=>'big_title_about',
-    'section_accordeon'=>'section_accordeon',
-    'text_overlay'=>'text_overlay'
-
-=======
-    'section-part-sur-mesure' => 'section-partenaire-sur-mesure',
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-=======
-    'section-part-sur-mesure'    => 'section-partenaire-sur-mesure',
-    'section-grille-references'   => 'section-grille-references',
->>>>>>> 6ead0fd (Features :)
-);
-
-if (have_rows('builder', $context_id)) :
-    while (have_rows('builder', $context_id)) : the_row();
-
-        $layout = get_row_layout();
-
-        if (isset($builder_layouts[$layout])) {
-            get_template_part($repo . '/' . $builder_layouts[$layout]);
-        }
-
->>>>>>> 927826b (fin2-4)
     endwhile;
 endif;

@@ -4,26 +4,12 @@
   width: 100%;
   z-index: 100;
   padding: 30px 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e007f86 (Correction css + animation + section)
   position: absolute;
   top: 0;
   left: 0;
 
   .header-inner {
     width: 90vw;
-=======
-  position: relative;
-
-  .header-inner {
-<<<<<<< HEAD
-    width: 95vw;
->>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
-=======
-    width: 90vw;
->>>>>>> 6269e0f (Correction header + slider fullwidth (optimisatoin css)  + ajotu animation carte solutions)
     margin: auto;
     display: flex;
     align-items: center;
@@ -32,15 +18,7 @@
 
     .header-logo {
       flex-shrink: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
       width: 250px;
-=======
-      width: 300px;
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-=======
-      width: 250px;
->>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
       display: block;
 
       img {
@@ -194,18 +172,6 @@
     }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  &.-frontpage {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
->>>>>>> 534bcab (ajout filtre page actualités + debut animations.css)
-=======
->>>>>>> e007f86 (Correction css + animation + section)
   &.-negatif-header {
     position: relative;
 
@@ -269,17 +235,7 @@
     transform 0.4s ease,
     opacity 0.3s ease,
     visibility 0.4s;
-<<<<<<< HEAD
-<<<<<<< HEAD
   height: 100vh;
-=======
-    height: 100vh;
-    
-
->>>>>>> 69c6bb2 (burger-menu finetuning)
-=======
-  height: 100vh;
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
 
   &.is-open {
     opacity: 1;

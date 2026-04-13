@@ -3,16 +3,10 @@
 @use "./../variables/fonts.scss" as *;
 @use "./../variables/cta.scss" as *;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 .section-accordeon {
   margin: 100px 0;
 
   .container {
-<<<<<<< HEAD
     display: flex;
     gap: 40px;
 
@@ -86,115 +80,3 @@
     }
   }
 }
-=======
-.container{
-=======
-.section-accordeon{
-  .container{
->>>>>>> 90b60a5 (page about 8-04)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-    display: flex;
-    gap: 40px;
-
-    .col-image {
-      width: 50%;
-
-      img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    .col-text {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 200px;
-
-      .section-header {
-        .small_title {
-          align-items: flex-start;
-          margin-bottom: 20px;
-        }
-
-        .title {
-          font-size: 3.5rem;
-          color: $primaryColor;
-          text-align: left;
-          width: 100%;
-          align-items: flex-start;
-        }
-      }
-
-      .accordeon {
-        background-color: $white;
-        width: 100%;
-
-        .accordeon_el {
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          gap: 20px;
-          padding: 20px 0;
-          border-top: 1px solid $lightGray;
-          text-transform: uppercase;
-          width: 100%;
-
-          a {
-            flex: 1;
-          }
-
-          &::after {
-            content: "↘";
-
-            color: $secondaryColor;
-            transform: rotate(0deg);
-            transition: all ease-in 300ms;
-          }
-
-          &:hover {
-            border-bottom: 1px solid;
-            color: $secondaryColor;
-
-            &::after {
-              transform: rotate(-90deg);
-            }
-          }
-        }
-      }
-    }
-  }
-<<<<<<< HEAD
-
-  
-  
-}
-.section-header{
-  .small_title{
-    align-items: flex-start;
-    margin-bottom: 20px;
-
-  }
-  .title {
-    font-size: 3.5rem;
-    color: $primaryColor;
-<<<<<<< HEAD
-  }
->>>>>>> 28f81d8 (fin 3-04)
-=======
-    max-width: 50%;
-    //max-height: 150px;
-    width: 100%;
-    //margin: 0 auto;
-    align-items: flex-start;
-
-    
-  }
-
-}
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-}
->>>>>>> 90b60a5 (page about 8-04)

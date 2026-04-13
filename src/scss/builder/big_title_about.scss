@@ -1,9 +1,5 @@
 @use "./../variables/colors.scss" as *;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
 .section-big-title {
   border-top: 1px solid $primaryColor;
 
@@ -18,19 +14,3 @@
     }
   }
 }
-<<<<<<< HEAD
-=======
-.big_title h2 {
-  color: $primaryColor;
-  font-size: 8rem;
-  font-weight: 600;
-  line-height: .9;
-  //padding: 100px;
-  width: 60%;
-  padding-left: 200px ;
-  padding-top: 15Opx ;
-  border-top: 1px solid #4f4d4d;
-}
->>>>>>> 927826b (fin2-4)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)

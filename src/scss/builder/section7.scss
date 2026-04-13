@@ -19,15 +19,10 @@
   justify-content: center;
   gap: 150px;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e007f86 (Correction css + animation + section)
   .block-txt {
     display: flex;
     flex-direction: column;
     gap: 20px;
-<<<<<<< HEAD
 
     .projects-title {
       color: $white;
@@ -44,31 +39,6 @@
     }
   }
 
-=======
-  .projects-title {
-    color: $white;
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-=======
->>>>>>> e007f86 (Correction css + animation + section)
-
-    .projects-title {
-      color: $white;
-      font-size: 4rem;
-      line-height: 4rem;
-    }
-
-    .projects-paragraph {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      color: $white;
-      margin: 0;
-      width: 500px;
-    }
-  }
-
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
   .btn-cta {
     color: $white;
     border-bottom: 0.5px solid $white;
@@ -172,21 +142,6 @@
       }
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-  .swiper-scrollbar-projects {
-    display: flex !important;
-    align-items: center;
-    height: 1px;
-    background-color: $lightGray !important;
-    width: 60%;
-    position: relative;
-=======
-}
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-
-=======
 
   .swiper-scrollbar-projects {
     display: flex !important;
@@ -196,7 +151,6 @@
     width: 60%;
     position: relative;
 
->>>>>>> e007f86 (Correction css + animation + section)
     .swiper-scrollbar-drag {
       height: 100%;
       background-color: $primaryColor;
