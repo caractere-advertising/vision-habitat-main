@@ -44,6 +44,9 @@
 @use "builder/section_accordeon.scss" as *;
 @use "builder/text_overlay.scss" as *;
 
+@use "builder/section_actu_2_cards.scss" as *;
+//@use "builder/section_header_actu.scss" as *;
+
 body {
   font-family: "Manrope", sans-serif;
 }

@@ -433,6 +433,74 @@ acf_add_local_field_group( array(
                 ),
  
                 // ─── Block video ─────────────────────────────────────────────
+
+                'layout_69b40ddb22c3eppp' => array(
+                    'key' => 'layout_69b40ddb22c3eff',
+                    'name' => 'section_actu_2_cards',
+                    'label' => 'section_actu_2_cards',
+                    'display' => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key' => 'field_69baa2793fc43rrr',
+                            'label' => 'articles',
+                            'name' => 'articles',
+                            'type' => 'repeater',
+                            'conditional_logic' => 0,
+                            'wrapper' => $wrapper,
+                            'layout' => 'table',
+                            'button_label' => 'Ajouter un élément',
+                            'rows_per_page' => 20,
+                            'sub_fields' => array(
+                                array(
+                                    'key' => 'field_69baa2c63fc45tt',
+                                    'label' => 'image',
+                                    'name' => 'image',
+                                    'type' => 'image',
+                                    'conditional_logic' => 0,
+                                    'wrapper' => $wrapper,
+                                    'return_format' => 'array',
+                                    'allow_in_bindings' => 0,
+                                    'preview_size' => 'medium',
+                                    'parent_repeater' => 'field_69baa2793fc43',
+                                ),
+                                array(
+                                    'key' => 'field_69baa2e53fc46eee',
+                                    'label' => 'title',
+                                    'name' => 'title',
+                                    'type' => 'text',
+                                    'conditional_logic' => 0,
+                                    'wrapper' => $wrapper,
+                                    'default_value' => '',
+                                    'allow_in_bindings' => 0,
+                                    'parent_repeater' => 'field_69baa2793fc43',
+                                ),
+                                array(
+                                    'key' => 'field_69baa3033fc47eee',
+                                    'label' => 'paragraph',
+                                    'name' => 'paragraph',
+                                    'type' => 'text',
+                                    'conditional_logic' => 0,
+                                    'wrapper' => $wrapper,
+                                    'default_value' => '',
+                                    'allow_in_bindings' => 0,
+                                    'parent_repeater' => 'field_69baa2793fc43',
+                                ),
+                                 array(
+                            'key' => 'field_69baa81c9b83eer',
+                            'label' => 'link',
+                            'name' => 'link',
+                            'type' => 'link',
+                            'conditional_logic' => 0,
+                            'wrapper' => $wrapper,
+                            'return_format' => 'array',
+                            'allow_in_bindings' => 0,
+                        ),
+                            ),
+                        ),
+                       
+                    ),
+                ),
+
                 'layout_69b4095b346f8' => array(
                     'key'        => 'layout_69b4095b346f8',
                     'name'       => 'block_video',
