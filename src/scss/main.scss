@@ -151,7 +151,13 @@
 @use "builder/section-partenaire-sur-mesure" as *;
 >>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
 
+<<<<<<< HEAD
 >>>>>>> 28f81d8 (fin 3-04)
+=======
+@use "builder/section_actu_2_cards.scss" as *;
+//@use "builder/section_header_actu.scss" as *;
+
+>>>>>>> 6503a7d (1304)
 body {
   font-family: "Manrope", sans-serif;
 }

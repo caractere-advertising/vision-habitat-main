@@ -90,6 +90,9 @@ $builder_layouts = array(
 =======
     'section-grille-references'  => 'section-grille-references',
     'section_actu_2_cards' => 'section_actu_2_cards',
+<<<<<<< HEAD
+>>>>>>> 6503a7d (1304)
+=======
 >>>>>>> 6503a7d (1304)
 );
 
