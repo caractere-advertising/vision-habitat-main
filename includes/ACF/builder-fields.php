@@ -1,3310 +1,1942 @@
 <?php
  
 $wrapper = array('width' => '', 'class' => '', 'id' => '');
- 
-acf_add_local_field_group( array(
-    'key'    => 'group_69a7f86f55a21',
-    'title'  => 'Builder',
-    'fields' => array(
-        array(
-            'key'               => 'field_69a7f86f5a302',
-            'label'             => 'Builder',
-            'name'              => 'builder',
-            'type'              => 'flexible_content',
-            'conditional_logic' => 0,
-            'wrapper'           => $wrapper,
-            'button_label'      => 'Ajouter un élément',
-            'layouts'           => array(
- 
-                // ─── Slider fullwidth ───────────────────────────────────────
-                'layout_69a7f853b6c37' => array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'key'        => 'layout_69a7f853b6c37',
-                    'name'       => 'slider-fullwidth',
-                    'label'      => 'Slider fullwidth',
-                    'display'    => 'block',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-                'key' => 'layout_69a7f853b6c37',
-                'name' => 'slider-fullwidth',
-                'label' => 'Slider fullwidth',
-                'display' => 'block',
-<<<<<<< HEAD
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69a9969894e02',
-                            'label'          => 'Slide',
-                            'name'           => 'slide',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69a996a394e03',
-                                    'label'          => 'image',
-                                    'name'           => 'image',
-                                    'type'           => 'image',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69a9969894e02',
-                                ),
-                                array(
-                                    'key'            => 'field_69a996c594e04',
-                                    'label'          => 'Titre',
-                                    'name'           => 'titre',
-                                    'type'           => 'wysiwyg',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'tabs'           => 'all',
-                                    'toolbar'        => 'full',
-                                    'media_upload'   => 1,
-                                    'delay'          => 0,
-                                    'parent_repeater' => 'field_69a9969894e02',
-                                ),
-                                array(
-                                    'key'            => 'field_69a996d094e05',
-                                    'label'          => 'CTA',
-                                    'name'           => 'cta',
-                                    'type'           => 'link',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69a9969894e02',
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
- 
-                // ─── Header service ─────────────────────────────────────────
-                'layout_69c658bedc62c' => array(
-                    'key'        => 'layout_69c658bedc62c',
-                    'name'       => 'section-header-service',
-                    'label'      => 'Header service',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-                            'key' => 'field_69d6b26f08cd7',
-                            'label' => 'Couleur ou Image ?',
-                            'name' => 'couleur_ou_image',
-                            'aria-label' => '',
-                            'type' => 'radio',
-                            'instructions' => '',
-                            'required' => 0,
-                            'conditional_logic' => 0,
-                            'wrapper' => array(
-                                'width' => '',
-                                'class' => '',
-                                'id' => '',
-                            ),
-                            'choices' => array(
-                                'couleur' => 'Couleur',
-                                'image' => 'Image',
-                            ),
-                            'default_value' => 'couleur',
-                            'return_format' => 'value',
-                            'allow_null' => 0,
-                            'other_choice' => 0,
-                            'allow_in_bindings' => 0,
-                            'layout' => 'vertical',
-                            'save_other_choice' => 0,
-                        ),
-                        array(
-                            'key' => 'field_69d6b3186b2c9',
-                            'label' => 'Arriere-plan',
-                            'name' => 'arriere-plan',
-                            'aria-label' => '',
-                            'type' => 'color_picker',
-                            'instructions' => '',
-                            'required' => 0,
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_69d6b26f08cd7',
-                                        'operator' => '==',
-                                        'value' => 'couleur',
-                                    ),
-                                ),
-                            ),
-                            'wrapper' => array(
-                                'width' => '',
-                                'class' => '',
-                                'id' => '',
-                            ),
-                            'default_value' => 'rgba(5, 35, 60,1)',
-                            'enable_opacity' => 1,
-                            'return_format' => 'string',
-                            'allow_in_bindings' => 0,
-                            'show_custom_palette' => 0,
-                            'show_color_wheel' => 1,
-                            'custom_palette_source' => '',
-                            'palette_colors' => '',
-                        ),
-                        array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            'key'            => 'field_69c658cbdc62e',
-                            'label'          => 'background',
-                            'name'           => 'background',
-                            'type'           => 'image',
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_69d6b26f08cd7',
-                                        'operator' => '==',
-                                        'value' => 'image',
-                                    ),
-                                ),
-                            ),
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                        array(
-=======
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-                            'key'            => 'field_69c658cbdc62e',
-                            'label'          => 'background',
-                            'name'           => 'background',
-                            'type'           => 'image',
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_69d6b26f08cd7',
-                                        'operator' => '==',
-                                        'value' => 'image',
-                                    ),
-                                ),
-                            ),
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                        array(
->>>>>>> 28f81d8 (fin 3-04)
-=======
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-                            'key'            => 'field_69c658cbdc62e',
-                            'label'          => 'background',
-                            'name'           => 'background',
-                            'type'           => 'image',
-                            'conditional_logic' => array(
-                                array(
-                                    array(
-                                        'field' => 'field_69d6b26f08cd7',
-                                        'operator' => '==',
-                                        'value' => 'image',
-                                    ),
-                                ),
-                            ),
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                        array(
->>>>>>> 28f81d8 (fin 3-04)
-                            'key'            => 'field_69c658dddc62f',
-                            'label'          => 'CTA',
-                            'name'           => 'cta',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_heightofsection',
-                            'label'          => 'Hauteur (en vh)',
-                            'name'           => 'hauteur',
-                            'type'           => 'number',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '30', 
-                            'return_format'  => 'array',
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_heightofsection',
-                            'label'          => 'Hauteur (en vh)',
-                            'name'           => 'hauteur',
-                            'type'           => 'number',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '30', 
-                            'return_format'  => 'array',
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_heightofsection',
-                            'label'          => 'Hauteur (en vh)',
-                            'name'           => 'hauteur',
-                            'type'           => 'number',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '30', 
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Gallery slider ─────────────────────────────────────────
-                'layout_69b7c55596df3' => array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'key'        => 'layout_69b7c55596df3',
-                    'name'       => 'gallery_slider',
-                    'label'      => 'gallery_slider',
-                    'display'    => 'block',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                    'key' => 'layout_69b7c55596df3',
-                    'name' => 'gallery_slider',
-                    'label' => 'gallery_slider',
-                    'display' => 'block',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69b7c5d596df5',
-                            'label'          => 'slides',
-                            'name'           => 'slides',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69b7c5ec96df6',
-                                    'label'          => 'image',
-                                    'name'           => 'image',
-                                    'type'           => 'image',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69b7c5d596df5',
-                                ),
-                                array(
-                                    'key'            => 'field_69b7c5ff96df7',
-                                    'label'          => 'titre',
-                                    'name'           => 'titre',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69b7c5d596df5',
-                                ),
-                                array(
-                                    'key'            => 'field_69b7c62796df8',
-                                    'label'          => 'description',
-                                    'name'           => 'description',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69b7c5d596df5',
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
- 
-                // ─── Block real proj ────────────────────────────────────────
-                'layout_69b7c04ed01c1' => array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'key'        => 'layout_69b7c04ed01c1',
-                    'name'       => 'block_real_proj',
-                    'label'      => 'block_real_proj',
-                    'display'    => 'block',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                    'key' => 'layout_69b7c04ed01c1',
-                    'name' => 'block_real_proj',
-                    'label' => 'block_real_proj',
-                    'display' => 'block',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69b7c07bd01c3',
-                            'label'          => 'category',
-                            'name'           => 'category',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b7c08dd01c4',
-                            'label'          => 'text_evidence',
-                            'name'           => 'text_evidence',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b7c0c1d01c6',
-                            'label'          => 'paragraph',
-                            'name'           => 'paragraph',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b7c0dad01c7',
-                            'label'          => 'link',
-                            'name'           => 'link',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'        => 'field_69c65fce5395d',
-                            'label'      => 'Margin paragraphe',
-                            'name'       => 'margin',
-                            'type'       => 'group',
-                            'conditional_logic' => 0,
-                            'wrapper'    => $wrapper,
-                            'layout'     => 'table',
-                            'sub_fields' => array(
-                                array(
-                                    'key'            => 'field_69c65fde5395e',
-                                    'label'          => 'Top',
-                                    'name'           => 'top',
-                                    'type'           => 'number',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                ),
-                                array(
-                                    'key'            => 'field_69c65fec5395f',
-                                    'label'          => 'Bottom',
-                                    'name'           => 'bottom',
-                                    'type'           => 'number',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                ),
-                                array(
-                                    'key'            => 'field_69c65fed53960',
-                                    'label'          => 'Left',
-                                    'name'           => 'left',
-                                    'type'           => 'number',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                ),
-                                array(
-                                    'key'            => 'field_69c65fef53961',
-                                    'label'          => 'Right',
-                                    'name'           => 'right',
-                                    'type'           => 'number',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
- 
-                // ─── Block actu ─────────────────────────────────────────────
-                'layout_69b40ddb22c3e' => array(
-                    'key'        => 'layout_69b40ddb22c3e',
-                    'name'       => 'block_actu',
-                    'label'      => 'block_actu',
-                    'display'    => 'block',
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69baa2793fc43',
-                            'label'          => 'articles',
-                            'name'           => 'articles',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69baa2c63fc45',
-                                    'label'          => 'image',
-                                    'name'           => 'image',
-                                    'type'           => 'image',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                                array(
-                                    'key'            => 'field_69baa2e53fc46',
-                                    'label'          => 'category',
-                                    'name'           => 'category',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                                array(
-                                    'key'            => 'field_69baa3033fc47',
-                                    'label'          => 'paragraph',
-                                    'name'           => 'paragraph',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                            ),
-                        ),
-                        array(
-                            'key'            => 'field_69baa81c9b83e',
-                            'label'          => 'link',
-                            'name'           => 'link',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69bc094442c72',
-                            'label'          => 'title',
-                            'name'           => 'title',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Block video ─────────────────────────────────────────────
 
-                'layout_69b40ddb22c3eppp' => array(
-                    'key' => 'layout_69b40ddb22c3eff',
-                    'name' => 'section_actu_2_cards',
-                    'label' => 'section_actu_2_cards',
-                    'display' => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key' => 'field_69baa2793fc43rrr',
-                            'label' => 'articles',
-                            'name' => 'articles',
-                            'type' => 'repeater',
-<<<<<<< HEAD
-=======
-                    'sub_fields' => array(
-                        array(
-=======
-                    'sub_fields' => array(
-                        array(
->>>>>>> 28f81d8 (fin 3-04)
-                            'key'            => 'field_69baa2793fc43',
-                            'label'          => 'articles',
-                            'name'           => 'articles',
-                            'type'           => 'repeater',
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-<<<<<<< HEAD
->>>>>>> 6503a7d (1304)
-                                    'key' => 'field_69baa2c63fc45tt',
-                                    'label' => 'image',
-                                    'name' => 'image',
-                                    'type' => 'image',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                                    'key'            => 'field_69baa2c63fc45',
-                                    'label'          => 'image',
-                                    'name'           => 'image',
-                                    'type'           => 'image',
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                                array(
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                                array(
-<<<<<<< HEAD
->>>>>>> 6503a7d (1304)
-                                    'key' => 'field_69baa2e53fc46eee',
-                                    'label' => 'title',
-                                    'name' => 'title',
-                                    'type' => 'text',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                                    'key'            => 'field_69baa2e53fc46',
-                                    'label'          => 'category',
-                                    'name'           => 'category',
-                                    'type'           => 'text',
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-=======
-                                    'conditional_logic' => 0,
-                                    'wrapper' => $wrapper,
-                                    'default_value' => '',
->>>>>>> 6503a7d (1304)
-=======
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
->>>>>>> 28f81d8 (fin 3-04)
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                                array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6503a7d (1304)
-                                    'key' => 'field_69baa3033fc47eee',
-                                    'label' => 'paragraph',
-                                    'name' => 'paragraph',
-                                    'type' => 'text',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                                    'key'            => 'field_69baa3033fc47',
-                                    'label'          => 'paragraph',
-                                    'name'           => 'paragraph',
-                                    'type'           => 'text',
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-<<<<<<< HEAD
->>>>>>> 6503a7d (1304)
-                                 array(
-                            'key' => 'field_69baa81c9b83eer',
-                            'label' => 'link',
-                            'name' => 'link',
-                            'type' => 'link',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            ),
-                        ),
-                        array(
-                            'key'            => 'field_69baa81c9b83e',
-                            'label'          => 'link',
-                            'name'           => 'link',
-                            'type'           => 'link',
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-<<<<<<< HEAD
-                            ),
-=======
-                        array(
-                            'key'            => 'field_69bc094442c72',
-                            'label'          => 'title',
-                            'name'           => 'title',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
->>>>>>> 28f81d8 (fin 3-04)
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-<<<<<<< HEAD
-                            ),
->>>>>>> 6503a7d (1304)
-=======
-                        array(
-                            'key'            => 'field_69bc094442c72',
-                            'label'          => 'title',
-                            'name'           => 'title',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
->>>>>>> 28f81d8 (fin 3-04)
-                        ),
-                       
-                    ),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6503a7d (1304)
+function devLocation($param,$ope,$value){
+    $array = array(
+        'param'    => $param,
+        'operator' => $ope,
+        'value'    => $value,
+    );
 
-                'layout_69b4095b346f8' => array(
-<<<<<<< HEAD
-=======
+    return $array;
+};
  
-                // ─── Block video ─────────────────────────────────────────────
-                'layout_69b4095b346f8' => array(
->>>>>>> 28f81d8 (fin 3-04)
-=======
- 
-                // ─── Block video ─────────────────────────────────────────────
-                'layout_69b4095b346f8' => array(
->>>>>>> 28f81d8 (fin 3-04)
-                    'key'        => 'layout_69b4095b346f8',
-                    'name'       => 'block_video',
-                    'label'      => 'block_video',
-                    'display'    => 'block',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                    'key' => 'layout_69b4095b346f8',
-                    'name' => 'block_video',
-                    'label' => 'block_video',
-                    'display' => 'block',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69b40977346fa',
-                            'label'          => 'text_ev',
-                            'name'           => 'text_ev',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b40996346fb',
-                            'label'          => 'paragraph',
-                            'name'           => 'paragraph',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b409a5346fc',
-                            'label'          => 'video',
-                            'name'           => 'video',
-                            'type'           => 'url',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Link container ──────────────────────────────────────────
-                'layout_69b3ea769b227' => array(
-                    'key'        => 'layout_69b3ea769b227',
-                    'name'       => 'link_container',
-                    'label'      => 'link_container',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69ba75741a881',
-                            'label'          => 'link_container',
-                            'name'           => 'link_container',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69ba75ce1a882',
-                                    'label'          => 'lien',
-                                    'name'           => 'lien',
-                                    'type'           => 'link',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69ba75741a881',
-                                ),
-                                array(
-                                    'key'            => 'field_69ca3bd80c741',
-                                    'label'          => 'image',
-                                    'name'           => 'image',
-                                    'type'           => 'image',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69ba75741a881',
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
- 
-                // ─── Block discover ──────────────────────────────────────────
-                'layout_69b3d7c59a62f' => array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'key'        => 'layout_69b3d7c59a62f',
-                    'name'       => 'block_discover',
-                    'label'      => 'block_discover',
-                    'display'    => 'block',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                    'key' => 'layout_69b3d7c59a62f',
-                    'name' => 'block_discover',
-                    'label' => 'block_discover',
-                    'display' => 'block',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69b3d7e89a631',
-                            'label'          => 'image',
-                            'name'           => 'image',
-                            'type'           => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                        array(
-                            'key'            => 'field_69b3d7f99a632',
-                            'label'          => 'title',
-                            'name'           => 'title',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b3dbe89a633',
-                            'label'          => 'paragraph',
-                            'name'           => 'paragraph',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b3dc849a635',
-                            'label'          => 'link',
-                            'name'           => 'link',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Bloc citation ───────────────────────────────────────────
-                'layout_69b3cd935aa7b' => array(
-                    'key' => 'layout_69b3cd935aa7b',
-                    'name' => 'block_citation',
-                    'label' => 'Bloc Citation',
-                    'display' => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key' => 'field_69b3cdd45aa7d',
-                            'label' => 'Nom',
-                            'name' => 'name',
-                            'type' => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'default_value' => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            'key'            => 'field_69b3cdfa5aa7e',
-                            'label'          => 'Citation',
-                            'name'           => 'citation',
-                            'type'           => 'wysiwyg',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a3a7261 (builder-fields)
-                            'key' => 'field_possignature',
-                            'label' => 'Signature en haut',
-                            'name' => 'signature_top',
-=======
-=======
->>>>>>> a3a7261 (builder-fields)
-                            'key' => 'field_possignature',
-                            'label' => 'Signature en haut',
-                            'name' => 'signature_top',
-=======
-=======
->>>>>>> a3a7261 (builder-fields)
-                            'key' => 'field_possignature',
-                            'label' => 'Signature en haut',
-                            'name' => 'signature_top',
-                            'type' => 'true_false',
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'message' => '',
-                            'default_value' => 1,
-                            'allow_in_bindings' => 0,
-                            'ui' => 0,
-                            'ui_on_text' => '',
-                            'ui_off_text' => '',
-                        ),
-                        array(
-                            'key' => 'field_69b3cdfa5aa7e',
-                            'label' => 'Citation',
-                            'name' => 'citation',
-                            'type' => 'wysiwyg',
-<<<<<<< HEAD
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'default_value' => '',
-                            'allow_in_bindings' => 0,
-                            'tabs' => 'all',
-                            'toolbar' => 'full',
-                            'media_upload' => 1,
-                            'delay' => 0,
-                        ),
-                        array(
-                            'key' => 'field_69c3b3c691dd7',
-                            'label' => 'Ajouter section bleue ?',
-                            'name' => 'blue_activated',
->>>>>>> 6ead0fd (Features :)
-                            'type' => 'true_false',
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'message' => '',
-                            'default_value' => 1,
-                            'allow_in_bindings' => 0,
-                            'ui' => 0,
-                            'ui_on_text' => '',
-                            'ui_off_text' => '',
-                        ),
-                        array(
-                            'key' => 'field_69b3cdfa5aa7e',
-                            'label' => 'Citation',
-                            'name' => 'citation',
-                            'type' => 'wysiwyg',
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-<<<<<<< HEAD
-                            'key' => 'field_69c3b3c691dd7',
-                            'label' => 'Ajouter section bleue ?',
-                            'name' => 'blue_activated',
->>>>>>> 6ead0fd (Features :)
-                            'type' => 'true_false',
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'message' => '',
-                            'default_value' => 1,
-                            'allow_in_bindings' => 0,
-                            'ui' => 0,
-                            'ui_on_text' => '',
-                            'ui_off_text' => '',
-                        ),
-                        array(
-                            'key' => 'field_69b3cdfa5aa7e',
-                            'label' => 'Citation',
-                            'name' => 'citation',
-                            'type' => 'wysiwyg',
-<<<<<<< HEAD
->>>>>>> 6ead0fd (Features :)
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'             => 'field_69c3b3c691dd7',
-                            'label'           => 'Ajouter section bleue ?',
-                            'name'            => 'blue_activated',
-                            'type'            => 'true_false',
-=======
->>>>>>> a3a7261 (builder-fields)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            'key'               => 'field_69c3b3b391dd6',
-                            'label'             => 'Section bleue',
-                            'name'              => '',
-                            'type'              => 'tab',
-                            'conditional_logic' => array(
-                                array(
+acf_add_local_field_group( 
+    array(
+        'key'    => 'group_69a7f86f55a21',
+        'title'  => 'Builder',
+        'fields' => array(
+            array(
+                'key'               => 'field_69a7f86f5a302',
+                'label'             => 'Builder',
+                'name'              => 'builder',
+                'type'              => 'flexible_content',
+                'conditional_logic' => 0,
+                'wrapper'           => $wrapper,
+                'button_label'      => 'Ajouter un élément',
+                'layouts'           => array(
+    
+                    // ─── Slider fullwidth ───────────────────────────────────────
+                    'layout_69a7f853b6c37' => array(
+                        'key'        => 'layout_69a7f853b6c37',
+                        'name'       => 'slider-fullwidth',
+                        'label'      => 'Slider fullwidth',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69a9969894e02',
+                                'label'          => 'Slide',
+                                'name'           => 'slide',
+                                'type'           => 'repeater',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'layout'         => 'table',
+                                'button_label'   => 'Ajouter un élément',
+                                'rows_per_page'  => 20,
+                                'sub_fields'     => array(
                                     array(
-                                        'field'    => 'field_69c3b3c691dd7',
-                                        'operator' => '==',
-                                        'value'    => '1',
+                                        'key'            => 'field_69a996a394e03',
+                                        'label'          => 'image',
+                                        'name'           => 'image',
+                                        'type'           => 'image',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'preview_size'   => 'medium',
+                                        'parent_repeater' => 'field_69a9969894e02',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69a996c594e04',
+                                        'label'          => 'Titre',
+                                        'name'           => 'titre',
+                                        'type'           => 'wysiwyg',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'tabs'           => 'all',
+                                        'toolbar'        => 'full',
+                                        'media_upload'   => 1,
+                                        'delay'          => 0,
+                                        'parent_repeater' => 'field_69a9969894e02',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69a996d094e05',
+                                        'label'          => 'CTA',
+                                        'name'           => 'cta',
+                                        'type'           => 'link',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69a9969894e02',
                                     ),
                                 ),
                             ),
-                            'wrapper'   => $wrapper,
-                            'placement' => 'top',
-                            'endpoint'  => 0,
-                            'selected'  => 0,
                         ),
-                        array(
-                            'key'            => 'field_69b3cf145aa7f',
-                            'label'          => 'Titre',
-                            'name'           => 'title',
-                            'type'           => 'wysiwyg',
-=======
-                            'key' => 'field_69c3b3c691dd7',
-                            'label' => 'Ajouter section bleue ?',
-                            'name' => 'blue_activated',
-                            'type' => 'true_false',
->>>>>>> a3a7261 (builder-fields)
-=======
-                            'key'             => 'field_69c3b3c691dd7',
-                            'label'           => 'Ajouter section bleue ?',
-                            'name'            => 'blue_activated',
-                            'type'            => 'true_false',
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> a3a7261 (builder-fields)
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'default_value' => '',
-                            'allow_in_bindings' => 0,
-                            'tabs' => 'all',
-                            'toolbar' => 'full',
-                            'media_upload' => 1,
-                            'delay' => 0,
-                        ),
-                        array(
-<<<<<<< HEAD
-                            'key'               => 'field_69c3b3b391dd6',
-                            'label'             => 'Section bleue',
-                            'name'              => '',
-                            'type'              => 'tab',
-                            'conditional_logic' => array(
-                                array(
+                    ),
+    
+                    // ─── Header service ─────────────────────────────────────────
+                    'layout_69c658bedc62c' => array(
+                        'key'        => 'layout_69c658bedc62c',
+                        'name'       => 'section-header-service',
+                        'label'      => 'Header service',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key' => 'field_69d6b26f08cd7',
+                                'label' => 'Couleur ou Image ?',
+                                'name' => 'couleur_ou_image',
+                                'aria-label' => '',
+                                'type' => 'radio',
+                                'instructions' => '',
+                                'required' => 0,
+                                'conditional_logic' => 0,
+                                'wrapper' => array(
+                                    'width' => '',
+                                    'class' => '',
+                                    'id' => '',
+                                ),
+                                'choices' => array(
+                                    'couleur' => 'Couleur',
+                                    'image' => 'Image',
+                                ),
+                                'default_value' => 'couleur',
+                                'return_format' => 'value',
+                                'allow_null' => 0,
+                                'other_choice' => 0,
+                                'allow_in_bindings' => 0,
+                                'layout' => 'vertical',
+                                'save_other_choice' => 0,
+                            ),
+                            array(
+                                'key' => 'field_69d6b3186b2c9',
+                                'label' => 'Arriere-plan',
+                                'name' => 'arriere-plan',
+                                'aria-label' => '',
+                                'type' => 'color_picker',
+                                'instructions' => '',
+                                'required' => 0,
+                                'conditional_logic' => array(
                                     array(
-                                        'field'    => 'field_69c3b3c691dd7',
-                                        'operator' => '==',
-                                        'value'    => '1',
+                                        array(
+                                            'field' => 'field_69d6b26f08cd7',
+                                            'operator' => '==',
+                                            'value' => 'couleur',
+                                        ),
+                                    ),
+                                ),
+                                'wrapper' => array(
+                                    'width' => '',
+                                    'class' => '',
+                                    'id' => '',
+                                ),
+                                'default_value' => 'rgba(5, 35, 60,1)',
+                                'enable_opacity' => 1,
+                                'return_format' => 'string',
+                                'allow_in_bindings' => 0,
+                                'show_custom_palette' => 0,
+                                'show_color_wheel' => 1,
+                                'custom_palette_source' => '',
+                                'palette_colors' => '',
+                            ),
+                            array(
+                                'key'            => 'field_69c658cbdc62e',
+                                'label'          => 'background',
+                                'name'           => 'background',
+                                'type'           => 'image',
+                                'conditional_logic' => array(
+                                    array(
+                                        array(
+                                            'field' => 'field_69d6b26f08cd7',
+                                            'operator' => '==',
+                                            'value' => 'image',
+                                        ),
+                                    ),
+                                ),
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'library'        => 'all',
+                                'allow_in_bindings' => 0,
+                                'preview_size'   => 'medium',
+                            ),
+                            array(
+                                'key'            => 'field_69c658dddc62f',
+                                'label'          => 'CTA',
+                                'name'           => 'cta',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_heightofsection',
+                                'label'          => 'Hauteur (en vh)',
+                                'name'           => 'hauteur',
+                                'type'           => 'number',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '30', 
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
+    
+                    // ─── Gallery slider ─────────────────────────────────────────
+                    'layout_69b7c55596df3' => array(
+                        'key'        => 'layout_69b7c55596df3',
+                        'name'       => 'gallery_slider',
+                        'label'      => 'gallery_slider',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69b7c5d596df5',
+                                'label'          => 'slides',
+                                'name'           => 'slides',
+                                'type'           => 'repeater',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'layout'         => 'table',
+                                'button_label'   => 'Ajouter un élément',
+                                'rows_per_page'  => 20,
+                                'sub_fields'     => array(
+                                    array(
+                                        'key'            => 'field_69b7c5ec96df6',
+                                        'label'          => 'image',
+                                        'name'           => 'image',
+                                        'type'           => 'image',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'preview_size'   => 'medium',
+                                        'parent_repeater' => 'field_69b7c5d596df5',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69b7c5ff96df7',
+                                        'label'          => 'titre',
+                                        'name'           => 'titre',
+                                        'type'           => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69b7c5d596df5',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69b7c62796df8',
+                                        'label'          => 'description',
+                                        'name'           => 'description',
+                                        'type'           => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69b7c5d596df5',
                                     ),
                                 ),
                             ),
-                            'wrapper'   => $wrapper,
-                            'placement' => 'top',
-                            'endpoint'  => 0,
-                            'selected'  => 0,
                         ),
-                        array(
-                            'key'            => 'field_69b3cf145aa7f',
-                            'label'          => 'Titre',
-                            'name'           => 'title',
-                            'type'           => 'wysiwyg',
-=======
-                            'key' => 'field_69c3b3c691dd7',
-                            'label' => 'Ajouter section bleue ?',
-                            'name' => 'blue_activated',
-                            'type' => 'true_false',
->>>>>>> a3a7261 (builder-fields)
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'message' => '',
-                            'default_value' => 0,
-=======
-                            'key'             => 'field_69c3b3c691dd7',
-                            'label'           => 'Ajouter section bleue ?',
-                            'name'            => 'blue_activated',
-                            'type'            => 'true_false',
-                            'conditional_logic' => 0,
-                            'wrapper'         => $wrapper,
-                            'message'         => '',
-                            'default_value'   => 0,
->>>>>>> 28f81d8 (fin 3-04)
-=======
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'default_value' => '',
->>>>>>> a3a7261 (builder-fields)
-                            'allow_in_bindings' => 0,
-                            'tabs' => 'all',
-                            'toolbar' => 'full',
-                            'media_upload' => 1,
-                            'delay' => 0,
-                        ),
-                        array(
-<<<<<<< HEAD
-                            'key'               => 'field_69c3b3b391dd6',
-                            'label'             => 'Section bleue',
-                            'name'              => '',
-                            'type'              => 'tab',
-                            'conditional_logic' => array(
-                                array(
+                    ),
+    
+                    // ─── Block real proj ────────────────────────────────────────
+                    'layout_69b7c04ed01c1' => array(
+                        'key'        => 'layout_69b7c04ed01c1',
+                        'name'       => 'block_real_proj',
+                        'label'      => 'block_real_proj',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69b7c07bd01c3',
+                                'label'          => 'category',
+                                'name'           => 'category',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b7c08dd01c4',
+                                'label'          => 'text_evidence',
+                                'name'           => 'text_evidence',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b7c0c1d01c6',
+                                'label'          => 'paragraph',
+                                'name'           => 'paragraph',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b7c0dad01c7',
+                                'label'          => 'link',
+                                'name'           => 'link',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'        => 'field_69c65fce5395d',
+                                'label'      => 'Margin paragraphe',
+                                'name'       => 'margin',
+                                'type'       => 'group',
+                                'conditional_logic' => 0,
+                                'wrapper'    => $wrapper,
+                                'layout'     => 'table',
+                                'sub_fields' => array(
                                     array(
-                                        'field'    => 'field_69c3b3c691dd7',
-                                        'operator' => '==',
-                                        'value'    => '1',
+                                        'key'            => 'field_69c65fde5395e',
+                                        'label'          => 'Top',
+                                        'name'           => 'top',
+                                        'type'           => 'number',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                    ),
+                                    array(
+                                        'key'            => 'field_69c65fec5395f',
+                                        'label'          => 'Bottom',
+                                        'name'           => 'bottom',
+                                        'type'           => 'number',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                    ),
+                                    array(
+                                        'key'            => 'field_69c65fed53960',
+                                        'label'          => 'Left',
+                                        'name'           => 'left',
+                                        'type'           => 'number',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                    ),
+                                    array(
+                                        'key'            => 'field_69c65fef53961',
+                                        'label'          => 'Right',
+                                        'name'           => 'right',
+                                        'type'           => 'number',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
                                     ),
                                 ),
                             ),
-                            'wrapper'   => $wrapper,
-                            'placement' => 'top',
-                            'endpoint'  => 0,
-                            'selected'  => 0,
                         ),
-                        array(
-                            'key'            => 'field_69b3cf145aa7f',
-                            'label'          => 'Titre',
-                            'name'           => 'title',
-                            'type'           => 'wysiwyg',
-=======
-                            'key' => 'field_69c3b3c691dd7',
-                            'label' => 'Ajouter section bleue ?',
-                            'name' => 'blue_activated',
-                            'type' => 'true_false',
->>>>>>> a3a7261 (builder-fields)
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'message' => '',
-                            'default_value' => 0,
-                            'allow_in_bindings' => 0,
-                            'ui' => 0,
-                            'ui_on_text' => '',
-                            'ui_off_text' => '',
-                        ),
-                        array(
-                            'key' => 'field_69c3b3b391dd6',
-                            'label' => 'Section bleue',
-                            'name' => '',
-                            'type' => 'tab',
-                            'conditional_logic' => array(
-                                array(
+                    ),
+    
+                    // ─── Block actu ─────────────────────────────────────────────
+                    'layout_69b40ddb22c3e' => array(
+                        'key'        => 'layout_69b40ddb22c3e',
+                        'name'       => 'block_actu',
+                        'label'      => 'block_actu',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69baa2793fc43',
+                                'label'          => 'articles',
+                                'name'           => 'articles',
+                                'type'           => 'repeater',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'layout'         => 'table',
+                                'button_label'   => 'Ajouter un élément',
+                                'rows_per_page'  => 20,
+                                'sub_fields'     => array(
                                     array(
-                                        'field' => 'field_69c3b3c691dd7',
-                                        'operator' => '==',
-                                        'value' => '1',
+                                        'key'            => 'field_69baa2c63fc45',
+                                        'label'          => 'image',
+                                        'name'           => 'image',
+                                        'type'           => 'image',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'preview_size'   => 'medium',
+                                        'parent_repeater' => 'field_69baa2793fc43',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69baa2e53fc46',
+                                        'label'          => 'category',
+                                        'name'           => 'category',
+                                        'type'           => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69baa2793fc43',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69baa3033fc47',
+                                        'label'          => 'paragraph',
+                                        'name'           => 'paragraph',
+                                        'type'           => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69baa2793fc43',
                                     ),
                                 ),
                             ),
-                            'wrapper' => $wrapper,
-                            'placement' => 'top',
-                            'endpoint' => 0,
-                            'selected' => 0,
-                        ),
-                        array(
-                            'key' => 'field_69b3cf145aa7f',
-                            'label' => 'Titre',
-                            'name' => 'title',
-                            'type' => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'default_value' => '',
-                            'allow_in_bindings' => 0,
-                            'tabs' => 'all',
-                            'toolbar' => 'full',
-                            'media_upload' => 1,
-                            'delay' => 0,
-                        ),
-                        array(
-                            'key' => 'field_69b3cf2d5aa80',
-                            'label' => 'link',
-                            'name' => 'link',
-                            'type' => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper' => $wrapper,
-                            'return_format' => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Section img ev ──────────────────────────────────────────
-                'layout_69b2daa32762d' => array(
-                    'key'        => 'layout_69b2daa32762d',
-                    'name'       => 'section_img_ev',
-                    'label'      => 'section_img_ev',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69ca3b68d2c0d',
-                            'label'          => 'Projets',
-                            'name'           => 'projets',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69ca3b77d2c0e',
-                                    'label'          => 'image',
-                                    'name'           => 'image',
-                                    'type'           => 'image',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69ca3b68d2c0d',
-                                ),
-                                array(
-                                    'key'            => 'field_69ca3b85d2c0f',
-                                    'label'          => 'location',
-                                    'name'           => 'location',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69ca3b68d2c0d',
-                                ),
-                                array(
-                                    'key'            => 'field_69ca3b8dd2c10',
-                                    'label'          => 'price',
-                                    'name'           => 'price',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69ca3b68d2c0d',
-                                ),
+                            array(
+                                'key'            => 'field_69baa81c9b83e',
+                                'label'          => 'link',
+                                'name'           => 'link',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
                             ),
-                        ),
-                        array(
-                            'key'            => 'field_69b7d2fc726e6',
-                            'label'          => 'title',
-                            'name'           => 'title',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                            'key'            => 'field_69b7d312726e7',
-                            'label'          => 'paragraph',
-                            'name'           => 'paragraph',
-                            'type'           => 'text',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                            'key' => 'field_69b7d312726e7',
-                            'label' => 'paragraph',
-                            'name' => 'paragraph',
-                            'type' => 'wysiwyg',
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> e007f86 (Correction css + animation + section)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> e007f86 (Correction css + animation + section)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> e007f86 (Correction css + animation + section)
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b7d324726e8',
-                            'label'          => 'link',
-                            'name'           => 'link',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- 
-                // ─── Layout vide ─────────────────────────────────────────────
-                'layout_69b7d2f7726e4' => array(
-                    'key'        => 'layout_69b7d2f7726e4',
-                    'name'       => '',
-                    'label'      => '',
-                    'display'    => 'block',
-                    'sub_fields' => array(),
-                ),
- 
-                // ─── Section bleue ───────────────────────────────────────────
-=======
-=======
- 
-                // ─── Layout vide ─────────────────────────────────────────────
->>>>>>> 28f81d8 (fin 3-04)
-                'layout_69b7d2f7726e4' => array(
-                    'key'        => 'layout_69b7d2f7726e4',
-                    'name'       => '',
-                    'label'      => '',
-                    'display'    => 'block',
-                    'sub_fields' => array(),
-                ),
-<<<<<<< HEAD
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
- 
-                // ─── Section bleue ───────────────────────────────────────────
->>>>>>> 28f81d8 (fin 3-04)
-=======
-=======
- 
-                // ─── Layout vide ─────────────────────────────────────────────
->>>>>>> 28f81d8 (fin 3-04)
-                'layout_69b7d2f7726e4' => array(
-                    'key'        => 'layout_69b7d2f7726e4',
-                    'name'       => '',
-                    'label'      => '',
-                    'display'    => 'block',
-                    'sub_fields' => array(),
-                ),
-<<<<<<< HEAD
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
- 
-                // ─── Section bleue ───────────────────────────────────────────
->>>>>>> 28f81d8 (fin 3-04)
-                'layout_69b2d98330c6f' => array(
-                    'key'        => 'layout_69b2d98330c6f',
-                    'name'       => 'section_blue',
-                    'label'      => 'Section bleue',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69b2d9d330c71',
-                            'label'          => 'title',
-                            'name'           => 'title',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b2d9f730c72',
-                            'label'          => 'paragraph',
-                            'name'           => 'paragraph',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b2da0930c73',
-                            'label'          => 'link',
-                            'name'           => '',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Images overlay ──────────────────────────────────────────
-                'layout_69b2c8e4aadf2' => array(
-                    'key'        => 'layout_69b2c8e4aadf2',
-                    'name'       => 'images_overlay',
-                    'label'      => 'images_overlay',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69b2c935aadf4',
-                            'label'          => 'gd_image',
-                            'name'           => 'gd_image',
-                            'type'           => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                        array(
-                            'key'            => 'field_69b2c946aadf5',
-                            'label'          => 'pt_image',
-                            'name'           => 'pt_image',
-                            'type'           => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                        array(
-                            'key'            => 'field_69b7c7ac91424',
-                            'label'          => 'categorie',
-                            'name'           => 'categorie',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b7c7ca91425',
-                            'label'          => 'details',
-                            'name'           => 'details',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b7c7dc91426',
-                            'label'          => 'paragraph',
-                            'name'           => 'paragraph',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b7c7f891427',
-                            'label'          => 'liste',
-                            'name'           => 'liste',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69b7c82391428',
-                                    'label'          => 'item',
-                                    'name'           => 'item',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69b7c7f891427',
-                                ),
-                            ),
-                        ),
-                        array(
-                            'key'            => 'field_69b7ca0dc64be',
-                            'label'          => 'link',
-                            'name'           => 'link',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Header hero ─────────────────────────────────────────────
-                'layout_69b13656aaa3b' => array(
-                    'key'        => 'layout_69b13656aaa3b',
-                    'name'       => 'header_hero',
-                    'label'      => 'header_hero',
-                    'display'    => 'block',
-                    'key' => 'layout_69b13656aaa3b',
-                    'name' => 'header_hero',
-                    'label' => 'header_hero',
-                    'display' => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69b13672aaa3d',
-                            'label'          => 'image_hero',
-                            'name'           => 'image_hero',
-                            'type'           => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                        array(
-                            'key'            => 'field_69b13684aaa3e',
-                            'label'          => 'titre_hero',
-                            'name'           => 'titre_hero',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b1369daaa3f',
-                            'label'          => 'cta_text',
-                            'name'           => 'cta_text',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b136b1aaa40',
-                            'label'          => 'cta_btn',
-                            'name'           => 'cat_btn',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Zone logo ───────────────────────────────────────────────
-                'layout_69aed60ae861a' => array(
-                    'key'        => 'layout_69aed60ae861a',
-                    'name'       => 'zone_logo',
-                    'label'      => 'zone_logo',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69aed616e861c',
-                            'label'          => 'image',
-                            'name'           => 'image',
-                            'type'           => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                        array(
-                            'key'            => 'field_69aed627e861d',
-                            'label'          => 'site_name',
-                            'name'           => 'site_name',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69aed630e861e',
-                            'label'          => 'slogan',
-                            'name'           => 'slogan',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Text evidence ───────────────────────────────────────────
-                'layout_69aed51e0224a' => array(
-                    'key'        => 'layout_69aed51e0224a',
-                    'name'       => 'text_evidence',
-                    'label'      => 'text_evidence',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69aed5310224c',
-                            'label'          => 'catégorie',
-                            'name'           => 'categorie',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69aed5520224d',
-                            'label'          => 'details',
-                            'name'           => 'details',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69aedbd771fb8',
-                            'label'          => 'link',
-                            'name'           => 'link',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69b179cf0413f',
-                            'label'          => 'paragraph',
-                            'name'           => 'paragraph',
-                            'type'           => 'textarea',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'rows'           => '',
-                            'new_lines'      => '',
-                        ),
-                    ),
-                ),
- 
-                // ─── Card solutions ──────────────────────────────────────────
-                'layout_69aedefa2f655' => array(
-                    'key'        => 'layout_69aedefa2f655',
-                    'name'       => 'card_solutions',
-                    'label'      => 'Nos solutions | Cartes',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69aedf142f657',
-                            'label'          => 'card',
-                            'name'           => 'card',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69aee00b2f658',
-                                    'label'          => 'card_category',
-                                    'name'           => 'card_category',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69aedf142f657',
-                                ),
-                                array(
-                                    'key'            => 'field_69aee95a29025',
-                                    'label'          => 'card_image',
-                                    'name'           => 'card_image',
-                                    'type'           => 'image',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69aedf142f657',
-                                ),
-                                array(
-                                    'key'            => 'field_69aee04e2f65a',
-                                    'label'          => 'card_link',
-                                    'name'           => 'card_link',
-                                    'type'           => 'link',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69aedf142f657',
-                                ),
+                            array(
+                                'key'            => 'field_69bc094442c72',
+                                'label'          => 'title',
+                                'name'           => 'title',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
                             ),
                         ),
                     ),
-                ),
- 
-                // ─── Actualités ──────────────────────────────────────────────
-                'layout_69a952e91a7df' => array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-                    'key'        => 'layout_69a952e91a7df',
-                    'name'       => 'actualites',
-                    'label'      => 'Actualités',
-                    'display'    => 'block',
-                    'sub_fields' => array(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                ),
-<<<<<<< HEAD
- 
-                // ─── Section approche globale ────────────────────────────────
-=======
-                'layout_gr1ll3sr3f3r3' => array(
-                    'key' => 'layout_gr1ll3sr3f3r3',
-                    'name' => 'section-grille-references',
-                    'label' => 'Grilles références',
-=======
-                    'key' => 'layout_69a952e91a7df',
-                    'name' => 'actualites',
-                    'label' => 'Actualités',
-<<<<<<< HEAD
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-                    'display' => 'block',
-                    'sub_fields' => array(
-                    ),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6ead0fd (Features :)
-=======
-                ),
- 
-                // ─── Section approche globale ────────────────────────────────
-=======
->>>>>>> 6ead0fd (Features :)
-                'layout_gr1ll3sr3f3r3' => array(
-                    'key' => 'layout_gr1ll3sr3f3r3',
-                    'name' => 'section-grille-references',
-                    'label' => 'Grilles références',
-<<<<<<< HEAD
-=======
-                    'display' => 'block',
-                    'sub_fields' => array(
-                    ),
-                ),
-                'layout_69c6739eade09' => array(
-                    'key' => 'layout_69c6739eade09',
-                    'name' => 'section-approche-globale',
-                    'label' => 'Section approche globale',
->>>>>>> 6ead0fd (Features :)
-                    'display' => 'block',
-                ),
- 
-                // ─── Section approche globale ────────────────────────────────
-                'layout_69c6739eade09' => array(
-                    'key'        => 'layout_69c6739eade09',
-                    'name'       => 'section-approche-globale',
-                    'label'      => 'Section approche globale',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                    ),
-                ),
-                'layout_69c6739eade09' => array(
-                    'key'        => 'layout_69c6739eade09',
-                    'name'       => 'section-approche-globale',
-                    'label'      => 'Section approche globale',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69c673b5ade0b',
-                            'label'          => 'Surtitre',
-                            'name'           => 'surtitre',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69c673beade0c',
-                            'label'          => 'Titre',
-                            'name'           => 'titre',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_bordertop',
-                            'label'          => 'Bordure gauche',
-                            'name'           => 'border-left',
-                            'type'           => 'true_false',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => 0,
-                            'allow_in_bindings' => 0,
+    
+                    // ─── Block video ─────────────────────────────────────────────
+
+                    'layout_69b40ddb22c3eppp' => array(
+                        'key' => 'layout_69b40ddb22c3eff',
+                        'name' => 'section_actu_2_cards',
+                        'label' => 'section_actu_2_cards',
+                        'display' => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key' => 'field_69baa2793fc43rrr',
+                                'label' => 'articles',
+                                'name' => 'articles',
+                                'type' => 'repeater',
+                                'conditional_logic' => 0,
+                                'wrapper' => $wrapper,
+                                'layout' => 'table',
+                                'button_label' => 'Ajouter un élément',
+                                'rows_per_page' => 20,
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'field_69baa2c63fc45tt',
+                                        'label' => 'image',
+                                        'name' => 'image',
+                                        'type' => 'image',
+                                        'conditional_logic' => 0,
+                                        'wrapper' => $wrapper,
+                                        'return_format' => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'preview_size' => 'medium',
+                                        'parent_repeater' => 'field_69baa2793fc43',
+                                    ),
+                                    array(
+                                        'key' => 'field_69baa2e53fc46eee',
+                                        'label' => 'title',
+                                        'name' => 'title',
+                                        'type' => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper' => $wrapper,
+                                        'default_value' => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69baa2793fc43',
+                                    ),
+                                    array(
+                                        'key' => 'field_69baa3033fc47eee',
+                                        'label' => 'paragraph',
+                                        'name' => 'paragraph',
+                                        'type' => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper' => $wrapper,
+                                        'default_value' => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69baa2793fc43',
+                                    ),
+                                    array(
+                                'key' => 'field_69baa81c9b83eer',
+                                'label' => 'link',
+                                'name' => 'link',
+                                'type' => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper' => $wrapper,
+                                'return_format' => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                                ),
+                            ),
                         
                         ),
-                        array(
-                            'key'        => 'field_69c673daade0e',
-                            'label'      => 'Grille card',
-                            'name'       => 'grille_card',
-                            'type'       => 'group',
-                            'conditional_logic' => 0,
-                            'wrapper'    => $wrapper,
-                            'layout'     => 'block',
-                            'sub_fields' => array(
-                                array(
-                                    'key'            => 'field_69c673d4ade0d',
-                                    'label'          => 'Colonne de départ',
-                                    'name'           => 'colonne-depart',
-                                    'type'           => 'number',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => 0,
-                                    'allow_in_bindings' => 0,
-                                ),
-                                array(
-                                    'key'            => 'field_69c67421ade0f',
-                                    'label'          => 'Cards',
-                                    'name'           => 'cards',
-                                    'type'           => 'repeater',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'layout'         => 'table',
-                                    'pagination'     => 0,
-                                    'min'            => 0,
-                                    'max'            => 0,
-                                    'collapsed'      => '',
-                                    'button_label'   => 'Ajouter un élément',
-                                    'rows_per_page'  => 20,
-                                    'sub_fields'     => array(
-                                        array(
-                                            'key'            => 'field_69c67430ade10',
-                                            'label'          => 'Icone',
-                                            'name'           => 'icone',
-                                            'type'           => 'image',
-                                            'conditional_logic' => 0,
-                                            'wrapper'        => $wrapper,
-                                            'return_format'  => 'array',
-                                            'library'        => 'all',
-                                            'allow_in_bindings' => 0,
-                                            'preview_size'   => 'medium',
-                                            'parent_repeater' => 'field_69c67421ade0f',
-                                        ),
-                                        array(
-                                            'key'            => 'field_69c6743cade11',
-                                            'label'          => 'Label',
-                                            'name'           => 'label',
-                                            'type'           => 'text',
-                                            'conditional_logic' => 0,
-                                            'wrapper'        => $wrapper,
-                                            'default_value'  => '',
-                                            'allow_in_bindings' => 0,
-                                            'parent_repeater' => 'field_69c67421ade0f',
-                                        ),
-                                        array(
-                                            'key'            => 'field_69c67448ade12',
-                                            'label'          => 'Lien',
-                                            'name'           => 'lien',
-                                            'type'           => 'link',
-                                            'conditional_logic' => 0,
-                                            'wrapper'        => $wrapper,
-                                            'return_format'  => 'array',
-                                            'allow_in_bindings' => 0,
-                                            'parent_repeater' => 'field_69c67421ade0f',
-                                        ),
+                    ),
+
+                    'layout_69b4095b346f8' => array(
+                        'key'        => 'layout_69b4095b346f8',
+                        'name'       => 'block_video',
+                        'label'      => 'block_video',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69b40977346fa',
+                                'label'          => 'text_ev',
+                                'name'           => 'text_ev',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b40996346fb',
+                                'label'          => 'paragraph',
+                                'name'           => 'paragraph',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b409a5346fc',
+                                'label'          => 'video',
+                                'name'           => 'video',
+                                'type'           => 'url',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
+    
+                    // ─── Link container ──────────────────────────────────────────
+                    'layout_69b3ea769b227' => array(
+                        'key'        => 'layout_69b3ea769b227',
+                        'name'       => 'link_container',
+                        'label'      => 'link_container',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69ba75741a881',
+                                'label'          => 'link_container',
+                                'name'           => 'link_container',
+                                'type'           => 'repeater',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'layout'         => 'table',
+                                'button_label'   => 'Ajouter un élément',
+                                'rows_per_page'  => 20,
+                                'sub_fields'     => array(
+                                    array(
+                                        'key'            => 'field_69ba75ce1a882',
+                                        'label'          => 'lien',
+                                        'name'           => 'lien',
+                                        'type'           => 'link',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69ba75741a881',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69ca3bd80c741',
+                                        'label'          => 'image',
+                                        'name'           => 'image',
+                                        'type'           => 'image',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'preview_size'   => 'medium',
+                                        'parent_repeater' => 'field_69ba75741a881',
                                     ),
                                 ),
                             ),
                         ),
-                        array(
-                            'key'            => 'field_69c685ffcfb69',
-                            'label'          => 'CTA',
-                            'name'           => 'cta-section',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
+                    ),
+    
+                    // ─── Block discover ──────────────────────────────────────────
+                    'layout_69b3d7c59a62f' => array(
+                        'key'        => 'layout_69b3d7c59a62f',
+                        'name'       => 'block_discover',
+                        'label'      => 'block_discover',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69b3d7e89a631',
+                                'label'          => 'image',
+                                'name'           => 'image',
+                                'type'           => 'image',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'library'        => 'all',
+                                'allow_in_bindings' => 0,
+                                'preview_size'   => 'medium',
+                            ),
+                            array(
+                                'key'            => 'field_69b3d7f99a632',
+                                'label'          => 'title',
+                                'name'           => 'title',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b3dbe89a633',
+                                'label'          => 'paragraph',
+                                'name'           => 'paragraph',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b3dc849a635',
+                                'label'          => 'link',
+                                'name'           => 'link',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
                         ),
                     ),
-                ),
+    
+                    // ─── Bloc citation ───────────────────────────────────────────
+                    'layout_69b3cd935aa7b' => array(
+                        'key' => 'layout_69b3cd935aa7b',
+                        'name' => 'block_citation',
+                        'label' => 'Bloc Citation',
+                        'display' => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key' => 'field_69b3cdd45aa7d',
+                                'label' => 'Nom',
+                                'name' => 'name',
+                                'type' => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper' => $wrapper,
+                                'default_value' => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key' => 'field_possignature',
+                                'label' => 'Signature en haut',
+                                'name' => 'signature_top',
+                                'type' => 'true_false',
+                                'conditional_logic' => 0,
+                                'wrapper' => $wrapper,
+                                'message' => '',
+                                'default_value' => 1,
+                                'allow_in_bindings' => 0,
+                                'ui' => 0,
+                                'ui_on_text' => '',
+                                'ui_off_text' => '',
+                            ),
+                            array(
+                                'key' => 'field_69b3cdfa5aa7e',
+                                'label' => 'Citation',
+                                'name' => 'citation',
+                                'type' => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper' => $wrapper,
+                                'default_value' => '',
+                                'allow_in_bindings' => 0,
+                                'tabs' => 'all',
+                                'toolbar' => 'full',
+                                'media_upload' => 1,
+                                'delay' => 0,
+                            ),
+                            array(
+                                'key' => 'field_69c3b3c691dd7',
+                                'label' => 'Ajouter section bleue ?',
+                                'name' => 'blue_activated',
+                                'type' => 'true_false',
+                                'conditional_logic' => 0,
+                                'wrapper' => $wrapper,
+                                'message' => '',
+                                'default_value' => 0,
+                                'allow_in_bindings' => 0,
+                                'ui' => 0,
+                                'ui_on_text' => '',
+                                'ui_off_text' => '',
+                            ),
+                            array(
+                                'key' => 'field_69c3b3b391dd6',
+                                'label' => 'Section bleue',
+                                'name' => '',
+                                'type' => 'tab',
+                                'conditional_logic' => array(
+                                    array(
+                                        array(
+                                            'field' => 'field_69c3b3c691dd7',
+                                            'operator' => '==',
+                                            'value' => '1',
+                                        ),
+                                    ),
+                                ),
+                                'wrapper' => $wrapper,
+                                'placement' => 'top',
+                                'endpoint' => 0,
+                                'selected' => 0,
+                            ),
+                            array(
+                                'key' => 'field_69b3cf145aa7f',
+                                'label' => 'Titre',
+                                'name' => 'title',
+                                'type' => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper' => $wrapper,
+                                'default_value' => '',
+                                'allow_in_bindings' => 0,
+                                'tabs' => 'all',
+                                'toolbar' => 'full',
+                                'media_upload' => 1,
+                                'delay' => 0,
+                            ),
+                            array(
+                                'key' => 'field_69b3cf2d5aa80',
+                                'label' => 'link',
+                                'name' => 'link',
+                                'type' => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper' => $wrapper,
+                                'return_format' => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
  
-                // ─── Section 2 colonnes simple ───────────────────────────────
-                'layout_69ca23cff67c9' => array(
-                    'key'        => 'layout_69ca23cff67c9',
-                    'name'       => 'section-two-col-simple',
-                    'label'      => 'Section 2 colonnes simple',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 90b60a5 (page about 8-04)
-=======
->>>>>>> 90b60a5 (page about 8-04)
-                         array(
-                            'key'            => 'field_69ca23d9f67ca',
-                            'label'          => 'Small-titre',
-                            'name'           => 'Small-titre',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
-=======
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
->>>>>>> 90b60a5 (page about 8-04)
-                        array(
-                            'key'            => 'field_69ca23d9f67cb',
-                            'label'          => 'Titre',
-                            'name'           => 'titre',
->>>>>>> 28f81d8 (fin 3-04)
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-<<<<<<< HEAD
-                        ),
->>>>>>> 90b60a5 (page about 8-04)
-                        array(
-                            'key'            => 'field_69ca23d9f67cb',
-                            'label'          => 'Titre',
-                            'name'           => 'titre',
->>>>>>> 28f81d8 (fin 3-04)
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-<<<<<<< HEAD
-                            'key'            => 'field_69ca23d9f67cb',
-                            'label'          => 'Titre',
-                            'name'           => 'titre',
-=======
-                            'key'            => 'field_69ca23dff67cc',
-                            'label'          => 'Intro',
-                            'name'           => 'intro',
->>>>>>> 28f81d8 (fin 3-04)
-=======
-                        ),
-                        array(
-                            'key'            => 'field_69ca23dff67cc',
-                            'label'          => 'Intro',
-                            'name'           => 'intro',
->>>>>>> 28f81d8 (fin 3-04)
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            'key'            => 'field_69ca23dff67cc',
-                            'label'          => 'Intro',
-                            'name'           => 'intro',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69ca23e7f67cd',
-                            'label'          => 'CTA',
-                            'name'           => 'cta',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-=======
-                            'key'            => 'field_69ca23e7f67cd',
-                            'label'          => 'CTA',
-                            'name'           => 'cta',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
->>>>>>> 28f81d8 (fin 3-04)
-=======
-                            'key'            => 'field_69ca23e7f67cd',
-                            'label'          => 'CTA',
-                            'name'           => 'cta',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
->>>>>>> 28f81d8 (fin 3-04)
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69ca23f0f67ce',
-                            'label'          => 'Image',
-                            'name'           => 'image',
-                            'type'           => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
+                    // ─── Section img ev ──────────────────────────────────────────
+                    'layout_69b2daa32762d' => array(
+                        'key'        => 'layout_69b2daa32762d',
+                        'name'       => 'section_img_ev',
+                        'label'      => 'section_img_ev',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69ca3b68d2c0d',
+                                'label'          => 'Projets',
+                                'name'           => 'projets',
+                                'type'           => 'repeater',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'layout'         => 'table',
+                                'button_label'   => 'Ajouter un élément',
+                                'rows_per_page'  => 20,
+                                'sub_fields'     => array(
+                                    array(
+                                        'key'            => 'field_69ca3b77d2c0e',
+                                        'label'          => 'image',
+                                        'name'           => 'image',
+                                        'type'           => 'image',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'preview_size'   => 'medium',
+                                        'parent_repeater' => 'field_69ca3b68d2c0d',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69ca3b85d2c0f',
+                                        'label'          => 'location',
+                                        'name'           => 'location',
+                                        'type'           => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69ca3b68d2c0d',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69ca3b8dd2c10',
+                                        'label'          => 'price',
+                                        'name'           => 'price',
+                                        'type'           => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69ca3b68d2c0d',
+                                    ),
+                                ),
+                            ),
+                            array(
+                                'key'            => 'field_69b7d2fc726e6',
+                                'label'          => 'title',
+                                'name'           => 'title',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b7d312726e7',
+                                'label'          => 'paragraph',
+                                'name'           => 'paragraph',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b7d324726e8',
+                                'label'          => 'link',
+                                'name'           => 'link',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
                         ),
                     ),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-
-                // ─── Section 2 colonnes full ───────────────────────────────
-                'layout_69ca23cff6full' => array(
-                    'key'        => 'layout_69ca23cff6full',
-                    'name'       => 'section-two-col-full',
-                    'label'      => 'Section 2 colonnes full',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69ca23d9f67cafull',
-                            'label'          => 'Small-titre',
-                            'name'           => 'Small-titre',
-                            'type'           => 'text',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69ca23d9f67cbfull',
-                            'label'          => 'Titre',
-                            'name'           => 'titre',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69ca23dff67ccfull',
-                            'label'          => 'Intro',
-                            'name'           => 'intro',
-                            'type'           => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'default_value'  => '',
-                            'allow_in_bindings' => 0,
-                            'tabs'           => 'all',
-                            'toolbar'        => 'full',
-                            'media_upload'   => 1,
-                            'delay'          => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69ca23e7f67cdfull',
-                            'label'          => 'CTA',
-                            'name'           => 'cta',
-                            'type'           => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'            => 'field_69ca23f0f67cefull',
-                            'label'          => 'Image',
-                            'name'           => 'image',
-                            'type'           => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'return_format'  => 'array',
-                            'library'        => 'all',
-                            'allow_in_bindings' => 0,
-                            'preview_size'   => 'medium',
-                        ),
-                    ),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
  
-                // ─── Slider vertical ─────────────────────────────────────────
-                'layout_r3p34tv3rt1c4l' => array(
-                    'key'        => 'layout_r3p34tv3rt1c4l',
-                    'name'       => 'slider-vertical',
-                    'label'      => 'Slider vertical',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'        => 'field_repeat_vertical',
-                            'label'      => 'Slides',
-                            'name'       => 'slides-vertical',
-                            'type'       => 'repeater',
-                            'layout'     => 'line',
-                            'sub_fields' => array(
-                                array(
-                                    'key'             => 'field_repvert_image',
-                                    'label'           => 'Image',
-                                    'name'            => 'image',
-                                    'type'            => 'image',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_vertical',
+                    // ─── Section bleue ───────────────────────────────────────────
+                    'layout_69b2d98330c6f' => array(
+                        'key'        => 'layout_69b2d98330c6f',
+                        'name'       => 'section_blue',
+                        'label'      => 'Section bleue',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69b2d9d330c71',
+                                'label'          => 'title',
+                                'name'           => 'title',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b2d9f730c72',
+                                'label'          => 'paragraph',
+                                'name'           => 'paragraph',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b2da0930c73',
+                                'label'          => 'link',
+                                'name'           => '',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
+ 
+                    // ─── Images overlay ──────────────────────────────────────────
+                    'layout_69b2c8e4aadf2' => array(
+                        'key'        => 'layout_69b2c8e4aadf2',
+                        'name'       => 'images_overlay',
+                        'label'      => 'images_overlay',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69b2c935aadf4',
+                                'label'          => 'gd_image',
+                                'name'           => 'gd_image',
+                                'type'           => 'image',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'library'        => 'all',
+                                'allow_in_bindings' => 0,
+                                'preview_size'   => 'medium',
+                            ),
+                            array(
+                                'key'            => 'field_69b2c946aadf5',
+                                'label'          => 'pt_image',
+                                'name'           => 'pt_image',
+                                'type'           => 'image',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'library'        => 'all',
+                                'allow_in_bindings' => 0,
+                                'preview_size'   => 'medium',
+                            ),
+                            array(
+                                'key'            => 'field_69b7c7ac91424',
+                                'label'          => 'categorie',
+                                'name'           => 'categorie',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b7c7ca91425',
+                                'label'          => 'details',
+                                'name'           => 'details',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b7c7dc91426',
+                                'label'          => 'paragraph',
+                                'name'           => 'paragraph',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b7c7f891427',
+                                'label'          => 'liste',
+                                'name'           => 'liste',
+                                'type'           => 'repeater',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'layout'         => 'table',
+                                'button_label'   => 'Ajouter un élément',
+                                'rows_per_page'  => 20,
+                                'sub_fields'     => array(
+                                    array(
+                                        'key'            => 'field_69b7c82391428',
+                                        'label'          => 'item',
+                                        'name'           => 'item',
+                                        'type'           => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69b7c7f891427',
+                                    ),
                                 ),
-                                array(
-                                    'key'             => 'field_repvert_titre',
-                                    'label'           => 'Titre',
-                                    'name'            => 'titre',
-                                    'type'            => 'wysiwyg',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_vertical',
-                                ),
-                                array(
-                                    'key'             => 'field_repvert_texte',
-                                    'label'           => 'Texte',
-                                    'name'            => 'texte',
-                                    'type'            => 'wysiwyg',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_vertical',
-                                ),
-                                array(
-                                    'key'             => 'field_repvert_cta',
-                                    'label'           => 'CTA',
-                                    'name'            => 'cta',
-                                    'type'            => 'link',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_vertical',
+                            ),
+                            array(
+                                'key'            => 'field_69b7ca0dc64be',
+                                'label'          => 'link',
+                                'name'           => 'link',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
+    
+                    // ─── Header hero ─────────────────────────────────────────────
+                    'layout_69b13656aaa3b' => array(
+                        'key'        => 'layout_69b13656aaa3b',
+                        'name'       => 'header_hero',
+                        'label'      => 'header_hero',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69b13672aaa3d',
+                                'label'          => 'image_hero',
+                                'name'           => 'image_hero',
+                                'type'           => 'image',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'library'        => 'all',
+                                'allow_in_bindings' => 0,
+                                'preview_size'   => 'medium',
+                            ),
+                            array(
+                                'key'            => 'field_69b13684aaa3e',
+                                'label'          => 'titre_hero',
+                                'name'           => 'titre_hero',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b1369daaa3f',
+                                'label'          => 'cta_text',
+                                'name'           => 'cta_text',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b136b1aaa40',
+                                'label'          => 'cta_btn',
+                                'name'           => 'cat_btn',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
+ 
+                    // ─── Zone logo ───────────────────────────────────────────────
+                    'layout_69aed60ae861a' => array(
+                        'key'        => 'layout_69aed60ae861a',
+                        'name'       => 'zone_logo',
+                        'label'      => 'zone_logo',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69aed616e861c',
+                                'label'          => 'image',
+                                'name'           => 'image',
+                                'type'           => 'image',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'library'        => 'all',
+                                'allow_in_bindings' => 0,
+                                'preview_size'   => 'medium',
+                            ),
+                            array(
+                                'key'            => 'field_69aed627e861d',
+                                'label'          => 'site_name',
+                                'name'           => 'site_name',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69aed630e861e',
+                                'label'          => 'slogan',
+                                'name'           => 'slogan',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
+    
+                    // ─── Text evidence ───────────────────────────────────────────
+                    'layout_69aed51e0224a' => array(
+                        'key'        => 'layout_69aed51e0224a',
+                        'name'       => 'text_evidence',
+                        'label'      => 'text_evidence',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69aed5310224c',
+                                'label'          => 'catégorie',
+                                'name'           => 'categorie',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69aed5520224d',
+                                'label'          => 'details',
+                                'name'           => 'details',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69aedbd771fb8',
+                                'label'          => 'link',
+                                'name'           => 'link',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69b179cf0413f',
+                                'label'          => 'paragraph',
+                                'name'           => 'paragraph',
+                                'type'           => 'textarea',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'rows'           => '',
+                                'new_lines'      => '',
+                            ),
+                        ),
+                    ),
+    
+                    // ─── Card solutions ──────────────────────────────────────────
+                    'layout_69aedefa2f655' => array(
+                        'key'        => 'layout_69aedefa2f655',
+                        'name'       => 'card_solutions',
+                        'label'      => 'Nos solutions | Cartes',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69aedf142f657',
+                                'label'          => 'card',
+                                'name'           => 'card',
+                                'type'           => 'repeater',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'layout'         => 'table',
+                                'button_label'   => 'Ajouter un élément',
+                                'rows_per_page'  => 20,
+                                'sub_fields'     => array(
+                                    array(
+                                        'key'            => 'field_69aee00b2f658',
+                                        'label'          => 'card_category',
+                                        'name'           => 'card_category',
+                                        'type'           => 'text',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => '',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69aedf142f657',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69aee95a29025',
+                                        'label'          => 'card_image',
+                                        'name'           => 'card_image',
+                                        'type'           => 'image',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'preview_size'   => 'medium',
+                                        'parent_repeater' => 'field_69aedf142f657',
+                                    ),
+                                    array(
+                                        'key'            => 'field_69aee04e2f65a',
+                                        'label'          => 'card_link',
+                                        'name'           => 'card_link',
+                                        'type'           => 'link',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'return_format'  => 'array',
+                                        'allow_in_bindings' => 0,
+                                        'parent_repeater' => 'field_69aedf142f657',
+                                    ),
                                 ),
                             ),
                         ),
                     ),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
+                    
+                    // ─── Actualités ──────────────────────────────────────────────
+                    'layout_69a952e91a7df' => array(
+                        'key'        => 'layout_69a952e91a7df',
+                        'name'       => 'actualites',
+                        'label'      => 'Actualités',
+                        'display'    => 'block',
+                        'sub_fields' => array(),
+                    ),
 
-                // ─── Slider vertical reverse ─────────────────────────────────────────
-                'layout_r3p34tv3rt1c4lreverse' => array(
-                    'key'        => 'layout_r3p34tv3rt1c4lreverse',
-                    'name'       => 'slider-vertical-reverse',
-                    'label'      => 'Slider vertical reverse',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'        => 'field_repeat_vertical-reverse',
-                            'label'      => 'Slides',
-                            'name'       => 'slides-vertical',
-                            'type'       => 'repeater',
-                            'layout'     => 'line',
-                            'sub_fields' => array(
-                                array(
-                                    'key'             => 'field_repvert_image',
-                                    'label'           => 'Image',
-                                    'name'            => 'image',
-                                    'type'            => 'image',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_vertical-reverse',
+                    'layout_gr1ll3sr3f3r3' => array(
+                        'key' => 'layout_gr1ll3sr3f3r3',
+                        'name' => 'section-grille-references',
+                        'label' => 'Grilles références',
+                        'display' => 'block',
+                        'sub_fields' => array(
+                        ),
+                    ),
+
+                    'layout_69c6739eade09' => array(
+                        'key'        => 'layout_69c6739eade09',
+                        'name'       => 'section-approche-globale',
+                        'label'      => 'Section approche globale',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69c673b5ade0b',
+                                'label'          => 'Surtitre',
+                                'name'           => 'surtitre',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69c673beade0c',
+                                'label'          => 'Titre',
+                                'name'           => 'titre',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_bordertop',
+                                'label'          => 'Bordure gauche',
+                                'name'           => 'border-left',
+                                'type'           => 'true_false',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => 0,
+                                'allow_in_bindings' => 0,
+                            
+                            ),
+                            array(
+                                'key'        => 'field_69c673daade0e',
+                                'label'      => 'Grille card',
+                                'name'       => 'grille_card',
+                                'type'       => 'group',
+                                'conditional_logic' => 0,
+                                'wrapper'    => $wrapper,
+                                'layout'     => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key'            => 'field_69c673d4ade0d',
+                                        'label'          => 'Colonne de départ',
+                                        'name'           => 'colonne-depart',
+                                        'type'           => 'number',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'default_value'  => 0,
+                                        'allow_in_bindings' => 0,
+                                    ),
+                                    array(
+                                        'key'            => 'field_69c67421ade0f',
+                                        'label'          => 'Cards',
+                                        'name'           => 'cards',
+                                        'type'           => 'repeater',
+                                        'conditional_logic' => 0,
+                                        'wrapper'        => $wrapper,
+                                        'layout'         => 'table',
+                                        'pagination'     => 0,
+                                        'min'            => 0,
+                                        'max'            => 0,
+                                        'collapsed'      => '',
+                                        'button_label'   => 'Ajouter un élément',
+                                        'rows_per_page'  => 20,
+                                        'sub_fields'     => array(
+                                            array(
+                                                'key'            => 'field_69c67430ade10',
+                                                'label'          => 'Icone',
+                                                'name'           => 'icone',
+                                                'type'           => 'image',
+                                                'conditional_logic' => 0,
+                                                'wrapper'        => $wrapper,
+                                                'return_format'  => 'array',
+                                                'library'        => 'all',
+                                                'allow_in_bindings' => 0,
+                                                'preview_size'   => 'medium',
+                                                'parent_repeater' => 'field_69c67421ade0f',
+                                            ),
+                                            array(
+                                                'key'            => 'field_69c6743cade11',
+                                                'label'          => 'Label',
+                                                'name'           => 'label',
+                                                'type'           => 'text',
+                                                'conditional_logic' => 0,
+                                                'wrapper'        => $wrapper,
+                                                'default_value'  => '',
+                                                'allow_in_bindings' => 0,
+                                                'parent_repeater' => 'field_69c67421ade0f',
+                                            ),
+                                            array(
+                                                'key'            => 'field_69c67448ade12',
+                                                'label'          => 'Lien',
+                                                'name'           => 'lien',
+                                                'type'           => 'link',
+                                                'conditional_logic' => 0,
+                                                'wrapper'        => $wrapper,
+                                                'return_format'  => 'array',
+                                                'allow_in_bindings' => 0,
+                                                'parent_repeater' => 'field_69c67421ade0f',
+                                            ),
+                                        ),
+                                    ),
                                 ),
-                                array(
-                                    'key'             => 'field_repvert_titre',
-                                    'label'           => 'Titre',
-                                    'name'            => 'titre',
-                                    'type'            => 'wysiwyg',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_vertical-reverse',
-                                ),
-                                array(
-                                    'key'             => 'field_repvert_texte',
-                                    'label'           => 'Texte',
-                                    'name'            => 'texte',
-                                    'type'            => 'wysiwyg',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_vertical-reverse',
-                                ),
-                                array(
-                                    'key'             => 'field_repvert_cta',
-                                    'label'           => 'CTA',
-                                    'name'            => 'cta',
-                                    'type'            => 'link',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_vertical-reverse',
+                            ),
+                            array(
+                                'key'            => 'field_69c685ffcfb69',
+                                'label'          => 'CTA',
+                                'name'           => 'cta-section',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
+ 
+                    // ─── Section 2 colonnes simple ───────────────────────────────
+                    'layout_69ca23cff67c9' => array(
+                        'key'        => 'layout_69ca23cff67c9',
+                        'name'       => 'section-two-col-simple',
+                        'label'      => 'Section 2 colonnes simple',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69ca23d9f67ca',
+                                'label'          => 'Small-titre',
+                                'name'           => 'Small-titre',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69ca23d9f67cb',
+                                'label'          => 'Titre',
+                                'name'           => 'titre',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69ca23dff67cc',
+                                'label'          => 'Intro',
+                                'name'           => 'intro',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69ca23e7f67cd',
+                                'label'          => 'CTA',
+                                'name'           => 'cta',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69ca23f0f67ce',
+                                'label'          => 'Image',
+                                'name'           => 'image',
+                                'type'           => 'image',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'library'        => 'all',
+                                'allow_in_bindings' => 0,
+                                'preview_size'   => 'medium',
+                            ),
+                        ),
+                    ),
+
+                    // ─── Section 2 colonnes full ───────────────────────────────
+                    'layout_69ca23cff6full' => array(
+                        'key'        => 'layout_69ca23cff6full',
+                        'name'       => 'section-two-col-full',
+                        'label'      => 'Section 2 colonnes full',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'            => 'field_69ca23d9f67cafull',
+                                'label'          => 'Small-titre',
+                                'name'           => 'Small-titre',
+                                'type'           => 'text',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69ca23d9f67cbfull',
+                                'label'          => 'Titre',
+                                'name'           => 'titre',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69ca23dff67ccfull',
+                                'label'          => 'Intro',
+                                'name'           => 'intro',
+                                'type'           => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'default_value'  => '',
+                                'allow_in_bindings' => 0,
+                                'tabs'           => 'all',
+                                'toolbar'        => 'full',
+                                'media_upload'   => 1,
+                                'delay'          => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69ca23e7f67cdfull',
+                                'label'          => 'CTA',
+                                'name'           => 'cta',
+                                'type'           => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'            => 'field_69ca23f0f67cefull',
+                                'label'          => 'Image',
+                                'name'           => 'image',
+                                'type'           => 'image',
+                                'conditional_logic' => 0,
+                                'wrapper'        => $wrapper,
+                                'return_format'  => 'array',
+                                'library'        => 'all',
+                                'allow_in_bindings' => 0,
+                                'preview_size'   => 'medium',
+                            ),
+                        ),
+                    ),
+    
+                    // ─── Slider vertical ─────────────────────────────────────────
+                    'layout_r3p34tv3rt1c4l' => array(
+                        'key'        => 'layout_r3p34tv3rt1c4l',
+                        'name'       => 'slider-vertical',
+                        'label'      => 'Slider vertical',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'        => 'field_repeat_vertical',
+                                'label'      => 'Slides',
+                                'name'       => 'slides-vertical',
+                                'type'       => 'repeater',
+                                'layout'     => 'line',
+                                'sub_fields' => array(
+                                    array(
+                                        'key'             => 'field_repvert_image',
+                                        'label'           => 'Image',
+                                        'name'            => 'image',
+                                        'type'            => 'image',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_vertical',
+                                    ),
+                                    array(
+                                        'key'             => 'field_repvert_titre',
+                                        'label'           => 'Titre',
+                                        'name'            => 'titre',
+                                        'type'            => 'wysiwyg',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_vertical',
+                                    ),
+                                    array(
+                                        'key'             => 'field_repvert_texte',
+                                        'label'           => 'Texte',
+                                        'name'            => 'texte',
+                                        'type'            => 'wysiwyg',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_vertical',
+                                    ),
+                                    array(
+                                        'key'             => 'field_repvert_cta',
+                                        'label'           => 'CTA',
+                                        'name'            => 'cta',
+                                        'type'            => 'link',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_vertical',
+                                    ),
                                 ),
                             ),
                         ),
                     ),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 9570f7f (Fix : Correction scss + builder + nouvelle section page about.)
- 
-                // ─── Section step construction ───────────────────────────────
-                'layout_3t4p3sc0nstr' => array(
-                    'key'        => 'layout_3t4p3sc0nstr',
-                    'name'       => 'section-step-const',
-                    'label'      => 'Section step',
-                    'display'    => 'block',
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    'sub_fields' => array(
-                        array(
-                            'key'   => 'field_surtitre_section',
-                            'label' => 'Surtitre',
-                            'name'  => 'surtitre',
-                            'type'  => 'text',
-                        ),
-                        array(
-                            'key'   => 'field_title_section',
-                            'label' => 'Titre',
-                            'name'  => 'titre',
-                            'type'  => 'wysiwyg',
-                        ),
-                        array(
-                            'key'        => 'field_repeat_step',
-                            'label'      => 'Slides',
-                            'name'       => 'slides-step',
-                            'type'       => 'repeater',
-                            'layout'     => 'line',
-                            'sub_fields' => array(
-                                array(
-                                    'key'             => 'field_step_image',
-                                    'label'           => 'Image',
-                                    'name'            => 'image',
-                                    'type'            => 'image',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
-                                ),
-                                array(
-                                    'key'             => 'field_step_titre',
-                                    'label'           => 'Titre',
-                                    'name'            => 'titre',
-                                    'type'            => 'text',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
-                                ),
-                                array(
-                                    'key'             => 'field_step_texte',
-                                    'label'           => 'Texte',
-                                    'name'            => 'texte',
-                                    'type'            => 'wysiwyg',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
+
+                    // ─── Slider vertical reverse ─────────────────────────────────────────
+                    'layout_r3p34tv3rt1c4lreverse' => array(
+                        'key'        => 'layout_r3p34tv3rt1c4lreverse',
+                        'name'       => 'slider-vertical-reverse',
+                        'label'      => 'Slider vertical reverse',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'        => 'field_repeat_vertical-reverse',
+                                'label'      => 'Slides',
+                                'name'       => 'slides-vertical',
+                                'type'       => 'repeater',
+                                'layout'     => 'line',
+                                'sub_fields' => array(
+                                    array(
+                                        'key'             => 'field_repvert_image',
+                                        'label'           => 'Image',
+                                        'name'            => 'image',
+                                        'type'            => 'image',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_vertical-reverse',
+                                    ),
+                                    array(
+                                        'key'             => 'field_repvert_titre',
+                                        'label'           => 'Titre',
+                                        'name'            => 'titre',
+                                        'type'            => 'wysiwyg',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_vertical-reverse',
+                                    ),
+                                    array(
+                                        'key'             => 'field_repvert_texte',
+                                        'label'           => 'Texte',
+                                        'name'            => 'texte',
+                                        'type'            => 'wysiwyg',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_vertical-reverse',
+                                    ),
+                                    array(
+                                        'key'             => 'field_repvert_cta',
+                                        'label'           => 'CTA',
+                                        'name'            => 'cta',
+                                        'type'            => 'link',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_vertical-reverse',
+                                    ),
                                 ),
                             ),
                         ),
                     ),
-                ),
- 
-                // ─── Image parallax ──────────────────────────────────────────
-                'layout_1m4g3p4r4ll4x' => array(
-                    'key'        => 'layout_1m4g3p4r4ll4x',
-                    'name'       => 'section-image-paralax',
-                    'label'      => 'Image paralax',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'     => 'field_parallax_image',
-                            'label'   => 'Image',
-                            'name'    => 'image',
-                            'type'    => 'image',
-                            'wrapper' => $wrapper,
-                        ),
-                        array(
-                            'key'           => 'field_parallax_height',
-                            'label'         => 'Hauteur',
-                            'name'          => 'hauteur',
-                            'type'          => 'number',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '80',
-                        ),
-                    ),
-                ),
- 
-                // ─── Section accordeon ───────────────────────────────────────
-                'layout_4cc0rd30n' => array(
-                    'key'        => 'layout_4cc0rd30n',
-                    'name'       => 'section_accordeon',
-                    'label'      => 'Section accordeon',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'           => 'field_acc_image',
-                            'label'         => 'Image',
-                            'name'          => 'image',
-                            'type'          => 'image',
-                            'wrapper'       => $wrapper,
-                            'return_format' => 'array',
-                            'preview_size'  => 'medium',
-                        ),
-                        array(
-                            'key'           => 'field_acc_site_name',
-                            'label'         => 'Site name',
-                            'name'          => 'site_name',
-                            'type'          => 'text',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '',
-                        ),
-                        array(
-                            'key'           => 'field_acc_titre',
-                            'label'         => 'Titre',
-                            'name'          => 'titre',
-                            'type'          => 'wysiwyg',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '',
-                            'tabs'          => 'all',
-                            'toolbar'       => 'full',
-                            'media_upload'  => 1,
-                            'delay'         => 0,
-                        ),
-                        array(
-                            'key'          => 'field_lien_accordeon',
-                            'label'        => 'Lien accordeon',
-                            'name'         => 'lien_accordeon',
-                            'type'         => 'repeater',
-                            'wrapper'      => $wrapper,
-                            'layout'       => 'table',
-                            'button_label' => 'Ajouter un élément',
-                            'sub_fields'   => array(
-                                array(
-                                    'key'             => 'field_acc_lien',
-                                    'label'           => 'Lien',
-                                    'name'            => 'lien',
-                                    'type'            => 'link',
-                                    'wrapper'         => $wrapper,
-                                    'return_format'   => 'array',
-                                    'parent_repeater' => 'field_lien_accordeon',
+    
+                    // ─── Section step construction ───────────────────────────────
+                    'layout_3t4p3sc0nstr' => array(
+                        'key'        => 'layout_3t4p3sc0nstr',
+                        'name'       => 'section-step-const',
+                        'label'      => 'Section step',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'   => 'field_surtitre_section',
+                                'label' => 'Surtitre',
+                                'name'  => 'surtitre',
+                                'type'  => 'text',
+                            ),
+                            array(
+                                'key'   => 'field_title_section',
+                                'label' => 'Titre',
+                                'name'  => 'titre',
+                                'type'  => 'wysiwyg',
+                            ),
+                            array(
+                                'key'        => 'field_repeat_step',
+                                'label'      => 'Slides',
+                                'name'       => 'slides-step',
+                                'type'       => 'repeater',
+                                'layout'     => 'line',
+                                'sub_fields' => array(
+                                    array(
+                                        'key'             => 'field_step_image',
+                                        'label'           => 'Image',
+                                        'name'            => 'image',
+                                        'type'            => 'image',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_step',
+                                    ),
+                                    array(
+                                        'key'             => 'field_step_titre',
+                                        'label'           => 'Titre',
+                                        'name'            => 'titre',
+                                        'type'            => 'text',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_step',
+                                    ),
+                                    array(
+                                        'key'             => 'field_step_texte',
+                                        'label'           => 'Texte',
+                                        'name'            => 'texte',
+                                        'type'            => 'wysiwyg',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_step',
+                                    ),
                                 ),
                             ),
                         ),
                     ),
-                ),
- 
-                // ─── Big Title ───────────────────────────────────────────────
-                'layout_b1g_t1tl3' => array(
-                    'key'        => 'layout_b1g_t1tl3',
-                    'name'       => 'big_title',
-                    'label'      => 'Big Title',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'               => 'field_big_title',
-                            'label'             => 'Big Title',
-                            'name'              => 'big_title',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
+
+                    // -- section text_overlay
+                    'layout_text_overlay' => array(
+                        'key'        => 'layout_t3xt_0v3rl4y',
+                        'name'       => 'text_overlay',
+                        'label'      => 'Text Overlay',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'               => 'field_text_overlay_title',
+                                'label'             => 'Title',
+                                'name'              => 'title',
+                                'type'              => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'           => $wrapper,
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'               => 'field_text_overlay_image',
+                                'label'             => 'Image',
+                                'name'              => 'image',
+                                'type'              => 'image',
+                                'conditional_logic' => 0,
+                                'wrapper'           => $wrapper,
+                                'return_format'     => 'array',
+                                'preview_size'      => 'medium',
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'               => 'field_text_overlay_paragraph',
+                                'label'             => 'Paragraph',
+                                'name'              => 'paragraph',
+                                'type'              => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'           => $wrapper,
+                                'allow_in_bindings' => 0,
+                            ),
+                            array(
+                                'key'               => 'field_text_overlay_link',
+                                'label'             => 'Link',
+                                'name'              => 'link',
+                                'type'              => 'link',
+                                'conditional_logic' => 0,
+                                'wrapper'           => $wrapper,
+                                'return_format'     => 'array',
+                                'allow_in_bindings' => 0,
+                            ),
                         ),
                     ),
-                ),
 
-                // -- section text_overlay
-
-                 'layout_text_overlay' => array(
-                    'key'        => 'layout_t3xt_0v3rl4y',
-                    'name'       => 'text_overlay',
-                    'label'      => 'Text Overlay',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'               => 'field_text_overlay_title',
-                            'label'             => 'Title',
-                            'name'              => 'title',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_image',
-                            'label'             => 'Image',
-                            'name'              => 'image',
-                            'type'              => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'return_format'     => 'array',
-                            'preview_size'      => 'medium',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_paragraph',
-                            'label'             => 'Paragraph',
-                            'name'              => 'paragraph',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_link',
-                            'label'             => 'Link',
-                            'name'              => 'link',
-                            'type'              => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'return_format'     => 'array',
-                            'allow_in_bindings' => 0,
+                    // ─── Image parallax ──────────────────────────────────────────
+                    'layout_1m4g3p4r4ll4x' => array(
+                        'key'        => 'layout_1m4g3p4r4ll4x',
+                        'name'       => 'section-image-paralax',
+                        'label'      => 'Image paralax',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'     => 'field_parallax_image',
+                                'label'   => 'Image',
+                                'name'    => 'image',
+                                'type'    => 'image',
+                                'wrapper' => $wrapper,
+                            ),
+                            array(
+                                'key'           => 'field_parallax_height',
+                                'label'         => 'Hauteur',
+                                'name'          => 'hauteur',
+                                'type'          => 'number',
+                                'wrapper'       => $wrapper,
+                                'default_value' => '80',
+                            ),
                         ),
                     ),
-                ),
- 
-                // ─── Section formulaire contact ──────────────────────────────
-                'layout_s3ct10nf0rmc0nt4ct' => array(
-                    'key'        => 'layout_s3ct10nf0rmc0nt4ct',
-                    'name'       => 'section-formulaire-contact',
-                    'label'      => 'Section formulaire',
-                    'display'    => 'block',
-                    'sub_fields' => array(),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
- 
-            ), // fin layouts
-=======
-=======
+    
+                    // ─── Section accordeon ───────────────────────────────────────
+                    'layout_4cc0rd30n' => array(
+                        'key'        => 'layout_4cc0rd30n',
+                        'name'       => 'section_accordeon',
+                        'label'      => 'Section accordeon',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'           => 'field_acc_image',
+                                'label'         => 'Image',
+                                'name'          => 'image',
+                                'type'          => 'image',
+                                'wrapper'       => $wrapper,
+                                'return_format' => 'array',
+                                'preview_size'  => 'medium',
+                            ),
+                            array(
+                                'key'           => 'field_acc_site_name',
+                                'label'         => 'Site name',
+                                'name'          => 'site_name',
+                                'type'          => 'text',
+                                'wrapper'       => $wrapper,
+                                'default_value' => '',
+                            ),
+                            array(
+                                'key'           => 'field_acc_titre',
+                                'label'         => 'Titre',
+                                'name'          => 'titre',
+                                'type'          => 'wysiwyg',
+                                'wrapper'       => $wrapper,
+                                'default_value' => '',
+                                'tabs'          => 'all',
+                                'toolbar'       => 'full',
+                                'media_upload'  => 1,
+                                'delay'         => 0,
+                            ),
+                            array(
+                                'key'          => 'field_lien_accordeon',
+                                'label'        => 'Lien accordeon',
+                                'name'         => 'lien_accordeon',
+                                'type'         => 'repeater',
+                                'wrapper'      => $wrapper,
+                                'layout'       => 'table',
+                                'button_label' => 'Ajouter un élément',
+                                'sub_fields'   => array(
+                                    array(
+                                        'key'             => 'field_acc_lien',
+                                        'label'           => 'Lien',
+                                        'name'            => 'lien',
+                                        'type'            => 'link',
+                                        'wrapper'         => $wrapper,
+                                        'return_format'   => 'array',
+                                        'parent_repeater' => 'field_lien_accordeon',
+                                    ),
+                                ),
+                            ),
+                        ),
+                    ),
+    
+                    // ─── Big Title ───────────────────────────────────────
+                    'layout_b1g_t1tl3' => array(
+                        'key'        => 'layout_b1g_t1tl3',
+                        'name'       => 'big_title',
+                        'label'      => 'Big Title',
+                        'display'    => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'               => 'field_big_title',
+                                'label'             => 'Big Title',
+                                'name'              => 'big_title',
+                                'type'              => 'wysiwyg',
+                                'conditional_logic' => 0,
+                                'wrapper'           => $wrapper,
+                                'allow_in_bindings' => 0,
+                            ),
+                        ),
+                    ),
+    
+                    // ─── Section formulaire contact ──────────────────────
+                    'layout_s3ct10nf0rmc0nt4ct' => array(
+                        'key'        => 'layout_s3ct10nf0rmc0nt4ct',
+                        'name'       => 'section-formulaire-contact',
+                        'label'      => 'Section formulaire',
+                        'display'    => 'block',
+                        'sub_fields' => array(),
+                    ),
+
+                    // ─── Section galerie partenaire ──────────────────────
+
                     'layout_galpartenaire' => array(
-                    'key'        => 'layout_galpartenaire',
-                    'name'       => 'gallerie-partenaire',
-                    'label'      => 'Section galpat',
-                    'display'    => 'block',
-                    'sub_fields' => array(),
-                ),
+                        'key'        => 'layout_galpartenaire',
+                        'name'       => 'gallerie-partenaire',
+                        'label'      => 'Section galpat',
+                        'display'    => 'block',
+                        'sub_fields' => array(),
+                    ),
 
->>>>>>> 548401f (ajout slider-partenaires)
-                'layout_s3ct10nsurm3sur3' => array(
-                    'key' => 'layout_s3ct10nsurm3sur3',
-                    'name' => 'section-part-sur-mesure',
-                    'label' => 'Section sur mesure',
-                    'display' => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'   => 'field_title_section',
-                            'label' => 'Titre',
-                            'name'  => 'titre',
-                            'type'  => 'wysiwyg'
-                        ),
-                        array(
-                            'key'   => 'field_texte_section',
-                            'label' => 'Texte',
-                            'name'  => 'texte',
-                            'type'  => 'wysiwyg'
-                        ),
-                        array(
-                            'key'   => 'field_repeat_step',
-                            'label' => 'Slides',
-                            'name'  => 'slides-sur-mesure',
-                            'type'  => 'repeater',
-                            'layout' => 'line',
-                            'sub_fields' => array(
-                                array(
-                                    'key'   => 'field_step_image',
-                                    'label' => 'Image',
-                                    'name'  => 'image',
-                                    'type'  => 'image',
-                                    'wrapper' => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
+                    // ─── Section Sur mesure ──────────────────────────────
+                    'layout_s3ct10nsurm3sur3' => array(
+                        'key' => 'layout_s3ct10nsurm3sur3',
+                        'name' => 'section-part-sur-mesure',
+                        'label' => 'Section sur mesure',
+                        'display' => 'block',
+                        'sub_fields' => array(
+                            array(
+                                'key'   => 'field_title_section',
+                                'label' => 'Titre',
+                                'name'  => 'titre',
+                                'type'  => 'wysiwyg'
+                            ),
+                            array(
+                                'key'   => 'field_texte_section',
+                                'label' => 'Texte',
+                                'name'  => 'texte',
+                                'type'  => 'wysiwyg'
+                            ),
+                            array(
+                                'key'   => 'field_repeat_step',
+                                'label' => 'Slides',
+                                'name'  => 'slides-sur-mesure',
+                                'type'  => 'repeater',
+                                'layout' => 'line',
+                                'sub_fields' => array(
+                                    array(
+                                        'key'   => 'field_step_image',
+                                        'label' => 'Image',
+                                        'name'  => 'image',
+                                        'type'  => 'image',
+                                        'wrapper' => $wrapper,
+                                        'parent_repeater' => 'field_repeat_step',
+                                    ),
                                 ),
                             ),
-                        )
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                    ), 
-=======
-                    'sub_fields' => array(
-                        array(
-                            'key'   => 'field_surtitre_section',
-                            'label' => 'Surtitre',
-                            'name'  => 'surtitre',
-                            'type'  => 'text',
-                        ),
-                        array(
-                            'key'   => 'field_title_section',
-                            'label' => 'Titre',
-                            'name'  => 'titre',
-                            'type'  => 'wysiwyg',
-                        ),
-                        array(
-                            'key'        => 'field_repeat_step',
-                            'label'      => 'Slides',
-                            'name'       => 'slides-step',
-                            'type'       => 'repeater',
-                            'layout'     => 'line',
-                            'sub_fields' => array(
-                                array(
-                                    'key'             => 'field_step_image',
-                                    'label'           => 'Image',
-                                    'name'            => 'image',
-                                    'type'            => 'image',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
-                                ),
-                                array(
-                                    'key'             => 'field_step_titre',
-                                    'label'           => 'Titre',
-                                    'name'            => 'titre',
-                                    'type'            => 'text',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
-                                ),
-                                array(
-                                    'key'             => 'field_step_texte',
-                                    'label'           => 'Texte',
-                                    'name'            => 'texte',
-                                    'type'            => 'wysiwyg',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
+                        ), 
+                        'sub_fields' => array(
+                            array(
+                                'key'   => 'field_surtitre_section',
+                                'label' => 'Surtitre',
+                                'name'  => 'surtitre',
+                                'type'  => 'text',
+                            ),
+                            array(
+                                'key'   => 'field_title_section',
+                                'label' => 'Titre',
+                                'name'  => 'titre',
+                                'type'  => 'wysiwyg',
+                            ),
+                            array(
+                                'key'        => 'field_repeat_step',
+                                'label'      => 'Slides',
+                                'name'       => 'slides-step',
+                                'type'       => 'repeater',
+                                'layout'     => 'line',
+                                'sub_fields' => array(
+                                    array(
+                                        'key'             => 'field_step_image',
+                                        'label'           => 'Image',
+                                        'name'            => 'image',
+                                        'type'            => 'image',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_step',
+                                    ),
+                                    array(
+                                        'key'             => 'field_step_titre',
+                                        'label'           => 'Titre',
+                                        'name'            => 'titre',
+                                        'type'            => 'text',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_step',
+                                    ),
+                                    array(
+                                        'key'             => 'field_step_texte',
+                                        'label'           => 'Texte',
+                                        'name'            => 'texte',
+                                        'type'            => 'wysiwyg',
+                                        'wrapper'         => $wrapper,
+                                        'parent_repeater' => 'field_repeat_step',
+                                    ),
                                 ),
                             ),
                         ),
                     ),
-                ),
- 
-                // ─── Image parallax ──────────────────────────────────────────
-                'layout_1m4g3p4r4ll4x' => array(
-                    'key'        => 'layout_1m4g3p4r4ll4x',
-                    'name'       => 'section-image-paralax',
-                    'label'      => 'Image paralax',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'     => 'field_parallax_image',
-                            'label'   => 'Image',
-                            'name'    => 'image',
-                            'type'    => 'image',
-                            'wrapper' => $wrapper,
-                        ),
-                        array(
-                            'key'           => 'field_parallax_height',
-                            'label'         => 'Hauteur',
-                            'name'          => 'hauteur',
-                            'type'          => 'number',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '80',
-                        ),
-                    ),
-                ),
- 
-                // ─── Section accordeon ───────────────────────────────────────
-                'layout_4cc0rd30n' => array(
-                    'key'        => 'layout_4cc0rd30n',
-                    'name'       => 'section_accordeon',
-                    'label'      => 'Section accordeon',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'           => 'field_acc_image',
-                            'label'         => 'Image',
-                            'name'          => 'image',
-                            'type'          => 'image',
-                            'wrapper'       => $wrapper,
-                            'return_format' => 'array',
-                            'preview_size'  => 'medium',
-                        ),
-                        array(
-                            'key'           => 'field_acc_site_name',
-                            'label'         => 'Site name',
-                            'name'          => 'site_name',
-                            'type'          => 'text',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '',
-                        ),
-                        array(
-                            'key'           => 'field_acc_titre',
-                            'label'         => 'Titre',
-                            'name'          => 'titre',
-                            'type'          => 'wysiwyg',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '',
-                            'tabs'          => 'all',
-                            'toolbar'       => 'full',
-                            'media_upload'  => 1,
-                            'delay'         => 0,
-                        ),
-                        array(
-                            'key'          => 'field_lien_accordeon',
-                            'label'        => 'Lien accordeon',
-                            'name'         => 'lien_accordeon',
-                            'type'         => 'repeater',
-                            'wrapper'      => $wrapper,
-                            'layout'       => 'table',
-                            'button_label' => 'Ajouter un élément',
-                            'sub_fields'   => array(
-                                array(
-                                    'key'             => 'field_acc_lien',
-                                    'label'           => 'Lien',
-                                    'name'            => 'lien',
-                                    'type'            => 'link',
-                                    'wrapper'         => $wrapper,
-                                    'return_format'   => 'array',
-                                    'parent_repeater' => 'field_lien_accordeon',
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
- 
-                // ─── Big Title ───────────────────────────────────────────────
-                'layout_b1g_t1tl3' => array(
-                    'key'        => 'layout_b1g_t1tl3',
-                    'name'       => 'big_title',
-                    'label'      => 'Big Title',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'               => 'field_big_title',
-                            'label'             => 'Big Title',
-                            'name'              => 'big_title',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
->>>>>>> 28f81d8 (fin 3-04)
-                ),
 
-                // -- section text_overlay
+                    'button_label' => 'Ajouter un élément',
+                ),
+            ), // fin fields
+        ),
+    
+        'location' => array(
+            array(devLocation('page_template','==','template-builder.php')),
+            array(devLocation('page_type','==','front-page')),
+            array(devLocation('post_type','==','reference')),        
+        ),
 
-                 'layout_text_overlay' => array(
-                    'key'        => 'layout_t3xt_0v3rl4y',
-                    'name'       => 'text_overlay',
-                    'label'      => 'Text Overlay',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'               => 'field_text_overlay_title',
-                            'label'             => 'Title',
-                            'name'              => 'title',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_image',
-                            'label'             => 'Image',
-                            'name'              => 'image',
-                            'type'              => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'return_format'     => 'array',
-                            'preview_size'      => 'medium',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_paragraph',
-                            'label'             => 'Paragraph',
-                            'name'              => 'paragraph',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_link',
-                            'label'             => 'Link',
-                            'name'              => 'link',
-                            'type'              => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'return_format'     => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Section formulaire contact ──────────────────────────────
-                'layout_s3ct10nf0rmc0nt4ct' => array(
-                    'key'        => 'layout_s3ct10nf0rmc0nt4ct',
-                    'name'       => 'section-formulaire-contact',
-                    'label'      => 'Section formulaire',
-                    'display'    => 'block',
-                    'sub_fields' => array(),
-                ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-                'layout_s3ct10nsurm3sur3' => array(
-                    'key' => 'layout_s3ct10nsurm3sur3',
-                    'name' => 'section-part-sur-mesure',
-                    'label' => 'Section sur mesure',
-                    'display' => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'   => 'field_title_section',
-                            'label' => 'Titre',
-                            'name'  => 'titre',
-                            'type'  => 'wysiwyg'
-                        ),
-                        array(
-                            'key'   => 'field_texte_section',
-                            'label' => 'Texte',
-                            'name'  => 'texte',
-                            'type'  => 'wysiwyg'
-                        ),
-                        array(
-                            'key'   => 'field_repeat_step',
-                            'label' => 'Slides',
-                            'name'  => 'slides-sur-mesure',
-                            'type'  => 'repeater',
-                            'layout' => 'line',
-                            'sub_fields' => array(
-                                array(
-                                    'key'   => 'field_step_image',
-                                    'label' => 'Image',
-                                    'name'  => 'image',
-                                    'type'  => 'image',
-                                    'wrapper' => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
-                                ),
-                            ),
-                        )
-<<<<<<< HEAD
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-=======
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-                    )
-
-                )
-            ),
-            'button_label' => 'Ajouter un élément',
-<<<<<<< HEAD
->>>>>>> 5c5732b (QuickFix : Correction nom des sections dossier builder)
-        ),
-    ), // fin fields
-=======
-                    ), 
-=======
-                    'sub_fields' => array(
-                        array(
-                            'key'   => 'field_surtitre_section',
-                            'label' => 'Surtitre',
-                            'name'  => 'surtitre',
-                            'type'  => 'text',
-                        ),
-                        array(
-                            'key'   => 'field_title_section',
-                            'label' => 'Titre',
-                            'name'  => 'titre',
-                            'type'  => 'wysiwyg',
-                        ),
-                        array(
-                            'key'        => 'field_repeat_step',
-                            'label'      => 'Slides',
-                            'name'       => 'slides-step',
-                            'type'       => 'repeater',
-                            'layout'     => 'line',
-                            'sub_fields' => array(
-                                array(
-                                    'key'             => 'field_step_image',
-                                    'label'           => 'Image',
-                                    'name'            => 'image',
-                                    'type'            => 'image',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
-                                ),
-                                array(
-                                    'key'             => 'field_step_titre',
-                                    'label'           => 'Titre',
-                                    'name'            => 'titre',
-                                    'type'            => 'text',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
-                                ),
-                                array(
-                                    'key'             => 'field_step_texte',
-                                    'label'           => 'Texte',
-                                    'name'            => 'texte',
-                                    'type'            => 'wysiwyg',
-                                    'wrapper'         => $wrapper,
-                                    'parent_repeater' => 'field_repeat_step',
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
- 
-                // ─── Image parallax ──────────────────────────────────────────
-                'layout_1m4g3p4r4ll4x' => array(
-                    'key'        => 'layout_1m4g3p4r4ll4x',
-                    'name'       => 'section-image-paralax',
-                    'label'      => 'Image paralax',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'     => 'field_parallax_image',
-                            'label'   => 'Image',
-                            'name'    => 'image',
-                            'type'    => 'image',
-                            'wrapper' => $wrapper,
-                        ),
-                        array(
-                            'key'           => 'field_parallax_height',
-                            'label'         => 'Hauteur',
-                            'name'          => 'hauteur',
-                            'type'          => 'number',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '80',
-                        ),
-                    ),
-                ),
- 
-                // ─── Section accordeon ───────────────────────────────────────
-                'layout_4cc0rd30n' => array(
-                    'key'        => 'layout_4cc0rd30n',
-                    'name'       => 'section_accordeon',
-                    'label'      => 'Section accordeon',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'           => 'field_acc_image',
-                            'label'         => 'Image',
-                            'name'          => 'image',
-                            'type'          => 'image',
-                            'wrapper'       => $wrapper,
-                            'return_format' => 'array',
-                            'preview_size'  => 'medium',
-                        ),
-                        array(
-                            'key'           => 'field_acc_site_name',
-                            'label'         => 'Site name',
-                            'name'          => 'site_name',
-                            'type'          => 'text',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '',
-                        ),
-                        array(
-                            'key'           => 'field_acc_titre',
-                            'label'         => 'Titre',
-                            'name'          => 'titre',
-                            'type'          => 'wysiwyg',
-                            'wrapper'       => $wrapper,
-                            'default_value' => '',
-                            'tabs'          => 'all',
-                            'toolbar'       => 'full',
-                            'media_upload'  => 1,
-                            'delay'         => 0,
-                        ),
-                        array(
-                            'key'          => 'field_lien_accordeon',
-                            'label'        => 'Lien accordeon',
-                            'name'         => 'lien_accordeon',
-                            'type'         => 'repeater',
-                            'wrapper'      => $wrapper,
-                            'layout'       => 'table',
-                            'button_label' => 'Ajouter un élément',
-                            'sub_fields'   => array(
-                                array(
-                                    'key'             => 'field_acc_lien',
-                                    'label'           => 'Lien',
-                                    'name'            => 'lien',
-                                    'type'            => 'link',
-                                    'wrapper'         => $wrapper,
-                                    'return_format'   => 'array',
-                                    'parent_repeater' => 'field_lien_accordeon',
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
- 
-                // ─── Big Title ───────────────────────────────────────────────
-                'layout_b1g_t1tl3' => array(
-                    'key'        => 'layout_b1g_t1tl3',
-                    'name'       => 'big_title',
-                    'label'      => 'Big Title',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'               => 'field_big_title',
-                            'label'             => 'Big Title',
-                            'name'              => 'big_title',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
->>>>>>> 28f81d8 (fin 3-04)
-                ),
-
-                // -- section text_overlay
-
-                 'layout_text_overlay' => array(
-                    'key'        => 'layout_t3xt_0v3rl4y',
-                    'name'       => 'text_overlay',
-                    'label'      => 'Text Overlay',
-                    'display'    => 'block',
-                    'sub_fields' => array(
-                        array(
-                            'key'               => 'field_text_overlay_title',
-                            'label'             => 'Title',
-                            'name'              => 'title',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_image',
-                            'label'             => 'Image',
-                            'name'              => 'image',
-                            'type'              => 'image',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'return_format'     => 'array',
-                            'preview_size'      => 'medium',
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_paragraph',
-                            'label'             => 'Paragraph',
-                            'name'              => 'paragraph',
-                            'type'              => 'wysiwyg',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'allow_in_bindings' => 0,
-                        ),
-                        array(
-                            'key'               => 'field_text_overlay_link',
-                            'label'             => 'Link',
-                            'name'              => 'link',
-                            'type'              => 'link',
-                            'conditional_logic' => 0,
-                            'wrapper'           => $wrapper,
-                            'return_format'     => 'array',
-                            'allow_in_bindings' => 0,
-                        ),
-                    ),
-                ),
- 
-                // ─── Section formulaire contact ──────────────────────────────
-                'layout_s3ct10nf0rmc0nt4ct' => array(
-                    'key'        => 'layout_s3ct10nf0rmc0nt4ct',
-                    'name'       => 'section-formulaire-contact',
-                    'label'      => 'Section formulaire',
-                    'display'    => 'block',
-                    'sub_fields' => array(),
-                ),
-<<<<<<< HEAD
-            ),
-            'button_label' => 'Ajouter un élément',
-            ),
->>>>>>> 927826b (fin2-4)
-=======
-=======
->>>>>>> 28f81d8 (fin 3-04)
- 
-            ), // fin layouts
-        ),
-    ), // fin fields
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-=======
-            ),
->>>>>>> 927826b (fin2-4)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-    'location' => array(
-        array(
-            array(
-                'param'    => 'page_template',
-                'operator' => '==',
-                'value'    => 'template-builder.php',
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ),
-        ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-        array(
-            array(
-                'param'    => 'page_type',
-                'operator' => '==',
-                'value'    => 'front_page',
-=======
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-            ),
-        ),
-        array(
-            array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-                'param'    => 'post_type',
-                'operator' => '==',
-                'value'    => 'reference',
-            ),
-        ),
-<<<<<<< HEAD
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-                'param'    => 'page_type',
-                'operator' => '==',
-=======
-                'param'    => 'page_type',
-                'operator' => '==',
->>>>>>> 28f81d8 (fin 3-04)
-                'value'    => 'front_page',
-            ),
-        ),
-        array(
-            array(
-                'param'    => 'post_type',
-                'operator' => '==',
-                'value'    => 'reference',
-            ),
-        ),
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 28f81d8 (fin 3-04)
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 28f81d8 (fin 3-04)
-    ),
-    'menu_order'            => 0,
-    'position'              => 'normal',
-    'style'                 => 'default',
-    'label_placement'       => 'top',
-    'instruction_placement' => 'label',
-    'hide_on_screen'        => '',
-    'active'                => true,
-    'description'           => '',
-    'show_in_rest'          => 0,
-    'display_title'         => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-));
-=======
-=======
->>>>>>> 927826b (fin2-4)
- ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
+        'menu_order'            => 0,
+        'position'              => 'normal',
+        'style'                 => 'default',
+        'label_placement'       => 'top',
         'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-        'show_in_rest' => 0,
-        'display_title' => '',
-    ));
-<<<<<<< HEAD
-    
->>>>>>> 927826b (fin2-4)
-=======
-));
->>>>>>> 28f81d8 (fin 3-04)
-=======
-    
->>>>>>> 927826b (fin2-4)
-=======
-));
->>>>>>> 28f81d8 (fin 3-04)
+        'hide_on_screen'        => '',
+        'active'                => true,
+        'description'           => '',
+        'show_in_rest'          => 0,
+        'display_title'         => '',
+    )
+);

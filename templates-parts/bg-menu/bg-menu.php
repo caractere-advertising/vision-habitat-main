@@ -1,4 +1,3 @@
-
 <?php
 
 $burger_image        = get_field('bg-menu-image', 'option');
@@ -13,7 +12,9 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 <section class="menu-burger">
     <div class="menu-burger-left">
         <?php if ($burger_image) : ?>
+           
             <img src="<?= esc_url($burger_image['url']) ?>" alt="<?= esc_attr($burger_image['alt']) ?>"/>
+           
         <?php endif; ?>
 
         <?php if ($logo_bg_menu) : ?>
@@ -56,11 +57,10 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                         </a>
                     <?php endforeach; ?>
                 </div>
+                
             <?php endif; ?>
         </div>
     </div>
-    <div class="menu-burger-right">
-         <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->
 
     <div class="menu-burger-right">
          <!-- <button class="burger-btn burger-btn-close">&#x2715;</button> -->

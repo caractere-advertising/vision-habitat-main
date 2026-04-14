@@ -61,13 +61,6 @@ acf_add_local_field_group( array(
 				'preview_size' => 'medium',
 			),
 			array(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 				'key' => 'field_69c3da63ab52f',
 				'label' => 'logo negatif',
 				'name' => 'logo-negatif',
@@ -79,77 +72,8 @@ acf_add_local_field_group( array(
 				'wrapper' => $wrapper,
 				'return_format' => 'array',
 				'library' => 'all',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
 				'allow_in_bindings' => 0,
 				'preview_size' => 'medium',
-			),
-			array(
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-=======
->>>>>>> 3b8360c (Renomage des fichiers.php + fichiers .scss pour une meilleure lisibilité)
-				'key' => 'field_69a9908ba255d',
-				'label' => 'slogan',
-				'name' => 'slogan',
-				'aria-label' => '',
-				'type' => 'text',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => $wrapper,
-				'default_value' => '',
-				'maxlength' => '',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-				'allow_in_bindings' => 0,
-				'preview_size' => 'medium',
-			),
-			array(
-				'key' => 'field_displayNegatifHeader',
-				'label' => 'Header négatif',
-				'name' => 'header-negatif',
-				'type' => 'post_object',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => $wrapper,
-				'post_type' => 'page',
-				'post_status' => '',
-				'taxonomy' => '',
-				'return_format' => 'object',
-				'multiple' => 1,
-				'allow_null' => 0,
-				'allow_in_bindings' => 0,
-				'bidirectional' => 0,
-				'ui' => 1,
-				'bidirectional_target' => array(
-				),
-			),
-			array(
-=======
->>>>>>> 96c2834 (Correction options-fields.php)
-				'key' => 'field_displayNegatifHeader',
-				'label' => 'Header négatif',
-				'name' => 'header-negatif',
-				'type' => 'post_object',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => $wrapper,
-				'post_type' => 'page',
-				'post_status' => '',
-				'taxonomy' => '',
-				'return_format' => 'object',
-				'multiple' => 1,
-				'allow_null' => 0,
-				'allow_in_bindings' => 0,
-				'bidirectional' => 0,
-				'ui' => 1,
-				'bidirectional_target' => array(
-				),
 			),
 			array(
 				'key' => 'field_displayNegatifHeader',
@@ -184,6 +108,23 @@ acf_add_local_field_group( array(
 				'placement' => 'top',
 				'endpoint' => 0,
 				'selected' => 0,
+			),
+			array(
+				'key' => 'field_69bab57ffaec2',
+				'label' => 'contact',
+				'name' => 'contact',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => $wrapper,
+				'default_value' => '',
+				'maxlength' => '',
+				'allow_in_bindings' => 0,
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
 			),
 			array(
 				'key' => 'field_69bab35afaec0',
@@ -518,42 +459,9 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 						'wrapper' => $wrapper,
-<<<<<<< HEAD
 						'default_value' => '',
 						'maxlength' => '',
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-=======
->>>>>>> 1159616 (Update options-fields)
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
-<<<<<<< HEAD
-=======
-						'wrapper' => $wrapper,
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-=======
-						'wrapper' => $wrapper,
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-						'default_value' => '',
-						'maxlength' => '',
->>>>>>> 1159616 (Update options-fields)
-=======
-						'wrapper' => $wrapper,
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'default_value' => '',
-						'maxlength' => '',
->>>>>>> 1159616 (Update options-fields)
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
 						'prepend' => '',
@@ -569,42 +477,9 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 						'wrapper' => $wrapper,
-<<<<<<< HEAD
 						'default_value' => '',
 						'maxlength' => '',
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-=======
->>>>>>> 1159616 (Update options-fields)
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
-<<<<<<< HEAD
-=======
-						'wrapper' => $wrapper,
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-=======
-						'wrapper' => $wrapper,
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-						'default_value' => '',
-						'maxlength' => '',
->>>>>>> 1159616 (Update options-fields)
-=======
-						'wrapper' => $wrapper,
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'default_value' => '',
-						'maxlength' => '',
->>>>>>> 1159616 (Update options-fields)
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
 						'prepend' => '',
@@ -633,69 +508,16 @@ acf_add_local_field_group( array(
 				'sub_fields' => array(
 					array(
 						'key' => 'field_69c545e4667c6',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 						'label' => 'Logo',
-<<<<<<< HEAD
-=======
-						'label' => 'social-media',
-						'name' => 'social-media',
-=======
-						'name' => 'image',
->>>>>>> 548401f (ajout slider-partenaires)
-						'aria-label' => '',
-						'type' => 'image',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
-						'wrapper' => $wrapper,
-						'return_format' => 'array',
-						'library' => 'all',
-						'min_width' => '',
-						'min_height' => '',
-						'min_size' => '',
-						'max_width' => '',
-						'max_height' => '',
-						'max_size' => '',
-						'mime_types' => '',
-						'allow_in_bindings' => 0,
-						'preview_size' => 'medium',
-						'parent_repeater' => 'field_69c5456d667c5',
-					),
-					array(
-						'key' => 'field_69c645e5414bd',
-						'label' => 'logo',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'label' => 'Logo',
->>>>>>> 69c6bb2 (burger-menu finetuning)
-=======
-						'label' => 'Logo',
->>>>>>> 69c6bb2 (burger-menu finetuning)
-=======
-						'label' => 'Logo',
->>>>>>> 69c6bb2 (burger-menu finetuning)
 						'name' => 'logo',
 						'aria-label' => '',
 						'type' => 'image',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 						'wrapper' => $wrapper,
-<<<<<<< HEAD
 						'return_format' => 'array',
 						'library' => 'all',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						'mime_types' => '',
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 						'allow_in_bindings' => 0,
 						'preview_size' => 'medium',
 						'parent_repeater' => 'field_69c5456d667c5',
@@ -705,107 +527,15 @@ acf_add_local_field_group( array(
 						'label' => 'Lien',
 						'name' => 'lien',
 						'aria-label' => '',
-						'type' => 'link',
+						'type' => 'url',
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-=======
->>>>>>> 1159616 (Update options-fields)
 						'wrapper' => array(
 							'width' => '',
 							'class' => '',
 							'id' => '',
 						),
-<<<<<<< HEAD
-						'return_format' => 'array',
-						'library' => 'all',
-<<<<<<< HEAD
-=======
-=======
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
-						'return_format' => 'array',
-						'library' => 'all',
->>>>>>> 1159616 (Update options-fields)
-						'min_width' => '',
-						'min_height' => '',
-						'min_size' => '',
-						'max_width' => '',
-						'max_height' => '',
-						'max_size' => '',
-<<<<<<< HEAD
-=======
->>>>>>> 69c6bb2 (burger-menu finetuning)
-=======
->>>>>>> 69c6bb2 (burger-menu finetuning)
-						'mime_types' => '',
->>>>>>> 1159616 (Update options-fields)
-						'allow_in_bindings' => 0,
-						'preview_size' => 'medium',
-						'parent_repeater' => 'field_69c5456d667c5',
-					),
-					array(
-						'key' => 'field_69c645e5414bd',
-						'label' => 'Lien',
-						'name' => 'lien',
-						'aria-label' => '',
-						'type' => 'url',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
-						'wrapper' => $wrapper,
-						'return_format' => 'array',
-						'library' => 'all',
-=======
-						'return_format' => 'array',
-						'library' => 'all',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'mime_types' => '',
->>>>>>> 1159616 (Update options-fields)
-						'allow_in_bindings' => 0,
-						'preview_size' => 'medium',
-						'parent_repeater' => 'field_69c5456d667c5',
-					),
-					array(
-						'key' => 'field_69c645e5414bd',
-						'label' => 'Lien',
-						'name' => 'lien',
-						'aria-label' => '',
-						'type' => 'url',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
-						'wrapper' => $wrapper,
-						'return_format' => 'array',
-						'library' => 'all',
-=======
-						'wrapper' => $wrapper,
-						'return_format' => 'array',
-						'library' => 'all',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'return_format' => 'array',
-						'library' => 'all',
-						'mime_types' => '',
->>>>>>> 1159616 (Update options-fields)
-						'allow_in_bindings' => 0,
-						'preview_size' => 'medium',
-						'parent_repeater' => 'field_69c5456d667c5',
-					),
-					array(
-						'key' => 'field_69c645e5414bd',
-						'label' => 'Lien',
-						'name' => 'lien',
-						'aria-label' => '',
-						'type' => 'url',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
-						'wrapper' => $wrapper,
 						'return_format' => 'array',
 						'library' => 'all',
 						'allow_in_bindings' => 0,
@@ -829,92 +559,6 @@ acf_add_local_field_group( array(
 					array(
 						'key' => 'field_69c646dc42379',
 						'label' => 'cond',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						'name' => 'cond',
-						'aria-label' => '',
-<<<<<<< HEAD
-=======
-						'name' => 'con',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'aria-label' => '',
->>>>>>> 1159616 (Update options-fields)
-=======
-						'name' => 'con',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'aria-label' => '',
->>>>>>> 1159616 (Update options-fields)
-=======
-						'name' => 'con',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'aria-label' => '',
->>>>>>> 1159616 (Update options-fields)
-						'type' => 'text',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1159616 (Update options-fields)
-=======
->>>>>>> 1159616 (Update options-fields)
-=======
->>>>>>> 1159616 (Update options-fields)
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
-						'default_value' => '',
-						'maxlength' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
-=======
-						'wrapper' => $wrapper,
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
-=======
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
->>>>>>> 1159616 (Update options-fields)
-=======
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
->>>>>>> 1159616 (Update options-fields)
-						'prepend' => '',
-						'append' => '',
-					),
-					array(
-						'key' => 'field_69ca4e1281766',
-						'label' => 'cond',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 69c6bb2 (burger-menu finetuning)
 						'name' => 'cond',
 						'aria-label' => '',
 						'type' => 'link',
@@ -922,61 +566,12 @@ acf_add_local_field_group( array(
 						'required' => 0,
 						'conditional_logic' => 0,
 						'wrapper' => $wrapper,
-=======
-=======
->>>>>>> 69c6bb2 (burger-menu finetuning)
-						'name' => 'cond',
-						'aria-label' => '',
-						'type' => 'link',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 69c6bb2 (burger-menu finetuning)
-						'name' => 'cond',
-						'aria-label' => '',
-						'type' => 'text',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
->>>>>>> 1159616 (Update options-fields)
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
-<<<<<<< HEAD
->>>>>>> 1159616 (Update options-fields)
-=======
-						'wrapper' => $wrapper,
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-=======
->>>>>>> 1159616 (Update options-fields)
 						'default_value' => '',
 						'maxlength' => '',
 						'allow_in_bindings' => 0,
 						'placeholder' => '',
 						'prepend' => '',
 						'append' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 1159616 (Update options-fields)
-=======
-						'wrapper' => $wrapper,
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 1159616 (Update options-fields)
-=======
-						'wrapper' => $wrapper,
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 1159616 (Update options-fields)
 					),
 					array(
 						'key' => 'field_69c6476e4237a',
@@ -987,93 +582,6 @@ acf_add_local_field_group( array(
 						'instructions' => '',
 						'required' => 0,
 						'conditional_logic' => 0,
-<<<<<<< HEAD
-						'wrapper' => $wrapper,
-<<<<<<< HEAD
-=======
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
->>>>>>> 1159616 (Update options-fields)
-						'default_value' => '',
-						'maxlength' => '',
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						'prepend' => '',
-						'append' => '',
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
-=======
-=======
-						'prepend' => '',
-						'append' => '',
-					),
-<<<<<<< HEAD
-					array(
-						'key' => 'field_69ca4e2f81767',
-						'label' => 'copyright',
-						'name' => 'copyright',
-						'aria-label' => '',
-						'type' => 'text',
-=======
-						'type' => 'link',
->>>>>>> 6bdd130 (Quick fix : Ajout flêche .svg pour cta + menu burger)
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
-						'wrapper' => $wrapper,
-						'default_value' => '',
-						'maxlength' => '',
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
->>>>>>> 1159616 (Update options-fields)
-						'prepend' => '',
-						'append' => '',
-					),
-<<<<<<< HEAD
-					array(
-						'key' => 'field_69ca4e2f81767',
-						'label' => 'copyright',
-						'name' => 'copyright',
-						'aria-label' => '',
-						'type' => 'text',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
-						'wrapper' => array(
-							'width' => '',
-							'class' => '',
-							'id' => '',
-						),
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-						'default_value' => '',
-						'maxlength' => '',
-						'allow_in_bindings' => 0,
-						'placeholder' => '',
-<<<<<<< HEAD
->>>>>>> 1159616 (Update options-fields)
-						'prepend' => '',
-						'append' => '',
-					),
-<<<<<<< HEAD
-					array(
-						'key' => 'field_69ca4e2f81767',
-						'label' => 'copyright',
-						'name' => 'copyright',
-						'aria-label' => '',
-						'type' => 'text',
-						'instructions' => '',
-						'required' => 0,
-						'conditional_logic' => 0,
 						'wrapper' => $wrapper,
 						'default_value' => '',
 						'maxlength' => '',
@@ -1081,18 +589,7 @@ acf_add_local_field_group( array(
 						'placeholder' => '',
 						'prepend' => '',
 						'append' => '',
->>>>>>> 1159616 (Update options-fields)
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
-=======
->>>>>>> 5e726ef (Ajout champs ACF page construire + contact / Ajout SCSS nouvelles sections + installation d'une dependence pour le parallax. + correction et optimisations de certaines pages)
 					),
-=======
->>>>>>> 69c6bb2 (burger-menu finetuning)
-=======
->>>>>>> 69c6bb2 (burger-menu finetuning)
-=======
->>>>>>> 69c6bb2 (burger-menu finetuning)
 				),
 			),
 			array(
@@ -1146,7 +643,6 @@ acf_add_local_field_group( array(
 					),
 				),
 			),
-
 			array(
 				'key' => 'field_69a98e8e22153fer',
 				'label' => 'Partenaires',
@@ -1161,18 +657,15 @@ acf_add_local_field_group( array(
 				'endpoint' => 0,
 				'selected' => 0,
 			),
-			
-
 			array(
 				'key'            => 'field_69c545e4667c6ddd',
-				'label'          => 'Titrrrrrrrrrre',
+				'label'          => 'Titre',
 				'name'           => 'title-part',
 				'type'           => 'wysiwyg',
 				'wrapper'        => $wrapper,
 				'return_format'  => 'array',
 				'preview_size'   => 'medium',
 			),
-
 			array(
 				'key'        => 'field_69c5456d667c512',
 				'label'      => 'gallerie-partenaires',
@@ -1225,4 +718,5 @@ acf_add_local_field_group( array(
 		'description' => '',
 		'show_in_rest' => 0,
 		'display_title' => '',
-	) );
+	) 
+);
