@@ -7,9 +7,9 @@ $section_actu_2_cards = get_field('section_actu_2_cards');
 
 <section class="section_actu_2_cards">
 
-    <?php if ($section_title) : ?>
+    <!-- <?php if ($section_title) : ?>
         <div class="actu-title"><?php echo $section_title; ?></div>
-    <?php endif; ?>
+    <?php endif; ?> -->
 
     <div class="actu-grid">
 

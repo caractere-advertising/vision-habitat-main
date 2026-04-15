@@ -76,6 +76,26 @@ acf_add_local_field_group( array(
 				'preview_size' => 'medium',
 			),
 			array(
+<<<<<<< HEAD
+=======
+				'key' => 'field_69a9908ba255d',
+				'label' => 'slogan',
+				'name' => 'slogan',
+				'aria-label' => '',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => $wrapper,
+				'default_value' => '',
+				'maxlength' => '',
+				'allow_in_bindings' => 0,
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+			array(
+>>>>>>> 2cb5f87 (pull des modifs)
 				'key' => 'field_displayNegatifHeader',
 				'label' => 'Header négatif',
 				'name' => 'header-negatif',
@@ -509,7 +529,11 @@ acf_add_local_field_group( array(
 					array(
 						'key' => 'field_69c545e4667c6',
 						'label' => 'Logo',
+<<<<<<< HEAD
 						'name' => 'logo',
+=======
+						'name' => 'image',
+>>>>>>> 2cb5f87 (pull des modifs)
 						'aria-label' => '',
 						'type' => 'image',
 						'instructions' => '',
