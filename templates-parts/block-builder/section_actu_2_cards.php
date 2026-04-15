@@ -4,7 +4,12 @@
 
 $section_actu_2_cards = get_field('section_actu_2_cards');
 ?>
-
+<?php
+wp_nav_menu(['theme_location' =>'menu-actu',
+'container'=>'nav',
+'container_class' =>'actu-nav',
+'menu_class'=>'actu-nav-list',])
+?>
 <section class="section_actu_2_cards">
 
     <!-- <?php if ($section_title) : ?>

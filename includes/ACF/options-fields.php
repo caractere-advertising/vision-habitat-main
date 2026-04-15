@@ -76,8 +76,6 @@ acf_add_local_field_group( array(
 				'preview_size' => 'medium',
 			),
 			array(
-<<<<<<< HEAD
-=======
 				'key' => 'field_69a9908ba255d',
 				'label' => 'slogan',
 				'name' => 'slogan',
@@ -95,7 +93,6 @@ acf_add_local_field_group( array(
 				'append' => '',
 			),
 			array(
->>>>>>> 2cb5f87 (pull des modifs)
 				'key' => 'field_displayNegatifHeader',
 				'label' => 'Header négatif',
 				'name' => 'header-negatif',
@@ -529,11 +526,7 @@ acf_add_local_field_group( array(
 					array(
 						'key' => 'field_69c545e4667c6',
 						'label' => 'Logo',
-<<<<<<< HEAD
-						'name' => 'logo',
-=======
 						'name' => 'image',
->>>>>>> 2cb5f87 (pull des modifs)
 						'aria-label' => '',
 						'type' => 'image',
 						'instructions' => '',
@@ -702,23 +695,23 @@ acf_add_local_field_group( array(
 				'button_label' => 'Ajouter un élément',
 				'sub_fields' => array(
 					array(
-					'key'            => 'field_69c545e4667c6',
-					'label'          => 'Image',
-					'name'           => 'image',
-					'type'           => 'image',
-					'wrapper'        => $wrapper,
-					'return_format'  => 'array',
-					'preview_size'   => 'medium',
-					'parent_repeater' => 'field_69c5456d667c512',
+						'key'            => 'field_69c545e4667c6',
+						'label'          => 'Image',
+						'name'           => 'image',
+						'type'           => 'image',
+						'wrapper'        => $wrapper,
+						'return_format'  => 'array',
+						'preview_size'   => 'medium',
+						'parent_repeater' => 'field_69c5456d667c512',
 					),
 					array(
-					'key'            => 'field_69c645e5414bd',
-					'label'          => 'Lien',
-					'name'           => 'lien',
-					'type'           => 'link',
-					'wrapper'        => $wrapper,
-					'return_format'  => 'array',
-					'parent_repeater' => 'field_69c5456d667c512',
+						'key'            => 'field_69c645e5414bd',
+						'label'          => 'Lien',
+						'name'           => 'lien',
+						'type'           => 'link',
+						'wrapper'        => $wrapper,
+						'return_format'  => 'array',
+						'parent_repeater' => 'field_69c5456d667c512',
 					),
 				),
 			),
