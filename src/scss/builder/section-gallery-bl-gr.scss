@@ -4,53 +4,46 @@
 @use "./../variables/cta.scss" as *;
 
 .section-gallery-bl-gr{
+    .card{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        min-height: 500px;
+    }   
 
- .card{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    min-height: 500px;
- }   
-
-.gallery-image{
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .gallery-image{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
-}
 
-.gallery-info{
-    background-color: $lightGray;
-display: flex;
-flex-direction: column;
-//justify-content: space-between;
-align-items: end
-;
-}
+    .gallery-info{
+        background-color: $lightGray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        text-align: right;
+        padding: 80px;
 
+        .gallery-titre{
+            color: $primaryColor;
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-bottom: 50px;
+        }
+        .gallery-ssTitre{
+            p{
+                color: $primaryColor;
+                font-size: 2.5rem ;
+                line-height: 1.2;
+            }
+        }
 
-.gallery-titre{
-    color: $primaryColor;
-    text-transform: uppercase;
-    font-size: 3rem;
-    margin: 50px 0;
-    padding-right: 80px ;
-}
-.gallery-ssTitre{
-    color: $primaryColor;
-    font-size: 2.5rem ;
-    line-height: 1.2;
-    width: 350px ;
-    padding-bottom: 350px;
-    padding-right: 80px ;
-}
-
-.gallery-paragraph{
-    color: $primaryColor;
-    width: 350px;
-        padding-right: 80px ;
-        padding-bottom: 100px  ;
-}
-
-
+        .gallery-paragraph{
+            color: $primaryColor;
+            width: 350px;
+        }
+    }
 }

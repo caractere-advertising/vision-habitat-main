@@ -5,17 +5,14 @@
     display: flex;
     justify-content: center;
     padding: 40px 0;
-
-    .actu-nav-list { 
+    .actu-nav-list {
         display: flex;
         align-items: center;
         gap: 16px;
         text-transform: uppercase;
-
         .menu-item a {
             color: $lightGray;
             text-decoration: none;
-
             &:hover {
                 color: $secondaryColor;
             }
@@ -24,77 +21,63 @@
 }
 
 .section_actu_2_cards {
-    background-color: $white;
-    padding: 80px 8%;
-
     .actu-title {
         color: $primaryColor;
         font-size: 2rem;
         font-weight: 300;
         margin-top: 50px;
     }
-
     .actu-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        text-align: left;
-        margin-bottom: 50px;
 
-           // :first-child{;}
-
-    }
-
-    .actu-card {
-        max-height: 600px;
-        .actu-card-img {
-            position: relative;
-            background-color: $lightGray;
-            aspect-ratio: 4/3;
-            overflow: hidden;
-            margin-bottom: 15px;
+        .actu-card {
+            max-height: 600px;
+            padding-bottom: 80px;
             border-bottom: 1px solid $lightGray;
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-            }
-       
-        }
-
-        .actu-card-plus {
-            position: absolute;
-            bottom: -1px;
-            right: -1px;
-            width: 80px;
-            height: 80px;
-            background-color: $white;
-            color: $primaryColor;
-            font-size: 2rem;
-            font-weight: 300;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: background-color 0.25s ease, color 0.25s ease;
-        }
-         
-
-        &:hover {
             .actu-card-img {
+                //aspect-ratio: 4/3;
+                overflow: hidden;
+
                 img {
-                    transform: scale(1.05);
-                    filter: brightness(0.6);
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
                 }
             }
 
-            .actu-card-plus {
-                background-color: $primaryColor;
-                color: $white;
+            &:hover {
+                .actu-card-img img {
+                    transform: scale(1.05);
+                    filter: brightness(0.6);
+                }
+                .actu-card-plus {
+                    background-color: $primaryColor;
+                    color: $white;
+                }
             }
-           
+
+            &:first-child {
+                grid-column: span 2;
+
+                .actu-card-img{   
+                    aspect-ratio: inherit;
+                }
+            } 
+        }
+    }
+    .actu-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 60px;
+        .page-numbers {
+            color: $primaryColor;
+            text-decoration: none;
+            padding: 4px 8px;
+            cursor: pointer;
+
+        
         }
     }
 }

@@ -20,12 +20,14 @@ $card = get_sub_field('card');
                 <?php endif; ?>
             </div>
             <div class="gallery-info">
-                <?php if ($titre) : ?>
-                    <p class="gallery-titre"><?= esc_html($titre); ?></p>
-                <?php endif; ?>
-                <?php if ($ssTitre) : ?>
-                    <p class="gallery-ssTitre"><?= esc_html($ssTitre); ?></p>
-                <?php endif; ?>
+                <div class="top">
+                    <?php if ($titre) : ?>
+                        <p class="gallery-titre"><?= esc_html($titre); ?></p>
+                    <?php endif; ?>
+                    <?php if ($ssTitre) : ?>
+                        <div class="gallery-ssTitre"><?= $ssTitre; ?></div>
+                    <?php endif; ?>
+                </div>
                 <div class="gallery-paragraph">
                     <?php echo $paragraph; ?>
                 </div>

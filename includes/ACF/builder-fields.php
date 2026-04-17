@@ -1041,61 +1041,76 @@ acf_add_local_field_group( array(
                     ),
                 ),
  // _________section actu card
-   'layout_69aedefa2f655a' => array(
-                    'key'        => 'layout_69aedefa2f655a',
-                    'name'       => 'section_actu_2_cards',
-                    'label'      => 'section_actu_2_cards',
+   'layout_69aedefa2f6550' => array(
+                    'key'        => 'field_69aedefa2f6550',
+                    'name'       => 'section_actualites_articles',
+                    'label'      => 'section_actualites_articles',
                     'display'    => 'block',
                     'sub_fields' => array(
-                        array(
-                            'key'            => 'field_69aedf142f6577',
-                            'label'          => 'articles',
-                            'name'           => 'articles',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69aee00b2f6588',
-                                    'label'          => 'title',
-                                    'name'           => 'title',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69aedf142f657',
-                                ),
-                                array(
-                                    'key'            => 'field_69aee95a290255',
-                                    'label'          => 'image',
-                                    'name'           => 'image',
-                                    'type'           => 'image',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69aedf142f657',
-                                ),
-                                array(
-                                    'key'            => 'field_69aee04e2f65aa',
-                                    'label'          => 'link',
-                                    'name'           => 'link',
-                                    'type'           => 'link',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69aedf142f657',
-                                ),
-                            ),
-                        ),
-                    ),
-                ),
+      array(
+          'key'            => 'field_69aedefa2f65505',
+          'label'          => 'articles',
+          'name'           => 'articles',
+          'type'           => 'repeater',
+          'conditional_logic' => 0,
+          'wrapper'        => $wrapper,
+          'layout'         => 'table',
+          'button_label'   => 'Ajouter un élément',
+          'rows_per_page'  => 20,
+          'sub_fields'     => array(
+              array(
+                  'key'            => 'field_69aedefa2f65503',
+                  'label'          => 'image',
+                  'name'           => 'image',
+                  'type'           => 'image',
+                  'conditional_logic' => 0,
+                  'wrapper'        => $wrapper,
+                  'return_format'  => 'array',
+                  'allow_in_bindings' => 0,
+                  'preview_size'   => 'medium',
+                  'parent_repeater' =>
+  'section_actualites_articles',
+              ),
+              array(
+                  'key'            => 'field_69aedefa2f655043',
+                  'label'          => 'category',
+                  'name'           => 'category',
+                  'type'           => 'text',
+                  'conditional_logic' => 0,
+                  'wrapper'        => $wrapper,
+                  'default_value'  => '',
+                  'allow_in_bindings' => 0,
+                  'parent_repeater' =>
+  'section_actualites_articles',
+              ),
+              array(
+                  'key'            =>'field_69aedefa2f655087',
+                  'label'          => 'paragraph',
+                  'name'           => 'paragraph',
+                  'type'           => 'text',
+                  'conditional_logic' => 0,
+                  'wrapper'        => $wrapper,
+                  'default_value'  => '',
+                  'allow_in_bindings' => 0,
+                  'parent_repeater' =>
+  'section_actualites_articles',
+              ),
+              array(
+                  'key'            => 'field_69aedefa2f655029',
+                  'label'          => 'link',
+                  'name'           => 'link',
+                  'type'           => 'link',
+                  'conditional_logic' => 0,
+                  'wrapper'        => $wrapper,
+                  'return_format'  => 'array',
+                  'allow_in_bindings' => 0,
+                  'parent_repeater' =>
+  'section_actualites_articles',
+              ),
+          ),
+      ),
+  ),
+   ),
  // ______ section gallery-bl-gr
 'layout_69aedefa2f655aa' => array(
                     'key'        => 'layout_69aedefa2f655ab',
@@ -1141,7 +1156,7 @@ acf_add_local_field_group( array(
                                     'key'            => 'field_69aee04e2f65aab',
                                     'label'          => 'ss-titre',
                                     'name'           => 'ss-titre',
-                                    'type'           => 'text',
+                                    'type'           => 'wysiwyg',
                                     'conditional_logic' => 0,
                                     'wrapper'        => $wrapper,
                                     'return_format'  => 'array',
@@ -1652,6 +1667,46 @@ acf_add_local_field_group( array(
                     'display'    => 'block',
                     'sub_fields' => array(),
                 ),
+
+                //---------- section actu-citation
+                  'layout_69b3cd935aa7b7' => array(
+                    'key'     => 'layout_69b3cd935aa7b7x',
+                    'name'    => 'section_actu_citation',
+                    'label'   => 'section_actu_citation',
+                    'display' => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key'               => 'field_69b3cdd45aa7d77x',
+                            'label'             => 'nom',
+                            'name'              => 'nom',
+                            'type'              => 'text',
+                            'conditional_logic' => 0,
+                            'wrapper'           => $wrapper,
+                            'default_value'     => '',
+                            'allow_in_bindings' => 0,
+                        ),
+                    
+                        array(
+                            'key'               => 'field_69b3cdfa5aa7eeexxs',
+                            'label'             => 'citation',
+                            'name'              => 'citation',
+                            'type'              => 'wysiwyg',
+                            'conditional_logic' => 0,
+                            'wrapper'           => $wrapper,
+                            'default_value'     => '',
+                            'allow_in_bindings' => 0,
+                            'tabs'              => 'all',
+                            'toolbar'           => 'full',
+                            'media_upload'      => 1,
+                            'delay'             => 0,
+                        ),
+                       
+                                ),
+                            ),
+                     
+                       
+                    
+ 
  
                 // ─── Section sur mesure ──────────────────────────────────────
                 'layout_s3ct10nsurm3sur3' => array(

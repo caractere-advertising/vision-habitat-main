@@ -9,10 +9,19 @@ if (is_home()) {
 $colorImage = get_sub_field('couleur_ou_image');
 $colorImage == 'couleur' ? $bg =  get_sub_field('arriere-plan') : $bg = "url('" . get_sub_field('background') . "')";
 
+if($bg == 'rgb(255, 255, 255)'){
+$font = 'color:#05233c !important;' ;
+} else {
+$font ='test';
+}
+
 $height = get_sub_field('hauteur');
 
 $style = "style=\"background:" . $bg . ";";
 $style .= "height:". $height . "vh;\"";
+
+$styleH1 = "style=\"";
+$styleH1 .= $font . "\"";  
 
 $cta   = get_sub_field('cta') ?? array('url'=>'#','title'=>'Lorem');
 
@@ -21,7 +30,7 @@ $cta   = get_sub_field('cta') ?? array('url'=>'#','title'=>'Lorem');
 <div class="section-service-header" <?= $style;?>>
     <div class="container flex">
         <div class="col colg">
-            <h1 class="from-left"><?= esc_html($title);?></h1>
+            <h1 class="from-left" <?= $styleH1;?>><?= esc_html($title);?></h1>
         </div>
         <div class="col cold">
             <div class="block-cta from-right">

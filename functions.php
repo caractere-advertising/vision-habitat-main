@@ -105,6 +105,7 @@ function register_menus() {
     ]);
 }
 
+
 add_action('after_setup_theme', 'register_menus');
 
 function return_post(){
@@ -119,3 +120,4 @@ function vision_habitat_enqueue() {
 }
 
 add_action('wp_enqueue_scripts', 'vision_habitat_enqueue');
+
