@@ -1,21 +1,23 @@
 <?php
-$paged = get_query_var('paged') ? get_query_var('paged') : 1;
-$query = new WP_Query([
+$current_cat = isset($_GET['cat']) ? $_GET['cat'] : '';
+$paged       = get_query_var('paged') ?: 1;
+
+$args = [
     'post_type'      => 'post',
     'posts_per_page' => 5,
     'paged'          => $paged,
-    'category_name'           => $cat,  
-]);
+];
+
+if($current_cat){
+    $args['category_name'] = $current_cat;
+}
+
+$query = new WP_Query($args);
 ?>
 <section class="section-actu section_actu_2_cards container">
-    <?php wp_nav_menu([
-        'theme_location'  => 'menu-actu',
-        'container'       => 'nav',
-        'container_class' => 'actu-nav',
-        'menu_class'      => 'actu-nav-list',
-    ]); ?>
 
-    <?php var_dump(get_categories());?>
+<?php get_template_part('templates-parts/block-builder/actu-nav'); ?>
+  
 
     <!--
     Boucle sur les categories
@@ -42,10 +44,10 @@ $query = new WP_Query([
                 }
                 ?>
 
-                <article class="actu-card<?= $class; ?> from-bottom">
+                <article class="actu-card<?php $class; ?> from-bottom">
                     <div class="actu-card-img">
                         <?php if ($image) : ?>
-                            <img src="<?= esc_url($image); ?>" alt="<?= esc_attr($paragraph); ?>">
+                            <img src="<?php echo esc_url($image); ?>" alt="<?php esc_attr($paragraph); ?>">
                         <?php endif; ?>
 
                         <?php if ($lien) : ?>
@@ -69,9 +71,10 @@ $query = new WP_Query([
         endif; ?>
     </div>
     <div class="actu-pagination">
-        <?php echo paginate_links([
-            'total'   => $query->max_num_pages,
-            'current' => $paged,
+     <?php echo paginate_links([
+            'total'    => $query->max_num_pages,
+            'current'  => $paged,
+            'add_args' => $current_cat ? ['cat' => $current_cat] : [],
         ]); ?>
     </div>
 </section>

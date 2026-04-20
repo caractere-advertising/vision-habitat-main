@@ -1,24 +1,6 @@
 @use "./../variables/colors.scss" as *;
 @use "./../variables/base.scss" as *;
 
-.actu-nav {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-    .actu-nav-list {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        text-transform: uppercase;
-        .menu-item a {
-            color: $lightGray;
-            text-decoration: none;
-            &:hover {
-                color: $secondaryColor;
-            }
-        }
-    }
-}
 
 .section_actu_2_cards {
     .actu-title {
@@ -81,3 +63,4 @@
         }
     }
 }
+

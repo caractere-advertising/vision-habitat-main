@@ -6,7 +6,7 @@
 $title = get_sub_field('title');
 $link  = get_sub_field('link');
 
-// La fonction est gérée dans /includes/setup.php
+
 $query = getPosts('post');
 $taxonomies   = get_categories();
 

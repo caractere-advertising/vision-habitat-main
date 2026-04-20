@@ -49,16 +49,17 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 </div>
             <?php endif; ?>
             
-            <?php if ($burger_socials) : ?>
-                <div class="menu-burger-socials from-left">
-                    <?php foreach ($burger_socials as $social) :?>
-                        <a href="<?= ($social['lien']) ?>">
-                            <img src="<?= ($social['logo']['url']) ?>" alt="<?= ($social['logo']['title']) ?>">
-                        </a>
-                    <?php endforeach; ?>
-                </div>
-                
-            <?php endif; ?>
+           <?php if ($burger_socials) : ?>
+    <div class="menu-burger-socials from-left">
+        <?php foreach ($burger_socials as $social) : ?>
+            <a href="<?= $social['lien']; ?>">
+                <?php if ($social['logo']) : ?>
+                    <img src="<?= $social['logo']['url']; ?>" alt="<?= $social['logo']['title']; ?>">
+                <?php endif; ?>
+            </a>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
         </div>
     </div>
 

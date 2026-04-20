@@ -1,0 +1,21 @@
+@use "./../variables/colors.scss" as *;
+
+.actu-nav {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    .actu-nav-list {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-transform: uppercase;
+        li a {
+            color: $lightGray;
+            text-decoration: none;
+            font-size: 2rem;
+            &:hover {
+                color: $secondaryColor;
+            }
+        }
+    }
+}

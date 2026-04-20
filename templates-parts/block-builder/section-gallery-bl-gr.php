@@ -1,38 +1,38 @@
 <?php
 $card = get_sub_field('card');
+if (!$card) return;
+$first = $card[0];
 // Champs : slides (répéteur)
 //    image (image), titre (texte),ss-titre(texte), paragraph (wysiwyg)
+
+//modif car swipper sur la partie photo
 
 ?>
 
 <div class="section-gallery-bl-gr">
-    <?php foreach ($card as $c) :
-        $image     = $c['image'];
-        $titre     = $c['titre'];
-        $ssTitre   = $c['ss-titre'];
-        $paragraph = $c['paragraph'];
-    ?>
-    <div class="gallery">
-        <div class="card">
-            <div class="gallery-image">
-                <?php if ($image) : ?>
-                    <img src="<?= esc_url($image['url']); ?>" alt="<?= esc_attr($image['alt']); ?>">
-                <?php endif; ?>
-            </div>
-            <div class="gallery-info">
-                <div class="top">
-                    <?php if ($titre) : ?>
-                        <p class="gallery-titre"><?= esc_html($titre); ?></p>
-                    <?php endif; ?>
-                    <?php if ($ssTitre) : ?>
-                        <div class="gallery-ssTitre"><?= $ssTitre; ?></div>
-                    <?php endif; ?>
+    <div class="card">
+
+        <div class="gallery-image">
+            <div class="swiper swiper-photo">
+                <div class="swiper-wrapper">
+                    <?php foreach ($card as $c) : ?>
+                        <div class="swiper-slide">
+                            <img src="<?= esc_url($c['image']['url']); ?>" alt="<?= esc_attr($c['image']['alt']); ?>">
+                        </div>
+                    <?php endforeach; ?>
                 </div>
-                <div class="gallery-paragraph">
-                    <?php echo $paragraph; ?>
-                </div>
+                
+                <div class="swiper-scroll-gallery-photo"></div>
             </div>
         </div>
+
+        <div class="gallery-info">
+            <div class="top">
+                <p class="gallery-titre"><?= esc_html($first['titre']); ?></p>
+                <div class="gallery-ssTitre"><?= $first['ss-titre']; ?></div>
+            </div>
+            <div class="gallery-paragraph"><?= $first['paragraph']; ?></div>
+        </div>
+
     </div>
-    <?php endforeach; ?>
 </div>

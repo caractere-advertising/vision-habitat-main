@@ -1782,6 +1782,51 @@ const swiperSurMesure = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swi
 
 /***/ },
 
+/***/ "./src/js/swipper_gallery_two_col.js"
+/*!*******************************************!*\
+  !*** ./src/js/swipper_gallery_two_col.js ***!
+  \*******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
+/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
+/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.css");
+/* harmony import */ var swiper_css_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/css/navigation */ "./node_modules/swiper/modules/navigation.css");
+/* harmony import */ var swiper_css_pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/css/pagination */ "./node_modules/swiper/modules/pagination.css");
+
+
+
+
+
+
+
+const swiperPhoto = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"] (".swiper-photo",{
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+
+    navigation:{
+        nextEl:".gallery-next",
+        prevEl:".gallery-prev"
+    },
+
+    pagination:{
+        el:".swiper-pag-photo",
+        clickable:true,
+        type:"bullets",
+    },
+
+    slidesPerView:1,
+    scrollbar:{
+        el:".swiper-scroll-gallery-photo",
+
+    },
+    loop:true,
+    speed:600,
+});
+
+/***/ },
+
 /***/ "./node_modules/simple-parallax-js/dist/vanilla/simpleParallaxVanilla.es.js"
 /*!**********************************************************************************!*\
   !*** ./node_modules/simple-parallax-js/dist/vanilla/simpleParallaxVanilla.es.js ***!
@@ -12671,6 +12716,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_filter_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_filter_js__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _js_animate_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/animate.js */ "./src/js/animate.js");
 /* harmony import */ var _js_animate_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_animate_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _js_swipper_gallery_two_col_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/swipper_gallery_two_col.js */ "./src/js/swipper_gallery_two_col.js");
+
 
 
 

@@ -3,22 +3,54 @@
 @use "./../variables/fonts.scss" as *;
 @use "./../variables/cta.scss" as *;
 
-.section-gallery-bl-gr{
-    .card{
+.section-gallery-bl-gr {
+
+    .card {
         display: grid;
         grid-template-columns: 50% 50%;
         min-height: 500px;
-    }   
+    }
 
-    .gallery-image{
-        img{
+    .gallery-image {
+        position: relative;
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
 
-    .gallery-info{
+    .swiper-photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-pag-photo {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+
+        .swiper-pagination-bullet {
+             width: 10px;
+      height: 10px;
+      border: 1px solid $white;
+      background: transparent;
+      opacity: 1;
+      margin: 0;
+      transition: background-color 0.25s ease;
+        
+
+      
+    }
+    }
+
+
+
+    
+    .gallery-info {
         background-color: $lightGray;
         display: flex;
         flex-direction: column;
@@ -27,23 +59,25 @@
         text-align: right;
         padding: 80px;
 
-        .gallery-titre{
+        .gallery-titre {
             color: $primaryColor;
             text-transform: uppercase;
             font-size: 3rem;
             margin-bottom: 50px;
         }
-        .gallery-ssTitre{
-            p{
+
+        .gallery-ssTitre {
+            p {
                 color: $primaryColor;
-                font-size: 2.5rem ;
+                font-size: 2.5rem;
                 line-height: 1.2;
             }
         }
 
-        .gallery-paragraph{
+        .gallery-paragraph {
             color: $primaryColor;
             width: 350px;
         }
     }
 }
+
