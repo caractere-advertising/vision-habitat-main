@@ -170,11 +170,7 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .section-actu .actu-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 @media (max-width: 768px) {
   .section-actu {
@@ -185,6 +181,11 @@
 
     .actu-grid {
       grid-template-columns: 1fr;
+      margin: 40px auto 30px;
+    }
+
+    .actu-card:first-child {
+      grid-column: span 1;
     }
   }
 }

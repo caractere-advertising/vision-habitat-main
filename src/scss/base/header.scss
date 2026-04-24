@@ -290,18 +290,21 @@
   }
 }
 
-// Responsive
+
 
 @media (max-width: 768px) {
   .site-header {
     padding: 20px;
-  }
+    width: 100%;
 
-  .header-nav {
-    display: none;
-  }
+    .header-inner {
+      .header-nav {
+        display: none;
+      }
 
-  .header-separator {
-    display: none;
+      .header-separator {
+        display: none;
+      }
+    }
   }
 }

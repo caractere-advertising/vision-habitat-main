@@ -171,19 +171,23 @@
 // ── Responsive
 
 @media (max-width: 768px) {
-  .projects-inner {
-    grid-template-columns: 100%;
-  }
+   .projects-left {
+    padding: 40px 5%;
 
-  .projects-right {
-    min-height: 300px;
-  }
+    .block-txt {
+      .projects-title {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+      }
 
-  .projects-left {
-    padding: 50px;
+      .projects-paragraph {
+        width: 100%;
+      }
+    }
   }
 
   .projects-controls {
     padding: 20px;
+    width: 90vw;
   }
 }

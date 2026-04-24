@@ -64,3 +64,33 @@
     }
 }
 
+@media (max-width: 768px) {
+      .actu-nav {
+            padding: 24px 0;
+  
+            .actu-nav-list {
+                 gap: 8px;
+          }
+        }
+      
+       .section_actu_2_cards {
+        .actu-grid {
+                 grid-template-columns: 1fr;
+      
+             .actu-card {
+                  max-height: none;
+                   padding-bottom: 40px;
+   
+                      &:first-child {
+                        grid-column: span 1;
+                    }
+               }
+            }
+   
+           .actu-pagination {
+               margin-top: 32px;
+         }
+        }
+     }
+
+

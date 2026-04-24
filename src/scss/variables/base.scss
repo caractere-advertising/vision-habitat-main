@@ -38,3 +38,20 @@
     object-fit: cover;
   }
 }
+
+
+@media screen and (max-width:768px){
+  .container {
+
+  &.flex {
+    flex-direction: column;
+
+    @for $i from 1 through 100 {
+      .col-#{$i} {
+        width: 100%;
+      }
+    }
+  }
+}
+
+}

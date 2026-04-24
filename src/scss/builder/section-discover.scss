@@ -82,30 +82,33 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .section-discover {
-    .discover-right {
-      padding: 50px 40px;
-    }
-  }
-}
+
 
 @media (max-width: 768px) {
   .section-discover {
+
+    .container{
     flex-direction: column;
+    min-height: 400px;
 
     .discover-left {
       width: 100%;
-      min-height: 300px;
+      min-height: 260px;
     }
 
     .discover-right {
       width: 100%;
-      padding: 50px 5%;
+      padding: 40px 5% 80px;
+      h2{
+        font-size: 2.2rem;
+        line-height: 1.2;
+      }
 
       .discover-btn {
         align-self: flex-start;
+        width: 60%;
       }
     }
   }
+}
 }

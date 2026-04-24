@@ -43,3 +43,21 @@
 
 
 }
+
+@media (max-width: 768px) {
+  .section_actu_citation {
+    margin-top: 40px;
+
+    .citation_container {
+      .citation_text h2 {
+        font-size: 2rem;
+        text-indent: 0;
+      }
+
+      .citation_nom {
+        text-align: left;
+        margin-top: 20px;
+      }
+    }
+  }
+}

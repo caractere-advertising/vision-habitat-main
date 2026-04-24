@@ -13,7 +13,7 @@
                 <div class="swiper-slide flex">
                     <div class="colg col-50">
                         <div class="block-img">
-                            <img src="<?= $image['url'];?>" alt="<?= $image['title'];?>"/>
+                            <?php if($image):?><img src="<?= $image['url'];?>" alt="<?= $image['title'];?>"/><?php endif;?>
                         </div>
                    </div>
 

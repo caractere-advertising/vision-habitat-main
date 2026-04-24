@@ -33,7 +33,7 @@ $borderLeft ? $class = "card -left" : $class="card";
                 <div class="<?= $class;?>" <? echo $i == 0 ? $rowStart : '';?>>
                     <div class="content-card">
                         <div class="block-img">
-                            <img src="<?= $icon['url'];?>" alt="<?= $icon['title'];?>"/>
+                            <?php if($icon):?><img src="<?= $icon['url'];?>" alt="<?= $icon['title'];?>"/><?php endif;?>
                         </div>
                         <h3><?= $label;?></h3>
                         <?php if($lien):?>

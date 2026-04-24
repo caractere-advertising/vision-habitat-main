@@ -10,8 +10,6 @@ $link     = get_sub_field('link');
 $signTop  = get_sub_field('signature_top');
 $blueActif = get_sub_field('blue_activated');
 
-echo $signTop;
-
 ?>
 
 <section class="section-citation">

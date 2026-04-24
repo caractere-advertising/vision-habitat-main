@@ -39,7 +39,11 @@
 
 }
 
-.two-col-img-right{
-    
 }
+
+@media (max-width: 768px) {
+.col-50{
+    width: 100%;
+}
+
 }

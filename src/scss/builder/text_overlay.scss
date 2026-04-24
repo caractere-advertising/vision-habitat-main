@@ -53,3 +53,32 @@
     gap: 50px;
   }
 }
+
+@media (max-width: 768px) {
+    .section-text-overlay {
+        margin: 60px auto;
+
+        .container.flex {
+            width: 100%;
+            align-items: flex-start;
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .container_overlay {
+                margin-top: 60px;
+                height: 300px;
+            }
+        }
+
+        .content_overlay {
+            position: relative;
+            bottom: auto;
+            right: auto;
+            width: 100%;
+            padding: 32px 24px;
+            gap: 24px;
+        }
+    }
+}

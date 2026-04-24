@@ -144,11 +144,24 @@
 }
 
 @media (max-width: 768px) {
-  .swiper-gallery .swiper-slide {
-    width: 85%;
-  }
+    .swiper-gallery .swiper-slide .gallery-info {
+        width: 35%;
+        height: 35%;
+        min-width: unset;
+        min-height: unset;
+        padding: 20px;
 
-  .gallery-nav {
-    right: 2%;
-  }
+        .gallery-description{
+          font-size: 0.8rem;
+          line-height: 0.9;
+          padding-top: 8px;
+        }
+    }
+
+    .gallery-nav {
+        right: 2%;
+
+    
+    }
+    
 }

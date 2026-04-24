@@ -154,3 +154,47 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .section-step {
+    padding: 60px 0;
+    h2{
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    .content-title {
+      margin-left: 0;
+    }
+
+    .slider-layout {
+      margin-top: 40px;
+    }
+
+    .slide-inner {
+      flex-direction: column;
+      gap: 30px;
+      min-height: auto;
+
+      .colg {
+        width: 100%;
+
+        .block-img {
+          height: 300px;
+          transform: translateX(0);
+        }
+      }
+
+      .cold {
+        width: 100%;
+        transform: translateX(0);
+      }
+    }
+
+    .block-navigation {
+      position: static;
+      flex-direction: row;
+      margin-top: 30px;
+    }
+  }
+}

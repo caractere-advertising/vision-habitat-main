@@ -127,3 +127,39 @@ opacity: 1;
 visibility: visible;
     }
 }
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 60px 5%;
+    margin-top: 60px;
+
+    .footer-top {
+      flex-direction: column;
+      gap: 40px;
+
+      .footer-left {
+        width: 100%;
+
+        .footer-titre p {
+          font-size: 2.2rem;
+          line-height: 1.3;
+        }
+
+        .footer-arrow {
+          margin-left: 0;
+        }
+      }
+
+      .footer-right {
+        width: 100%;
+        padding-top: 0;
+      }
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+  }
+}

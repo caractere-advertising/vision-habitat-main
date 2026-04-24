@@ -81,3 +81,44 @@
     }
 }
 
+@media (max-width: 768px) {
+    .section-gallery-bl-gr{
+        .card{
+            grid-template-columns: 1fr;
+        }
+        .gallery-image{
+            min-height: 280px;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .swiper-photo,
+        .swiper-slide,
+        .swiper-slide img {
+            height: 280px;
+        }
+
+        .gallery-info{
+            padding: 20px 24px;
+            align-items: start;
+            text-align: left;
+             .gallery-titre { 
+                font-size: 1.6rem; 
+                padding: 24px;
+            }
+            .gallery-ssTitre p {
+                 font-size: 1.8rem; 
+                 padding: 24px;
+                }
+            .gallery-paragraph {
+                 width: 50%; 
+                 padding: 24px;
+                 padding-left: 24px;
+                }
+        
+        }
+    }
+    
+}
