@@ -9,11 +9,7 @@ $texte  = get_sub_field('texte');
 <section class="section-partenaire-sur-mesure">
     <div class="container -large flex">
         <div class="colg col-50">
-<<<<<<< HEAD
-            <div class="swiper swiper-partenaire">
-=======
             <div class="swiper swiper-partenaire-sur-mesure">
->>>>>>> blog/Actu
                 <div class="swiper-wrapper">
                     <?php if($slides):
                         foreach ($slides as $s):?>
