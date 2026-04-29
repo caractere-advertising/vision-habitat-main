@@ -1,6 +1,128 @@
 @use "./../variables/colors.scss" as *;
 @use "./../base/animations.scss" as *;
 
+
+// .section-references {
+//   background-color: $white;
+//   padding: 80px 0;
+
+//     .ref-grid {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//       gap: 50px 30px;
+//       align-items: start;
+
+//       .ref-card {
+//         transform: scale(1);
+//         opacity: 1;
+//         transition:
+//         transform 0.3s ease,
+//         opacity 0.3s ease;
+//         transform-origin: center;
+
+//           .ref-card-plus {
+//             position: absolute;
+//             bottom: 0;
+//             right: 0;
+//             width: 50px;
+//             height: 50px;
+//           }
+
+//           .ref-card-cat {
+//             display: block;
+//             font-size: 0.7rem;
+
+//             .actu-card-cat {
+//               display: block;
+//               font-size: 0.65rem;
+
+//               letter-spacing: 0.15em;
+//               text-transform: uppercase;
+//               color: $secondaryColor;
+//               margin-bottom: 10px;
+//               cursor: pointer;
+//             }
+
+
+//             .ref-card-text {
+//               font-size: 1rem;
+//               line-height: 1.6;
+//               color: $txtColor;
+//               cursor: pointer;
+//               font-weight: 600;
+//             }
+
+//             &:hover {
+//               .ref-card-img {
+//                 img {
+//                   transform: scale(1.05);
+//                   filter: brightness(0.6);
+//                 }
+//               }
+
+//               .ref-card-plus {
+//                 background-color: $primaryColor;
+//                 color: $white;
+
+//                 .btn-plus-icon {
+//                   @include rotate-180;
+//                 }
+//               }
+//             }
+
+//             .actu-card-text {
+//               font-size: 0.9rem;
+//               line-height: 1.6;
+//               color: $txtColor;
+//               cursor: pointer;
+//             }
+
+//             &:first-child {
+//               grid-column: span 2;
+//               aspect-ratio: inherit;
+
+//             }
+
+//             &:hover {
+//               .actu-card-img {
+//                 img {
+//                   transform: scale(1.05);
+//                   filter: brightness(0.6);
+//                 }
+//               }
+
+//               .actu-card-plus {
+//                 background-color: $primaryColor;
+//                 color: $white;
+
+//                 .btn-plus-icon {
+//                   @include rotate-180;
+//                 }
+//               }
+//             }
+
+//             &.is-hidden {
+//               transform: scale(0.8);
+//               opacity: 0;
+//               pointer-events: none;
+//             }
+
+//             &.is-gone {
+//               display: none;
+//             }
+//           }
+//       }
+//     }
+   
+//     .ref-btn-wrap {
+//     display: flex;
+//     justify-content: center;
+
+//       .ref-btn {}
+//     }
+//   }   
+
+
 .section-actu {
   background-color: $white;
   padding: 30px 0 80px 0;
@@ -16,8 +138,6 @@
       font-weight: 700;
     }
   }
-
-  /* Ajout filtre */
 
   .section-filter {
     display: flex;
@@ -41,25 +161,21 @@
     }
   }
 
-  /***************/
 
   .actu-grid {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 100px auto 50px;
     align-items: start;
-  }
 
   .actu-card {
-    transform: scale(1);
-    opacity: 1;
-    transition:
-      transform 0.3s ease,
-      opacity 0.3s ease;
-    transform-origin: center;
+    padding: 100px 0;
 
     .actu-card-img {
+      padding-bottom: 20px;
+      border-bottom: 1px solid $lightGray;
       position: relative;
       background-color: $lightGray;
       height: 250px;
@@ -67,14 +183,15 @@
       margin-bottom: 15px;
       cursor: pointer;
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        transform: scale(1);
-        filter: brightness(1);
-        transition: all ease-in 200ms;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          transform: scale(1);
+          filter: brightness(1);
+          transition: all ease-in 200ms;
+        }
       }
 
       .actu-card-plus {
@@ -91,62 +208,6 @@
         font-size: 1.5rem;
         text-decoration: none;
       }
-    }
-
-    .actu-card-cat {
-      display: block;
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: $secondaryColor;
-      margin-bottom: 10px;
-      cursor: pointer;
-    }
-
-    .actu-card-text {
-      font-size: 0.9rem;
-      line-height: 1.6;
-      color: $txtColor;
-      cursor: pointer;
-    }
-
-    &:first-child {
-      grid-column: span 2;
-      aspect-ratio: inherit;
-    }
-
-    &:hover {
-      .actu-card-img {
-        img {
-          transform: scale(1.05);
-          filter: brightness(0.6);
-        }
-      }
-
-      .actu-card-plus {
-        background-color: $primaryColor;
-        color: $white;
-
-        .btn-plus-icon {
-          @include rotate-180;
-        }
-      }
-    }
-
-   // .actu-pagination{
-     // di
-    //}
-
-    /*** Animation ***/
-
-    &.is-hidden {
-      transform: scale(0.8);
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    &.is-gone {
-      display: none;
     }
   }
 
@@ -171,6 +232,11 @@
 }
 
 
+@media (max-width: 1024px) {
+  .section-ref .ref-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 768px) {
   .section-actu {
@@ -178,6 +244,13 @@
     padding-bottom: 50px;
     padding-left: 5%;
     padding-right: 5%;
+
+
+    .ref-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
 
     h2{
       font-size: 2rem;
@@ -193,4 +266,3 @@
       grid-column: span 1;
     }
   }
-}
