@@ -6,8 +6,14 @@
 $title = get_sub_field('title');
 $link  = get_sub_field('link');
 
+$query = new WP_Query([
+    'post_type'      => 'post',
+    'posts_per_page' => 3,
+    'post_status'    => 'publish',
+    'orderby'        => 'date',
+    'order'          => 'DESC',
+]);
 
-$query = getPosts('post');
 $taxonomies   = get_categories();
 
 ?>

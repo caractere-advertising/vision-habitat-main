@@ -43,13 +43,15 @@
   .section-service-header {
     .container {
       flex-direction: column;
+      justify-items: center;
       width: 90vw;
       gap: 40px;
 
       .colg h1 {
         font-size: 3rem;
         line-height: 1.1;
-        padding-right: 0;
+        padding-right: 20px;
+         text-align: center;
         padding-top: 10px;
       }
 

@@ -13,7 +13,7 @@
 }
 
 .img-col {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .img-wrapper {
@@ -109,6 +109,7 @@
   .text-col-title {
     font-size: 3rem;
     line-height: 3rem;
+    
   }
 }
 
@@ -121,10 +122,22 @@
       grid-template-columns: 100%;
       gap: 60px;
       margin: 0 5%;
+
+       .text-col-title {
+    font-size: 1rem;
+    line-height: 3rem;
+  }
     }
+
+     .text-col-title h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+   
   }
 
   .img-col {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
 }

@@ -126,6 +126,7 @@
 
 @media (max-width: 768px){
   .section-galerie-vertical {
+       min-height: 100vh;
 
   .swiper-vertical {
     max-height: 100vh;
@@ -145,30 +146,30 @@
           height: 100%;
 
           .block-img {
-            height: 100%;
+            height: 80%;
             width: 95%;
           }
         }
 
-        .cold {
-          padding-left: 0;
+       .cold {
+  padding: 0 10px;
+  
+  overflow: visible;
 
-          .content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 90%;
+  .content {
+    width: 100%;
+    gap: 20px;
 
-            h2{
-              font-size: 2rem;
-              line-height: 2.5rem;
-            }
+    h2 {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
 
-            p {
-              text-align: left;
-            }
-          }
-        }
+    .btn-cta {
+      white-space: nowrap;
+    }
+  }
+}
       }
     }
 

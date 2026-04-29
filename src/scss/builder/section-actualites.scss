@@ -179,6 +179,11 @@
     padding-left: 5%;
     padding-right: 5%;
 
+    h2{
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
     .actu-grid {
       grid-template-columns: 1fr;
       margin: 40px auto 30px;

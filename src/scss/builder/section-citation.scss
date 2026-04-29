@@ -90,19 +90,15 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .citation-block {
-    padding: 50px;
-  }
 
-  .citation-blue .citation-blue-inner {
-    padding: 50px;
-  }
-}
 
 @media (max-width: 768px) {
   .section-citation {
     flex-direction: column;
+    h2{
+      font-size: 2rem;
+      line-height: 1.2;
+    }
   }
 
   .citation-block {

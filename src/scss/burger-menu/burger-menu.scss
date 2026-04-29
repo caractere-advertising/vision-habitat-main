@@ -258,8 +258,11 @@
       }
 
       img{
-        height: 150px;
-        width: 150px;
+        
+        //display: none;
+        z-index: 0;
+        //height: 150px;
+        //width: 150px;
       }
     }
 
@@ -279,17 +282,17 @@
           }
 
           &.big-menu {
-            font-size: 1.8rem;
-            line-height: 2rem;
+            font-size: 1.5rem;
+            line-height: 1.2;
           }
 
           &.bg-menu-small {
-            font-size: 1.4rem;
-            line-height: 1.8rem;
+            font-size: 1.2rem;
+            line-height: 1.1rem;
           }
 
           &.bg-menu-gold {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
           }
         }
       }

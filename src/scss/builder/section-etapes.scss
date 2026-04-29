@@ -134,25 +134,7 @@
     background: $txtColor;
   }
 
-  @media (max-width: 991px) {
-    .content-title,
-    .slide-inner {
-      grid-template-columns: 1fr;
-      gap: 30px;
-    }
-
-    .block-navigation {
-      position: static;
-      transform: none;
-      flex-direction: row;
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-
-    .colg .block-img {
-      max-width: 100%;
-    }
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -183,6 +165,13 @@
           height: 300px;
           transform: translateX(0);
         }
+
+      
+
+
+
+   
+  
       }
 
       .cold {
@@ -195,6 +184,15 @@
       position: static;
       flex-direction: row;
       margin-top: 30px;
+
+        
+
+  .swiper-step-prev,
+  .swiper-step-next {
+    width: 60px;
+    height: 60px;
+   
+    }
     }
   }
 }
