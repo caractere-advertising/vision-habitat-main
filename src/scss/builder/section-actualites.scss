@@ -1,16 +1,9 @@
 @use "./../variables/colors.scss" as *;
 @use "./../base/animations.scss" as *;
 
-<<<<<<< HEAD
-.section-references {
-  background-color: $white;
-<<<<<<<< HEAD:src/scss/builder/section-actualites.scss
-  padding: 80px 0;
-=======
 .section-actu {
   background-color: $white;
   padding: 30px 0 80px 0;
->>>>>>> blog/Actu
 
   .actu-title {
     color: $primaryColor;
@@ -52,52 +45,21 @@
 
   .actu-grid {
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: repeat(4, 1fr);
-=======
     grid-template-columns: repeat(3, 1fr);
->>>>>>> blog/Actu
     gap: 30px;
     margin: 100px auto 50px;
     align-items: start;
   }
 
   .actu-card {
-<<<<<<< HEAD
-========
-  padding: 100px 0;
-
-  .ref-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px 30px;
-    align-items: start;
-  }
-
-  .ref-card {
->>>>>>>> blog/Actu:src/scss/builder/section-references.scss
-=======
->>>>>>> blog/Actu
     transform: scale(1);
     opacity: 1;
     transition:
       transform 0.3s ease,
       opacity 0.3s ease;
     transform-origin: center;
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/scss/builder/section-actualites.scss
 
     .actu-card-img {
-========
-    padding-bottom: 20px;
-    border-bottom: 1px solid $lightGray;
-
-    .ref-card-img {
->>>>>>>> blog/Actu:src/scss/builder/section-references.scss
-=======
-
-    .actu-card-img {
->>>>>>> blog/Actu
       position: relative;
       background-color: $lightGray;
       height: 250px;
@@ -115,44 +77,25 @@
         transition: all ease-in 200ms;
       }
 
-<<<<<<< HEAD
-      .ref-card-plus {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 50px;
-        height: 50px;
-=======
       .actu-card-plus {
         position: absolute;
         bottom: 0;
         right: 0;
         width: 80px;
         height: 80px;
->>>>>>> blog/Actu
         background-color: $white;
         color: $primaryColor;
         display: flex;
         align-items: center;
         justify-content: center;
-<<<<<<< HEAD
-        font-size: 1.2rem;
-=======
         font-size: 1.5rem;
->>>>>>> blog/Actu
         text-decoration: none;
       }
     }
 
-<<<<<<< HEAD
-    .ref-card-cat {
-      display: block;
-      font-size: 0.7rem;
-=======
     .actu-card-cat {
       display: block;
       font-size: 0.65rem;
->>>>>>> blog/Actu
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: $secondaryColor;
@@ -160,32 +103,6 @@
       cursor: pointer;
     }
 
-<<<<<<< HEAD
-    .ref-card-text {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: $txtColor;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    &:hover {
-      .ref-card-img {
-        img {
-          transform: scale(1.05);
-          filter: brightness(0.6);
-        }
-      }
-
-      .ref-card-plus {
-        background-color: $primaryColor;
-        color: $white;
-
-        .btn-plus-icon {
-          @include rotate-180;
-        }
-      }
-=======
     .actu-card-text {
       font-size: 0.9rem;
       line-height: 1.6;
@@ -196,7 +113,6 @@
     &:first-child {
       grid-column: span 2;
       aspect-ratio: inherit;
->>>>>>> blog/Actu
     }
 
     &:hover {
@@ -217,13 +133,10 @@
       }
     }
 
-<<<<<<< HEAD
-=======
    // .actu-pagination{
      // di
     //}
 
->>>>>>> blog/Actu
     /*** Animation ***/
 
     &.is-hidden {
@@ -237,19 +150,11 @@
     }
   }
 
-<<<<<<< HEAD
-  .ref-btn-wrap {
-    display: flex;
-    justify-content: center;
-
-    .ref-btn {
-=======
   .actu-btn-wrap {
     display: flex;
     justify-content: center;
 
     .actu-btn {
->>>>>>> blog/Actu
       display: inline-block;
       background-color: $primaryColor;
       color: $white;
@@ -265,33 +170,15 @@
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 1024px) {
-  .section-ref .ref-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .section-ref {
-=======
 
 
 @media (max-width: 768px) {
   .section-actu {
->>>>>>> blog/Actu
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 5%;
     padding-right: 5%;
 
-<<<<<<< HEAD
-    .ref-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-=======
     h2{
       font-size: 2rem;
       line-height: 1.2;
@@ -307,4 +194,3 @@
     }
   }
 }
->>>>>>> blog/Actu
