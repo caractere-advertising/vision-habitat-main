@@ -146,11 +146,18 @@
 
 // Responsive
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .swiper-fullwidth {
     .swiper-slide .content {
-      left: 7%;
-      max-width: 75%;
+      
+      width: 90%;
+
+       .content-titre {
+                font-size: 5rem;
+                line-height: 4rem;
+                margin-bottom: 80px;
+            }
+      
     }
   }
 }

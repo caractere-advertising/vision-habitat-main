@@ -1,0 +1,63 @@
+
+@use "./../variables/base.scss" as *;
+@use "./../variables/colors.scss" as *;
+@use "./../variables/fonts.scss" as *;
+@use "./../variables/cta.scss" as *;
+
+.section_actu_citation{
+    display: flex;
+    flex-direction: column;
+    margin-top:150px ;
+    .citation_container{
+        //display: flex;
+        align-items: center;
+
+        .citation_text{
+            h2{ color: $primaryColor;
+            text-indent: 200px;
+            font-size: 4rem;
+            line-height: 1;
+        
+            em{
+                font-style: normal;
+                color: $lightGray;
+            }
+        }
+           
+        }
+
+        .citation_nom {
+            
+                color: $primaryColor;
+            font-size: 1.2rem;
+            text-align: end;
+        
+            
+        }
+
+
+    }
+
+
+
+
+
+}
+
+@media (max-width: 768px) {
+  .section_actu_citation {
+    margin-top: 40px;
+
+    .citation_container {
+      .citation_text h2 {
+        font-size: 2rem;
+        text-indent: 0;
+      }
+
+      .citation_nom {
+        text-align: left;
+        margin-top: 20px;
+      }
+    }
+  }
+}

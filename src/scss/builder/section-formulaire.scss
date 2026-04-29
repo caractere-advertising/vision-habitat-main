@@ -109,3 +109,31 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .section-formulaire-contact {
+    padding: 60px 0;
+
+    .container {
+      flex-direction: column;
+      gap: 40px;
+
+      .col-35,
+      .col-65 {
+        width: 100%;
+      }
+
+      .col-35 .block-contact {
+        margin-top: 0;
+      }
+
+      .col-65 form {
+        margin-top: 0;
+
+        .content.-flex p {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

@@ -13,11 +13,11 @@ const swiperGallery = new Swiper(".swiper-gallery", {
     prevEl: ".gallery-prev",
   },
 
-  pagination: {
-    el: ".swiper-pagination-gallery",
-    clickable: true,
-    type: "bullets",
-  },
+    pagination: {
+        el: '.swiper-pagination-gallery',
+        clickable: true,
+        type:'bullets'
+    },
 
   slidesPerView: 1.2,
   scrollbar: {

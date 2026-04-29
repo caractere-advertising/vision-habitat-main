@@ -1,0 +1,37 @@
+@use "./../variables/colors.scss" as *;
+
+.actu-nav {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    .actu-nav-list {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-transform: uppercase;
+        li a {
+            color: $lightGray;
+            text-decoration: none;
+            font-size: 2rem;
+            &:hover {
+                color: $secondaryColor;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+  .actu-nav {
+    padding: 20px 0;
+
+    .actu-nav-list {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+
+      li a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

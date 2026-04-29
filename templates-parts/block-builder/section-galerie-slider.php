@@ -1,6 +1,5 @@
-
 <?php
-// Layout ACF : à définir dans builder.php
+// Layout ACF 
 // Champs : slides (répéteur)
 //    image (image), titre (texte), description (texte)
 

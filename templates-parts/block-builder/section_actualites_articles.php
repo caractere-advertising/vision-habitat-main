@@ -1,40 +1,32 @@
 <?php
-// Layout ACF : block_actu
-// Champs : title (wysiwyg), link (lien)
-// Répéteur : articles -> image (image), category (texte), paragraph (texte), lien (lien)
+$current_cat = isset($_GET['cat']) ? $_GET['cat'] : '';
+$paged       = get_query_var('paged') ?: 1;
 
-$title = get_sub_field('title');
-$link  = get_sub_field('link');
-
-$query = new WP_Query([
+$args = [
     'post_type'      => 'post',
-    'posts_per_page' => 3,
-    'post_status'    => 'publish',
-    'orderby'        => 'date',
-    'order'          => 'DESC',
-]);
+    'posts_per_page' => 5,
+    'paged'          => $paged,
+];
 
-$taxonomies   = get_categories();
+if($current_cat){
+    $args['category_name'] = $current_cat;
+}
 
+$query = new WP_Query($args);
 ?>
+<section class="section-actu section_actu_2_cards container">
 
-<section class="section-actu container">
+<?php get_template_part('templates-parts/block-builder/actu-nav'); ?>
+  
 
-    <?php if($title): ?>
-        <div class="actu-title from-bottom"><?= $title; ?></div>
-    <?php endif; ?>
+    <!--
+    Boucle sur les categories
+    -> bouton = http://vision.local/blog-actu/page/2/?&cat=ID_CATEGORY 
 
-    <?php if(!is_front_page()): ?>
-        <div class="section-filter">
-            <button class="btn-filter active" data-filter="all">TOUS</button>
-            <?php foreach($taxonomies as $tax):?>
-                <button class="btn-filter filter-<?= esc_html($tax->slug);?>" data-filter="<?= esc_html($tax->slug);?>">
-                    <?= $tax->name;?>
-                </button>
-            <?php endforeach;?>
-        </div>
-    <?php endif;?>
+    get_query_var('cat') : '';
 
+
+-->
     <div class="actu-grid">
        <?php if ($query->have_posts()) :
             while ($query->have_posts()) : $query->the_post();
@@ -52,10 +44,10 @@ $taxonomies   = get_categories();
                 }
                 ?>
 
-                <article class="actu-card<?= $class; ?> from-bottom">
+                <article class="actu-card<?php $class; ?> from-bottom">
                     <div class="actu-card-img">
                         <?php if ($image) : ?>
-                            <img src="<?= esc_url($image); ?>" alt="<?= esc_attr($paragraph); ?>">
+                            <img src="<?php echo esc_url($image); ?>" alt="<?php esc_attr($paragraph); ?>">
                         <?php endif; ?>
 
                         <?php if ($lien) : ?>
@@ -78,11 +70,11 @@ $taxonomies   = get_categories();
             wp_reset_postdata();
         endif; ?>
     </div>
-
-    <?php if ($link) : ?>
-        <div class="actu-btn-wrap">
-            <a href="<?= esc_url($link['url']); ?>" class="actu-btn"><?= esc_html($link['title']); ?></a>
-        </div>
-    <?php endif; ?>
-
+    <div class="actu-pagination">
+     <?php echo paginate_links([
+            'total'    => $query->max_num_pages,
+            'current'  => $paged,
+            'add_args' => $current_cat ? ['cat' => $current_cat] : [],
+        ]); ?>
+    </div>
 </section>

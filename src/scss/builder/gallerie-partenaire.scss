@@ -1,0 +1,24 @@
+.swiper-partenaire{
+ width: 80%;
+
+
+ .swiper-slide{   
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+       //max-width: 150px;
+     
+
+
+        .image{
+            max-height: 150px;
+        width: auto;
+          
+            object-fit: contain;
+        }
+        }
+    
+}

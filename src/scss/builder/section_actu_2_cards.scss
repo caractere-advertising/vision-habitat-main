@@ -1,42 +1,96 @@
 @use "./../variables/colors.scss" as *;
 @use "./../variables/base.scss" as *;
 
-.section_actu_2_cards{
-    background-color: $white;
-    padding: 80px 8%;
-    
 
+.section_actu_2_cards {
+    .actu-title {
+        color: $primaryColor;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 50px;
+    }
+    .actu-grid {
 
-.actu-title{
-    color: $primaryColor;
-    font-size: 2rem;
-    font-weight: 300;
-    margin-top: 50px;
-}
+        .actu-card {
+            max-height: 600px;
+            padding-bottom: 80px;
+            border-bottom: 1px solid $lightGray;
 
-.actu-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    text-align: left;
-    margin-bottom: 50px;
-}
+            .actu-card-img {
+                //aspect-ratio: 4/3;
+                overflow: hidden;
 
-.actu-card{
-    .actu-card-img{
-        position: relative;
-        background-color: $lightGray;
-        aspect-ratio: 4/3;
-        overflow: hidden;
-        margin-bottom: 15px;
-
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-                    }       
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
             }
 
+            &:hover {
+                .actu-card-img img {
+                    transform: scale(1.05);
+                    filter: brightness(0.6);
+                }
+                .actu-card-plus {
+                    background-color: $primaryColor;
+                    color: $white;
+                }
+            }
+
+            &:first-child {
+                grid-column: span 2;
+
+                .actu-card-img{   
+                    aspect-ratio: inherit;
+                }
+            } 
+        }
+    }
+    .actu-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 60px;
+        .page-numbers {
+            color: $primaryColor;
+            text-decoration: none;
+            padding: 4px 8px;
+            cursor: pointer;
+
+        
+        }
+    }
 }
+
+@media (max-width: 768px) {
+      .actu-nav {
+            padding: 24px 0;
+  
+            .actu-nav-list {
+                 gap: 8px;
+          }
+        }
+      
+       .section_actu_2_cards {
+        .actu-grid {
+                 grid-template-columns: 1fr;
+      
+             .actu-card {
+                  max-height: none;
+                   padding-bottom: 40px;
+   
+                      &:first-child {
+                        grid-column: span 1;
+                    }
+               }
+            }
+   
+           .actu-pagination {
+               margin-top: 32px;
+         }
+        }
+     }
+
+

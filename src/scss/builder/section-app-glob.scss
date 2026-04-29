@@ -86,3 +86,28 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .section-approche-globale {
+    padding: 60px 0;
+
+    .container {
+      h2 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+      }
+
+      &.grid {
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+
+        .card {
+          padding: 20px;
+          grid-column-start: 1 !important;
+          
+        }
+      }
+    }
+  }
+}

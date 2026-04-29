@@ -62,7 +62,7 @@
   display: flex;
   justify-content: end;
   position: absolute;
-  bottom: 50px;
+  bottom: 15px;
   z-index: 2;
 
   .swiper-pagination-gallery {
@@ -144,11 +144,48 @@
 }
 
 @media (max-width: 768px) {
-  .swiper-gallery .swiper-slide {
-    width: 85%;
-  }
+    .swiper-gallery .swiper-slide .gallery-info {
+        width: 35%;
+        height: 35%;
+        min-width: unset;
+        min-height: unset;
+        padding: 20px;
 
-  .gallery-nav {
-    right: 2%;
-  }
+        .gallery-description{
+          font-size: 0.8rem;
+          line-height: 0.9;
+          padding-top: 8px;
+        }
+    
+    }
+
+    .gallery-nav {
+        right: 10%;
+        padding-top: 10%;
+  button{
+          width: 50px;
+    height: 50px;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+      }
+    .swiper-pagination-gallery{
+      padding-bottom: 20px;
+
+       svg {
+      fill: $lightGray;
+      height: 15px;
+      width: 15px;
+      margin-left: 7px;
+    }
+
+    &.gallery-prev {
+      svg {
+        margin-left: 0;
+      }
+    }
+    }
+    }
+    
 }

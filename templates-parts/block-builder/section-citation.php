@@ -1,4 +1,3 @@
-
 <?php
 // Layout ACF : block_citation
 // Champs : name (texte), citation (wysiwyg), title (wysiwyg), link (lien)
@@ -14,7 +13,7 @@ $blueActif = get_sub_field('blue_activated');
 ?>
 
 <section class="section-citation">
-    <?php if($name):?>
+    <?php if($citation):?>
         <div class="citation-block container">
             <div class="citation-inner">
                 <?php if ($name && $signTop == 1) : ?><span class="citation-name from-left"><?= $name; ?></span><?php endif; ?>

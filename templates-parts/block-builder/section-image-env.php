@@ -36,6 +36,7 @@ $projets   = get_sub_field('projets');
         <div class="projects-right">
             <div class="swiper swiper-projects">
                 <div class="swiper-wrapper">
+                        <?php if ($projets) : ?>
                     <?php foreach($projets as $pr):
                         $img       = $pr['image'];
                         $location  = $pr['location'] ?? '';
@@ -50,6 +51,7 @@ $projets   = get_sub_field('projets');
                             </div>
                         </div>
                     <?php endforeach;?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

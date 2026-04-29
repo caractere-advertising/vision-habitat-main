@@ -101,6 +101,7 @@ function register_menus() {
     register_nav_menus([
         'primary' => 'Menu principal',
         'burger-menu'  => 'Menu burger',
+        'menu-actu' =>'Menu actu'
     ]);
 }
 
@@ -118,3 +119,4 @@ function vision_habitat_enqueue() {
 }
 
 add_action('wp_enqueue_scripts', 'vision_habitat_enqueue');
+

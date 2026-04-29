@@ -76,7 +76,11 @@ $builder_layouts = array(
     'text_overlay'               => 'text_overlay',
     'section-part-sur-mesure'    => 'section-partenaire-sur-mesure',
     'section-grille-references'  => 'section-grille-references',
-    'section_actu_2_cards' => 'section_actu_2_cards',
+    'section_actu_2_cards'       => 'section_actu_2_cards',
+    'gallerie-partenaire'        =>'gallerie-partenaire-cont',
+    'section-gallery-bl-gr'      =>'section-gallery-bl-gr',
+    'section_actualites_articles'=>'section_actualites_articles',
+    'section_actu_citation' =>'section_actu_citation',
 );
 
 if (have_rows('builder', $context_id)) :

@@ -1,4 +1,3 @@
-
 <?php
 
 // Layout ACF : images_overlay

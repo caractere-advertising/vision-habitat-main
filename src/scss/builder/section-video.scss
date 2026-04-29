@@ -56,21 +56,7 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .section-video {
-    padding: 60px 0;
 
-    .video-top {
-      .video-top-left {
-        width: 50%;
-      }
-
-      .video-top-right {
-        width: 45%;
-      }
-    }
-  }
-}
 
 @media (max-width: 768px) {
   .section-video {
@@ -79,6 +65,7 @@
     .video-top {
       flex-direction: column;
       gap: 30px;
+      
 
       .video-top-left {
         width: 100%;
@@ -87,6 +74,14 @@
       .video-top-right {
         width: 100%;
         padding-top: 0;
+        margin-bottom: 0;
+
+        .video-paragraph {
+        color: $txtColor;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-top: 30px;
+      }
       }
     }
   }

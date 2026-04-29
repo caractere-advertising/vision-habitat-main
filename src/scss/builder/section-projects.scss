@@ -1,0 +1,193 @@
+@use "./../variables/colors.scss" as *;
+
+.section-projects {
+  background-color: $white;
+  margin-top: 100px;
+}
+
+.projects-inner {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 500px;
+}
+
+.projects-left {
+  background-color: $primaryColor;
+  padding: 100px 0 100px 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 150px;
+
+  .block-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .projects-title {
+      color: $white;
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+    .projects-paragraph {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $white;
+      margin: 0;
+      width: 500px;
+    }
+  }
+
+  .btn-cta {
+    color: $white;
+    border-bottom: 0.5px solid $white;
+  }
+}
+
+.projects-right {
+  position: relative;
+  overflow: hidden;
+
+  .swiper-projects {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+      position: relative;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .slide-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 24px;
+
+        .slide-location {
+          font-size: 1.5rem;
+          color: $white;
+          font-weight: 400;
+          text-shadow: 0 0 20px $black;
+        }
+
+        .slide-price {
+          background-color: $white;
+          color: $primaryColor;
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 15px 40px;
+          border-radius: 40px;
+        }
+      }
+    }
+  }
+}
+
+.projects-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 70vw;
+  max-width: 1000px;
+
+  .projects-nav {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+
+    button {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1px solid $lightGray;
+      background: none;
+      cursor: pointer;
+      font-size: 2rem;
+      color: $primaryColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+      &:hover {
+        background-color: $primaryColor;
+        color: $white;
+        border-color: $primaryColor;
+      }
+
+      svg {
+        fill: $lightGray;
+        height: 25px;
+      }
+
+      &.projects-next {
+        svg {
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+
+  .swiper-scrollbar-projects {
+    display: flex !important;
+    align-items: center;
+    height: 1px;
+    background-color: $lightGray !important;
+    width: 60%;
+    position: relative;
+
+    .swiper-scrollbar-drag {
+      height: 100%;
+      background-color: $primaryColor;
+      border-radius: 0;
+    }
+  }
+
+  .projects-number {
+    font-size: 5rem;
+    font-weight: 900;
+    color: $secondaryColor;
+    flex-shrink: 0;
+    min-width: 48px;
+    text-align: right;
+  }
+}
+
+// ── Responsive
+
+@media (max-width: 768px) {
+   .projects-left {
+    padding: 40px 5%;
+
+    .block-txt {
+      .projects-title {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+      }
+
+      .projects-paragraph {
+        width: 100%;
+      }
+    }
+  }
+
+  .projects-controls {
+    padding: 20px;
+    width: 90vw;
+  }
+}

@@ -2,7 +2,7 @@
 
 $titre = get_sub_field('titre');
 $intro = get_sub_field('intro');
-
+$small_titre = get_sub_field('Small-titre');
 $cta   = get_sub_field('cta');
 $img   = get_sub_field('image');
 
@@ -12,6 +12,7 @@ $img   = get_sub_field('image');
     <div class="container container-bg"></div>
     <div class="container flex">
         <div class="colg col-50">
+             <?= $small_titre;?>
             <?= $titre;?>
             <div class="intro"><?= $intro;?></div>
             <?php if($cta):?>

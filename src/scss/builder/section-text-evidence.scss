@@ -42,24 +42,31 @@
   color: $txtColor;
 
   p {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
   }
 }
 
-@media (max-width: 1024px) {
-  .section-text-evidence .section-inner {
-    max-width: 80%;
-  }
-}
 
 @media (max-width: 768px) {
   .section-text-evidence {
     padding: 60px 0;
 
-    .section-inner {
-      margin: 0;
-      max-width: 90%;
+    h2{
+      font-size: 2.3rem;
+      width: 80%;
     }
+
+    .section-inner {
+      margin: 1;
+      max-width: 90%;
+
+       .section-content h2 {
+      font-size: 2rem !important;
+      line-height: 2.2rem !important;
+    }
+    }
+
+    
   }
 }

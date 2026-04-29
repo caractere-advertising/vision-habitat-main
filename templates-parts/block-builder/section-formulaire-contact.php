@@ -41,6 +41,6 @@ $form    = get_field('shortcode_form','options');
             </div>
         </div>
         <div class="cold col-65">
-            <?= do_shortcode($form);?>
+            <?php if($form):?><?= do_shortcode($form);?><?php endif;?>
         </div>
 </section>

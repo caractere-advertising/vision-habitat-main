@@ -1,4 +1,3 @@
-
 <?php
 // Layout ACF : link_container
 // Répéteur : link_container > lien (lien), image(image)
