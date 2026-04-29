@@ -10,7 +10,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('is-loading'); ?>>
 	
     <?php  get_template_part('templates-parts/navigation');?>
 	

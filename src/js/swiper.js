@@ -7,6 +7,7 @@ import {
   Parallax,
 } from "swiper/modules";
 
+const sliderFullwidthSection = document.querySelector(".slider-fullwidth");
 const numberCurrent = document.querySelector(".number-current");
 
 const swiperFullwidth = new Swiper(".swiper-fullwidth", {
@@ -27,6 +28,18 @@ const swiperFullwidth = new Swiper(".swiper-fullwidth", {
   spaceBetween: 0,
 
   on: {
+    init(swiper) {
+      if (sliderFullwidthSection) {
+        sliderFullwidthSection.classList.remove("is-loading");
+        sliderFullwidthSection.classList.add("is-loaded");
+      }
+
+      if (numberCurrent) {
+        const i = swiper.realIndex + 1;
+        numberCurrent.textContent = i < 10 ? "0" + i : String(i);
+      }
+    },
+
     slideChange(swiper) {
       if (numberCurrent) {
         const i = swiper.realIndex + 1;

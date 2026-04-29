@@ -11,3 +11,4 @@ import "./js/animate.js";
 import "./js/swipper_gallery_two_col.js";
 import "./js/swiper-partenaires.js";
 
+import "./js/skeleton.js";
