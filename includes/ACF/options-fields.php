@@ -679,6 +679,39 @@ acf_add_local_field_group( array(
 				),
 			),
 			array(
+				'key' => 'field_f0rmul1ar3',
+				'label' => 'Formulaire contact',
+				'name' => '',
+				'type' => 'tab',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => $wrapper,
+				'placement' => 'top',
+				'endpoint' => 0,
+				'selected' => 0,
+			),
+			array(
+				'key' => 'field_titrecontact',
+				'label' => 'Titre',
+				'name' => 'titre_contact',
+				'type' => 'wysiwyg',
+				'wrapper' => $wrapper,
+			),
+			array(
+				'key' => 'field_introcontact',
+				'label' => 'Introduction',
+				'name' => 'intro_contact',
+				'type' => 'wysiwyg',
+				'wrapper' => $wrapper
+			),
+			array(
+				'key' => 'field_shortcodeform',
+				'label' => 'Formulaire',
+				'name' => 'shortcode_form',
+				'type' => 'text',
+				'wrapper' => $wrapper
+			),
+			array(
 				'key' => 'field_69a98e8e22153fer',
 				'label' => 'Partenaires',
 				'name' => '',
