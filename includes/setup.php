@@ -24,11 +24,12 @@ add_action('after_setup_theme', 'vh_theme_setup');
 
 /* Récupération de tous les posts Ou réferences */
 
-function getPosts($type){
+function getPosts($type, $paged){
     $args = array(
         'post_type' => $type,
-        'posts_per_page' => is_front_page(  ) ? 3 : -1,
+        'posts_per_page' => is_front_page(  ) ? 3 : 5,
         'post_status' => 'publish',
+        'paged'          => $paged ?: 1,
         'order' => 'ASC',
     );
 
@@ -36,6 +37,7 @@ function getPosts($type){
 
     return $query;
 }
+
 
 /* Récupérer les catégories du CPT "réference"                   */
 /* + Boucle pour retourner une string contenant toutes celles-ci */

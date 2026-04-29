@@ -6,14 +6,10 @@
 $title = get_sub_field('title');
 $link  = get_sub_field('link');
 
-$query = new WP_Query([
-    'post_type'      => 'post',
-    'posts_per_page' => 3,
-    'post_status'    => 'publish',
-    'orderby'        => 'date',
-    'order'          => 'DESC',
-]);
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
+// La fonction est gérée dans /includes/setup.php
+$query = getPosts('post', $paged);
 $taxonomies   = get_categories();
 
 ?>
@@ -74,8 +70,12 @@ $taxonomies   = get_categories();
                     <?php endif; ?>
                 </article>
 
-            <?php endwhile;
-            wp_reset_postdata();
+            <?php endwhile;?>
+            <!-- Add the pagination functions here. -->
+
+            <div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
+            <div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>
+            <?php wp_reset_postdata();
         endif; ?>
     </div>
 
