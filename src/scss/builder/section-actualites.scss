@@ -209,6 +209,61 @@
         text-decoration: none;
       }
     }
+<<<<<<< HEAD
+=======
+
+    .actu-card-cat {
+      display: block;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: $secondaryColor;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .actu-card-text {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: $txtColor;
+      cursor: pointer;
+    }
+
+    &:first-child {
+      grid-column: span 2;
+      aspect-ratio: inherit;
+    }
+
+    &:hover {
+      .actu-card-img {
+        img {
+          transform: scale(1.05);
+          filter: brightness(0.6);
+        }
+      }
+
+      .actu-card-plus {
+        background-color: $primaryColor;
+        color: $white;
+
+        .btn-plus-icon {
+          @include rotate-180;
+        }
+      }
+    }
+
+    /*** Animation ***/
+
+    &.is-hidden {
+      transform: scale(0.8);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &.is-gone {
+      display: none;
+    }
+>>>>>>> 81c8e38 (commit)
   }
 
   .actu-btn-wrap {
@@ -231,6 +286,7 @@
   }
 }
 
+<<<<<<< HEAD
 
 @media (max-width: 1024px) {
   .section-ref .ref-grid {
@@ -238,6 +294,8 @@
   }
 }
 
+=======
+>>>>>>> 81c8e38 (commit)
 @media (max-width: 768px) {
   .section-actu {
     padding-top: 50px;
@@ -245,6 +303,7 @@
     padding-left: 5%;
     padding-right: 5%;
 
+<<<<<<< HEAD
 
     .ref-grid {
       grid-template-columns: 1fr;
@@ -253,6 +312,9 @@
 
 
     h2{
+=======
+    h2 {
+>>>>>>> 81c8e38 (commit)
       font-size: 2rem;
       line-height: 1.2;
     }
@@ -265,4 +327,9 @@
     .actu-card:first-child {
       grid-column: span 1;
     }
+<<<<<<< HEAD
   }
+=======
+  }
+}
+>>>>>>> 81c8e38 (commit)

@@ -124,56 +124,52 @@
   }
 }
 
-@media (max-width: 768px){
-  .section-galerie-vertical {
-       min-height: 100vh;
+.section-galerie-vertical-reverse {
+  padding: 50px 0;
 
   .swiper-vertical {
-    max-height: 100vh;
-    max-width: 90vw;
+    max-height: 80vh;
+    max-width: 95vw;
 
     .swiper-wrapper {
       .swiper-slide {
         display: flex;
-        flex-direction: column;
         align-items: center;
 
         .col-50 {
-          width: 100%;
+          width: 50%;
         }
 
-        .colg {
+        .cold {
           height: 100%;
 
           .block-img {
-            height: 80%;
-            width: 95%;
+            height: 100%;
           }
         }
 
-       .cold {
-  padding: 0 10px;
-  
-  overflow: visible;
+        .colg {
+          padding-right: 100px;
 
-  .content {
-    width: 100%;
-    gap: 20px;
+          .content {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 70%;
+            margin-right: 0;
+            margin-left: auto;
 
-    h2 {
-      font-size: 2rem;
-      line-height: 1.2;
-    }
-
-    .btn-cta {
-      white-space: nowrap;
-    }
-  }
-}
+            p {
+              text-align: justify;
+            }
+          }
+        }
       }
     }
 
     .swiper-pagination-vertical {
+      left: 0;
+
       .swiper-pagination-bullet {
         height: 80px;
         width: 2px;
@@ -188,5 +184,67 @@
   }
 }
 
+@media (max-width: 768px) {
+  .section-galerie-vertical {
+    min-height: 100vh;
 
+    .swiper-vertical {
+      max-height: 100vh;
+      max-width: 90vw;
+
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .col-50 {
+            width: 100%;
+          }
+
+          .colg {
+            height: 100%;
+
+            .block-img {
+              height: 80%;
+              width: 95%;
+            }
+          }
+
+          .cold {
+            padding: 0 10px;
+
+            overflow: visible;
+
+            .content {
+              width: 100%;
+              gap: 20px;
+
+              h2 {
+                font-size: 2rem;
+                line-height: 1.2;
+              }
+
+              .btn-cta {
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+
+      .swiper-pagination-vertical {
+        .swiper-pagination-bullet {
+          height: 80px;
+          width: 2px;
+          border-radius: 0;
+          background-color: $lightGray;
+
+          &.swiper-pagination-bullet-active {
+            background-color: $txtColor;
+          }
+        }
+      }
+    }
+  }
 }

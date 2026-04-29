@@ -29,7 +29,7 @@
                         </a>
                     </div>
                 </div>
-                <?php endforeach; ?>
+            <?php endforeach; ?>
         </div>
 
         <div class="block-pagination container flex">
