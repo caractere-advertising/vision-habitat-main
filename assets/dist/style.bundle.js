@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /******/ (() => {
   // webpackBootstrap
   /******/ "use strict";
@@ -8626,3 +8627,5 @@ body {
   /******/
 })();
 //# sourceMappingURL=style.bundle.js.map
+=======
+>>>>>>> a17056b (correction)

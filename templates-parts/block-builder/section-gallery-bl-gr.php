@@ -1,7 +1,10 @@
 <?php
 $card = get_sub_field('card');
+
 if (!$card) return;
+
 $first = $card[0];
+var_dump($first);
 // Champs : slides (répéteur)
 //    image (image), titre (texte),ss-titre(texte), paragraph (wysiwyg)
 
@@ -11,7 +14,6 @@ $first = $card[0];
 
 <div class="section-gallery-bl-gr">
     <div class="card">
-
         <div class="gallery-image">
             <div class="swiper swiper-photo">
                 <div class="swiper-wrapper">

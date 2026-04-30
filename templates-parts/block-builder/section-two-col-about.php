@@ -9,15 +9,11 @@ $cta = get_sub_field('cta');
 <section class="section-two-col">
     <div class="two-col-inner container flex">
         <div class="two-col-left col-50">
-            <div class="two-col-title ">
-                <?php echo $titre ?>
-            </div>
+            <div class="two-col-title "><?= $titre ?></div>
         </div>
         <div class="two-col-right col-50">
-            <div class="two-col-paragraph">
-                <?php echo $intro ?>
-            </div>
-            <a href="http://" class="btn-cta"><?php echo $cta['url'] ?></a>
+            <div class="two-col-paragraph"><?= $intro ?></div>
+            <a href="<?= $cta['url']; ?>" class="btn-cta"><?= $cta['title']; ?></a>
         </div>
         
 
