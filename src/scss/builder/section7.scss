@@ -172,7 +172,8 @@
 
 @media (max-width: 768px) {
   .projects-inner {
-    grid-template-columns: 100%;
+    display: block;
+    width:  100%;
   }
 
   .projects-right {
