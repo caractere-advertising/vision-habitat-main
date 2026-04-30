@@ -17,16 +17,6 @@ $query = new WP_Query($args);
 <section class="section-actu section_actu_2_cards container">
 
 <?php get_template_part('templates-parts/block-builder/actu-nav'); ?>
-  
-
-    <!--
-    Boucle sur les categories
-    -> bouton = http://vision.local/blog-actu/page/2/?&cat=ID_CATEGORY 
-
-    get_query_var('cat') : '';
-
-
--->
     <div class="actu-grid">
        <?php if ($query->have_posts()) :
             while ($query->have_posts()) : $query->the_post();
@@ -70,6 +60,7 @@ $query = new WP_Query($args);
             wp_reset_postdata();
         endif; ?>
     </div>
+    
     <div class="actu-pagination">
      <?php echo paginate_links([
             'total'    => $query->max_num_pages,
