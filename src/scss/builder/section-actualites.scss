@@ -173,11 +173,15 @@
     .actu-grid {
       grid-template-columns: 1fr;
       margin: 40px auto 30px;
-    }
 
-    .actu-card{
-      grid-column: span 1;
-      padding: 0;
+      .actu-card {
+        padding: 0;       
+        grid-column: span 1; 
+
+        .actu-card-img {
+          height: 200px;   
+        }
+      }
     }
   }
 }
