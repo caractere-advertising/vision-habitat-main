@@ -174,7 +174,7 @@
 // ── Responsive
 @media (max-width: 768px) {
   .projects-inner {
-    grid-template-columns: 100%; 
+    grid-template-columns: 100% !important; 
   }
 
   .projects-right {
