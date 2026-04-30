@@ -4,7 +4,7 @@
 <section class="section-galerie-vertical">
     <div class="swiper swiper-vertical">
         <div class="swiper-wrapper">
-            <?php foreach($slides as $s):
+            <?php if($slides): foreach($slides as $s):
                 $image = $s['image'];
                 $titre = $s['titre'];
                 $texte = $s['texte'];
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-            <?php endforeach;?>
+            <?php endforeach; endif;?>
         </div>
         <div class="swiper-pagination swiper-pagination-vertical"></div>
     </div>

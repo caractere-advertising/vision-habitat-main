@@ -41,7 +41,6 @@
 
   .actu-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 100px auto 50px;
@@ -85,58 +84,57 @@
         font-size: 1.5rem;
         text-decoration: none;
       }
-    }
 
-    .actu-card-cat {
-      display: block;
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: $secondaryColor;
-      margin-bottom: 10px;
-      cursor: pointer;
-    }
+      .actu-card-cat {
+        display: block;
+        font-size: 0.65rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: $secondaryColor;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
 
-    .actu-card-text {
-      font-size: 0.9rem;
-      line-height: 1.6;
-      color: $txtColor;
-      cursor: pointer;
-    }
+      .actu-card-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: $txtColor;
+        cursor: pointer;
+      }
 
-    &:first-child {
-      grid-column: span 2;
-      aspect-ratio: inherit;
-    }
+      &:first-child {
+        grid-column: span 2;
+        aspect-ratio: inherit;
+      }
 
-    &:hover {
-      .actu-card-img {
-        img {
-          transform: scale(1.05);
-          filter: brightness(0.6);
+      &:hover {
+        .actu-card-img {
+          img {
+            transform: scale(1.05);
+            filter: brightness(0.6);
+          }
+        }
+
+        .actu-card-plus {
+          background-color: $primaryColor;
+          color: $white;
+
+          .btn-plus-icon {
+            @include rotate-180;
+          }
         }
       }
 
-      .actu-card-plus {
-        background-color: $primaryColor;
-        color: $white;
-
-        .btn-plus-icon {
-          @include rotate-180;
-        }
+      /*** Animation ***/
+      &.is-hidden {
+        transform: scale(0.8);
+        opacity: 0;
+        pointer-events: none;
       }
-    }
 
-    /*** Animation ***/
-
-    &.is-hidden {
-      transform: scale(0.8);
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    &.is-gone {
-      display: none;
+      &.is-gone {
+        display: none;
+      }
     }
   }
 
