@@ -47,7 +47,7 @@ $taxonomies   = get_categories();
                 }
                 ?>
 
-                <article class="actu-card<?= $class; ?> from-bottom <?php if(is_front_page()): echo '-not-frontpage' ; endif?>">
+                <article class="actu-card<?= $class; ?> from-bottom <?php if(!is_front_page()): echo '-not-frontpage' ; endif?>">
                     <div class="actu-card-img">
                         <?php if ($image) : ?>
                             <img src="<?= esc_url($image); ?>" alt="<?= esc_attr($paragraph); ?>" loading="lazy">
