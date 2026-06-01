@@ -47,7 +47,7 @@
     align-items: start;
 
     .actu-card {
-      padding: 100px 0;
+      padding-bottom: 50px;
 
       .actu-card-img {
         padding-bottom: 20px;
@@ -175,11 +175,11 @@
       margin: 40px auto 30px;
 
       .actu-card {
-        padding: 0;       
-        grid-column: span 1; 
+        padding: 0;
+        grid-column: span 1;
 
         .actu-card-img {
-          height: 200px;   
+          height: 200px;
         }
       }
     }

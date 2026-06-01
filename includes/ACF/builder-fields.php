@@ -355,53 +355,6 @@ acf_add_local_field_group( array(
                     'display'    => 'block',
                     'sub_fields' => array(
                         array(
-                            'key'            => 'field_69baa2793fc43',
-                            'label'          => 'articles',
-                            'name'           => 'articles',
-                            'type'           => 'repeater',
-                            'conditional_logic' => 0,
-                            'wrapper'        => $wrapper,
-                            'layout'         => 'table',
-                            'button_label'   => 'Ajouter un élément',
-                            'rows_per_page'  => 20,
-                            'sub_fields'     => array(
-                                array(
-                                    'key'            => 'field_69baa2c63fc45',
-                                    'label'          => 'image',
-                                    'name'           => 'image',
-                                    'type'           => 'image',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'return_format'  => 'array',
-                                    'allow_in_bindings' => 0,
-                                    'preview_size'   => 'medium',
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                                array(
-                                    'key'            => 'field_69baa2e53fc46',
-                                    'label'          => 'category',
-                                    'name'           => 'category',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                                array(
-                                    'key'            => 'field_69baa3033fc47',
-                                    'label'          => 'paragraph',
-                                    'name'           => 'paragraph',
-                                    'type'           => 'text',
-                                    'conditional_logic' => 0,
-                                    'wrapper'        => $wrapper,
-                                    'default_value'  => '',
-                                    'allow_in_bindings' => 0,
-                                    'parent_repeater' => 'field_69baa2793fc43',
-                                ),
-                            ),
-                        ),
-                        array(
                             'key'            => 'field_69baa81c9b83e',
                             'label'          => 'link',
                             'name'           => 'link',
@@ -1225,7 +1178,6 @@ acf_add_local_field_group( array(
                     'sub_fields' => array(
                     ),
                 ),
-                
  
                 // ─── Section approche globale ────────────────────────────────
                 'layout_69c6739eade09' => array(
@@ -1821,6 +1773,7 @@ acf_add_local_field_group( array(
                     'sub_fields' => array(),
                 ),
 
+                // ─── Section sur mesure ──────────────────────────────
                 'layout_s3ct10nsurm3sur3' => array(
                     'key' => 'layout_s3ct10nsurm3sur3',
                     'name' => 'section-part-sur-mesure',
