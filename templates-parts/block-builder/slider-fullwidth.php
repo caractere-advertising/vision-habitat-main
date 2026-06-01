@@ -8,7 +8,6 @@ $length = $slide ? count($slide) : 0;
 ?>
 
 <section class="slider-fullwidth js-slider-skeleton is-loading">
-
     <div class="slider-skeleton" aria-hidden="true">
         <div class="slider-skeleton__background"></div>
 
@@ -37,6 +36,7 @@ $length = $slide ? count($slide) : 0;
                     $img = $s['image'] ?? null;
                     $cta = $s['cta'] ?? null;
                 ?>
+                
                     <div class="swiper-slide">
                         <div class="background">
                             <?php if($img): ?>
