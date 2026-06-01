@@ -22,7 +22,7 @@ $query = getPosts('reference');
                     <a href="<?= esc_url($lien); ?>" class="ref-card-link">
                         <div class="ref-card-img">
                             <?php if ($image) : ?>
-                                <img src="<?= esc_url($image); ?>" alt="<?= esc_attr($paragraph); ?>">
+                                <img src="<?= esc_url($image); ?>" loading="lazy" alt="<?= esc_attr($paragraph); ?>">
                             <?php endif; ?>
 
                             <span class="ref-card-plus">

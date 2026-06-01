@@ -6,3 +6,4 @@ import "./js/parallax.js";
 import "./js/scroll-top.js";
 import "./js/skeleton.js";
 import "./js/swiper.js";
+import "./js/accordeon.js";

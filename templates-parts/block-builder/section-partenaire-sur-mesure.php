@@ -13,7 +13,7 @@ $texte  = get_sub_field('texte');
                     <?php if($slides):
                         foreach ($slides as $s):?>
                             <div class="swiper-slide block-img">
-                                <img src="<?= $s['image']['url'];?>" alt="<?=$s['image']['title'];?>"/>
+                                <img src="<?= $s['image']['url'];?>" loading="lazy" alt="<?=$s['image']['title'];?>"/>
                             </div>
                         <?php endforeach;
                     endif;?>

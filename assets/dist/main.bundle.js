@@ -1080,6 +1080,16 @@ module.exports = styleTagTransform;
 
 /***/ },
 
+/***/ "./src/js/accordeon.js"
+/*!*****************************!*\
+  !*** ./src/js/accordeon.js ***!
+  \*****************************/
+() {
+
+
+
+/***/ },
+
 /***/ "./src/js/animate.js"
 /*!***************************!*\
   !*** ./src/js/animate.js ***!
@@ -1223,12 +1233,14 @@ if (burgerBtn && mobileMenu) {
   \*****************************/
 () {
 
-const imgHoverCont = document.querySelector('.links-hover-img'); 
+const imgHoverCont = document.querySelector('.links-hover-img');
 const imgHover = document.querySelector('#hover-img');
 const links = document.querySelectorAll('.links-item');
 
+if (!imgHoverCont || !imgHover || !links.length) return;
+
 document.addEventListener('mousemove', (e) => {
-    imgHoverCont.style.left = e.clientX + 20 + 'px'; 
+    imgHoverCont.style.left = e.clientX + 20 + 'px';
     imgHoverCont.style.top = e.clientY + 20 + 'px';
 });
 
@@ -1241,7 +1253,7 @@ links.forEach(link => {
         }
     });
     link.addEventListener('mouseleave', () => {
-        imgHoverCont.classList.remove('visible'); 
+        imgHoverCont.classList.remove('visible');
     });
 });
 
@@ -1259,11 +1271,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var image = document.getElementsByClassName("section-image-parallax");
-new simple_parallax_js_vanilla__WEBPACK_IMPORTED_MODULE_0__["default"](image, {
-  delay: 1,
-  scale: 1.6,
-  transition: "cubic-bezier(0,0,0,1)",
-});
+if (image.length) {
+  new simple_parallax_js_vanilla__WEBPACK_IMPORTED_MODULE_0__["default"](image, {
+    delay: 1,
+    scale: 1.6,
+    transition: "cubic-bezier(0,0,0,1)",
+  });
+}
 
 
 /***/ },
@@ -1319,66 +1333,66 @@ __webpack_require__.r(__webpack_exports__);
 const sliderFullwidthSection = document.querySelector(".slider-fullwidth");
 const numberCurrent = document.querySelector(".number-current");
 
-const swiperFullwidth = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-fullwidth", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Parallax],
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  parallax: true,
-  autoplay: true,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    draggable: true,
-  },
-
-  loop: true,
-  speed: 1200,
-  spaceBetween: 0,
-
-  on: {
-    init(swiper) {
-      if (sliderFullwidthSection) {
-        sliderFullwidthSection.classList.remove("is-loading");
-        sliderFullwidthSection.classList.add("is-loaded");
-      }
-
-      if (numberCurrent) {
-        const i = swiper.realIndex + 1;
-        numberCurrent.textContent = i < 10 ? "0" + i : String(i);
-      }
+if (document.querySelector(".swiper-fullwidth")) {
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-fullwidth", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Parallax],
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-
-    slideChange(swiper) {
-      if (numberCurrent) {
-        const i = swiper.realIndex + 1;
-        numberCurrent.textContent = i < 10 ? "0" + i : String(i);
-      }
+    parallax: true,
+    autoplay: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      draggable: true,
     },
-  },
-});
+    loop: true,
+    speed: 1200,
+    spaceBetween: 0,
+    on: {
+      init(swiper) {
+        if (sliderFullwidthSection) {
+          sliderFullwidthSection.classList.remove("is-loading");
+          sliderFullwidthSection.classList.add("is-loaded");
+        }
+        if (numberCurrent) {
+          const i = swiper.realIndex + 1;
+          numberCurrent.textContent = i < 10 ? "0" + i : String(i);
+        }
+      },
+      slideChange(swiper) {
+        if (numberCurrent) {
+          const i = swiper.realIndex + 1;
+          numberCurrent.textContent = i < 10 ? "0" + i : String(i);
+        }
+      },
+    },
+  });
+}
 
-const swiperReference = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-reference", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
-  autoplay: true,
-  speed: 600,
-});
+if (document.querySelector(".swiper-reference")) {
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-reference", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
+    autoplay: true,
+    speed: 600,
+  });
+}
 
-const swiperVertical = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-vertical", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Parallax],
-  autoplay: true,
-  direction: "vertical",
-  parallax: true,
-  speed: 1200,
-  pagination: {
-    el: ".swiper-pagination-vertical",
-    clickable: true,
-  },
-});
+if (document.querySelector(".swiper-vertical")) {
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-vertical", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Parallax],
+    autoplay: true,
+    direction: "vertical",
+    parallax: true,
+    speed: 1200,
+    pagination: {
+      el: ".swiper-pagination-vertical",
+      clickable: true,
+    },
+  });
+}
 
-const swiperEtapesEl = document.querySelector(".swiper-etapes");
-
-if (swiperEtapesEl) {
+if (document.querySelector(".swiper-etapes")) {
   const swiperEtapes = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-etapes", {
     modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
     slidesPerView: 1,
@@ -1386,18 +1400,15 @@ if (swiperEtapesEl) {
     speed: 800,
     loop: false,
     allowTouchMove: true,
-
     navigation: {
       prevEl: ".swiper-step-prev",
       nextEl: ".swiper-step-next",
     },
-
     scrollbar: {
       el: ".swiper-step-scrollbar",
       draggable: true,
       dragSize: "auto",
     },
-
     on: {
       init: function () {
         animateStepContent(this);
@@ -1415,7 +1426,6 @@ if (swiperEtapesEl) {
     swiper.slides.forEach((slide) => {
       const img = slide.querySelector(".block-img");
       const text = slide.querySelector(".cold");
-
       if (img) img.classList.remove("is-visible");
       if (text) text.classList.remove("is-visible");
     });
@@ -1424,133 +1434,114 @@ if (swiperEtapesEl) {
   function animateStepContent(swiper) {
     const activeSlide = swiper.slides[swiper.activeIndex];
     if (!activeSlide) return;
-
     const img = activeSlide.querySelector(".block-img");
     const text = activeSlide.querySelector(".cold");
-
     if (img) img.classList.add("is-visible");
     if (text) text.classList.add("is-visible");
   }
 }
 
-const swiperSurMesure = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-partenaire-sur-mesure", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
-  pagination: {
-    el: ".swiper-pagination-sur-mesure",
-    clickable: true,
-  },
-  loop: true,
-  autoplay: true,
-  speed: 600,
-});
-
-const swiperPart = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-partenaire", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
-
-  navigation: {
-    nextEl: ".gallery-next",
-    prevEl: ".gallery-prev",
-  },
-  slidesPerView: 5,
-  spaceBetween: 20,
-  loop: true,
-  speed: 600,
-  autoplay: true,
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+if (document.querySelector(".swiper-partenaire-sur-mesure")) {
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-partenaire-sur-mesure", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
+    pagination: {
+      el: ".swiper-pagination-sur-mesure",
+      clickable: true,
     },
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    loop: true,
+    autoplay: true,
+    speed: 600,
+  });
+}
+
+if (document.querySelector(".swiper-partenaire")) {
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-partenaire", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
+    navigation: {
+      nextEl: ".gallery-next",
+      prevEl: ".gallery-prev",
     },
-    640: {
-      slidesPerView: 5,
-      spaceBetween: 20,
+    slidesPerView: 5,
+    spaceBetween: 20,
+    loop: true,
+    speed: 600,
+    autoplay: true,
+    breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 20 },
+      480: { slidesPerView: 1, spaceBetween: 20 },
+      640: { slidesPerView: 5, spaceBetween: 20 },
     },
-  },
-});
+  });
+}
 
-/* Swiper Projects */
+if (document.querySelector(".swiper-projects")) {
+  const numberEl = document.querySelector(".projects-number");
 
-const numberEl = document.querySelector(".projects-number");
-
-const swiperProjects = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-projects", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
-
-  navigation: {
-    prevEl: ".projects-prev",
-    nextEl: ".projects-next",
-  },
-
-  scrollbar: {
-    el: ".swiper-scrollbar-projects",
-    draggable: true,
-  },
-
-  loop: false,
-  speed: 600,
-
-  on: {
-    slideChange(swiper) {
-      if (numberEl) {
-        const i = swiper.realIndex + 1;
-        numberEl.textContent = i < 10 ? "0" + i : String(i);
-      }
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-projects", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+    navigation: {
+      prevEl: ".projects-prev",
+      nextEl: ".projects-next",
     },
-  },
-});
+    scrollbar: {
+      el: ".swiper-scrollbar-projects",
+      draggable: true,
+    },
+    loop: false,
+    speed: 600,
+    on: {
+      slideChange(swiper) {
+        if (numberEl) {
+          const i = swiper.realIndex + 1;
+          numberEl.textContent = i < 10 ? "0" + i : String(i);
+        }
+      },
+    },
+  });
+}
 
-/* Swiper gallery two columns */
+if (document.querySelector(".swiper-photo")) {
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-photo", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+    navigation: {
+      nextEl: ".gallery-next",
+      prevEl: ".gallery-prev",
+    },
+    pagination: {
+      el: ".swiper-pag-photo",
+      clickable: true,
+      type: "bullets",
+    },
+    slidesPerView: 1,
+    scrollbar: {
+      el: ".swiper-scroll-gallery-photo",
+    },
+    loop: true,
+    speed: 600,
+  });
+}
 
-const swiperPhoto = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-photo", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
-
-  navigation: {
-    nextEl: ".gallery-next",
-    prevEl: ".gallery-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pag-photo",
-    clickable: true,
-    type: "bullets",
-  },
-
-  slidesPerView: 1,
-  scrollbar: {
-    el: ".swiper-scroll-gallery-photo",
-  },
-  loop: true,
-  speed: 600,
-});
-
-/* Swiper gallery */
-
-const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
-  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
-
-  navigation: {
-    nextEl: ".gallery-next",
-    prevEl: ".gallery-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pagination-gallery",
-    clickable: true,
-    type: "bullets",
-  },
-
-  slidesPerView: 1.2,
-  scrollbar: {
-    el: ".swiper-scrollbar-galerie-slider",
-  },
-  spaceBetween: 200,
-  loop: true,
-  speed: 600,
-});
+if (document.querySelector(".swiper-gallery")) {
+  new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper-gallery", {
+    modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Scrollbar],
+    navigation: {
+      nextEl: ".gallery-next",
+      prevEl: ".gallery-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination-gallery",
+      clickable: true,
+      type: "bullets",
+    },
+    slidesPerView: 1.2,
+    scrollbar: {
+      el: ".swiper-scrollbar-galerie-slider",
+    },
+    spaceBetween: 200,
+    loop: true,
+    speed: 600,
+  });
+}
 
 
 /***/ },
@@ -12444,6 +12435,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_skeleton_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/skeleton.js */ "./src/js/skeleton.js");
 /* harmony import */ var _js_skeleton_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_skeleton_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _js_swiper_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/swiper.js */ "./src/js/swiper.js");
+/* harmony import */ var _js_accordeon_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/accordeon.js */ "./src/js/accordeon.js");
+/* harmony import */ var _js_accordeon_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_accordeon_js__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 

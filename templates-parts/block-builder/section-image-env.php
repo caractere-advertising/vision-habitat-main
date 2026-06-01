@@ -38,7 +38,7 @@ $projets   = get_sub_field('projets'); ?>
                         
                         ?>
                         <div class="swiper-slide">
-                            <img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
+                            <img src="<?= $img['url']; ?>" loading="lazy" alt="<?= $img['alt']; ?>">
                             <div class="slide-info from-bottom">
                                 <span class="slide-location"><?= $location; ?></span>
                                 <span class="slide-price"><?= $price; ?></span>

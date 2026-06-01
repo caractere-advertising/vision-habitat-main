@@ -14,13 +14,13 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
     <div class="menu-burger-left">
         <?php if ($burger_image) : ?>
            
-            <img src="<?= esc_url($burger_image['url']) ?>" alt="<?= esc_attr($burger_image['alt']) ?>"/>
+            <img src="<?= esc_url($burger_image['url']) ?>" loading="lazy" alt="<?= esc_attr($burger_image['alt']) ?>"/>
            
         <?php endif; ?>
 
         <?php if ($logo_bg_menu) : ?>
             <a href="<?= esc_url(home_url('/')) ?>" class="menu-burger-left-logo">
-                <img src="<?=  esc_url($logo_bg_menu['url']) ?>" alt="<?=  esc_attr($logo_bg_menu['alt']) ?>">
+                <img src="<?=  esc_url($logo_bg_menu['url']) ?>" loading="lazy" alt="<?=  esc_attr($logo_bg_menu['alt']) ?>">
             </a>
         <?php endif; ?>
 
@@ -55,7 +55,7 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php foreach ($burger_socials as $social) : ?>
             <a href="<?= $social['lien']; ?>">
                 <?php if ($social['logo']) : ?>
-                    <img src="<?= $social['logo']['url']; ?>" alt="<?= $social['logo']['title']; ?>">
+                    <img src="<?= $social['logo']['url']; ?>" loading="lazy" alt="<?= $social['logo']['title']; ?>">
                 <?php endif; ?>
             </a>
         <?php endforeach; ?>

@@ -11,7 +11,7 @@ $link = get_sub_field('link');
         <div class="title"><?= $title ?></div>
     
         <div class="container_overlay">
-            <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>">
+            <img src="<?= $image['url']; ?>" loading="lazy" alt="<?= $image['alt']; ?>">
         </div>
     </div>
             

@@ -22,7 +22,7 @@
                     </div>
                      <div class="cold col-50">
                         <div class="block-img from-left" data-swiper-parallax="-300">
-                            <img src="<?= $image['url'];?>" alt="<?= $image['title'];?>"/>
+                            <img src="<?= $image['url'];?>" loading="lazy" alt="<?= $image['title'];?>"/>
                         </div>
                    </div>
                 </div>

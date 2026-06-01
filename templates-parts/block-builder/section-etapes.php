@@ -26,7 +26,7 @@ $slides   = get_sub_field('slides-step');
                                     <div class="colg">
                                         <div class="block-img">
                                             <?php if (!empty($s['image'])): ?>
-                                                <img src="<?= esc_url($s['image']['url']); ?>" 
+                                                <img src="<?= esc_url($s['image']['url']); ?>" loading="lazy"
                                                      alt="<?= esc_attr($s['image']['alt'] ?: $s['image']['title']); ?>">
                                             <?php endif; ?>
                                         </div>

@@ -15,8 +15,10 @@ function vh_theme_setup() {
     ]);
 
     register_nav_menus([
-        'primary' => __('Menu principal', 'vision-habitat'),
-        'footer'  => __('Menu footer', 'vision-habitat'),
+        'primary'     => __('Menu principal', 'vision-habitat'),
+        'footer'      => __('Menu footer', 'vision-habitat'),
+        'burger-menu' => __('Menu burger', 'vision-habitat'),
+        'menu-actu'   => __('Menu actu', 'vision-habitat'),
     ]);
 }
 add_action('after_setup_theme', 'vh_theme_setup');

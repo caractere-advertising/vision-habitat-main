@@ -27,7 +27,7 @@ wp_nav_menu(['theme_location' =>'menu-actu',
 
                     <div class="actu-card-img">
                         <?php if ($image) : ?>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                            <img src="<?php echo $image['url']; ?>"  loading="lazy" alt="<?php echo $image['alt']; ?>">
                         <?php endif; ?>
 
                         <?php if ($link) : ?>

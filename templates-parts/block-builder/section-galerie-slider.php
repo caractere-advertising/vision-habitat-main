@@ -18,7 +18,7 @@ $slides = get_sub_field('slides');
                 <div class="gallery-slide-inner">
                     <div class="gallery-image">
                         <?php if($image) : ?>
-                            <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>">
+                            <img src="<?= $image['url']; ?>" loading="lazy" alt="<?= $image['alt']; ?>">
                         <?php endif; ?>
                     </div>
                     <div class="gallery-info">

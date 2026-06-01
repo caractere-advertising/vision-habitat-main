@@ -1,9 +1,11 @@
-const imgHoverCont = document.querySelector('.links-hover-img'); 
+const imgHoverCont = document.querySelector('.links-hover-img');
 const imgHover = document.querySelector('#hover-img');
 const links = document.querySelectorAll('.links-item');
 
+if (!imgHoverCont || !imgHover || !links.length) return;
+
 document.addEventListener('mousemove', (e) => {
-    imgHoverCont.style.left = e.clientX + 20 + 'px'; 
+    imgHoverCont.style.left = e.clientX + 20 + 'px';
     imgHoverCont.style.top = e.clientY + 20 + 'px';
 });
 
@@ -16,6 +18,6 @@ links.forEach(link => {
         }
     });
     link.addEventListener('mouseleave', () => {
-        imgHoverCont.classList.remove('visible'); 
+        imgHoverCont.classList.remove('visible');
     });
 });

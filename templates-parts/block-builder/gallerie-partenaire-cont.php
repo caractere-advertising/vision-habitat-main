@@ -16,7 +16,7 @@ $titre = get_field('titre','option');
                 <div class="partenaire swiper-slide">
                     <a href="<?php echo $lien['url']; ?>">
                             <?php if ($image) : ?>
-                            <img class="image"src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                            <img class="image"src="<?php echo $image['url']; ? loading="lazy">" alt="<?php echo $image['alt']; ?>">
                             <?php endif; ?>
                         </a>
                 </div>

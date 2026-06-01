@@ -51,7 +51,7 @@ $taxonomies   = get_categories();
                 <article class="actu-card<?= $class; ?> from-bottom">
                     <div class="actu-card-img">
                         <?php if ($image) : ?>
-                            <img src="<?= esc_url($image); ?>" alt="<?= esc_attr($paragraph); ?>">
+                            <img src="<?= esc_url($image); ?>" alt="<?= esc_attr($paragraph); ?>" loading="lazy">
                         <?php endif; ?>
 
                         <?php if ($lien) : ?>

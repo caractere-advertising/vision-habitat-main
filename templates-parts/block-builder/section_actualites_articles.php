@@ -37,7 +37,7 @@ $query = new WP_Query($args);
                 <article class="actu-card<?php $class; ?> from-bottom">
                     <div class="actu-card-img">
                         <?php if ($image) : ?>
-                            <img src="<?php echo esc_url($image); ?>" alt="<?php esc_attr($paragraph); ?>">
+                            <img src="<?php echo esc_url($image); ?>" loading="lazy" alt="<?php esc_attr($paragraph); ?>">
                         <?php endif; ?>
 
                         <?php if ($lien) : ?>

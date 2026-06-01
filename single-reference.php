@@ -23,7 +23,7 @@ endfor;
         <div class="swiper-wrapper">
             <?php foreach($galerie as $g):?>
                 <div class="swiper-slide">
-                    <img src="<?= $g['url'];?>" alt="<?= $g['title'];?>"/>
+                    <img src="<?= $g['url'];?>" loading="lazy" alt="<?= $g['title'];?>"/>
                 </div>
             <?php endforeach;?>
         </div>
@@ -33,7 +33,7 @@ endfor;
 <section class="bloc-reference">
     <div class="container flex -full">
         <div class="col-40 col-g">
-            <div class="block-img"><img src="<?= $img_url[0];?>" alt="<?= $img_title[0];?>"></div>
+            <div class="block-img"><img src="<?= $img_url[0];?>" loading="lazy" alt="<?= $img_title[0];?>"></div>
         </div>
 
         <div class="col-d col-60">
@@ -43,7 +43,7 @@ endfor;
                 <p><strong>Architecte</strong> <br> <?= $archi; ?></p>
             </div>
             <div class="block-img">
-                <img src="<?= $img_url[1];?>" alt="<?= $img_title[1];?>"/>
+                <img src="<?= $img_url[1];?>" loading="lazy" alt="<?= $img_title[1];?>"/>
             </div>
         </div>
     </div>

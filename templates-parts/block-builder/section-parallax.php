@@ -6,5 +6,5 @@
 ?>
 
 <section class="section-image-parallax from-bottom" <?= $style;?>>
-    <img src="<?= $img['url'];?>" alt="<?= $img['title'];?>"/>
+    <img src="<?= $img['url'];?>" loading="lazy" alt="<?= $img['title'];?>"/>
 </section>  

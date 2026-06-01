@@ -18,7 +18,7 @@ $first = $card[0];
                 <div class="swiper-wrapper">
                     <?php foreach ($card as $c) : ?>
                         <div class="swiper-slide">
-                            <img src="<?= esc_url($c['image']['url']); ?>" alt="<?= esc_attr($c['image']['alt']); ?>">
+                            <img src="<?= esc_url($c['image']['url']); ?>" loading="lazy" alt="<?= esc_attr($c['image']['alt']); ?>">
                         </div>
                     <?php endforeach; ?>
                 </div>

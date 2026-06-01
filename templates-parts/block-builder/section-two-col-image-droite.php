@@ -27,7 +27,7 @@ $image       = get_sub_field('image');
 
         <div class="two-col-img-right col-50">
             <?php if ($image) : ?>
-                <img src="<?= ($image['url']) ?>" alt="<?=($image['alt']) ?>">
+                <img src="<?= ($image['url']) ?>" loading="lazy" alt="<?=($image['alt']) ?>">
             <?php endif; ?>
         </div>
 

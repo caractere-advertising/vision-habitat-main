@@ -8,7 +8,7 @@ $links = get_sub_field('lien_accordeon');
   <div class="container">
     <div class="col-image">
       <?php if ($image) : ?>
-        <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>">
+        <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" loading="lazy">
       <?php endif; ?>
     </div>
     <div class="col-text">

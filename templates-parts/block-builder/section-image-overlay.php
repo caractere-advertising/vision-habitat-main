@@ -20,10 +20,10 @@ $pt_image  = get_sub_field('pt_image');
         <div class="img-col">
             <div class="img-wrapper from-left">
                 <?php if($gd_image): ?>
-                    <img src="<?= $gd_image['url']; ?>" alt="<?= $gd_image['alt']; ?>" class="img-large">
+                    <img src="<?= $gd_image['url']; ?>" loading="lazy" alt="<?= $gd_image['alt']; ?>" class="img-large">
                 <?php endif;
                 if($pt_image): ?>
-                    <img src="<?= $pt_image['url']; ?>" alt="<?= $pt_image['alt']; ?>" class="img-small">
+                    <img src="<?= $pt_image['url']; ?>" loading="lazy" alt="<?= $pt_image['alt']; ?>" class="img-small">
                 <?php endif; ?>
             </div>
         </div>

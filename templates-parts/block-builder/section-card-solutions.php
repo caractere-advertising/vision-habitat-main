@@ -17,7 +17,7 @@ $cards = get_sub_field('card');
                 <div class="card from-bottom">
                     <div class="card-image">
                         <?php if ($image) : ?>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" loading="lazy">
                         <?php endif;
                         if ($link) : ?>
                             <a href="<?php echo $link['url']; ?>" class="card-plus">

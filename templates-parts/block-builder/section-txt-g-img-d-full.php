@@ -22,7 +22,7 @@ $img   = get_sub_field('image');
         <div class="cold col-60">
             <?php if($img):?>
                 <div class="block-img">
-                    <img src="<?= $img['url'];?>" alt="<?= $img['title'];?>"/>
+                    <img src="<?= $img['url'];?>" loading="lazy" alt="<?= $img['title'];?>"/>
                 </div>
             <?php endif;?>
         </div>
