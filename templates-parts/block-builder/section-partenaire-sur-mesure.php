@@ -1,5 +1,4 @@
 <?php 
-
 $slides = get_sub_field('slides-sur-mesure');
 $titre  = get_sub_field('titre');
 $texte  = get_sub_field('texte');

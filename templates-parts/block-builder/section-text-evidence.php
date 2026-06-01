@@ -22,9 +22,7 @@ $paragraph = get_sub_field('paragraph');
         <?php endif;
         
         if ($link) : ?>
-            <a href="<?= $link['url']; ?>" class="btn-cta from-bottom">
-                <?= $link['title']; ?>
-            </a>
+            <a href="<?= $link['url']; ?>" class="btn-cta from-bottom"><?= $link['title']; ?></a>
         <?php endif; ?>
     </div>
 </section>

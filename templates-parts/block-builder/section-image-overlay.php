@@ -19,7 +19,7 @@ $pt_image  = get_sub_field('pt_image');
 
         <div class="img-col">
             <div class="img-wrapper from-left">
-                <?php if ($gd_image) : ?>
+                <?php if($gd_image): ?>
                     <img src="<?= $gd_image['url']; ?>" alt="<?= $gd_image['alt']; ?>" class="img-large">
                 <?php endif;
                 if($pt_image): ?>

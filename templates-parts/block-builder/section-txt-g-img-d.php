@@ -12,9 +12,10 @@ $img   = get_sub_field('image');
     <div class="container container-bg"></div>
     <div class="container flex">
         <div class="colg col-50">
-             <?= $small_titre;?>
+            <?= $small_titre;?>
             <?= $titre;?>
             <div class="intro"><?= $intro;?></div>
+            
             <?php if($cta):?>
                 <a class="btn-cta" href="<?= $cta['url'];?>"><?= $cta['title'];?></a>
             <?php endif;?>

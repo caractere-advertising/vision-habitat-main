@@ -15,7 +15,5 @@ $cta = get_sub_field('cta');
             <div class="two-col-paragraph"><?= $intro ?></div>
             <a href="<?= $cta['url']; ?>" class="btn-cta"><?= $cta['title']; ?></a>
         </div>
-        
-
     </div>
 </section>

@@ -2,19 +2,13 @@
 $title     = get_sub_field('title');
 $paragraph = get_sub_field('paragraph');
 $link      = get_sub_field('link');
-// $img       = get_sub_field('image');
-// $location  = get_sub_field('location');
-// $price     = get_sub_field('price');
 
 /* Boucle projets */
 
-$projets   = get_sub_field('projets'); 
-
-?>
+$projets   = get_sub_field('projets'); ?>
 
 <section class="section-projects">
     <div class="projects-inner">
-
         <div class="projects-left">
             <div class="block-txt">
                 <?php if ($title): ?>
@@ -36,8 +30,8 @@ $projets   = get_sub_field('projets');
         <div class="projects-right">
             <div class="swiper swiper-projects">
                 <div class="swiper-wrapper">
-                        <?php if ($projets) : ?>
-                    <?php foreach($projets as $pr):
+                    <?php if($projets):
+                        foreach($projets as $pr):
                         $img       = $pr['image'];
                         $location  = $pr['location'] ?? '';
                         $price     = $pr['price'] ?? '';
@@ -50,8 +44,8 @@ $projets   = get_sub_field('projets');
                                 <span class="slide-price"><?= $price; ?></span>
                             </div>
                         </div>
-                    <?php endforeach;?>
-                    <?php endif; ?>
+                    <?php endforeach;
+                endif; ?>
                 </div>
             </div>
         </div>

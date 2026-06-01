@@ -4,7 +4,6 @@
 
 $cat           = get_sub_field('category');
 $text_evidence = get_sub_field('text_evidence');
-//$details       = get_sub_field('details');
 $paragraph     = get_sub_field('paragraph');
 $link          = get_sub_field('link');
 

@@ -32,34 +32,33 @@ $length = $slide ? count($slide) : 0;
 
     <div class="swiper swiper-fullwidth">
         <div class="swiper-wrapper">
-            <?php if ($slide) : ?>
-                <?php foreach ($slide as $s) :
+            <?php if ($slide):
+                foreach ($slide as $s) :
                     $img = $s['image'] ?? null;
                     $cta = $s['cta'] ?? null;
                 ?>
                     <div class="swiper-slide">
                         <div class="background">
-                            <?php if ($img) : ?>
+                            <?php if($img): ?>
                                 <img src="<?= esc_url($img['url']); ?>" alt="<?= esc_attr($img['alt']); ?>">
                             <?php endif; ?>
                         </div>
 
                         <div class="content">
-                            <?php if (!empty($s['titre'])) : ?>
+                            <?php if(!empty($s['titre'])) : ?>
                                 <div class="content-titre" data-swiper-parallax="-200">
                                     <?= wp_kses_post($s['titre']); ?>
                                 </div>
-                            <?php endif; ?>
-
-                            <?php if ($cta) : ?>
+                            <?php endif;
+                            if($cta): ?>
                                 <a href="<?= esc_url($cta['url']); ?>" class="btn-cta" data-swiper-parallax="-500">
                                     <?= esc_html($cta['title']); ?>
                                 </a>
                             <?php endif; ?>
                         </div>
                     </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
+                <?php endforeach;
+            endif; ?>
         </div>
 
         <div class="block-pagination container flex">
