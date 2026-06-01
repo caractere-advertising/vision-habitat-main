@@ -10,9 +10,9 @@ $colorImage = get_sub_field('couleur_ou_image');
 $colorImage == 'couleur' ? $bg =  get_sub_field('arriere-plan') : $bg = "url('" . get_sub_field('background') . "')";
 
 if($bg == 'rgb(255, 255, 255)'){
-$font = 'color:#05233c !important;' ;
+    $font = 'color:#05233c !important;' ;
 } else {
-$font ='test';
+    $font ='test';
 }
 
 $height = get_sub_field('hauteur');

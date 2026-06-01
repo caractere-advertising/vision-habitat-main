@@ -1,7 +1,7 @@
 <?php
     $img = get_sub_field('image');
-
     $height = get_sub_field('hauteur');
+    
     !empty($height) ? $style = 'style="height:'.$height.'vh;"' : $style = 'style="height:80vh;"';
 ?>
 

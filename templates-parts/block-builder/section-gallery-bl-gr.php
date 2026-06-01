@@ -4,7 +4,6 @@ $card = get_sub_field('card');
 if (!$card) return;
 
 $first = $card[0];
-var_dump($first);
 // Champs : slides (répéteur)
 //    image (image), titre (texte),ss-titre(texte), paragraph (wysiwyg)
 

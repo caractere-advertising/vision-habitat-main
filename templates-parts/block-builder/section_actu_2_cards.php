@@ -11,11 +11,6 @@ wp_nav_menu(['theme_location' =>'menu-actu',
 'menu_class'=>'actu-nav-list',])
 ?>
 <section class="section_actu_2_cards">
-
-    <!-- <?php if ($section_title) : ?>
-        <div class="actu-title"><?php echo $section_title; ?></div>
-    <?php endif; ?> -->
-
     <div class="actu-grid">
 
         <?php if (have_rows('articles')) : ?>

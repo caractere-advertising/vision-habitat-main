@@ -7,6 +7,10 @@ import {
   Parallax,
 } from "swiper/modules";
 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+
 const sliderFullwidthSection = document.querySelector(".slider-fullwidth");
 const numberCurrent = document.querySelector(".number-current");
 
@@ -132,5 +136,113 @@ const swiperSurMesure = new Swiper(".swiper-partenaire-sur-mesure", {
   },
   loop: true,
   autoplay: true,
+  speed: 600,
+});
+
+const swiperPart = new Swiper(".swiper-partenaire", {
+  modules: [Navigation, Autoplay],
+
+  navigation: {
+    nextEl: ".gallery-next",
+    prevEl: ".gallery-prev",
+  },
+  slidesPerView: 5,
+  spaceBetween: 20,
+  loop: true,
+  speed: 600,
+  autoplay: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  },
+});
+
+/* Swiper Projects */
+
+const numberEl = document.querySelector(".projects-number");
+
+const swiperProjects = new Swiper(".swiper-projects", {
+  modules: [Navigation, Scrollbar],
+
+  navigation: {
+    prevEl: ".projects-prev",
+    nextEl: ".projects-next",
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar-projects",
+    draggable: true,
+  },
+
+  loop: false,
+  speed: 600,
+
+  on: {
+    slideChange(swiper) {
+      if (numberEl) {
+        const i = swiper.realIndex + 1;
+        numberEl.textContent = i < 10 ? "0" + i : String(i);
+      }
+    },
+  },
+});
+
+/* Swiper gallery two columns */
+
+const swiperPhoto = new Swiper(".swiper-photo", {
+  modules: [Navigation, Scrollbar, Pagination],
+
+  navigation: {
+    nextEl: ".gallery-next",
+    prevEl: ".gallery-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pag-photo",
+    clickable: true,
+    type: "bullets",
+  },
+
+  slidesPerView: 1,
+  scrollbar: {
+    el: ".swiper-scroll-gallery-photo",
+  },
+  loop: true,
+  speed: 600,
+});
+
+/* Swiper gallery */
+
+const swiperGallery = new Swiper(".swiper-gallery", {
+  modules: [Navigation, Pagination, Scrollbar],
+
+  navigation: {
+    nextEl: ".gallery-next",
+    prevEl: ".gallery-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination-gallery",
+    clickable: true,
+    type: "bullets",
+  },
+
+  slidesPerView: 1.2,
+  scrollbar: {
+    el: ".swiper-scrollbar-galerie-slider",
+  },
+  spaceBetween: 200,
+  loop: true,
   speed: 600,
 });
