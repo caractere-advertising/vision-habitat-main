@@ -20,7 +20,7 @@ endif;
     <div class="header-inner">
         <a href="<?= esc_url( home_url( '/' ) ); ?>" class="header-logo">
             <?php if ( $logo ) : ?>
-                <img src="<?= esc_url( $logo['url'] ); ?>" alt="<?= esc_attr( $logo['alt'] ); ?>">
+                <img src="<?= esc_url( $logo['url'] ); ?>" alt="<?= esc_attr( $logo['alt'] ); ?>" width="250" height="140">
             <?php endif; ?>
         </a>
 
