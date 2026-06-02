@@ -16,11 +16,11 @@ endif;
 
 ?>
 
-<header class="<?= $class;?>">
+<header class="<?= esc_attr( $class ); ?>">
     <div class="header-inner">
-        <a href="<?= home_url('/'); ?>" class="header-logo">
-            <?php if ($logo): ?>
-                <img src="<?= $logo['url']; ?>" alt="<?= $logo['alt']; ?>">
+        <a href="<?= esc_url( home_url( '/' ) ); ?>" class="header-logo">
+            <?php if ( $logo ) : ?>
+                <img src="<?= esc_url( $logo['url'] ); ?>" alt="<?= esc_attr( $logo['alt'] ); ?>">
             <?php endif; ?>
         </a>
 

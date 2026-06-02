@@ -10,10 +10,11 @@ $link          = get_sub_field('link');
 // Ajout gestion margin paragraphe
 $margin = get_sub_field('margin');
 
-$top    = empty($margin['top']) ? 'auto' : $margin['top'] . 'px';
-$bottom = empty($margin['bottom']) ? 'auto' : $margin['bottom'] . 'px';
-$left   = empty($margin['left']) ? 'auto' : $margin['left'] . 'px';
-$right  = empty($margin['right']) ? 'auto' : $margin['right'] . 'px';
+// absint() pour garantir que les valeurs de marge sont des entiers positifs et non des valeurs CSS arbitraires
+$top    = empty( $margin['top'] )    ? 'auto' : absint( $margin['top'] ) . 'px';
+$bottom = empty( $margin['bottom'] ) ? 'auto' : absint( $margin['bottom'] ) . 'px';
+$left   = empty( $margin['left'] )   ? 'auto' : absint( $margin['left'] ) . 'px';
+$right  = empty( $margin['right'] )  ? 'auto' : absint( $margin['right'] ) . 'px';
 
 $displayMargin = 'style="margin:' . $top . ' ' . $right . ' ' . $bottom . ' ' . $left . '"';
 ?>
@@ -21,21 +22,21 @@ $displayMargin = 'style="margin:' . $top . ' ' . $right . ' ' . $bottom . ' ' . 
 <section class="section-two-col">
     <div class="two-col-inner container flex">
         <div class="two-col-left col-50">
-            <?php if($cat): ?>
-                <div class="section-label from-left"><span><?= $cat; ?></span></div>
+            <?php if ( $cat ) : ?>
+                <div class="section-label from-left"><span><?= esc_html( $cat ); ?></span></div>
             <?php endif;
-            if ($text_evidence): ?>
-                <div class="two-col-title big_title from-left"><?= $text_evidence; ?></div>
+            if ( $text_evidence ) : ?>
+                <div class="two-col-title big_title from-left"><?= wp_kses_post( $text_evidence ); ?></div>
             <?php endif; ?>
         </div>
 
         <div class="two-col-right col-50">
-            <?php if($paragraph): ?>
-                <div class="two-col-paragraph from-right" <?= $displayMargin;?>><?= $paragraph; ?></div>
+            <?php if ( $paragraph ) : ?>
+                <div class="two-col-paragraph from-right" <?= $displayMargin; ?>><?= wp_kses_post( $paragraph ); ?></div>
             <?php endif;
-            
-            if($link) : ?>
-                <a href="<?= $link['url']; ?>" class="btn-cta"><?= $link['title']; ?></a>
+
+            if ( $link ) : ?>
+                <a href="<?= esc_url( $link['url'] ); ?>" class="btn-cta"><?= esc_html( $link['title'] ); ?></a>
             <?php endif; ?>
         </div>
     </div>

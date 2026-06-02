@@ -1,6 +1,7 @@
 <?php
-$current_cat = isset($_GET['cat']) ? $_GET['cat'] : '';
-$paged       = get_query_var('paged') ?: 1;
+// Sanitize : category_name n'accepte que des slugs (lettres, chiffres, tirets)
+$current_cat = isset( $_GET['cat'] ) ? sanitize_key( $_GET['cat'] ) : '';
+$paged       = get_query_var( 'paged' ) ?: 1;
 
 $args = [
     'post_type'      => 'post',
@@ -8,7 +9,7 @@ $args = [
     'paged'          => $paged,
 ];
 
-if($current_cat){
+if ( $current_cat ) {
     $args['category_name'] = $current_cat;
 }
 
@@ -34,10 +35,10 @@ $query = new WP_Query($args);
                 }
                 ?>
 
-                <article class="actu-card<?php $class; ?> from-bottom">
+                <article class="actu-card<?= esc_attr( $class ); ?> from-bottom">
                     <div class="actu-card-img">
-                        <?php if ($image) : ?>
-                            <img src="<?php echo esc_url($image); ?>" loading="lazy" alt="<?php esc_attr($paragraph); ?>">
+                        <?php if ( $image ) : ?>
+                            <img src="<?php echo esc_url( $image ); ?>" loading="lazy" alt="<?php echo esc_attr( $paragraph ); ?>">
                         <?php endif; ?>
 
                         <?php if ($lien) : ?>

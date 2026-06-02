@@ -10,14 +10,14 @@ $video     = get_sub_field("video");
 <section class="section-video">
     <div class="video-top container">
         <div class="video-top-left">
-            <?php if ($text_ev): ?>
-                <div class="video-text from-top"><?= $text_ev; ?></div>
+            <?php if ( $text_ev ) : ?>
+                <div class="video-text from-top"><?= wp_kses_post( $text_ev ); ?></div>
                 <hr class="video-line">
             <?php endif; ?>
         </div>
 
         <div class="video-top-right">
-            <?php if ($paragraph): ?><p class="video-paragraph from-top"><?= $paragraph; ?></p><?php endif;?>
+            <?php if ( $paragraph ) : ?><p class="video-paragraph from-top"><?= esc_html( $paragraph ); ?></p><?php endif; ?>
         </div>
     </div>
 

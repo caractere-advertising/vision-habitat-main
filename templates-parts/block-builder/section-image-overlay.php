@@ -19,34 +19,34 @@ $pt_image  = get_sub_field('pt_image');
 
         <div class="img-col">
             <div class="img-wrapper from-left">
-                <?php if($gd_image): ?>
-                    <img src="<?= $gd_image['url']; ?>" loading="lazy" alt="<?= $gd_image['alt']; ?>" class="img-large">
+                <?php if ( $gd_image ) : ?>
+                    <img src="<?= esc_url( $gd_image['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $gd_image['alt'] ); ?>" class="img-large">
                 <?php endif;
-                if($pt_image): ?>
-                    <img src="<?= $pt_image['url']; ?>" loading="lazy" alt="<?= $pt_image['alt']; ?>" class="img-small">
+                if ( $pt_image ) : ?>
+                    <img src="<?= esc_url( $pt_image['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $pt_image['alt'] ); ?>" class="img-small">
                 <?php endif; ?>
             </div>
         </div>
 
         <div class="text-col">
-            <?php if($categorie): ?>
-                <div class="section-label from-right"><span><?= $categorie; ?></span></div>
+            <?php if ( $categorie ) : ?>
+                <div class="section-label from-right"><span><?= esc_html( $categorie ); ?></span></div>
             <?php endif;
-            if($details): ?>
-                <div class="text-col-title from-right"><?= $details; ?></div>
+            if ( $details ) : ?>
+                <div class="text-col-title from-right"><?= wp_kses_post( $details ); ?></div>
             <?php endif;
-            if($paragraph): ?>
-                <div class="text-col-paragraph from-right"><?= $paragraph; ?></div>
+            if ( $paragraph ) : ?>
+                <div class="text-col-paragraph from-right"><?= wp_kses_post( $paragraph ); ?></div>
             <?php endif;
-            if($liste): ?>
+            if ( $liste ) : ?>
                 <ul class="text-col-list">
-                    <?php foreach ($liste as $item) : ?>
-                        <li><?= $item['item']; ?></li>
+                    <?php foreach ( $liste as $item ) : ?>
+                        <li><?= esc_html( $item['item'] ); ?></li>
                     <?php endforeach; ?>
                 </ul>
             <?php endif;
-            if ($link) : ?>
-                <a href="<?= $link['url']; ?>" class="btn-cta from-bottom"><?= $link['title']; ?></a>
+            if ( $link ) : ?>
+                <a href="<?= esc_url( $link['url'] ); ?>" class="btn-cta from-bottom"><?= esc_html( $link['title'] ); ?></a>
             <?php endif; ?>
         </div>
     </div>

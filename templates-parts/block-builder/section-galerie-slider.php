@@ -17,13 +17,13 @@ $slides = get_sub_field('slides');
             <div class="swiper-slide">
                 <div class="gallery-slide-inner">
                     <div class="gallery-image">
-                        <?php if($image) : ?>
-                            <img src="<?= $image['url']; ?>" loading="lazy" alt="<?= $image['alt']; ?>">
+                        <?php if ( $image ) : ?>
+                            <img src="<?= esc_url( $image['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $image['alt'] ); ?>">
                         <?php endif; ?>
                     </div>
                     <div class="gallery-info">
-                        <?php if($titre): ?><p class="gallery-titre"><?= $titre; ?></p><?php endif;
-                        if ($description): ?><p class="gallery-description"><?= $description; ?></p><?php endif; ?>
+                        <?php if ( $titre ) : ?><p class="gallery-titre"><?= esc_html( $titre ); ?></p><?php endif;
+                        if ( $description ) : ?><p class="gallery-description"><?= esc_html( $description ); ?></p><?php endif; ?>
                     </div>
                 </div>
             </div>

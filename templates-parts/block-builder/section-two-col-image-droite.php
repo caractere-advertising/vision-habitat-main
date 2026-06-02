@@ -11,23 +11,23 @@ $image       = get_sub_field('image');
     <div class="two-col-inner container flex">
 
         <div class="two-col-left col-50">
-            <?php if ($small_titre) : ?>
-                <div class="two-col-small-titre"><?= $small_titre ?></div>
+            <?php if ( $small_titre ) : ?>
+                <div class="two-col-small-titre"><?= wp_kses_post( $small_titre ); ?></div>
             <?php endif; ?>
             <div class="two-col-title">
-                <?= $titre ?>
+                <?= wp_kses_post( $titre ); ?>
             </div>
             <div class="two-col-paragraph">
-                <?= $intro ?>
+                <?= wp_kses_post( $intro ); ?>
             </div>
-            <?php if ($cta) : ?>
-                <a href="<?= ($cta['url']) ?>" class="btn-cta"><?= ($cta['title']) ?></a>
+            <?php if ( $cta ) : ?>
+                <a href="<?= esc_url( $cta['url'] ); ?>" class="btn-cta"><?= esc_html( $cta['title'] ); ?></a>
             <?php endif; ?>
         </div>
 
         <div class="two-col-img-right col-50">
-            <?php if ($image) : ?>
-                <img src="<?= ($image['url']) ?>" loading="lazy" alt="<?=($image['alt']) ?>">
+            <?php if ( $image ) : ?>
+                <img src="<?= esc_url( $image['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $image['alt'] ?? '' ); ?>">
             <?php endif; ?>
         </div>
 

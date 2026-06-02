@@ -9,12 +9,12 @@ $count = 1;
             $lien = get_sub_field('lien');
             $image = get_sub_field('image');
             
-            if($lien){ ?>
-                <a href="<?= $lien['url']; ?>" class="links-item from-bottom"
-                 data-image="<?= $image ? $image['url'] : ''; ?>">
-                   
-                    <span class="links-numero"><?= str_pad($count++, 2, '0', STR_PAD_LEFT); ?></span>
-                    <span class="links-label"><?= $lien['title']; ?></span>
+            if ( $lien ) { ?>
+                <a href="<?= esc_url( $lien['url'] ); ?>" class="links-item from-bottom"
+                 data-image="<?= $image ? esc_url( $image['url'] ) : ''; ?>">
+
+                    <span class="links-numero"><?= esc_html( str_pad( $count++, 2, '0', STR_PAD_LEFT ) ); ?></span>
+                    <span class="links-label"><?= esc_html( $lien['title'] ); ?></span>
                 </a>
             <?php }
         endwhile; ?>

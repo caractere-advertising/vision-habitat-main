@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 class CPT_References {
     public static function register() {
@@ -47,23 +49,24 @@ class CPT_References {
     }
 }
 
-// Ajouter colonne "Catégorie" dans admin
-add_filter('manage_faq_posts_columns', function($columns) {
-    $columns['reference_category'] = __('Catégorie', 'custom_post_type');
+// Ajouter colonne "Catégorie" dans admin — hook sur le bon post type "reference"
+add_filter( 'manage_reference_posts_columns', function( $columns ) {
+    $columns['reference_category'] = __( 'Catégorie', 'custom_post_type' );
     return $columns;
-});
+} );
 
-add_action('manage_faq_posts_custom_column', function($column, $post_id) {
-    if ($column === 'reference_category') {
-        $terms = get_the_terms($post_id, 'reference_category');
-        if (!empty($terms) && !is_wp_error($terms)) {
-            $categories = wp_list_pluck($terms, 'name');
-            echo implode(', ', $categories);
+add_action( 'manage_reference_posts_custom_column', function( $column, $post_id ) {
+    if ( $column === 'reference_category' ) {
+        $terms = get_the_terms( $post_id, 'reference_category' );
+        if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+            $categories = wp_list_pluck( $terms, 'name' );
+            // esc_html() pour prévenir le XSS sur les noms de termes
+            echo esc_html( implode( ', ', $categories ) );
         } else {
-            echo '<em>Aucune</em>';
+            echo '<em>' . esc_html__( 'Aucune', 'custom_post_type' ) . '</em>';
         }
     }
-}, 10, 2);
+}, 10, 2 );
 
 add_action('init', ['CPT_References', 'register']);
 

@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 function vh_theme_setup() {
     add_theme_support('title-tag');

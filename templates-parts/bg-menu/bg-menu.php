@@ -35,27 +35,27 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
                 ?>
 
                 <div class="menu-burger-contact">
-                    <p class="menu-burger-contact-name"><?=  ($info['site-name']) ?></p>
+                    <p class="menu-burger-contact-name"><?= esc_html( $info['site-name'] ); ?></p>
 
                     <div class="contact-adresse from-left">
-                        <p class="from-left"><?= ($info['street-name']) ?></p>
-                        <p class="from-left"><?= ($info['locality']) ?></p>
+                        <p class="from-left"><?= esc_html( $info['street-name'] ); ?></p>
+                        <p class="from-left"><?= esc_html( $info['locality'] ); ?></p>
                     </div>
-                    
+
                     <div class="contact-tel-mail">
-                        <p class="from-left"><strong>Tél. </strong><a href="tel:<?= $linkTel;?>"><?= $tel; ?></a></p>
-                        <p class="from-left"><strong>Mail : </strong><a href="mailto:<?=  esc_html($info['mail']) ?>"><?=  esc_html($info['mail']) ?></a></p>
-                        <p class="from-left"><strong>TVA </strong><?= ($info['tva']) ?></p>
+                        <p class="from-left"><strong>Tél. </strong><a href="tel:<?= esc_attr( $linkTel ); ?>"><?= esc_html( $tel ); ?></a></p>
+                        <p class="from-left"><strong>Mail : </strong><a href="mailto:<?= esc_attr( sanitize_email( $info['mail'] ) ); ?>"><?= esc_html( $info['mail'] ); ?></a></p>
+                        <p class="from-left"><strong>TVA </strong><?= esc_html( $info['tva'] ?? '' ); ?></p>
                     </div>
                 </div>
             <?php endif; ?>
             
-           <?php if ($burger_socials) : ?>
+           <?php if ( $burger_socials ) : ?>
     <div class="menu-burger-socials from-left">
-        <?php foreach ($burger_socials as $social) : ?>
-            <a href="<?= $social['lien']; ?>">
-                <?php if ($social['logo']) : ?>
-                    <img src="<?= $social['logo']['url']; ?>" loading="lazy" alt="<?= $social['logo']['title']; ?>">
+        <?php foreach ( $burger_socials as $social ) : ?>
+            <a href="<?= esc_url( $social['lien'] ); ?>">
+                <?php if ( $social['logo'] ) : ?>
+                    <img src="<?= esc_url( $social['logo']['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $social['logo']['title'] ); ?>">
                 <?php endif; ?>
             </a>
         <?php endforeach; ?>
@@ -76,17 +76,21 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
 
         <div class="menu-bottom">
             <div class="burger-bottom">
-                <?php if ($footer_nav) : ?>
+                <?php if ( $footer_nav ) : ?>
                     <ul class="burger-legal-footer">
-                        <?php foreach ($footer_nav as $item) : ?>
-                            <li><a href="<?=  ($item['link']['url']) ?>"><?=  esc_html($item['link']['title']) ?></a></li>
+                        <?php foreach ( $footer_nav as $item ) : ?>
+                            <li><a href="<?= esc_url( $item['link']['url'] ); ?>"><?= esc_html( $item['link']['title'] ); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
 
                 <div class="burger-legal-copy">
-                    <p class="burger-legal-links"><a href="<?= $cond_generales['cond']['url'] ;?>"><?= esc_html($cond_generales['cond']['title']); ?></a></p>
-                    <p class="burger-legal-copyright"><?= esc_html($cond_generales['copyright']) ?></p>
+                    <?php if ( ! empty( $cond_generales['cond']['url'] ) ) : ?>
+                        <p class="burger-legal-links">
+                            <a href="<?= esc_url( $cond_generales['cond']['url'] ); ?>"><?= esc_html( $cond_generales['cond']['title'] ); ?></a>
+                        </p>
+                    <?php endif; ?>
+                    <p class="burger-legal-copyright"><?= esc_html( $cond_generales['copyright'] ?? '' ); ?></p>
                 </div>      
             </div>
         </div>

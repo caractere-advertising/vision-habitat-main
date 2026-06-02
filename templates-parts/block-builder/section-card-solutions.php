@@ -16,22 +16,22 @@ $cards = get_sub_field('card');
             ?>
                 <div class="card from-bottom">
                     <div class="card-image">
-                        <?php if ($image) : ?>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" loading="lazy">
+                        <?php if ( $image ) : ?>
+                            <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" loading="lazy">
                         <?php endif;
-                        if ($link) : ?>
-                            <a href="<?php echo $link['url']; ?>" class="card-plus">
-                                 <span class="btn-plus-icon">+</span>
+                        if ( $link ) : ?>
+                            <a href="<?php echo esc_url( $link['url'] ); ?>" class="card-plus">
+                                <span class="btn-plus-icon">+</span>
                             </a>
                         <?php endif; ?>
                     </div>
 
                     <div class="card-body">
-                        <?php if ($category) : ?>
-                            <span class="card-category"><?php echo $category; ?></span>
+                        <?php if ( $category ) : ?>
+                            <span class="card-category"><?php echo esc_html( $category ); ?></span>
                         <?php endif;
-                        if ($link) : ?>
-                            <p class="card-title"><?php echo $link['title']; ?></p>
+                        if ( $link ) : ?>
+                            <p class="card-title"><?php echo esc_html( $link['title'] ); ?></p>
                         <?php endif; ?>
                     </div>
                 </div>

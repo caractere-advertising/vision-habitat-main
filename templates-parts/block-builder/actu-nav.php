@@ -1,11 +1,11 @@
 <?php
-$current_cat = isset($_GET['cat']) ? $_GET['cat'] : '';
+$current_cat = isset( $_GET['cat'] ) ? sanitize_key( $_GET['cat'] ) : '';
 $categories  = get_categories(['hide_empty' => true]);
 ?>
 
 <nav class="actu-nav">
     <ul class="actu-nav-list">
-         <li class="<?= $current_cat === '' ? 'is-active' : ''; ?>">
+         <li class="<?= $current_cat === '' ? 'is-active' : ''; ?>"><?php // $current_cat est déjà sanitize_key ?>
             <a href="<?= esc_url(remove_query_arg('cat')); ?>">Tous</a>
         </li>
 

@@ -9,11 +9,13 @@ $cta = get_sub_field('cta');
 <section class="section-two-col">
     <div class="two-col-inner container flex">
         <div class="two-col-left col-50">
-            <div class="two-col-title "><?= $titre ?></div>
+            <div class="two-col-title"><?= wp_kses_post( $titre ); ?></div>
         </div>
         <div class="two-col-right col-50">
-            <div class="two-col-paragraph"><?= $intro ?></div>
-            <a href="<?= $cta['url']; ?>" class="btn-cta"><?= $cta['title']; ?></a>
+            <div class="two-col-paragraph"><?= wp_kses_post( $intro ); ?></div>
+            <?php if ( ! empty( $cta['url'] ) ) : ?>
+                <a href="<?= esc_url( $cta['url'] ); ?>" class="btn-cta"><?= esc_html( $cta['title'] ); ?></a>
+            <?php endif; ?>
         </div>
     </div>
 </section>

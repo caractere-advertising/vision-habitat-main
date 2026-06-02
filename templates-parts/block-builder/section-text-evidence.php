@@ -11,18 +11,18 @@ $paragraph = get_sub_field('paragraph');
 
 <section class="section-text-evidence">
     <div class="section-inner container">
-        <?php if ($categorie) : ?>
-            <div class="section-label from-bottom"><span><?= $categorie; ?></span></div>
+        <?php if ( $categorie ) : ?>
+            <div class="section-label from-bottom"><span><?= esc_html( $categorie ); ?></span></div>
         <?php endif; ?>
 
-        <div class="section-content from-left"><?= $details; ?></div>
+        <div class="section-content from-left"><?= wp_kses_post( $details ); ?></div>
 
-        <?php if ($paragraph) : ?>
-            <div class="section-paragraph from-left"><?= $paragraph; ?></div>
+        <?php if ( $paragraph ) : ?>
+            <div class="section-paragraph from-left"><?= wp_kses_post( $paragraph ); ?></div>
         <?php endif;
-        
-        if ($link) : ?>
-            <a href="<?= $link['url']; ?>" class="btn-cta from-bottom"><?= $link['title']; ?></a>
+
+        if ( $link ) : ?>
+            <a href="<?= esc_url( $link['url'] ); ?>" class="btn-cta from-bottom"><?= esc_html( $link['title'] ); ?></a>
         <?php endif; ?>
     </div>
 </section>

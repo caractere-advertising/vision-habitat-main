@@ -8,20 +8,22 @@ $link = get_sub_field('link');
 
 <section class="section-text-overlay">
     <div class="container flex">
-        <div class="title"><?= $title ?></div>
-    
+        <div class="title"><?= wp_kses_post( $title ); ?></div>
+
         <div class="container_overlay">
-            <img src="<?= $image['url']; ?>" loading="lazy" alt="<?= $image['alt']; ?>">
+            <?php if ( $image ) : ?>
+                <img src="<?= esc_url( $image['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $image['alt'] ?? '' ); ?>">
+            <?php endif; ?>
         </div>
     </div>
-            
-    <div class="container content_overlay">
-        <div class="paragraph"><?= $paragraph ?></div>
 
-        <?php if($link):?>
-            <a class="btn-cta" href="<?= $link['url'];?>">
-                <?= $link['title'];?>
-            </a>     
-        <?php endif;?>    
+    <div class="container content_overlay">
+        <div class="paragraph"><?= wp_kses_post( $paragraph ); ?></div>
+
+        <?php if ( $link ) : ?>
+            <a class="btn-cta" href="<?= esc_url( $link['url'] ); ?>">
+                <?= esc_html( $link['title'] ); ?>
+            </a>
+        <?php endif; ?>
     </div>
 </section>

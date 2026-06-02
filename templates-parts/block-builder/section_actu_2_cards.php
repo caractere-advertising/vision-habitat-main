@@ -26,21 +26,21 @@ wp_nav_menu(['theme_location' =>'menu-actu',
                 <article class="actu-card">
 
                     <div class="actu-card-img">
-                        <?php if ($image) : ?>
-                            <img src="<?php echo $image['url']; ?>"  loading="lazy" alt="<?php echo $image['alt']; ?>">
+                        <?php if ( $image ) : ?>
+                            <img src="<?php echo esc_url( $image['url'] ); ?>" loading="lazy" alt="<?php echo esc_attr( $image['alt'] ); ?>">
                         <?php endif; ?>
 
-                        <?php if ($link) : ?>
-                            <a href="<?php echo $link['url']; ?>" class="actu-card-plus">+</a>
+                        <?php if ( $link ) : ?>
+                            <a href="<?php echo esc_url( $link['url'] ); ?>" class="actu-card-plus">+</a>
                         <?php endif; ?>
                     </div>
 
-                    <?php if ($title) : ?>
-                        <div class="actu-card-title"><?php echo $title; ?></div>
+                    <?php if ( $title ) : ?>
+                        <div class="actu-card-title"><?= wp_kses_post( $title ); ?></div>
                     <?php endif; ?>
 
-                    <?php if ($paragraph) : ?>
-                        <div class="actu-card-paragraph"><?php echo $paragraph; ?></div>
+                    <?php if ( $paragraph ) : ?>
+                        <div class="actu-card-paragraph"><?= wp_kses_post( $paragraph ); ?></div>
                     <?php endif; ?>
 
                 </article>

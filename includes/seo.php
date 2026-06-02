@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 /**
  * SEO & GEO — Vision Habitat
  * - Nettoyage du <head> WordPress

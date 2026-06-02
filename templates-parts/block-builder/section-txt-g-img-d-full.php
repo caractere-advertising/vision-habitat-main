@@ -12,19 +12,19 @@ $img   = get_sub_field('image');
 <section class="section-txt-g-img-d-full">
     <div class="container flex">
         <div class="colg col-40">
-            <?= $surtitre;?>
-            <?= $titre;?>
-            <div class="intro"><?= $intro;?></div>
-            <?php if($cta):?>
-                <a class="btn-cta" href="<?= $cta['url'];?>"><?= $cta['title'];?></a>
-            <?php endif;?>
+            <?= wp_kses_post( $surtitre ); ?>
+            <?= wp_kses_post( $titre ); ?>
+            <div class="intro"><?= wp_kses_post( $intro ); ?></div>
+            <?php if ( $cta ) : ?>
+                <a class="btn-cta" href="<?= esc_url( $cta['url'] ); ?>"><?= esc_html( $cta['title'] ); ?></a>
+            <?php endif; ?>
         </div>
         <div class="cold col-60">
-            <?php if($img):?>
+            <?php if ( $img ) : ?>
                 <div class="block-img">
-                    <img src="<?= $img['url'];?>" loading="lazy" alt="<?= $img['title'];?>"/>
+                    <img src="<?= esc_url( $img['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $img['title'] ?? '' ); ?>"/>
                 </div>
-            <?php endif;?>
+            <?php endif; ?>
         </div>
     </div>
 </section>

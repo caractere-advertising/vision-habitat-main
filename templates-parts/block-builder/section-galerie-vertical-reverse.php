@@ -13,16 +13,18 @@
                 <div class="swiper-slide flex">
                    <div class="colg col-50">
                         <div class="content from-left">
-                            <span data-swiper-parallax="-200"><?= $titre;?></span>
-                            <span data-swiper-parallax="-100"><?= $texte;?></span>
-                            <?php if($cta):?>
-                                <a href="<?= $cta['url'];?>" class="btn-cta"><?= $cta['title'];?></a>
-                            <?php endif;?>
+                            <span data-swiper-parallax="-200"><?= wp_kses_post( $titre ); ?></span>
+                            <span data-swiper-parallax="-100"><?= wp_kses_post( $texte ); ?></span>
+                            <?php if ( $cta ) : ?>
+                                <a href="<?= esc_url( $cta['url'] ); ?>" class="btn-cta"><?= esc_html( $cta['title'] ); ?></a>
+                            <?php endif; ?>
                         </div>
                     </div>
-                     <div class="cold col-50">
+                    <div class="cold col-50">
                         <div class="block-img from-left" data-swiper-parallax="-300">
-                            <img src="<?= $image['url'];?>" loading="lazy" alt="<?= $image['title'];?>"/>
+                            <?php if ( $image ) : ?>
+                                <img src="<?= esc_url( $image['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $image['title'] ?? '' ); ?>"/>
+                            <?php endif; ?>
                         </div>
                    </div>
                 </div>

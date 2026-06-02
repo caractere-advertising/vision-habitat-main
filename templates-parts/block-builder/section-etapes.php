@@ -33,11 +33,11 @@ $slides   = get_sub_field('slides-step');
                                     </div>
 
                                     <div class="cold">
-                                        <?php if (!empty($s['titre'])): ?>
-                                            <div class="slide-title from-right"><?= str_pad($i, 2, '0', STR_PAD_LEFT) . '. ' . $s['titre']; ?></div>
+                                        <?php if ( ! empty( $s['titre'] ) ) : ?>
+                                            <div class="slide-title from-right"><?= esc_html( str_pad( $i, 2, '0', STR_PAD_LEFT ) . '. ' . $s['titre'] ); ?></div>
                                         <?php endif; ?>
-                                        <?php if (!empty($s['texte'])): ?>
-                                            <div class="slide-text from-right"><?= $s['texte']; ?></div>
+                                        <?php if ( ! empty( $s['texte'] ) ) : ?>
+                                            <div class="slide-text from-right"><?= wp_kses_post( $s['texte'] ); ?></div>
                                         <?php endif; ?>
                                     </div>
                                 </div>

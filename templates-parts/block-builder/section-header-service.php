@@ -7,23 +7,28 @@ if (is_home()) {
 }
 
 $colorImage = get_sub_field('couleur_ou_image');
-$colorImage == 'couleur' ? $bg =  get_sub_field('arriere-plan') : $bg = "url('" . get_sub_field('background') . "')";
-
-if($bg == 'rgb(255, 255, 255)'){
-    $font = 'color:#05233c !important;' ;
+if ( $colorImage === 'couleur' ) {
+    // Valeur CSS couleur : on autorise uniquement des valeurs hex/rgb/named
+    $raw_bg = get_sub_field( 'arriere-plan' );
+    $bg     = sanitize_hex_color( $raw_bg ) ?: esc_attr( $raw_bg );
 } else {
-    $font ='test';
+    $raw_url = get_sub_field( 'background' );
+    $bg      = "url('" . esc_url( $raw_url ) . "')";
 }
 
-$height = get_sub_field('hauteur');
+if ( $bg === 'rgb(255, 255, 255)' || $bg === '#ffffff' ) {
+    $font_style = 'color:#05233c !important;';
+} else {
+    $font_style = '';
+}
 
-$style = "style=\"background:" . $bg . ";";
-$style .= "height:". $height . "vh;\"";
+// absint garantit que la hauteur est un entier positif
+$height = absint( get_sub_field( 'hauteur' ) ) ?: 80;
 
-$styleH1 = "style=\"";
-$styleH1 .= $font . "\"";  
+$style   = 'style="background:' . esc_attr( $bg ) . ';height:' . $height . 'vh;"';
+$styleH1 = $font_style ? 'style="' . esc_attr( $font_style ) . '"' : '';
 
-$cta   = get_sub_field('cta') ?? array('url'=>'#','title'=>'Lorem');
+$cta = get_sub_field( 'cta' ) ?? [ 'url' => '#', 'title' => 'Lorem' ];
 
 ?>
 
@@ -34,9 +39,9 @@ $cta   = get_sub_field('cta') ?? array('url'=>'#','title'=>'Lorem');
         </div>
         <div class="col cold">
             <div class="block-cta from-right">
-                <?php if($cta):?>
-                    <a href="<?= $cta['url'];?>" class="btn-cta"><?= $cta['title'];?></a>
-                <?php endif;?>
+                <?php if ( $cta ) : ?>
+                    <a href="<?= esc_url( $cta['url'] ); ?>" class="btn-cta"><?= esc_html( $cta['title'] ); ?></a>
+                <?php endif; ?>
             </div>
         </div>
     </div>

@@ -11,18 +11,18 @@ $projets   = get_sub_field('projets'); ?>
     <div class="projects-inner">
         <div class="projects-left">
             <div class="block-txt">
-                <?php if ($title): ?>
-                    <div class="projects-title from-left"><?= $title; ?></div>
+                <?php if ( $title ) : ?>
+                    <div class="projects-title from-left"><?= wp_kses_post( $title ); ?></div>
                 <?php endif; ?>
 
-                <?php if ($paragraph): ?>
-                    <div class="projects-paragraph from-left"><?= $paragraph; ?></div>
+                <?php if ( $paragraph ) : ?>
+                    <div class="projects-paragraph from-left"><?= wp_kses_post( $paragraph ); ?></div>
                 <?php endif; ?>
             </div>
 
-            <?php if ($link) : ?>
-                <a href="<?= $link['url']; ?>" class="btn-cta from-left">
-                    <?= $link['title']; ?>
+            <?php if ( $link ) : ?>
+                <a href="<?= esc_url( $link['url'] ); ?>" class="btn-cta from-left">
+                    <?= esc_html( $link['title'] ); ?>
                 </a>
             <?php endif; ?>
         </div>
@@ -30,18 +30,17 @@ $projets   = get_sub_field('projets'); ?>
         <div class="projects-right">
             <div class="swiper swiper-projects">
                 <div class="swiper-wrapper">
-                    <?php if($projets):
-                        foreach($projets as $pr):
-                        $img       = $pr['image'];
-                        $location  = $pr['location'] ?? '';
-                        $price     = $pr['price'] ?? '';
-                        
+                    <?php if ( $projets ) :
+                        foreach ( $projets as $pr ) :
+                        $img      = $pr['image'];
+                        $location = $pr['location'] ?? '';
+                        $price    = $pr['price'] ?? '';
                         ?>
                         <div class="swiper-slide">
-                            <img src="<?= $img['url']; ?>" loading="lazy" alt="<?= $img['alt']; ?>">
+                            <img src="<?= esc_url( $img['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $img['alt'] ?? '' ); ?>">
                             <div class="slide-info from-bottom">
-                                <span class="slide-location"><?= $location; ?></span>
-                                <span class="slide-price"><?= $price; ?></span>
+                                <span class="slide-location"><?= esc_html( $location ); ?></span>
+                                <span class="slide-price"><?= esc_html( $price ); ?></span>
                             </div>
                         </div>
                     <?php endforeach;
@@ -67,7 +66,7 @@ $projets   = get_sub_field('projets'); ?>
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                        <path d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z"></path>
+                        <path d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c0.208 0.208 0.486 0.316 0.757 0.316z"></path>
                     </g>
                 </svg>
             </button>

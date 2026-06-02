@@ -7,14 +7,14 @@ $links = get_sub_field('lien_accordeon');
 <section class="section-accordeon">
   <div class="container">
     <div class="col-image">
-      <?php if ($image) : ?>
-        <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" loading="lazy">
+      <?php if ( $image ) : ?>
+        <img src="<?= esc_url( $image['url'] ); ?>" alt="<?= esc_attr( $image['alt'] ?? '' ); ?>" loading="lazy">
       <?php endif; ?>
     </div>
     <div class="col-text">
       <div class="section-header">
-        <p class="small_title"><?= $small_title ?></p>
-        <div class="title"><?= $title ?></div>
+        <p class="small_title"><?= esc_html( $small_title ); ?></p>
+        <div class="title"><?= wp_kses_post( $title ); ?></div>
       </div>
       <ul class="accordeon">
         <?php if ($links) foreach ($links as $link): ?>

@@ -16,20 +16,20 @@ $blueActif = get_sub_field('blue_activated');
     <?php if($citation):?>
         <div class="citation-block container">
             <div class="citation-inner">
-                <?php if ($name && $signTop == 1) : ?><span class="citation-name from-left"><?= $name; ?></span><?php endif; ?>
-                <?php if ($citation) : ?><div class="citation-text from-right"><?= $citation; ?></div><?php endif; ?>
-                <?php if ($name && $signTop == 0) : ?><span class="citation-name bottom from-left"><?= $name; ?></span><?php endif; ?>
+                <?php if ( $name && $signTop == 1 ) : ?><span class="citation-name from-left"><?= esc_html( $name ); ?></span><?php endif; ?>
+                <?php if ( $citation ) : ?><div class="citation-text from-right"><?= wp_kses_post( $citation ); ?></div><?php endif; ?>
+                <?php if ( $name && $signTop == 0 ) : ?><span class="citation-name bottom from-left"><?= esc_html( $name ); ?></span><?php endif; ?>
             </div>
         </div>
-    <?php endif;?>
-    <?php if($blueActif):?>
+    <?php endif; ?>
+    <?php if ( $blueActif ) : ?>
         <div class="citation-blue">
             <div class="citation-blue-inner container">
-                <?php if ($title) : ?>
-                    <div class="citation-blue-title from-left"><?= $title; ?></div>
+                <?php if ( $title ) : ?>
+                    <div class="citation-blue-title from-left"><?= wp_kses_post( $title ); ?></div>
                 <?php endif;
-                if($link): ?>
-                    <a href="<?= $link['url'];?>" class="btn-cta from-top"><?= $link['title'];?></a>
+                if ( $link ) : ?>
+                    <a href="<?= esc_url( $link['url'] ); ?>" class="btn-cta from-top"><?= esc_html( $link['title'] ); ?></a>
                 <?php endif;?>
 
                 <?php if($citation):?><div class="citation-deco"></div><?php endif;?>

@@ -4,6 +4,8 @@
  * Functions & Theme Setup
  */
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 include_once get_template_directory() . '/includes/setup.php';
 include_once get_template_directory() . '/includes/acf-fields.php';
 include_once get_template_directory() . '/includes/seo.php';
@@ -93,45 +95,67 @@ function vh_font_preload() {
     echo '<link rel="preload" href="' . esc_url($fonts_uri) . 'manrope-latin.woff2" as="font" type="font/woff2" crossorigin>' . "\n";
 }
 
-//SVG Files
-add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
-    global $wp_version;
-    if ( $wp_version !== '4.7.1' ) {
-       return $data;
+//SVG Files — upload réservé aux administrateurs uniquement
+add_filter( 'upload_mimes', 'vh_mime_types' );
+
+function vh_mime_types( $mimes ) {
+    // N'autoriser SVG que pour les utilisateurs ayant la capacité manage_options (admins)
+    if ( current_user_can( 'manage_options' ) ) {
+        $mimes['svg'] = 'image/svg+xml';
     }
-  
-    $filetype = wp_check_filetype( $filename, $mimes );
-  
-    return [
-        'ext'             => $filetype['ext'],
-        'type'            => $filetype['type'],
-        'proper_filename' => $data['proper_filename']
-    ];
-}, 10, 4 );
-  
-function cc_mime_types( $mimes ){
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
-}
-  
-function fix_svg() {
-    echo '<style type="text/css">
-          .attachment-266x266, .thumbnail img {
-               width: 100% !important;
-               height: auto !important;
-          }
-          </style>';
+    return $mimes;
 }
 
-add_filter( 'upload_mimes', 'cc_mime_types' );
-add_action( 'admin_head', 'fix_svg' );
+// Vérification MIME réelle du SVG (pas seulement l'extension)
+add_filter( 'wp_check_filetype_and_ext', 'vh_check_svg_filetype', 10, 4 );
+
+function vh_check_svg_filetype( $data, $file, $filename, $mimes ) {
+    if ( ! current_user_can( 'manage_options' ) ) {
+        return $data;
+    }
+
+    $ext = strtolower( pathinfo( $filename, PATHINFO_EXTENSION ) );
+
+    if ( 'svg' !== $ext ) {
+        return $data;
+    }
+
+    // Vérifier que le contenu est bien du XML/SVG et non du PHP ou JS injecté
+    $content = file_get_contents( $file );
+    if ( false === $content ) {
+        return $data;
+    }
+
+    // Bloquer si le SVG contient des scripts ou des gestionnaires d'événements
+    if ( preg_match( '/<script[\s>]/i', $content ) || preg_match( '/\bon\w+\s*=/i', $content ) ) {
+        return [ 'ext' => false, 'type' => false, 'proper_filename' => false ];
+    }
+
+    return [
+        'ext'             => 'svg',
+        'type'            => 'image/svg+xml',
+        'proper_filename' => $data['proper_filename'],
+    ];
+}
+
+function vh_fix_svg_display() {
+    echo '<style>.attachment-266x266,.thumbnail img{width:100%!important;height:auto!important}</style>';
+}
+add_action( 'admin_head', 'vh_fix_svg_display' );
 
 
 add_action('wp_head', 'vh_font_preload', 1);
 
-function return_post(){
-    global $wpdb;   
-    $post = $wpdb->get_results("SELECT * FROM wp_posts WHERE post_type = 'post' AND post_status = 'publish' ORDER BY post_date DESC LIMIT 1");
+function return_post() {
+    global $wpdb;
+    // Utilisation du préfixe dynamique $wpdb->posts au lieu de wp_posts hardcodé
+    $post = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT * FROM {$wpdb->posts} WHERE post_type = %s AND post_status = %s ORDER BY post_date DESC LIMIT 1",
+            'post',
+            'publish'
+        )
+    );
 
     return $post;
 }

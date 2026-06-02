@@ -13,17 +13,19 @@
                 <div class="swiper-slide flex">
                     <div class="colg col-50">
                         <div class="block-img">
-                            <?php if($image):?><img src="<?= $image['url'];?>" loading="lazy" alt="<?= $image['title'];?>"/><?php endif;?>
+                            <?php if ( $image ) : ?>
+                                <img src="<?= esc_url( $image['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $image['title'] ?? '' ); ?>"/>
+                            <?php endif; ?>
                         </div>
                    </div>
 
                    <div class="cold col-50">
                         <div class="content from-right">
-                            <?= $titre;?>
-                            <?= $texte;?>
-                            <?php if($cta):?>
-                                <a href="<?= $cta['url'];?>" class="btn-cta"><?= $cta['title'];?></a>
-                            <?php endif;?>
+                            <?= wp_kses_post( $titre ); ?>
+                            <?= wp_kses_post( $texte ); ?>
+                            <?php if ( $cta ) : ?>
+                                <a href="<?= esc_url( $cta['url'] ); ?>" class="btn-cta"><?= esc_html( $cta['title'] ); ?></a>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>

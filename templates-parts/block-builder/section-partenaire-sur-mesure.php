@@ -10,21 +10,21 @@ $texte  = get_sub_field('texte');
         <div class="colg col-50">
             <div class="swiper swiper-partenaire-sur-mesure">
                 <div class="swiper-wrapper">
-                    <?php if($slides):
-                        foreach ($slides as $s):?>
+                    <?php if ( $slides ) :
+                        foreach ( $slides as $s ) : ?>
                             <div class="swiper-slide block-img">
-                                <img src="<?= $s['image']['url'];?>" loading="lazy" alt="<?=$s['image']['title'];?>"/>
+                                <img src="<?= esc_url( $s['image']['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $s['image']['title'] ?? '' ); ?>"/>
                             </div>
                         <?php endforeach;
-                    endif;?>
+                    endif; ?>
                 </div>
                 <div class="swiper-pagination-sur-mesure"></div>
             </div>
         </div>
 
         <div class="cold col-50">
-            <span class="block-title from-right"><?= $titre ?: '';?></span>
-            <span class="block-texte from-right"><?= $texte ?: '';?></span>
+            <span class="block-title from-right"><?= wp_kses_post( $titre ?: '' ); ?></span>
+            <span class="block-texte from-right"><?= wp_kses_post( $texte ?: '' ); ?></span>
         </div>
     </div>
 </section>
