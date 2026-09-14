@@ -26,7 +26,7 @@
 
   .slider-layout {
     position: relative;
-    margin-top: -160px;
+    margin-top: 0;
   }
 
   .slide-inner {
@@ -133,14 +133,12 @@
     top: -0.5px;
     background: $txtColor;
   }
-
-  
 }
 
 @media (max-width: 768px) {
   .section-step {
     padding: 60px 0;
-    h2{
+    h2 {
       font-size: 2.2rem;
       line-height: 1.2;
     }
@@ -165,13 +163,6 @@
           height: 300px;
           transform: translateX(0);
         }
-
-      
-
-
-
-   
-  
       }
 
       .cold {
@@ -185,14 +176,11 @@
       flex-direction: row;
       margin-top: 30px;
 
-        
-
-  .swiper-step-prev,
-  .swiper-step-next {
-    width: 60px;
-    height: 60px;
-   
-    }
+      .swiper-step-prev,
+      .swiper-step-next {
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 }

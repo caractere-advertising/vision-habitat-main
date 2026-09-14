@@ -8,6 +8,7 @@
     font-weight: 300;
     margin-top: 50px;
   }
+
   .actu-grid {
     .actu-card {
       max-height: 600px;
@@ -30,6 +31,7 @@
           transform: scale(1.05);
           filter: brightness(0.6);
         }
+
         .actu-card-plus {
           background-color: $primaryColor;
           color: $white;

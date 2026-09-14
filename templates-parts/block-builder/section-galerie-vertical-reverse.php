@@ -13,8 +13,8 @@
                 <div class="swiper-slide flex">
                    <div class="colg col-50">
                         <div class="content from-left">
-                            <span data-swiper-parallax="-200"><?= wp_kses_post( $titre ); ?></span>
-                            <span data-swiper-parallax="-100"><?= wp_kses_post( $texte ); ?></span>
+                            <div class="section-title"><?= wp_kses_post( $titre ); ?></div>
+                            <?= wp_kses_post( $texte ); ?>
                             <?php if ( $cta ) : ?>
                                 <a href="<?= esc_url( $cta['url'] ); ?>" class="btn-cta"><?= esc_html( $cta['title'] ); ?></a>
                             <?php endif; ?>

@@ -15,16 +15,18 @@ $cards = get_sub_field('card');
                 $link     = $c['card_link'];
             ?>
                 <div class="card from-bottom">
-                    <div class="card-image">
-                        <?php if ( $image ) : ?>
-                            <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" loading="lazy">
-                        <?php endif;
-                        if ( $link ) : ?>
-                            <a href="<?php echo esc_url( $link['url'] ); ?>" class="card-plus">
-                                <span class="btn-plus-icon">+</span>
-                            </a>
-                        <?php endif; ?>
-                    </div>
+                    <?php if ( $link ) : ?> <a href="<?php echo esc_url( $link['url'] ); ?>"><?php endif; ?>
+                        <div class="card-image">
+                            <?php if ( $image ) : ?>
+                                <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" loading="lazy">
+                            <?php endif;
+                            if ( $link ) : ?>
+                                <a href="<?php echo esc_url( $link['url'] ); ?>" class="card-plus">
+                                    <span class="btn-plus-icon">+</span>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                     <?php if ( $link ) : ?></a><?php endif; ?>
 
                     <div class="card-body">
                         <?php if ( $category ) : ?>

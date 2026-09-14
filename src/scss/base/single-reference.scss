@@ -14,37 +14,53 @@
 
 .bloc-reference {
   padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 
   .container {
     gap: 100px;
 
     .col-g {
       .block-img {
-        height: 600px;
-        max-height: 700px;
+        height: 500px;
         width: 100%;
       }
     }
 
     .col-d {
       .section-informations {
-        padding: 0 100px 100px;
+        padding: 0 100px 50px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 50px;
 
         p {
           font-weight: 200;
 
           strong {
-            font-weight: 400;
+            font-weight: 600;
           }
         }
       }
 
       .block-img {
-        height: 800px;
-        max-height: 900px;
+        height: 700px;
+      }
+    }
+
+    &.-reverse {
+      .col-g {
+        .block-img {
+          height: 700px;
+        }
+      }
+
+      .col-d {
+        .block-img {
+          height: 500px;
+          width: 100%;
+        }
       }
     }
   }

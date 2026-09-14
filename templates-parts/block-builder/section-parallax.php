@@ -6,6 +6,8 @@ $style  = 'style="height:' . $height . 'vh;"';
 
 <section class="section-image-parallax from-bottom" <?= $style; ?>>
     <?php if ( $img ) : ?>
-        <img src="<?= esc_url( $img['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $img['title'] ?? '' ); ?>"/>
+        <div class="block-img parallax">
+            <img src="<?= esc_url( $img['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $img['title'] ?? '' ); ?>"/>
+        </div>
     <?php endif; ?>
 </section>

@@ -47,6 +47,13 @@
             gap: 50px;
             width: 70%;
 
+            .section-title {
+              h2,
+              p {
+                color: $primaryColor;
+              }
+            }
+
             p {
               text-align: justify;
             }
@@ -111,6 +118,13 @@
             margin-right: 0;
             margin-left: auto;
 
+            .section-title {
+              h2,
+              p {
+                color: $primaryColor;
+              }
+            }
+
             p {
               text-align: justify;
             }
@@ -158,7 +172,7 @@
             height: 300px;
 
             .block-img {
-              height: 100%; 
+              height: 100%;
               width: 95%;
             }
           }

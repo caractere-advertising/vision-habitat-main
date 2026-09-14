@@ -233,6 +233,105 @@ acf_add_local_field_group( array(
                         ),
                     ),
                 ),
+
+                // ─── Gallery références ─────────────────────────────────────────
+                'layout_6aa7faab925e1' => array(
+					'key' => 'layout_6aa7faab925e1',
+					'name' => 'galerie_references',
+					'label' => 'Galerie reférences',
+					'display' => 'block',
+					'sub_fields' => array(
+						
+						array(
+							'key' => 'field_6aa7fad338db2',
+							'label' => 'Que souhaitez-vous récupérer?',
+							'name' => 'quel_type',
+							'aria-label' => '',
+							'type' => 'checkbox',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => $wrapper,
+							'choices' => array(
+								'references' => 'References',
+								'projets' => 'Projets',
+							),
+							'default_value' => array(
+							),
+							'return_format' => 'value',
+							'allow_custom' => 0,
+							'allow_in_bindings' => 0,
+							'layout' => 'vertical',
+							'toggle' => 0,
+							'save_custom' => 0,
+							'custom_choice_button_text' => 'Ajouter un nouveau choix',
+						),
+						array(
+							'key' => 'field_6aa7fb0c38db3',
+							'label' => 'Références',
+							'name' => 'references',
+							'aria-label' => '',
+							'type' => 'post_object',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => array(
+								array(
+									array(
+										'field' => 'field_6aa7fad338db2',
+										'operator' => '==',
+										'value' => 'references',
+									),
+								),
+							),
+							'wrapper' => $wrapper,
+							'post_type' => array(
+								0 => 'reference',
+							),
+							'post_status' => array(
+								0 => 'publish',
+							),
+							'taxonomy' => '',
+							'return_format' => 'object',
+							'multiple' => 1,
+							'allow_null' => 0,
+							'allow_in_bindings' => 0,
+							'bidirectional' => 0,
+							'ui' => 1,
+							'bidirectional_target' => array(
+							),
+						),
+						array(
+							'key' => 'field_6aa7fb4238db4',
+							'label' => 'Projets',
+							'name' => 'projets',
+							'aria-label' => '',
+							'type' => 'post_object',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => array(
+								array(
+									array(
+										'field' => 'field_6aa7fad338db2',
+										'operator' => '==',
+										'value' => 'projets',
+									),
+								),
+							),
+							'wrapper' => $wrapper,
+							'post_type' => array(
+								0 => 'post',
+							),
+							'post_status' => array(
+								0 => 'publish',
+							),
+							'return_format' => 'object',
+							'multiple' => 1,
+							'ui' => 1,
+							'bidirectional_target' => array(
+							),
+						),
+					),
+				),
  
                 // ─── Block real proj ────────────────────────────────────────
                 'layout_69b7c04ed01c1' => array(
@@ -1793,7 +1892,39 @@ acf_add_local_field_group( array(
                             'type'  => 'wysiwyg',
                         ),
                     ),
-                ),  
+                ),
+
+                // Section texte simple
+                'layout_s3ct10nS1mpl3' => array(
+                    'key' => 'layout_s3ct10nS1mpl3',
+                    'name' => 'section-texte-simple',
+                    'label' => 'Texte simple (1 colonne)',
+                    'display' => 'block',
+                    'sub_fields' => array(
+                        array(
+                            'key'   => 'field_title_simple_section',
+                            'label' => 'Titre',
+                            'name'  => 'titre',
+                            'type'  => 'wysiwyg',
+                        ),
+                        array(
+                            'key'   => 'field_texte_simple_section',
+                            'label' => 'texte',
+                            'name'  => 'texte',
+                            'type'  => 'wysiwyg',
+                        ),
+                        array(
+                            'key'               => 'field_text_simple_link',
+                            'label'             => 'CTA',
+                            'name'              => 'cta',
+                            'type'              => 'link',
+                            'conditional_logic' => 0,
+                            'wrapper'           => $wrapper,
+                            'return_format'     => 'array',
+                            'allow_in_bindings' => 0,
+                        ),
+                    ),
+                )
             ),
             'button_label' => 'Ajouter un élément',
         ),
@@ -1818,6 +1949,13 @@ acf_add_local_field_group( array(
                 'param'    => 'post_type',
                 'operator' => '==',
                 'value'    => 'reference',
+            ),
+        ),
+        array(
+            array(
+                'param'    => 'post_type',
+                'operator' => '==',
+                'value'    => 'post',
             ),
         ),
     ),

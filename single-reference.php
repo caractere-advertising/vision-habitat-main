@@ -19,7 +19,9 @@ if ( ! $galerie || ! is_array( $galerie ) ) {
 $img_url   = [];
 $img_title = [];
 
-foreach ( $galerie as $i => $g ) {
+$galerie2  = get_field('galerie-parallax');
+
+foreach ( $galerie2 as $i => $g ) {
     $img_url[ $i ]   = $g['url'];
     $img_title[ $i ] = $g['title'];
 }
@@ -44,7 +46,7 @@ foreach ( $galerie as $i => $g ) {
     <div class="container flex -full">
         <div class="col-40 col-g">
             <?php if ( ! empty( $img_url[0] ) ) : ?>
-                <div class="block-img">
+                <div class="block-img fast-parallax">
                     <img src="<?= esc_url( $img_url[0] ); ?>" loading="lazy" alt="<?= esc_attr( $img_title[0] ?? '' ); ?>">
                 </div>
             <?php endif; ?>
@@ -57,8 +59,25 @@ foreach ( $galerie as $i => $g ) {
                 <p><strong>Architecte</strong><br><?= esc_html( $archi ); ?></p>
             </div>
             <?php if ( ! empty( $img_url[1] ) ) : ?>
-                <div class="block-img">
+                <div class="block-img slow-parallax">
                     <img src="<?= esc_url( $img_url[1] ); ?>" loading="lazy" alt="<?= esc_attr( $img_title[1] ?? '' ); ?>"/>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+    <div class="container flex -full -reverse">
+        <div class="col-60 col-g">
+            <?php if ( ! empty( $img_url[2] ) ) : ?>
+                <div class="block-img slow-parallax">
+                    <img src="<?= esc_url( $img_url[2] ); ?>" loading="lazy" alt="<?= esc_attr( $img_title[2] ?? '' ); ?>">
+                </div>
+            <?php endif; ?>
+        </div>
+
+        <div class="col-d col-40">
+            <?php if ( ! empty( $img_url[3] ) ) : ?>
+                <div class="block-img fast-parallax">
+                    <img src="<?= esc_url( $img_url[3] ); ?>" loading="lazy" alt="<?= esc_attr( $img_title[3] ?? '' ); ?>"/>
                 </div>
             <?php endif; ?>
         </div>

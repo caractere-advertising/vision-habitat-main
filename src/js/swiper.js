@@ -223,3 +223,25 @@ if (document.querySelector(".swiper-gallery")) {
     speed: 600,
   });
 }
+
+if (document.querySelector(".swiper-gallery-reference")) {
+  new Swiper(".swiper-gallery-reference", {
+    modules: [Navigation, Pagination, Scrollbar],
+    navigation: {
+      nextEl: ".gallery-reference-next",
+      prevEl: ".gallery-reference-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination-reference-gallery",
+      clickable: true,
+      type: "bullets",
+    },
+    slidesPerView: 1.2,
+    scrollbar: {
+      el: ".swiper-scrollbar-reference-galerie-slider",
+    },
+    spaceBetween: 200,
+    loop: true,
+    speed: 600,
+  });
+}

@@ -81,6 +81,8 @@ $builder_layouts = array(
     'section-gallery-bl-gr'         => 'section-gallery-bl-gr',
     'section_actualites_articles'   => 'section_actualites_articles',
     'section_actu_citation'         => 'section_actu_citation',
+    'section-texte-simple'          => 'section-texte-simple',
+    'galerie_references'            => 'section-galerie-references'
 );
 
 if (have_rows('builder', $context_id)) :

@@ -21,7 +21,9 @@
 
                    <div class="cold col-50">
                         <div class="content from-right">
-                            <?= wp_kses_post( $titre ); ?>
+                            <div class="section-title">
+                                <?= wp_kses_post( $titre ); ?>
+                            </div>
                             <?= wp_kses_post( $texte ); ?>
                             <?php if ( $cta ) : ?>
                                 <a href="<?= esc_url( $cta['url'] ); ?>" class="btn-cta"><?= esc_html( $cta['title'] ); ?></a>
