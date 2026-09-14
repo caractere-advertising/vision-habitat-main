@@ -651,7 +651,7 @@ acf_add_local_field_group( array(
                     'sub_fields' => array(
                         array(
                             'key'            => 'field_69b3d7e89a631',
-                            'label'          => 'image',
+                            'label'          => 'Image',
                             'name'           => 'image',
                             'type'           => 'image',
                             'conditional_logic' => 0,
@@ -663,7 +663,7 @@ acf_add_local_field_group( array(
                         ),
                         array(
                             'key'            => 'field_69b3d7f99a632',
-                            'label'          => 'title',
+                            'label'          => 'Titre',
                             'name'           => 'title',
                             'type'           => 'wysiwyg',
                             'conditional_logic' => 0,
@@ -677,9 +677,9 @@ acf_add_local_field_group( array(
                         ),
                         array(
                             'key'            => 'field_69b3dbe89a633',
-                            'label'          => 'paragraph',
+                            'label'          => 'Texte',
                             'name'           => 'paragraph',
-                            'type'           => 'text',
+                            'type'           => 'wysiwyg',
                             'conditional_logic' => 0,
                             'wrapper'        => $wrapper,
                             'default_value'  => '',
@@ -687,7 +687,7 @@ acf_add_local_field_group( array(
                         ),
                         array(
                             'key'            => 'field_69b3dc849a635',
-                            'label'          => 'link',
+                            'label'          => 'CTA',
                             'name'           => 'link',
                             'type'           => 'link',
                             'conditional_logic' => 0,
