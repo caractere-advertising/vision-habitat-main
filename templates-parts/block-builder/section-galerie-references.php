@@ -31,7 +31,7 @@ if($type = 'references'){
                         </div>
                         <div class="gallery-info">
                             <?php if ( $titre ) : ?><p class="gallery-titre"><?= esc_html( $titre ); ?></p><?php endif;
-                            if ( $description ) : ?><p class="gallery-description"><?= esc_html( $description ); ?></p><?php endif; ?>
+                            if ( $description ) : ?><p class="gallery-description"><?= $description ; ?></p><?php endif; ?>
                         </div>
                     <?php if($link): '</a>'; endif;?>
                 </div>
