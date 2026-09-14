@@ -29,6 +29,15 @@ acf_add_local_field_group( array(
 			'default_value' => '',
 			'allow_in_bindings' => 0,
 		),
+        array(
+            'key' =>'field_12345678ddd',
+            'label' => 'Description',
+            'name' => 'description',
+            'type' => 'wysiwyg',
+            'wrapper' => $wrapper,
+			'default_value' => '',
+			'allow_in_bindings' => 0,
+        ),
 		array(
 			'key' => 'field_69c3bb2b8c95f',
 			'label' => 'Architecte',
@@ -64,16 +73,7 @@ acf_add_local_field_group( array(
 			'mime_types' => '',
 			'insert' => 'append',
 			'preview_size' => 'medium',
-		),
-        array(
-            'key' =>'field_12345678ddd',
-            'label' => 'test-field',
-            'name' => 'test-field',
-            'type' => 'wysiwyg',
-            'wrapper' => $wrapper,
-			'default_value' => '',
-			'allow_in_bindings' => 0,
-        ),
+		)
 	),
 	'location' => array(
 		array(
