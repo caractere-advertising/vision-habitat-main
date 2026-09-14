@@ -62,7 +62,7 @@ acf_add_local_field_group( array(
 			'preview_size' => 'medium',
 		),
 		array(
-			'key' => 'field_69c3c1ae3c609',
+			'key' => 'field_6154689c3c1ae3c609',
 			'label' => 'galerie parallax',
 			'name' => 'galerie-parallax',
 			'type' => 'gallery',
