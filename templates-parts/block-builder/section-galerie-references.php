@@ -17,7 +17,7 @@ if($type = 'references'){
             <?php foreach($slides as $s):
                 $image       = get_field('galerie', $s->ID)[0];
                 $titre       = $s->post_title;
-                $description = get_field('localite',$s->ID);
+                $description = get_field('description',$s->ID);
                 $link        = get_permalink($s->ID);
             ?>
 
