@@ -11,6 +11,7 @@ include_once get_template_directory() . '/includes/acf-fields.php';
 include_once get_template_directory() . '/includes/seo.php';
 
 require_once get_template_directory() . '/includes/class-cpt-references.php';
+require_once get_template_directory() . '/includes/class-cpt-projets.php';
 
 function vh_enqueue_assets() {
 
