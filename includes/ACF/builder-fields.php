@@ -1950,6 +1950,13 @@ acf_add_local_field_group( array(
                 'operator' => '==',
                 'value'    => 'reference',
             ),
+        ), 
+        array(
+            array(
+                'param'    => 'post_type',
+                'operator' => '==',
+                'value'    => 'projet',
+            ),
         ),
         array(
             array(
