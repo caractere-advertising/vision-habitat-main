@@ -10,27 +10,17 @@ $localite = get_field( 'localisation' ) ?? '';
 $archi    = get_field( 'architecte' ) ?? '';
 
 $galerie  = get_field( 'galerie' );
-
-if ( ! $galerie || ! is_array( $galerie ) ) {
-    get_footer();
-    return;
-}
+$galerie2  = get_field('galerie-parallax');
 
 $img_url   = [];
 $img_title = [];
 
-$galerie2  = get_field('galerie-parallax');
-var_dump($galerie2);
-
-if ( ! $galerie2 || ! is_array( $galerie2 ) ) {
-    get_footer();
-    return;
-}
-
-foreach ( $galerie2 as $i => $g ) {
-    $img_url[ $i ]   = $g['url'];
-    $img_title[ $i ] = $g['title'];
-}
+if(is_array($galerie2)):
+    foreach ( $galerie2 as $i => $g ) {
+        $img_url[ $i ]   = $g['url'];
+        $img_title[ $i ] = $g['title'];
+    }
+endif;
 
 ?>
 
