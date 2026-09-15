@@ -20,6 +20,7 @@ $img_url   = [];
 $img_title = [];
 
 $galerie2  = get_field('galerie-parallax');
+var_dump($galerie2);
 
 if ( ! $galerie2 || ! is_array( $galerie2 ) ) {
     get_footer();
