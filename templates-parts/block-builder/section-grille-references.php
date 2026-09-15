@@ -3,7 +3,7 @@
 $link  = get_sub_field('link');
 
 // La fonction est gérée dans /includes/setup.php
-$query = getPosts('reference');
+$query = getPosts('reference',-1);
 
 ?>
 
