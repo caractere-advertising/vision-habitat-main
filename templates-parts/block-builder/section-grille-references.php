@@ -7,7 +7,7 @@ $typePost = get_sub_field('typePost');
 
 
 // La fonction est gérée dans /includes/setup.php
-$query = getPosts('reference', $number);?>
+$query = getPosts($typePost, $number);?>
 
 <section class="section-references">
     <div class="ref-grid container">
