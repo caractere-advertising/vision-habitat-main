@@ -21,6 +21,11 @@ $img_title = [];
 
 $galerie2  = get_field('galerie-parallax');
 
+if ( ! $galerie2 || ! is_array( $galerie2 ) ) {
+    get_footer();
+    return;
+}
+
 foreach ( $galerie2 as $i => $g ) {
     $img_url[ $i ]   = $g['url'];
     $img_title[ $i ] = $g['title'];
