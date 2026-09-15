@@ -1,11 +1,12 @@
 <?php
 
-$link  = get_sub_field('link');
+$link     = get_sub_field('link');
+$number   = get_sub_field('nombre-article');
+
+$typePost = get_sub_field('typePost'); 
 
 // La fonction est gérée dans /includes/setup.php
-$query = getPosts('reference',-1);
-
-?>
+$query = getPosts('reference', $number);?>
 
 <section class="section-references">
     <div class="ref-grid container">

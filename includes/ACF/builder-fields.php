@@ -1275,6 +1275,15 @@ acf_add_local_field_group( array(
                     'label' => 'Grilles références',
                     'display' => 'block',
                     'sub_fields' => array(
+                        array(
+                            'key'            => 'field_n0mb3r4rt1cl3',
+                            'label'          => 'Number',
+                            'name'           => 'nombre-article',
+                            'type'           => 'number',
+                            'conditional_logic' => 0,
+                            'wrapper'        => $wrapper,
+                            'allow_in_bindings' => 0,
+                        )
                     ),
                 ),
  
