@@ -1268,13 +1268,37 @@ acf_add_local_field_group( array(
                     'sub_fields' => array(),
                 ),
  
-                // ─── Section approche globale ────────────────────────────────
+            // ─── Section grille référénces ────────────────────────────────
                 'layout_gr1ll3sr3f3r3' => array(
                     'key' => 'layout_gr1ll3sr3f3r3',
                     'name' => 'section-grille-references',
                     'label' => 'Grilles références',
                     'display' => 'block',
                     'sub_fields' => array(
+                        array(
+							'key' => 'field_typepostref338db2',
+							'label' => 'Que souhaitez-vous récupérer?',
+							'name' => 'typePost',
+							'aria-label' => '',
+							'type' => 'checkbox',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => $wrapper,
+							'choices' => array(
+								'references' => 'References',
+								'projets' => 'Projets',
+							),
+							'default_value' => array(
+							),
+							'return_format' => 'value',
+							'allow_custom' => 0,
+							'allow_in_bindings' => 0,
+							'layout' => 'vertical',
+							'toggle' => 0,
+							'save_custom' => 0,
+							'custom_choice_button_text' => 'Ajouter un nouveau choix',
+						),
                         array(
                             'key'            => 'field_n0mb3r4rt1cl3',
                             'label'          => 'Number',
@@ -1287,7 +1311,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
  
-                // ─── Section approche globale ────────────────────────────────
+            // ─── Section approche globale ────────────────────────────────
                 'layout_69c6739eade09' => array(
                     'key'        => 'layout_69c6739eade09',
                     'name'       => 'section-approche-globale',
@@ -1415,7 +1439,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
  
-                // ─── Section 2 colonnes simple ───────────────────────────────
+            // ─── Section 2 colonnes simple ───────────────────────────────
                 'layout_69ca23cff67c9' => array(
                     'key'        => 'layout_69ca23cff67c9',
                     'name'       => 'section-two-col-simple',
@@ -1489,7 +1513,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
 
-                // ─── Section 2 colonnes full ───────────────────────────────
+            // ─── Section 2 colonnes full ───────────────────────────────
                 'layout_69ca23cff6full' => array(
                     'key'        => 'layout_69ca23cff6full',
                     'name'       => 'section-two-col-full',
@@ -1563,7 +1587,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
  
-                // ─── Slider vertical ─────────────────────────────────────────
+            // ─── Slider vertical ─────────────────────────────────────────
                 'layout_r3p34tv3rt1c4l' => array(
                     'key'        => 'layout_r3p34tv3rt1c4l',
                     'name'       => 'slider-vertical',
@@ -1614,7 +1638,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
 
-                // ─── Slider vertical reverse ─────────────────────────────────────────
+            // ─── Slider vertical reverse ─────────────────────────────────────────
                 'layout_r3p34tv3rt1c4lreverse' => array(
                     'key'        => 'layout_r3p34tv3rt1c4lreverse',
                     'name'       => 'slider-vertical-reverse',
@@ -1745,7 +1769,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
  
-                // ─── Section accordeon ───────────────────────────────────────
+            // ─── Section accordeon ───────────────────────────────────────
                 'layout_4cc0rd30n' => array(
                     'key'        => 'layout_4cc0rd30n',
                     'name'       => 'section_accordeon',
@@ -1804,7 +1828,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
  
-                // ─── Big Title ───────────────────────────────────────────────
+            // ─── Big Title ───────────────────────────────────────────────
                 'layout_b1g_t1tl3' => array(
                     'key'        => 'layout_b1g_t1tl3',
                     'name'       => 'big_title',
@@ -1823,7 +1847,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
 
-                // -- section text_overlay
+            // ─── section text_overlay
                 'layout_text_overlay' => array(
                     'key'        => 'layout_t3xt_0v3rl4y',
                     'name'       => 'text_overlay',
@@ -1872,7 +1896,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
  
-                // ─── Section formulaire contact ──────────────────────────────
+            // ─── Section formulaire contact ──────────────────────────────
                 'layout_s3ct10nf0rmc0nt4ct' => array(
                     'key'        => 'layout_s3ct10nf0rmc0nt4ct',
                     'name'       => 'section-formulaire-contact',
@@ -1881,7 +1905,7 @@ acf_add_local_field_group( array(
                     'sub_fields' => array(),
                 ),
 
-                // ─── Section sur mesure ──────────────────────────────
+            // ─── Section sur mesure ──────────────────────────────
                 'layout_s3ct10nsurm3sur3' => array(
                     'key' => 'layout_s3ct10nsurm3sur3',
                     'name' => 'section-part-sur-mesure',
@@ -1903,7 +1927,7 @@ acf_add_local_field_group( array(
                     ),
                 ),
 
-                // Section texte simple
+            // Section texte simple
                 'layout_s3ct10nS1mpl3' => array(
                     'key' => 'layout_s3ct10nS1mpl3',
                     'name' => 'section-texte-simple',

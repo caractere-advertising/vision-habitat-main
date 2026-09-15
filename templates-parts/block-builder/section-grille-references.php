@@ -3,7 +3,8 @@
 $link     = get_sub_field('link');
 $number   = get_sub_field('nombre-article');
 
-$typePost = get_sub_field('typePost'); 
+$typePost = get_sub_field('typePost');
+
 
 // La fonction est gérée dans /includes/setup.php
 $query = getPosts('reference', $number);?>
