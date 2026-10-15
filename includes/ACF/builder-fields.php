@@ -207,7 +207,7 @@ acf_add_local_field_group( array(
                     'layout_69b7c55596df3' => array(
                         'key'        => 'layout_69b7c55596df3',
                         'name'       => 'gallery_slider',
-                        'label'      => 'gallery_slider',
+                        'label'      => 'Galerie',
                         'display'    => 'block',
                         'sub_fields' => array(
                             array(
@@ -514,7 +514,7 @@ acf_add_local_field_group( array(
                     'layout_69b40ddb22c3e' => array(
                         'key'        => 'layout_69b40ddb22c3e',
                         'name'       => 'block_actu',
-                        'label'      => 'block_actu',
+                        'label'      => 'Actualités',
                         'display'    => 'block',
                         'sub_fields' => array(
                             array(
@@ -561,7 +561,7 @@ acf_add_local_field_group( array(
                     'layout_69b4095b346f8' => array(
                         'key'        => 'layout_69b4095b346f8',
                         'name'       => 'block_video',
-                        'label'      => 'block_video',
+                        'label'      => 'Section vidéo',
                         'display'    => 'block',
                         'key' => 'layout_69b4095b346f8',
                         'name' => 'block_video',
@@ -703,7 +703,7 @@ acf_add_local_field_group( array(
                     'layout_69b3ea769b227' => array(
                         'key'        => 'layout_69b3ea769b227',
                         'name'       => 'link_container',
-                        'label'      => 'link_container',
+                        'label'      => 'Listing title + miniature',
                         'display'    => 'block',
                         'sub_fields' => array(
                             array(
@@ -762,7 +762,7 @@ acf_add_local_field_group( array(
                     'layout_69b3d7c59a62f' => array(
                         'key'        => 'layout_69b3d7c59a62f',
                         'name'       => 'block_discover',
-                        'label'      => 'block_discover',
+                        'label'      => 'Découvertes',
                         'display'    => 'block',
                         'sub_fields' => array(
                             array(
@@ -949,7 +949,7 @@ acf_add_local_field_group( array(
                     'layout_69b2daa32762d' => array(
                         'key'        => 'layout_69b2daa32762d',
                         'name'       => 'section_img_ev',
-                        'label'      => 'section_img_ev',
+                        'label'      => 'Slider fullwidth projets',
                         'display'    => 'block',
                         'sub_fields' => array(
                             array(
@@ -1097,7 +1097,7 @@ acf_add_local_field_group( array(
                     'layout_69b2c8e4aadf2' => array(
                         'key'        => 'layout_69b2c8e4aadf2',
                         'name'       => 'images_overlay',
-                        'label'      => 'images_overlay',
+                        'label'      => 'Images + small image',
                         'display'    => 'block',
                         'sub_fields' => array(
                             array(
@@ -1216,7 +1216,7 @@ acf_add_local_field_group( array(
                     'layout_69aed51e0224a' => array(
                         'key'        => 'layout_69aed51e0224a',
                         'name'       => 'text_evidence',
-                        'label'      => 'text_evidence',
+                        'label'      => 'Texte mis en avant',
                         'display'    => 'block',
                         'sub_fields' => array(
                             array(
