@@ -5,6 +5,7 @@
 $text_ev   = get_sub_field("text_ev");
 $paragraph = get_sub_field("paragraph");
 $video     = get_sub_field("video");
+
 ?>
 
 <section class="section-video">

@@ -28,10 +28,10 @@ add_action('after_setup_theme', 'vh_theme_setup');
 
 /* Récupération de tous les posts Ou réferences */
 
-function getPosts($type, $paged){
+function getPosts($type, $paged, $perPage = null){
     $args = array(
         'post_type' => $type,
-        'posts_per_page' => is_front_page(  ) ? 3 : 5,
+        'posts_per_page' => $perPage ?: (is_front_page(  ) ? 3 : 5),
         'post_status' => 'publish',
         'paged'          => $paged ?: 1,
         'order' => 'ASC',
@@ -51,7 +51,7 @@ function getCategoriesReferences($postId, $type){
 
     $allCats = '';
 
-    if($cats){
+    if($cats && ! is_wp_error($cats)){
         $i = 0;
 
         foreach($cats as $cat) {

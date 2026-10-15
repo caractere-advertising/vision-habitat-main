@@ -11,8 +11,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 
-const sliderFullwidthSection = document.querySelector(".slider-fullwidth");
-const numberCurrent = document.querySelector(".number-current");
+function updateSlideNumber(swiper) {
+  const numberCurrent = swiper.el.querySelector(".number-current");
+  if (!numberCurrent) return;
+  const i = swiper.realIndex + 1;
+  numberCurrent.textContent = i < 10 ? "0" + i : String(i);
+}
 
 if (document.querySelector(".swiper-fullwidth")) {
   new Swiper(".swiper-fullwidth", {
@@ -31,22 +35,8 @@ if (document.querySelector(".swiper-fullwidth")) {
     speed: 1200,
     spaceBetween: 0,
     on: {
-      init(swiper) {
-        if (sliderFullwidthSection) {
-          sliderFullwidthSection.classList.remove("is-loading");
-          sliderFullwidthSection.classList.add("is-loaded");
-        }
-        if (numberCurrent) {
-          const i = swiper.realIndex + 1;
-          numberCurrent.textContent = i < 10 ? "0" + i : String(i);
-        }
-      },
-      slideChange(swiper) {
-        if (numberCurrent) {
-          const i = swiper.realIndex + 1;
-          numberCurrent.textContent = i < 10 ? "0" + i : String(i);
-        }
-      },
+      init: updateSlideNumber,
+      slideChange: updateSlideNumber,
     },
   });
 }

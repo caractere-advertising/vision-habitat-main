@@ -26,12 +26,12 @@ remove_filter('comment_text_rss', 'wp_staticize_emoji');
 function vh_schema_org() {
     if ( ! function_exists('get_field') ) return;
 
-    $contact = get_field('infos-contact', 'option');
-    $logo    = get_field('logo', 'option');
+    $logo = get_field('logo', 'option');
 
-    if ( empty($contact[0]) ) return;
-
-    $info = $contact[0];
+    $info = [];
+    foreach ( ['site-name', 'street-name', 'locality', 'tel-num', 'mail'] as $key ) {
+        $info[$key] = get_field($key, 'option');
+    }
 
     $schema = [
         '@context' => 'https://schema.org',

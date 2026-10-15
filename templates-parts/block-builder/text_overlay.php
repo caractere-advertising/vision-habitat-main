@@ -1,4 +1,5 @@
 <?php
+
 $title = get_sub_field('title');
 $image = get_sub_field('image');
 $paragraph = get_sub_field('paragraph');

@@ -2,20 +2,23 @@
 <?php
 
 $burger_image        = get_field('bg-menu-image', 'option');
-$burger_info_contact = get_field('infos-contact', 'option');
 $burger_socials      = get_field('logo-social-media', 'option');
 $cond_generales      = get_field('cond-generales', 'option') ?? '';
 $footer_nav          = get_field('menu-burger-footer', 'option');
 $logo_bg_menu        = get_field('logo_bg_menu', 'option');
+
+$tel     = get_field('tel-num', 'option') ?: '';
+$mail    = get_field('mail', 'option') ?: '';
+$tva     = get_field('tva', 'option') ?: '';
+$linkTel = preg_replace('/[^0-9+]/', '', $tel);
+$linkTel = preg_replace('/^\+320/', '0032', $linkTel);
 
 ?>
 
 <section class="menu-burger">
     <div class="menu-burger-left">
         <?php if ($burger_image) : ?>
-           
             <img src="<?= esc_url($burger_image['url']) ?>" loading="lazy" alt="<?= esc_attr($burger_image['alt']) ?>"/>
-           
         <?php endif; ?>
 
         <?php if ($logo_bg_menu) : ?>
@@ -25,37 +28,27 @@ $logo_bg_menu        = get_field('logo_bg_menu', 'option');
         <?php endif; ?>
 
         <div class="menu-burger-left-bottom">
-            <?php if ($burger_info_contact) :
-                $info = $burger_info_contact[0];
-
-                $tel  = $info['tel-num']; 
-                $linkTel = preg_replace('/[^0-9+]/', '', $tel);
-                $linkTel = preg_replace('/^\+320/', '0032', $linkTel);
-                
-                ?>
-
                 <div class="menu-burger-contact">
-                    <p class="menu-burger-contact-name"><?= esc_html( $info['site-name'] ); ?></p>
+                    <p class="menu-burger-contact-name"><?= esc_html( get_field('site-name','option') ); ?></p>
 
                     <div class="contact-adresse from-left">
-                        <p class="from-left"><?= esc_html( $info['street-name'] ); ?></p>
-                        <p class="from-left"><?= esc_html( $info['locality'] ); ?></p>
+                        <p class="from-left"><?= esc_html( get_field('street-name','option') ); ?></p>
+                        <p class="from-left"><?= esc_html( get_field('locality','option') ); ?></p>
                     </div>
 
                     <div class="contact-tel-mail">
                         <p class="from-left"><strong>Tél. </strong><a href="tel:<?= esc_attr( $linkTel ); ?>"><?= esc_html( $tel ); ?></a></p>
-                        <p class="from-left"><strong>Mail : </strong><a href="mailto:<?= esc_attr( sanitize_email( $info['mail'] ) ); ?>"><?= esc_html( $info['mail'] ); ?></a></p>
-                        <p class="from-left"><strong>TVA </strong><?= esc_html( $info['tva'] ?? '' ); ?></p>
+                        <p class="from-left"><strong>Mail : </strong><a href="mailto:<?= esc_attr( sanitize_email( $mail ) ); ?>"><?= esc_html( $mail ); ?></a></p>
+                        <p class="from-left"><strong>TVA </strong><?= esc_html( $tva ); ?></p>
                     </div>
                 </div>
-            <?php endif; ?>
             
            <?php if ( $burger_socials ) : ?>
     <div class="menu-burger-socials from-left">
         <?php foreach ( $burger_socials as $social ) : ?>
             <a href="<?= esc_url( $social['lien'] ); ?>">
-                <?php if ( $social['logo'] ) : ?>
-                    <img src="<?= esc_url( $social['logo']['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $social['logo']['title'] ); ?>">
+                <?php if ( ! empty( $social['image'] ) ) : ?>
+                    <img src="<?= esc_url( $social['image']['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $social['image']['title'] ); ?>">
                 <?php endif; ?>
             </a>
         <?php endforeach; ?>

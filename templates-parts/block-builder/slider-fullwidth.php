@@ -1,38 +1,15 @@
 <?php
 // Layout ACF : slider-fullwidth
-// Champs : slide (répéteur)
-//   └── image (image), titre (wysiwyg), cta (lien)
 
 $slide  = get_sub_field('slide');
 $length = $slide ? count($slide) : 0;
 ?>
 
-<section class="slider-fullwidth js-slider-skeleton is-loading">
-    <div class="slider-skeleton" aria-hidden="true">
-        <div class="slider-skeleton__background"></div>
-
-        <div class="slider-skeleton__content">
-            <div class="skeleton-line skeleton-title-large"></div>
-            <div class="skeleton-line skeleton-title-medium"></div>
-            <div class="skeleton-line skeleton-cta"></div>
-        </div>
-
-        <div class="slider-skeleton__pagination">
-            <div class="skeleton-number"></div>
-            <div class="skeleton-scrollbar"></div>
-            <div class="skeleton-number"></div>
-            <div class="skeleton-bullets">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-
+<section class="slider-fullwidth">
     <div class="swiper swiper-fullwidth">
         <div class="swiper-wrapper">
             <?php if ($slide):
-                foreach ($slide as $s) :
+                foreach ($slide as $i => $s) :
                     $img = $s['image'] ?? null;
                     $cta = $s['cta'] ?? null;
                 ?>
@@ -40,7 +17,9 @@ $length = $slide ? count($slide) : 0;
                     <div class="swiper-slide">
                         <div class="background">
                             <?php if($img): ?>
-                                <img src="<?= esc_url($img['url']); ?>" alt="<?= esc_attr($img['alt']); ?>">
+                                <?php // 1re slide = image LCP : chargée en priorité, les suivantes en lazy ?>
+                                <img src="<?= esc_url($img['url']); ?>" alt="<?= esc_attr($img['alt']); ?>"
+                                    <?= $i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'; ?> decoding="async">
                             <?php endif; ?>
                         </div>
 

@@ -1,21 +1,23 @@
 <?php
 // Layout ACF 
 
-$type = get_sub_field('quel_type');
-
+// Checkbox : on fusionne les sélections cochées (références et/ou projets)
+$types  = (array) get_sub_field('quel_type');
 $slides = [];
 
-if($type = 'references'){
-    $slides = get_sub_field('references');
-} else {
-    $slides = get_sub_field('projects');
+if (in_array('references', $types, true)) {
+    $slides = array_merge($slides, (array) get_sub_field('references'));
+}
+if (in_array('projets', $types, true)) {
+    $slides = array_merge($slides, (array) get_sub_field('projets'));
 } ?>
 
 <section class="section-gallery-reference from-bottom">
     <div class="swiper swiper-gallery-reference">
         <div class="swiper-wrapper">
             <?php foreach($slides as $s):
-                $image       = get_field('galerie', $s->ID)[0];
+                $galerie     = get_field('galerie', $s->ID);
+                $image       = $galerie[0] ?? null;
                 $titre       = $s->post_title;
                 $description = get_field('description',$s->ID);
                 $link        = get_permalink($s->ID);
@@ -23,7 +25,7 @@ if($type = 'references'){
 
             <div class="swiper-slide">
                 <div class="gallery-slide-inner">
-                    <?php if($link): echo '<a href="'.$link.'">'; endif;?>
+                    <?php if($link): echo '<a href="' . esc_url($link) . '">'; endif;?>
                         <div class="gallery-image">
                             <?php if ( $image ) : ?>
                                 <img src="<?= esc_url( $image['url'] ); ?>" loading="lazy" alt="<?= esc_attr( $image['alt'] ); ?>">
@@ -31,9 +33,9 @@ if($type = 'references'){
                         </div>
                         <div class="gallery-info">
                             <?php if ( $titre ) : ?><p class="gallery-titre"><?= esc_html( $titre ); ?></p><?php endif;
-                            if ( $description ) : ?><p class="gallery-description"><?= $description ; ?></p><?php endif; ?>
+                            if ( $description ) : ?><p class="gallery-description"><?= wp_kses_post( $description ); ?></p><?php endif; ?>
                         </div>
-                    <?php if($link): '</a>'; endif;?>
+                    <?php if($link): echo '</a>'; endif;?>
                 </div>
             </div>
             <?php endforeach; ?>

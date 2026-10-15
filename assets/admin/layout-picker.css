@@ -1,0 +1,202 @@
+/* Sélecteur de sections du builder en grille (cf. includes/acf-layout-picker.php) */
+
+:root {
+  --vh-picker-primary: #05233c;
+  --vh-picker-accent: #d3bea1;
+  --vh-picker-border: #e2e2e2;
+}
+
+/* Le popup ACF devient une modale centrée.
+   ACF positionne le popup en inline (top/left) : on force la position. */
+.acf-fc-popup:has(.vh-layout-picker) {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  z-index: 900001;
+  width: min(1100px, calc(100vw - 48px));
+  min-width: 0 !important;
+  max-width: none !important;
+  max-height: calc(100vh - 96px);
+  margin: 0 !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  color: #1d2327;
+  border-radius: 10px;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    0 0 0 100vmax rgba(3, 17, 29, 0.55);
+}
+
+/* Flèche de tooltip ACF */
+.acf-fc-popup:has(.vh-layout-picker)::before,
+.acf-fc-popup:has(.vh-layout-picker)::after {
+  display: none;
+}
+
+.vh-layout-picker {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.vh-layout-picker__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--vh-picker-border);
+}
+
+.vh-layout-picker__title {
+  font-size: 16px;
+  color: var(--vh-picker-primary);
+  white-space: nowrap;
+}
+
+.acf-fc-popup .vh-layout-search {
+  flex: 1;
+  max-width: 360px;
+  margin-left: auto;
+  padding: 6px 12px;
+  border: 1px solid var(--vh-picker-border);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.acf-fc-popup .vh-layout-close {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 1;
+  color: #50575e;
+  text-decoration: none;
+}
+
+.acf-fc-popup .vh-layout-close:hover,
+.acf-fc-popup .vh-layout-close:focus {
+  background: #f0f0f1;
+  color: var(--vh-picker-primary);
+}
+
+/* Grille */
+.acf-fc-popup ul.vh-layout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 20px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.acf-fc-popup ul.vh-layout-grid li {
+  display: block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+.acf-fc-popup ul.vh-layout-grid li[hidden] {
+  display: none;
+}
+
+.acf-fc-popup ul.vh-layout-grid a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+  color: var(--vh-picker-primary);
+  border: 1px solid var(--vh-picker-border);
+  border-radius: 8px;
+  white-space: normal;
+  text-decoration: none;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+.acf-fc-popup ul.vh-layout-grid a:hover,
+.acf-fc-popup ul.vh-layout-grid a:focus-visible {
+  border-color: var(--vh-picker-accent);
+  box-shadow: 0 6px 18px rgba(5, 35, 60, 0.15);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.acf-fc-popup ul.vh-layout-grid a.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.vh-layout-thumb {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f0f0f1;
+  border-bottom: 1px solid var(--vh-picker-border);
+}
+
+.vh-layout-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.vh-layout-thumb--empty {
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--vh-picker-accent);
+}
+
+.vh-layout-label {
+  display: block;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Badge "requis" ajouté par ACF (min de layouts) */
+.acf-fc-popup ul.vh-layout-grid a .badge {
+  margin: 0 12px 10px;
+  align-self: flex-start;
+}
+
+.vh-layout-empty {
+  margin: 0;
+  padding: 0 20px 24px;
+  color: #646970;
+}
+
+body.vh-layout-picker-open {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .acf-fc-popup ul.vh-layout-grid a {
+    transition: none;
+  }
+
+  .acf-fc-popup ul.vh-layout-grid a:hover {
+    transform: none;
+  }
+}

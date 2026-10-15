@@ -1,9 +1,8 @@
 <?php
-// layout AFC section_actu_citation
-//champs nom(text), citation(wysiwig)
 
 $nom= get_sub_field('nom');
 $citation = get_sub_field('citation');
+
 ?>
 
 <section class="section_actu_citation">
@@ -13,7 +12,7 @@ $citation = get_sub_field('citation');
 
             <?php if ( $nom ) : ?>
                 <div class="citation_nom"><?= esc_html( $nom ); ?></div>
-            <?php endif; ?>
-        <?php endif; ?>
+            <?php endif;
+        endif; ?>
     </div>
 </section>

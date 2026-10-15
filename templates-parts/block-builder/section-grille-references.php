@@ -7,7 +7,7 @@ $typePost = get_sub_field('typePost');
 
 
 // La fonction est gérée dans /includes/setup.php
-$query = getPosts($typePost, $number);?>
+$query = getPosts($typePost, 1, $number);?>
 
 <section class="section-references">
     <div class="ref-grid container">
@@ -16,7 +16,7 @@ $query = getPosts($typePost, $number);?>
                 $image     = get_the_post_thumbnail_url(get_the_ID(), 'full');
                 $paragraph = get_the_title();
                 $lien      = get_permalink();
-                $category  = getCategoriesReferences(get_the_ID(),'reference_category');                           
+                $category  = getCategoriesReferences(get_the_ID(), get_post_type() . '_category');                           
 
                 ?>
 

@@ -3,7 +3,16 @@
 $titre = get_field('titre_contact', 'options');
 $intro = get_field('intro_contact', 'options');
 
-$infosCompany = get_field('infos-contact','options');
+$siteName = get_field('site-name', 'options') ?: '';
+$street   = get_field('street-name', 'options') ?: '';
+$localite = get_field('locality', 'options') ?: '';
+$tel      = get_field('tel-num', 'options') ?: '';
+$mail     = get_field('mail', 'options') ?: '';
+
+// Supprimer tout sauf les chiffres et le +
+$linkTel = preg_replace( '/[^0-9+]/', '', $tel );
+// Remplacer +320 par 0032
+$linkTel = preg_replace( '/^\+320/', '0032', $linkTel );
 
 $form    = get_field('shortcode_form','options'); 
 
@@ -16,19 +25,6 @@ $form    = get_field('shortcode_form','options');
             <?= wp_kses_post( $intro ); ?>
 
             <div class="block-contact">
-                <?php foreach ( $infosCompany as $info ) :
-                    $siteName = $info['site-name'] ?? '';
-                    $street   = $info['street-name'] ?? '';
-                    $localite = $info['locality'] ?? '';
-                    $tel      = $info['tel-num'] ?? '';
-                    $mail     = $info['mail'] ?? '';
-
-                    // Supprimer tout sauf les chiffres et le +
-                    $linkTel = preg_replace( '/[^0-9+]/', '', $tel );
-                    // Remplacer +320 par 0032
-                    $linkTel = preg_replace( '/^\+320/', '0032', $linkTel );
-                    ?>
-
                     <h3><strong><?= esc_html( $siteName ); ?></strong></h3>
                     <div class="block-adress"><?= esc_html( $street ); ?><br><?= esc_html( $localite ); ?></div>
                     <div class="block-tel-mail">
@@ -36,8 +32,6 @@ $form    = get_field('shortcode_form','options');
                         <br>
                         <span class="labelBold"> Mail.</span><a href="mailto:<?= esc_attr( sanitize_email( $mail ) ); ?>"><?= esc_html( $mail ); ?></a>
                     </div>
-
-                <?php endforeach; ?>
             </div>
         </div>
         <div class="cold col-65">
