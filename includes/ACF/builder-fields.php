@@ -15,8 +15,7 @@ acf_add_local_field_group( array(
             'wrapper'           => $wrapper,
             'button_label'      => 'Ajouter un élément',
             'layouts'           => array(
- 
-                // ─── Slider fullwidth ───────────────────────────────────────
+                // ─── Slider fullwidth ───────────────────────────────────–────
                     'layout_69a7f853b6c37' => array(
                         'key'        => 'layout_69a7f853b6c37',
                         'name'       => 'slider-fullwidth',
@@ -90,7 +89,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
     
-                // ─── Header service ─────────────────────────────────────────
+                // ─── Header service ────────────────────────────────────–─────
                     'layout_69c658bedc62c' => array(
                         'key'        => 'layout_69c658bedc62c',
                         'name'       => 'section-header-service',
@@ -203,7 +202,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
  
-                // ─── Gallery slider ─────────────────────────────────────────
+                // ─── Gallery slider ───────────────────────────────────–──────
                     'layout_69b7c55596df3' => array(
                         'key'        => 'layout_69b7c55596df3',
                         'name'       => 'gallery_slider',
@@ -273,7 +272,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
 
-                // ─── Gallery références ─────────────────────────────────────────
+                // ─── Gallery références ──────────────────────────────────────
                     'layout_6aa7faab925e1' => array(
                         'key' => 'layout_6aa7faab925e1',
                         'name' => 'galerie_references',
@@ -384,7 +383,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
  
-                // ─── Block real proj ────────────────────────────────────────
+                // ─── Block real proj ────────────────────────────────────–────
                     'layout_69b7c04ed01c1' => array(
                         'key'        => 'layout_69b7c04ed01c1',
                         'name'       => 'block_real_proj',
@@ -510,7 +509,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
  
-                // ─── Block actu ─────────────────────────────────────────────
+                // ─── Block actu ────────────────────────────────────────–─────
                     'layout_69b40ddb22c3e' => array(
                         'key'        => 'layout_69b40ddb22c3e',
                         'name'       => 'block_actu',
@@ -618,7 +617,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
 				
-				// ——— section gallery-bl-gr
+				// ——— section gallery-bl-gr –––––––––––––––––––––––––––––––––––
                     'layout_69aedefa2f655aa' => array(
                         'key'       => 'layout_69aedefa2f655ab',
                         'name'       => 'section-gallery-bl-gr',
@@ -1351,7 +1350,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
     
-                // ─── Section grille référénces ────────────────────────────────
+                // ─── Section grille référénces ───────────────────────────────
                     'layout_gr1ll3sr3f3r3' => array(
                         'key' => 'layout_gr1ll3sr3f3r3',
                         'name' => 'section-grille-references',
@@ -1635,7 +1634,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
 
-                // ─── Section 2 colonnes full ───────────────────────────────
+                // ─── Section 2 colonnes full ───────────────––────────────────
                     'layout_69ca23cff6full' => array(
                         'key'        => 'layout_69ca23cff6full',
                         'name'       => 'section-two-col-full',
@@ -1786,7 +1785,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
 
-                // ─── Slider vertical reverse ─────────────────────────────────────────
+                // ─── Slider vertical reverse ─────────────────────────────────
                     'layout_r3p34tv3rt1c4lreverse' => array(
                         'key'        => 'layout_r3p34tv3rt1c4lreverse',
                         'name'       => 'slider-vertical-reverse',
@@ -2060,7 +2059,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
 
-                // ─── section text_overlay
+                // ─── section text_overlay ––––––––––––––––––––––––––––––––––––
                     'layout_text_overlay' => array(
                         'key'        => 'layout_t3xt_0v3rl4y',
                         'name'       => 'text_overlay',
@@ -2145,7 +2144,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
 
-                // ─── Section sur mesure ──────────────────────────────
+                // ─── Section sur mesure ──────────────────────────––––––––────
                     'layout_s3ct10nsurm3sur3' => array(
                         'key'        => 'layout_s3ct10nsurm3sur3',
                         'name'       => 'section-part-sur-mesure',
@@ -2185,7 +2184,7 @@ acf_add_local_field_group( array(
                         ),
                     ),
 
-                // ─── Section texte simple ──────────────────────────────
+                // ─── Section texte simple ─────────────────––––––─────────────
                     'layout_s3ct10nS1mpl3' => array(
                         'key' => 'layout_s3ct10nS1mpl3',
                         'name' => 'section-texte-simple',
